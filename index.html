@@ -401,6 +401,8 @@
     overflow: hidden;
     box-shadow: 0 2px 16px rgba(0,0,0,0.06);
     border: 1px solid var(--border);
+    display: block;
+    overflow-x: auto;
   }
 
   .vs-table th {
@@ -659,7 +661,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="/"><img src="totality_icon.png" alt="Totality" style="height: 36px; width: auto;" /></a>
+  <a href="/" style="font-size: 0.78rem; font-weight: 800; color: var(--dark); letter-spacing: 0.12em; text-transform: uppercase;">TOTALITY PTY LTD</a>
   <div class="nav-links">
     <a href="#features">Features</a>
     <a href="#why">Why us</a>
@@ -944,13 +946,14 @@
   <div class="section-inner">
     <div class="section-eyebrow">Feature comparison</div>
     <h2 class="section-title">Totality vs the rest of the market</h2>
-    <p class="section-sub">See what's included as standard — and where the other guys fall short.</p>
+    <p class="section-sub">See what's included as standard — and where everyone else falls short.</p>
     <table class="vs-table">
       <thead>
         <tr>
           <th>Feature</th>
           <th class="totality-col">Totality</th>
-          <th class="them-col">The other guys</th>
+          <th class="them-col">The management platforms</th>
+          <th class="them-col">The training apps</th>
         </tr>
       </thead>
       <tbody>
@@ -958,56 +961,103 @@
           <td>Training programme builder</td>
           <td><span class="check">✓</span> Included</td>
           <td><span class="cross">✗</span> Not available</td>
+          <td><span class="check">✓</span> Available</td>
         </tr>
         <tr>
           <td>Nutrition tracking</td>
           <td><span class="check">✓</span> Included</td>
           <td><span class="cross">✗</span> Not available</td>
+          <td><span class="cross">✗</span> Not available</td>
         </tr>
         <tr>
-          <td>Auto-regulation engine</td>
+          <td>Performance intelligence engine</td>
           <td><span class="check">✓</span> Included</td>
+          <td><span class="cross">✗</span> Not available</td>
+          <td><span class="cross">✗</span> Not available</td>
+        </tr>
+        <tr>
+          <td>Exercise library — built by us, grown by you</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="cross">✗</span> Not available</td>
+          <td><span class="partial">Basic only</span></td>
+        </tr>
+        <tr>
+          <td>Innovative workout tracking</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="cross">✗</span> Not available</td>
+          <td><span class="partial">Standard only</span></td>
+        </tr>
+        <tr>
+          <td>Weekly client check-ins</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="cross">✗</span> Not available</td>
+          <td><span class="partial">Basic surveys</span></td>
+        </tr>
+        <tr>
+          <td>At-risk client identification</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="partial">Reports only</span></td>
           <td><span class="cross">✗</span> Not available</td>
         </tr>
         <tr>
           <td>Progress tracking</td>
           <td><span class="check">✓</span> Included</td>
           <td><span class="partial">Add-on or separate app</span></td>
+          <td><span class="check">✓</span> Available</td>
+        </tr>
+        <tr>
+          <td>Classes + bookings + waitlists</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="check">✓</span> Available</td>
+          <td><span class="cross">✗</span> Not available</td>
+        </tr>
+        <tr>
+          <td>Staff payroll + management</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="partial">Limited</span></td>
+          <td><span class="cross">✗</span> Not available</td>
+        </tr>
+        <tr>
+          <td>Compliance docs + incident reports</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="cross">✗</span> Not available</td>
+          <td><span class="cross">✗</span> Not available</td>
+        </tr>
+        <tr>
+          <td>Leads CRM pipeline</td>
+          <td><span class="check">✓</span> Included</td>
+          <td><span class="partial">Top tier only</span></td>
+          <td><span class="cross">✗</span> Not available</td>
         </tr>
         <tr>
           <td>Native accounting sync</td>
           <td><span class="check">✓</span> Included</td>
-          <td><span class="partial">Third-party connector only</span></td>
+          <td><span class="partial">Third-party only</span></td>
+          <td><span class="cross">✗</span> Not available</td>
         </tr>
         <tr>
-          <td>Incident reports</td>
+          <td>Marketplace + POS</td>
           <td><span class="check">✓</span> Included</td>
+          <td><span class="check">✓</span> Available</td>
           <td><span class="cross">✗</span> Not available</td>
         </tr>
         <tr>
           <td>Platform cut on client revenue</td>
           <td><span class="check">✓</span> Zero</td>
-          <td><span class="cross">✗</span> Up to 20% commission</td>
+          <td><span class="cross">✗</span> Up to 20%</td>
+          <td><span class="cross">✗</span> Percentage fees</td>
         </tr>
         <tr>
           <td>Contract lock-in</td>
           <td><span class="check">✓</span> Month to month</td>
-          <td><span class="cross">✗</span> 12–24 month contracts</td>
+          <td><span class="cross">✗</span> 12–24 months</td>
+          <td><span class="partial">Varies</span></td>
         </tr>
         <tr>
-          <td>You own your client data</td>
-          <td><span class="check">✓</span> Always</td>
-          <td><span class="cross">✗</span> Platform controls identity</td>
-        </tr>
-        <tr>
-          <td>Full mobile admin</td>
-          <td><span class="check">✓</span> Everything on mobile</td>
-          <td><span class="partial">Many tasks desktop-only</span></td>
-        </tr>
-        <tr>
-          <td>Starting price (AUD)</td>
-          <td><span class="check">✓</span> A$29.99/mo</td>
-          <td><span class="cross">✗</span> A$89/mo+</td>
+          <td>Client app</td>
+          <td><span class="check">✓</span> Always free</td>
+          <td><span class="partial">Paid or limited</span></td>
+          <td><span class="partial">Paid or limited</span></td>
         </tr>
       </tbody>
     </table>
@@ -1180,7 +1230,7 @@
       <div style="background: var(--off-white); border-radius: 14px; padding: 24px; border: 1px solid var(--border); text-align: center; opacity: 0.8;">
         <img src="logo_nutrition.png" alt="Totality Nutrition" style="width: 80px; height: auto; margin: 0 auto 16px; display: block;" />
         <h3 style="font-weight: 700; font-size: 1rem; margin-bottom: 6px;">Totality Nutrition</h3>
-        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Standalone food tracking for Australians. Free to use, built for the long haul.</p>
+        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Standalone food tracking, free to use, built for the long haul.</p>
         <span style="display: inline-block; margin-top: 12px; font-size: 0.75rem; font-weight: 700; color: var(--muted); background: var(--border); padding: 3px 10px; border-radius: 999px;">Coming soon</span>
       </div>
 
@@ -1217,4 +1267,3 @@
 
 </body>
 </html>
-
