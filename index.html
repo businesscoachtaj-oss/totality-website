@@ -198,6 +198,7 @@
   .stat { text-align: center; }
   .stat-number { font-size: 2rem; font-weight: 800; color: var(--orange); letter-spacing: -0.02em; }
   .stat-label { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+  .stat-footnote { font-size: 0.68rem; color: var(--muted); margin-top: 4px; opacity: 0.85; }
 
   /* SECTION SHARED */
   .section { padding: 80px 24px; }
@@ -621,6 +622,15 @@
     text-align: center;
   }
 
+  .fee-footnote {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
   /* CLIENT FREE */
   .client-free {
     background: var(--purple-tint);
@@ -837,8 +847,9 @@
     <div class="stat-label">Exercises in the library</div>
   </div>
   <div class="stat">
-    <div class="stat-number">$0</div>
-    <div class="stat-label">Platform cut on your revenue</div>
+    <div class="stat-number">0%</div>
+    <div class="stat-label">Commission on your coaching revenue</div>
+    <div class="stat-footnote">A small processing fee applies to in-app payments — see pricing</div>
   </div>
   <div class="stat">
     <div class="stat-number">A$29</div>
@@ -921,7 +932,7 @@
         <div class="feature-icon">💳</div>
         <div>
           <h3>Billing & Payments</h3>
-          <p>Charge members, sell packages and manage subscriptions. Trainer payouts go directly to their bank. Totality takes zero cut of client revenue — ever.</p>
+          <p>Charge members, sell packages and manage subscriptions. Trainer payouts go directly to their bank. Totality takes zero commission on your coaching revenue — a small processing fee applies to cover payment costs, shown transparently on every payout.</p>
         </div>
       </div>
       <div class="feature-block">
@@ -1053,7 +1064,7 @@
       <div class="why-card">
         <div class="why-card-icon">💰</div>
         <h3>They take a cut of your revenue. We don't.</h3>
-        <p>Some platforms charge a percentage commission on client payments on top of monthly fees — sometimes up to 20%. Every dollar your clients spend with you goes to you. Totality charges a flat monthly fee — nothing else, ever.</p>
+        <p>Some platforms charge a percentage commission on client payments on top of monthly fees — sometimes up to 20%. Totality charges a flat monthly fee, with no commission on your coaching revenue, ever. A small processing fee applies to in-app payments to cover payment processing costs — not a cut of your service fees, just what it costs to move the money.</p>
       </div>
       <div class="why-card">
         <div class="why-card-icon">🔒</div>
@@ -1201,8 +1212,8 @@
             <td><span class="cross">✗</span> Not available</td>
           </tr>
           <tr>
-            <td>Platform cut on client revenue</td>
-            <td><span class="check">✓</span> Zero</td>
+            <td>Commission on coaching revenue</td>
+            <td><span class="check">✓</span> Zero — small processing fee applies to in-app payments</td>
             <td><span class="cross">✗</span> Up to 20%</td>
             <td><span class="cross">✗</span> Percentage fees</td>
           </tr>
@@ -1359,9 +1370,9 @@
         </div>
       </div>
       <div class="compare-card">
-        <div class="compare-feature-name">Platform cut on client revenue</div>
+        <div class="compare-feature-name">Commission on coaching revenue</div>
         <div class="compare-row-grid">
-          <div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Zero</span></div>
+          <div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Zero + small processing fee</span></div>
           <div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">Up to 20%</span></div>
           <div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">% fees</span></div>
         </div>
@@ -1420,7 +1431,8 @@
           <li>Progress tracking + graphs</li>
           <li>Direct bank payouts via Stripe (add-on)</li>
         </ul>
-        <div class="addon-note">Stripe payments available as an add-on — $9.99/mo. Every sale, you keep 100%.</div>
+        <div class="addon-note">Stripe payments available as an add-on — $9.99/mo. Zero commission on your coaching revenue.</div>
+        <p class="fee-footnote">A 3.5% processing fee applies to in-app payments (POS and marketplace purchases) to cover payment processing costs. This is not a commission — it's what it costs to move the money, and it's clearly itemised on every payout.</p>
         <a href="https://totality-omega.vercel.app/" class="plan-cta">Get started free</a>
       </div>
 
@@ -1445,6 +1457,7 @@
           <li>Marketplace + POS included</li>
           <li>Revenue + MRR reporting</li>
         </ul>
+        <p class="fee-footnote">A 3.5% processing fee applies to in-app payments (member billing, POS, marketplace) to cover payment processing costs. Not a commission on your revenue — clearly itemised on every payout.</p>
         <a href="https://totality-omega.vercel.app/" class="plan-cta">Get started free</a>
       </div>
 
@@ -1460,6 +1473,7 @@
           <li>Multi-location support</li>
           <li>Priority onboarding support</li>
         </ul>
+        <p class="fee-footnote">Same 3.5% processing fee on in-app payments as Studio — see above.</p>
         <a href="https://totality-omega.vercel.app/" class="plan-cta">Get started free</a>
       </div>
 
@@ -1511,7 +1525,7 @@
 
       <details>
         <summary>How does billing work for gym members? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Gym member billing runs through your own Stripe account — money goes directly from your member to your bank account. You can set up recurring memberships, one-off charges, PT packages and marketplace products. Totality takes zero cut of any member payments. You pay a flat monthly subscription and that's it. Stripe is included from day one on Studio and Enterprise; solo coaches can add it for $9.99/mo whenever they're ready to take payments through the app.</p>
+        <p class="faq-body">Gym member billing runs through your own Stripe account — money goes directly from your member to your bank account. You can set up recurring memberships, one-off charges, PT packages and marketplace products. Totality charges zero commission on any member payments — you pay a flat monthly subscription and that's it. A small processing fee of 3.5% applies to in-app payments (POS, marketplace, and member billing) to cover the cost of moving money through the payment system — this is a processing cost, not a cut of your revenue, and it's itemised clearly on every payout so there's never a surprise. Stripe is included from day one on Studio and Enterprise; solo coaches can add it for $9.99/mo whenever they're ready to take payments through the app.</p>
       </details>
 
       <details>
@@ -1537,6 +1551,11 @@
       <details>
         <summary>I run a large gym with multiple locations. Can Totality handle that? <span class="faq-icon">+</span></summary>
         <p class="faq-body">Yes. The Enterprise plan supports unlimited trainers, up to 5,000 active clients and multiple locations. For groups above that, contact us for a custom quote — we scale pricing per client tier and offer dedicated account management.</p>
+      </details>
+
+      <details>
+        <summary>Is the processing fee the same as commission? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">No, and this distinction matters. Commission is a cut of your service revenue — some platforms take up to 20% of what you charge your clients, on top of a monthly fee. Totality never does that. The 3.5% processing fee only applies to in-app payments (POS charges and marketplace purchases) and covers the real cost of moving money through the payment system — the same category of cost every payment processor charges. It's itemised clearly on every payout so you always know exactly what you're paying and why.</p>
       </details>
 
     </div>
