@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Calorie & Macro Calculator — Totality 360</title>
+<meta name="description" content="Calculate your daily calorie needs and macro targets for free. The same calculator used inside the Totality coaching platform.">
+<style>
+  :root {
+    --orange: #ED8008;
+    --orange-dark: #C46800;
+    --white: #FFFFFF;
+    --off-white: #F7F7F7;
+    --dark: #272626;
+    --muted: #A0A0A0;
+    --border: #E8E8E8;
+    --purple: #6C3483;
+    --purple-tint: #F0E6F6;
+    --success: #2ECC71;
+    --error: #E74C3C;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--off-white);
+    color: var(--dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  nav {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-brand { font-size: 0.75rem; font-weight: 800; color: var(--dark); letter-spacing: 0.12em; text-transform: uppercase; }
+  .nav-back { font-size: 0.85rem; color: var(--muted); font-weight: 500; }
+  .nav-back:hover { color: var(--dark); }
+
+  .hero {
+    background: var(--white);
+    text-align: center;
+    padding: 48px 24px 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--purple-tint);
+    color: var(--purple);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .hero h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .hero h1 em { font-style: normal; color: var(--orange); }
+  .hero p { color: var(--muted); font-size: 0.95rem; max-width: 420px; margin: 10px auto 0; }
+
+  .form-wrap { max-width: 560px; margin: 0 auto; padding: 28px 16px 64px; }
+
+  .card {
+    background: var(--white);
+    border-radius: 18px;
+    padding: 28px 24px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    margin-bottom: 14px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-num {
+    width: 26px; height: 26px;
+    border-radius: 8px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 0.78rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .field { margin-bottom: 20px; }
+  .field:last-child { margin-bottom: 0; }
+
+  .field-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .field-label span { color: var(--orange); margin-left: 2px; }
+
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: var(--dark);
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.15s;
+    -webkit-appearance: none;
+  }
+
+  input:focus { border-color: var(--orange); }
+
+  .input-row { display: flex; gap: 10px; }
+  .input-row .input-group { flex: 1; }
+  .input-row label { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .input-row input { text-align: center; }
+
+  /* Toggle buttons */
+  .toggle-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .toggle-btn {
+    flex: 1;
+    min-width: 70px;
+    padding: 11px 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.3;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .toggle-btn:hover { border-color: var(--orange); color: var(--orange); }
+  .toggle-btn.active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+
+  /* Chips */
+  .chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .chip {
+    padding: 8px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .chip:hover { border-color: var(--orange); color: var(--orange); }
+  .chip.active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+
+  /* Radio (email / coach) */
+  .radio-group { display: flex; gap: 10px; }
+  .radio-option { flex: 1; position: relative; }
+  .radio-option input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+  .radio-label {
+    display: block;
+    padding: 13px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: var(--muted);
+    background: var(--white);
+  }
+  .radio-option input[type="radio"]:checked + .radio-label {
+    border-color: var(--orange);
+    color: var(--orange);
+    background: rgba(237,128,8,0.06);
+  }
+
+  /* Error */
+  .field-error { font-size: 0.78rem; color: var(--error); margin-top: 6px; display: none; }
+
+  /* Submit */
+  .btn-submit {
+    width: 100%;
+    padding: 16px;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 4px;
+    box-shadow: 0 4px 16px rgba(237,128,8,0.25);
+  }
+
+  .btn-submit:hover { background: var(--orange-dark); transform: translateY(-1px); }
+  .btn-submit:disabled { background: var(--muted); cursor: not-allowed; transform: none; box-shadow: none; }
+
+  /* Results */
+  #results { display: none; margin-top: 8px; }
+
+  .results-header { text-align: center; padding: 20px 0 12px; }
+  .results-header h2 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
+  .results-header p { color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+
+  /* TDEE three-tile row */
+  .tdee-row { display: flex; gap: 10px; margin-bottom: 14px; }
+
+  .tdee-tile {
+    flex: 1;
+    background: var(--off-white);
+    border-radius: 14px;
+    padding: 16px 10px;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+
+  .tdee-tile.main {
+    flex: 1.4;
+    background: var(--dark);
+    border-color: var(--dark);
+  }
+
+  .tdee-tile-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .tdee-tile.main .tdee-tile-label { color: rgba(255,255,255,0.6); }
+
+  .tdee-tile-value { font-size: 1.7rem; font-weight: 800; color: var(--dark); letter-spacing: -0.02em; }
+  .tdee-tile.main .tdee-tile-value { font-size: 2rem; color: var(--white); }
+  .tdee-tile.target .tdee-tile-value { color: var(--orange); }
+
+  .tdee-tile-unit { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+  .tdee-tile.main .tdee-tile-unit { color: rgba(255,255,255,0.5); }
+
+  /* Macro row */
+  .macro-row {
+    display: flex;
+    background: var(--off-white);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin-bottom: 14px;
+  }
+
+  .macro-tile { flex: 1; padding: 14px 8px; text-align: center; }
+  .macro-divider { width: 1px; background: var(--border); margin: 10px 0; }
+
+  .macro-tile-value { font-size: 1.4rem; font-weight: 800; color: var(--orange); margin-bottom: 2px; }
+  .macro-tile-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 2px; }
+  .macro-tile-sub { font-size: 0.7rem; color: var(--muted); }
+
+  /* CTA */
+  .result-cta {
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .result-cta.coach { background: var(--purple-tint); border: 1px solid #D7BDE2; }
+  .result-cta.client { background: rgba(237,128,8,0.06); border: 1px solid rgba(237,128,8,0.2); }
+
+  .result-cta h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+  .result-cta p { font-size: 0.85rem; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+
+  .btn-cta {
+    display: inline-block;
+    padding: 13px 26px;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.92rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(237,128,8,0.3);
+    transition: background 0.15s;
+  }
+
+  .btn-cta:hover { background: var(--orange-dark); }
+  .result-cta.coach .btn-cta { background: var(--purple); box-shadow: 0 4px 14px rgba(108,52,131,0.3); }
+  .result-cta.coach .btn-cta:hover { background: #5b2c6f; }
+
+  .disclaimer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.75rem;
+    line-height: 1.6;
+    padding: 0 0 8px;
+  }
+
+  .disclaimer a { color: var(--orange); }
+
+  footer {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  footer a { color: var(--orange); }
+
+  @media (max-width: 480px) {
+    .hero { padding: 40px 16px 28px; }
+    .card { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">TOTALITY 360 PTY LTD</span>
+  <a href="index.html" class="nav-back">← Back</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">Free tool — no catch</div>
+  <h1>Your <em>free</em> calorie &<br>macro calculator</h1>
+  <p>The same calculator used inside Totality. Get your personalised TDEE and macro targets in seconds.</p>
+</div>
+
+<div class="form-wrap">
+
+  <!-- CARD 1: Lead capture -->
+  <div class="card">
+    <div class="card-title"><div class="card-num">1</div> About you</div>
+
+    <div class="field">
+      <label class="field-label">Email address <span>*</span></label>
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+      <div class="field-error" id="email-error">Please enter a valid email address.</div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Are you a gym owner or personal trainer? <span>*</span></label>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" name="is_coach" id="coach-yes" value="yes" onchange="toggleCoachType()" />
+          <label class="radio-label" for="coach-yes">Yes</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="is_coach" id="coach-no" value="no" onchange="toggleCoachType()" />
+          <label class="radio-label" for="coach-no">No</label>
+        </div>
+      </div>
+      <div class="field-error" id="coach-error">Please select an option.</div>
+    </div>
+
+    <div class="field" id="coach-type-field" style="display: none;">
+      <label class="field-label">Which are you? <span>*</span></label>
+      <div class="toggle-row" id="coach-type-toggle">
+        <div class="toggle-btn" data-value="gym_owner" onclick="selectToggle('coach_type', this)">Gym Owner</div>
+        <div class="toggle-btn" data-value="coach" onclick="selectToggle('coach_type', this)">Coach</div>
+      </div>
+      <div class="field-error" id="coach-type-error">Please select an option.</div>
+    </div>
+  </div>
+
+  <!-- CARD 2: Stats -->
+  <div class="card">
+    <div class="card-title"><div class="card-num">2</div> Your stats</div>
+
+    <div class="field">
+      <label class="field-label">Biological sex <span>*</span></label>
+      <div class="toggle-row" id="sex-toggle">
+        <div class="toggle-btn active" data-value="male" onclick="selectToggle('sex', this)">Male</div>
+        <div class="toggle-btn" data-value="female" onclick="selectToggle('sex', this)">Female</div>
+      </div>
+      <div class="field-error" id="sex-error">Please select an option.</div>
+    </div>
+
+    <div class="field">
+      <div class="input-row">
+        <div class="input-group">
+          <label>Weight (kg)</label>
+          <input type="number" id="weight" placeholder="e.g. 80" min="30" max="300" step="0.1" />
+        </div>
+        <div class="input-group">
+          <label>Height (cm)</label>
+          <input type="number" id="height" placeholder="e.g. 175" min="100" max="250" />
+        </div>
+        <div class="input-group">
+          <label>Age</label>
+          <input type="number" id="age" placeholder="e.g. 28" min="15" max="99" />
+        </div>
+      </div>
+      <div class="field-error" id="stats-error">Please enter valid weight, height and age.</div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Gym sessions per week <span>*</span></label>
+      <div class="chip-row" id="sessions-chips">
+        <div class="chip" data-value="0" onclick="selectChip('sessions', this)">0</div>
+        <div class="chip" data-value="1" onclick="selectChip('sessions', this)">1</div>
+        <div class="chip" data-value="2" onclick="selectChip('sessions', this)">2</div>
+        <div class="chip" data-value="3" onclick="selectChip('sessions', this)">3</div>
+        <div class="chip" data-value="4" onclick="selectChip('sessions', this)">4</div>
+        <div class="chip" data-value="5" onclick="selectChip('sessions', this)">5</div>
+        <div class="chip" data-value="6" onclick="selectChip('sessions', this)">6</div>
+        <div class="chip" data-value="7" onclick="selectChip('sessions', this)">7</div>
+      </div>
+      <div class="field-error" id="sessions-error">Please select your gym sessions per week.</div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Daily steps <span>*</span></label>
+      <div class="chip-row" id="steps-chips">
+        <div class="chip" data-value="under5k" onclick="selectChip('steps', this)">Under 5k</div>
+        <div class="chip" data-value="5to10k" onclick="selectChip('steps', this)">5–10k</div>
+        <div class="chip" data-value="10to20k" onclick="selectChip('steps', this)">10–20k</div>
+        <div class="chip" data-value="over20k" onclick="selectChip('steps', this)">20k+</div>
+      </div>
+      <div class="field-error" id="steps-error">Please select your daily steps.</div>
+    </div>
+  </div>
+
+  <!-- CARD 3: Goal + Pace -->
+  <div class="card">
+    <div class="card-title"><div class="card-num">3</div> Your goal</div>
+
+    <div class="field">
+      <label class="field-label">Goal <span>*</span></label>
+      <div class="toggle-row" id="goal-toggle">
+        <div class="toggle-btn" data-value="fat_loss" onclick="selectToggle('goal', this); togglePace()">Fat Loss</div>
+        <div class="toggle-btn" data-value="maintain" onclick="selectToggle('goal', this); togglePace()">Maintain</div>
+        <div class="toggle-btn" data-value="muscle_gain" onclick="selectToggle('goal', this); togglePace()">Muscle Gain</div>
+      </div>
+      <div class="field-error" id="goal-error">Please select a goal.</div>
+    </div>
+
+    <div class="field" id="pace-field" style="display: none;">
+      <label class="field-label" id="pace-label">Pace <span>*</span></label>
+      <div class="toggle-row" id="pace-toggle">
+        <div class="toggle-btn" data-value="slow" id="pace-slow" onclick="selectToggle('pace', this)">Slow</div>
+        <div class="toggle-btn" data-value="standard" id="pace-standard" onclick="selectToggle('pace', this)">Standard</div>
+        <div class="toggle-btn" data-value="fast" id="pace-fast" onclick="selectToggle('pace', this)">Fast</div>
+      </div>
+      <div class="field-error" id="pace-error">Please select a pace.</div>
+    </div>
+  </div>
+
+  <button class="btn-submit" id="calc-btn" onclick="calculate()">Calculate my calories →</button>
+
+  <!-- RESULTS -->
+  <div id="results">
+
+    <div class="results-header">
+      <h2>Your results</h2>
+      <p>Mifflin-St Jeor formula · personalised to you</p>
+    </div>
+
+    <div class="card" style="padding: 20px;">
+      <div class="tdee-row">
+        <div class="tdee-tile">
+          <div class="tdee-tile-label">BMR</div>
+          <div class="tdee-tile-value" id="res-bmr">—</div>
+          <div class="tdee-tile-unit">kcal</div>
+        </div>
+        <div class="tdee-tile main">
+          <div class="tdee-tile-label">TDEE</div>
+          <div class="tdee-tile-value" id="res-tdee">—</div>
+          <div class="tdee-tile-unit">kcal / day</div>
+        </div>
+        <div class="tdee-tile target">
+          <div class="tdee-tile-label">Target</div>
+          <div class="tdee-tile-value" id="res-target">—</div>
+          <div class="tdee-tile-unit">kcal</div>
+        </div>
+      </div>
+
+      <label class="field-label" style="margin-bottom: 10px;">Recommended macros</label>
+      <div class="macro-row">
+        <div class="macro-tile">
+          <div class="macro-tile-value" id="res-protein">—</div>
+          <div class="macro-tile-label">Protein</div>
+          <div class="macro-tile-sub" id="res-protein-kcal">—</div>
+        </div>
+        <div class="macro-divider"></div>
+        <div class="macro-tile">
+          <div class="macro-tile-value" id="res-carbs">—</div>
+          <div class="macro-tile-label">Carbs</div>
+          <div class="macro-tile-sub" id="res-carbs-kcal">—</div>
+        </div>
+        <div class="macro-divider"></div>
+        <div class="macro-tile">
+          <div class="macro-tile-value" id="res-fat">—</div>
+          <div class="macro-tile-label">Fat</div>
+          <div class="macro-tile-sub" id="res-fat-kcal">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-cta coach" id="cta-coach" style="display: none;">
+      <h3>Set this automatically for every client.</h3>
+      <p>Totality lets you set macro targets per client, track their food logs and review nutrition trends — all in one platform. No spreadsheets. No extra apps.</p>
+      <a href="https://totality-omega.vercel.app/" class="btn-cta">Start free — see it in action →</a>
+    </div>
+
+    <div class="result-cta client" id="cta-client" style="display: none;">
+      <h3>Your trainer could track all of this for you automatically.</h3>
+      <p>With Totality, your coach sets your macro targets, reviews your food logs and adjusts your nutrition as you progress. The client app is always free.</p>
+      <a href="https://totality-omega.vercel.app/" class="btn-cta">Get started free →</a>
+    </div>
+
+    <p class="disclaimer">
+      These are estimates based on the Mifflin-St Jeor formula and are for general guidance only.
+      Individual needs vary. Always consult a qualified professional for personalised advice.<br><br>
+      By using this calculator you agree to receive occasional emails from Totality 360.
+      We never share your data. <a href="privacy.html">Privacy policy</a>.
+    </p>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Totality 360 Pty Ltd &nbsp;·&nbsp; <a href="index.html">Back to website</a>
+</footer>
+
+<script>
+  // State
+  const state = {
+    sex: 'male',
+    sessions: null,
+    steps: null,
+    goal: null,
+    pace: null,
+    coach_type: null,
+  };
+
+  function toggleCoachType() {
+    const coach = document.querySelector('input[name="is_coach"]:checked');
+    const field = document.getElementById('coach-type-field');
+    if (coach && coach.value === 'yes') {
+      field.style.display = 'block';
+    } else {
+      field.style.display = 'none';
+      state.coach_type = null;
+      field.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+    }
+  }
+
+  function selectToggle(group, el) {
+    const container = el.parentElement;
+    container.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+    state[group] = el.dataset.value;
+  }
+
+  function selectChip(group, el) {
+    const container = el.parentElement;
+    container.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+    state[group] = el.dataset.value;
+  }
+
+  function togglePace() {
+    const goal = state.goal;
+    const paceField = document.getElementById('pace-field');
+    const slowBtn = document.getElementById('pace-slow');
+    const standardBtn = document.getElementById('pace-standard');
+    const fastBtn = document.getElementById('pace-fast');
+
+    if (goal === 'maintain') {
+      paceField.style.display = 'none';
+      state.pace = null;
+    } else {
+      paceField.style.display = 'block';
+      if (goal === 'fat_loss') {
+        slowBtn.innerHTML = 'Slow<br>(−250)';
+        standardBtn.innerHTML = 'Standard<br>(−500)';
+        fastBtn.innerHTML = 'Fast<br>(−750)';
+      } else {
+        slowBtn.innerHTML = 'Slow<br>(+150)';
+        standardBtn.innerHTML = 'Standard<br>(+300)';
+        fastBtn.innerHTML = 'Fast<br>(+500)';
+      }
+    }
+  }
+
+  function validate() {
+    let valid = true;
+
+    const email = document.getElementById('email').value.trim();
+    const emailErr = document.getElementById('email-error');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      emailErr.style.display = 'block'; valid = false;
+    } else { emailErr.style.display = 'none'; }
+
+    const coach = document.querySelector('input[name="is_coach"]:checked');
+    const coachErr = document.getElementById('coach-error');
+    if (!coach) { coachErr.style.display = 'block'; valid = false; }
+    else { coachErr.style.display = 'none'; }
+
+    const coachTypeErr = document.getElementById('coach-type-error');
+    if (coach && coach.value === 'yes' && !state.coach_type) {
+      coachTypeErr.style.display = 'block'; valid = false;
+    } else { coachTypeErr.style.display = 'none'; }
+
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value);
+    const age = parseInt(document.getElementById('age').value);
+    const statsErr = document.getElementById('stats-error');
+    if (!weight || !height || !age || weight < 30 || height < 100 || age < 15) {
+      statsErr.style.display = 'block'; valid = false;
+    } else { statsErr.style.display = 'none'; }
+
+    const sessionsErr = document.getElementById('sessions-error');
+    if (state.sessions === null) { sessionsErr.style.display = 'block'; valid = false; }
+    else { sessionsErr.style.display = 'none'; }
+
+    const stepsErr = document.getElementById('steps-error');
+    if (!state.steps) { stepsErr.style.display = 'block'; valid = false; }
+    else { stepsErr.style.display = 'none'; }
+
+    const goalErr = document.getElementById('goal-error');
+    if (!state.goal) { goalErr.style.display = 'block'; valid = false; }
+    else { goalErr.style.display = 'none'; }
+
+    const paceErr = document.getElementById('pace-error');
+    if (state.goal !== 'maintain' && !state.pace) {
+      paceErr.style.display = 'block'; valid = false;
+    } else { paceErr.style.display = 'none'; }
+
+    return valid;
+  }
+
+  function calculate() {
+    if (!validate()) return;
+
+    const email = document.getElementById('email').value.trim();
+    const isCoach = document.querySelector('input[name="is_coach"]:checked').value;
+    const weightKg = parseFloat(document.getElementById('weight').value);
+    const heightCm = parseFloat(document.getElementById('height').value);
+    const age = parseInt(document.getElementById('age').value);
+
+    // BMR — Mifflin-St Jeor
+    let bmr;
+    if (state.sex === 'male') {
+      bmr = 10 * weightKg + 6.25 * heightCm - 5 * age + 5;
+    } else {
+      bmr = 10 * weightKg + 6.25 * heightCm - 5 * age - 161;
+    }
+
+    // Activity multiplier — exact same logic as app
+    const gymSessions = parseInt(state.sessions) || 0;
+
+    const neatMultiplier =
+      state.steps === 'under5k' ? 0.0 :
+      state.steps === '5to10k' ? 0.1 :
+      state.steps === '10to20k' ? 0.2 : 0.3;
+
+    const exerciseMultiplier =
+      gymSessions === 0 ? 0.0 :
+      gymSessions <= 2 ? 0.1 :
+      gymSessions <= 4 ? 0.2 :
+      gymSessions <= 5 ? 0.3 : 0.4;
+
+    const activityMultiplier = 1.2 + exerciseMultiplier + neatMultiplier;
+    const tdee = Math.round(bmr * activityMultiplier);
+
+    // Pace adjustment
+    const paceAdjustment =
+      state.goal === 'fat_loss' ? (
+        state.pace === 'slow' ? -250 :
+        state.pace === 'standard' ? -500 : -750
+      ) :
+      state.goal === 'muscle_gain' ? (
+        state.pace === 'slow' ? 150 :
+        state.pace === 'standard' ? 300 : 500
+      ) : 0;
+
+    const targetCalories = Math.max(1200, tdee + paceAdjustment);
+
+    // Macros — exact same logic as app
+    const proteinPerKg =
+      state.goal === 'fat_loss' ? 2.2 :
+      state.goal === 'muscle_gain' ? 2.0 : 1.8;
+
+    const proteinG = Math.round(weightKg * proteinPerKg);
+    const proteinCals = proteinG * 4;
+    const fatCals = Math.round(targetCalories * 0.25);
+    const fatG = Math.round(fatCals / 9);
+    const carbsCals = targetCalories - proteinCals - fatCals;
+    const carbsG = Math.max(0, Math.round(carbsCals / 4));
+
+    // Update UI
+    document.getElementById('res-bmr').textContent = Math.round(bmr).toLocaleString();
+    document.getElementById('res-tdee').textContent = tdee.toLocaleString();
+    document.getElementById('res-target').textContent = targetCalories.toLocaleString();
+    document.getElementById('res-protein').textContent = proteinG + 'g';
+    document.getElementById('res-carbs').textContent = carbsG + 'g';
+    document.getElementById('res-fat').textContent = fatG + 'g';
+    document.getElementById('res-protein-kcal').textContent = (proteinG * 4) + ' kcal';
+    document.getElementById('res-carbs-kcal').textContent = (carbsG * 4) + ' kcal';
+    document.getElementById('res-fat-kcal').textContent = (fatG * 9) + ' kcal';
+
+    // CTA
+    if (isCoach === 'yes') {
+      document.getElementById('cta-coach').style.display = 'block';
+      document.getElementById('cta-client').style.display = 'none';
+    } else {
+      document.getElementById('cta-coach').style.display = 'none';
+      document.getElementById('cta-client').style.display = 'block';
+    }
+
+    // Show results
+    document.getElementById('results').style.display = 'block';
+
+    // Send lead to Formspree
+    const coachTypeLabel = state.coach_type === 'gym_owner' ? 'Gym Owner' : state.coach_type === 'coach' ? 'Coach / PT' : '';
+    const subjectTag = isCoach === 'yes'
+      ? (state.coach_type === 'gym_owner' ? '🏢 GYM OWNER' : '🏋️ COACH/PT')
+      : '👤 General';
+
+    fetch('https://formspree.io/f/mjgqyqdj', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        is_coach: isCoach === 'yes' ? 'Yes — gym owner / PT' : 'No — general user',
+        coach_type: coachTypeLabel,
+        goal: state.goal,
+        tdee,
+        target_calories: targetCalories,
+        protein_g: proteinG,
+        carbs_g: carbsG,
+        fat_g: fatG,
+        _subject: `New calculator lead — ${subjectTag}: ${email}`
+      })
+    }).catch(() => {});
+
+    // Scroll to results
+    setTimeout(() => {
+      document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+
+    // Lock button
+    const btn = document.getElementById('calc-btn');
+    btn.textContent = '✓ Results calculated';
+    btn.disabled = true;
+  }
+</script>
+
+</body>
+</html>
