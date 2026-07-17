@@ -377,15 +377,24 @@
       <label class="field-label">Are you a gym owner or personal trainer? <span>*</span></label>
       <div class="radio-group">
         <div class="radio-option">
-          <input type="radio" name="is_coach" id="coach-yes" value="yes" />
+          <input type="radio" name="is_coach" id="coach-yes" value="yes" onchange="toggleCoachType()" />
           <label class="radio-label" for="coach-yes">Yes</label>
         </div>
         <div class="radio-option">
-          <input type="radio" name="is_coach" id="coach-no" value="no" />
+          <input type="radio" name="is_coach" id="coach-no" value="no" onchange="toggleCoachType()" />
           <label class="radio-label" for="coach-no">No</label>
         </div>
       </div>
       <div class="field-error" id="coach-error">Please select an option.</div>
+    </div>
+
+    <div class="field" id="coach-type-field" style="display: none;">
+      <label class="field-label">Which are you? <span>*</span></label>
+      <div class="toggle-row" id="coach-type-toggle">
+        <div class="toggle-btn" data-value="gym_owner" onclick="selectToggle('coach_type', this)">Gym Owner</div>
+        <div class="toggle-btn" data-value="coach" onclick="selectToggle('coach_type', this)">Coach</div>
+      </div>
+      <div class="field-error" id="coach-type-error">Please select an option.</div>
     </div>
   </div>
 
@@ -557,198 +566,15 @@
     steps: null,
     goal: null,
     pace: null,
+    coach_type: null,
   };
 
-  function selectToggle(group, el) {
-    const container = el.parentElement;
-    container.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
-    el.classList.add('active');
-    state[group] = el.dataset.value;
-  }
-
-  function selectChip(group, el) {
-    const container = el.parentElement;
-    container.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-    el.classList.add('active');
-    state[group] = el.dataset.value;
-  }
-
-  function togglePace() {
-    const goal = state.goal;
-    const paceField = document.getElementById('pace-field');
-    const slowBtn = document.getElementById('pace-slow');
-    const standardBtn = document.getElementById('pace-standard');
-    const fastBtn = document.getElementById('pace-fast');
-
-    if (goal === 'maintain') {
-      paceField.style.display = 'none';
-      state.pace = null;
-    } else {
-      paceField.style.display = 'block';
-      if (goal === 'fat_loss') {
-        slowBtn.textContent = 'Slow (−250)';
-        standardBtn.textContent = 'Standard (−500)';
-        fastBtn.textContent = 'Fast (−750)';
-      } else {
-        slowBtn.textContent = 'Slow (+150)';
-        standardBtn.textContent = 'Standard (+300)';
-        fastBtn.textContent = 'Fast (+500)';
-      }
-    }
-  }
-
-  function validate() {
-    let valid = true;
-
-    const email = document.getElementById('email').value.trim();
-    const emailErr = document.getElementById('email-error');
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      emailErr.style.display = 'block'; valid = false;
-    } else { emailErr.style.display = 'none'; }
-
+  function toggleCoachType() {
     const coach = document.querySelector('input[name="is_coach"]:checked');
-    const coachErr = document.getElementById('coach-error');
-    if (!coach) { coachErr.style.display = 'block'; valid = false; }
-    else { coachErr.style.display = 'none'; }
-
-    const weight = parseFloat(document.getElementById('weight').value);
-    const height = parseFloat(document.getElementById('height').value);
-    const age = parseInt(document.getElementById('age').value);
-    const statsErr = document.getElementById('stats-error');
-    if (!weight || !height || !age || weight < 30 || height < 100 || age < 15) {
-      statsErr.style.display = 'block'; valid = false;
-    } else { statsErr.style.display = 'none'; }
-
-    const sessionsErr = document.getElementById('sessions-error');
-    if (state.sessions === null) { sessionsErr.style.display = 'block'; valid = false; }
-    else { sessionsErr.style.display = 'none'; }
-
-    const stepsErr = document.getElementById('steps-error');
-    if (!state.steps) { stepsErr.style.display = 'block'; valid = false; }
-    else { stepsErr.style.display = 'none'; }
-
-    const goalErr = document.getElementById('goal-error');
-    if (!state.goal) { goalErr.style.display = 'block'; valid = false; }
-    else { goalErr.style.display = 'none'; }
-
-    const paceErr = document.getElementById('pace-error');
-    if (state.goal !== 'maintain' && !state.pace) {
-      paceErr.style.display = 'block'; valid = false;
-    } else { paceErr.style.display = 'none'; }
-
-    return valid;
-  }
-
-  function calculate() {
-    if (!validate()) return;
-
-    const email = document.getElementById('email').value.trim();
-    const isCoach = document.querySelector('input[name="is_coach"]:checked').value;
-    const weightKg = parseFloat(document.getElementById('weight').value);
-    const heightCm = parseFloat(document.getElementById('height').value);
-    const age = parseInt(document.getElementById('age').value);
-
-    // BMR — Mifflin-St Jeor
-    let bmr;
-    if (state.sex === 'male') {
-      bmr = 10 * weightKg + 6.25 * heightCm - 5 * age + 5;
+    const field = document.getElementById('coach-type-field');
+    if (coach && coach.value === 'yes') {
+      field.style.display = 'block';
     } else {
-      bmr = 10 * weightKg + 6.25 * heightCm - 5 * age - 161;
-    }
-
-    // Activity multiplier — exact same logic as app
-    const gymSessions = parseInt(state.sessions) || 0;
-
-    const neatMultiplier =
-      state.steps === 'under5k' ? 0.0 :
-      state.steps === '5to10k' ? 0.1 :
-      state.steps === '10to20k' ? 0.2 : 0.3;
-
-    const exerciseMultiplier =
-      gymSessions === 0 ? 0.0 :
-      gymSessions <= 2 ? 0.1 :
-      gymSessions <= 4 ? 0.2 :
-      gymSessions <= 5 ? 0.3 : 0.4;
-
-    const activityMultiplier = 1.2 + exerciseMultiplier + neatMultiplier;
-    const tdee = Math.round(bmr * activityMultiplier);
-
-    // Pace adjustment
-    const paceAdjustment =
-      state.goal === 'fat_loss' ? (
-        state.pace === 'slow' ? -250 :
-        state.pace === 'standard' ? -500 : -750
-      ) :
-      state.goal === 'muscle_gain' ? (
-        state.pace === 'slow' ? 150 :
-        state.pace === 'standard' ? 300 : 500
-      ) : 0;
-
-    const targetCalories = Math.max(1200, tdee + paceAdjustment);
-
-    // Macros — exact same logic as app
-    const proteinPerKg =
-      state.goal === 'fat_loss' ? 2.2 :
-      state.goal === 'muscle_gain' ? 2.0 : 1.8;
-
-    const proteinG = Math.round(weightKg * proteinPerKg);
-    const proteinCals = proteinG * 4;
-    const fatCals = Math.round(targetCalories * 0.25);
-    const fatG = Math.round(fatCals / 9);
-    const carbsCals = targetCalories - proteinCals - fatCals;
-    const carbsG = Math.max(0, Math.round(carbsCals / 4));
-
-    // Update UI
-    document.getElementById('res-bmr').textContent = Math.round(bmr).toLocaleString();
-    document.getElementById('res-tdee').textContent = tdee.toLocaleString();
-    document.getElementById('res-target').textContent = targetCalories.toLocaleString();
-    document.getElementById('res-protein').textContent = proteinG + 'g';
-    document.getElementById('res-carbs').textContent = carbsG + 'g';
-    document.getElementById('res-fat').textContent = fatG + 'g';
-    document.getElementById('res-protein-kcal').textContent = (proteinG * 4) + ' kcal';
-    document.getElementById('res-carbs-kcal').textContent = (carbsG * 4) + ' kcal';
-    document.getElementById('res-fat-kcal').textContent = (fatG * 9) + ' kcal';
-
-    // CTA
-    if (isCoach === 'yes') {
-      document.getElementById('cta-coach').style.display = 'block';
-      document.getElementById('cta-client').style.display = 'none';
-    } else {
-      document.getElementById('cta-coach').style.display = 'none';
-      document.getElementById('cta-client').style.display = 'block';
-    }
-
-    // Show results
-    document.getElementById('results').style.display = 'block';
-
-    // Send lead to Formspree
-    fetch('https://formspree.io/f/mjgqyqdj', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        email,
-        is_coach: isCoach === 'yes' ? 'Yes — gym owner / PT' : 'No — general user',
-        goal: state.goal,
-        tdee,
-        target_calories: targetCalories,
-        protein_g: proteinG,
-        carbs_g: carbsG,
-        fat_g: fatG,
-        _subject: `New calculator lead — ${isCoach === 'yes' ? '🏋️ COACH/GYM' : '👤 General'}: ${email}`
-      })
-    }).catch(() => {});
-
-    // Scroll to results
-    setTimeout(() => {
-      document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 100);
-
-    // Lock button
-    const btn = document.getElementById('calc-btn');
-    btn.textContent = '✓ Results calculated';
-    btn.disabled = true;
-  }
-</script>
-
-</body>
-</html>
+      field.style.display = 'none';
+      state.coach_type = null;
+      field.querySelectorAl
