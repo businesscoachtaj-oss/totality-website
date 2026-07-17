@@ -44,10 +44,19 @@
     align-items: center;
   }
 
+  .logo-block {
+    width: 100%;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 28px 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
   .logo {
     width: 140px;
     height: auto;
-    margin-bottom: 20px;
   }
 
   .eyebrow {
@@ -139,7 +148,9 @@
 <body>
 
 <div class="wrap">
-  <img src="logo.png" alt="Totality" class="logo" onerror="this.style.display='none'" />
+  <div class="logo-block">
+    <img src="logo.png" alt="Totality" class="logo" onerror="this.style.display='none'" />
+  </div>
   <span class="eyebrow">Built for coaches. Built for business.</span>
   <p class="sub">All-in-one coaching &amp; gym management. Find us here 👇</p>
 
