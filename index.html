@@ -766,7 +766,13 @@
 
   @media (max-width: 480px) {
     .hero, .section, .loop, .client-free { padding: 56px 16px; }
-    .stats-bar { gap: 32px; }
+    .stats-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      text-align: center;
+    }
   }
 </style>
 </head>
@@ -807,21 +813,21 @@
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat">
-    <div class="stat-number">3</div>
-    <div class="stat-label">Connected roles in one platform</div>
+    <div class="stat-number">A$29</div>
+    <div class="stat-label">Starting price per month</div>
   </div>
   <div class="stat">
     <div class="stat-number">676+</div>
     <div class="stat-label">Exercises in the library</div>
   </div>
   <div class="stat">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Connected roles in one platform</div>
+  </div>
+  <div class="stat">
     <div class="stat-number">0%</div>
     <div class="stat-label">Commission on your coaching revenue</div>
     <div class="stat-footnote">A small processing fee applies to in-app payments — see pricing</div>
-  </div>
-  <div class="stat">
-    <div class="stat-number">A$29</div>
-    <div class="stat-label">Starting price per month</div>
   </div>
 </div>
 
