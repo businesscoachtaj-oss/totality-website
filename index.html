@@ -80,21 +80,23 @@
   .nav-cta {
     background: var(--orange) !important;
     color: var(--white) !important;
-    padding: 8px 20px;
+    padding: 7px 16px;
     border-radius: 999px;
     font-weight: 600 !important;
-    font-size: 0.88rem !important;
+    font-size: 0.82rem !important;
     transition: background 0.15s !important;
+    white-space: nowrap;
   }
   .nav-cta:hover { background: var(--orange-dark) !important; }
   .nav-cta-nutrition {
     background: var(--nutrition) !important;
     color: var(--white) !important;
-    padding: 8px 20px;
+    padding: 7px 16px;
     border-radius: 999px;
     font-weight: 600 !important;
-    font-size: 0.88rem !important;
+    font-size: 0.82rem !important;
     transition: background 0.15s !important;
+    white-space: nowrap;
   }
   .nav-cta-nutrition:hover { background: var(--nutrition-light) !important; }
 
@@ -488,49 +490,82 @@
   <div class="nutrition-strip-inner">
     <div>
       <span class="nutrition-strip-label">New — Totality Nutrition</span>
-      <h2>Standalone nutrition tracking, <em>built for Australians.</em></h2>
-      <p>Not everyone needs a full coaching platform. Totality Nutrition is a standalone food tracking app with an Australian food database, macro targets, barcode scanning, meal planning and progress tracking — starting at $8.99/mo.</p>
+      <h2>The nutrition app <em>built for Australians.</em></h2>
+      <p>Most food tracking apps have barely any Australian products. Totality Nutrition was built with an Australian-first food database, barcode scanning that actually works at Woolies, and every feature you need to hit your macros — without paying for a full coaching platform.</p>
+      <p style="margin-top: 12px; font-size: 0.9rem; color: var(--muted);">Log food, plan your meals for the week, generate a grocery list and share it straight to your phone. Track your weight with a rolling 7-day trend graph, log body measurements and upload progress photos. Everything in one app, from $8.99/mo.</p>
       <div class="nutrition-pills">
         <span class="nutrition-pill">🇦🇺 AU food database</span>
-        <span class="nutrition-pill">Barcode scanner</span>
-        <span class="nutrition-pill">Macro targets</span>
-        <span class="nutrition-pill">Meal plans</span>
-        <span class="nutrition-pill">Progress photos</span>
-        <span class="nutrition-pill">Body measurements</span>
-        <span class="nutrition-pill">Weight trend graph</span>
+        <span class="nutrition-pill">📷 Barcode scanner</span>
+        <span class="nutrition-pill">🎯 Macro targets</span>
+        <span class="nutrition-pill">📅 Meal planning</span>
+        <span class="nutrition-pill">⭐ Saved meals</span>
+        <span class="nutrition-pill">🛒 Grocery list + share</span>
+        <span class="nutrition-pill">📈 Weight trend graph</span>
+        <span class="nutrition-pill">📏 Body measurements</span>
+        <span class="nutrition-pill">📸 Progress photos</span>
+        <span class="nutrition-pill">💧 Hydration tracking</span>
+        <span class="nutrition-pill">🧮 Calorie calculator</span>
+        <span class="nutrition-pill">🥦 Fibre tracking</span>
       </div>
       <a href="https://dist-three-mu-41.vercel.app" class="nutrition-strip-cta">
         Try Totality Nutrition free →
       </a>
       <span class="nutrition-price-note">Free trial · From $8.99/mo · No card required</span>
     </div>
-    <div style="background: var(--nutrition); border-radius: 20px; padding: 32px; color: var(--white);">
-      <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; margin-bottom: 20px;">Totality Nutrition</div>
-      <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 0.75rem; opacity: 0.7; margin-bottom: 4px;">Today's calories</div>
-          <div style="font-size: 1.6rem; font-weight: 800;">1,847 <span style="font-size: 0.9rem; font-weight: 500; opacity: 0.7;">/ 2,100</span></div>
+    <div style="background: #F3F4F6; border-radius: 20px; padding: 24px; color: var(--dark); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+      <!-- Header -->
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+        <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--nutrition); opacity: 0.2; border: 2px solid var(--nutrition);"></div>
+        <span style="font-size: 1rem; font-weight: 700; color: var(--dark);">Dashboard</span>
+      </div>
+      <!-- Greeting -->
+      <div style="margin-bottom: 16px;">
+        <div style="font-size: 1.2rem; font-weight: 800; color: var(--dark);">Good afternoon, Alex</div>
+        <div style="font-size: 0.8rem; color: var(--muted); margin-top: 2px;">Wednesday 19 Aug</div>
+      </div>
+      <!-- Nutrition card -->
+      <div style="background: var(--white); border-radius: 14px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <span style="font-size: 0.9rem; font-weight: 700;">Today's Nutrition</span>
+          <span style="font-size: 0.75rem; color: var(--nutrition); font-weight: 600;">Log food →</span>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
-          <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; text-align: center;">
-            <div style="font-size: 0.7rem; opacity: 0.7; margin-bottom: 4px;">Protein</div>
-            <div style="font-size: 1.1rem; font-weight: 800; color: #F1948A;">142g</div>
+        <div style="font-size: 2rem; font-weight: 800; color: var(--dark);">853 <span style="font-size: 0.9rem; font-weight: 500; color: var(--muted);">/ 2311 cal</span></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 12px;">
+          <div style="background: #F3F4F6; border-radius: 8px; padding: 10px; text-align: center;">
+            <div style="font-size: 1rem; font-weight: 800; color: var(--nutrition);">60g</div>
+            <div style="font-size: 0.7rem; color: var(--muted);">protein</div>
           </div>
-          <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; text-align: center;">
-            <div style="font-size: 0.7rem; opacity: 0.7; margin-bottom: 4px;">Carbs</div>
-            <div style="font-size: 1.1rem; font-weight: 800; color: #85C1E9;">198g</div>
+          <div style="background: #F3F4F6; border-radius: 8px; padding: 10px; text-align: center;">
+            <div style="font-size: 1rem; font-weight: 800; color: var(--nutrition);">57g</div>
+            <div style="font-size: 0.7rem; color: var(--muted);">carbs</div>
           </div>
-          <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; text-align: center;">
-            <div style="font-size: 0.7rem; opacity: 0.7; margin-bottom: 4px;">Fat</div>
-            <div style="font-size: 1.1rem; font-weight: 800; color: #F8C471;">54g</div>
+          <div style="background: #F3F4F6; border-radius: 8px; padding: 10px; text-align: center;">
+            <div style="font-size: 1rem; font-weight: 800; color: var(--nutrition);">38g</div>
+            <div style="font-size: 0.7rem; color: var(--muted);">fat</div>
           </div>
         </div>
-        <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <div style="font-size: 0.75rem; opacity: 0.7; margin-bottom: 2px;">Weight trend</div>
-            <div style="font-size: 1rem; font-weight: 700;">↓ 1.2kg this month</div>
-          </div>
-          <div style="font-size: 1.4rem;">📉</div>
+      </div>
+      <!-- Quick actions grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <div style="background: var(--white); border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+          <div style="font-size: 1.2rem; margin-bottom: 6px;">📊</div>
+          <div style="font-size: 0.82rem; font-weight: 700;">My Progress</div>
+          <div style="font-size: 0.72rem; color: var(--muted);">Weight & measurements</div>
+        </div>
+        <div style="background: var(--white); border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+          <div style="font-size: 1.2rem; margin-bottom: 6px;">🛒</div>
+          <div style="font-size: 0.82rem; font-weight: 700;">Grocery List</div>
+          <div style="font-size: 0.72rem; color: var(--muted);">Share to your phone</div>
+        </div>
+        <div style="background: var(--white); border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+          <div style="font-size: 1.2rem; margin-bottom: 6px;">📅</div>
+          <div style="font-size: 0.82rem; font-weight: 700;">Meal Plan</div>
+          <div style="font-size: 0.72rem; color: var(--muted);">Plan your whole week</div>
+        </div>
+        <div style="background: var(--white); border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+          <div style="font-size: 1.2rem; margin-bottom: 6px;">💧</div>
+          <div style="font-size: 0.82rem; font-weight: 700;">Hydration</div>
+          <div style="font-size: 0.72rem; color: var(--muted);">Track your water intake</div>
         </div>
       </div>
     </div>
@@ -586,7 +621,7 @@
       <div class="forwho-card" style="border-color: #C5DCF0; background: var(--nutrition-tint);">
         <div class="forwho-icon">🍎</div>
         <h3 style="color: var(--nutrition);">Self-directed individuals</h3>
-        <p>Not with a coach? Totality Nutrition is a standalone food tracking app for anyone who wants to take control of their nutrition — no trainer required.</p>
+        <p>Not with a coach? Totality Nutrition is a standalone food tracking app for anyone who wants to take control of their nutrition. Log food, plan meals, generate a grocery list, track your weight trend, body measurements, hydration and progress photos — all in one place.</p>
         <a href="https://dist-three-mu-41.vercel.app" style="display: inline-block; margin-top: 14px; font-size: 0.78rem; font-weight: 700; color: var(--nutrition); background: rgba(21,101,160,0.1); padding: 4px 10px; border-radius: 999px;">Totality Nutrition — from $8.99/mo</a>
       </div>
     </div>
@@ -940,13 +975,18 @@
       <div class="plan-divider"></div>
       <ul class="plan-features">
         <li>Australian food database</li>
-        <li>Barcode scanner</li>
-        <li>Custom macro targets</li>
-        <li>Meal planning</li>
-        <li>Weight trend tracking</li>
-        <li>Body measurements</li>
+        <li>Barcode scanner — works at Woolies, Coles, IGA</li>
+        <li>Custom macro targets (Mifflin-St Jeor calculator built in)</li>
+        <li>Weekly meal planning with day tabs</li>
+        <li>Saved meals — one tap to re-log a favourite</li>
+        <li>Grocery list generation + share to phone</li>
+        <li>Weight trend graph (7-day rolling average)</li>
+        <li>Incremental weight logging (+0.1kg precision)</li>
+        <li>Body measurements tracking</li>
         <li>Progress photos</li>
-        <li>Calorie calculator (Mifflin-St Jeor)</li>
+        <li>Hydration tracking</li>
+        <li>Fibre tracking</li>
+        <li>Nutrition breakdown by macro</li>
       </ul>
       <a href="https://dist-three-mu-41.vercel.app" class="nutrition-plan-cta">Try free — no card required</a>
     </div>
