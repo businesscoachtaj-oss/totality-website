@@ -482,6 +482,16 @@
       </div>
       <div class="field-error" id="pace-error">Please select a pace.</div>
     </div>
+
+    <div class="field">
+      <label class="field-label">Diet style</label>
+      <div class="toggle-row" id="diet-toggle">
+        <div class="toggle-btn active" data-value="balanced" onclick="selectToggle('diet', this)">Balanced</div>
+        <div class="toggle-btn" data-value="high_carb" onclick="selectToggle('diet', this)">High Carb</div>
+        <div class="toggle-btn" data-value="high_fat" onclick="selectToggle('diet', this)">High Fat</div>
+        <div class="toggle-btn" data-value="high_protein" onclick="selectToggle('diet', this)">High Protein</div>
+      </div>
+    </div>
   </div>
 
   <button class="btn-submit" id="calc-btn" onclick="calculate()">Calculate my calories →</button>
@@ -572,6 +582,7 @@
     steps: null,
     goal: null,
     pace: null,
+    diet: 'balanced',
     coach_type: null,
   };
 
@@ -719,14 +730,18 @@
 
     const targetCalories = Math.max(1200, tdee + paceAdjustment);
 
-    // Macros — exact same logic as app
+    // Macros — exact same logic as app, including the diet-style adjustment
     const proteinPerKg =
-      state.goal === 'fat_loss' ? 2.2 :
-      state.goal === 'muscle_gain' ? 2.0 : 1.8;
+      (state.goal === 'fat_loss' ? 2.2 :
+      state.goal === 'muscle_gain' ? 2.0 : 1.8) +
+      (state.diet === 'high_protein' ? 0.3 : 0);
 
     const proteinG = Math.round(weightKg * proteinPerKg);
     const proteinCals = proteinG * 4;
-    const fatCals = Math.round(targetCalories * 0.25);
+    const fatPercent =
+      state.diet === 'high_carb' ? 0.20 :
+      state.diet === 'high_fat' ? 0.35 : 0.25;
+    const fatCals = Math.round(targetCalories * fatPercent);
     const fatG = Math.round(fatCals / 9);
     const carbsCals = targetCalories - proteinCals - fatCals;
     const carbsG = Math.max(0, Math.round(carbsCals / 4));
@@ -773,6 +788,7 @@
         is_coach: isCoach === 'yes' ? 'Yes — gym owner / PT' : 'No — general user',
         coach_type: coachTypeLabel,
         goal: state.goal,
+        diet: state.diet,
         tdee,
         target_calories: targetCalories,
         protein_g: proteinG,
