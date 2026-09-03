@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Totality Nutrition — Download on iOS & Android</title>
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<meta name="description" content="Download Totality Nutrition, the Australian-first macro tracking app, on the App Store or Google Play.">
+
+<!--
+  ============================================================================
+  PLACEHOLDER LINKS — this page isn't finished yet.
+  Both store buttons below currently point to "#" (do nothing). As soon as
+  the real App Store and Google Play listing URLs are available, replace
+  the two href="#" values in the ".store-btn apple" and ".store-btn android"
+  links below with the real links. That single edit is the only thing this
+  page needs — everything else (nav, footer, layout, every link on the rest
+  of the site pointing here) is already done.
+  ============================================================================
+-->
+
+<style>
+  :root {
+    --orange: #ED8008;
+    --orange-dark: #C46800;
+    --orange-light: #F5A543;
+    --white: #FFFFFF;
+    --off-white: #F7F7F7;
+    --dark: #272626;
+    --muted: #A0A0A0;
+    --border: #E8E8E8;
+    --nutrition: #1565A0;
+    --nutrition-light: #1A7FC1;
+    --nutrition-tint: #E8F1FA;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo { font-size: 1.1rem; font-weight: 800; color: var(--orange); letter-spacing: -0.02em; }
+  .nav-links { display: flex; gap: 24px; align-items: center; }
+  .nav-links a { font-size: 0.88rem; color: var(--muted); font-weight: 500; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--dark); }
+  .nav-cta {
+    background: var(--orange) !important; color: var(--white) !important;
+    padding: 7px 16px; border-radius: 999px;
+    font-weight: 600 !important; font-size: 0.82rem !important;
+    transition: background 0.15s !important; white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--orange-dark) !important; }
+
+  /* HERO */
+  .get-hero {
+    padding: 72px 24px 24px; text-align: center;
+    max-width: 640px; margin: 0 auto;
+  }
+  .get-back {
+    display: inline-block; font-size: 0.82rem; font-weight: 600;
+    color: var(--muted); margin-bottom: 24px;
+  }
+  .get-back:hover { color: var(--dark); }
+  .get-hero img { width: 84px; height: auto; margin: 0 auto 24px; display: block; }
+  .get-hero-badge {
+    display: inline-block; background: var(--nutrition-tint); color: var(--nutrition);
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 6px 16px; border-radius: 999px; margin-bottom: 24px;
+  }
+  .get-hero h1 {
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    font-weight: 800; letter-spacing: -0.03em; line-height: 1.15;
+  }
+  .get-hero h1 em { font-style: normal; color: var(--nutrition); }
+  .get-hero p {
+    color: var(--muted); font-size: 1.02rem;
+    max-width: 460px; margin: 16px auto 0; line-height: 1.7;
+  }
+
+  /* DOWNLOAD BUTTONS */
+  .download-section { padding: 32px 24px 64px; }
+  .download-buttons {
+    max-width: 420px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .store-btn {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 24px; border-radius: 16px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .store-btn:hover { transform: translateY(-2px); }
+  .store-btn.apple {
+    background: var(--dark); color: var(--white);
+    box-shadow: 0 4px 20px rgba(39,38,38,0.2);
+  }
+  .store-btn.android {
+    background: var(--white); color: var(--dark);
+    border: 1.5px solid var(--border);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+  .store-btn.android:hover { border-color: var(--nutrition); }
+  .store-icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .store-icon svg { width: 100%; height: 100%; }
+  .store-btn-text { text-align: left; }
+  .store-btn-eyebrow { display: block; font-size: 0.72rem; opacity: 0.75; font-weight: 500; }
+  .store-btn-name { display: block; font-size: 1.15rem; font-weight: 800; letter-spacing: -0.01em; margin-top: 1px; }
+
+  .get-note {
+    text-align: center; color: var(--muted); font-size: 0.85rem;
+    max-width: 420px; margin: 28px auto 0; line-height: 1.6;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--off-white); border-top: 1px solid var(--border);
+    padding: 28px 24px; display: flex;
+    justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .footer-brand { font-weight: 800; font-size: 0.9rem; color: var(--orange); }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-links a { font-size: 0.82rem; color: var(--muted); transition: color 0.15s; }
+  .footer-links a:hover { color: var(--dark); }
+  .footer-copy { font-size: 0.82rem; color: var(--muted); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 16px; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    footer { flex-direction: column; text-align: center; }
+    .footer-links { justify-content: center; flex-wrap: wrap; }
+  }
+  @media (max-width: 480px) {
+    .get-hero { padding: 48px 16px 16px; }
+    .download-section { padding: 24px 16px 56px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">TOTALITY 360</a>
+  <div class="nav-links">
+    <a href="/totality.html">Totality</a>
+    <a href="/nutrition.html">Nutrition</a>
+    <a href="/blog/">Totality Reports</a>
+    <a href="/calculator.html">Free Calculator</a>
+    <a href="/get-totality.html" class="nav-cta">Try Totality</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="get-hero">
+  <a href="/nutrition.html" class="get-back">← Back to Totality Nutrition</a>
+  <img src="/logo.png" alt="Totality" />
+  <div class="get-hero-badge">Totality Nutrition</div>
+  <h1>Get <em>Totality Nutrition</em> on your phone</h1>
+  <p>An Australian-first macro tracking app with barcode scanning that actually works at Woolies. Pick your platform below to download it.</p>
+</header>
+
+<!-- DOWNLOAD BUTTONS -->
+<section class="download-section">
+  <div class="download-buttons">
+    <a href="#" class="store-btn apple">
+      <span class="store-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="#FFFFFF"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.87-.19 1.68-.86 3.05-.75 1.65.13 2.83.68 3.5 1.9-2.15 1.29-2 5.11.15 5.98-.63 1.5-1.5 3.02-2.78 5.04zM12.03 7.25c-.15-2.23 1.66-4.1 3.74-4.25.29 2.3-2.08 4.51-3.74 4.25z"/></svg>
+      </span>
+      <span class="store-btn-text">
+        <span class="store-btn-eyebrow">Download on the</span>
+        <span class="store-btn-name">App Store</span>
+      </span>
+    </a>
+
+    <a href="#" class="store-btn android">
+      <span class="store-icon" aria-hidden="true">
+        <svg viewBox="0 0 512 512"><path fill="#00D9A5" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z"/><path fill="#FF3A44" d="M47 0c-6.6 6.3-10.6 15.5-10.6 26.7v458.6c0 11.2 4 20.4 10.6 26.7l4.4-4.4 289.9-289.9V256 v-0.6L51.4 4.4 47 0z"/><path fill="#FFCE00" d="M415.5 197.3l-59.1-33.9-63.3 63.3 63.3 63.3 59.4-33.9c17.9-10.3 17.9-38.5-0.3-58.8z"/><path fill="#00D9A5" d="M104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+      </span>
+      <span class="store-btn-text">
+        <span class="store-btn-eyebrow">Get it on</span>
+        <span class="store-btn-name">Google Play</span>
+      </span>
+    </a>
+  </div>
+
+  <p class="get-note">Free trial, no card required. Plans start from A$8.99/month.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-brand">TOTALITY 360 PTY LTD</span>
+  <div class="footer-links">
+    <a href="/totality.html" style="color: var(--orange); font-weight: 700;">Totality</a>
+    <a href="/nutrition.html" style="color: var(--nutrition); font-weight: 700;">Totality Nutrition</a>
+    <a href="/blog/">Totality Reports</a>
+    <a href="/calculator.html">Free Calculator</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/refund.html">Refunds</a>
+    <a href="mailto:admintotality@gmail.com">Contact</a>
+  </div>
+  <span class="footer-copy">© 2026 Totality 360 Pty Ltd</span>
+</footer>
+
+</body>
+</html>
