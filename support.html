@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Totality</title>
+  <meta name="description" content="Get help with Totality or Totality Nutrition — contact support, report a bug, or find answers to common account and billing questions.">
+  <link rel="icon" href="/favicon-96.png" sizes="any">
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #F7F7F7;
+      color: #272626;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background-color: #272626;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header .logo-mark {
+      width: 36px;
+      height: 36px;
+      background-color: #ED8008;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: -1px;
+      flex-shrink: 0;
+    }
+
+    header .brand {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    header .brand span {
+      color: #ED8008;
+    }
+
+    /* ── Hero bar ── */
+    .hero {
+      background-color: #ED8008;
+      padding: 40px 32px 36px;
+    }
+
+    .hero h1 {
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+    }
+
+    /* ── Content wrapper ── */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    /* ── Section cards ── */
+    .section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 20px;
+      border-left: 4px solid #ED8008;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #272626;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 .section-num {
+      background-color: #ED8008;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section p { color: #444; margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 12px;
+    }
+
+    .section ul li {
+      color: #444;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .section ul li:last-child { border-bottom: none; }
+
+    .section ul li::before {
+      content: "›";
+      color: #ED8008;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    .section a { color: #ED8008; font-weight: 600; text-decoration: none; }
+    .section a:hover { color: #C46800; }
+
+    /* ── App buttons ── */
+    .app-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .app-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .app-btn-totality { background: #ED8008; color: #fff !important; }
+    .app-btn-totality:hover { background: #C46800; }
+    .app-btn-nutrition { background: #1565A0; color: #fff !important; }
+    .app-btn-nutrition:hover { background: #1A7FC1; }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background-color: #272626;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 20px;
+      color: #fff;
+      border-left: 4px solid #ED8008;
+    }
+
+    .contact-card h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; color: #fff; }
+    .contact-card p { color: #A0A0A0; margin-bottom: 8px; font-size: 15px; }
+    .contact-card a { color: #ED8008; text-decoration: none; font-weight: 600; }
+    .contact-card a:hover { color: #F5A543; }
+
+    .email-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 24px;
+      background: #ED8008;
+      color: #fff !important;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .email-btn:hover { background: #C46800; }
+
+    /* ── Footer ── */
+    footer {
+      background-color: #272626;
+      text-align: center;
+      padding: 24px 32px;
+      color: #A0A0A0;
+      font-size: 13px;
+    }
+
+    footer a { color: #ED8008; text-decoration: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero { padding: 28px 20px 24px; }
+      .hero h1 { font-size: 26px; }
+      .container { padding: 32px 16px 60px; }
+      .section { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header>
+    <div class="logo-mark">T</div>
+    <div class="brand">Total<span>ity</span></div>
+  </header>
+
+  <!-- ── Hero ── -->
+  <div class="hero">
+    <h1>Support</h1>
+    <p>Help with Totality and Totality Nutrition — Totality 360 Pty Ltd (ABN 58 698 902 975)</p>
+  </div>
+
+  <!-- ── Body ── -->
+  <div class="container">
+
+    <!-- 1. Get in touch -->
+    <div class="section">
+      <h2><span class="section-num">1</span>Get in Touch</h2>
+      <p>
+        The fastest way to reach us is by email. We read every message ourselves and aim to reply
+        within 1 business day.
+      </p>
+      <a class="email-btn" href="mailto:admintotality@gmail.com">Email admintotality@gmail.com</a>
+      <p style="margin-top: 16px;">
+        If you're signed in to the app, you can also tap the help button inside Totality or
+        Totality Nutrition to send us a message directly — it reaches the same inbox.
+      </p>
+    </div>
+
+    <!-- 2. Common topics -->
+    <div class="section">
+      <h2><span class="section-num">2</span>Common Topics</h2>
+      <ul>
+        <li><strong>Account & login</strong> — trouble signing in, resetting your password, or changing your email, email us and we'll sort it out directly.</li>
+        <li><strong>Billing & subscriptions</strong> — to change plans, update payment details, or cancel, use your account settings inside the app, or email us if you run into an issue.</li>
+        <li><strong>Refunds</strong> — see our <a href="/refund.html">Refund Policy</a> for eligibility and how to request one.</li>
+        <li><strong>Privacy & your data</strong> — see our <a href="/privacy.html">Privacy Policy</a>, or email us to request a copy or deletion of your data.</li>
+        <li><strong>Bugs & crashes</strong> — see section 3 below for what to include so we can fix it fast.</li>
+      </ul>
+    </div>
+
+    <!-- 3. Reporting a bug -->
+    <div class="section">
+      <h2><span class="section-num">3</span>Reporting a Bug</h2>
+      <p>
+        If something isn't working, email us at
+        <a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a> with:
+      </p>
+      <ul>
+        <li>What you were doing when it happened</li>
+        <li>What you expected to happen, versus what actually happened</li>
+        <li>A screenshot, if you have one</li>
+        <li>Which app you're using (Totality or Totality Nutrition) and your device (iPhone, iPad, Android, or web)</li>
+      </ul>
+    </div>
+
+    <!-- 4. Get the apps -->
+    <div class="section">
+      <h2><span class="section-num">4</span>Get the Apps</h2>
+      <p>Not sure which app you need, or want to check you have the latest version?</p>
+      <div class="app-btns">
+        <a class="app-btn app-btn-totality" href="/get-totality.html">Totality</a>
+        <a class="app-btn app-btn-nutrition" href="/get-nutrition.html">Totality Nutrition</a>
+      </div>
+    </div>
+
+    <!-- 5. Contact -->
+    <div class="contact-card">
+      <h2>5. Contact Us</h2>
+      <p><strong style="color:#fff;">Totality 360 Pty Ltd (ABN 58 698 902 975)</strong></p>
+      <p>Australia</p>
+      <p>Email: <a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a></p>
+      <p style="margin-top:16px; font-size:13px;">
+        We aim to respond to all support enquiries within 1 business day.
+      </p>
+    </div>
+
+  </div><!-- /container -->
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>© 2026 Totality 360 Pty Ltd (ABN 58 698 902 975). All rights reserved.</p>
+    <p style="margin-top:8px;">
+      <a href="/privacy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="/terms.html">Terms &amp; Conditions</a>
+      &nbsp;·&nbsp;
+      <a href="/refund.html">Refund Policy</a>
+      &nbsp;·&nbsp;
+      <a href="/">Back to Totality</a>
+    </p>
+  </footer>
+
+</body>
+</html>
