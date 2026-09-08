@@ -85,6 +85,18 @@
   </url>
 
   <url>
+    <loc>https://totality360.com.au/resources.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://totality360.com.au/support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
     <loc>https://totality360.com.au/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -94,6 +106,36 @@
     <loc>https://totality360.com.au/refund.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://totality360.com.au/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://totality360.com.au/guides/Totality-Guide-How-to-Start-a-PT-Business.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://totality360.com.au/guides/Totality-Guide-Marketing-Client-Acquisition.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://totality360.com.au/guides/Totality-Guide-How-to-Program.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://totality360.com.au/guides/Totality-Guide-Nutrition-Coaching-Fundamentals.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 
 </urlset>
