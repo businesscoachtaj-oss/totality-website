@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://totality360.com.au/sitemap.xml
