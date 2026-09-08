@@ -30,6 +30,33 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
 <meta name="description" content="One or two sentence summary of the post, used for search results and link previews.">
 
+<link rel="canonical" href="https://totality360.com.au/blog/posts/{{slug}}.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Totality 360">
+<meta property="og:title" content="{{title}} — Totality Reports">
+<meta property="og:description" content="{{excerpt}}">
+<meta property="og:url" content="https://totality360.com.au/blog/posts/{{slug}}.html">
+<meta property="og:image" content="https://totality360.com.au/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{excerpt}}">
+<meta name="twitter:image" content="https://totality360.com.au/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{title}}",
+  "description": "{{excerpt}}",
+  "datePublished": "{{YYYY-MM-DD}}",
+  "author": { "@type": "Organization", "name": "Totality 360" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Totality 360",
+    "logo": { "@type": "ImageObject", "url": "https://totality360.com.au/logo.png" }
+  }
+}
+</script>
+
 <style>
   :root {
     --orange: #ED8008;
