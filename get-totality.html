@@ -79,7 +79,10 @@
     color: var(--muted); margin-bottom: 24px;
   }
   .get-back:hover { color: var(--dark); }
-  .get-hero img { width: 84px; height: auto; margin: 0 auto 24px; display: block; }
+  .get-hero-shot {
+    width: 100%; max-width: 300px; height: auto; margin: 0 auto 28px; display: block;
+    border-radius: 20px; box-shadow: 0 12px 32px rgba(39,38,38,0.22);
+  }
   .get-hero h1 {
     font-size: clamp(1.9rem, 5vw, 2.6rem);
     font-weight: 800; letter-spacing: -0.03em; line-height: 1.15;
@@ -125,6 +128,11 @@
     text-align: center; color: var(--muted); font-size: 0.85rem;
     max-width: 420px; margin: 28px auto 0; line-height: 1.6;
   }
+  .get-alt {
+    text-align: center; font-size: 0.86rem; margin: 20px auto 0;
+  }
+  .get-alt a { color: var(--orange); font-weight: 600; }
+  .get-alt a:hover { text-decoration: underline; }
 
   /* FOOTER */
   footer {
@@ -160,6 +168,7 @@
     <a href="/totality.html">Totality</a>
     <a href="/nutrition.html">Nutrition</a>
     <a href="/blog/">Totality Reports</a>
+    <a href="/resources.html">Free Guides</a>
     <a href="/calculator.html">Free Calculator</a>
     <a href="get-nutrition.html" class="nav-cta-nutrition">Try Nutrition</a>
   </div>
@@ -168,7 +177,7 @@
 <!-- HERO -->
 <header class="get-hero">
   <a href="/totality.html" class="get-back">← Back to Totality</a>
-  <img src="/logo.png" alt="Totality" />
+  <img src="get-totality-hero.jpg" alt="Totality dashboard showing revenue, leads and client stats for a gym" class="get-hero-shot" />
   <h1>Get <em>Totality</em> on your phone</h1>
   <p>Totality is a native app for gym owners, personal trainers and their clients. Pick your platform below to download it.</p>
 </header>
@@ -197,7 +206,9 @@
     </a>
   </div>
 
-  <p class="get-note">New accounts get a 7-day free trial, plus 2 months free with code <strong>TOTALITYCOACH</strong> (solo trainers) or <strong>TOTALITYGYM</strong> (gym owners) at checkout. The client app is always free.</p>
+  <p class="get-note">From A$29.99/month. New accounts get a 7-day free trial, plus 2 months free with code <strong>TOTALITYCOACH</strong> (solo trainers) or <strong>TOTALITYGYM</strong> (gym owners) at checkout. No contracts, cancel anytime — the client app is always free.</p>
+
+  <p class="get-alt"><a href="/resources.html">Not ready yet? Grab our free PT business guides →</a></p>
 </section>
 
 <!-- FOOTER -->
@@ -207,6 +218,7 @@
     <a href="/totality.html" style="color: var(--orange); font-weight: 700;">Totality</a>
     <a href="/nutrition.html" style="color: var(--nutrition); font-weight: 700;">Totality Nutrition</a>
     <a href="/blog/">Totality Reports</a>
+    <a href="/resources.html">Free Guides</a>
     <a href="/calculator.html">Free Calculator</a>
     <a href="/privacy.html">Privacy</a>
     <a href="/refund.html">Refunds</a>

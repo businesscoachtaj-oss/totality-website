@@ -93,7 +93,10 @@
     color: var(--muted); margin-bottom: 24px;
   }
   .get-back:hover { color: var(--dark); }
-  .get-hero img { width: 84px; height: auto; margin: 0 auto 24px; display: block; }
+  .get-hero-shot {
+    width: 100%; max-width: 300px; height: auto; margin: 0 auto 24px; display: block;
+    border-radius: 20px; box-shadow: 0 12px 32px rgba(39,38,38,0.18);
+  }
   .get-hero-badge {
     display: inline-block; background: var(--nutrition-tint); color: var(--nutrition);
     font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
@@ -185,6 +188,24 @@
     text-align: center; color: var(--muted); font-size: 0.85rem;
     max-width: 420px; margin: 28px auto 0; line-height: 1.6;
   }
+  .get-alt {
+    text-align: center; font-size: 0.86rem; margin: 20px auto 0;
+  }
+  .get-alt a { color: var(--nutrition); font-weight: 600; }
+  .get-alt a:hover { text-decoration: underline; }
+
+  /* LAUNCH OFFER BANNER */
+  .launch-offer {
+    max-width: 420px; margin: 0 auto 24px; text-align: center;
+    background: var(--nutrition-tint); border-radius: 14px;
+    padding: 14px 20px; color: var(--nutrition);
+    font-size: 0.9rem; font-weight: 700;
+  }
+  .launch-offer span {
+    display: block; font-size: 0.72rem; font-weight: 800;
+    letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.8;
+    margin-bottom: 2px;
+  }
 
   /* FOOTER */
   footer {
@@ -229,7 +250,7 @@
 <!-- HERO -->
 <header class="get-hero">
   <a href="/nutrition.html" class="get-back">← Back to Totality Nutrition</a>
-  <img src="/logo.png" alt="Totality" />
+  <img src="get-nutrition-hero.jpg" alt="Totality Nutrition food log showing calories and macros for a day's meals" class="get-hero-shot" />
   <div class="get-hero-badge">Totality Nutrition</div>
   <h1>Get <em>Totality Nutrition</em> on your phone</h1>
   <p>An Australian-first macro tracking app with barcode scanning that actually works at Woolies. Pick your platform below to download it.</p>
@@ -237,6 +258,11 @@
 
 <!-- DOWNLOAD BUTTONS -->
 <section class="download-section">
+
+  <div class="launch-offer">
+    <span>Launch offer, ends 31 Oct 2026</span>
+    50% off your first 3 months — code LAUNCH26 at checkout
+  </div>
 
   <!-- PWA — live today, while the App Store / Google Play listings are pending -->
   <div class="pwa-section">
@@ -276,7 +302,9 @@
     </a>
   </div>
 
-  <p class="get-note">Free trial, no card required. Launch offer: 50% off your first 3 months with code <strong>LAUNCH26</strong> at checkout (ends 31 Oct 2026). Plans start from A$8.99/month.</p>
+  <p class="get-note">Plans start from A$8.99/month. Free trial, no card required.</p>
+
+  <p class="get-alt"><a href="/resources.html">Not ready yet? Grab our free PT business guides →</a></p>
 </section>
 
 <!-- FOOTER -->
