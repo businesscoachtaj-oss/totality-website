@@ -194,6 +194,11 @@
   .get-alt a { color: var(--nutrition); font-weight: 600; }
   .get-alt a:hover { text-decoration: underline; }
 
+  /* HERO CHECKLIST */
+  .hero-checklist { display: flex; flex-direction: column; gap: 10px; max-width: 420px; margin: 28px auto 0; text-align: left; }
+  .hero-check-item { display: flex; align-items: center; gap: 12px; font-size: 0.95rem; font-weight: 600; color: var(--dark); background: var(--nutrition-tint); border: 1px solid #C5DCF0; border-radius: 12px; padding: 12px 16px; }
+  .hero-check-mark { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: rgba(46,204,113,0.15); color: #2ECC71; font-size: 0.8rem; font-weight: 800; flex-shrink: 0; }
+
   /* LAUNCH OFFER BANNER */
   .launch-offer {
     max-width: 420px; margin: 0 auto 24px; text-align: center;
@@ -303,6 +308,21 @@
   </div>
 
   <p class="get-note">Plans start from A$8.99/month. Free trial, no card required.</p>
+
+  <div class="hero-checklist">
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> AU food database</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Barcode scanner</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Macro targets</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Meal planning</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Saved meals</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Grocery list + share</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Weight trend graph</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Body measurements</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Progress photos</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Hydration tracking</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Calorie calculator</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Fibre tracking</div>
+  </div>
 
   <p class="get-alt"><a href="/resources.html">Not ready yet? Grab our free PT business guides →</a></p>
 </section>
