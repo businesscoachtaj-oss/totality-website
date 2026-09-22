@@ -10,18 +10,18 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. No email required.">
+<meta name="description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. Enter your email for instant access.">
 
 <link rel="canonical" href="https://totality360.com.au/resources.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
 <meta property="og:title" content="Free Guides for Personal Trainers — Totality">
-<meta property="og:description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. No email required.">
+<meta property="og:description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. Enter your email for instant access.">
 <meta property="og:url" content="https://totality360.com.au/resources.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Free Guides for Personal Trainers — Totality">
-<meta name="twitter:description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. No email required.">
+<meta name="twitter:description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. Enter your email for instant access.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
 <link rel="stylesheet" href="css/site.css">
 <style>
@@ -116,6 +116,48 @@
     .res-grid { grid-template-columns: 1fr; }
     .res-cta-inner { padding: 32px 24px; }
   }
+
+  /* Guide cards are now buttons (email-gate opens on click) — reset button chrome */
+  button.guide-card {
+    font: inherit; text-align: left; width: 100%; cursor: pointer; appearance: none;
+  }
+
+  /* EMAIL-GATE MODAL */
+  .guide-modal-overlay {
+    display: none; position: fixed; inset: 0; z-index: 999;
+    background: rgba(20,20,20,0.55); backdrop-filter: blur(2px);
+    padding: 24px; align-items: center; justify-content: center;
+  }
+  .guide-modal-overlay.open { display: flex; }
+  .guide-modal {
+    position: relative; background: var(--white); border-radius: 20px;
+    padding: 36px 32px; max-width: 420px; width: 100%;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.25);
+  }
+  .guide-modal-close {
+    position: absolute; top: 14px; right: 14px; width: 32px; height: 32px;
+    border: none; background: transparent; font-size: 1.4rem; line-height: 1;
+    color: var(--muted); cursor: pointer; border-radius: 8px;
+  }
+  .guide-modal-close:hover { background: rgba(0,0,0,0.05); }
+  .guide-modal h3 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .guide-modal p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
+  .guide-modal-email {
+    width: 100%; padding: 12px 14px; border-radius: 10px;
+    border: 1px solid var(--border); font: inherit; font-size: 0.95rem;
+    margin-bottom: 12px; box-sizing: border-box;
+  }
+  .guide-modal-email:focus { outline: 2px solid var(--orange); outline-offset: 1px; }
+  .guide-modal-submit {
+    width: 100%; padding: 12px 20px; border-radius: 12px; border: none;
+    background: var(--orange); color: var(--white); font-weight: 700; font-size: 0.92rem;
+    cursor: pointer; transition: background 0.15s, transform 0.15s;
+  }
+  .guide-modal-submit:hover { background: var(--orange-dark); transform: translateY(-1px); }
+  .guide-modal-submit:disabled { opacity: 0.7; cursor: default; transform: none; }
+  .guide-modal-error {
+    color: #c0392b; font-size: 0.82rem; margin: 10px 0 0; line-height: 1.5;
+  }
 </style>
 </head>
 <body>
@@ -142,52 +184,52 @@
 <section class="res-hero">
   <div class="res-hero-eyebrow">Totality 360 Pty Ltd &nbsp;&middot;&nbsp; The Coach's Starter Series</div>
   <h1>Free guides for <em>personal trainers</em></h1>
-  <p class="res-hero-sub">Four evidence-based PDF guides covering the parts of the job most PT courses gloss over: starting a business, getting clients, programming properly, and coaching nutrition. Free to download, no email required.</p>
+  <p class="res-hero-sub">Four evidence-based PDF guides covering the parts of the job most PT courses gloss over: starting a business, getting clients, programming properly, and coaching nutrition. Free to download — just pop in your email and we'll open it straight away.</p>
 </section>
 
 <!-- GRID -->
 <section class="res-section">
   <div class="res-grid">
 
-    <a href="guides/Totality-Guide-How-to-Start-a-PT-Business.pdf" class="guide-card" target="_blank" rel="noopener">
+    <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-How-to-Start-a-PT-Business.pdf" data-guide="How to Start a Personal Training Business">
       <span class="guide-badge">Guide 1 of 4</span>
       <h3>How to Start a Personal Training Business</h3>
       <p class="guide-excerpt">The practical, unglamorous groundwork: qualifications, insurance, pay structures, pricing, and getting your first clients, including going solo without a gym behind you.</p>
       <div class="guide-meta">
         <span>PDF &middot; 13 pages</span>
       </div>
-      <span class="guide-download">Download free PDF →</span>
-    </a>
+      <span class="guide-download">Get free PDF →</span>
+    </button>
 
-    <a href="guides/Totality-Guide-Marketing-Client-Acquisition.pdf" class="guide-card" target="_blank" rel="noopener">
+    <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-Marketing-Client-Acquisition.pdf" data-guide="Marketing &amp; Client Acquisition for Personal Trainers">
       <span class="guide-badge">Guide 2 of 4</span>
       <h3>Marketing &amp; Client Acquisition for Personal Trainers</h3>
       <p class="guide-excerpt">Finding your niche, building an offer ladder that's easy to say yes to, what to actually post on social media, and why retention beats constant new-client chasing.</p>
       <div class="guide-meta">
         <span>PDF &middot; 13 pages</span>
       </div>
-      <span class="guide-download">Download free PDF →</span>
-    </a>
+      <span class="guide-download">Get free PDF →</span>
+    </button>
 
-    <a href="guides/Totality-Guide-How-to-Program.pdf" class="guide-card" target="_blank" rel="noopener">
+    <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-How-to-Program.pdf" data-guide="How to Program: A Framework for Building Client Training">
       <span class="guide-badge">Guide 3 of 4</span>
       <h3>How to Program: A Framework for Building Client Training</h3>
       <p class="guide-excerpt">The evidence behind progressive overload, volume and periodization, individualizing for routine-lovers vs. variety-seekers, and what the research really says about training men and women differently.</p>
       <div class="guide-meta">
         <span>PDF &middot; 12 pages</span>
       </div>
-      <span class="guide-download">Download free PDF →</span>
-    </a>
+      <span class="guide-download">Get free PDF →</span>
+    </button>
 
-    <a href="guides/Totality-Guide-Nutrition-Coaching-Fundamentals.pdf" class="guide-card" target="_blank" rel="noopener">
+    <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-Nutrition-Coaching-Fundamentals.pdf" data-guide="Nutrition Coaching Fundamentals for PTs">
       <span class="guide-badge">Guide 4 of 4</span>
       <h3>Nutrition Coaching Fundamentals for PTs</h3>
       <p class="guide-excerpt">Real protein and energy-balance numbers, which supplements are actually worth recommending, where your scope of practice ends, and coaching clients who won't stick to a rigid plan.</p>
       <div class="guide-meta">
         <span>PDF &middot; 13 pages</span>
       </div>
-      <span class="guide-download">Download free PDF →</span>
-    </a>
+      <span class="guide-download">Get free PDF →</span>
+    </button>
 
   </div>
 
@@ -220,6 +262,80 @@
   <span class="footer-copy">&copy; 2026 Totality 360 Pty Ltd</span>
 </footer>
 
+<!-- EMAIL-GATE MODAL -->
+<div class="guide-modal-overlay" id="guideModalOverlay">
+  <div class="guide-modal">
+    <button type="button" class="guide-modal-close" id="guideModalClose" aria-label="Close">&times;</button>
+    <h3>Get the guide</h3>
+    <p>Enter your email and we'll open <strong id="guideModalName">the PDF</strong> for you. We'll also send occasional PT tips &mdash; unsubscribe anytime.</p>
+    <form id="guideModalForm">
+      <input type="email" class="guide-modal-email" id="guideModalEmail" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit" class="guide-modal-submit">Get free PDF →</button>
+      <p class="guide-modal-error" id="guideModalError" hidden>Please enter a valid email address.</p>
+    </form>
+  </div>
+</div>
+
 <script src="js/nav.js" defer></script>
+<script>
+(function(){
+  var overlay = document.getElementById('guideModalOverlay');
+  var form = document.getElementById('guideModalForm');
+  var emailInput = document.getElementById('guideModalEmail');
+  var nameEl = document.getElementById('guideModalName');
+  var errorEl = document.getElementById('guideModalError');
+  var closeBtn = document.getElementById('guideModalClose');
+  var submitBtn = form.querySelector('.guide-modal-submit');
+  var pendingPdf = null, pendingTitle = null;
+
+  document.querySelectorAll('.guide-card[data-pdf]').forEach(function(card){
+    card.addEventListener('click', function(){
+      pendingPdf = card.getAttribute('data-pdf');
+      pendingTitle = card.getAttribute('data-guide');
+      nameEl.textContent = pendingTitle;
+      errorEl.hidden = true;
+      emailInput.value = '';
+      overlay.classList.add('open');
+      setTimeout(function(){ emailInput.focus(); }, 60);
+    });
+  });
+
+  function closeModal(){ overlay.classList.remove('open'); }
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = emailInput.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errorEl.hidden = false;
+      return;
+    }
+    errorEl.hidden = true;
+    submitBtn.textContent = 'Opening…';
+    submitBtn.disabled = true;
+
+    fetch('https://formspree.io/f/mjgqyqdj', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: email,
+        guide: pendingTitle,
+        source: 'resources.html guide gate',
+        _subject: 'New guide lead — ' + pendingTitle + ': ' + email
+      })
+    }).catch(function(){});
+
+    window.open(pendingPdf, '_blank', 'noopener');
+
+    setTimeout(function(){
+      closeModal();
+      submitBtn.textContent = 'Get free PDF →';
+      submitBtn.disabled = false;
+    }, 500);
+  });
+})();
+</script>
 </body>
 </html>
