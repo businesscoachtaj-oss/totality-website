@@ -358,6 +358,36 @@
 
   .disclaimer a { color: var(--orange); }
 
+  /* Share card */
+  .share-section { text-align: center; }
+  .share-section p.share-sub { color: var(--muted); font-size: 0.85rem; margin: 4px 0 18px; }
+  #share-preview {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+    margin-bottom: 18px;
+    display: none;
+  }
+  .share-btn-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .btn-share {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .btn-share.primary { background: var(--orange); color: var(--white); box-shadow: 0 4px 14px rgba(237,128,8,0.3); }
+  .btn-share.primary:hover { background: var(--orange-dark); transform: translateY(-1px); }
+  .btn-share.secondary { background: var(--off-white); color: var(--dark); border: 1.5px solid var(--border); }
+  .btn-share.secondary:hover { border-color: var(--dark); }
+
   footer {
     background: var(--white);
     border-top: 1px solid var(--border);
@@ -569,6 +599,17 @@
           <div class="macro-tile-label">Fibre</div>
           <div class="macro-tile-sub">Guideline · in carbs</div>
         </div>
+      </div>
+    </div>
+
+    <div class="card share-section" id="share-card-section" style="padding: 24px 20px; display: none;">
+      <div class="card-title" style="justify-content: center;"><div class="card-num">✓</div> Share your results</div>
+      <p class="share-sub">Post it to your Story — it's the easiest way to keep yourself accountable.</p>
+      <canvas id="share-canvas" width="1080" height="1920" style="display:none;"></canvas>
+      <img id="share-preview" alt="Your daily calorie and macro targets, branded Totality 360 share card" />
+      <div class="share-btn-row">
+        <button type="button" class="btn-share primary" id="share-native-btn" style="display:none;" onclick="shareResultsCard()">Share to Instagram →</button>
+        <button type="button" class="btn-share secondary" id="share-download-btn" style="display:none;" onclick="downloadResultsCard()">Download image</button>
       </div>
     </div>
 
@@ -806,6 +847,9 @@
     // Show results
     document.getElementById('results').style.display = 'block';
 
+    // Build the shareable results card (Instagram-Story-sized branded image)
+    generateShareCard().catch(() => {});
+
     // Send lead to Formspree
     const coachTypeLabel = state.coach_type === 'gym_owner' ? 'Gym Owner' : state.coach_type === 'coach' ? 'Coach / PT' : '';
     const subjectTag = isCoach === 'yes'
@@ -840,6 +884,163 @@
     const btn = document.getElementById('calc-btn');
     btn.textContent = '✓ Results calculated';
     btn.disabled = true;
+  }
+
+  // ---- Shareable results card ----
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  async function generateShareCard() {
+    const canvas = document.getElementById('share-canvas');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height;
+    const F = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
+    // Background
+    const bg = ctx.createLinearGradient(0, 0, 0, H);
+    bg.addColorStop(0, '#2f2e2d');
+    bg.addColorStop(1, '#1c1b1a');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+
+    // Top accent bar
+    ctx.fillStyle = '#ED8008';
+    ctx.fillRect(0, 0, W, 14);
+
+    // Ambient orange glow behind the hero number
+    const glow = ctx.createRadialGradient(W / 2, 760, 40, W / 2, 760, 560);
+    glow.addColorStop(0, 'rgba(237,128,8,0.20)');
+    glow.addColorStop(1, 'rgba(237,128,8,0)');
+    ctx.fillStyle = glow;
+    ctx.fillRect(0, 300, W, 900);
+
+    // Wordmark — plain text, matching the site's own nav-brand styling
+    // (no raster logo: logo.png has an opaque white backing plate baked in,
+    // which reads as a sticker on this dark card)
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#ED8008';
+    ctx.beginPath();
+    ctx.arc(96, 126, 10, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = '800 32px ' + F;
+    ctx.textAlign = 'left';
+    ctx.fillText('TOTALITY 360', 126, 128);
+
+    // Eyebrow pill
+    const pillText = 'MY DAILY TARGETS';
+    ctx.font = '800 26px ' + F;
+    ctx.textAlign = 'center';
+    const pillW = ctx.measureText(pillText).width + 64, pillH = 56, pillY = 250;
+    ctx.fillStyle = '#F0E6F6';
+    roundRect(ctx, W / 2 - pillW / 2, pillY, pillW, pillH, 28);
+    ctx.fill();
+    ctx.fillStyle = '#6C3483';
+    ctx.fillText(pillText, W / 2, pillY + pillH / 2 + 2);
+
+    // Hero number — target calories
+    ctx.textBaseline = 'alphabetic';
+    const target = document.getElementById('res-target').textContent;
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = '800 250px ' + F;
+    ctx.fillText(target, W / 2, 800);
+
+    ctx.fillStyle = 'rgba(255,255,255,0.55)';
+    ctx.font = '700 38px ' + F;
+    ctx.fillText('CALORIES / DAY', W / 2, 866);
+
+    // Macro tiles
+    const macros = [
+      { label: 'PROTEIN', value: document.getElementById('res-protein').textContent },
+      { label: 'CARBS', value: document.getElementById('res-carbs').textContent },
+      { label: 'FAT', value: document.getElementById('res-fat').textContent },
+    ];
+    const tileY = 1000, tileH = 250, gap = 28;
+    const tileW = (W - 160 - gap * 2) / 3;
+    macros.forEach((m, i) => {
+      const x = 80 + i * (tileW + gap);
+      ctx.fillStyle = 'rgba(255,255,255,0.07)';
+      roundRect(ctx, x, tileY, tileW, tileH, 22);
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+      ctx.lineWidth = 2;
+      roundRect(ctx, x, tileY, tileW, tileH, 22);
+      ctx.stroke();
+
+      ctx.fillStyle = '#ED8008';
+      ctx.font = '800 62px ' + F;
+      ctx.fillText(m.value, x + tileW / 2, tileY + 115);
+
+      ctx.fillStyle = 'rgba(255,255,255,0.55)';
+      ctx.font = '700 25px ' + F;
+      ctx.fillText(m.label, x + tileW / 2, tileY + 168);
+    });
+
+    // CTA pill
+    const ctaY = 1400, ctaH = 108;
+    ctx.fillStyle = '#ED8008';
+    roundRect(ctx, W / 2 - 380, ctaY, 760, ctaH, 54);
+    ctx.fill();
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = '800 42px ' + F;
+    ctx.fillText('Get your free plan →', W / 2, ctaY + ctaH / 2 + 15);
+
+    ctx.fillStyle = 'rgba(255,255,255,0.7)';
+    ctx.font = '700 34px ' + F;
+    ctx.fillText('totality360.com.au', W / 2, ctaY + ctaH + 68);
+
+    // Footer
+    ctx.fillStyle = 'rgba(255,255,255,0.32)';
+    ctx.font = '500 26px ' + F;
+    ctx.fillText('Calculated with the free Totality 360 calculator', W / 2, H - 70);
+
+    // Render preview + reveal buttons
+    const dataUrl = canvas.toDataURL('image/png');
+    const preview = document.getElementById('share-preview');
+    preview.src = dataUrl;
+    preview.style.display = 'inline-block';
+    document.getElementById('share-card-section').style.display = 'block';
+    document.getElementById('share-download-btn').style.display = 'inline-flex';
+
+    let canShareFiles = false;
+    try {
+      const testFile = new File([Uint8Array.from([0])], 'test.png', { type: 'image/png' });
+      canShareFiles = !!(navigator.canShare && navigator.canShare({ files: [testFile] }));
+    } catch (e) { canShareFiles = false; }
+    if (canShareFiles) {
+      document.getElementById('share-native-btn').style.display = 'inline-flex';
+    }
+  }
+
+  function downloadResultsCard() {
+    const canvas = document.getElementById('share-canvas');
+    const a = document.createElement('a');
+    a.download = 'totality-my-macros.png';
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+  }
+
+  function shareResultsCard() {
+    const canvas = document.getElementById('share-canvas');
+    canvas.toBlob(async (blob) => {
+      if (!blob) return;
+      const file = new File([blob], 'totality-my-macros.png', { type: 'image/png' });
+      try {
+        await navigator.share({
+          files: [file],
+          title: 'My daily targets — Totality 360',
+          text: 'My personalised calorie & macro targets from the free Totality 360 calculator:',
+        });
+      } catch (e) { /* user cancelled the share sheet — no-op */ }
+    }, 'image/png');
   }
 </script>
 
