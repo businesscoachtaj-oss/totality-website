@@ -101,10 +101,10 @@
 
   .card {
     background: var(--white);
-    border-radius: 18px;
-    padding: 28px 24px;
+    border-radius: 16px;
+    padding: 24px 22px;
     border: 1px solid var(--border);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     margin-bottom: 14px;
   }
 
@@ -260,60 +260,62 @@
   .results-header h2 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
   .results-header p { color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
 
-  /* TDEE three-tile row */
-  .tdee-row { display: flex; gap: 10px; margin-bottom: 14px; }
+  /* TDEE three-tile row — tile proportions and the dark "hero" middle tile
+     mirror the tile layout in the actual app's Calorie Calculator screen. */
+  .tdee-row { display: flex; gap: 8px; margin-bottom: 14px; }
 
   .tdee-tile {
     flex: 1;
     background: var(--off-white);
-    border-radius: 14px;
-    padding: 16px 10px;
+    border-radius: 12px;
+    padding: 14px 8px;
     text-align: center;
     border: 1px solid var(--border);
   }
 
   .tdee-tile.main {
-    flex: 1.4;
+    flex: 1.3;
     background: var(--dark);
     border-color: var(--dark);
   }
 
   .tdee-tile-label {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 
   .tdee-tile.main .tdee-tile-label { color: rgba(255,255,255,0.6); }
 
-  .tdee-tile-value { font-size: 1.7rem; font-weight: 800; color: var(--dark); letter-spacing: -0.02em; }
-  .tdee-tile.main .tdee-tile-value { font-size: 2rem; color: var(--white); }
+  .tdee-tile-value { font-size: 1.55rem; font-weight: 800; color: var(--dark); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .tdee-tile.main .tdee-tile-value { font-size: 1.85rem; color: var(--white); }
   .tdee-tile.target .tdee-tile-value { color: var(--orange); }
 
-  .tdee-tile-unit { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+  .tdee-tile-unit { font-size: 0.68rem; color: var(--muted); margin-top: 2px; }
   .tdee-tile.main .tdee-tile-unit { color: rgba(255,255,255,0.5); }
 
-  /* Macro row */
+  /* Macro row — single flowing row with hairline dividers between tiles,
+     matching the divider treatment in the app's macro breakdown. */
   .macro-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--border);
-    border-radius: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--off-white);
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border);
     margin-bottom: 14px;
   }
 
-  .macro-tile { flex: 1; padding: 14px 8px; text-align: center; background: var(--off-white); }
+  .macro-tile { flex: 1; min-width: 78px; padding: 13px 6px; text-align: center; }
+  .macro-tile:not(:first-child) { border-left: 1px solid var(--border); }
   .macro-divider { display: none; }
 
-  .macro-tile-value { font-size: 1.4rem; font-weight: 800; color: var(--orange); margin-bottom: 2px; }
-  .macro-tile-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 2px; }
-  .macro-tile-sub { font-size: 0.7rem; color: var(--muted); }
+  .macro-tile-value { font-size: 1.3rem; font-weight: 800; color: var(--orange); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+  .macro-tile-label { font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 2px; }
+  .macro-tile-sub { font-size: 0.68rem; color: var(--muted); }
 
   /* CTA */
   .result-cta {
@@ -904,38 +906,27 @@
     const W = canvas.width, H = canvas.height;
     const F = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
 
-    // Background
-    const bg = ctx.createLinearGradient(0, 0, 0, H);
-    bg.addColorStop(0, '#2f2e2d');
-    bg.addColorStop(1, '#1c1b1a');
-    ctx.fillStyle = bg;
+    // Background — white, matching the site
+    ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(0, 0, W, H);
 
     // Top accent bar
     ctx.fillStyle = '#ED8008';
     ctx.fillRect(0, 0, W, 14);
 
-    // Ambient orange glow behind the hero number
-    const glow = ctx.createRadialGradient(W / 2, 760, 40, W / 2, 760, 560);
-    glow.addColorStop(0, 'rgba(237,128,8,0.20)');
-    glow.addColorStop(1, 'rgba(237,128,8,0)');
-    ctx.fillStyle = glow;
-    ctx.fillRect(0, 300, W, 900);
-
-    // Wordmark — plain text, matching the site's own nav-brand styling
-    // (no raster logo: logo.png has an opaque white backing plate baked in,
-    // which reads as a sticker on this dark card)
-    ctx.textBaseline = 'middle';
-    ctx.fillStyle = '#ED8008';
-    ctx.beginPath();
-    ctx.arc(96, 126, 10, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.fillStyle = '#FFFFFF';
-    ctx.font = '800 32px ' + F;
-    ctx.textAlign = 'left';
-    ctx.fillText('TOTALITY 360', 126, 128);
+    // Real logo mark, top-left
+    const logoImg = await new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = reject;
+      img.src = 'logo.png';
+    });
+    const logoH = 130;
+    const logoW = logoH * (logoImg.width / logoImg.height);
+    ctx.drawImage(logoImg, 80, 66, logoW, logoH);
 
     // Eyebrow pill
+    ctx.textBaseline = 'middle';
     const pillText = 'MY DAILY TARGETS';
     ctx.font = '800 26px ' + F;
     ctx.textAlign = 'center';
@@ -949,11 +940,11 @@
     // Hero number — target calories
     ctx.textBaseline = 'alphabetic';
     const target = document.getElementById('res-target').textContent;
-    ctx.fillStyle = '#FFFFFF';
+    ctx.fillStyle = '#272626';
     ctx.font = '800 250px ' + F;
     ctx.fillText(target, W / 2, 800);
 
-    ctx.fillStyle = 'rgba(255,255,255,0.55)';
+    ctx.fillStyle = '#A0A0A0';
     ctx.font = '700 38px ' + F;
     ctx.fillText('CALORIES / DAY', W / 2, 866);
 
@@ -967,10 +958,10 @@
     const tileW = (W - 160 - gap * 2) / 3;
     macros.forEach((m, i) => {
       const x = 80 + i * (tileW + gap);
-      ctx.fillStyle = 'rgba(255,255,255,0.07)';
+      ctx.fillStyle = '#F7F7F7';
       roundRect(ctx, x, tileY, tileW, tileH, 22);
       ctx.fill();
-      ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+      ctx.strokeStyle = '#E8E8E8';
       ctx.lineWidth = 2;
       roundRect(ctx, x, tileY, tileW, tileH, 22);
       ctx.stroke();
@@ -979,7 +970,7 @@
       ctx.font = '800 62px ' + F;
       ctx.fillText(m.value, x + tileW / 2, tileY + 115);
 
-      ctx.fillStyle = 'rgba(255,255,255,0.55)';
+      ctx.fillStyle = '#A0A0A0';
       ctx.font = '700 25px ' + F;
       ctx.fillText(m.label, x + tileW / 2, tileY + 168);
     });
@@ -993,12 +984,12 @@
     ctx.font = '800 42px ' + F;
     ctx.fillText('Get your free plan →', W / 2, ctaY + ctaH / 2 + 15);
 
-    ctx.fillStyle = 'rgba(255,255,255,0.7)';
+    ctx.fillStyle = '#A0A0A0';
     ctx.font = '700 34px ' + F;
     ctx.fillText('totality360.com.au', W / 2, ctaY + ctaH + 68);
 
     // Footer
-    ctx.fillStyle = 'rgba(255,255,255,0.32)';
+    ctx.fillStyle = '#C9C9C9';
     ctx.font = '500 26px ' + F;
     ctx.fillText('Calculated with the free Totality 360 calculator', W / 2, H - 70);
 
