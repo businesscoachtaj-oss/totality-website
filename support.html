@@ -23,46 +23,16 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+  <link rel="stylesheet" href="css/site.css">
   <style>
     /* ── Reset & base ── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: #F7F7F7;
-      color: #272626;
       line-height: 1.7;
       font-size: 16px;
     }
-
-    /* ── Nav ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(255,255,255,0.95);
-      -webkit-backdrop-filter: blur(8px);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #E8E8E8;
-      padding: 0 32px; height: 60px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 800; color: #ED8008; letter-spacing: -0.02em; text-decoration: none; }
-    .nav-links { display: flex; gap: 24px; align-items: center; }
-    .nav-links a { font-size: 0.88rem; color: #A0A0A0; font-weight: 500; transition: color 0.15s; text-decoration: none; }
-    .nav-links a:hover { color: #272626; }
-    .nav-cta {
-      background: #ED8008 !important; color: #fff !important;
-      padding: 7px 16px; border-radius: 999px;
-      font-weight: 600 !important; font-size: 0.82rem !important;
-      transition: background 0.15s !important; white-space: nowrap;
-    }
-    .nav-cta:hover { background: #C46800 !important; }
-    .nav-cta-nutrition {
-      background: #1565A0 !important; color: #fff !important;
-      padding: 7px 16px; border-radius: 999px;
-      font-weight: 600 !important; font-size: 0.82rem !important;
-      transition: background 0.15s !important; white-space: nowrap;
-    }
-    .nav-cta-nutrition:hover { background: #1A7FC1 !important; }
 
     /* ── Hero bar ── */
     .hero {
@@ -195,25 +165,8 @@
     }
     .email-btn:hover { background: #C46800; }
 
-    /* ── Footer ── */
-    footer {
-      background: #F7F7F7; border-top: 1px solid #E8E8E8;
-      padding: 28px 32px; display: flex;
-      justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 16px;
-    }
-    .footer-brand { font-weight: 800; font-size: 0.9rem; color: #ED8008; }
-    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
-    .footer-links a { font-size: 0.82rem; color: #A0A0A0; transition: color 0.15s; text-decoration: none; }
-    .footer-links a:hover { color: #272626; }
-    .footer-copy { font-size: 0.82rem; color: #A0A0A0; }
-
     /* ── Responsive ── */
     @media (max-width: 600px) {
-      nav { padding: 0 16px; }
-      .nav-links a:not(.nav-cta):not(.nav-cta-nutrition) { display: none; }
-      footer { flex-direction: column; text-align: center; }
-      .footer-links { justify-content: center; flex-wrap: wrap; }
       .hero { padding: 28px 20px 24px; }
       .hero h1 { font-size: 26px; }
       .container { padding: 32px 16px 60px; }
@@ -226,7 +179,11 @@
   <!-- ── Nav ── -->
   <nav>
     <a href="/" class="nav-logo">TOTALITY 360</a>
-    <div class="nav-links">
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navMenu">
+      <a href="/">Home</a>
       <a href="/totality.html">Totality</a>
       <a href="/nutrition.html">Nutrition</a>
       <a href="/blog/">Totality Reports</a>
@@ -327,5 +284,6 @@
     <span class="footer-copy">&copy; 2026 Totality 360 Pty Ltd</span>
   </footer>
 
+  <script src="js/nav.js" defer></script>
 </body>
 </html>
