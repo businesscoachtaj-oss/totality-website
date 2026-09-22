@@ -34,23 +34,27 @@
       if (window.innerWidth > 860) closeMenu();
     });
 
-    // Mark the current page's nav link. The homepage ("/") is handled as a
-    // special case; every other link is matched by its own last non-empty
-    // path segment, so a section link like "blog/" never gets confused
-    // with the site root.
-    var hereSegments = location.pathname.split('/').filter(Boolean);
-    var here = hereSegments.length ? hereSegments[hereSegments.length - 1] : 'index.html';
-    var onHome = here === 'index.html' || here === '';
+    // Mark the current page's nav link. Every href is resolved to an
+    // absolute path and normalized (trailing "index.html" stripped, a
+    // trailing slash added) before comparing, so "/blog/index.html" and
+    // "/blog/" are recognised as the same page as "/blog/" in the nav,
+    // and neither is ever confused with the site root "/".
+    function normalize(pathname) {
+      var p = pathname.replace(/index\.html$/, '');
+      if (p.charAt(p.length - 1) !== '/') p += '/';
+      return p;
+    }
+    var herePath = normalize(location.pathname);
 
     menu.querySelectorAll('a[href]').forEach(function (a) {
       var raw = a.getAttribute('href');
-      if (raw === '/' || raw === '/index.html' || raw === 'index.html') {
-        if (onHome) a.classList.add('is-current');
+      var resolved;
+      try {
+        resolved = new URL(raw, location.href).pathname;
+      } catch (e) {
         return;
       }
-      var segments = raw.split('/').filter(Boolean);
-      var seg = segments.length ? segments[segments.length - 1] : '';
-      if (seg && seg === here) {
+      if (normalize(resolved) === herePath) {
         a.classList.add('is-current');
       }
     });
