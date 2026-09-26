@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Commission Savings Calculator — Totality 360</title>
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<meta name="description" content="See how much commission you're paying on client bookings today, and what a zero-commission platform like Totality would save you every month.">
+
+<link rel="canonical" href="https://totality360.com.au/commission-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Totality 360">
+<meta property="og:title" content="Free Commission Savings Calculator — Totality 360">
+<meta property="og:description" content="See how much commission you're paying on client bookings today, and what a zero-commission platform like Totality would save you every month.">
+<meta property="og:url" content="https://totality360.com.au/commission-calculator.html">
+<meta property="og:image" content="https://totality360.com.au/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Commission Savings Calculator — Totality 360">
+<meta name="twitter:description" content="See how much commission you're paying on client bookings today, and what a zero-commission platform like Totality would save you every month.">
+<meta name="twitter:image" content="https://totality360.com.au/og-image.png">
+<style>
+  :root {
+    --orange: #ED8008;
+    --orange-dark: #C46800;
+    --white: #FFFFFF;
+    --off-white: #F7F7F7;
+    --dark: #272626;
+    --muted: #A0A0A0;
+    --border: #E8E8E8;
+    --purple: #6C3483;
+    --purple-tint: #F0E6F6;
+    --success: #2ECC71;
+    --error: #E74C3C;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--off-white);
+    color: var(--dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  nav {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-brand { font-size: 0.75rem; font-weight: 800; color: var(--dark); letter-spacing: 0.12em; text-transform: uppercase; }
+  .nav-back { font-size: 0.85rem; color: var(--muted); font-weight: 500; }
+  .nav-back:hover { color: var(--dark); }
+
+  .hero {
+    background: var(--white);
+    text-align: center;
+    padding: 48px 24px 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--purple-tint);
+    color: var(--purple);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .hero h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .hero h1 em { font-style: normal; color: var(--orange); }
+  .hero p { color: var(--muted); font-size: 0.95rem; max-width: 440px; margin: 10px auto 0; }
+
+  .form-wrap { max-width: 560px; margin: 0 auto; padding: 28px 16px 64px; }
+
+  .card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 24px 22px;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    margin-bottom: 14px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-num {
+    width: 26px; height: 26px;
+    border-radius: 8px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 0.78rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .field { margin-bottom: 20px; }
+  .field:last-child { margin-bottom: 0; }
+
+  .field-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .field-label span { color: var(--orange); margin-left: 2px; }
+  .field-hint { font-size: 0.78rem; color: var(--muted); margin-top: 8px; }
+
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: var(--dark);
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.15s;
+    -webkit-appearance: none;
+  }
+
+  input:focus { border-color: var(--orange); }
+
+  .input-row { display: flex; gap: 10px; }
+  .input-row .input-group { flex: 1; }
+  .input-row label { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+
+  /* Radio (email / coach) */
+  .radio-group { display: flex; gap: 10px; }
+  .radio-option { flex: 1; position: relative; }
+  .radio-option input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+  .radio-label {
+    display: block;
+    padding: 13px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: var(--muted);
+    background: var(--white);
+  }
+  .radio-option input[type="radio"]:checked + .radio-label {
+    border-color: var(--orange);
+    color: var(--orange);
+    background: rgba(237,128,8,0.06);
+  }
+
+  /* Toggle buttons */
+  .toggle-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .toggle-btn {
+    flex: 1;
+    min-width: 70px;
+    padding: 11px 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.3;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .toggle-btn:hover { border-color: var(--orange); color: var(--orange); }
+  .toggle-btn.active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+
+  /* Error */
+  .field-error { font-size: 0.78rem; color: var(--error); margin-top: 6px; display: none; }
+
+  /* Submit */
+  .btn-submit {
+    width: 100%;
+    padding: 16px;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 4px;
+    box-shadow: 0 4px 16px rgba(237,128,8,0.25);
+  }
+
+  .btn-submit:hover { background: var(--orange-dark); transform: translateY(-1px); }
+  .btn-submit:disabled { background: var(--muted); cursor: not-allowed; transform: none; box-shadow: none; }
+
+  /* Results */
+  #results { display: none; margin-top: 8px; }
+
+  .results-header { text-align: center; padding: 20px 0 12px; }
+  .results-header h2 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
+  .results-header p { color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+
+  .savings-hero {
+    background: var(--dark);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .savings-hero-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+  .savings-hero-value { font-size: 2.6rem; font-weight: 800; color: var(--white); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .savings-hero-sub { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 6px; }
+
+  .compare-row { display: flex; gap: 8px; margin-bottom: 14px; }
+
+  .compare-tile {
+    flex: 1;
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 16px 10px;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+
+  .compare-tile.win { background: rgba(46,204,113,0.08); border-color: rgba(46,204,113,0.3); }
+
+  .compare-tile-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .compare-tile-value { font-size: 1.4rem; font-weight: 800; color: var(--dark); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .compare-tile.win .compare-tile-value { color: var(--success); }
+  .compare-tile-unit { font-size: 0.68rem; color: var(--muted); margin-top: 3px; }
+
+  .result-cta {
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 14px;
+    background: rgba(237,128,8,0.06);
+    border: 1px solid rgba(237,128,8,0.2);
+  }
+
+  .result-cta h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+  .result-cta p { font-size: 0.85rem; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+
+  .btn-cta {
+    display: inline-block;
+    padding: 13px 26px;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.92rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(237,128,8,0.3);
+    transition: background 0.15s;
+  }
+
+  .btn-cta:hover { background: var(--orange-dark); }
+
+  .disclaimer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.75rem;
+    line-height: 1.6;
+    padding: 0 0 8px;
+  }
+
+  .disclaimer a { color: var(--orange); }
+
+  footer {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  footer a { color: var(--orange); }
+
+  @media (max-width: 480px) {
+    .hero { padding: 40px 16px 28px; }
+    .card { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">TOTALITY 360 PTY LTD</span>
+  <a href="totality.html" class="nav-back">← Back</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">Free tool — takes 30 seconds</div>
+  <h1>What is <em>commission</em><br>really costing you?</h1>
+  <p>See what you're likely paying in booking commission today, and what you'd keep with a flat-fee, zero-commission platform like Totality.</p>
+</div>
+
+<div class="form-wrap">
+
+  <!-- CARD 1: Lead capture -->
+  <div class="card">
+    <div class="card-title"><div class="card-num">1</div> About you</div>
+
+    <div class="field">
+      <label class="field-label">Email address <span>*</span></label>
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+      <div class="field-error" id="email-error">Please enter a valid email address.</div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Are you a gym owner or personal trainer? <span>*</span></label>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" name="is_coach" id="coach-gym" value="gym_owner" onchange="clearCoachError()" />
+          <label class="radio-label" for="coach-gym">Gym Owner</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="is_coach" id="coach-pt" value="coach" onchange="clearCoachError()" />
+          <label class="radio-label" for="coach-pt">Coach / PT</label>
+        </div>
+      </div>
+      <div class="field-error" id="coach-error">Please select an option.</div>
+    </div>
+  </div>
+
+  <!-- CARD 2: Booking numbers -->
+  <div class="card">
+    <div class="card-title"><div class="card-num">2</div> Your bookings</div>
+
+    <div class="field">
+      <label class="field-label">Client sessions or classes billed per month <span>*</span></label>
+      <input type="number" id="bookings" placeholder="e.g. 120" min="1" max="5000" step="1" />
+      <div class="field-error" id="bookings-error">Please enter how many sessions or classes you bill per month.</div>
+      <p class="field-hint">PT sessions, class bookings, memberships — anything charged through your booking platform.</p>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Average price per session or class <span>*</span></label>
+      <input type="number" id="price" placeholder="e.g. 65" min="1" max="1000" step="1" />
+      <div class="field-error" id="price-error">Please enter your average price per session or class.</div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Platform's commission rate</label>
+      <div class="toggle-row" id="rate-toggle">
+        <div class="toggle-btn active" data-value="0.20" onclick="selectRate('0.20', this)">~20%</div>
+        <div class="toggle-btn" data-value="0.15" onclick="selectRate('0.15', this)">~15%</div>
+        <div class="toggle-btn" data-value="0.10" onclick="selectRate('0.10', this)">~10%</div>
+      </div>
+      <p class="field-hint">Many booking marketplaces charge commission per booking, often 10–20%, sometimes capped at a flat amount per booking. Pick the closest, or leave the default.</p>
+    </div>
+  </div>
+
+  <button class="btn-submit" id="calc-btn" onclick="calculate()">See my savings →</button>
+
+  <!-- RESULTS -->
+  <div id="results">
+
+    <div class="results-header">
+      <h2>Here's what commission is costing you</h2>
+      <p>Based on the numbers you entered</p>
+    </div>
+
+    <div class="savings-hero">
+      <div class="savings-hero-label">Estimated savings with zero commission</div>
+      <div class="savings-hero-value" id="res-annual-savings">—</div>
+      <div class="savings-hero-sub" id="res-monthly-savings-sub">— per year (— /month)</div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-tile">
+        <div class="compare-tile-label">Commission model</div>
+        <div class="compare-tile-value" id="res-commission-cost">—</div>
+        <div class="compare-tile-unit">per month</div>
+      </div>
+      <div class="compare-tile win">
+        <div class="compare-tile-label">Totality (flat fee)</div>
+        <div class="compare-tile-value" id="res-totality-cost">—</div>
+        <div class="compare-tile-unit">per month</div>
+      </div>
+    </div>
+
+    <div class="result-cta" id="cta-block">
+      <h3 id="cta-heading">Keep that money in your business.</h3>
+      <p id="cta-body">Totality charges a flat monthly fee with zero commission on your coaching revenue — just a small payment processing fee, itemised on every payout. No surprise cuts as you grow.</p>
+      <a href="get-totality.html" class="btn-cta">Start free — see it in action →</a>
+    </div>
+
+    <p class="disclaimer">
+      Commission rate estimates only, for illustration — actual rates and caps vary by platform and plan. Totality's own fee is a flat monthly subscription plus a
+      3.5% payment processing fee on in-app payments; full pricing is on our <a href="totality.html#pricing">pricing page</a>.<br><br>
+      By using this calculator you agree to receive occasional emails from Totality 360. We never share your data. <a href="privacy.html">Privacy policy</a>.
+    </p>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Totality 360 Pty Ltd &nbsp;·&nbsp; <a href="totality.html">Back to website</a>
+</footer>
+
+<script>
+  const state = { rate: 0.20 };
+
+  function selectRate(value, el) {
+    const container = el.parentElement;
+    container.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+    state.rate = parseFloat(value);
+  }
+
+  function clearCoachError() {
+    document.getElementById('coach-error').style.display = 'none';
+  }
+
+  function validate() {
+    let valid = true;
+
+    const email = document.getElementById('email').value.trim();
+    const emailErr = document.getElementById('email-error');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      emailErr.style.display = 'block'; valid = false;
+    } else { emailErr.style.display = 'none'; }
+
+    const coach = document.querySelector('input[name="is_coach"]:checked');
+    const coachErr = document.getElementById('coach-error');
+    if (!coach) { coachErr.style.display = 'block'; valid = false; }
+    else { coachErr.style.display = 'none'; }
+
+    const bookings = parseInt(document.getElementById('bookings').value);
+    const bookingsErr = document.getElementById('bookings-error');
+    if (!bookings || bookings < 1) { bookingsErr.style.display = 'block'; valid = false; }
+    else { bookingsErr.style.display = 'none'; }
+
+    const price = parseFloat(document.getElementById('price').value);
+    const priceErr = document.getElementById('price-error');
+    if (!price || price < 1) { priceErr.style.display = 'block'; valid = false; }
+    else { priceErr.style.display = 'none'; }
+
+    return valid;
+  }
+
+  function fmtMoney(n) {
+    return 'A$' + Math.round(n).toLocaleString();
+  }
+
+  function calculate() {
+    if (!validate()) return;
+
+    const email = document.getElementById('email').value.trim();
+    const isCoach = document.querySelector('input[name="is_coach"]:checked').value;
+    const bookings = parseInt(document.getElementById('bookings').value);
+    const price = parseFloat(document.getElementById('price').value);
+    const rate = state.rate;
+
+    const monthlyRevenue = bookings * price;
+
+    // Commission model: percentage of each booking, capped at $30/booking —
+    // a common structure among booking-marketplace platforms.
+    const commissionCap = 30;
+    const commissionPerBooking = Math.min(price * rate, commissionCap);
+    const monthlyCommissionCost = bookings * commissionPerBooking;
+
+    // Totality: zero commission, flat 3.5% payment processing fee on in-app payments.
+    const totalityProcessingRate = 0.035;
+    const monthlyTotalityCost = monthlyRevenue * totalityProcessingRate;
+
+    const monthlySavings = Math.max(0, monthlyCommissionCost - monthlyTotalityCost);
+    const annualSavings = monthlySavings * 12;
+
+    document.getElementById('res-annual-savings').textContent = fmtMoney(annualSavings);
+    document.getElementById('res-monthly-savings-sub').textContent =
+      fmtMoney(annualSavings) + ' per year (' + fmtMoney(monthlySavings) + ' /month)';
+    document.getElementById('res-commission-cost').textContent = fmtMoney(monthlyCommissionCost);
+    document.getElementById('res-totality-cost').textContent = fmtMoney(monthlyTotalityCost);
+
+    if (isCoach === 'gym_owner') {
+      document.getElementById('cta-heading').textContent = 'Keep that money in your business.';
+      document.getElementById('cta-body').textContent = 'Totality charges a flat monthly fee with zero commission on your coaching and class revenue — just a small payment processing fee, itemised on every payout. No surprise cuts as your gym grows.';
+    } else {
+      document.getElementById('cta-heading').textContent = 'Keep more of what you earn.';
+      document.getElementById('cta-body').textContent = 'Totality charges a flat monthly fee with zero commission on your PT revenue — just a small payment processing fee, itemised on every payout. No surprise cuts as your client base grows.';
+    }
+
+    document.getElementById('results').style.display = 'block';
+
+    fetch('https://formspree.io/f/mjgqyqdj', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        is_coach: isCoach === 'gym_owner' ? 'Gym Owner' : 'Coach / PT',
+        monthly_bookings: bookings,
+        avg_price: price,
+        assumed_commission_rate: rate,
+        monthly_commission_cost: Math.round(monthlyCommissionCost),
+        monthly_totality_cost: Math.round(monthlyTotalityCost),
+        monthly_savings: Math.round(monthlySavings),
+        annual_savings: Math.round(annualSavings),
+        _subject: `New commission calculator lead — ${isCoach === 'gym_owner' ? '🏢 GYM OWNER' : '🏋️ COACH/PT'}: ${email}`
+      })
+    }).catch(() => {});
+
+    setTimeout(() => {
+      document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+
+    const btn = document.getElementById('calc-btn');
+    btn.textContent = '✓ Results calculated';
+    btn.disabled = true;
+  }
+</script>
+
+</body>
+</html>
