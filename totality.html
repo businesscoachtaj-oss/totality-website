@@ -282,6 +282,29 @@
   @media (max-width: 600px) {
     .hero-checklist { grid-template-columns: 1fr; }
   }
+
+  /* PRODUCT VIDEO */
+  .video-section { background: var(--white); text-align: center; }
+  .video-wrap { max-width: 420px; margin: 40px auto 0; }
+  .video-wrap video {
+    width: 100%; border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(39,38,38,0.16); display: block;
+  }
+
+  /* HONEST COMPARE / NOT-YET */
+  .honest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+  .honest-card { border-radius: 16px; padding: 28px; border: 1px solid var(--border); }
+  .honest-card.fit { background: rgba(46,204,113,0.06); border-color: rgba(46,204,113,0.35); }
+  .honest-card.notfit { background: var(--off-white); }
+  .honest-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .honest-card.fit h3 { color: var(--success); }
+  .honest-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .honest-card li { font-size: 0.88rem; color: var(--dark); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+  .honest-card.fit li::before { content: "✓"; color: var(--success); font-weight: 700; flex-shrink: 0; }
+  .honest-card.notfit li::before { content: "→"; color: var(--muted); font-weight: 700; flex-shrink: 0; }
+  @media (max-width: 700px) {
+    .honest-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -356,6 +379,17 @@
   </div>
 </div>
 
+<!-- PRODUCT VIDEO -->
+<section class="section video-section">
+  <div class="section-inner">
+    <div class="section-eyebrow" style="text-align: center;">See it in action</div>
+    <h2 class="section-title" style="margin: 0 auto; text-align: center;">A 60-second look at how Totality actually works.</h2>
+    <div class="video-wrap">
+      <video src="get-totality-hero.mp4" poster="get-totality-hero.jpg" controls playsinline preload="metadata" aria-label="Totality walkthrough for gyms and coaching businesses"></video>
+    </div>
+  </div>
+</section>
+
 <!-- FOR WHO -->
 <section class="section" style="background: var(--off-white);" id="who">
   <div class="section-inner">
@@ -389,7 +423,7 @@
   <div class="section-inner">
     <div class="section-eyebrow">Features</div>
     <h2 class="section-title">Everything you need. Nothing you don't.</h2>
-    <p class="section-sub">Every feature is built in. No add-ons required to make the core product work.</p>
+    <p class="section-sub">Every feature is built in. No add-ons required to make the core product work — and there's more inside the app than we can fit on this page.</p>
     <div class="features-grid">
       <div class="feature-block">
         <div class="feature-icon">📋</div>
@@ -636,6 +670,35 @@
       <div class="compare-card"><div class="compare-feature-name">Commission on coaching revenue</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Zero + small fee</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">Up to 20%</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">% fees</span></div></div></div>
       <div class="compare-card"><div class="compare-feature-name">Contract lock-in</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Month to month</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">12–24 mo</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value partial">Varies</span></div></div></div>
       <div class="compare-card"><div class="compare-feature-name">Client app</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Always free</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value partial">Paid/limited</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value partial">Paid/limited</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HONEST FIT -->
+<section class="section" style="background: var(--white);" id="fit">
+  <div class="section-inner">
+    <div class="section-eyebrow">Is Totality right for you?</div>
+    <h2 class="section-title">We'd rather tell you now than have you find out after you switch.</h2>
+    <p class="section-sub">Totality is purpose-built for coaching, not facility management — that's a deliberate trade-off, not an oversight. Compared to Mindbody or Trainerize, here's where that actually lands.</p>
+    <div class="honest-grid">
+      <div class="honest-card fit">
+        <h3>Totality is a strong fit if you...</h3>
+        <ul>
+          <li>Run a solo PT business or a small-to-mid gym and want programming, nutrition, billing and admin in one login</li>
+          <li>Want real coaching intelligence — auto-regulation, at-risk flagging, adaptive nutrition — not just a booking calendar</li>
+          <li>Are tired of commission on your coaching revenue or multi-year contracts</li>
+          <li>Want to migrate off Mindbody, Trainerize or PTminder without starting from scratch</li>
+        </ul>
+      </div>
+      <div class="honest-card notfit">
+        <h3>We're not there yet if you need...</h3>
+        <ul>
+          <li>Built-in automated member lifecycle marketing (birthday offers, win-back campaigns) — Mindbody has this natively, we don't yet</li>
+          <li>A native referral or loyalty rewards program for your own members</li>
+          <li>Family or multi-member accounts under one login and one bill</li>
+          <li>A large marketplace of 100+ third-party integrations</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

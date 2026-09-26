@@ -85,6 +85,73 @@
   /* SECTION — nutrition's accent is blue, not the shared default orange */
   .section-eyebrow { color: var(--nutrition); }
 
+  /* STATS */
+  .stats-bar {
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 36px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-number { font-size: 2rem; font-weight: 800; color: var(--nutrition); letter-spacing: -0.02em; }
+  .stat-label { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+  .stat-footnote { font-size: 0.68rem; color: var(--muted); margin-top: 4px; opacity: 0.85; }
+  @media (max-width: 600px) {
+    .stats-bar { flex-direction: column; align-items: center; gap: 32px; text-align: center; }
+  }
+
+  /* PRODUCT VIDEO */
+  .video-section { background: var(--white); text-align: center; }
+  .video-wrap { max-width: 420px; margin: 40px auto 0; }
+  .video-wrap video {
+    width: 100%; border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(21,101,160,0.18); display: block;
+  }
+
+  /* WHY US */
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px; }
+  .why-card { background: var(--off-white); border-radius: 16px; padding: 32px; border: 1px solid var(--border); }
+  .why-card-icon { font-size: 2rem; margin-bottom: 16px; }
+  .why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
+  .why-card p { color: var(--muted); font-size: 0.88rem; line-height: 1.7; }
+
+  /* COMPARISON */
+  .compare-wrap { margin-top: 48px; }
+  .compare-card { background: var(--white); border-radius: 14px; border: 1px solid var(--border); padding: 18px 20px; margin-bottom: 14px; }
+  .compare-feature-name { font-weight: 700; font-size: 0.92rem; margin-bottom: 12px; color: var(--dark); }
+  .compare-row-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .compare-cell { text-align: center; border-radius: 10px; padding: 10px 6px; background: var(--off-white); }
+  .compare-cell.nutrition-cell { background: rgba(21,101,160,0.08); border: 1px solid rgba(21,101,160,0.35); }
+  .compare-cell-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); display: block; margin-bottom: 6px; }
+  .compare-cell.nutrition-cell .compare-cell-label { color: var(--nutrition-dark); }
+  .compare-cell-value { font-size: 0.82rem; font-weight: 600; }
+  .check { color: var(--success); font-weight: 700; }
+  .cross { color: #E74C3C; font-weight: 700; }
+  .partial { color: var(--nutrition); font-weight: 600; font-size: 0.82rem; }
+  @media (min-width: 700px) {
+    .compare-card { display: none; }
+    .vs-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.06); border: 1px solid var(--border); display: table; }
+    .vs-table th { padding: 14px 12px; font-size: 0.82rem; font-weight: 700; text-align: left; background: var(--off-white); color: var(--dark); border-bottom: 2px solid var(--border); white-space: nowrap; }
+    .vs-table th:first-child { width: 42%; white-space: normal; }
+    .vs-table th:not(:first-child) { width: 29%; text-align: center; }
+    .vs-table td { padding: 12px; font-size: 0.82rem; border-bottom: 1px solid var(--border); color: var(--dark); vertical-align: middle; }
+    .vs-table td:not(:first-child) { text-align: center; }
+    .vs-table tr:last-child td { border-bottom: none; }
+    .vs-table tr:nth-child(even) td { background: var(--off-white); }
+  }
+  @media (max-width: 699px) { .vs-table { display: none; } }
+
+  /* FAQ */
+  details { background: var(--white); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2px; }
+  summary { padding: 20px 24px; font-weight: 700; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary .faq-icon { color: var(--nutrition); font-size: 1.2rem; flex-shrink: 0; }
+  .faq-body { padding: 0 24px 20px; color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+
   /* FEATURES GRID */
   .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin-top: 48px; }
   .feature-block { display: flex; gap: 14px; align-items: flex-start; }
@@ -226,12 +293,43 @@
   </div>
 </section>
 
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-number">A$8.99</div>
+    <div class="stat-label">Flat price per month</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">15</div>
+    <div class="stat-label">Features included — no add-ons</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">4+</div>
+    <div class="stat-label">AU supermarkets, plus a global database</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">0</div>
+    <div class="stat-label">Premium tiers or paywalled features</div>
+  </div>
+</div>
+
+<!-- PRODUCT VIDEO -->
+<section class="section video-section">
+  <div class="section-inner">
+    <div class="section-eyebrow" style="text-align: center;">See it in action</div>
+    <h2 class="section-title" style="margin: 0 auto; text-align: center;">A 60-second look at how Totality Nutrition works.</h2>
+    <div class="video-wrap">
+      <video src="get-nutrition-hero.mp4" poster="get-nutrition-hero.jpg" controls playsinline preload="metadata" aria-label="Totality Nutrition walkthrough"></video>
+    </div>
+  </div>
+</section>
+
 <!-- FEATURES -->
 <section class="section" style="background: var(--white);" id="features">
   <div class="section-inner">
     <div class="section-eyebrow">Features</div>
     <h2 class="section-title">Everything you need to track your nutrition. Nothing you don't.</h2>
-    <p class="section-sub">Every feature included in one flat monthly price. No add-ons, no upgrades required.</p>
+    <p class="section-sub">Every feature included in one flat monthly price. No add-ons, no upgrades required — and there's more inside the app than we can fit on this page.</p>
     <div class="features-grid">
       <div class="feature-block">
         <div class="feature-icon">🇦🇺</div>
@@ -280,6 +378,13 @@
         <div>
           <h3>Saved meals</h3>
           <p>Save a meal you eat regularly with one tap. Re-log it any time in seconds — no searching, no re-entering serving sizes.</p>
+        </div>
+      </div>
+      <div class="feature-block">
+        <div class="feature-icon">🔗</div>
+        <div>
+          <h3>Recipe importer</h3>
+          <p>Paste a link to any recipe online and Totality Nutrition reads the ingredients, matches them to our food database, and builds a full macro breakdown per serving. Review and tweak on one screen, then save it to My Recipes and log it again with a single tap.</p>
         </div>
       </div>
       <div class="feature-block">
@@ -348,6 +453,69 @@
   </div>
 </div>
 
+<!-- WHY US -->
+<section class="section" style="background: var(--white);" id="why">
+  <div class="section-inner">
+    <div class="section-eyebrow">Why Totality Nutrition</div>
+    <h2 class="section-title">Built differently to the mainstream trackers.</h2>
+    <p class="section-sub">Most food tracking apps were built for a US market and bolt Australia on as an afterthought. Totality Nutrition started here.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon">🇦🇺</div>
+        <h3>Australian-first, not Australian-added</h3>
+        <p>Most mainstream trackers return "no results found" for half of what's on your local shelf. Ours was built from the ground up on Australian supermarket data, then extended with the global Open Food Facts database.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">⚖️</div>
+        <h3>Targets that adjust themselves</h3>
+        <p>Adaptive Nutrition and Calorie Cycling automatically rebalance your daily targets around real life — an over day, a training day, a rest day — instead of leaving you to do the maths.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">💳</div>
+        <h3>One price. Nothing locked behind a paywall.</h3>
+        <p>A lot of tracking apps put barcode scanning, macro breakdowns or trend insights behind a premium tier. Every feature is included in the one A$8.99/mo price from day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section" style="background: var(--off-white);" id="compare">
+  <div class="section-inner">
+    <div class="section-eyebrow">Feature comparison</div>
+    <h2 class="section-title">Totality Nutrition vs the typical food tracking app</h2>
+    <p class="section-sub">A general comparison against what most mainstream, US-built food tracking apps offer.</p>
+    <div class="compare-wrap">
+      <table class="vs-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="nutrition-col">Totality Nutrition</th>
+            <th class="them-col">Typical food tracking apps</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Australian supermarket product coverage</td><td><span class="check">✓</span> Built AU-first</td><td><span class="partial">Sparse / US-first</span></td></tr>
+          <tr><td>Barcode scanning reliability on AU products</td><td><span class="check">✓</span> Works at Woolies, Coles, IGA, ALDI</td><td><span class="partial">Frequent "not found"</span></td></tr>
+          <tr><td>Adaptive daily target adjustment</td><td><span class="check">✓</span> Included</td><td><span class="cross">✗</span> Rare or not available</td></tr>
+          <tr><td>Calorie cycling by training day</td><td><span class="check">✓</span> Included</td><td><span class="partial">Premium add-on in some apps</span></td></tr>
+          <tr><td>Weekly meal planning + grocery list</td><td><span class="check">✓</span> Included</td><td><span class="partial">Often a paid tier</span></td></tr>
+          <tr><td>Barcode scanning at all</td><td><span class="check">✓</span> Included</td><td><span class="partial">Often a paid tier</span></td></tr>
+          <tr><td>Body measurements + progress photos</td><td><span class="check">✓</span> Included</td><td><span class="partial">Often a paid tier</span></td></tr>
+          <tr><td>Pricing structure</td><td><span class="check">✓</span> One flat price, everything included</td><td><span class="partial">Free tier + multiple paid tiers</span></td></tr>
+          <tr><td>Contract lock-in</td><td><span class="check">✓</span> Month to month</td><td><span class="partial">Varies</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- Mobile cards -->
+      <div class="compare-card"><div class="compare-feature-name">Australian supermarket product coverage</div><div class="compare-row-grid"><div class="compare-cell nutrition-cell"><span class="compare-cell-label">Totality Nutrition</span><span class="compare-cell-value check">✓ AU-first</span></div><div class="compare-cell"><span class="compare-cell-label">Typical apps</span><span class="compare-cell-value partial">Sparse</span></div></div></div>
+      <div class="compare-card"><div class="compare-feature-name">Adaptive daily target adjustment</div><div class="compare-row-grid"><div class="compare-cell nutrition-cell"><span class="compare-cell-label">Totality Nutrition</span><span class="compare-cell-value check">✓ Included</span></div><div class="compare-cell"><span class="compare-cell-label">Typical apps</span><span class="compare-cell-value cross">✗ Rare</span></div></div></div>
+      <div class="compare-card"><div class="compare-feature-name">Barcode scanning at all</div><div class="compare-row-grid"><div class="compare-cell nutrition-cell"><span class="compare-cell-label">Totality Nutrition</span><span class="compare-cell-value check">✓ Included</span></div><div class="compare-cell"><span class="compare-cell-label">Typical apps</span><span class="compare-cell-value partial">Often paid</span></div></div></div>
+      <div class="compare-card"><div class="compare-feature-name">Pricing structure</div><div class="compare-row-grid"><div class="compare-cell nutrition-cell"><span class="compare-cell-label">Totality Nutrition</span><span class="compare-cell-value check">✓ One flat price</span></div><div class="compare-cell"><span class="compare-cell-label">Typical apps</span><span class="compare-cell-value partial">Free + paid tiers</span></div></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- PRICING -->
 <section class="section" style="background: var(--off-white);" id="pricing">
   <div class="section-inner">
@@ -399,6 +567,52 @@
     <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);">Why we built this</div>
     <p class="founder-quote">"I got sick of recommending food tracking apps to clients that barely had any Australian products in them. This is the app I wanted to hand my <span>own clients</span> — an Australian-first food database and barcode scanning that actually works at Woolies."</p>
     <p class="founder-byline">— Taj, Founder & CEO · Cert IV Personal Trainer · Sports & Exercise Nutrition · Bachelor of Game Development</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: var(--off-white);" id="faq">
+  <div class="section-inner">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-title">Questions we get a lot.</h2>
+    <div style="max-width: 720px; margin-top: 48px; display: flex; flex-direction: column; gap: 2px;">
+      <details>
+        <summary>Is it really one flat price? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Yes. A$8.99/mo gets you every feature — barcode scanning, adaptive targets, calorie cycling, meal planning, grocery lists, progress photos, all of it. There are no premium tiers and nothing held back for an upsell.</p>
+      </details>
+      <details>
+        <summary>Does it work if I already have a coach or trainer? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">If your coach uses Totality, nutrition tracking is already built into your free client app — you don't need a separate Totality Nutrition subscription. Totality Nutrition is for people tracking on their own, without a coach on the platform.</p>
+      </details>
+      <details>
+        <summary>Why does Totality Nutrition have more features than the nutrition tracking inside Totality? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Because it's a dedicated app with nutrition as its only job. That singular focus is why it goes deeper — recipe saving, calorie cycling, trend insights and more. That doesn't mean the nutrition tracking built into Totality's client app is lacking — it covers what a coach's clients need day to day — it's just that a purpose-built standalone app for individual tracking will always be able to go further on nutrition specifically than a feature inside a broader coaching platform.</p>
+      </details>
+      <details>
+        <summary>Can I cancel any time? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Yes. Totality Nutrition is month-to-month with self-serve cancellation — no contracts, no exit fees, no phone call required.</p>
+      </details>
+      <details>
+        <summary>Does barcode scanning really work at Woolworths, Coles and IGA? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Yes — that's the entire reason the app exists. The food database was built Australian-first, so scanning a product from Woolworths, Coles, IGA or ALDI logs it instantly instead of returning "product not found."</p>
+      </details>
+      <details>
+        <summary>What if a product isn't in the database? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">The Australian database is combined with the full global Open Food Facts database, so coverage is broad. If something genuinely isn't listed, you can log it manually with your own nutrition figures.</p>
+      </details>
+      <details>
+        <summary>Is there a free trial? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Yes — try it free, no card required. New accounts also get 50% off their first 2 months automatically once they subscribe, no code needed.</p>
+      </details>
+      <details>
+        <summary>Does Adaptive Nutrition mean my targets change every day? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Only when it needs to. If you go over your calories, Adaptive Nutrition trims tomorrow's target down slightly to compensate — capped at a gentle 500 cal/day, with a 1,200 cal safety floor and protein always left untouched. Stay on target and nothing changes.</p>
+      </details>
+      <details>
+        <summary>What devices does it run on? <span class="faq-icon">+</span></summary>
+        <p class="faq-body">Totality Nutrition is a native app available on iOS and Android.</p>
+      </details>
+    </div>
   </div>
 </section>
 
