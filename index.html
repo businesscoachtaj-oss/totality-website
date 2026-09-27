@@ -190,6 +190,43 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .totality-link { color: var(--orange); }
   .nutrition-link { color: var(--nutrition); }
 
+  /* MORE VIDEOS */
+  .more-videos {
+    padding: 64px 24px 80px; background: var(--white);
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .more-videos h2 {
+    font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 800;
+    letter-spacing: -0.02em; color: var(--dark);
+  }
+  .more-videos > p {
+    color: var(--muted); font-size: 0.95rem; margin-top: 10px;
+    max-width: 480px; margin-left: auto; margin-right: auto;
+  }
+  .more-videos-grid {
+    max-width: 960px; margin: 40px auto 0;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  }
+  .more-video-card {
+    background: var(--off-white); border-radius: 20px;
+    padding: 28px; border: 1px solid var(--border); text-align: left;
+  }
+  .more-video-card.totality-video { border-top: 4px solid var(--orange); }
+  .more-video-card.nutrition-video { border-top: 4px solid var(--nutrition); }
+  .more-video-card video {
+    width: 100%; border-radius: 14px; display: block;
+    box-shadow: 0 10px 28px rgba(39,38,38,0.12);
+  }
+  .more-video-card h3 {
+    margin-top: 18px; font-size: 1.05rem; font-weight: 700; color: var(--dark);
+  }
+  .more-video-card p {
+    margin-top: 6px; font-size: 0.85rem; color: var(--muted); line-height: 1.6;
+  }
+  @media (max-width: 768px) {
+    .more-videos-grid { grid-template-columns: 1fr; }
+  }
+
   /* DIFFERENCE STRIP */
   .difference {
     padding: 56px 24px; background: var(--dark); text-align: center;
@@ -334,6 +371,24 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <a href="nutrition.html" class="product-link nutrition-link">See all features →</a>
     </div>
 
+  </div>
+</section>
+
+<!-- MORE VIDEOS -->
+<section class="more-videos">
+  <h2>See both apps in action</h2>
+  <p>A couple more walkthroughs, straight from the app.</p>
+  <div class="more-videos-grid">
+    <div class="more-video-card totality-video">
+      <video src="totality-demo-trainers-gyms.mp4" poster="totality-demo-trainers-gyms.jpg" controls playsinline preload="metadata" aria-label="Totality demo for personal trainers and gym owners"></video>
+      <h3>Totality for personal trainers & gym owners</h3>
+      <p>A closer look at programme building, client management and the gym admin side of Totality.</p>
+    </div>
+    <div class="more-video-card nutrition-video">
+      <video src="nutrition-built-to-stick.mp4" poster="nutrition-built-to-stick.jpg" controls playsinline preload="metadata" aria-label="Totality Nutrition — built to stick"></video>
+      <h3>Totality Nutrition — built to stick</h3>
+      <p>Why the tracking habit actually holds with Totality Nutrition, past the first week.</p>
+    </div>
   </div>
 </section>
 
