@@ -1,0 +1,322 @@
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3550080485153029');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes From a Broke Entrepreneur — A Guide, More or Less</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<meta name="description" content="A founder's honest, chapter-by-chapter account of bootstrapping Totality — from a fifteen-minute pitch to a live app in five months. $9.99, instant PDF download.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Totality 360">
+<meta property="og:title" content="Notes From a Broke Entrepreneur — A Guide, More or Less">
+<meta property="og:description" content="A founder's honest, chapter-by-chapter account of bootstrapping Totality — from a fifteen-minute pitch to a live app in five months. $9.99, instant PDF download.">
+<meta property="og:image" content="https://totality360.com.au/guide-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Notes From a Broke Entrepreneur — A Guide, More or Less">
+<meta name="twitter:description" content="A founder's honest, chapter-by-chapter account of bootstrapping Totality — from a fifteen-minute pitch to a live app in five months. $9.99, instant PDF download.">
+<meta name="twitter:image" content="https://totality360.com.au/guide-cover.png">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  body { background: var(--white); }
+
+  /* ---------- MINIMAL HEADER ---------- */
+  .guide-header {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .guide-header a {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--orange);
+    letter-spacing: -0.02em;
+  }
+
+  /* ---------- HERO ---------- */
+  .guide-hero {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 28px 24px 56px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .guide-hero-cover {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 24px 60px rgba(39,38,38,0.28);
+  }
+  .guide-eyebrow {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .guide-hero h1 {
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.16;
+    margin-bottom: 10px;
+  }
+  .guide-hero .subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .guide-hero .byline {
+    font-size: 0.9rem;
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .guide-hero .byline span { color: var(--muted); font-weight: 400; }
+  .guide-price-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .guide-price {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--dark);
+  }
+  .guide-price small {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .guide-buy-note {
+    margin-top: 14px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  /* ---------- SECTIONS ---------- */
+  .guide-section-title {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  /* PULL QUOTE */
+  .guide-pull {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 24px 48px;
+    text-align: center;
+  }
+  .guide-pull blockquote {
+    font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--dark);
+    font-style: normal;
+  }
+  .guide-pull cite {
+    display: block;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* CHAPTER LIST */
+  .chapter-list {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .chapter-list-item {
+    display: flex;
+    gap: 18px;
+    align-items: baseline;
+    padding: 16px 20px;
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .chapter-list-num {
+    font-weight: 800;
+    color: var(--orange);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+    width: 28px;
+  }
+  .chapter-list-text strong { display: block; color: var(--dark); font-size: 0.98rem; margin-bottom: 2px; }
+  .chapter-list-text span { color: var(--muted); font-size: 0.86rem; }
+
+  /* WHO IT'S FOR */
+  .fit-grid {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .fit-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+  }
+  .fit-card h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+  .fit-card.yes h3 { color: var(--orange); }
+  .fit-card.no h3 { color: var(--muted); }
+  .fit-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .fit-card li { font-size: 0.92rem; color: var(--dark); line-height: 1.5; padding-left: 20px; position: relative; }
+  .fit-card.yes li::before { content: "✓"; position: absolute; left: 0; color: var(--success); font-weight: 800; }
+  .fit-card.no li::before { content: "–"; position: absolute; left: 2px; color: var(--muted); font-weight: 800; }
+
+  /* FINAL CTA */
+  .guide-cta-section {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 24px 64px;
+  }
+  .guide-cta-section p { color: var(--muted); margin-top: 16px; font-size: 0.9rem; }
+
+  @media (max-width: 720px) {
+    .guide-hero { grid-template-columns: 1fr; text-align: center; gap: 28px; padding: 12px 20px 40px; }
+    .guide-hero-cover { max-width: 220px; margin: 0 auto; }
+    .guide-price-row { justify-content: center; }
+    .fit-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MINIMAL HEADER -->
+<div class="guide-header">
+  <a href="/">TOTALITY 360</a>
+</div>
+
+<!-- HERO -->
+<section class="guide-hero">
+  <img src="guide-cover.png" alt="Notes From a Broke Entrepreneur — A Guide, More or Less, book cover" class="guide-hero-cover">
+  <div>
+    <div class="guide-eyebrow">A Founder's Notes</div>
+    <h1>Notes From a Broke Entrepreneur</h1>
+    <div class="subtitle">A Guide, More or Less</div>
+    <div class="byline">By Taj Nathan Donaldson <span>— founder, Totality</span></div>
+    <p style="color: var(--dark); line-height: 1.7; max-width: 460px; margin-bottom: 24px;">
+      The honest, chapter-by-chapter story of pitching, building, and shipping
+      Totality solo — from a fifteen-minute meeting at a gym to a finished app
+      on the Play Store in five months. Plus a plain checklist at the end for
+      whatever you're building next.
+    </p>
+    <div class="guide-price-row">
+      <span class="guide-price">$9.99 <small>AUD</small></span>
+      <a href="https://buy.stripe.com/5kQ7sNecMeJJcjhc8h5c401" class="btn-primary">Buy Now</a>
+    </div>
+    <p class="guide-buy-note">Instant PDF download after checkout. Secure payment via Stripe.</p>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="guide-pull">
+  <blockquote>"The actual turning point happened four days earlier, alone, mid build, noticing a pattern in my own hands that I hadn't gone looking for."</blockquote>
+  <cite>— Chapter 1, The Pitch That Wasn't a Pitch</cite>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="section" style="padding-top: 8px;">
+  <div class="section-inner">
+    <div class="guide-section-title">Nine chapters, plus a checklist</div>
+    <div class="chapter-list">
+      <div class="chapter-list-item"><span class="chapter-list-num">01</span><div class="chapter-list-text"><strong>The Pitch That Wasn't a Pitch</strong><span>How a fifteen-minute meeting turned into a hundred, and what actually made it work</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">02</span><div class="chapter-list-text"><strong>Not Another All in One</strong><span>Finding a real gap instead of a feeling, and why an "AI feature" got built as logic instead</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">03</span><div class="chapter-list-text"><strong>The Money That Had a Deadline Attached</strong><span>Bootstrap versus investment is the wrong question. Here's the one that matters</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">04</span><div class="chapter-list-text"><strong>The Unglamorous Paperwork</strong><span>ABNs, trusts, lawyers, and why the people already in your life matter more than a search engine</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">05</span><div class="chapter-list-text"><strong>Learning to Speak the Language</strong><span>MRR, churn, CAC, and the rest — with plain definitions, not jargon</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">06</span><div class="chapter-list-text"><strong>Nobody's Watching Your Work But You</strong><span>What a solo audit found sitting quietly broken, and why checking has to be a habit</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">07</span><div class="chapter-list-text"><strong>Automations, and Filtering the Advice</strong><span>Taking a framework built for ten-million-dollar companies and honestly sizing it down</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">08</span><div class="chapter-list-text"><strong>Eighty Hours a Week, on Purpose</strong><span>Why the structure and the accountability mattered more than the hours themselves</span></div></div>
+      <div class="chapter-list-item"><span class="chapter-list-num">09</span><div class="chapter-list-text"><strong>The Checklist</strong><span>Every lesson, tool, term, and pitfall from the book, on one page you'll actually come back to</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section" style="background: var(--off-white); padding-top: 48px; padding-bottom: 48px;">
+  <div class="section-inner">
+    <div class="guide-section-title">Who this is actually for</div>
+    <div class="fit-grid">
+      <div class="fit-card yes">
+        <h3>This is for you if</h3>
+        <ul>
+          <li>You're building something solo, or thinking about it</li>
+          <li>You want the real version of a founder story, mistakes included</li>
+          <li>You'd rather have a plain checklist than a hype speech</li>
+          <li>You're figuring out money, structure, or accountability for the first time</li>
+        </ul>
+      </div>
+      <div class="fit-card no">
+        <h3>This isn't for you if</h3>
+        <ul>
+          <li>You want a step-by-step "get rich" formula</li>
+          <li>You're looking for VC fundraising tactics</li>
+          <li>You want a polished case study instead of a real one</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="guide-cta-section">
+  <div class="guide-price" style="margin-bottom: 16px;">$9.99 AUD</div>
+  <a href="https://buy.stripe.com/5kQ7sNecMeJJcjhc8h5c401" class="btn-primary">Buy Now — Instant PDF Download</a>
+  <p>Digital product. Delivered instantly after checkout. Questions? <a href="mailto:admintotality@gmail.com" style="color: var(--orange); font-weight: 600;">admintotality@gmail.com</a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-brand">TOTALITY 360 PTY LTD</span>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/refund.html">Refunds</a>
+    <a href="/terms.html">Terms</a>
+    <a href="mailto:admintotality@gmail.com">Contact</a>
+  </div>
+  <span class="footer-copy">© 2026 Totality 360 Pty Ltd</span>
+</footer>
+
+</body>
+</html>
