@@ -88,6 +88,36 @@
     color: var(--muted);
   }
   .dl-fallback a { color: var(--orange); font-weight: 600; }
+
+  .dl-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 32px;
+    transform: translate(-50%, 20px);
+    background: var(--dark);
+    color: var(--white);
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.28);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  .dl-toast.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .dl-toast-check {
+    color: var(--success);
+    font-weight: 800;
+  }
 </style>
 </head>
 <body>
@@ -101,13 +131,34 @@
   <div class="dl-check">✓</div>
   <h1>You're in. Here's your copy.</h1>
   <p>Thanks for picking up <em>Notes From a Broke Entrepreneur: A Guide, More or Less</em>. Your download is ready below — save it somewhere you'll find it again.</p>
-  <a href="guides/Notes-From-a-Broke-Entrepreneur.pdf" download class="dl-btn">Download the PDF</a>
+  <a href="guides/Notes-From-a-Broke-Entrepreneur.pdf" download class="dl-btn" id="dlBtn">Download the PDF</a>
   <p class="dl-note">A receipt has also been sent to the email you paid with.</p>
 
   <div class="dl-fallback">
     Trouble downloading, or bought it and lost the link? Email <a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a> and we'll sort it out.
   </div>
 </div>
+
+<div class="dl-toast" id="dlToast" role="status" aria-live="polite">
+  <span class="dl-toast-check">✓</span>
+  <span>Download started — check your downloads</span>
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('dlBtn');
+    var toast = document.getElementById('dlToast');
+    if (!btn || !toast) return;
+    var hideTimer;
+    btn.addEventListener('click', function () {
+      clearTimeout(hideTimer);
+      toast.classList.add('is-visible');
+      hideTimer = setTimeout(function () {
+        toast.classList.remove('is-visible');
+      }, 4000);
+    });
+  })();
+</script>
 
 </body>
 </html>
