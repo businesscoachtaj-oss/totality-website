@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Download — Notes From a Broke Entrepreneur</title>
+<title>Your Download: Notes From a Broke Entrepreneur</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -117,6 +117,11 @@
     color: var(--success);
     font-weight: 800;
   }
+  .dl-state { color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin: 8px 0 20px; }
+  .dl-state-err { text-align: left; padding: 16px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--off-white); color: var(--dark); }
+  .dl-spin { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--orange); border-radius: 50%; vertical-align: -2px; animation: dlspin 0.8s linear infinite; }
+  @keyframes dlspin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .dl-spin { animation: none; } }
 </style>
 </head>
 <body>
@@ -129,9 +134,16 @@
   <img src="guide-cover.png" alt="Notes From a Broke Entrepreneur book cover" class="dl-cover">
   <div class="dl-check">✓</div>
   <h1>You're in. Here's your copy.</h1>
-  <p>Thanks for picking up <em>Notes From a Broke Entrepreneur: A Guide, More or Less</em>. Your download is ready below — save it somewhere you'll find it again.</p>
-  <a href="guides/Notes-From-a-Broke-Entrepreneur.pdf" download class="dl-btn" id="dlBtn">Download the PDF</a>
-  <p class="dl-note">A receipt has also been sent to the email you paid with.</p>
+  <p>Thanks for picking up <em>Notes From a Broke Entrepreneur: A Guide, More or Less</em>. Your download is below. Save it somewhere you'll find it again.</p>
+
+  <div id="dlLoading" class="dl-state" role="status"><span class="dl-spin" aria-hidden="true"></span> Checking your order...</div>
+
+  <div id="dlReady" hidden>
+    <a class="dl-btn" id="dlBtn" href="#" download>Download the PDF</a>
+    <p class="dl-note" id="dlEmailNote">This button works for the next hour. A receipt has also been sent to the email you paid with.</p>
+  </div>
+
+  <div id="dlError" class="dl-state dl-state-err" hidden role="alert"></div>
 
   <div class="dl-fallback">
     Trouble downloading, or bought it and lost the link? Email <a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a> and we'll sort it out.
@@ -140,22 +152,59 @@
 
 <div class="dl-toast" id="dlToast" role="status" aria-live="polite">
   <span class="dl-toast-check">✓</span>
-  <span>Download started — check your downloads</span>
+  <span>Download started, check your downloads</span>
 </div>
 
 <script>
+  // The PDF is not public. guide-delivery checks the Stripe Checkout Session and
+  // returns a short-lived signed link from the private guide-downloads bucket.
   (function () {
+    var API = 'https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/guide-delivery';
+    var support = '<a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a>';
+    var loading = document.getElementById('dlLoading');
+    var ready = document.getElementById('dlReady');
+    var err = document.getElementById('dlError');
     var btn = document.getElementById('dlBtn');
     var toast = document.getElementById('dlToast');
-    if (!btn || !toast) return;
-    var hideTimer;
+    var t;
+
+    function fail(html) {
+      loading.hidden = true; ready.hidden = true;
+      err.innerHTML = html; err.hidden = false;
+    }
+
     btn.addEventListener('click', function () {
-      clearTimeout(hideTimer);
+      clearTimeout(t);
       toast.classList.add('is-visible');
-      hideTimer = setTimeout(function () {
-        toast.classList.remove('is-visible');
-      }, 4000);
+      t = setTimeout(function () { toast.classList.remove('is-visible'); }, 4000);
     });
+
+    var sid = new URLSearchParams(location.search).get('session_id');
+    if (!sid) {
+      fail('This page opens from your purchase confirmation. Check your email for the download link we sent, or write to ' + support + ' and we will sort it out.');
+      return;
+    }
+
+    fetch(API + '?session_id=' + encodeURIComponent(sid))
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, status: r.status, d: d }; }); })
+      .then(function (res) {
+        if (res.ok && res.d && res.d.url) {
+          btn.href = res.d.url;
+          if (res.d.email) {
+            document.getElementById('dlEmailNote').textContent =
+              'This button works for the next hour. We have also emailed a link to ' + res.d.email + ', which works for 7 days.';
+          }
+          loading.hidden = true; ready.hidden = false;
+          try { if (window.fbq) fbq('track', 'Purchase', { value: 9.99, currency: 'AUD', content_name: 'Notes From a Broke Entrepreneur' }); } catch (e) {}
+        } else if (res.status === 503) {
+          fail('Your payment went through, but the file is not ready to download yet. We will email you the link as soon as it is. If nothing arrives within a few hours, write to ' + support + '.');
+        } else {
+          fail('We could not find that order. If you just paid, wait a moment and refresh this page. Otherwise write to ' + support + ' with the email you paid with.');
+        }
+      })
+      .catch(function () {
+        fail('Something went wrong loading your download. Refresh the page, or write to ' + support + ' and we will send it to you.');
+      });
   })();
 </script>
 

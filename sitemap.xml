@@ -1,260 +1,351 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://totality360.com.au/</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://totality360.com.au/totality.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
   <url>
     <loc>https://totality360.com.au/nutrition.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://totality360.com.au/calculator.html</loc>
+    <loc>https://totality360.com.au/pricing.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/totality.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/features.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/for-gyms.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/for-pts.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/nutrition-features.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/tali-ai.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare/gymdesk.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://totality360.com.au/get-totality.html</loc>
+    <loc>https://totality360.com.au/compare/gymmaster.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://totality360.com.au/compare/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare/mindbody.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare/pt-distinction.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare/trainerize.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare/truecoach.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://totality360.com.au/get-nutrition.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://totality360.com.au/blog/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://totality360.com.au/get-totality.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/creatine-meta-analysis-strength-trust-gap.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/weekly-set-distribution-frequency-strength.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/habit-app-engagement-not-installation.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/count-plants-gut-health.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/rpe-squat-velocity-loss-cue.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/if-then-workout-cue.html</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/vegan-diet-muscle-loss-older-adults.html</loc>
-    <lastmod>2026-09-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/pre-workout-coffee-caffeine-dose.html</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/stop-training-to-failure-every-set.html</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/self-talk-by-name-not-i.html</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
   <url>
     <loc>https://totality360.com.au/blog/posts/beetroot-juice-pre-workout-shot.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/foam-roll-after-workout.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/temptation-bundling-gym-door.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/willpower-belief-shapes-effort.html</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/velocity-tracker-vs-percentage-training.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/full-body-or-split-training-frequency-volume.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/collagen-vs-whey-meta-analysis.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/protein-per-meal-not-just-per-day.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/rest-3-minutes-between-sets.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/reframe-nerves-as-excitement.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/real-anti-burnout-formula.html</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/blog/posts/plant-based-protein-recovery-soreness.html</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
   <url>
     <loc>https://totality360.com.au/blog/posts/cold-plunge-recovery-paradox.html</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://totality360.com.au/blog/posts/collagen-vs-whey-meta-analysis.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/count-plants-gut-health.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/creatine-meta-analysis-strength-trust-gap.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/foam-roll-after-workout.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/full-body-or-split-training-frequency-volume.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/habit-app-engagement-not-installation.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/if-then-workout-cue.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/plant-based-protein-recovery-soreness.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/pre-workout-coffee-caffeine-dose.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/protein-per-meal-not-just-per-day.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/real-anti-burnout-formula.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/reframe-nerves-as-excitement.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/rest-3-minutes-between-sets.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/rpe-squat-velocity-loss-cue.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/self-talk-by-name-not-i.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/stop-training-to-failure-every-set.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/temptation-bundling-gym-door.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/vegan-diet-muscle-loss-older-adults.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/velocity-tracker-vs-percentage-training.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/weekly-set-distribution-frequency-strength.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/blog/posts/willpower-belief-shapes-effort.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/calculator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/commission-calculator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/exercise-library.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/faq.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/guide.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/help.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/high-protein-meals.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/links.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://totality360.com.au/resources.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://totality360.com.au/security.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://totality360.com.au/support.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://totality360.com.au/whats-new.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://totality360.com.au/privacy.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://totality360.com.au/refund.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
   <url>
     <loc>https://totality360.com.au/terms.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
-  <url>
-    <loc>https://totality360.com.au/guides/Totality-Guide-How-to-Start-a-PT-Business.pdf</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/guides/Totality-Guide-Marketing-Client-Acquisition.pdf</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/guides/Totality-Guide-How-to-Program.pdf</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://totality360.com.au/guides/Totality-Guide-Nutrition-Coaching-Fundamentals.pdf</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
 </urlset>

@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+# Email-gated guides and previews: delivered from the site, not meant for search results.
+Disallow: /guides/
+# Internal tooling, not pages.
+Disallow: /tools/
 
 Sitemap: https://totality360.com.au/sitemap.xml

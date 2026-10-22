@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -12,13 +17,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Guides for Personal Trainers — Totality</title>
+<title>Free Guides for Personal Trainers | Totality</title>
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -30,14 +29,18 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="canonical" href="https://totality360.com.au/resources.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
-<meta property="og:title" content="Free Guides for Personal Trainers — Totality">
+<meta property="og:title" content="Free Guides for Personal Trainers | Totality">
 <meta property="og:description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. Enter your email for instant access.">
 <meta property="og:url" content="https://totality360.com.au/resources.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Guides for Personal Trainers — Totality">
+<meta name="twitter:title" content="Free Guides for Personal Trainers | Totality">
 <meta name="twitter:description" content="Four free, evidence-based PDF guides for personal trainers: starting a PT business, marketing and client acquisition, programming, and nutrition coaching. Enter your email for instant access.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
+<!-- chrome:head -->
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<!-- /chrome:head -->
 <link rel="stylesheet" href="css/site.css">
 <style>
   /* HERO */
@@ -132,7 +135,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .res-cta-inner { padding: 32px 24px; }
   }
 
-  /* Guide cards are now buttons (email-gate opens on click) — reset button chrome */
+  /* Guide cards are buttons (email gate opens on click): reset button chrome */
   button.guide-card {
     font: inherit; text-align: left; width: 100%; cursor: pointer; appearance: none;
   }
@@ -173,33 +176,64 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .guide-modal-error {
     color: #c0392b; font-size: 0.82rem; margin: 10px 0 0; line-height: 1.5;
   }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .guide-modal-overlay[hidden] { display: none !important; }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">TOTALITY 360</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links" id="navMenu">
-    <a href="/">Home</a>
-    <a href="/totality.html">Totality</a>
-    <a href="/nutrition.html">Nutrition</a>
-    <a href="/blog/">Totality Reports</a>
-    <a href="/resources.html">Free Guides</a>
-    <a href="/calculator.html">Free Calculator</a>
-    <a href="/get-totality.html" class="nav-cta">Try Totality</a>
-    <a href="/get-nutrition.html" class="nav-cta-nutrition">Try Nutrition</a>
+<!-- chrome:header -->
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__bar">
+    <a href="/" class="brand" aria-label="Totality home">
+      <img src="/favicon-96.png" alt="" width="30" height="30">
+      <span>Totality</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="navMenu" aria-label="Main">
+      <ul class="site-nav__list">
+        <li>
+          <details class="nav-dd">
+            <summary>Product</summary>
+            <ul class="nav-dd__panel">
+              <li><a href="/totality.html"><span class="nav-dot nav-dot--orange"></span><span><b>Totality for coaches and gyms</b><small>Programs, clients, billing, classes and gym admin</small></span></a></li>
+              <li><a href="/nutrition.html"><span class="nav-dot nav-dot--blue"></span><span><b>Totality Nutrition</b><small>Macro tracking for individuals, with an Australian food database</small></span></a></li>
+              <li><a href="/tali-ai.html"><span class="nav-dot nav-dot--ink"></span><span><b>Tali AI</b><small>The AI built into both apps</small></span></a></li>
+              <li><a href="/whats-new.html"><span class="nav-dot"></span><span><b>What's new</b><small>Recent releases and fixes</small></span></a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a class="site-nav__link" href="/pricing.html">Pricing</a></li>
+        <li><a class="site-nav__link" href="/compare/">Compare</a></li>
+        <li><a class="site-nav__link" href="/resources.html" aria-current="page">Resources</a></li>
+        <li><a class="site-nav__link" href="/blog/">Blog</a></li>
+      </ul>
+      <div class="site-nav__end">
+        <details class="nav-dd nav-dd--right">
+          <summary>Log in</summary>
+          <ul class="nav-dd__panel">
+            <li><a href="https://totalityapp.com.au" rel="noopener"><span class="nav-dot nav-dot--orange"></span><span><b>Totality web app</b><small>For coaches, gyms and their clients</small></span></a></li>
+            <li><a href="https://totalitynutrition.com.au" rel="noopener"><span class="nav-dot nav-dot--blue"></span><span><b>Nutrition web app</b><small>For Totality Nutrition members</small></span></a></li>
+          </ul>
+        </details>
+        <a class="btn btn--sm btn--primary" href="/get-totality.html">Start free</a>
+      </div>
+    </nav>
   </div>
-</nav>
+</header>
+<!-- /chrome:header -->
+
+<main id="main">
 
 <!-- HERO -->
 <section class="res-hero">
   <div class="res-hero-eyebrow">Totality 360 Pty Ltd &nbsp;&middot;&nbsp; The Coach's Starter Series</div>
   <h1>Free guides for <em>personal trainers</em></h1>
-  <p class="res-hero-sub">Four evidence-based PDF guides covering the parts of the job most PT courses gloss over: starting a business, getting clients, programming properly, and coaching nutrition. Free to download — just pop in your email and we'll open it straight away.</p>
+  <p class="res-hero-sub">Four evidence-based PDF guides covering the parts of the job most PT courses gloss over: starting a business, getting clients, programming properly, and coaching nutrition. Free to download. Pop in your email and we'll open it straight away.</p>
 </section>
 
 <!-- GRID -->
@@ -213,7 +247,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="guide-meta">
         <span>PDF &middot; 13 pages</span>
       </div>
-      <span class="guide-download">Get free PDF →</span>
+      <span class="guide-download">Get the free PDF</span>
     </button>
 
     <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-Marketing-Client-Acquisition.pdf" data-guide="Marketing &amp; Client Acquisition for Personal Trainers">
@@ -223,7 +257,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="guide-meta">
         <span>PDF &middot; 13 pages</span>
       </div>
-      <span class="guide-download">Get free PDF →</span>
+      <span class="guide-download">Get the free PDF</span>
     </button>
 
     <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-How-to-Program.pdf" data-guide="How to Program: A Framework for Building Client Training">
@@ -233,7 +267,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="guide-meta">
         <span>PDF &middot; 12 pages</span>
       </div>
-      <span class="guide-download">Get free PDF →</span>
+      <span class="guide-download">Get the free PDF</span>
     </button>
 
     <button type="button" class="guide-card" data-pdf="guides/Totality-Guide-Nutrition-Coaching-Fundamentals.pdf" data-guide="Nutrition Coaching Fundamentals for PTs">
@@ -243,7 +277,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="guide-meta">
         <span>PDF &middot; 13 pages</span>
       </div>
-      <span class="guide-download">Get free PDF →</span>
+      <span class="guide-download">Get the free PDF</span>
     </button>
 
   </div>
@@ -253,45 +287,117 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <h2>Built the guides. Built the platform too.</h2>
       <p>Totality is the coaching platform behind these guides: programme builder, client management, nutrition tracking and billing, in one place, with a free app for your clients.</p>
       <div class="res-cta-actions">
-        <a href="/get-totality.html" class="res-cta-btn primary">Start Totality free →</a>
-        <a href="/get-nutrition.html" class="res-cta-btn secondary">Try Totality Nutrition →</a>
+        <a href="/get-totality.html" class="res-cta-btn primary">Start your 7 day free trial</a>
+        <a href="/get-nutrition.html" class="res-cta-btn secondary">Try Totality Nutrition</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <span class="footer-brand">TOTALITY 360 PTY LTD</span>
-  <div class="footer-links">
-    <a href="/totality.html" style="color: var(--orange); font-weight: 700;">Totality</a>
-    <a href="/nutrition.html" style="color: var(--nutrition); font-weight: 700;">Totality Nutrition</a>
-    <a href="/blog/">Totality Reports</a>
-    <a href="/resources.html">Free Guides</a>
-    <a href="/calculator.html">Free Calculator</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/refund.html">Refunds</a>
-    <a href="/terms.html">Terms</a>
-    <a href="mailto:admintotality@gmail.com">Contact</a>
+</main>
+
+<!-- chrome:footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div class="site-footer__about">
+        <a href="/" class="brand" aria-label="Totality home">
+          <img src="/favicon-96.png" alt="" width="30" height="30" loading="lazy">
+          <span>Totality</span>
+        </a>
+        <p class="site-footer__blurb">Coaching software for personal trainers and gyms, and macro tracking for individuals. Built in Australia, priced in AUD.</p>
+        <div class="store-badges">
+          <a class="store-badge" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.6 2.28 3.47 2.3 3.48-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.64 2.12-1.15.02-1.52-.68-2.84-.68-1.32 0-1.73.66-2.82.7-1.13.04-2-1.14-2.72-2.19-1.48-2.14-2.6-6.05-1.09-8.69.75-1.31 2.1-2.14 3.56-2.16 1.11-.02 2.16.75 2.84.75.68 0 1.95-.93 3.29-.79.56.02 2.13.23 3.14 1.7-.08.05-1.87 1.1-1.85 3.28zM14.2 5.03c.6-.73 1-1.74.9-2.75-.87.03-1.91.58-2.53 1.3-.56.64-1.04 1.67-.91 2.66.97.07 1.96-.49 2.55-1.21z"/></svg>
+            <span><small>Totality on the</small><b>App Store</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.livewell" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Totality on</small><b>Google Play</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.totality.nutrition" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Nutrition on</small><b>Google Play</b></span>
+          </a>
+        </div>
+        <a class="social-link" href="https://instagram.com/totality360au" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          @totality360au on Instagram
+        </a>
+      </div>
+      <div>
+        <h2>Totality</h2>
+        <ul>
+          <li><a href="/totality.html">Overview</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/for-pts.html">For personal trainers</a></li>
+          <li><a href="/for-gyms.html">For gyms</a></li>
+          <li><a href="/get-totality.html">Get the app</a></li>
+          <li><a href="https://totalityapp.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Totality Nutrition</h2>
+        <ul>
+          <li><a href="/nutrition.html">Overview</a></li>
+          <li><a href="/nutrition-features.html">Features</a></li>
+          <li><a href="/get-nutrition.html">Get the app</a></li>
+          <li><a href="/calculator.html">Macro calculator</a></li>
+          <li><a href="https://totalitynutrition.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <ul>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/compare/">Compare</a></li>
+          <li><a href="/tali-ai.html">Tali AI</a></li>
+          <li><a href="/whats-new.html">What's new</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/resources.html" aria-current="page">Free guides</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/help.html">Help centre</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/security.html">Security</a></li>
+          <li><a href="mailto:admintotality@gmail.com">Contact us</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/refund.html">Refunds</a></li>
+          <li><a href="/delete-account.html">Delete your account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Totality 360 Pty Ltd. ABN 58 698 902 975.</span>
+      <span>Prices in AUD. Payments processed by Stripe.</span>
+    </div>
   </div>
-  <span class="footer-copy">&copy; 2026 Totality 360 Pty Ltd</span>
 </footer>
+<script src="/js/track.js" defer></script>
+<!-- /chrome:footer -->
 
 <!-- EMAIL-GATE MODAL -->
-<div class="guide-modal-overlay" id="guideModalOverlay">
-  <div class="guide-modal">
+<div class="guide-modal-overlay" id="guideModalOverlay" hidden>
+  <div class="guide-modal" role="dialog" aria-modal="true" aria-labelledby="guideModalTitle" aria-describedby="guideModalDesc">
     <button type="button" class="guide-modal-close" id="guideModalClose" aria-label="Close">&times;</button>
-    <h3>Get the guide</h3>
-    <p>Enter your email and we'll open <strong id="guideModalName">the PDF</strong> for you. We'll also send occasional PT tips &mdash; unsubscribe anytime.</p>
-    <form id="guideModalForm">
-      <input type="email" class="guide-modal-email" id="guideModalEmail" placeholder="you@example.com" required autocomplete="email">
-      <button type="submit" class="guide-modal-submit">Get free PDF →</button>
-      <p class="guide-modal-error" id="guideModalError" hidden>Please enter a valid email address.</p>
+    <h3 id="guideModalTitle">Get the guide</h3>
+    <p id="guideModalDesc">Enter your email and we'll open <strong id="guideModalName">the PDF</strong> for you. We'll also send occasional PT tips. Unsubscribe anytime.</p>
+    <form id="guideModalForm" novalidate>
+      <label for="guideModalEmail" class="sr-only">Email address</label>
+      <input type="email" aria-describedby="guideModalError" class="guide-modal-email" id="guideModalEmail" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit" class="guide-modal-submit">Get the free PDF</button>
+      <p class="guide-modal-error" id="guideModalError" role="alert" hidden>Please enter a valid email address.</p>
     </form>
   </div>
 </div>
 
-<script src="js/nav.js" defer></script>
+<script src="/js/nav.js" defer></script>
+<script src="/js/track.js" defer></script>
 <script>
 (function(){
   var overlay = document.getElementById('guideModalOverlay');
@@ -301,7 +407,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   var errorEl = document.getElementById('guideModalError');
   var closeBtn = document.getElementById('guideModalClose');
   var submitBtn = form.querySelector('.guide-modal-submit');
-  var pendingPdf = null, pendingTitle = null;
+  var pendingPdf = null, pendingTitle = null, lastFocus = null;
 
   document.querySelectorAll('.guide-card[data-pdf]').forEach(function(card){
     card.addEventListener('click', function(){
@@ -310,12 +416,27 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       nameEl.textContent = pendingTitle;
       errorEl.hidden = true;
       emailInput.value = '';
+      lastFocus = card;
+      overlay.hidden = false;
       overlay.classList.add('open');
       setTimeout(function(){ emailInput.focus(); }, 60);
     });
   });
 
-  function closeModal(){ overlay.classList.remove('open'); }
+  function closeModal(){
+    if (overlay.hidden) return;
+    overlay.classList.remove('open');
+    overlay.hidden = true;
+    if (lastFocus) lastFocus.focus();
+  }
+  // Keep Tab inside the dialog while it is open.
+  overlay.addEventListener('keydown', function(e){
+    if (e.key !== 'Tab') return;
+    var f = overlay.querySelectorAll('button, input, a[href]');
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
   closeBtn.addEventListener('click', closeModal);
   overlay.addEventListener('click', function(e){ if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
@@ -325,20 +446,23 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     var email = emailInput.value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       errorEl.hidden = false;
+      emailInput.setAttribute('aria-invalid', 'true');
+      emailInput.focus();
       return;
     }
     errorEl.hidden = true;
+    emailInput.removeAttribute('aria-invalid');
     submitBtn.textContent = 'Opening…';
     submitBtn.disabled = true;
 
     fetch('https://formspree.io/f/mjgqyqdj', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
         email: email,
         guide: pendingTitle,
         source: 'resources.html guide gate',
-        _subject: 'New guide lead — ' + pendingTitle + ': ' + email
+        _subject: 'New guide lead (' + pendingTitle + ')' + ': ' + email
       })
     }).catch(function(){});
 
@@ -346,7 +470,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
     setTimeout(function(){
       closeModal();
-      submitBtn.textContent = 'Get free PDF →';
+      submitBtn.textContent = 'Get the free PDF';
       submitBtn.disabled = false;
     }, 500);
   });
