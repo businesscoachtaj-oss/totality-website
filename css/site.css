@@ -545,3 +545,11 @@ footer:not(.site-footer) .footer-brand { font-weight: 800; font-size: 0.9rem; co
 footer:not(.site-footer) .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
 footer:not(.site-footer) .footer-links a { font-size: 0.85rem; color: var(--muted); }
 footer:not(.site-footer) .footer-copy { font-size: 0.85rem; color: var(--muted); }
+
+/* Tali website videos */
+.hero-video { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: var(--s-7); align-items: center; }
+.hero-video--center { max-width: 900px; margin-inline: auto; }
+.hv-fig { margin: 0; justify-self: center; width: 100%; max-width: 280px; }
+.hv-fig video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius); background: #000; display: block; object-fit: cover; box-shadow: var(--shadow); }
+.hv-fig figcaption { margin-top: var(--s-2); font-size: var(--fs-sm); color: var(--muted); font-weight: 600; text-align: center; }
+@media (max-width: 860px) { .hero-video { grid-template-columns: minmax(0, 1fr); gap: var(--s-6); } .hv-fig { max-width: 240px; } }
