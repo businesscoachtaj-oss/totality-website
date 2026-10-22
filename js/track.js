@@ -115,8 +115,8 @@
   function placementFor(a) {
     var tagged = a.closest('[data-track-placement]');
     if (tagged) return tagged.getAttribute('data-track-placement');
-    if (a.closest('header, nav')) return 'nav';
-    if (a.closest('footer')) return 'footer';
+    if (a.closest('.site-header, .site-nav, nav:not(.crumbs)')) return 'nav';
+    if (a.closest('.site-footer, footer')) return 'footer';
     var section = a.closest('section[id], div[id], article[id], section[class]');
     if (section) return section.id || String(section.className).split(' ')[0];
     return 'body';

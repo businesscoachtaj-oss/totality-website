@@ -40,7 +40,7 @@ for page in sorted(ROOT.rglob("*.html")):
             if v not in known and v not in ALLOW:
                 bad += 1
                 print(f"{page.relative_to(ROOT)}:{i}: {m.group(0)} not in plans.json")
-            elif not m.group(1) and v not in ALLOW:
+            elif not m.group(1) and v not in ALLOW and not re.match(r"\s*(<small>)?\s*AUD", line[m.end():]):
                 bare += 1
                 print(f"{page.relative_to(ROOT)}:{i}: {m.group(0)} is a known price but should be written A${m.group(2)}")
 print(f"\n{bad} unknown price(s), {bare} bare $ price(s). Known prices: {', '.join(sorted(known, key=float))}")

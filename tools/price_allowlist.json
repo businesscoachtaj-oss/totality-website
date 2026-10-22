@@ -3,6 +3,7 @@
   "allow": {
     "4.50": "high-protein-meals.html: recipe cost per serve",
     "30": "commission-calculator.html: example competitor per-booking commission cap",
-    "2000": "blog posts: example figures in articles"
+    "2000": "blog posts: example figures in articles",
+    "18240.50": "index.html: mock dashboard revenue figure in the product screenshot"
   }
 }
