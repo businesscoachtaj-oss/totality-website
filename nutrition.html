@@ -60,6 +60,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .ov-hero h1 { max-width: 16ch; }
   .ov-video { margin: 0; justify-self: center; width: 100%; max-width: 280px; }
   .ov-video video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius); background: #000; display: block; object-fit: cover; }
+  .ov-tali img { width: 100%; max-width: 220px; height: auto; display: block; margin: 0 auto; }
   .ov-video figcaption { margin-top: var(--s-2); font-size: var(--fs-sm); color: var(--muted); font-weight: 600; text-align: center; }
   @media (max-width: 860px) { .ov-hero { grid-template-columns: 1fr; gap: var(--s-6); } .ov-video { max-width: 240px; } }
 </style>
@@ -122,11 +123,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       </div>
       <p class="small muted mt-4">From <span data-p="nutrition.plans.nutrition.monthly"></span> a month. On Android and the web now. iPhone is coming soon.</p>
     </div>
-    <figure class="ov-video">
-      <video controls playsinline preload="none" poster="/img/video/nutrition-built-to-stick-poster.webp" width="540" height="960" aria-label="Totality Nutrition video">
-        <source src="/nutrition-built-to-stick.mp4" type="video/mp4">
-      </video>
-      <figcaption>Totality Nutrition, 1:29</figcaption>
+    <figure class="ov-video ov-tali">
+      <picture>
+        <source srcset="/img/tali/tali_cook.webp" type="image/webp">
+        <img src="/img/tali/tali_cook.png" alt="Tali, the Totality mascot, cooking" width="300" height="430" loading="eager">
+      </picture>
     </figure>
   </div>
 </section>
