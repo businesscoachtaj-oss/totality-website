@@ -44,15 +44,15 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="stylesheet" href="/css/site.css">
 <style>
   :root {
-    --orange: #ED8008;
-    --orange-dark: #C46800;
+    --orange: #B85C00; /* site --orange-600: passes 4.5:1 under white text */
+    --orange-dark: #A65000;
     --white: #FFFFFF;
     --off-white: #F7F7F7;
     --dark: #272626;
     --muted: #62605D;
     --border: #E8E8E8;
-    --purple: #6C3483;
-    --purple-tint: #F0E6F6;
+    --purple: #A65000;
+    --purple-tint: #FFF4E8;
     --success: #2ECC71;
     --error: #E74C3C;
     --nutrition: #1565A0;
@@ -603,7 +603,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     </div>
   </div>
 
-  <button class="btn-submit" id="calc-btn" onclick="calculate()">Calculate my calories →</button>
+  <button class="btn-submit" id="calc-btn" onclick="calculate()">Calculate my calories</button>
 
   <!-- RESULTS -->
   <div id="results">
@@ -665,7 +665,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <canvas id="share-canvas" width="1080" height="1920" style="display:none;"></canvas>
       <img id="share-preview" alt="Your daily calorie and macro targets, branded Totality 360 share card" />
       <div class="share-btn-row">
-        <button type="button" class="btn-share primary" id="share-native-btn" style="display:none;" onclick="shareResultsCard()">Share to Instagram →</button>
+        <button type="button" class="btn-share primary" id="share-native-btn" style="display:none;" onclick="shareResultsCard()">Share to Instagram</button>
         <button type="button" class="btn-share secondary" id="share-download-btn" style="display:none;" onclick="downloadResultsCard()">Download image</button>
       </div>
     </div>
@@ -673,19 +673,19 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="result-cta coach" id="cta-coach" style="display: none;">
       <h3>Set this automatically for every client.</h3>
       <p>Totality lets you set macro targets per client, track their food logs and review nutrition trends in one platform. No spreadsheets. No extra apps.</p>
-      <a href="get-totality.html" class="btn-cta">Start your free trial &rarr;</a>
+      <a href="get-totality.html" class="btn-cta">Start your 7 day free trial</a>
     </div>
 
     <div class="result-cta client" id="cta-client" style="display: none;">
       <h3>Your trainer could track all of this for you automatically.</h3>
       <p>With Totality, your coach sets your macro targets, reviews your food logs and adjusts your nutrition as you progress. The client app is always free.</p>
-      <a href="get-totality.html" class="btn-cta">Get started free →</a>
+      <a href="get-totality.html" class="btn-cta">Get started free</a>
     </div>
 
     <div class="result-cta nutrition" id="cta-nutrition" style="display: none;">
       <h3>Prefer to track it yourself? No coach required.</h3>
       <p>Totality Nutrition is a standalone macro tracking app built for Australians, with barcode scanning, an Aussie-first food database, and everything you need to hit these exact numbers.</p>
-      <a href="get-nutrition.html" class="btn-cta">Try Totality Nutrition free →</a>
+      <a href="get-nutrition.html" class="btn-cta">Try Totality Nutrition free</a>
     </div>
 
     <p class="disclaimer">
@@ -1077,7 +1077,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
     // Lock button
     const btn = document.getElementById('calc-btn');
-    btn.textContent = '✓ Results calculated';
+    btn.textContent = 'Results calculated';
     btn.disabled = true;
   }
 
@@ -1175,7 +1175,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     ctx.fill();
     ctx.fillStyle = '#FFFFFF';
     ctx.font = '800 42px ' + F;
-    ctx.fillText('Get your free plan →', W / 2, ctaY + ctaH / 2 + 15);
+    ctx.fillText('Get your free plan', W / 2, ctaY + ctaH / 2 + 15);
 
     ctx.fillStyle = '#A0A0A0';
     ctx.font = '700 34px ' + F;
