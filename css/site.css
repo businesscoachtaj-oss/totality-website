@@ -31,8 +31,9 @@
      text on white and under white text, so use the -600/-700 steps. */
   --orange: #ED8008;
   --orange-300: #F5A543;
-  --orange-600: #B85C00;   /* white text on it: 4.6:1 */
-  --orange-700: #A65000;   /* orange text on white: 5.6:1 */
+  --orange-600: #ED8008;   /* Totality orange, same as the app */
+  --orange-700: #ED8008;   /* Totality orange, same as the app */
+  --orange-press: #C46800; /* app pressed state, hover only */
   --orange-50: #FFF4E8;
   --orange-100: #FFE6CC;
 
@@ -210,7 +211,7 @@ strong, b { font-weight: 700; }
 .btn:hover { transform: translateY(-1px); }
 .btn:active { transform: none; }
 .btn--primary, .btn--totality { background: var(--orange-600); color: #fff; }
-.btn--primary:hover, .btn--totality:hover { background: var(--orange-700); }
+.btn--primary:hover, .btn--totality:hover { background: var(--orange-press); }
 .btn--nutrition { background: var(--blue); color: #fff; }
 .btn--nutrition:hover { background: var(--blue-700); }
 .btn--ink { background: var(--ink); color: #fff; }
@@ -512,7 +513,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
   transition: background-color 0.15s, transform 0.15s;
 }
 .btn-primary { background: var(--orange-600); color: #fff; }
-.btn-primary:hover { background: var(--orange-700); transform: translateY(-1px); }
+.btn-primary:hover { background: var(--orange-press); transform: translateY(-1px); }
 .btn-secondary { background: #fff; color: var(--ink); border: 2px solid var(--line-strong); }
 .btn-secondary:hover { border-color: var(--ink); }
 .btn-nutrition { background: var(--blue); color: #fff; }
@@ -544,3 +545,11 @@ footer:not(.site-footer) .footer-brand { font-weight: 800; font-size: 0.9rem; co
 footer:not(.site-footer) .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
 footer:not(.site-footer) .footer-links a { font-size: 0.85rem; color: var(--muted); }
 footer:not(.site-footer) .footer-copy { font-size: 0.85rem; color: var(--muted); }
+
+/* Tali website videos */
+.hero-video { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: var(--s-7); align-items: center; }
+.hero-video--center { max-width: 900px; margin-inline: auto; }
+.hv-fig { margin: 0; justify-self: center; width: 100%; max-width: 280px; }
+.hv-fig video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius); background: #000; display: block; object-fit: cover; box-shadow: var(--shadow); }
+.hv-fig figcaption { margin-top: var(--s-2); font-size: var(--fs-sm); color: var(--muted); font-weight: 600; text-align: center; }
+@media (max-width: 860px) { .hero-video { grid-template-columns: minmax(0, 1fr); gap: var(--s-6); } .hv-fig { max-width: 240px; } }
