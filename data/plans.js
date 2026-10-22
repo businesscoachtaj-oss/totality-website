@@ -504,7 +504,7 @@ window.TOTALITY_PLANS = {
       "programmeDraft": 5
     },
     "reset": "Each calendar month (Sydney time)",
-    "availability": "Web app now. Android and iOS from 5 Nov 2026."
+    "availability": "Web app now. Totality: Android and iOS from 5 Nov 2026. Totality Nutrition: Android from 5 Nov 2026, iPhone coming soon."
   },
   "nutrition": {
     "plans": [
@@ -556,7 +556,7 @@ window.TOTALITY_PLANS = {
       "android": "https://play.google.com/store/apps/details?id=app.livewell"
     },
     "instagram": "https://www.instagram.com/totality360au/",
-    "appleHealthOnlyWearable": true
+    "wearables": "Apple Health on iPhone, Health Connect on Android"
   },
   "products": [
     {
