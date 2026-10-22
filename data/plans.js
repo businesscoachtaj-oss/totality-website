@@ -521,8 +521,7 @@ window.TOTALITY_PLANS = {
         "name": "Nutrition + AI",
         "monthly": "A$11.99",
         "yearly": "A$122.30",
-        "memberMonthly": "A$7.49",
-        "memberYearly": "A$76.40"
+        "memberNote": "Member price not advertised"
       }
     ],
     "memberDiscount": {
