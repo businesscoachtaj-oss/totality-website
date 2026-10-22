@@ -1,0 +1,8 @@
+{
+  "_comment": "Dollar amounts on the site that are not Totality prices. Add with a reason.",
+  "allow": {
+    "4.50": "high-protein-meals.html: recipe cost per serve",
+    "30": "commission-calculator.html: example competitor per-booking commission cap",
+    "2000": "blog posts: example figures in articles"
+  }
+}

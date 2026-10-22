@@ -1,5 +1,6 @@
 // Mirror of Livewell-1 lib/tiers.ts. Update both together.
-// Generated from data/plans.json. Nutrition prices mirror TotalityNutrition-1 app/subscribe.tsx.
+// Generated from data/plans.json by tools/build_plans_js.py. Do not edit by hand.
+// Nutrition prices mirror TotalityNutrition-1 app/subscribe.tsx.
 window.TOTALITY_PLANS = {
   "_comment": "Mirror of Livewell-1 lib/tiers.ts. Update both together. Nutrition prices mirror TotalityNutrition-1 app/subscribe.tsx.",
   "currency": "AUD",
@@ -557,5 +558,30 @@ window.TOTALITY_PLANS = {
     },
     "instagram": "https://www.instagram.com/totality360au/",
     "appleHealthOnlyWearable": true
-  }
+  },
+  "products": [
+    {
+      "id": "exercise_library",
+      "name": "The Exercise Library",
+      "price": "A$39.99",
+      "type": "one_off_pdf",
+      "page": "exercise-library.html",
+      "stripeProduct": "prod_VO86yQBH92CPRk"
+    },
+    {
+      "id": "high_protein_meals",
+      "name": "200 High Protein Meals",
+      "price": "A$23.99",
+      "type": "one_off_pdf",
+      "page": "high-protein-meals.html"
+    },
+    {
+      "id": "broke_entrepreneur",
+      "name": "Notes From a Broke Entrepreneur",
+      "price": "A$9.99",
+      "type": "one_off_pdf",
+      "page": "guide.html",
+      "stripeProduct": "prod_VLynASj0JCAqWv"
+    }
+  ]
 };

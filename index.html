@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -12,376 +15,642 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Totality — Coaching platform & nutrition tracking for gyms, trainers and individuals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Totality | Coaching software for trainers and gyms, and macro tracking for you</title>
+<meta name="description" content="Totality is coaching software for personal trainers and gyms: programs, check-ins, billing, classes and gym admin. Totality Nutrition is macro tracking for individuals, built around Australian food. 7 day free trial on both.">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="Totality builds software for fitness professionals and individuals. Totality — the all-in-one coaching platform for gyms and trainers. Totality Nutrition — standalone macro tracking for Australians.">
-
 <link rel="canonical" href="https://totality360.com.au/">
+<meta name="theme-color" content="#ED8008">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
-<meta property="og:title" content="Totality — Coaching platform & nutrition tracking for gyms, trainers and individuals">
-<meta property="og:description" content="Totality builds software for fitness professionals and individuals. Totality — the all-in-one coaching platform for gyms and trainers. Totality Nutrition — standalone macro tracking for Australians.">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Totality | Coaching software for trainers and gyms, and macro tracking for you">
+<meta property="og:description" content="Totality runs coaching businesses. Totality Nutrition tracks what you eat. Both built in Australia, both with a 7 day free trial.">
 <meta property="og:url" content="https://totality360.com.au/">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Totality — Coaching platform & nutrition tracking">
-<meta name="twitter:description" content="All-in-one coaching platform for gyms and trainers, plus standalone macro tracking for Australians.">
+<meta name="twitter:title" content="Totality | Coaching software and macro tracking">
+<meta name="twitter:description" content="Totality runs coaching businesses. Totality Nutrition tracks what you eat. Both built in Australia, both with a 7 day free trial.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
-<link rel="stylesheet" href="css/site.css">
+
+<!-- chrome:head -->
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<!-- /chrome:head -->
+<link rel="stylesheet" href="/css/site.css">
+<link rel="preload" as="image" href="/img/tali/tali_point.webp" type="image/webp">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Totality 360",
-  "url": "https://totality360.com.au",
-  "logo": "https://totality360.com.au/logo.png",
-  "sameAs": [
-    "https://www.instagram.com/totalityapp",
-    "https://www.youtube.com/@TotalityApp",
-    "https://www.youtube.com/@TotalityEvidenceBased"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://totality360.com.au/#org",
+      "name": "Totality 360",
+      "legalName": "Totality 360 Pty Ltd",
+      "url": "https://totality360.com.au",
+      "logo": "https://totality360.com.au/logo.png",
+      "email": "admintotality@gmail.com",
+      "address": { "@type": "PostalAddress", "addressCountry": "AU" },
+      "sameAs": [
+        "https://www.instagram.com/totality360au",
+        "https://www.youtube.com/@TotalityApp",
+        "https://www.youtube.com/@TotalityEvidenceBased"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://totality360.com.au/#website",
+      "url": "https://totality360.com.au/",
+      "name": "Totality",
+      "publisher": { "@id": "https://totality360.com.au/#org" },
+      "inLanguage": "en-AU"
+    }
   ]
 }
 </script>
 <style>
-  /* HERO */
-  .hero {
-    padding: 80px 24px 64px; text-align: center;
-    background: var(--white); position: relative; overflow: hidden;
+  /* ---------- Home: intro + doors ---------- */
+  .home-intro { padding: var(--s-6) var(--gutter) var(--s-5); }
+  .home-intro__inner {
+    max-width: var(--container); margin-inline: auto;
+    display: grid; grid-template-columns: auto 1fr; gap: var(--s-5); align-items: end;
   }
-  .hero::before {
-    content: ''; position: absolute; top: -120px; left: 50%;
-    transform: translateX(-50%); width: 900px; height: 900px;
-    background: radial-gradient(circle, rgba(237,128,8,0.05) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-eyebrow {
-    display: inline-block; font-size: 0.75rem; font-weight: 700;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 20px;
-  }
-  .hero h1 {
-    font-size: clamp(2.2rem, 5.5vw, 3.6rem);
-    font-weight: 800; letter-spacing: -0.03em; line-height: 1.1;
-    max-width: 680px; margin: 0 auto;
-  }
-  .hero h1 em { font-style: normal; color: var(--orange); }
-  .hero-sub {
-    color: var(--muted); font-size: 1.05rem;
-    max-width: 500px; margin: 20px auto 0; line-height: 1.7;
-  }
-  .hero-social {
-    display: flex; align-items: center; justify-content: center;
-    gap: 14px; margin-top: 28px; flex-wrap: wrap;
-  }
-  .hero-social-icon {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 40px; height: 40px; border-radius: 50%;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-    color: var(--white); transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .hero-social-icon:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(214,36,159,0.35); }
-  .hero-social-icon svg { width: 20px; height: 20px; }
-  .hero-links-btn {
-    display: inline-block; background: var(--dark); color: var(--white) !important;
-    font-weight: 600; font-size: 0.85rem; padding: 10px 22px;
-    border-radius: 999px; transition: background 0.15s; text-decoration: none !important;
-  }
-  .hero-links-btn:hover { background: var(--orange); }
+  .home-intro picture { width: 120px; }
+  .home-intro h1 { max-width: 14ch; }
+  .home-intro .lead { margin-top: var(--s-3); max-width: 52ch; }
+  .tali-say { display: flex; gap: var(--s-3); align-items: flex-start; }
+  .tali-say .tali-bubble { margin-top: var(--s-4); max-width: 30ch; }
 
-  /* TRUST STRIP */
-  .trust-strip {
-    padding: 28px 24px; background: var(--white);
-    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  .doors { padding: 0 var(--gutter) var(--s-7); }
+  .doors__grid {
+    max-width: var(--container); margin-inline: auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);
   }
-  .trust-strip-inner {
-    max-width: 900px; margin: 0 auto; display: flex;
-    justify-content: center; align-items: center; gap: 32px;
-    flex-wrap: wrap;
+  .door {
+    position: relative; overflow: hidden; border-radius: var(--radius-lg);
+    padding: var(--s-6) var(--s-6) 0; min-height: 600px;
+    display: grid; grid-template-rows: auto 1fr;
   }
-  .trust-item {
-    display: flex; align-items: center; gap: 8px;
-    font-size: 0.82rem; font-weight: 600; color: var(--muted);
-  }
-  .trust-item strong { color: var(--dark); }
+  .door--coach { background: var(--orange); color: var(--ink); }
+  .door--me { background: var(--blue); color: #fff; }
+  .door__who { font-weight: 700; font-size: var(--fs-sm); display: flex; align-items: center; gap: 8px; }
+  .door__who::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: currentColor; }
+  .door h2 { font-size: clamp(2rem, 1.4rem + 2.2vw, 3rem); margin-top: var(--s-2); letter-spacing: -0.035em; }
+  .door__text { max-width: 40ch; margin-top: var(--s-3); font-size: var(--fs-md); line-height: 1.55; }
+  .door .btn { margin-top: var(--s-5); }
+  @media (min-width: 821px) { .door__text { min-height: calc(3 * 1.55em); } }
+  .door__fine { font-size: var(--fs-sm); margin-top: var(--s-3); }
+  .door__fine a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .door__art { position: relative; display: flex; justify-content: flex-end; align-items: flex-start; margin-top: var(--s-5); }
+  .door__art .phone { max-width: 250px; margin-bottom: -150px; margin-right: var(--s-2); transform: rotate(-3deg); }
+  .door--me .door__art .phone { transform: rotate(3deg); }
 
-  /* PRODUCT CARDS */
-  .products {
-    padding: 64px 24px 80px; background: var(--off-white);
-    border-top: 1px solid var(--border);
-  }
-  .products-inner {
-    max-width: 960px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
-  }
-  .product-card {
-    background: var(--white); border-radius: 20px;
-    padding: 40px 36px; border: 1px solid var(--border);
-    display: flex; flex-direction: column;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
-  .product-card.totality-card { border-top: 4px solid var(--orange); }
-  .product-card.nutrition-card { border-top: 4px solid var(--nutrition); }
-  .product-badge {
-    display: inline-block; font-size: 0.7rem; font-weight: 800;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    padding: 4px 12px; border-radius: 999px; margin-bottom: 20px;
-  }
-  .totality-badge { background: rgba(237,128,8,0.1); color: var(--orange); }
-  .nutrition-badge { background: var(--nutrition-tint); color: var(--nutrition); }
-  .product-card h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
-  .product-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.7; margin-top: 12px; flex-grow: 1; }
-  .product-features {
-    list-style: none; margin: 20px 0 28px; display: flex; flex-direction: column; gap: 8px;
-  }
-  .product-features li {
-    display: flex; align-items: flex-start; gap: 8px;
-    font-size: 0.88rem; color: var(--dark);
-  }
-  .product-features li::before { content: "✓"; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
-  .totality-card .product-features li::before { color: var(--orange); }
-  .nutrition-card .product-features li::before { color: var(--nutrition); }
-  .product-price {
-    font-size: 0.82rem; color: var(--muted); font-weight: 600;
-    margin-bottom: 16px;
-  }
-  .product-price strong { color: var(--dark); font-size: 1rem; }
-  .product-cta {
-    display: block; text-align: center; padding: 14px 24px;
-    border-radius: 12px; font-weight: 700; font-size: 0.95rem;
-    transition: background 0.15s, transform 0.15s;
-  }
-  .product-cta:hover { transform: translateY(-1px); }
-  .totality-cta { background: var(--orange); color: var(--white); }
-  .totality-cta:hover { background: var(--orange-dark); }
-  .nutrition-cta { background: var(--nutrition); color: var(--white); }
-  .nutrition-cta:hover { background: var(--nutrition-light); }
-  .product-link {
-    display: block; text-align: center; margin-top: 12px;
-    font-size: 0.82rem; font-weight: 600;
-  }
-  .totality-link { color: var(--orange); }
-  .nutrition-link { color: var(--nutrition); }
+  /* App screens drawn in HTML from the live apps. Decorative: each .phone has an aria-label. */
+  .scr { height: 100%; padding: 34px 12px 0; font-family: var(--font-body); color: #272626; font-size: 11px; line-height: 1.3; }
+  .scr-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .scr-title { font-size: 15px; font-weight: 800; letter-spacing: -0.01em; }
+  .scr-sub { font-size: 10px; color: #6b6866; }
+  .scr-card { background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+  .scr-rev { background: #ED8008; color: #fff; border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; }
+  .scr-rev small { display: block; font-size: 9px; font-weight: 700; opacity: 0.9; }
+  .scr-rev b { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; }
+  .scr-alert { background: #FFF4E8; border-left: 3px solid #ED8008; border-radius: 8px; padding: 7px 9px; font-size: 9.5px; font-weight: 600; margin-bottom: 8px; }
+  .scr-leads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 6px; text-align: center; }
+  .scr-leads div { border: 1.5px solid #E8E8E8; border-radius: 8px; padding: 5px 0; }
+  .scr-leads b { display: block; font-size: 15px; }
+  .scr-leads span { font-size: 8.5px; color: #6b6866; }
+  .scr-leads .l1 { border-color: #7FB0D8; } .scr-leads .l1 b { color: #1565A0; }
+  .scr-leads .l2 { border-color: #F5A543; } .scr-leads .l2 b { color: #B85C00; }
+  .scr-leads .l3 { border-color: #8FD3A8; } .scr-leads .l3 b { color: #1E8E4E; }
+  .scr-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .scr-stats div { background: #fff; border-radius: 10px; padding: 8px; }
+  .scr-stats b { display: block; font-size: 16px; font-weight: 800; color: #B85C00; }
+  .scr-stats span { font-size: 9px; font-weight: 600; }
+  .scr-label { font-size: 9px; font-weight: 700; color: #6b6866; letter-spacing: 0.04em; }
+  .scr-btn { background: #1565A0; color: #fff; font-weight: 700; font-size: 10px; padding: 6px 10px; border-radius: 999px; }
+  .scr-cal { display: flex; justify-content: space-between; align-items: flex-start; }
+  .scr-cal b { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; display: block; line-height: 1.1; }
+  .scr-cal .tgt { text-align: right; color: #1565A0; }
+  .scr-cal .tgt b { font-size: 16px; }
+  .scr-bar { height: 5px; background: #EDEDED; border-radius: 9px; margin: 8px 0; overflow: hidden; }
+  .scr-bar i { display: block; height: 100%; width: 17%; background: #1565A0; border-radius: 9px; }
+  .scr-macros { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; }
+  .scr-macros b { display: block; font-size: 13px; }
+  .scr-macros span { font-size: 9px; color: #6b6866; }
+  .scr-tali { display: flex; gap: 8px; align-items: center; background: #EAF2FA; border-radius: 12px; padding: 8px; margin-bottom: 8px; }
+  .scr-tali img { width: 26px; height: 37px; object-fit: contain; }
+  .scr-tali b { display: block; font-size: 10.5px; }
+  .scr-tali span { font-size: 9px; color: #45423F; }
+  .scr-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .scr-tiles div { background: #fff; border-radius: 10px; padding: 12px 8px; text-align: center; font-weight: 700; font-size: 10px; }
+  .scr-tiles i { display: block; width: 16px; height: 16px; margin: 0 auto 5px; border-radius: 5px; background: #D3E5F5; }
 
-  /* DIFFERENCE STRIP */
-  .difference {
-    padding: 56px 24px; background: var(--dark); text-align: center;
-  }
-  .difference h2 {
-    font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800;
-    letter-spacing: -0.02em; color: var(--white); line-height: 1.3;
-    max-width: 640px; margin: 0 auto;
-  }
-  .difference h2 em { font-style: normal; color: var(--orange-light); }
-  .difference p { color: var(--muted); margin-top: 12px; font-size: 0.95rem; max-width: 480px; margin-left: auto; margin-right: auto; }
-  .difference-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; max-width: 800px; margin: 40px auto 0;
-  }
-  .difference-item {
-    background: rgba(255,255,255,0.06); border-radius: 14px;
-    padding: 24px; border: 1px solid rgba(255,255,255,0.1);
-    text-align: left;
-  }
-  .difference-item-icon { font-size: 1.6rem; margin-bottom: 12px; }
-  .difference-item h3 { font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-  .difference-item p { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.6; margin: 0; }
+  /* ---------- Proof ---------- */
+  .proof__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-7); }
+  .proof__col h3 { display: flex; align-items: center; gap: 10px; margin-bottom: var(--s-4); font-size: var(--fs-xl); }
+  .proof__col h3::before { content: ""; width: 14px; height: 14px; border-radius: 4px; background: var(--orange); }
+  .proof__col.theme-nutrition h3::before { background: var(--blue); }
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-5); margin-top: var(--s-8); }
+  .fact { border-top: 2px solid var(--ink); padding-top: var(--s-3); }
+  .fact h3 { font-family: var(--font-body); font-size: var(--fs-md); font-weight: 700; letter-spacing: 0; line-height: 1.35; }
+  .fact p { color: var(--muted); font-size: var(--fs-sm); margin-top: 6px; }
 
-  /* FOUNDER */
-  .founder { padding: 72px 24px; background: var(--white); text-align: center; }
-  .founder-inner { max-width: 680px; margin: 0 auto; }
-  .founder-quote {
-    font-size: clamp(1.1rem, 2.4vw, 1.4rem); font-weight: 700;
-    line-height: 1.5; color: var(--dark); margin-top: 16px;
-  }
-  .founder-quote span { color: var(--orange); }
-  .founder-byline { margin-top: 16px; color: var(--muted); font-size: 0.88rem; }
+  /* ---------- Videos ---------- */
+  .videos { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-5); max-width: 640px; margin-inline: auto; }
+  .video-card figure { margin: 0; }
+  .video-card video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius); background: #000; display: block; object-fit: cover; }
+  .video-card figcaption { margin-top: var(--s-3); font-weight: 700; line-height: 1.35; }
+  .video-card figcaption span { display: block; font-weight: 500; font-size: var(--fs-sm); color: var(--muted); }
 
-  @media (max-width: 768px) {
-    .products-inner { grid-template-columns: 1fr; }
-    .difference-grid { grid-template-columns: 1fr 1fr; }
+  /* ---------- Offer ---------- */
+  .offer-big { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--s-7); align-items: center; }
+  .offer-big h2 { max-width: 16ch; }
+  .offer-prices { display: grid; gap: var(--s-3); }
+  .offer-price { display: flex; justify-content: space-between; align-items: center; gap: var(--s-4); padding: var(--s-4) var(--s-5); border-radius: var(--radius); background: #34312F; }
+  .offer-price b { display: block; font-size: var(--fs-md); }
+  .offer-price span { color: var(--on-dark-muted); font-size: var(--fs-sm); }
+  .offer-price .price { font-size: var(--fs-2xl); color: #fff; white-space: nowrap; }
+  .offer-price .price small { color: var(--on-dark-muted); }
+  .offer-price--o { border-left: 4px solid var(--orange); }
+  .offer-price--b { border-left: 4px solid var(--blue-300); }
+
+  /* ---------- What's new ---------- */
+  .new-strip { display: grid; grid-template-columns: auto 1fr auto; gap: var(--s-5); align-items: center; }
+  .new-strip picture { width: 84px; }
+  .new-items { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-5); }
+  .new-item p { font-size: var(--fs-sm); color: var(--ink-2); margin-top: 6px; }
+  .new-item .pill { margin-bottom: 8px; }
+
+  /* ---------- Reading ---------- */
+  .read-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-4); }
+  .read-grid .card h3 { font-size: 1.125rem; line-height: 1.3; }
+  .read-grid .card--guides { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .read-grid .card--guides p, .read-grid .card--guides .card-meta { color: var(--on-dark-muted); }
+
+  /* ---------- Final CTA ---------- */
+  .final { text-align: center; }
+  .final picture { width: 110px; margin: 0 auto var(--s-4); display: block; }
+  .final .btn-row { justify-content: center; margin-top: var(--s-5); }
+  .final .btn-row .btn { min-width: 250px; }
+
+  @media (max-width: 1020px) {
+    .read-grid { grid-template-columns: 1fr 1fr; }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .offer-big { grid-template-columns: 1fr; gap: var(--s-5); }
   }
-  @media (max-width: 480px) {
-    .hero { padding: 56px 16px 48px; }
-    .products { padding: 40px 16px 56px; }
-    .difference-grid { grid-template-columns: 1fr; }
-    .product-card { padding: 28px 24px; }
+  @media (max-width: 820px) {
+    .doors__grid { grid-template-columns: 1fr; }
+    .door { min-height: 0; padding: var(--s-5) var(--s-5) 0; }
+    .door__art { margin-top: var(--s-4); height: 250px; }
+    .door__art .phone { max-width: 210px; margin-bottom: 0; }
+    .proof__cols { grid-template-columns: 1fr; gap: var(--s-6); }
+    .new-strip { grid-template-columns: 1fr; }
+    .new-strip picture { display: none; }
+    .new-items { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .home-intro { padding-top: var(--s-5); }
+    .home-intro__inner { grid-template-columns: 76px 1fr; gap: var(--s-3); align-items: start; }
+    .home-intro picture { width: 76px; }
+    .home-intro__inner > div { display: contents; }
+    .home-intro h1 { align-self: center; }
+    .home-intro .lead { grid-column: 1 / -1; font-size: var(--fs-md); margin-top: 0; }
+    .tali-say .tali-bubble { display: none; }
+    .door .btn { width: 100%; }
+    .door__art { justify-content: center; }
+    .videos { gap: var(--s-4); }
+    .read-grid { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: 1fr; gap: var(--s-4); }
+    .offer-big .btn-row .btn, .final .btn-row .btn { width: 100%; }
+    .offer-price { flex-direction: column; align-items: flex-start; gap: 4px; }
   }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">TOTALITY 360</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links" id="navMenu">
-    <a href="/">Home</a>
-    <a href="totality.html">Totality</a>
-    <a href="nutrition.html">Nutrition</a>
-    <a href="blog/">Totality Reports</a>
-    <a href="resources.html">Free Guides</a>
-    <a href="calculator.html">Free Calculator</a>
-    <a href="get-totality.html" class="nav-cta">Try Totality</a>
-    <a href="get-nutrition.html" class="nav-cta-nutrition">Try Nutrition</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <img src="logo.png" alt="Totality" style="width: 100px; height: auto; margin: 0 auto 24px; display: block;" />
-  <div class="hero-eyebrow">Totality 360 Pty Ltd &nbsp;·&nbsp; Built in Australia</div>
-   <h1>Coaching platform & nutrition tracking, <em>built for gyms and trainers</em></h1>
-  <p class="hero-sub">Totality is the all-in-one platform for gym owners and personal trainers. Totality Nutrition is the standalone macro tracking for individuals. Pick what's right for you.</p>
-  <div class="hero-social">
-    <a href="https://www.instagram.com/totalityapp?stkn=dnl2ZDZhZXc3bHlm" class="hero-social-icon" target="_blank" rel="noopener" aria-label="Totality on Instagram">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
-        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-      </svg>
+<!-- chrome:header -->
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__bar">
+    <a href="/" class="brand" aria-label="Totality home" aria-current="page">
+      <img src="/favicon-96.png" alt="" width="30" height="30">
+      <span>Totality</span>
     </a>
-    <a href="links.html" class="hero-links-btn">See all our links</a>
-  </div>
-</section>
-
-<!-- TRUST STRIP -->
-<section class="trust-strip">
-  <div class="trust-strip-inner">
-    <span class="trust-item">💳 <strong>Payments via Stripe</strong></span>
-    <span class="trust-item">🇦🇺 <strong>AUD pricing</strong>, built in Australia</span>
-    <span class="trust-item">🔓 <strong>Month-to-month</strong>, no contracts</span>
-    <span class="trust-item">🏋️ <strong>Built by a working PT</strong>, not a generic SaaS team</span>
-  </div>
-</section>
-
-<!-- PRODUCT CARDS -->
-<section class="products">
-  <div class="products-inner">
-
-    <!-- TOTALITY -->
-    <div class="product-card totality-card">
-      <span class="product-badge totality-badge">For gyms & trainers</span>
-      <h2>Totality</h2>
-      <p>The all-in-one coaching platform that replaces the four apps you're currently duct-taping together. Programme builder, client management, nutrition, billing, scheduling and gym operations — one login.</p>
-      <ul class="product-features">
-        <li>Programme builder + 676-exercise library</li>
-        <li>Auto-regulation engine (RPE-based)</li>
-        <li>Client check-ins, messaging & progress tracking</li>
-        <li>Billing & payments via Stripe — zero commission</li>
-        <li>Classes, scheduling & gym admin portal</li>
-        <li>Staff hours, payroll export & Xero integration</li>
-        <li>Nutrition tracking built in</li>
-        <li>Tali AI: drafts check-in replies, programmes and win-backs</li>
-        <li>Client app always free</li>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="navMenu" aria-label="Main">
+      <ul class="site-nav__list">
+        <li>
+          <details class="nav-dd">
+            <summary>Product</summary>
+            <ul class="nav-dd__panel">
+              <li><a href="/totality.html"><span class="nav-dot nav-dot--orange"></span><span><b>Totality for coaches and gyms</b><small>Programs, clients, billing, classes and gym admin</small></span></a></li>
+              <li><a href="/nutrition.html"><span class="nav-dot nav-dot--blue"></span><span><b>Totality Nutrition</b><small>Macro tracking for individuals, with an Australian food database</small></span></a></li>
+              <li><a href="/tali-ai.html"><span class="nav-dot nav-dot--ink"></span><span><b>Tali AI</b><small>The AI built into both apps</small></span></a></li>
+              <li><a href="/whats-new.html"><span class="nav-dot"></span><span><b>What's new</b><small>Recent releases and fixes</small></span></a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a class="site-nav__link" href="/pricing.html">Pricing</a></li>
+        <li><a class="site-nav__link" href="/compare.html">Compare</a></li>
+        <li><a class="site-nav__link" href="/resources.html">Resources</a></li>
+        <li><a class="site-nav__link" href="/blog/">Blog</a></li>
       </ul>
-      <div class="product-price">From <strong>A$29.99/mo</strong> &nbsp;·&nbsp; 7-day free trial &nbsp;·&nbsp; No contracts</div>
-      <a href="get-totality.html" class="product-cta totality-cta">Start free — 50% off 2 months</a>
-      <a href="totality.html" class="product-link totality-link">See all features & pricing →</a>
-    </div>
-
-    <!-- TOTALITY NUTRITION -->
-    <div class="product-card nutrition-card">
-      <span class="product-badge nutrition-badge">For individuals</span>
-      <h2>Totality Nutrition</h2>
-      <p>Standalone macro tracking built for Australians. A food database that actually has what's in your Woolies trolley, barcode scanning that works, and every tool you need to hit your targets — without paying for a full coaching platform.</p>
-      <ul class="product-features">
-        <li>Australian-first food database + barcode scanner</li>
-        <li>Custom macro targets (Mifflin-St Jeor calculator)</li>
-        <li>Adaptive Nutrition — auto-adjusts tomorrow's target if you go over</li>
-        <li>Calorie Cycling — more calories on training days, rebalanced on rest days</li>
-        <li>Weekly meal planning + grocery list with share</li>
-        <li>Weight trend graph (7-day rolling average)</li>
-        <li>Body measurements & progress photos</li>
-        <li>Saved meals — one tap to re-log</li>
-        <li>Hydration & Nutrition tracking</li>
-        <li>Trend insights & pattern detection</li>
-        <li>Optional Tali AI: describe a meal and it is logged</li>
-      </ul>
-      <div class="product-price">From <strong>A$8.99/mo</strong> (A$11.99 with Tali AI) &nbsp;·&nbsp; Free trial &nbsp;·&nbsp; No card required</div>
-      <a href="get-nutrition.html" class="product-cta nutrition-cta">Try Totality Nutrition free</a>
-      <a href="nutrition.html" class="product-link nutrition-link">See all features →</a>
-    </div>
-
+      <div class="site-nav__end">
+        <details class="nav-dd nav-dd--right">
+          <summary>Log in</summary>
+          <ul class="nav-dd__panel">
+            <li><a href="https://totalityapp.com.au" rel="noopener"><span class="nav-dot nav-dot--orange"></span><span><b>Totality web app</b><small>For coaches, gyms and their clients</small></span></a></li>
+            <li><a href="https://totalitynutrition.com.au" rel="noopener"><span class="nav-dot nav-dot--blue"></span><span><b>Nutrition web app</b><small>For Totality Nutrition members</small></span></a></li>
+          </ul>
+        </details>
+        <a class="btn btn--sm btn--primary" href="/get-totality.html">Start free</a>
+      </div>
+    </nav>
   </div>
-</section>
+</header>
+<!-- /chrome:header -->
 
-<!-- TALI AI -->
-<section class="difference" style="background:var(--white);">
-  <h2>New: <em>Tali AI</em> in both apps</h2>
-  <p>Tali is the AI built into Totality and Totality Nutrition. She drafts check-in replies, programmes, win-back messages and lead follow-ups for coaches, and logs meals from a description for Nutrition users. Live on the web app now. iOS and Android from 5 November.</p>
-  <p style="margin-top:16px;"><a href="totality.html#tali-ai" class="totality-link" style="font-weight:700;">Tali AI for coaches →</a> &nbsp;·&nbsp; <a href="nutrition.html#tali-ai" class="nutrition-link" style="font-weight:700;">Nutrition + AI →</a></p>
-</section>
+<main id="main">
 
-<!-- DIFFERENCE -->
-<section class="difference">
-  <h2>Why coaches and individuals <em>choose Totality</em></h2>
-  <p>We build for fitness professionals and people serious about their health — not the average consumer app market.</p>
-  <div class="difference-grid">
-    <div class="difference-item">
-      <div class="difference-item-icon">💰</div>
-      <h3>Zero commission</h3>
-      <p>Totality takes nothing from what you charge your clients. Flat monthly fee, full stop.</p>
+  <!-- INTRO -->
+  <section class="home-intro" aria-labelledby="home-title">
+    <div class="home-intro__inner">
+      <picture>
+        <source srcset="/img/tali/tali_point.webp" type="image/webp">
+        <img class="tali" src="/img/tali/tali_point.png" width="300" height="430" alt="Tali, the Totality robot mascot, pointing at the two apps">
+      </picture>
+      <div>
+        <h1 id="home-title">Two apps. Pick the one that fits you.</h1>
+        <p class="lead">Totality runs coaching businesses for personal trainers and gyms. Totality Nutrition is a macro tracker for anyone who wants to eat to a target. Both are built in Australia and both are live now.</p>
+      </div>
     </div>
-    <div class="difference-item">
-      <div class="difference-item-icon">🇦🇺</div>
-      <h3>Built for Australia</h3>
-      <p>AUD pricing, Australian food database, no USD surprises on your invoice.</p>
+  </section>
+
+  <!-- DOORS -->
+  <section class="doors" aria-label="Choose an app">
+    <div class="doors__grid">
+
+      <article class="door door--coach">
+        <div>
+          <p class="door__who">Coaches and gyms</p>
+          <h2>Totality</h2>
+          <p class="door__text">Programs, check-ins, billing, classes and gym admin in one app. Your clients get their app free.</p>
+          <a class="btn btn--ink btn--lg" href="/get-totality.html">Start your 7 day free trial</a>
+          <p class="door__fine">From A$29.99/mo. Already a member? <a href="https://totalityapp.com.au" rel="noopener">Log in to the web app</a></p>
+        </div>
+        <div class="door__art">
+          <div class="phone" role="img" aria-label="Totality gym owner dashboard showing revenue this month, expiring memberships, leads and session counts">
+            <div class="phone-screen">
+              <div class="scr">
+                <div class="scr-top"><span class="scr-title">Iron Peak Fitness</span></div>
+                <div class="scr-rev"><small>Revenue this month</small><b>A$18,240.50</b></div>
+                <div class="scr-alert">3 memberships expiring in the next 14 days</div>
+                <div class="scr-card">
+                  <span class="scr-label">Leads</span>
+                  <div class="scr-leads">
+                    <div class="l1"><b>5</b><span>New</span></div>
+                    <div class="l2"><b>3</b><span>Contacted</span></div>
+                    <div class="l3"><b>2</b><span>Trial</span></div>
+                  </div>
+                </div>
+                <div class="scr-stats">
+                  <div><b>31</b><span>Booked sessions</span></div>
+                  <div><b>24</b><span>Completed sessions</span></div>
+                  <div><b>6</b><span>Trainers</span></div>
+                  <div><b>142</b><span>Active clients</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="door door--me">
+        <div>
+          <p class="door__who">Just me</p>
+          <h2>Totality Nutrition</h2>
+          <p class="door__text">Track calories and macros with a food database built around Australian supermarkets, plus a barcode scanner and meal planning.</p>
+          <a class="btn btn--white btn--lg" href="/get-nutrition.html">Start your 7 day free trial</a>
+          <p class="door__fine">From A$8.99/mo. Already a member? <a href="https://totalitynutrition.com.au" rel="noopener">Log in to the web app</a></p>
+        </div>
+        <div class="door__art">
+          <div class="phone" role="img" aria-label="Totality Nutrition home screen showing calories eaten against a 2,400 target, protein, carbs and fat, and the Tell Tali what you ate shortcut">
+            <div class="phone-screen">
+              <div class="scr">
+                <div class="scr-top">
+                  <div><div class="scr-title">Good morning, Sam</div><div class="scr-sub">Thursday 22 October</div></div>
+                  <span class="scr-btn">Log Food</span>
+                </div>
+                <div class="scr-card">
+                  <div class="scr-cal">
+                    <div><span class="scr-label">Calories today</span><b>412</b><span class="scr-sub">1,988 remaining</span></div>
+                    <div class="tgt"><b>2,400</b><span class="scr-sub">target</span></div>
+                  </div>
+                  <div class="scr-bar"><i></i></div>
+                  <div class="scr-macros">
+                    <div><b style="color:#C0392B">38g</b><span>Protein / 180g</span></div>
+                    <div><b style="color:#1565A0">45g</b><span>Carbs / 250g</span></div>
+                    <div><b style="color:#B85C00">9g</b><span>Fat / 70g</span></div>
+                  </div>
+                </div>
+                <div class="scr-tali">
+                  <img src="/img/tali/tali_idle.png" alt="" width="26" height="37" loading="lazy">
+                  <div><b>Tell Tali what you ate</b><span>Describe it in plain words and Tali logs it</span></div>
+                </div>
+                <div class="scr-tiles">
+                  <div><i></i>Meal Plan</div>
+                  <div><i></i>Grocery List</div>
+                  <div><i></i>Saved Meals</div>
+                  <div><i></i>Progress</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
     </div>
-    <div class="difference-item">
-      <div class="difference-item-icon">🔓</div>
-      <h3>No lock-in</h3>
-      <p>Month to month. Self-serve cancellation. Your data is always yours.</p>
+  </section>
+
+  <!-- PROOF -->
+  <section class="section section--tint" aria-labelledby="proof-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="proof-title" class="section-title">What you can use today</h2>
+        <p class="section-sub">Everything listed here is shipped and working in the live apps. If something is still on the way, we say so.</p>
+      </div>
+      <div class="proof__cols">
+        <div class="proof__col theme-totality">
+          <h3>In Totality</h3>
+          <ul class="ticks ticks--orange">
+            <li>Program builder with a 676 exercise library</li>
+            <li>RPE based auto-regulation</li>
+            <li>Client check-ins, messaging and progress tracking</li>
+            <li>Billing and payments through Stripe, with no commission taken by Totality</li>
+            <li>Classes, scheduling and a gym admin portal</li>
+            <li>Staff hours, payroll export and Xero integration</li>
+            <li>Nutrition tracking for your clients, built in</li>
+          </ul>
+          <p class="mt-4"><a class="text-link" href="/totality.html">See how Totality works</a></p>
+        </div>
+        <div class="proof__col theme-nutrition">
+          <h3>In Totality Nutrition</h3>
+          <ul class="ticks ticks--blue">
+            <li>Australian-first food database and barcode scanner</li>
+            <li>Custom calorie and macro targets</li>
+            <li>Adaptive targets: go over today and tomorrow's target adjusts</li>
+            <li>Calorie cycling for training days and rest days</li>
+            <li>Weekly meal planning with a grocery list you can share</li>
+            <li>Weight trend on a 7 day average, body measurements and progress photos</li>
+            <li>Saved meals you can log again in one tap</li>
+          </ul>
+          <p class="mt-4"><a class="text-link" href="/nutrition.html">See how Totality Nutrition works</a></p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <h3>Totality is on the App Store, Google Play and the web</h3>
+          <p>Trainers, gym admins and clients each sign in to their own view.</p>
+        </div>
+        <div class="fact">
+          <h3>Totality Nutrition is on Google Play and the web</h3>
+          <p>The App Store listing is pending. iPhone users can use the web app in the meantime.</p>
+        </div>
+        <div class="fact">
+          <h3>Apple Health is the only wearable connection</h3>
+          <p>Other wearables are not connected yet.</p>
+        </div>
+        <div class="fact">
+          <h3>Month to month, in Australian dollars</h3>
+          <p>No contracts. Cancel from your account settings.</p>
+        </div>
+      </div>
     </div>
-    <div class="difference-item">
-      <div class="difference-item-icon">🏋️</div>
-      <h3>Built by a trainer</h3>
-      <p>Taj built Totality because he was sick of running his coaching business through four apps.</p>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="section" aria-labelledby="video-title">
+    <div class="container">
+      <div class="section-head center">
+        <h2 id="video-title" class="section-title">See each app in under two minutes</h2>
+      </div>
+      <div class="videos">
+        <div class="video-card">
+          <figure>
+            <video controls playsinline preload="none" poster="/img/video/totality-demo-trainers-gyms-poster.webp" width="540" height="960" aria-label="Totality for trainers and gyms video">
+              <source src="/totality-demo-trainers-gyms.mp4" type="video/mp4">
+            </video>
+            <figcaption>Totality <span>For trainers and gyms, 1:55</span></figcaption>
+          </figure>
+        </div>
+        <div class="video-card">
+          <figure>
+            <video controls playsinline preload="none" poster="/img/video/nutrition-built-to-stick-poster.webp" width="540" height="960" aria-label="Totality Nutrition video">
+              <source src="/nutrition-built-to-stick.mp4" type="video/mp4">
+            </video>
+            <figcaption>Totality Nutrition <span>For individuals, 1:29</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section class="section section--dark" aria-labelledby="offer-title">
+    <div class="container offer-big">
+      <div>
+        <h2 id="offer-title">Try it free for 7 days, then pay half for 2 months</h2>
+        <p class="lead mt-4">Every new account starts with a 7 day free trial. After that, your first 2 months are 50% off. The discount is applied automatically, so there is no code to enter.</p>
+        <div class="btn-row mt-5">
+          <a class="btn btn--primary btn--lg" href="/get-totality.html">Start Totality free</a>
+          <a class="btn btn--nutrition btn--lg" href="/get-nutrition.html">Start Nutrition free</a>
+        </div>
+      </div>
+      <div class="offer-prices">
+        <div class="offer-price offer-price--o">
+          <div><b>Totality</b><span>For coaches and gyms</span></div>
+          <div class="price">A$29.99<small>/mo and up</small></div>
+        </div>
+        <div class="offer-price offer-price--b">
+          <div><b>Totality Nutrition</b><span>For individuals</span></div>
+          <div class="price">A$8.99<small>/mo and up</small></div>
+        </div>
+        <p class="small" style="color:var(--on-dark-muted)">Full plan details on the <a href="/pricing.html" style="color:#fff">pricing page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S NEW -->
+  <section class="section section--tight" aria-labelledby="new-title">
+    <div class="container new-strip">
+      <picture>
+        <source srcset="/img/tali/tali_wave.webp" type="image/webp">
+        <img class="tali" src="/img/tali/tali_wave.png" width="300" height="430" alt="" loading="lazy">
+      </picture>
+      <div>
+        <h2 id="new-title" class="h4">What's new</h2>
+        <div class="new-items mt-4">
+          <div class="new-item">
+            <span class="pill pill--orange">Totality</span>
+            <h3 class="h4" style="font-size:1.125rem">Tali AI for coaches</h3>
+            <p>Tali drafts check-in replies, programs, win-back messages and lead follow-ups. Live on the web app now, iOS and Android from 5 November.</p>
+          </div>
+          <div class="new-item">
+            <span class="pill pill--blue">Totality Nutrition</span>
+            <h3 class="h4" style="font-size:1.125rem">Log a meal by describing it</h3>
+            <p>Tell Tali what you ate in plain words and it is logged. Part of the Nutrition + AI plan. Live on the web app now, iOS and Android from 5 November.</p>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn--ghost" href="/whats-new.html">See all updates</a>
+    </div>
+  </section>
+
+  <!-- READING -->
+  <section class="section section--tint" aria-labelledby="read-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="read-title" class="section-title">Free reading for coaches and lifters</h2>
+        <p class="section-sub">Research summaries on the blog, and free guides for running a PT business.</p>
+      </div>
+      <div class="read-grid">
+        <a class="card" href="/blog/posts/weekly-set-distribution-frequency-strength.html">
+          <span class="card-meta">Training</span>
+          <h3>Does it matter how you spread your weekly sets? A new study weighs in</h3>
+        </a>
+        <a class="card" href="/blog/posts/count-plants-gut-health.html">
+          <span class="card-meta">Nutrition</span>
+          <h3>Count plants, not just grams, for gut health</h3>
+        </a>
+        <a class="card" href="/blog/posts/rpe-squat-velocity-loss-cue.html">
+          <span class="card-meta">Training</span>
+          <h3>No velocity tracker? Use this RPE number instead</h3>
+        </a>
+        <a class="card card--guides" href="/resources.html">
+          <span class="card-meta">Free guides</span>
+          <h3>Programming, starting a PT business, marketing and nutrition coaching</h3>
+          <p class="card-foot">Download the PDFs</p>
+        </a>
+      </div>
+      <p class="mt-5"><a class="text-link" href="/blog/">Read the blog</a></p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section final" aria-labelledby="final-title">
+    <div class="container container--narrow">
+      <picture>
+        <source srcset="/img/tali/tali_thumbs.webp" type="image/webp">
+        <img class="tali" src="/img/tali/tali_thumbs.png" width="300" height="430" alt="Tali giving a thumbs up" loading="lazy">
+      </picture>
+      <h2 id="final-title">Start with the free trial</h2>
+      <p class="lead center mt-3" style="margin-inline:auto">Seven days to try everything, then 50% off your first 2 months, applied automatically.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary btn--lg" href="/get-totality.html">I'm a coach or gym</a>
+        <a class="btn btn--nutrition btn--lg" href="/get-nutrition.html">I'm tracking for me</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- chrome:footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div class="site-footer__about">
+        <a href="/" class="brand" aria-label="Totality home" aria-current="page">
+          <img src="/favicon-96.png" alt="" width="30" height="30" loading="lazy">
+          <span>Totality</span>
+        </a>
+        <p class="site-footer__blurb">Coaching software for personal trainers and gyms, and macro tracking for individuals. Built in Australia, priced in AUD.</p>
+        <div class="store-badges">
+          <a class="store-badge" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.6 2.28 3.47 2.3 3.48-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.64 2.12-1.15.02-1.52-.68-2.84-.68-1.32 0-1.73.66-2.82.7-1.13.04-2-1.14-2.72-2.19-1.48-2.14-2.6-6.05-1.09-8.69.75-1.31 2.1-2.14 3.56-2.16 1.11-.02 2.16.75 2.84.75.68 0 1.95-.93 3.29-.79.56.02 2.13.23 3.14 1.7-.08.05-1.87 1.1-1.85 3.28zM14.2 5.03c.6-.73 1-1.74.9-2.75-.87.03-1.91.58-2.53 1.3-.56.64-1.04 1.67-.91 2.66.97.07 1.96-.49 2.55-1.21z"/></svg>
+            <span><small>Totality on the</small><b>App Store</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.livewell" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Totality on</small><b>Google Play</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.totality.nutrition" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Nutrition on</small><b>Google Play</b></span>
+          </a>
+        </div>
+        <a class="social-link" href="https://instagram.com/totality360au" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          @totality360au on Instagram
+        </a>
+      </div>
+      <div>
+        <h2>Totality</h2>
+        <ul>
+          <li><a href="/totality.html">Overview</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/for-pts.html">For personal trainers</a></li>
+          <li><a href="/for-gyms.html">For gyms</a></li>
+          <li><a href="/get-totality.html">Get the app</a></li>
+          <li><a href="https://totalityapp.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Totality Nutrition</h2>
+        <ul>
+          <li><a href="/nutrition.html">Overview</a></li>
+          <li><a href="/nutrition-features.html">Features</a></li>
+          <li><a href="/get-nutrition.html">Get the app</a></li>
+          <li><a href="/calculator.html">Macro calculator</a></li>
+          <li><a href="https://totalitynutrition.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <ul>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/compare.html">Compare</a></li>
+          <li><a href="/tali-ai.html">Tali AI</a></li>
+          <li><a href="/whats-new.html">What's new</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/resources.html">Free guides</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/help.html">Help centre</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/security.html">Security</a></li>
+          <li><a href="mailto:admintotality@gmail.com">Contact us</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/refund.html">Refunds</a></li>
+          <li><a href="/delete-account.html">Delete your account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Totality 360 Pty Ltd. ABN 58 698 902 975.</span>
+      <span>Prices in AUD. Payments processed by Stripe.</span>
     </div>
   </div>
-</section>
-
-<!-- FOUNDER -->
-<section class="founder">
-  <div class="founder-inner">
-    <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);">Why we built this</div>
-    <p class="founder-quote">"I built Totality because I'm a personal trainer myself, and I was sick of running my business through <span>four apps that didn't talk to each other</span>. This is the platform I wanted to use."</p>
-    <p class="founder-byline">— Taj, Founder & CEO · Cert IV Personal Trainer · Sports & Exercise Nutrition · Bachelor of Game Development</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <span class="footer-brand">TOTALITY 360 PTY LTD</span>
-  <div class="footer-links">
-    <a href="totality.html" style="color: var(--orange); font-weight: 700;">Totality</a>
-    <a href="nutrition.html" style="color: var(--nutrition); font-weight: 700;">Totality Nutrition</a>
-    <a href="blog/">Totality Reports</a>
-    <a href="resources.html">Free Guides</a>
-    <a href="calculator.html">Free Calculator</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="refund.html">Refunds</a>
-    <a href="terms.html">Terms</a>
-    <a href="mailto:admintotality@gmail.com">Contact</a>
-  </div>
-  <span class="footer-copy">© 2026 Totality 360 Pty Ltd</span>
 </footer>
-
-<script src="js/nav.js" defer></script>
+<!-- /chrome:footer -->
+<script src="/js/nav.js" defer></script>
 </body>
 </html>

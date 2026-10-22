@@ -1,8 +1,8 @@
 /* =========================================================
    Totality 360 design system (site.css)
-   Docs: css/README.md. Fonts are loaded per page in <head>
-   (Bricolage Grotesque for display, Figtree for text), which
-   tools/apply_chrome.py adds automatically.
+   Docs: css/README.md. Fonts are self-hosted in /fonts
+   (Bricolage Grotesque for display, Figtree for text) and
+   preloaded by the <!-- chrome:head --> block.
 
    Sections:
    1. Tokens          6. Cards, pills, lists
@@ -11,6 +11,18 @@
    4. Buttons         9. Site header + footer
    5. Sections       10. Legacy aliases (old class names)
    ========================================================= */
+
+/* ---------- 0. FONTS (self-hosted Google Fonts, SIL OFL, see /fonts) ---------- */
+@font-face {
+  font-family: "Figtree"; font-style: normal; font-weight: 300 900; font-display: swap;
+  src: url("/fonts/figtree-latin-wght.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque"; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url("/fonts/bricolage-grotesque-latin-wght.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* ---------- 1. TOKENS ---------- */
 :root {
@@ -371,7 +383,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 
 /* ---------- 9. SITE HEADER + FOOTER ---------- */
 .site-header {
-  position: sticky; top: 0; z-index: 200;
+  position: sticky; top: 0; z-index: 200; margin: 0; padding: 0; text-align: left; /* resets for pages that style bare header */
   background: rgba(255,255,255,0.96);
   -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px);
   border-bottom: 1px solid var(--line);
@@ -392,7 +404,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
   font-size: 0.9375rem; font-weight: 600; color: var(--ink-2); cursor: pointer; white-space: nowrap;
 }
 .site-nav a.site-nav__link:hover, .nav-dd > summary:hover { color: var(--ink); background: var(--surface); }
-.site-nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--orange); border-radius: 0; }
+.site-nav a.site-nav__link[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--orange); border-radius: 0; }
 .nav-dd { position: relative; }
 .nav-dd > summary { list-style: none; }
 .nav-dd > summary::-webkit-details-marker { display: none; }
@@ -408,7 +420,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 }
 .nav-dd--right .nav-dd__panel { left: auto; right: 0; min-width: 260px; }
 .nav-dd__panel a { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border-radius: var(--radius-sm); }
-.nav-dd__panel a:hover { background: var(--surface); }
+.nav-dd__panel a:hover, .nav-dd__panel a[aria-current="page"] { background: var(--surface); }
 .nav-dd__panel b { display: block; font-size: 0.9375rem; color: var(--ink); }
 .nav-dd__panel small { display: block; font-size: var(--fs-xs); color: var(--muted); line-height: 1.4; margin-top: 2px; }
 .nav-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; background: var(--line-strong); }
@@ -425,6 +437,8 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 1020px) {
+  /* backdrop-filter would make the header the containing block of the fixed drawer */
+  .site-header { background: #fff; -webkit-backdrop-filter: none; backdrop-filter: none; }
   .site-header__bar { gap: var(--s-3); }
   html.js .nav-toggle { display: inline-flex; }
   .site-nav {
@@ -445,7 +459,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
     display: flex; width: 100%; padding: 14px 4px; font-size: 1.0625rem; color: var(--ink);
     border-bottom: 1px solid var(--line); border-radius: 0; justify-content: space-between;
   }
-  .site-nav a[aria-current="page"] { box-shadow: inset 3px 0 0 var(--orange); padding-left: 12px; }
+  .site-nav a.site-nav__link[aria-current="page"] { box-shadow: inset 3px 0 0 var(--orange); padding-left: 12px; }
   .nav-dd__panel { position: static; box-shadow: none; border: 0; min-width: 0; padding: 4px 0 8px; }
   .site-nav__end { flex-direction: column; align-items: stretch; margin: var(--s-4) 0 0; gap: 0; }
   .site-nav__end .btn { margin-top: var(--s-4); }
@@ -454,7 +468,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
   .site-nav__list { margin-left: var(--s-3); }
 }
 
-.site-footer { background: var(--ink); color: var(--on-dark); padding: var(--s-8) var(--gutter) var(--s-6); }
+.site-footer { background: var(--ink); color: var(--on-dark); padding: var(--s-8) var(--gutter) var(--s-6); margin: 0; text-align: left; }
 .site-footer__inner { max-width: var(--container); margin-inline: auto; }
 .site-footer__top { display: grid; grid-template-columns: 1.4fr repeat(4, 1fr); gap: var(--s-6); }
 .site-footer .brand span { color: #fff; }

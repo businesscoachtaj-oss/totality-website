@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -12,13 +15,9 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Totality — All-in-one coaching platform for gym owners &amp; personal trainers</title>
+<title>Totality: All-in-one coaching platform for gym owners &amp; personal trainers</title>
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -31,14 +30,18 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="canonical" href="https://totality360.com.au/totality.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
-<meta property="og:title" content="Totality — All-in-one coaching platform for gym owners &amp; personal trainers">
+<meta property="og:title" content="Totality: All-in-one coaching platform for gym owners &amp; personal trainers">
 <meta property="og:description" content="The all-in-one coaching platform for gyms, trainers and their clients. Programme builder, nutrition tracking, auto-regulation, client management and more.">
 <meta property="og:url" content="https://totality360.com.au/totality.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Totality — All-in-one coaching platform">
+<meta name="twitter:title" content="Totality: All-in-one coaching platform">
 <meta name="twitter:description" content="Programme builder, nutrition tracking, auto-regulation and client management, in one platform.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
+<!-- chrome:head -->
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<!-- /chrome:head -->
 <link rel="stylesheet" href="css/site.css">
 <script type="application/ld+json">
 {
@@ -331,23 +334,51 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <body>
 
 <!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">TOTALITY 360</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links" id="navMenu">
-    <a href="/">Home</a>
-    <a href="totality.html">Totality</a>
-    <a href="nutrition.html">Nutrition</a>
-    <a href="blog/">Totality Reports</a>
-    <a href="resources.html">Free Guides</a>
-    <a href="calculator.html">Free Calculator</a>
-    <a href="commission-calculator.html">Commission Savings</a>
-    <a href="get-totality.html" class="nav-cta">Try Totality</a>
-    <a href="get-nutrition.html" class="nav-cta-nutrition">Try Nutrition</a>
+<!-- chrome:header -->
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__bar">
+    <a href="/" class="brand" aria-label="Totality home">
+      <img src="/favicon-96.png" alt="" width="30" height="30">
+      <span>Totality</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="navMenu" aria-label="Main">
+      <ul class="site-nav__list">
+        <li>
+          <details class="nav-dd">
+            <summary>Product</summary>
+            <ul class="nav-dd__panel">
+              <li><a href="/totality.html" aria-current="page"><span class="nav-dot nav-dot--orange"></span><span><b>Totality for coaches and gyms</b><small>Programs, clients, billing, classes and gym admin</small></span></a></li>
+              <li><a href="/nutrition.html"><span class="nav-dot nav-dot--blue"></span><span><b>Totality Nutrition</b><small>Macro tracking for individuals, with an Australian food database</small></span></a></li>
+              <li><a href="/tali-ai.html"><span class="nav-dot nav-dot--ink"></span><span><b>Tali AI</b><small>The AI built into both apps</small></span></a></li>
+              <li><a href="/whats-new.html"><span class="nav-dot"></span><span><b>What's new</b><small>Recent releases and fixes</small></span></a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a class="site-nav__link" href="/pricing.html">Pricing</a></li>
+        <li><a class="site-nav__link" href="/compare.html">Compare</a></li>
+        <li><a class="site-nav__link" href="/resources.html">Resources</a></li>
+        <li><a class="site-nav__link" href="/blog/">Blog</a></li>
+      </ul>
+      <div class="site-nav__end">
+        <details class="nav-dd nav-dd--right">
+          <summary>Log in</summary>
+          <ul class="nav-dd__panel">
+            <li><a href="https://totalityapp.com.au" rel="noopener"><span class="nav-dot nav-dot--orange"></span><span><b>Totality web app</b><small>For coaches, gyms and their clients</small></span></a></li>
+            <li><a href="https://totalitynutrition.com.au" rel="noopener"><span class="nav-dot nav-dot--blue"></span><span><b>Nutrition web app</b><small>For Totality Nutrition members</small></span></a></li>
+          </ul>
+        </details>
+        <a class="btn btn--sm btn--primary" href="/get-totality.html">Start free</a>
+      </div>
+    </nav>
   </div>
-</nav>
+</header>
+<!-- /chrome:header -->
+<span id="main" tabindex="-1"></span>
 
 <!-- HERO -->
 <section class="hero">
@@ -362,15 +393,15 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="hero-check-item"><span class="hero-check-mark">✓</span> Weekly check-ins</div>
     <div class="hero-check-item"><span class="hero-check-mark">✓</span> Scheduling & PT credits</div>
     <div class="hero-check-item"><span class="hero-check-mark">✓</span> Billing & payments</div>
-    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Classes & bookings</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Classes & bookings (gym plans)</div>
     <div class="hero-check-item"><span class="hero-check-mark">✓</span> Progress tracking</div>
     <div class="hero-check-item"><span class="hero-check-mark">✓</span> Messaging</div>
-    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Leads CRM</div>
-    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Xero integration</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Leads CRM (gym plans)</div>
+    <div class="hero-check-item"><span class="hero-check-mark">✓</span> Xero payroll export (gym plans)</div>
     <div class="hero-check-item"><span class="hero-check-mark">✓</span> Client app always free</div>
   </div>
   <div class="hero-actions">
-    <a href="get-totality.html" class="btn-primary">Start free — 50% off 2 months</a>
+    <a href="get-totality.html" class="btn-primary">Start free: 50% off 2 months</a>
     <a href="#pricing" class="btn-secondary">View pricing</a>
   </div>
   <p class="hero-note">No setup fees &nbsp;·&nbsp; No contracts &nbsp;·&nbsp; Client app always free &nbsp;·&nbsp; 50% off your first 2 months, applied automatically</p>
@@ -382,7 +413,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat">
-    <div class="stat-number">A$29</div>
+    <div class="stat-number">A$29.99</div>
     <div class="stat-label">Starting price per month</div>
   </div>
   <div class="stat">
@@ -396,7 +427,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="stat">
     <div class="stat-number">0%</div>
     <div class="stat-label">Commission on your coaching revenue</div>
-    <div class="stat-footnote">A small processing fee applies to in-app payments — see pricing</div>
+    <div class="stat-footnote">A 3.5% processing fee applies to in-app payments. See pricing.</div>
   </div>
 </div>
 
@@ -411,7 +442,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="ai-card"><h3>Check-in replies</h3><p>Tali reads a client's weekly check-in and drafts a reply. Edit it, then send.</p></div>
       <div class="ai-card"><h3>Programme drafts</h3><p>Describe the client and the goal. Tali drafts a programme you can edit in the builder.</p></div>
       <div class="ai-card"><h3>At-risk clients and win-backs</h3><p>See who is drifting away, with a win-back message ready to review.</p></div>
-      <div class="ai-card"><h3>Lead follow-ups</h3><p>Tali drafts the follow-up for every enquiry in your leads pipeline, so none go cold.</p></div>
+      <div class="ai-card"><h3>Lead follow-ups</h3><p>On gym plans, Tali drafts the follow-up for every enquiry in your Leads CRM, so none go cold.</p></div>
     </div>
     <div class="ai-credits" style="text-align:left;">
       <h3>AI credits included every month</h3>
@@ -425,7 +456,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <li><strong>Enterprise:</strong> unlimited, subject to fair use</li>
         <li><strong>Free trial:</strong> 25 credits</li>
       </ul>
-      <p class="ai-note">Replies, win-backs and follow-ups cost 1 credit each. A full programme draft costs 5. Credits reset each calendar month (Sydney time). Need more? Add <strong>Tali AI</strong> for A$9.99/mo (+1,000 credits, Solo Coach), A$19.99/mo (+3,000 credits, Studio), or the Solo Coach POS + AI bundle for A$16.98/mo.</p>
+      <p class="ai-note">Replies, win-backs and follow-ups cost 1 credit each. A full programme draft costs 5. Credits reset each calendar month (Sydney time). Need more? Add <strong>Tali AI</strong> for A$9.99/mo (+1,000 credits, Solo Coach), A$19.99/mo (+3,000 credits, Studio), or the Solo Coach POS add-on + AI bundle for A$16.98/mo.</p>
     </div>
   </div>
 </section>
@@ -435,18 +466,18 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="section-inner">
     <div class="section-eyebrow">The Totality platform</div>
     <h2 class="section-title">One platform. Three roles. Everything connected.</h2>
-    <p class="section-sub">Totality connects every person in the coaching relationship — gym admin, trainer and client — in a single platform built for how fitness businesses actually run.</p>
+    <p class="section-sub">Totality connects every person in the coaching relationship (gym admin, trainer and client) in a single platform built for how fitness businesses actually run.</p>
     <div class="forwho-grid">
       <div class="forwho-card">
         <div class="forwho-icon">🏋️</div>
         <h3>Gym Admins</h3>
-        <p>Manage trainers, clients, classes, memberships, payroll and compliance from one dashboard. Full business oversight, zero spreadsheets.</p>
+        <p>On Studio and Enterprise, manage trainers, clients, classes, memberships, payroll and compliance from one dashboard. Full business oversight, zero spreadsheets.</p>
         <span class="forwho-tag">Studio & Enterprise plans</span>
       </div>
       <div class="forwho-card">
         <div class="forwho-icon">👟</div>
         <h3>Trainers</h3>
-        <p>Build programmes, run sessions, track client nutrition, handle check-ins and manage appointments — all without switching apps. Works for gym-based and solo coaches alike.</p>
+        <p>Build programmes, run sessions, track client nutrition, handle check-ins and manage appointments, all without switching apps. Works for gym-based and solo coaches alike.</p>
         <span class="forwho-tag">All plans</span>
       </div>
       <div class="forwho-card">
@@ -469,7 +500,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div class="feature-icon">📋</div>
         <div>
           <h3>Programme Builder</h3>
-          <p>Build weekly training plans with sessions, exercises, sets, reps and tempo. Assign to any client in one tap. Track resistance bands as their own load type, and mark exercises unilateral or bilateral — the interface adjusts sets and reps per side automatically.</p>
+          <p>Build weekly training plans with sessions, exercises, sets, reps and tempo. Assign to any client in one tap. Track resistance bands as their own load type, and mark exercises unilateral or bilateral: the interface adjusts sets and reps per side automatically.</p>
         </div>
       </div>
       <div class="feature-block">
@@ -511,7 +542,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div class="feature-icon">🏫</div>
         <div>
           <h3>Classes & Bookings</h3>
-          <p>Set up recurring classes with capacity limits and waitlists. Members book from their phone. Trainers see who's coming.</p>
+          <p>Set up recurring classes with capacity limits and waitlists. Members book from their phone. Trainers see who's coming. Included on Studio and Enterprise.</p>
         </div>
       </div>
       <div class="feature-block">
@@ -525,35 +556,35 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div class="feature-icon">📝</div>
         <div>
           <h3>Compliance & Documents</h3>
-          <p>Store signed waivers, incident reports, compliance documents and client health history — all in one place.</p>
+          <p>Store signed waivers, incident reports, compliance documents and client health history, all in one place. Included on Studio and Enterprise.</p>
         </div>
       </div>
       <div class="feature-block">
         <div class="feature-icon">🏪</div>
         <div>
           <h3>Marketplace & POS</h3>
-          <p>Sell supplements, merchandise and services through the platform. In-gym point-of-sale for retail — included for gyms, available as a $9.99/mo add-on for solo coaches.</p>
+          <p>Sell supplements, merchandise and services through the platform. In-gym point-of-sale for retail. Included on Studio and Enterprise, and available on Solo plans with the POS add-on (A$9.99/mo).</p>
         </div>
       </div>
       <div class="feature-block">
         <div class="feature-icon">💬</div>
         <div>
           <h3>Messaging</h3>
-          <p>Direct and broadcast messaging between trainer and client built in. No WhatsApp, no Instagram DMs — one place for everything.</p>
+          <p>Direct and broadcast messaging between trainer and client built in. No WhatsApp, no Instagram DMs. One place for everything.</p>
         </div>
       </div>
       <div class="feature-block">
         <div class="feature-icon">👥</div>
         <div>
           <h3>Leads CRM</h3>
-          <p>Track prospective members through a sales pipeline. Follow up, convert and onboard from a single screen.</p>
+          <p>Track prospective members through a sales pipeline. Follow up, convert and onboard from a single screen. Included on Studio and Enterprise.</p>
         </div>
       </div>
       <div class="feature-block">
         <div class="feature-icon">🧾</div>
         <div>
           <h3>Xero Integration</h3>
-          <p>Staff hours sync straight through to Xero for payroll-ready reporting. No exporting spreadsheets, no manual reconciliation.</p>
+          <p>Staff hours sync straight through to Xero for payroll-ready reporting. No exporting spreadsheets, no manual reconciliation. Included on Studio and Enterprise.</p>
         </div>
       </div>
     </div>
@@ -570,7 +601,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="loop-step">
         <div class="step-num">1</div>
         <h3>Trainer builds a programme</h3>
-        <p>Weeks, sessions, exercises — the full training plan in one builder.</p>
+        <p>Weeks, sessions and exercises: the full training plan in one builder.</p>
       </div>
       <div class="loop-step">
         <div class="step-num">2</div>
@@ -626,12 +657,12 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="section-inner">
     <div class="section-eyebrow">Why Totality</div>
     <h2 class="section-title">The other guys weren't built for coaches.</h2>
-    <p class="section-sub">Most gym platforms were built for facility management — scheduling rooms, processing payments, sending reminders. Totality was built around the coaching relationship itself.</p>
+    <p class="section-sub">Most gym platforms were built for facility management: scheduling rooms, processing payments, sending reminders. Totality was built around the coaching relationship itself.</p>
     <div class="why-grid">
       <div class="why-card">
         <div class="why-card-icon">🧠</div>
         <h3>Real coaching intelligence, not a black box</h3>
-        <p>Auto-regulation, at-risk client flagging, adaptive programme logic — built as deterministic, coach-reviewable logic that works today. No mystery algorithm, no per-use cost.</p>
+        <p>Auto-regulation, at-risk client flagging, adaptive programme logic. All built as deterministic, coach-reviewable logic that works today. No mystery algorithm, no per-use cost.</p>
       </div>
       <div class="why-card">
         <div class="why-card-icon">💰</div>
@@ -641,12 +672,12 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="why-card">
         <div class="why-card-icon">🔒</div>
         <h3>Your clients are yours. Not theirs.</h3>
-        <p>Some platforms position themselves as the primary relationship — they own the consumer identity and promote competitor businesses to your clients. With Totality, your client data belongs to you, always.</p>
+        <p>Some platforms position themselves as the primary relationship. They own the consumer identity and promote competitor businesses to your clients. With Totality, your client data belongs to you, always.</p>
       </div>
       <div class="why-card">
         <div class="why-card-icon">📱</div>
         <h3>Built mobile-first. Actually.</h3>
-        <p>The other guys have mobile apps as an afterthought — most admin tasks still require a desktop. Totality was built from day one for mobile.</p>
+        <p>The other guys have mobile apps as an afterthought: most admin tasks still require a desktop. Totality was built from day one for mobile.</p>
       </div>
       <div class="why-card">
         <div class="why-card-icon">🚪</div>
@@ -655,7 +686,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       </div>
       <div class="why-card">
         <div class="why-card-icon">🍎</div>
-        <h3>Nutrition is built in — not bolted on.</h3>
+        <h3>Nutrition is built in, not bolted on.</h3>
         <p>The other guys don't do nutrition. Totality has food logging, barcode scanning, macro tracking, a built-in calculator and trainer-set targets built in.</p>
       </div>
     </div>
@@ -667,7 +698,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="section-inner">
     <div class="section-eyebrow">Feature comparison</div>
     <h2 class="section-title">Totality vs the rest of the market</h2>
-    <p class="section-sub">See what's included as standard — and where everyone else falls short.</p>
+    <p class="section-sub">See what's included as standard, and where everyone else falls short.</p>
     <div class="compare-wrap">
       <table class="vs-table">
         <thead>
@@ -687,17 +718,17 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <tr><td>Weekly client check-ins</td><td><span class="check">✓</span> Included</td><td><span class="cross">✗</span> Not available</td><td><span class="partial">Basic surveys</span></td></tr>
           <tr><td>At-risk client identification</td><td><span class="check">✓</span> Included</td><td><span class="partial">Reports only</span></td><td><span class="cross">✗</span> Not available</td></tr>
           <tr><td>Progress tracking</td><td><span class="check">✓</span> Included</td><td><span class="partial">Add-on or separate app</span></td><td><span class="check">✓</span> Available</td></tr>
-          <tr><td>Classes + bookings + waitlists</td><td><span class="check">✓</span> Included</td><td><span class="check">✓</span> Available</td><td><span class="cross">✗</span> Not available</td></tr>
-          <tr><td>Staff payroll + management</td><td><span class="check">✓</span> Included</td><td><span class="partial">Limited</span></td><td><span class="cross">✗</span> Not available</td></tr>
-          <tr><td>Compliance docs + incident reports</td><td><span class="check">✓</span> Included</td><td><span class="cross">✗</span> Not available</td><td><span class="cross">✗</span> Not available</td></tr>
-          <tr><td>Leads CRM pipeline</td><td><span class="check">✓</span> Included</td><td><span class="partial">Top tier only</span></td><td><span class="cross">✗</span> Not available</td></tr>
-          <tr><td>Native Xero sync</td><td><span class="check">✓</span> Included</td><td><span class="partial">Third-party only</span></td><td><span class="cross">✗</span> Not available</td></tr>
+          <tr><td>Classes + bookings + waitlists</td><td><span class="check">✓</span> Gym plans</td><td><span class="check">✓</span> Available</td><td><span class="cross">✗</span> Not available</td></tr>
+          <tr><td>Staff payroll + management</td><td><span class="check">✓</span> Gym plans</td><td><span class="partial">Limited</span></td><td><span class="cross">✗</span> Not available</td></tr>
+          <tr><td>Compliance docs + incident reports</td><td><span class="check">✓</span> Gym plans</td><td><span class="cross">✗</span> Not available</td><td><span class="cross">✗</span> Not available</td></tr>
+          <tr><td>Leads CRM pipeline</td><td><span class="check">✓</span> Gym plans</td><td><span class="partial">Top tier only</span></td><td><span class="cross">✗</span> Not available</td></tr>
+          <tr><td>Native Xero sync</td><td><span class="check">✓</span> Gym plans</td><td><span class="partial">Third-party only</span></td><td><span class="cross">✗</span> Not available</td></tr>
           <tr><td>Marketplace + POS</td><td><span class="check">✓</span> Included (gyms) / add-on (solo)</td><td><span class="check">✓</span> Available</td><td><span class="cross">✗</span> Not available</td></tr>
           <tr><td>In-app trainer-client messaging</td><td><span class="check">✓</span> Included</td><td><span class="partial">Email/SMS only</span></td><td><span class="cross">✗</span> Not available</td></tr>
           <tr><td>Trainer nutrition calculator</td><td><span class="check">✓</span> Included</td><td><span class="cross">✗</span> Not available</td><td><span class="cross">✗</span> Not available</td></tr>
           <tr><td>Automated PT credit / package tracking</td><td><span class="check">✓</span> Included</td><td><span class="partial">Manual only</span></td><td><span class="cross">✗</span> Not available</td></tr>
-          <tr><td>Commission on coaching revenue</td><td><span class="check">✓</span> Zero — small processing fee applies</td><td><span class="cross">✗</span> Up to 20%</td><td><span class="cross">✗</span> Percentage fees</td></tr>
-          <tr><td>Contract lock-in</td><td><span class="check">✓</span> Month to month</td><td><span class="cross">✗</span> 12–24 months</td><td><span class="partial">Varies</span></td></tr>
+          <tr><td>Commission on coaching revenue</td><td><span class="check">✓</span> Zero (small processing fee applies)</td><td><span class="cross">✗</span> Up to 20%</td><td><span class="cross">✗</span> Percentage fees</td></tr>
+          <tr><td>Contract lock-in</td><td><span class="check">✓</span> Month to month</td><td><span class="cross">✗</span> 12 to 24 months</td><td><span class="partial">Varies</span></td></tr>
           <tr><td>Client app</td><td><span class="check">✓</span> Always free</td><td><span class="partial">Paid or limited</span></td><td><span class="partial">Paid or limited</span></td></tr>
         </tbody>
       </table>
@@ -706,9 +737,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="compare-card"><div class="compare-feature-name">Training programme builder</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Included</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">✗ No</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value check">✓ Available</span></div></div></div>
       <div class="compare-card"><div class="compare-feature-name">Nutrition tracking</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Included</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">✗ No</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">✗ No</span></div></div></div>
       <div class="compare-card"><div class="compare-feature-name">Auto-regulation / performance logic</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Included</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">✗ No</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">✗ No</span></div></div></div>
-      <div class="compare-card"><div class="compare-feature-name">Classes + bookings + waitlists</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Included</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value check">✓ Available</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">✗ No</span></div></div></div>
+      <div class="compare-card"><div class="compare-feature-name">Classes + bookings + waitlists</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Gym plans</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value check">✓ Available</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">✗ No</span></div></div></div>
       <div class="compare-card"><div class="compare-feature-name">Commission on coaching revenue</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Zero + small fee</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">Up to 20%</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value cross">% fees</span></div></div></div>
-      <div class="compare-card"><div class="compare-feature-name">Contract lock-in</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Month to month</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">12–24 mo</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value partial">Varies</span></div></div></div>
+      <div class="compare-card"><div class="compare-feature-name">Contract lock-in</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Month to month</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value cross">12 to 24 mo</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value partial">Varies</span></div></div></div>
       <div class="compare-card"><div class="compare-feature-name">Client app</div><div class="compare-row-grid"><div class="compare-cell totality-cell"><span class="compare-cell-label">Totality</span><span class="compare-cell-value check">✓ Always free</span></div><div class="compare-cell"><span class="compare-cell-label">Mgmt platforms</span><span class="compare-cell-value partial">Paid/limited</span></div><div class="compare-cell"><span class="compare-cell-label">Training apps</span><span class="compare-cell-value partial">Paid/limited</span></div></div></div>
     </div>
   </div>
@@ -719,13 +750,13 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="section-inner">
     <div class="section-eyebrow">Is Totality right for you?</div>
     <h2 class="section-title">We'd rather tell you now than have you find out after you switch.</h2>
-    <p class="section-sub">Totality is purpose-built for coaching, not facility management — that's a deliberate trade-off, not an oversight. Compared to Mindbody or Trainerize, here's where that actually lands.</p>
+    <p class="section-sub">Totality is purpose-built for coaching, not facility management. That's a deliberate trade-off, not an oversight. Compared to Mindbody or Trainerize, here's where that actually lands.</p>
     <div class="honest-grid">
       <div class="honest-card fit">
         <h3>Totality is a strong fit if you...</h3>
         <ul>
           <li>Run a solo PT business or a small-to-mid gym and want programming, nutrition, billing and admin in one login</li>
-          <li>Want real coaching intelligence — auto-regulation, at-risk flagging, adaptive nutrition — not just a booking calendar</li>
+          <li>Want real coaching intelligence (auto-regulation, at-risk flagging, adaptive nutrition), not just a booking calendar</li>
           <li>Are tired of commission on your coaching revenue or multi-year contracts</li>
           <li>Want to migrate off Mindbody, Trainerize or PTminder without starting from scratch</li>
         </ul>
@@ -733,7 +764,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="honest-card notfit">
         <h3>We're not there yet if you need...</h3>
         <ul>
-          <li>Built-in automated member lifecycle marketing (birthday offers, win-back campaigns) — Mindbody has this natively, we don't yet</li>
+          <li>Fully automated member lifecycle marketing that sends on its own (birthday offers, scheduled campaigns). Tali flags at-risk clients and drafts win-back messages, but you review and send each one.</li>
           <li>A native referral or loyalty rewards program for your own members</li>
           <li>Family or multi-member accounts under one login and one bill</li>
           <li>A large marketplace of 100+ third-party integrations</li>
@@ -749,9 +780,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="pricing-header">
       <div class="section-eyebrow" style="text-align: center;">Pricing</div>
       <h2 style="font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em; margin-top: 8px;">Transparent pricing. No surprises.</h2>
-      <p style="color: var(--muted); margin-top: 10px;">All prices in AUD. No setup fees. No contracts. Cancel anytime.</p>
+      <p style="color: var(--muted); margin-top: 10px;">All prices in AUD. No setup fees. No contracts. Cancel anytime. Pay yearly and save 15%.</p>
     </div>
-    <span class="pricing-offer">🎉 New accounts get 50% off their first 2 months on top of the 7-day trial — applied automatically at checkout, no code needed.</span>
+    <span class="pricing-offer">🎉 New accounts get a 7-day free trial, then 50% off their first 2 months. Applied automatically at checkout, no code needed. Refer another coach and get 20% off for each successful referral, stacking up to 100% while your subscription is active.</span>
     <div class="plans">
       <div class="plan-card">
         <div class="plan-name">Solo Coach</div>
@@ -759,12 +790,13 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div class="plan-price">A$29.99<span>/mo</span></div>
         <div class="plan-divider"></div>
         <ul class="tier-list">
-          <li><span>Up to 10 clients</span><span class="tier-price">$29.99/mo</span></li>
-          <li><span>Up to 20 clients</span><span class="tier-price">$49.99/mo</span></li>
-          <li><span>Up to 30 clients</span><span class="tier-price">$64.99/mo</span></li>
-          <li><span>Up to 50 clients</span><span class="tier-price">$98.99/mo</span></li>
-          <li><span>Up to 100 clients</span><span class="tier-price">$149.99/mo</span></li>
+          <li><span>Up to 10 clients</span><span class="tier-price">A$29.99/mo</span></li>
+          <li><span>Up to 20 clients</span><span class="tier-price">A$39.99/mo</span></li>
+          <li><span>Up to 30 clients</span><span class="tier-price">A$64.99/mo</span></li>
+          <li><span>Up to 50 clients</span><span class="tier-price">A$98.99/mo</span></li>
+          <li><span>Up to 100 clients</span><span class="tier-price">A$149.99/mo</span></li>
         </ul>
+        <p class="fee-footnote">Yearly: A$305.89, A$407.90, A$662.90, A$1,009.69 or A$1,529.90 a year (15% off).</p>
         <ul class="plan-features">
           <li>1 trainer account</li>
           <li>Programme + session builder</li>
@@ -774,9 +806,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <li>In-app messaging</li>
           <li>Exercise library (676+ exercises)</li>
           <li>Progress tracking + graphs</li>
-          <li>Direct bank payouts via Stripe (add-on)</li>
+          <li>Marketplace and client payments with the POS add-on</li>
         </ul>
-        <div class="addon-note">Stripe payments available as an add-on — $9.99/mo. Zero commission on your coaching revenue.</div>
+        <div class="addon-note">POS add-on: A$9.99/mo for marketplace and client payments through your own Stripe account. Zero commission on your coaching revenue.</div>
         <div class="addon-note">Tali AI credits included (100 to 400 a month). Add Tali AI for A$9.99/mo to get +1,000.</div>
         <p class="fee-footnote">A 3.5% processing fee applies to in-app payments to cover payment processing costs.</p>
         <a href="get-totality.html" class="plan-cta">Get started free</a>
@@ -787,6 +819,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div class="plan-name">Studio</div>
         <div class="plan-audience">For boutique gyms and small team coaches</div>
         <div class="plan-price">A$389.99<span>/mo</span></div>
+        <p class="fee-footnote">Or A$3,977.90 a year (15% off).</p>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li>Unlimited trainer accounts</li>
@@ -794,15 +827,15 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <li>Everything in Solo Coach</li>
           <li>Gym admin portal</li>
           <li>Classes + bookings + waitlists</li>
-          <li>Member billing + subscriptions (Stripe included)</li>
-          <li>Staff management + payroll + Xero</li>
+          <li>Member billing + subscriptions (POS included)</li>
+          <li>Staff management + payroll summary + Xero export</li>
           <li>Compliance docs + incident reports</li>
           <li>Leads CRM pipeline</li>
           <li>Marketplace + POS included</li>
           <li>Tali AI: 1,000 credits a month, shared (add 3,000 more for A$19.99/mo)</li>
-          <li>Revenue + MRR reporting</li>
+          <li>Reports and exports, including revenue and MRR</li>
         </ul>
-        <p class="fee-footnote">A 3.5% processing fee applies to in-app payments — clearly itemised on every payout.</p>
+        <p class="fee-footnote">A 3.5% processing fee applies to in-app payments, clearly itemised on every payout.</p>
         <a href="get-totality.html" class="plan-cta">Get started free</a>
       </div>
 
@@ -810,27 +843,27 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div class="plan-name">Enterprise</div>
         <div class="plan-audience">For multi-trainer gyms and coaching brands</div>
         <div class="plan-price">A$649.99<span>/mo</span></div>
+        <p class="fee-footnote">Or A$6,629.90 a year (15% off).</p>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li>Unlimited trainer accounts</li>
           <li>Up to 5,000 active clients</li>
           <li>Everything in Studio</li>
-          <li>Multi-location support</li>
-          <li>Tali AI included, unlimited (fair use)</li>
-          <li>Priority onboarding support</li>
-        </ul>
+                    <li>Tali AI included, unlimited (fair use)</li>
+          <li>White-label branding (Coming soon)</li>
+                  </ul>
         <p class="fee-footnote">Same 3.5% processing fee on in-app payments as Studio.</p>
         <a href="get-totality.html" class="plan-cta">Get started free</a>
       </div>
     </div>
-    <p style="text-align: center; color: var(--muted); font-size: 0.83rem; margin-top: 36px;">Need more than 5,000 clients? <a href="mailto:admintotality@gmail.com" style="color: var(--orange); font-weight: 600;">Contact us for a custom quote.</a></p>
+    <p style="text-align: center; color: var(--muted); font-size: 0.83rem; margin-top: 36px;">More than 5,000 clients, multiple locations or white label: <a href="mailto:admintotality@gmail.com" style="color: var(--orange); font-weight: 600;">contact us for a custom quote.</a></p>
   </div>
 </section>
 
 <!-- CLIENT FREE -->
 <section class="client-free">
   <h2>The client app is <em>always free.</em></h2>
-  <p>Your clients never pay for Totality. They accept your invite and they're in — no subscription, no credit card.</p>
+  <p>Your clients never pay for Totality. They accept your invite and they're in. No subscription, no credit card.</p>
   <div class="client-features">
     <span class="client-pill">Training programme</span>
     <span class="client-pill">Session logging</span>
@@ -847,16 +880,16 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="founder-inner">
     <div class="section-eyebrow" style="text-align: center;">Why we built this</div>
     <p class="founder-quote">"I built Totality because I'm a personal trainer myself, and I was sick of running my business through <span>four apps that didn't talk to each other</span>. This is the platform I wanted to use."</p>
-    <p class="founder-byline">— Taj, Founder & CEO · Cert IV Personal Trainer · Sports & Exercise Nutrition · Bachelor of Game Development</p>
+    <p class="founder-byline">Taj, Founder & CEO · Cert IV Personal Trainer · Sports & Exercise Nutrition · Bachelor of Game Development</p>
   </div>
 </section>
 
 <!-- SECOND CTA -->
 <section class="second-cta">
   <h2>Ready to run your coaching business <em>from one place?</em></h2>
-  <p>Whether you're a solo PT or a boutique gym — Totality has you covered.<br><span style="font-size: 0.88rem; color: rgba(255,255,255,0.5);">50% off your first 2 months, applied automatically — no code needed.</span></p>
+  <p>Whether you're a solo PT or a boutique gym, Totality has you covered.<br><span style="font-size: 0.88rem; color: rgba(255,255,255,0.5);">50% off your first 2 months, applied automatically, no code needed.</span></p>
   <div class="second-cta-actions">
-    <a href="get-totality.html" class="btn-primary-dark">Start Totality free — 50% off 2 months</a>
+    <a href="get-totality.html" class="btn-primary-dark">Start Totality free: 50% off 2 months</a>
   </div>
 </section>
 
@@ -868,7 +901,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div style="max-width: 720px; margin-top: 48px; display: flex; flex-direction: column; gap: 2px;">
             <details>
         <summary>What is Tali AI and what does it cost? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Tali is the AI inside Totality. She drafts check-in replies, programmes, win-back messages and lead follow-ups for you to review. Every plan includes monthly AI credits (100 to 400 on Solo Coach, 1,000 on Studio, unlimited with fair use on Enterprise). Need more? The Tali AI add-on is A$9.99/mo for Solo Coach (+1,000 credits) or A$19.99/mo for Studio (+3,000 credits). Solo Coach can also bundle POS + AI for A$16.98/mo.</p>
+        <p class="faq-body">Tali is the AI inside Totality. She drafts check-in replies, programmes, win-back messages and lead follow-ups for you to review. Every plan includes monthly AI credits (100 to 400 on Solo Coach, 1,000 on Studio, unlimited with fair use on Enterprise). Need more? The Tali AI add-on is A$9.99/mo for Solo Coach (+1,000 credits) or A$19.99/mo for Studio (+3,000 credits). Solo Coach can also bundle the POS add-on and AI for A$16.98/mo.</p>
       </details>
       <details>
         <summary>Does Tali message my clients on her own? <span class="faq-icon">+</span></summary>
@@ -880,60 +913,128 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       </details>
 <details>
         <summary>Is the client app really free? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Yes. Clients never pay for Totality. They download the app, accept your invite and they're in. They can follow their programme, log sessions, track food, submit check-ins and message you — all for free. You pay the platform subscription; your clients pay nothing.</p>
+        <p class="faq-body">Yes. Clients never pay for Totality. They download the app, accept your invite and they're in. They can follow their programme, log sessions, track food, submit check-ins and message you, all for free. You pay the platform subscription; your clients pay nothing.</p>
       </details>
       <details>
         <summary>What's the difference between Totality and Totality Nutrition? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Totality is the full coaching platform — it's for gyms and personal trainers who need programme building, client management, billing, check-ins and nutrition tracking in one place. Totality Nutrition is a standalone food tracking app for individuals who want to track their own nutrition without a coach. Both share the same food database, and clients on Totality can use the nutrition features built into their client app for free.</p>
+        <p class="faq-body">Totality is the full coaching platform. It's for gyms and personal trainers who need programme building, client management, billing, check-ins and nutrition tracking in one place. Totality Nutrition is a standalone food tracking app for individuals who want to track their own nutrition without a coach. Both share the same food database, and clients on Totality can use the nutrition features built into their client app for free.</p>
       </details>
       <details>
         <summary>Can I bring my existing clients and data across? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Yes. Totality supports guided migration from PTminder, Trainerize and Mindbody, and a CSV import wizard for any other platform — map your own columns and bring your client list, payment history and memberships with you. No starting from scratch.</p>
+        <p class="faq-body">Yes. Totality supports guided migration from PTminder, Trainerize and Mindbody, and a CSV import wizard for any other platform: map your own columns and bring your client list, payment history and memberships with you. No starting from scratch.</p>
       </details>
       <details>
         <summary>How does billing work for gym members? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Gym member billing runs through your own Stripe account — money goes directly from your member to your bank account. Totality charges zero commission on any member payments. A small processing fee of 3.5% applies to in-app payments to cover the cost of moving money through the payment system — clearly itemised on every payout. Stripe is included from day one on Studio and Enterprise; solo coaches can add it for $9.99/mo.</p>
+        <p class="faq-body">Gym member billing runs through your own Stripe account, money goes directly from your member to your bank account. Totality charges zero commission on any member payments. A small processing fee of 3.5% applies to in-app payments to cover the cost of moving money through the payment system, clearly itemised on every payout. Payments are included from day one on Studio and Enterprise. Solo coaches add them with the POS add-on for A$9.99/mo.</p>
       </details>
       <details>
         <summary>What is the auto-regulation engine? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Auto-regulation is a training methodology where session intensity adjusts based on how a client is actually performing — not just what was planned. When a client logs a session with their RPE (Rate of Perceived Exertion), Totality analyses their performance and flags underperformance to the trainer automatically. It's built as clear, coach-reviewable logic — no AI, no add-ons — and included on all plans.</p>
+        <p class="faq-body">Auto-regulation is a training methodology where session intensity adjusts based on how a client is actually performing, not just what was planned. When a client logs a session with their RPE (Rate of Perceived Exertion), Totality analyses their performance and flags underperformance to the trainer automatically. It's built as clear, coach-reviewable logic, no AI, no add-ons, and included on all plans.</p>
       </details>
       <details>
         <summary>Is there a free trial? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Yes. Every new account starts with a 7-day free trial — no credit card required to get started. On top of that, new accounts get 50% off their first 2 months automatically — no code needed — for both gyms and solo coaches. Totality Nutrition also has a free trial — no card required.</p>
+        <p class="faq-body">Yes. Every new account starts with a 7-day free trial, no credit card required to get started. On top of that, new accounts get 50% off their first 2 months automatically, no code needed, for both gyms and solo coaches. Totality Nutrition also has a 7-day free trial, and Totality members get 50% off Nutrition. You also get 20% off for each successful referral, stacking up to 100% while your subscription is active.</p>
       </details>
       <details>
         <summary>What happens to my data if I cancel? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Your data is always yours. Export your client list, session history, payment records and programme templates at any time — before, during or after your subscription. We don't hold your data hostage. Cancel anytime from your settings screen, no exit fees, no phone call required.</p>
+        <p class="faq-body">Your data is always yours. Export your client list, session history, payment records and programme templates at any time: before, during or after your subscription. We don't hold your data hostage. Cancel anytime from your settings screen, no exit fees, no phone call required.</p>
       </details>
       <details>
         <summary>Do I need separate apps for training and nutrition? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">No. Training, nutrition, check-ins, messaging and progress tracking are all in one app for your clients. As a trainer, you set macro targets, review food logs and see nutrition trends alongside session data — in the same place. One platform, one login for everyone.</p>
+        <p class="faq-body">No. Training, nutrition, check-ins, messaging and progress tracking are all in one app for your clients. As a trainer, you set macro targets, review food logs and see nutrition trends alongside session data, in the same place. One platform, one login for everyone.</p>
       </details>
       <details>
         <summary>I run a large gym with multiple locations. Can Totality handle that? <span class="faq-icon">+</span></summary>
-        <p class="faq-body">Yes. The Enterprise plan supports unlimited trainers, up to 5,000 active clients and multiple locations. For groups above that, contact us for a custom quote.</p>
+        <p class="faq-body">Enterprise covers unlimited trainers and up to 5,000 active clients. For more than 5,000 clients, multiple locations or white label: <a href="mailto:admintotality@gmail.com">contact us for a custom quote</a>.</p>
       </details>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <span class="footer-brand">TOTALITY 360 PTY LTD</span>
-  <div class="footer-links">
-    <a href="nutrition.html" style="color: var(--nutrition); font-weight: 700;">Totality Nutrition</a>
-    <a href="blog/">Totality Reports</a>
-    <a href="resources.html">Free Guides</a>
-    <a href="calculator.html">Free Calculator</a>
-    <a href="commission-calculator.html">Commission Savings</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="refund.html">Refund Policy</a>
-    <a href="terms.html">Terms</a>
-    <a href="mailto:admintotality@gmail.com">Contact</a>
+<!-- chrome:footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div class="site-footer__about">
+        <a href="/" class="brand" aria-label="Totality home">
+          <img src="/favicon-96.png" alt="" width="30" height="30" loading="lazy">
+          <span>Totality</span>
+        </a>
+        <p class="site-footer__blurb">Coaching software for personal trainers and gyms, and macro tracking for individuals. Built in Australia, priced in AUD.</p>
+        <div class="store-badges">
+          <a class="store-badge" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.6 2.28 3.47 2.3 3.48-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.64 2.12-1.15.02-1.52-.68-2.84-.68-1.32 0-1.73.66-2.82.7-1.13.04-2-1.14-2.72-2.19-1.48-2.14-2.6-6.05-1.09-8.69.75-1.31 2.1-2.14 3.56-2.16 1.11-.02 2.16.75 2.84.75.68 0 1.95-.93 3.29-.79.56.02 2.13.23 3.14 1.7-.08.05-1.87 1.1-1.85 3.28zM14.2 5.03c.6-.73 1-1.74.9-2.75-.87.03-1.91.58-2.53 1.3-.56.64-1.04 1.67-.91 2.66.97.07 1.96-.49 2.55-1.21z"/></svg>
+            <span><small>Totality on the</small><b>App Store</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.livewell" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Totality on</small><b>Google Play</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.totality.nutrition" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Nutrition on</small><b>Google Play</b></span>
+          </a>
+        </div>
+        <a class="social-link" href="https://instagram.com/totality360au" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          @totality360au on Instagram
+        </a>
+      </div>
+      <div>
+        <h2>Totality</h2>
+        <ul>
+          <li><a href="/totality.html" aria-current="page">Overview</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/for-pts.html">For personal trainers</a></li>
+          <li><a href="/for-gyms.html">For gyms</a></li>
+          <li><a href="/get-totality.html">Get the app</a></li>
+          <li><a href="https://totalityapp.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Totality Nutrition</h2>
+        <ul>
+          <li><a href="/nutrition.html">Overview</a></li>
+          <li><a href="/nutrition-features.html">Features</a></li>
+          <li><a href="/get-nutrition.html">Get the app</a></li>
+          <li><a href="/calculator.html">Macro calculator</a></li>
+          <li><a href="https://totalitynutrition.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <ul>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/compare.html">Compare</a></li>
+          <li><a href="/tali-ai.html">Tali AI</a></li>
+          <li><a href="/whats-new.html">What's new</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/resources.html">Free guides</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/help.html">Help centre</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/security.html">Security</a></li>
+          <li><a href="mailto:admintotality@gmail.com">Contact us</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/refund.html">Refunds</a></li>
+          <li><a href="/delete-account.html">Delete your account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Totality 360 Pty Ltd. ABN 58 698 902 975.</span>
+      <span>Prices in AUD. Payments processed by Stripe.</span>
+    </div>
   </div>
-  <span class="footer-copy">© 2026 Totality 360 Pty Ltd</span>
 </footer>
+<!-- /chrome:footer -->
 
 <script src="js/nav.js" defer></script>
 </body>

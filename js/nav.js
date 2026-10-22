@@ -1,68 +1,65 @@
-/* Shared mobile nav (hamburger) behaviour for every page. */
+/* Shared header behaviour: mobile menu, dropdowns, current-page link.
+   Works with the static header written by tools/apply_chrome.py and with
+   the runtime fallback in js/site-chrome.js (listens for chrome:ready). */
 (function () {
+  var bound = false;
+
   function init() {
     var toggle = document.getElementById('navToggle');
     var menu = document.getElementById('navMenu');
-    if (!toggle || !menu) return;
+    if (!toggle || !menu || bound) return;
+    bound = true;
+    document.documentElement.classList.add('js');
 
-    function closeMenu() {
-      menu.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'Open menu');
+    function setOpen(open) {
+      menu.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = open && window.innerWidth <= 1020 ? 'hidden' : '';
     }
-    function openMenu() {
-      menu.classList.add('is-open');
-      toggle.setAttribute('aria-expanded', 'true');
-      toggle.setAttribute('aria-label', 'Close menu');
-    }
-
     toggle.addEventListener('click', function () {
-      var isOpen = menu.classList.contains('is-open');
-      if (isOpen) { closeMenu(); } else { openMenu(); }
+      setOpen(!menu.classList.contains('is-open'));
     });
-
-    // Close after tapping a link (mobile in-page anchors too)
     menu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', closeMenu);
+      a.addEventListener('click', function () { setOpen(false); });
     });
 
-    // Close on Escape, and when resizing back to desktop width
+    // Dropdowns are <details>: keep one open at a time, close on outside click / Escape.
+    var dds = Array.prototype.slice.call(document.querySelectorAll('.nav-dd'));
+    dds.forEach(function (d) {
+      d.addEventListener('toggle', function () {
+        if (d.open) dds.forEach(function (o) { if (o !== d) o.open = false; });
+      });
+    });
+    document.addEventListener('click', function (e) {
+      if (window.innerWidth <= 1020) return;
+      dds.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+    });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeMenu();
+      if (e.key !== 'Escape') return;
+      var openDd = dds.filter(function (d) { return d.open; })[0];
+      dds.forEach(function (d) { d.open = false; });
+      if (openDd) openDd.querySelector('summary').focus();
+      if (menu.classList.contains('is-open')) { setOpen(false); toggle.focus(); }
     });
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 860) closeMenu();
+      if (window.innerWidth > 1020) setOpen(false);
     });
 
-    // Mark the current page's nav link. Every href is resolved to an
-    // absolute path and normalized (trailing "index.html" stripped, a
-    // trailing slash added) before comparing, so "/blog/index.html" and
-    // "/blog/" are recognised as the same page as "/blog/" in the nav,
-    // and neither is ever confused with the site root "/".
-    function normalize(pathname) {
-      var p = pathname.replace(/index\.html$/, '');
-      if (p.charAt(p.length - 1) !== '/') p += '/';
-      return p;
+    // Current page (static pages already carry aria-current; this covers the JS fallback).
+    function normalize(p) {
+      p = p.replace(/index\.html$/, '');
+      return p.charAt(p.length - 1) === '/' || /\.html$/.test(p) ? p : p + '/';
     }
-    var herePath = normalize(location.pathname);
-
-    menu.querySelectorAll('a[href]').forEach(function (a) {
-      var raw = a.getAttribute('href');
-      var resolved;
-      try {
-        resolved = new URL(raw, location.href).pathname;
-      } catch (e) {
-        return;
-      }
-      if (normalize(resolved) === herePath) {
-        a.classList.add('is-current');
+    var here = normalize(location.pathname);
+    menu.querySelectorAll('a[href^="/"]').forEach(function (a) {
+      if (normalize(new URL(a.getAttribute('href'), location.href).pathname) === here) {
+        a.setAttribute('aria-current', 'page');
       }
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  document.addEventListener('chrome:ready', init);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
 })();

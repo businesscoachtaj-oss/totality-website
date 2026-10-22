@@ -23,6 +23,10 @@
 (function () {
   'use strict';
 
+  // Safe to include twice (page script tag + shared footer chrome): only the first copy runs.
+  if (window.__totalityTrackLoaded) return;
+  window.__totalityTrackLoaded = true;
+
   var FORMSPREE_RE = /formspree\.io\//i;
 
   function hasPixel() { return typeof window.fbq === 'function'; }

@@ -52,7 +52,7 @@ Finally, don't rely on "feeling fine" as your feedback loop. Track total protein
 
 If this article has you thinking about tracking protein properly instead of guessing, that's exactly the gap Totality Nutrition was built to close. It's the standalone macro-tracking app for individuals, with an Australian-first food database, barcode scanning, and custom macro targets so you can actually hit a specific protein number instead of hoping you got there. Whether you're planning a plant-based swap or just tightening up your current diet, set a real protein target, log it, and let the app do the math the Vold-study participants didn't have.
 
-Plans start from A$8.99/month with a free trial, no card required. [Try Totality Nutrition free →](https://dist-three-mu-41.vercel.app)
+Plans start from A$8.99/month with a free trial, no card required. [Try Totality Nutrition free →](https://totalitynutrition.com.au)
 
 ---
 

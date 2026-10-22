@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -12,13 +17,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Calorie & Macro Calculator — Totality 360</title>
+<title>Free Calorie & Macro Calculator | Totality 360</title>
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -30,14 +29,19 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="canonical" href="https://totality360.com.au/calculator.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
-<meta property="og:title" content="Free Calorie & Macro Calculator — Totality 360">
+<meta property="og:title" content="Free Calorie & Macro Calculator | Totality 360">
 <meta property="og:description" content="Calculate your daily calorie needs and macro targets for free. The same calculator used inside the Totality coaching platform.">
 <meta property="og:url" content="https://totality360.com.au/calculator.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Calorie & Macro Calculator — Totality 360">
+<meta name="twitter:title" content="Free Calorie & Macro Calculator | Totality 360">
 <meta name="twitter:description" content="Calculate your daily calorie needs and macro targets for free. The same calculator used inside the Totality coaching platform.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
+<!-- chrome:head -->
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<!-- /chrome:head -->
+<link rel="stylesheet" href="/css/site.css">
 <style>
   :root {
     --orange: #ED8008;
@@ -45,7 +49,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     --white: #FFFFFF;
     --off-white: #F7F7F7;
     --dark: #272626;
-    --muted: #A0A0A0;
+    --muted: #62605D;
     --border: #E8E8E8;
     --purple: #6C3483;
     --purple-tint: #F0E6F6;
@@ -70,23 +74,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
   a { text-decoration: none; color: inherit; }
 
-  nav {
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 24px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
 
-  .nav-brand { font-size: 0.75rem; font-weight: 800; color: var(--dark); letter-spacing: 0.12em; text-transform: uppercase; }
-  .nav-back { font-size: 0.85rem; color: var(--muted); font-weight: 500; }
-  .nav-back:hover { color: var(--dark); }
 
   .hero {
     background: var(--white);
@@ -275,7 +263,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .results-header h2 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
   .results-header p { color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
 
-  /* TDEE three-tile row — tile proportions and the dark "hero" middle tile
+  /* TDEE three-tile row - tile proportions and the dark "hero" middle tile
      mirror the tile layout in the actual app's Calorie Calculator screen. */
   .tdee-row { display: flex; gap: 8px; margin-bottom: 14px; }
 
@@ -312,7 +300,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .tdee-tile-unit { font-size: 0.68rem; color: var(--muted); margin-top: 2px; }
   .tdee-tile.main .tdee-tile-unit { color: rgba(255,255,255,0.5); }
 
-  /* Macro row — single flowing row with hairline dividers between tiles,
+  /* Macro row - single flowing row with hairline dividers between tiles,
      matching the divider treatment in the app's macro breakdown. */
   .macro-row {
     display: flex;
@@ -405,32 +393,70 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .btn-share.secondary { background: var(--off-white); color: var(--dark); border: 1.5px solid var(--border); }
   .btn-share.secondary:hover { border-color: var(--dark); }
 
-  footer {
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    padding: 20px 24px;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--muted);
-  }
 
-  footer a { color: var(--orange); }
 
   @media (max-width: 480px) {
     .hero { padding: 40px 16px 28px; }
     .card { padding: 22px 18px; }
   }
+  .calc-select { width: 100%; padding: 13px 14px; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--dark); background: var(--white); font-family: inherit; }
+  button.toggle-btn, button.chip { font-family: inherit; }
+  .toggle-btn.disabled { opacity: 0.4; pointer-events: none; }
+  .toggle-btn:focus-visible, .chip:focus-visible, .calc-select:focus-visible, .btn-submit:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+  .lifestage-note { background: var(--purple-tint); color: var(--dark); border-radius: 12px; padding: 14px 16px; font-size: 0.85rem; line-height: 1.6; margin-top: 16px; display: none; }
 </style>
 </head>
 <body>
 
-<nav>
-  <span class="nav-brand">TOTALITY 360 PTY LTD</span>
-  <a href="index.html" class="nav-back">← Back</a>
-</nav>
+<!-- chrome:header -->
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__bar">
+    <a href="/" class="brand" aria-label="Totality home">
+      <img src="/favicon-96.png" alt="" width="30" height="30">
+      <span>Totality</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="navMenu" aria-label="Main">
+      <ul class="site-nav__list">
+        <li>
+          <details class="nav-dd">
+            <summary>Product</summary>
+            <ul class="nav-dd__panel">
+              <li><a href="/totality.html"><span class="nav-dot nav-dot--orange"></span><span><b>Totality for coaches and gyms</b><small>Programs, clients, billing, classes and gym admin</small></span></a></li>
+              <li><a href="/nutrition.html"><span class="nav-dot nav-dot--blue"></span><span><b>Totality Nutrition</b><small>Macro tracking for individuals, with an Australian food database</small></span></a></li>
+              <li><a href="/tali-ai.html"><span class="nav-dot nav-dot--ink"></span><span><b>Tali AI</b><small>The AI built into both apps</small></span></a></li>
+              <li><a href="/whats-new.html"><span class="nav-dot"></span><span><b>What's new</b><small>Recent releases and fixes</small></span></a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a class="site-nav__link" href="/pricing.html">Pricing</a></li>
+        <li><a class="site-nav__link" href="/compare.html">Compare</a></li>
+        <li><a class="site-nav__link" href="/resources.html">Resources</a></li>
+        <li><a class="site-nav__link" href="/blog/">Blog</a></li>
+      </ul>
+      <div class="site-nav__end">
+        <details class="nav-dd nav-dd--right">
+          <summary>Log in</summary>
+          <ul class="nav-dd__panel">
+            <li><a href="https://totalityapp.com.au" rel="noopener"><span class="nav-dot nav-dot--orange"></span><span><b>Totality web app</b><small>For coaches, gyms and their clients</small></span></a></li>
+            <li><a href="https://totalitynutrition.com.au" rel="noopener"><span class="nav-dot nav-dot--blue"></span><span><b>Nutrition web app</b><small>For Totality Nutrition members</small></span></a></li>
+          </ul>
+        </details>
+        <a class="btn btn--sm btn--nutrition" href="/get-nutrition.html">Start free</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /chrome:header -->
+
+<main id="main">
 
 <div class="hero">
-  <div class="hero-eyebrow">Free tool — no catch</div>
+  <div class="hero-eyebrow">Free tool, no catch</div>
   <h1>Your <em>free</em> calorie &<br>macro calculator</h1>
   <p>The same calculator used inside Totality. Get your personalised TDEE and macro targets in seconds.</p>
 </div>
@@ -442,9 +468,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="card-title"><div class="card-num">1</div> About you</div>
 
     <div class="field">
-      <label class="field-label">Email address <span>*</span></label>
+      <label class="field-label" for="email">Email address <span aria-hidden="true">*</span></label>
       <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
-      <div class="field-error" id="email-error">Please enter a valid email address.</div>
+      <div class="field-error" id="email-error" role="alert">Please enter a valid email address.</div>
     </div>
 
     <div class="field">
@@ -465,8 +491,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field" id="coach-type-field" style="display: none;">
       <label class="field-label">Which are you? <span>*</span></label>
       <div class="toggle-row" id="coach-type-toggle">
-        <div class="toggle-btn" data-value="gym_owner" onclick="selectToggle('coach_type', this)">Gym Owner</div>
-        <div class="toggle-btn" data-value="coach" onclick="selectToggle('coach_type', this)">Coach</div>
+        <button type="button" class="toggle-btn" data-value="gym_owner" onclick="selectToggle('coach_type', this)">Gym Owner</button>
+        <button type="button" class="toggle-btn" data-value="coach" onclick="selectToggle('coach_type', this)">Coach</button>
       </div>
       <div class="field-error" id="coach-type-error">Please select an option.</div>
     </div>
@@ -479,41 +505,53 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field">
       <label class="field-label">Biological sex <span>*</span></label>
       <div class="toggle-row" id="sex-toggle">
-        <div class="toggle-btn active" data-value="male" onclick="selectToggle('sex', this)">Male</div>
-        <div class="toggle-btn" data-value="female" onclick="selectToggle('sex', this)">Female</div>
+        <button type="button" class="toggle-btn active" data-value="male" onclick="selectToggle('sex', this)">Male</button>
+        <button type="button" class="toggle-btn" data-value="female" onclick="selectToggle('sex', this)">Female</button>
       </div>
       <div class="field-error" id="sex-error">Please select an option.</div>
+    </div>
+
+    <div class="field" id="lifestage-field" style="display: none;">
+      <label class="field-label" for="lifestage">Pregnant or breastfeeding?</label>
+      <select id="lifestage" class="calc-select">
+        <option value="none">No</option>
+        <option value="pregnant_t1">Pregnant: 1st trimester (weeks 1 to 13)</option>
+        <option value="pregnant_t2">Pregnant: 2nd trimester (weeks 14 to 27)</option>
+        <option value="pregnant_t3">Pregnant: 3rd trimester (weeks 28+)</option>
+        <option value="breastfeeding">Breastfeeding (exclusive)</option>
+      </select>
+      <p class="field-hint" id="lifestage-lock" style="display:none;"></p>
     </div>
 
     <div class="field">
       <div class="input-row">
         <div class="input-group">
-          <label>Weight (kg)</label>
-          <input type="number" id="weight" placeholder="e.g. 80" min="30" max="300" step="0.1" />
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" placeholder="e.g. 80" min="20" max="300" step="0.1" inputmode="decimal" />
         </div>
         <div class="input-group">
-          <label>Height (cm)</label>
+          <label for="height">Height (cm)</label>
           <input type="number" id="height" placeholder="e.g. 175" min="100" max="250" />
         </div>
         <div class="input-group">
-          <label>Age</label>
-          <input type="number" id="age" placeholder="e.g. 28" min="15" max="99" />
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="e.g. 28" min="13" max="100" inputmode="numeric" />
         </div>
       </div>
-      <div class="field-error" id="stats-error">Please enter valid weight, height and age.</div>
+      <div class="field-error" id="stats-error" role="alert">Please enter weight in kg (20 to 300), height in cm (100 to 250) and an age from 13 to 100.</div>
     </div>
 
     <div class="field">
       <label class="field-label">Gym sessions per week <span>*</span></label>
       <div class="chip-row" id="sessions-chips">
-        <div class="chip" data-value="0" onclick="selectChip('sessions', this)">0</div>
-        <div class="chip" data-value="1" onclick="selectChip('sessions', this)">1</div>
-        <div class="chip" data-value="2" onclick="selectChip('sessions', this)">2</div>
-        <div class="chip" data-value="3" onclick="selectChip('sessions', this)">3</div>
-        <div class="chip" data-value="4" onclick="selectChip('sessions', this)">4</div>
-        <div class="chip" data-value="5" onclick="selectChip('sessions', this)">5</div>
-        <div class="chip" data-value="6" onclick="selectChip('sessions', this)">6</div>
-        <div class="chip" data-value="7" onclick="selectChip('sessions', this)">7</div>
+        <button type="button" class="chip" data-value="0" onclick="selectChip('sessions', this)">0</button>
+        <button type="button" class="chip" data-value="1" onclick="selectChip('sessions', this)">1</button>
+        <button type="button" class="chip" data-value="2" onclick="selectChip('sessions', this)">2</button>
+        <button type="button" class="chip" data-value="3" onclick="selectChip('sessions', this)">3</button>
+        <button type="button" class="chip" data-value="4" onclick="selectChip('sessions', this)">4</button>
+        <button type="button" class="chip" data-value="5" onclick="selectChip('sessions', this)">5</button>
+        <button type="button" class="chip" data-value="6" onclick="selectChip('sessions', this)">6</button>
+        <button type="button" class="chip" data-value="7" onclick="selectChip('sessions', this)">7</button>
       </div>
       <div class="field-error" id="sessions-error">Please select your gym sessions per week.</div>
     </div>
@@ -521,10 +559,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field">
       <label class="field-label">Daily steps <span>*</span></label>
       <div class="chip-row" id="steps-chips">
-        <div class="chip" data-value="under5k" onclick="selectChip('steps', this)">Under 5k</div>
-        <div class="chip" data-value="5to10k" onclick="selectChip('steps', this)">5–10k</div>
-        <div class="chip" data-value="10to20k" onclick="selectChip('steps', this)">10–20k</div>
-        <div class="chip" data-value="over20k" onclick="selectChip('steps', this)">20k+</div>
+        <button type="button" class="chip" data-value="under5k" onclick="selectChip('steps', this)">Under 5k</button>
+        <button type="button" class="chip" data-value="5to10k" onclick="selectChip('steps', this)">5 to 10k</button>
+        <button type="button" class="chip" data-value="10to20k" onclick="selectChip('steps', this)">10 to 20k</button>
+        <button type="button" class="chip" data-value="over20k" onclick="selectChip('steps', this)">20k+</button>
       </div>
       <div class="field-error" id="steps-error">Please select your daily steps.</div>
     </div>
@@ -537,9 +575,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field">
       <label class="field-label">Goal <span>*</span></label>
       <div class="toggle-row" id="goal-toggle">
-        <div class="toggle-btn" data-value="fat_loss" onclick="selectToggle('goal', this); togglePace()">Fat Loss</div>
-        <div class="toggle-btn" data-value="maintain" onclick="selectToggle('goal', this); togglePace()">Maintain</div>
-        <div class="toggle-btn" data-value="muscle_gain" onclick="selectToggle('goal', this); togglePace()">Muscle Gain</div>
+        <button type="button" class="toggle-btn" data-value="fat_loss" onclick="selectToggle('goal', this); togglePace()">Fat Loss</button>
+        <button type="button" class="toggle-btn" data-value="maintain" onclick="selectToggle('goal', this); togglePace()">Maintain</button>
+        <button type="button" class="toggle-btn" data-value="muscle_gain" onclick="selectToggle('goal', this); togglePace()">Muscle Gain</button>
       </div>
       <div class="field-error" id="goal-error">Please select a goal.</div>
     </div>
@@ -547,9 +585,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field" id="pace-field" style="display: none;">
       <label class="field-label" id="pace-label">Pace <span>*</span></label>
       <div class="toggle-row" id="pace-toggle">
-        <div class="toggle-btn" data-value="slow" id="pace-slow" onclick="selectToggle('pace', this)">Slow</div>
-        <div class="toggle-btn" data-value="standard" id="pace-standard" onclick="selectToggle('pace', this)">Standard</div>
-        <div class="toggle-btn" data-value="fast" id="pace-fast" onclick="selectToggle('pace', this)">Fast</div>
+        <button type="button" class="toggle-btn" data-value="slow" id="pace-slow" onclick="selectToggle('pace', this)">Slow</button>
+        <button type="button" class="toggle-btn" data-value="standard" id="pace-standard" onclick="selectToggle('pace', this)">Standard</button>
+        <button type="button" class="toggle-btn" data-value="fast" id="pace-fast" onclick="selectToggle('pace', this)">Fast</button>
       </div>
       <div class="field-error" id="pace-error">Please select a pace.</div>
     </div>
@@ -557,10 +595,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field">
       <label class="field-label">Diet style</label>
       <div class="toggle-row" id="diet-toggle">
-        <div class="toggle-btn active" data-value="balanced" onclick="selectToggle('diet', this)">Balanced</div>
-        <div class="toggle-btn" data-value="high_carb" onclick="selectToggle('diet', this)">High Carb</div>
-        <div class="toggle-btn" data-value="high_fat" onclick="selectToggle('diet', this)">High Fat</div>
-        <div class="toggle-btn" data-value="high_protein" onclick="selectToggle('diet', this)">High Protein</div>
+        <button type="button" class="toggle-btn active" data-value="balanced" onclick="selectToggle('diet', this)">Balanced</button>
+        <button type="button" class="toggle-btn" data-value="high_carb" onclick="selectToggle('diet', this)">High Carb</button>
+        <button type="button" class="toggle-btn" data-value="high_fat" onclick="selectToggle('diet', this)">High Fat</button>
+        <button type="button" class="toggle-btn" data-value="high_protein" onclick="selectToggle('diet', this)">High Protein</button>
       </div>
     </div>
   </div>
@@ -579,17 +617,17 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <div class="tdee-row">
         <div class="tdee-tile">
           <div class="tdee-tile-label">BMR</div>
-          <div class="tdee-tile-value" id="res-bmr">—</div>
+          <div class="tdee-tile-value" id="res-bmr">-</div>
           <div class="tdee-tile-unit">kcal</div>
         </div>
         <div class="tdee-tile main">
           <div class="tdee-tile-label">TDEE</div>
-          <div class="tdee-tile-value" id="res-tdee">—</div>
+          <div class="tdee-tile-value" id="res-tdee">-</div>
           <div class="tdee-tile-unit">kcal / day</div>
         </div>
         <div class="tdee-tile target">
-          <div class="tdee-tile-label">Target</div>
-          <div class="tdee-tile-value" id="res-target">—</div>
+          <div class="tdee-tile-label" id="res-target-label">Target</div>
+          <div class="tdee-tile-value" id="res-target">-</div>
           <div class="tdee-tile-unit">kcal</div>
         </div>
       </div>
@@ -597,31 +635,33 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <label class="field-label" style="margin-bottom: 10px;">Recommended macros</label>
       <div class="macro-row">
         <div class="macro-tile">
-          <div class="macro-tile-value" id="res-protein">—</div>
+          <div class="macro-tile-value" id="res-protein">-</div>
           <div class="macro-tile-label">Protein</div>
-          <div class="macro-tile-sub" id="res-protein-kcal">—</div>
+          <div class="macro-tile-sub" id="res-protein-kcal">-</div>
         </div>
         <div class="macro-tile">
-          <div class="macro-tile-value" id="res-carbs">—</div>
+          <div class="macro-tile-value" id="res-carbs">-</div>
           <div class="macro-tile-label">Carbs</div>
-          <div class="macro-tile-sub" id="res-carbs-kcal">—</div>
+          <div class="macro-tile-sub" id="res-carbs-kcal">-</div>
         </div>
         <div class="macro-tile">
-          <div class="macro-tile-value" id="res-fat">—</div>
+          <div class="macro-tile-value" id="res-fat">-</div>
           <div class="macro-tile-label">Fat</div>
-          <div class="macro-tile-sub" id="res-fat-kcal">—</div>
+          <div class="macro-tile-sub" id="res-fat-kcal">-</div>
         </div>
         <div class="macro-tile">
-          <div class="macro-tile-value" id="res-fibre">—</div>
+          <div class="macro-tile-value" id="res-fibre">-</div>
           <div class="macro-tile-label">Fibre</div>
           <div class="macro-tile-sub">Guideline · in carbs</div>
         </div>
       </div>
     </div>
 
+    <div class="lifestage-note" id="lifestage-note" role="note"></div>
+
     <div class="card share-section" id="share-card-section" style="padding: 24px 20px; display: none;">
       <div class="card-title" style="justify-content: center;"><div class="card-num">✓</div> Share your results</div>
-      <p class="share-sub">Post it to your Story — it's the easiest way to keep yourself accountable.</p>
+      <p class="share-sub">Post it to your Story. It's an easy way to keep yourself accountable.</p>
       <canvas id="share-canvas" width="1080" height="1920" style="display:none;"></canvas>
       <img id="share-preview" alt="Your daily calorie and macro targets, branded Totality 360 share card" />
       <div class="share-btn-row">
@@ -632,8 +672,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
     <div class="result-cta coach" id="cta-coach" style="display: none;">
       <h3>Set this automatically for every client.</h3>
-      <p>Totality lets you set macro targets per client, track their food logs and review nutrition trends — all in one platform. No spreadsheets. No extra apps.</p>
-      <a href="get-totality.html" class="btn-cta">Start free — see it in action →</a>
+      <p>Totality lets you set macro targets per client, track their food logs and review nutrition trends in one platform. No spreadsheets. No extra apps.</p>
+      <a href="get-totality.html" class="btn-cta">Start your free trial &rarr;</a>
     </div>
 
     <div class="result-cta client" id="cta-client" style="display: none;">
@@ -644,7 +684,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
     <div class="result-cta nutrition" id="cta-nutrition" style="display: none;">
       <h3>Prefer to track it yourself? No coach required.</h3>
-      <p>Totality Nutrition is a standalone macro tracking app built for Australians — barcode scanning, an Aussie-first food database, and everything you need to hit these exact numbers.</p>
+      <p>Totality Nutrition is a standalone macro tracking app built for Australians, with barcode scanning, an Aussie-first food database, and everything you need to hit these exact numbers.</p>
       <a href="get-nutrition.html" class="btn-cta">Try Totality Nutrition free →</a>
     </div>
 
@@ -658,9 +698,91 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   </div>
 </div>
 
-<footer>
-  &copy; 2026 Totality 360 Pty Ltd &nbsp;·&nbsp; <a href="index.html">Back to website</a>
+</main>
+
+<!-- chrome:footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div class="site-footer__about">
+        <a href="/" class="brand" aria-label="Totality home">
+          <img src="/favicon-96.png" alt="" width="30" height="30" loading="lazy">
+          <span>Totality</span>
+        </a>
+        <p class="site-footer__blurb">Coaching software for personal trainers and gyms, and macro tracking for individuals. Built in Australia, priced in AUD.</p>
+        <div class="store-badges">
+          <a class="store-badge" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.6 2.28 3.47 2.3 3.48-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.64 2.12-1.15.02-1.52-.68-2.84-.68-1.32 0-1.73.66-2.82.7-1.13.04-2-1.14-2.72-2.19-1.48-2.14-2.6-6.05-1.09-8.69.75-1.31 2.1-2.14 3.56-2.16 1.11-.02 2.16.75 2.84.75.68 0 1.95-.93 3.29-.79.56.02 2.13.23 3.14 1.7-.08.05-1.87 1.1-1.85 3.28zM14.2 5.03c.6-.73 1-1.74.9-2.75-.87.03-1.91.58-2.53 1.3-.56.64-1.04 1.67-.91 2.66.97.07 1.96-.49 2.55-1.21z"/></svg>
+            <span><small>Totality on the</small><b>App Store</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.livewell" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Totality on</small><b>Google Play</b></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=app.totality.nutrition" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z"/><path fill="#FBBC04" d="m17 15.5-3.5-3.5L17 8.5l4 2.3c1.1.6 1.1 1.8 0 2.4z"/><path fill="#EA4335" d="M17 15.5 13.5 12l-9.9 9.7c.4.3 1 .3 1.6 0z"/><path fill="#4285F4" d="M17 8.5 5.2 2.3c-.6-.3-1.2-.3-1.6 0L13.5 12z"/></svg>
+            <span><small>Nutrition on</small><b>Google Play</b></span>
+          </a>
+        </div>
+        <a class="social-link" href="https://instagram.com/totality360au" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          @totality360au on Instagram
+        </a>
+      </div>
+      <div>
+        <h2>Totality</h2>
+        <ul>
+          <li><a href="/totality.html">Overview</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/for-pts.html">For personal trainers</a></li>
+          <li><a href="/for-gyms.html">For gyms</a></li>
+          <li><a href="/get-totality.html">Get the app</a></li>
+          <li><a href="https://totalityapp.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Totality Nutrition</h2>
+        <ul>
+          <li><a href="/nutrition.html">Overview</a></li>
+          <li><a href="/nutrition-features.html">Features</a></li>
+          <li><a href="/get-nutrition.html">Get the app</a></li>
+          <li><a href="/calculator.html" aria-current="page">Macro calculator</a></li>
+          <li><a href="https://totalitynutrition.com.au" rel="noopener">Web app log in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <ul>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/compare.html">Compare</a></li>
+          <li><a href="/tali-ai.html">Tali AI</a></li>
+          <li><a href="/whats-new.html">What's new</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/resources.html">Free guides</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/help.html">Help centre</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/security.html">Security</a></li>
+          <li><a href="mailto:admintotality@gmail.com">Contact us</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/refund.html">Refunds</a></li>
+          <li><a href="/delete-account.html">Delete your account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Totality 360 Pty Ltd. ABN 58 698 902 975.</span>
+      <span>Prices in AUD. Payments processed by Stripe.</span>
+    </div>
+  </div>
 </footer>
+<!-- /chrome:footer -->
 
 <script>
   // State
@@ -688,9 +810,56 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
   function selectToggle(group, el) {
     const container = el.parentElement;
-    container.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+    container.querySelectorAll('.toggle-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
     el.classList.add('active');
+    el.setAttribute('aria-pressed', 'true');
     state[group] = el.dataset.value;
+    if (group === 'sex') syncLifeStage();
+  }
+
+  // Pregnancy and breastfeeding, mirroring Totality Nutrition lib/lifeStage.ts:
+  // no fat loss while pregnant or breastfeeding, no muscle-gain surplus while pregnant,
+  // extra energy (and protein when breastfeeding) on top of TDEE, calories shown as a minimum.
+  const LIFE_STAGE_ADJ = {
+    none: { kcal: 0, proteinG: 0 },
+    pregnant_t1: { kcal: 0, proteinG: 0 },
+    pregnant_t2: { kcal: 335, proteinG: 0 },
+    pregnant_t3: { kcal: 455, proteinG: 0 },
+    breastfeeding: { kcal: 480, proteinG: 21 },
+  };
+  const LIFE_STAGE_NOTE = {
+    pregnant_t1: 'Focus on hitting your protein and eating a variety of nutrient-dense foods that sit well with you. No extra calories are needed yet in the 1st trimester. Treat the calorie number as a minimum, not a limit.',
+    pregnant_t2: 'Focus on hitting your protein and eating a variety of nutrient-dense foods that sit well with you. Includes +335 cal/day for the 2nd trimester. Treat the calorie number as a minimum, not a limit.',
+    pregnant_t3: 'Focus on hitting your protein and eating a variety of nutrient-dense foods that sit well with you. Includes +455 cal/day for the 3rd trimester. Treat the calorie number as a minimum, not a limit.',
+    breastfeeding: 'The priority is eating enough. Includes +480 cal/day and +21g protein for breastfeeding, with no calorie deficit. Treat the calorie number as a minimum, not a limit.',
+  };
+  const LIFE_STAGE_DISCLAIMER = 'Pregnancy and breastfeeding adjustments follow general Australian guidelines (NHMRC). Every pregnancy is different, so check these targets with your GP, obstetrician, midwife or dietitian.';
+
+  function currentLifeStage() {
+    return state.sex === 'female' ? document.getElementById('lifestage').value : 'none';
+  }
+  function isPregnant(stage) { return stage === 'pregnant_t1' || stage === 'pregnant_t2' || stage === 'pregnant_t3'; }
+
+  function syncLifeStage() {
+    const field = document.getElementById('lifestage-field');
+    field.style.display = state.sex === 'female' ? 'block' : 'none';
+    const stage = currentLifeStage();
+    const noFatLoss = stage !== 'none';
+    const noMuscleGain = isPregnant(stage);
+    const goalBtns = document.querySelectorAll('#goal-toggle .toggle-btn');
+    goalBtns.forEach(b => {
+      const off = (b.dataset.value === 'fat_loss' && noFatLoss) || (b.dataset.value === 'muscle_gain' && noMuscleGain);
+      b.classList.toggle('disabled', off);
+      b.disabled = off;
+    });
+    if ((state.goal === 'fat_loss' && noFatLoss) || (state.goal === 'muscle_gain' && noMuscleGain)) {
+      const maintain = document.querySelector('#goal-toggle .toggle-btn[data-value="maintain"]');
+      selectToggle('goal', maintain); togglePace();
+    }
+    const lock = document.getElementById('lifestage-lock');
+    if (noMuscleGain) { lock.textContent = 'Fat loss and muscle gain are switched off during pregnancy. Your target is set for maintenance plus your trimester.'; lock.style.display = 'block'; }
+    else if (stage === 'breastfeeding') { lock.textContent = "Fat loss is switched off while breastfeeding, so there's no calorie deficit."; lock.style.display = 'block'; }
+    else { lock.style.display = 'none'; }
   }
 
   function selectChip(group, el) {
@@ -747,7 +916,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     const height = parseFloat(document.getElementById('height').value);
     const age = parseInt(document.getElementById('age').value);
     const statsErr = document.getElementById('stats-error');
-    if (!weight || !height || !age || weight < 30 || height < 100 || age < 15) {
+    // Same plausibility limits as the app (20-300 kg, 100-250 cm, age 13-100).
+    if (!weight || !height || !age || weight < 20 || weight > 300 || height < 100 || height > 250 || age < 13 || age > 100) {
       statsErr.style.display = 'block'; valid = false;
     } else { statsErr.style.display = 'none'; }
 
@@ -780,7 +950,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     const heightCm = parseFloat(document.getElementById('height').value);
     const age = parseInt(document.getElementById('age').value);
 
-    // BMR — Mifflin-St Jeor
+    // BMR - Mifflin-St Jeor
     let bmr;
     if (state.sex === 'male') {
       bmr = 10 * weightKg + 6.25 * heightCm - 5 * age + 5;
@@ -788,7 +958,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       bmr = 10 * weightKg + 6.25 * heightCm - 5 * age - 161;
     }
 
-    // Activity multiplier — exact same logic as app
+    // Activity multiplier - exact same logic as app
     const gymSessions = parseInt(state.sessions) || 0;
 
     const neatMultiplier =
@@ -816,25 +986,27 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         state.pace === 'standard' ? 300 : 500
       ) : 0;
 
-    const targetCalories = Math.max(1200, tdee + paceAdjustment);
+    const lifeStage = currentLifeStage();
+    const adj = LIFE_STAGE_ADJ[lifeStage] || LIFE_STAGE_ADJ.none;
+    const targetCalories = Math.max(1200, tdee + paceAdjustment) + adj.kcal;
 
-    // Macros — exact same logic as app, including the diet-style adjustment
+    // Macros - exact same logic as app, including the diet-style adjustment
     const proteinPerKg =
       (state.goal === 'fat_loss' ? 2.2 :
       state.goal === 'muscle_gain' ? 2.0 : 1.8) +
       (state.diet === 'high_protein' ? 0.3 : 0);
 
-    const proteinG = Math.round(weightKg * proteinPerKg);
+    const proteinG = Math.round(weightKg * proteinPerKg) + adj.proteinG;
     const proteinCals = proteinG * 4;
     const fatPercent =
       state.diet === 'high_carb' ? 0.20 :
       state.diet === 'high_fat' ? 0.35 : 0.25;
-    const fatCals = Math.round(targetCalories * fatPercent);
-    const fatG = Math.round(fatCals / 9);
-    const carbsCals = targetCalories - proteinCals - fatCals;
+    // Same rounding order as the app: fat grams first, carbs fill the remainder.
+    const fatG = Math.round((targetCalories * fatPercent) / 9);
+    const carbsCals = targetCalories - proteinCals - fatG * 9;
     const carbsG = Math.max(0, Math.round(carbsCals / 4));
 
-    // Fibre — guideline only, NOT added to calorie total (fibre is a carb subtype,
+    // Fibre - guideline only, NOT added to calorie total (fibre is a carb subtype,
     // its calories are already inside carbsG above). 14g per 1,000 kcal (IOM guideline).
     const fibreG = Math.round((targetCalories / 1000) * 14);
 
@@ -849,6 +1021,12 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     document.getElementById('res-protein-kcal').textContent = (proteinG * 4) + ' kcal';
     document.getElementById('res-carbs-kcal').textContent = (carbsG * 4) + ' kcal';
     document.getElementById('res-fat-kcal').textContent = (fatG * 9) + ' kcal';
+    document.getElementById('res-target-label').textContent = lifeStage !== 'none' ? 'Minimum' : 'Target';
+    const lsNote = document.getElementById('lifestage-note');
+    if (lifeStage !== 'none') {
+      lsNote.textContent = LIFE_STAGE_NOTE[lifeStage] + ' ' + LIFE_STAGE_DISCLAIMER;
+      lsNote.style.display = 'block';
+    } else { lsNote.style.display = 'none'; lsNote.textContent = ''; }
 
     // CTA
     if (isCoach === 'yes') {
@@ -870,15 +1048,15 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     // Send lead to Formspree
     const coachTypeLabel = state.coach_type === 'gym_owner' ? 'Gym Owner' : state.coach_type === 'coach' ? 'Coach / PT' : '';
     const subjectTag = isCoach === 'yes'
-      ? (state.coach_type === 'gym_owner' ? '🏢 GYM OWNER' : '🏋️ COACH/PT')
-      : '👤 General';
+      ? (state.coach_type === 'gym_owner' ? 'GYM OWNER' : 'COACH/PT')
+      : 'General';
 
     fetch('https://formspree.io/f/mjgqyqdj', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email,
-        is_coach: isCoach === 'yes' ? 'Yes — gym owner / PT' : 'No — general user',
+        is_coach: isCoach === 'yes' ? 'Yes, gym owner / PT' : 'No, general user',
         coach_type: coachTypeLabel,
         goal: state.goal,
         diet: state.diet,
@@ -888,7 +1066,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         carbs_g: carbsG,
         fibre_g: fibreG,
         fat_g: fatG,
-        _subject: `New calculator lead — ${subjectTag}: ${email}`
+        _subject: `New calculator lead (${subjectTag}): ${email}`
       })
     }).catch(() => {});
 
@@ -921,7 +1099,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     const W = canvas.width, H = canvas.height;
     const F = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
 
-    // Background — white, matching the site
+    // Background - white, matching the site
     ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(0, 0, W, H);
 
@@ -952,7 +1130,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     ctx.fillStyle = '#6C3483';
     ctx.fillText(pillText, W / 2, pillY + pillH / 2 + 2);
 
-    // Hero number — target calories
+    // Hero number - target calories
     ctx.textBaseline = 'alphabetic';
     const target = document.getElementById('res-target').textContent;
     ctx.fillStyle = '#272626';
@@ -1042,13 +1220,16 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       try {
         await navigator.share({
           files: [file],
-          title: 'My daily targets — Totality 360',
+          title: 'My daily targets | Totality 360',
           text: 'My personalised calorie & macro targets from the free Totality 360 calculator:',
         });
-      } catch (e) { /* user cancelled the share sheet — no-op */ }
+      } catch (e) { /* user cancelled the share sheet - no-op */ }
     }, 'image/png');
   }
+  document.getElementById('lifestage').addEventListener('change', syncLifeStage);
 </script>
+<script src="/js/nav.js" defer></script>
+<script src="/js/track.js" defer></script>
 
 </body>
 </html>
