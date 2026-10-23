@@ -103,6 +103,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://totality360.com.au/compare/my-pt-hub.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/compare/everfit.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://totality360.com.au/get-nutrition.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
