@@ -55,6 +55,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://totality360.com.au/claude.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://totality360.com.au/blog/</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
