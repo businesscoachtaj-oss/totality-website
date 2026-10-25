@@ -525,7 +525,7 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Studio",
-      "description": "Your gym's logo, name and colour for every member and trainer. Included on Enterprise."
+      "description": "Your gym's logo, name and colour in the Totality app, member emails and push notifications, for every member and trainer. Included on Enterprise."
     }
   ],
   "fees": {
