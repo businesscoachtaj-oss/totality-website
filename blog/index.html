@@ -24,17 +24,17 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="Training, nutrition and mindset articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.">
+<meta name="description" content="Training, nutrition, mindset and business articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.">
 <link rel="canonical" href="https://totality360.com.au/blog/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
 <meta property="og:title" content="Totality Reports | Training, Nutrition and Mindset Research">
-<meta property="og:description" content="Training, nutrition and mindset articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.">
+<meta property="og:description" content="Training, nutrition, mindset and business articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.">
 <meta property="og:url" content="https://totality360.com.au/blog/">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Totality Reports | Training, Nutrition and Mindset Research">
-<meta name="twitter:description" content="Training, nutrition and mindset articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.">
+<meta name="twitter:description" content="Training, nutrition, mindset and business articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
 <script type="application/ld+json">
 {
@@ -43,7 +43,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   "name": "Totality Reports",
   "url": "https://totality360.com.au/blog/",
   "inLanguage": "en-AU",
-  "description": "Training, nutrition and mindset articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.",
+  "description": "Training, nutrition, mindset and business articles from Totality Reports, written for personal trainers, gym owners and anyone tracking their own training and food. Each one starts from published research.",
   "publisher": {
     "@type": "Organization",
     "name": "Totality 360",
@@ -155,6 +155,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .badge-nutrition { background: var(--nutrition-tint); color: var(--nutrition); }
   .badge-training { background: rgba(237,128,8,0.1); color: var(--orange); }
   .badge-mindset { background: var(--mindset-tint); color: var(--mindset); }
+  .badge-business { background: rgba(21,101,160,0.1); color: #1565A0; }
   .post-card h3 { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; margin-bottom: 10px; }
   .post-excerpt { color: var(--muted); font-size: 0.9rem; line-height: 1.6; flex-grow: 1; }
   .post-meta {
@@ -234,7 +235,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <section class="blog-hero">
   <div class="blog-hero-eyebrow">Totality 360 Pty Ltd &nbsp;·&nbsp; Built in Australia</div>
   <h1><em>Totality</em> Reports</h1>
-  <p class="blog-hero-sub">Training, nutrition and mindset articles for coaches, gym owners and anyone serious about their health.</p>
+  <p class="blog-hero-sub">Training, nutrition, mindset and business articles for coaches, gym owners and anyone serious about their health.</p>
 </section>
 
 <!-- FILTERS -->
@@ -243,6 +244,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <button type="button" class="filter-btn" data-filter="nutrition" aria-pressed="false">Nutrition</button>
   <button type="button" class="filter-btn" data-filter="training" aria-pressed="false">Training</button>
   <button type="button" class="filter-btn" data-filter="mindset" aria-pressed="false">Mindset</button>
+  <button type="button" class="filter-btn" data-filter="business" aria-pressed="false">Business</button>
 </div>
 <p class="filter-status visually-hidden" id="filterStatus" aria-live="polite"></p>
 
@@ -251,6 +253,16 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="blog-grid" id="blogGrid">
 
     <!-- posts:start (generated by tools/blog_build.py, do not edit by hand) -->
+    <a href="posts/contractor-pt-first-8-weeks.html" class="post-card" data-category="business">
+      <span class="post-badge badge-business">Business</span>
+      <h3>Your First 8 Weeks as a Contractor PT: A Checklist</h3>
+      <p class="post-excerpt">Many clubs start new contractor PTs with a few rent-free weeks. A week by week checklist for the paperwork, the rent maths, money habits and your first clients.</p>
+      <div class="post-meta">
+        <span><time datetime="2026-10-25">25 October 2026</time> &middot; 4 min read</span>
+        <span class="post-read-more">Read more</span>
+      </div>
+    </a>
+
     <a href="posts/weekly-set-distribution-frequency-strength.html" class="post-card" data-category="training">
       <span class="post-badge badge-training">Training</span>
       <h3>One Big Session or Three Smaller Ones? New Research Tests How You Should Split Your Weekly Sets</h3>
@@ -585,7 +597,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     var grid = document.getElementById('blogGrid');
     var emptyState = document.getElementById('emptyState');
     var status = document.getElementById('filterStatus');
-    var valid = { all: 1, nutrition: 1, training: 1, mindset: 1 };
+    var valid = { all: 1, nutrition: 1, training: 1, mindset: 1, business: 1 };
 
     function applyFilter(filter, fromHash) {
       if (!valid[filter]) filter = 'all';
