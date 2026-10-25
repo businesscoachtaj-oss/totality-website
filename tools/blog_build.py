@@ -31,7 +31,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POSTS = os.path.join(ROOT, "blog", "posts")
 INDEX = os.path.join(ROOT, "blog", "index.html")
 SITE = "https://totality360.com.au"
-CATS = {"nutrition": "Nutrition", "training": "Training", "mindset": "Mindset"}
+CATS = {"nutrition": "Nutrition", "training": "Training", "mindset": "Mindset", "business": "Business"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"]
 
