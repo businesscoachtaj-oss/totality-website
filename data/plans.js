@@ -69,6 +69,10 @@ window.TOTALITY_PLANS = {
         {
           "label": "Marketplace and client payments (POS add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
+          "status": "addon"
         }
       ]
     },
@@ -129,6 +133,10 @@ window.TOTALITY_PLANS = {
         },
         {
           "label": "Marketplace and client payments (POS add-on)",
+          "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
           "status": "addon"
         }
       ]
@@ -191,6 +199,10 @@ window.TOTALITY_PLANS = {
         {
           "label": "Marketplace and client payments (POS add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
+          "status": "addon"
         }
       ]
     },
@@ -252,6 +264,10 @@ window.TOTALITY_PLANS = {
         {
           "label": "Marketplace and client payments (POS add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
+          "status": "addon"
         }
       ]
     },
@@ -312,6 +328,10 @@ window.TOTALITY_PLANS = {
         },
         {
           "label": "Marketplace and client payments (POS add-on)",
+          "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
           "status": "addon"
         }
       ]
@@ -378,6 +398,10 @@ window.TOTALITY_PLANS = {
         {
           "label": "Reports and exports",
           "status": "live"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
+          "status": "addon"
         }
       ]
     },
@@ -445,8 +469,8 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "White-label branding",
-          "status": "coming_soon"
+          "label": "Your logo and colours (branding included)",
+          "status": "live"
         }
       ]
     }
@@ -458,7 +482,8 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Solo plans",
-      "description": "Marketplace and client payments through your own Stripe account. Included on Studio and Enterprise."
+      "description": "Marketplace and client payments through your own Stripe account. Included on Studio and Enterprise.",
+      "tali": "approved"
     },
     {
       "id": "tali_solo",
@@ -467,7 +492,8 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Solo plans",
       "credits": 1000,
-      "description": "+1,000 Tali AI credits a month."
+      "description": "+1,000 Tali AI credits a month.",
+      "tali": "chat"
     },
     {
       "id": "tali_studio",
@@ -476,7 +502,8 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Studio",
       "credits": 3000,
-      "description": "+3,000 Tali AI credits a month."
+      "description": "+3,000 Tali AI credits a month.",
+      "tali": "explain"
     },
     {
       "id": "pos_ai_bundle",
@@ -485,7 +512,46 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Solo plans",
       "credits": 1000,
-      "description": "POS add-on plus +1,000 Tali AI credits."
+      "description": "POS add-on plus +1,000 Tali AI credits.",
+      "tali": "peek"
+    },
+    {
+      "id": "branding_solo",
+      "name": "Branding add-on (Solo)",
+      "price": "A$4.99",
+      "period": "month",
+      "for": "Solo plans",
+      "description": "Your logo, name and colour in the Totality app, member emails and push notifications.",
+      "tali": "proud"
+    },
+    {
+      "id": "branding_studio",
+      "name": "Branding add-on (Studio)",
+      "price": "A$9.99",
+      "period": "month",
+      "for": "Studio",
+      "description": "Your gym's logo, name and colour in the Totality app, member emails and push notifications, for every member and trainer. Included on Enterprise.",
+      "tali": "wink"
+    },
+    {
+      "id": "pos_ai_branding_bundle",
+      "name": "POS + Tali + Branding (Solo)",
+      "price": "A$19.99",
+      "period": "month",
+      "for": "Solo plans",
+      "credits": 1000,
+      "description": "POS add-on, +1,000 Tali AI credits a month and your branding. Cheaper than buying all three.",
+      "tali": "happy"
+    },
+    {
+      "id": "tali_branding_bundle",
+      "name": "Tali + Branding (Studio)",
+      "price": "A$24.99",
+      "period": "month",
+      "for": "Studio",
+      "credits": 3000,
+      "description": "+3,000 Tali AI credits a month and your gym's branding. Cheaper than buying both.",
+      "tali": "grin"
     }
   ],
   "fees": {
