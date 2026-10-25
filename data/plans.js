@@ -513,7 +513,7 @@ window.TOTALITY_PLANS = {
       "for": "Solo plans",
       "credits": 1000,
       "description": "POS add-on plus +1,000 Tali AI credits.",
-      "tali": "flex"
+      "tali": "chart"
     },
     {
       "id": "branding_solo",
