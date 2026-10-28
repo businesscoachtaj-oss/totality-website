@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skool Promo Tracker</title>
+<meta name="description" content="Free tool for Skool owners: track where you can promote, when you last posted, and catch repeat wording before you post again.">
+<link rel="icon" href="img/op-wave.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="bars"><span></span><span></span><span></span><span></span></div>
+      <div class="eyebrow">Free tool</div>
+      <h1>Promo tracker</h1>
+      <p class="lead">Keep every group you promote in, its rules and how often you're allowed to post. See who's ready today, and get a warning before you repeat yourself or post under your own comment.</p>
+    </div>
+    <img class="op" src="img/op-chart.png" alt="Op with a progress chart">
+  </section>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" data-tab="today" aria-selected="true">Today</button>
+    <button role="tab" data-tab="log" aria-selected="false">Log a post</button>
+    <button role="tab" data-tab="groups" aria-selected="false">Groups</button>
+    <button role="tab" data-tab="offers" aria-selected="false">Saved offers</button>
+    <button role="tab" data-tab="history" aria-selected="false">History</button>
+    <button role="tab" data-tab="backup" aria-selected="false">Backup</button>
+  </div>
+
+  <section class="panel stack" data-pane="today">
+    <h2>Where you can post today</h2>
+    <div id="todayList"></div>
+    <p class="hint">Cadence is what you set for each group from its rules. Always check the group's own rules before posting, they change.</p>
+  </section>
+
+  <section class="panel stack" data-pane="log" hidden>
+    <h2>Log a post or comment</h2>
+    <form id="pForm" class="stack">
+      <div class="grid3">
+        <div class="field"><label for="pGroup">Group</label><select id="pGroup"></select></div>
+        <div class="field"><label for="pKind">Type</label><select id="pKind"><option value="promo">Promo post or comment</option><option value="intro">Intro</option><option value="engage">Helpful comment (no promo)</option><option value="reply">Reply to someone</option></select></div>
+        <div class="field"><label for="pDate">Date</label><input type="date" id="pDate"></div>
+      </div>
+      <div class="grid2">
+        <div class="field"><label for="pLink">Link to the post or thread</label><input type="url" id="pLink" placeholder="https://www.skool.com/..."></div>
+        <div class="field"><label for="pOffer">Offer used</label><select id="pOffer"></select></div>
+      </div>
+      <div class="field"><label for="pText">What you posted (paste it before you post to check for repeats)</label><textarea id="pText"></textarea></div>
+      <div id="warnings" class="stack"></div>
+      <div class="row"><button class="btn" type="submit">Save to my log</button></div>
+    </form>
+  </section>
+
+  <section class="stack" data-pane="groups" hidden>
+    <div class="panel stack">
+      <h2>Add or edit a group</h2>
+      <form id="gForm" class="stack">
+        <input type="hidden" id="gId">
+        <div class="grid2">
+          <div class="field"><label for="gName">Group name</label><input type="text" id="gName" required></div>
+          <div class="field"><label for="gUrl">Group link</label><input type="url" id="gUrl" placeholder="https://www.skool.com/group-name"></div>
+        </div>
+        <div class="grid3">
+          <div class="field"><label for="gRule">Promo rule</label><select id="gRule"><option value="days">Promo allowed every few days</option><option value="thread">Once per promo thread</option><option value="none">No self promotion</option><option value="pending">Membership pending</option></select></div>
+          <div class="field" id="gEveryWrap"><label for="gEvery">Every how many days</label><input type="number" id="gEvery" min="0" value="1"></div>
+          <div class="field"><label for="gWhere">Where promo goes</label><input type="text" id="gWhere" placeholder="e.g. Promo category, Tuesday thread"></div>
+        </div>
+        <div class="field"><label for="gNotes">Rules and notes</label><textarea id="gNotes" style="min-height:90px" placeholder="e.g. No links in intros. Admin is Sarah. Promo thread is pinned on Mondays."></textarea></div>
+        <div class="row"><button class="btn" type="submit">Save group</button></div>
+      </form>
+    </div>
+    <div id="groupList" class="stack"></div>
+  </section>
+
+  <section class="stack" data-pane="offers" hidden>
+    <div class="panel stack">
+      <h2>Save an offer</h2>
+      <form id="oForm" class="stack">
+        <input type="hidden" id="oId">
+        <div class="field"><label for="oTitle">Name</label><input type="text" id="oTitle" placeholder="e.g. Free community, short version"></div>
+        <div class="field"><label for="oText">The details you reuse</label><textarea id="oText" placeholder="Price, who it's for, what it helps them do, your link"></textarea></div>
+        <div class="row"><button class="btn" type="submit">Save offer</button></div>
+      </form>
+    </div>
+    <div id="offerList" class="stack"></div>
+  </section>
+
+  <section class="panel stack" data-pane="history" hidden>
+    <h2>Everything you've logged</h2>
+    <div id="logList"></div>
+  </section>
+
+  <section class="panel stack" data-pane="backup" hidden>
+    <h2>Back up or move your data</h2>
+    <p class="hint">Your tracker lives in this browser only. Download a backup now and then, and load it on another computer or in the Chrome extension.</p>
+    <div class="row"><button class="btn" id="exportBtn" type="button">Download backup</button>
+      <label class="btn ghost" for="importFile" style="margin:0">Load a backup<input type="file" id="importFile" accept=".json,application/json" class="sr"></label></div>
+    <div class="notice"><strong>Chrome extension.</strong> The extension shows a small note on any Skool group you track: when you last posted there and when you can post again. It uses the same backup file. <a href="extension.html">Get the extension</a>.</div>
+  </section>
+</main>
+<script src="assets/site.js"></script>
+<script src="assets/tracker.js"></script>
+<script>ZTOTracker.init();</script>
+</body>
+</html>
