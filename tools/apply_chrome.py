@@ -28,7 +28,7 @@ EXCLUDE = {
     "brand-kit-nutrition.html",
     "links.html",                # standalone link-in-bio page
 }
-EXCLUDE_DIRS = {"partials", "node_modules", ".git", "tools"}
+EXCLUDE_DIRS = {"partials", "node_modules", ".git", "tools", "skool-tools"}
 NUTRITION_PAGES = {
     "nutrition.html", "get-nutrition.html", "nutrition-features.html",
     "calculator.html", "high-protein-meals.html", "high-protein-meals-download.html",

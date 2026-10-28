@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skool Member Dashboard</title>
+<meta name="description" content="Free tool for Skool owners: see who is new, who has gone quiet and who is warming up, from your own member list. Runs in your browser.">
+<link rel="icon" href="img/op-wave.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="bars"><span></span><span></span><span></span><span></span></div>
+      <div class="eyebrow">Free tool</div>
+      <h1>Member dashboard</h1>
+      <p class="lead">See who joined this week, who has gone quiet and who is warming up, then message them with one tap. Bring your member list from Skool and it stays in your browser.</p>
+    </div>
+    <img class="op" src="img/op-clipboard.png" alt="Op holding a clipboard">
+  </section>
+
+  <section class="panel stack" id="input">
+    <h2>1. Bring in your members</h2>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-src="paste">Paste the Members page</button>
+      <button role="tab" aria-selected="false" data-src="csv">Upload the export file</button>
+    </div>
+    <div data-pane="paste" class="stack">
+      <p class="hint">In Skool, open your group, click <b>Members</b>, scroll to the bottom so everyone has loaded, then select all (Ctrl+A or Cmd+A), copy and paste it here. This way includes last active times. Got more than one page of members? Paste each page in, one after the other.</p>
+      <textarea id="pasteBox" placeholder="Paste your Members page here"></textarea>
+      <div class="row"><button class="btn" id="pasteGo">Read my members</button><button class="btn ghost" id="sampleGo">Try it with sample data</button></div>
+    </div>
+    <div data-pane="csv" class="stack" hidden>
+      <p class="hint">In Skool, open <b>Members</b> and click <b>Export</b>. Drop the CSV file here. The export has join dates, tiers and emails but no last active times, so the "gone quiet" list needs the paste option.</p>
+      <label class="drop" id="drop" for="file">Drop your CSV here or tap to choose it<input type="file" id="file" accept=".csv,text/csv" class="sr"></label>
+    </div>
+    <div id="readMsg" class="hint" role="status"></div>
+  </section>
+
+  <section id="results" class="stack" hidden style="margin-top:16px">
+    <div class="grid3" id="stats"></div>
+
+    <div class="panel stack">
+      <div class="row" style="justify-content:space-between">
+        <h2 style="margin:0">2. Who to look after</h2>
+        <div class="row">
+          <label for="quietDays" style="margin:0">Quiet after</label>
+          <select id="quietDays" style="width:auto"><option value="7">7 days</option><option value="14" selected>14 days</option><option value="30">30 days</option></select>
+        </div>
+      </div>
+      <div class="tabs" role="tablist" id="listTabs"></div>
+      <p class="hint" id="listHint"></p>
+      <div class="table-wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+      <div class="row"><button class="btn ghost small" id="exportList">Download this list (CSV)</button></div>
+    </div>
+
+    <div class="panel stack">
+      <h2>3. Your message templates</h2>
+      <p class="hint">Use {first} for their first name. The copy button on each row fills it in. Saved in this browser only.</p>
+      <div class="grid2">
+        <div class="field"><label for="tWelcome">Welcome message (new members)</label><textarea id="tWelcome"></textarea></div>
+        <div class="field"><label for="tCheckin">Check in message (quiet members)</label><textarea id="tCheckin"></textarea></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/site.js"></script>
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const { esc, store, toast, copyText, download } = ZTO;
+  let members = [];
+  let currentList = "new";
+
+  const DEFAULTS = {
+    welcome: "Hey {first}, welcome in! 🎉 Really glad you're here.\n\nBest place to start is the pinned post at the top of the community. Then tell us in the intro thread what you're working on.\n\nAny questions, just post them. See you inside!",
+    checkin: "Hey {first}, haven't seen you around in a little while, so just checking in 👋\n\nIf you got stuck anywhere, post it in the group and we'll sort it out together. No pressure at all.",
+  };
+  const tW = $("#tWelcome"), tC = $("#tCheckin");
+  tW.value = store.get("zto.members.tWelcome", DEFAULTS.welcome);
+  tC.value = store.get("zto.members.tCheckin", DEFAULTS.checkin);
+  tW.addEventListener("input", () => store.set("zto.members.tWelcome", tW.value));
+  tC.addEventListener("input", () => store.set("zto.members.tCheckin", tC.value));
+  let done = store.get("zto.members.done", {});
+
+  // Source tabs
+  document.querySelectorAll("#input [data-src]").forEach((b) =>
+    b.addEventListener("click", () => {
+      document.querySelectorAll("#input [data-src]").forEach((x) => x.setAttribute("aria-selected", x === b));
+      document.querySelectorAll("#input [data-pane]").forEach((p) => (p.hidden = p.dataset.pane !== b.dataset.src));
+    })
+  );
+
+  // ---------- parsing helpers ----------
+  const DAY = 86400000;
+  function agoToDays(s) {
+    s = s.toLowerCase();
+    if (/now|online/.test(s)) return 0;
+    const m = s.match(/(\d+)\s*(s|sec|m|min|h|hr|d|day|w|wk|mo|month|y|yr)s?\b/);
+    if (!m) return null;
+    const n = +m[1], u = m[2];
+    if (u === "s" || u === "sec" || u === "m" || u === "min") return 0;
+    if (u === "h" || u === "hr") return n / 24;
+    if (u === "d" || u === "day") return n;
+    if (u === "w" || u === "wk") return n * 7;
+    if (u === "mo" || u === "month") return n * 30;
+    return n * 365;
+  }
+  function parseDate(s) {
+    if (!s) return null;
+    const t = Date.parse(String(s).trim().replace(/(\d)(st|nd|rd|th)/, "$1"));
+    return isNaN(t) ? null : new Date(t);
+  }
+  const daysSince = (d) => (d ? (Date.now() - d.getTime()) / DAY : null);
+  const firstName = (n) => (n || "").trim().split(/\s+/)[0] || "there";
+
+  function parsePaste(text) {
+    const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+    const out = [];
+    for (let i = 0; i < lines.length; i++) {
+      if (!/^@[\w.-]+$/.test(lines[i])) continue;
+      const handle = lines[i];
+      // name: walk back over tag lines like (Premium), (Owner), emoji-only lines
+      let j = i - 1, tags = [];
+      while (j >= 0 && (/^\(.*\)$/.test(lines[j]) || !/[A-Za-z0-9]/.test(lines[j]))) { if (/^\(.*\)$/.test(lines[j])) tags.push(lines[j].slice(1, -1)); j--; }
+      const name = j >= 0 ? lines[j] : handle;
+      const levelLine = j - 1 >= 0 ? lines[j - 1] : "";
+      const level = /^\d{1,2}$/.test(levelLine) ? +levelLine : null;
+      const m = { name, handle, level, tags, bio: "", activeDays: null, joined: null, location: "", tier: "", source: "", renew: "" };
+      // read forward until the start of the next member (their level, name and tag lines)
+      let n = lines.findIndex((l, idx) => idx > i && /^@[\w.-]+$/.test(l));
+      let stop = lines.length;
+      if (n !== -1) {
+        stop = n - 1;
+        while (stop > i && (/^\(.*\)$/.test(lines[stop]) || !/[A-Za-z0-9]/.test(lines[stop]))) stop--;
+        if (stop - 1 > i && /^\d{1,2}$/.test(lines[stop - 1])) stop--;
+      }
+      let seenJoined = false;
+      for (let k = i + 1; k < stop; k++) {
+        const l = lines[k];
+        if (/^(chat|membership|settings|invite|filter|export|powered by)$/i.test(l)) continue;
+        if (/^active\b/i.test(l) || /^online now/i.test(l)) { m.activeDays = agoToDays(l); continue; }
+        if (/^joined\s+(on\s+)?[A-Z][a-z]{2,}\s+\d/i.test(l)) { m.joined = parseDate(l.replace(/^joined\s+(on\s+)?/i, "")); seenJoined = true; continue; }
+        if (/^joined (from|directly|via)/i.test(l)) { m.source = l.replace(/^joined\s+/i, ""); continue; }
+        if (/^(free|\$|us\$|a\$|€|£)/i.test(l) && l.length < 30) { m.tier = l; continue; }
+        if (/^(renews|lifetime|cancels|expires|trial)/i.test(l)) { m.renew = l; continue; }
+        if (/^\d+$/.test(l)) continue;
+        if (seenJoined && !m.location && l.length < 60) { m.location = l; continue; }
+        if (!seenJoined && !m.bio) { m.bio = l; continue; }
+      }
+      m.owner = tags.some((t) => /owner|admin|moderator/i.test(t));
+      m.paid = !!m.tier && !/^free/i.test(m.tier);
+      m.key = handle;
+      out.push(m);
+    }
+    return out;
+  }
+
+  function parseCSV(text) {
+    const rows = [];
+    let row = [], cell = "", q = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (q) {
+        if (c === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+        else if (c === '"') q = false;
+        else cell += c;
+      } else if (c === '"') q = true;
+      else if (c === ",") { row.push(cell); cell = ""; }
+      else if (c === "\n" || c === "\r") {
+        if (c === "\r" && text[i + 1] === "\n") i++;
+        row.push(cell); rows.push(row); row = []; cell = "";
+      } else cell += c;
+    }
+    if (cell || row.length) { row.push(cell); rows.push(row); }
+    return rows.filter((r) => r.some((x) => x.trim()));
+  }
+
+  function fromCSV(text) {
+    const rows = parseCSV(text.replace(/^﻿/, ""));
+    if (rows.length < 2) return { members: [], found: [] };
+    const head = rows[0].map((h) => h.trim());
+    const find = (re) => head.findIndex((h) => re.test(h.toLowerCase()));
+    const col = {
+      first: find(/first/), last: find(/last ?name|surname/), name: find(/^name$|full ?name|member name/),
+      email: find(/e-?mail/), joined: find(/joined|approved|join date|created/), active: find(/last ?active|last ?seen|active/),
+      tier: find(/tier|plan|membership type|price/), level: find(/level/), points: find(/point/),
+      source: find(/invited|source|referr/), ltv: find(/ltv|lifetime value/),
+    };
+    const found = Object.entries(col).filter(([, v]) => v >= 0).map(([k, v]) => `${k}: "${head[v]}"`);
+    const get = (r, k) => (col[k] >= 0 ? (r[col[k]] || "").trim() : "");
+    const list = rows.slice(1).map((r, i) => {
+      const name = get(r, "name") || [get(r, "first"), get(r, "last")].filter(Boolean).join(" ") || get(r, "email") || `Member ${i + 1}`;
+      const tier = get(r, "tier");
+      const activeRaw = get(r, "active");
+      let activeDays = null;
+      if (activeRaw) { const d = parseDate(activeRaw); activeDays = d ? daysSince(d) : agoToDays(activeRaw); }
+      const price = parseFloat(tier.replace(/[^0-9.]/g, ""));
+      return {
+        name, handle: get(r, "email"), email: get(r, "email"), level: get(r, "level") ? +get(r, "level") : null,
+        points: get(r, "points"), tags: [], bio: "", activeDays, joined: parseDate(get(r, "joined")), location: "",
+        tier, source: get(r, "source"), renew: "", owner: false,
+        paid: !!tier && !/free|standard|^0/i.test(tier) && (isNaN(price) || price > 0),
+        key: get(r, "email") || name,
+      };
+    });
+    return { members: list, found };
+  }
+
+  // ---------- views ----------
+  const LISTS = {
+    new: { label: "New this week", hint: "Joined in the last 7 days. Tick them off once you have welcomed them.", tpl: "welcome",
+      filter: (m) => daysSince(m.joined) !== null && daysSince(m.joined) <= 7 },
+    quiet: { label: "Gone quiet", hint: "Not active for a while. A friendly check in often brings people back. Needs the paste option for activity.", tpl: "checkin",
+      filter: (m, q) => m.activeDays !== null && m.activeDays >= q },
+    warm: { label: "Warming up", hint: "Free members who have been active in the last 3 days and reached level 2 or more. Good people to make feel welcome, not to hard sell.", tpl: "checkin",
+      filter: (m) => !m.paid && m.activeDays !== null && m.activeDays <= 3 && (m.level || 0) >= 2 },
+    paid: { label: "Paid members", hint: "Everyone on a paid tier.", tpl: "checkin", filter: (m) => m.paid },
+    all: { label: "Everyone", hint: "Every member that was read in.", tpl: "welcome", filter: () => true },
+  };
+
+  function fmtAgo(d) {
+    if (d === null) return "unknown";
+    if (d < 1) return "today";
+    if (d < 2) return "1 day ago";
+    return `${Math.round(d)} days ago`;
+  }
+  function fmtDate(d) { return d ? d.toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" }) : "unknown"; }
+
+  function render() {
+    const q = +$("#quietDays").value;
+    const list = members.filter((m) => !m.owner);
+    const count = (k) => list.filter((m) => LISTS[k].filter(m, q)).length;
+    const hasActive = list.some((m) => m.activeDays !== null);
+    const src = {};
+    list.forEach((m) => { if (m.source) src[m.source] = (src[m.source] || 0) + 1; });
+    const topSrc = Object.entries(src).sort((a, b) => b[1] - a[1])[0];
+    $("#stats").innerHTML = [
+      [list.length, "members (owner left out)"],
+      [count("paid"), "on a paid tier"],
+      [count("new"), "joined in the last 7 days"],
+      [hasActive ? count("quiet") : "n/a", hasActive ? `quiet for ${q}+ days` : "quiet (needs the paste option)"],
+      [topSrc ? topSrc[1] : "n/a", topSrc ? `joined ${esc(topSrc[0].toLowerCase())}` : "join source not in file"],
+    ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+
+    $("#listTabs").innerHTML = Object.entries(LISTS).map(([k, v]) =>
+      `<button role="tab" data-list="${k}" aria-selected="${k === currentList}">${v.label} (${count(k)})</button>`).join("");
+    $("#listTabs").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { currentList = b.dataset.list; render(); }));
+
+    const L = LISTS[currentList];
+    $("#listHint").textContent = L.hint;
+    const rows = list.filter((m) => L.filter(m, q)).sort((a, b) => (daysSince(a.joined) ?? 1e9) - (daysSince(b.joined) ?? 1e9));
+    $("#thead").innerHTML = "<tr><th>Done</th><th>Member</th><th>Joined</th><th>Last active</th><th>Tier</th><th>Message</th></tr>";
+    $("#tbody").innerHTML = rows.length ? rows.map((m) => {
+      const key = currentList + "|" + m.key;
+      return `<tr>
+        <td><input type="checkbox" data-done="${esc(key)}" ${done[key] ? "checked" : ""} aria-label="Mark ${esc(m.name)} done"></td>
+        <td><strong>${esc(m.name)}</strong><br><span class="hint">${esc(m.handle)}${m.level ? " · level " + m.level : ""}${m.location ? " · " + esc(m.location) : ""}</span>${m.bio ? `<br><span class="hint">${esc(m.bio)}</span>` : ""}</td>
+        <td>${fmtDate(m.joined)}<br><span class="hint">${esc(m.source)}</span></td>
+        <td>${fmtAgo(m.activeDays)}</td>
+        <td>${m.paid ? `<span class="pill good">${esc(m.tier)}</span>` : `<span class="pill">${esc(m.tier || "free")}</span>`}</td>
+        <td><button class="btn ghost small" data-copy="${esc(m.key)}">Copy message</button></td></tr>`;
+    }).join("") : `<tr><td colspan="6" class="hint">Nobody in this list right now.</td></tr>`;
+    $("#tbody").querySelectorAll("[data-done]").forEach((c) => c.addEventListener("change", () => { done[c.dataset.done] = c.checked; store.set("zto.members.done", done); }));
+    $("#tbody").querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", () => {
+      const m = members.find((x) => x.key === b.dataset.copy);
+      const tpl = L.tpl === "welcome" ? tW.value : tC.value;
+      copyText(tpl.replaceAll("{first}", firstName(m.name)));
+    }));
+    $("#exportList").onclick = () => {
+      const head = ["Name", "Handle or email", "Joined", "Last active (days)", "Tier", "Level", "Source"];
+      const csv = [head, ...rows.map((m) => [m.name, m.handle, fmtDate(m.joined), m.activeDays === null ? "" : Math.round(m.activeDays), m.tier, m.level ?? "", m.source])]
+        .map((r) => r.map((x) => `"${String(x ?? "").replace(/"/g, '""')}"`).join(",")).join("\n");
+      download(`skool-${currentList}.csv`, csv, "text/csv");
+    };
+  }
+  $("#quietDays").addEventListener("change", render);
+
+  function load(list, msg) {
+    if (!list.length) { $("#readMsg").textContent = "I couldn't find any members in that. Check you copied the Members page (or picked the export file) and try again."; return; }
+    // merge by key so several pages can be pasted
+    const map = new Map(members.map((m) => [m.key, m]));
+    list.forEach((m) => map.set(m.key, m));
+    members = [...map.values()];
+    $("#readMsg").textContent = msg.replace("{n}", members.filter((m) => !m.owner).length);
+    $("#results").hidden = false;
+    render();
+    $("#results").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  $("#pasteGo").addEventListener("click", () => {
+    const list = parsePaste($("#pasteBox").value);
+    load(list, "Read {n} members. Paste another page any time and they'll be added.");
+    $("#pasteBox").value = "";
+  });
+  $("#sampleGo").addEventListener("click", () => {
+    const now = new Date(), d = (n) => new Date(now - n * DAY).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    const sample = [
+      ["1", "Sam Rivers", "", "@sam-rivers-1001", "Coffee cart owner, Brisbane", "Active 3h ago", `Joined ${d(1)}`, "Free", "Lifetime access", "Joined from Skool network"],
+      ["1", "Priya Nair", "(Premium)", "@priya-nair-1002", "Bookkeeper for tradies", "Active 1d ago", `Joined ${d(5)}`, "$12/year", "Renews in 360 days", "Joined directly"],
+      ["2", "Mia Chen", "", "@mia-chen-1003", "Pilates studio", "Active 2d ago", `Joined ${d(12)}`, "Free", "Lifetime access", "Joined from Skool network"],
+      ["1", "Leo Park", "", "@leo-park-1004", "Building a landscaping business", "Active 19d ago", `Joined ${d(30)}`, "Free", "Lifetime access", "Joined from email invite"],
+      ["3", "Ana Lopez", "(Premium)", "@ana-lopez-1005", "Photographer", "Active 40d ago", `Joined ${d(60)}`, "$1/month", "Renews in 12 days", "Joined directly"],
+    ].map((r) => r.filter(Boolean).join("\n")).join("\n");
+    members = [];
+    load(parsePaste(sample), "Sample data loaded ({n} made-up members). Paste your own Members page to see your real group.");
+  });
+
+  const fileIn = $("#file"), drop = $("#drop");
+  function readFile(f) {
+    if (!f) return;
+    const r = new FileReader();
+    r.onload = () => {
+      const { members: list, found } = fromCSV(String(r.result));
+      load(list, `Read {n} members from ${f.name}. Columns used: ${found.join(", ") || "none recognised"}.`);
+    };
+    r.readAsText(f);
+  }
+  fileIn.addEventListener("change", () => readFile(fileIn.files[0]));
+  ["dragover", "dragenter"].forEach((e) => drop.addEventListener(e, (ev) => { ev.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach((e) => drop.addEventListener(e, () => drop.classList.remove("over")));
+  drop.addEventListener("drop", (ev) => { ev.preventDefault(); readFile(ev.dataTransfer.files[0]); });
+})();
+</script>
+</body>
+</html>

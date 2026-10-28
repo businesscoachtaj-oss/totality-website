@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skool Group Health Check</title>
+<meta name="description" content="Free tool for Skool owners: check your group and About page against what Skool says it rewards and penalises in Discovery, and get a fix list.">
+<link rel="icon" href="img/op-wave.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="bars"><span></span><span></span><span></span><span></span></div>
+      <div class="eyebrow">Free tool</div>
+      <h1>Group health check</h1>
+      <p class="lead">Answer a few questions and paste your About page. You get a score, a plain fix list, and a prompt you can paste into Claude to rewrite your About page.</p>
+    </div>
+    <img class="op" src="img/op-inspecting.png" alt="Op inspecting with a magnifying glass">
+  </section>
+
+  <p class="notice">Built on Skool's own <a href="https://help.skool.com/article/153-discovery-faqs" target="_blank" rel="noopener">Discovery FAQs</a>: groups are ranked by member growth, engagement and retention, a person at Skool reviews rankings, and they list what earns a boost and what earns a penalty. Skool doesn't publish an exact formula, so this score is a checklist, not your rank.</p>
+
+  <form id="f" class="stack" style="margin-top:16px" autocomplete="off">
+    <section class="panel stack">
+      <h2>Your group page</h2>
+      <div class="grid2">
+        <div class="field"><label for="name">Group name</label><input type="text" id="name" placeholder="e.g. Zero to Operator"></div>
+        <div class="field"><label for="tagline">Group description (the short line under your name)</label><input type="text" id="tagline" placeholder="e.g. Start, build and run your business with Claude"></div>
+      </div>
+      <div class="field"><label for="about">About page description</label><textarea id="about" placeholder="Paste the full text of your About page description"></textarea><p class="hint"><span id="aboutCount">0</span> characters. When we checked, Skool's About editor capped this at about 1,000 characters.</p></div>
+      <div class="grid3">
+        <div class="field"><label for="cover">Cover image</label><select id="cover"><option value="">Choose</option><option value="good">Yes, designed for the group</option><option value="basic">Yes, but it's basic</option><option value="none">No cover yet</option></select></div>
+        <div class="field"><label for="images">About page images or video</label><select id="images"><option value="">Choose</option><option value="3">3 or more</option><option value="1">1 or 2</option><option value="0">None</option></select></div>
+        <div class="field"><label for="niche">Who it's for</label><select id="niche"><option value="">Choose</option><option value="clear">One clear type of person</option><option value="broad">Fairly broad</option><option value="anyone">Anyone at all</option></select></div>
+      </div>
+    </section>
+
+    <section class="panel stack">
+      <h2>Activity in the last 7 days</h2>
+      <div class="grid3">
+        <div class="field"><label for="ownerPosts">Posts by you or your admins</label><input type="number" id="ownerPosts" min="0" placeholder="0"></div>
+        <div class="field"><label for="memberPosts">Posts and comments by members</label><input type="number" id="memberPosts" min="0" placeholder="0"></div>
+        <div class="field"><label for="newMembers">New members (last 30 days)</label><input type="number" id="newMembers" min="0" placeholder="0"></div>
+        <div class="field"><label for="ownerDays">Days you logged in</label><select id="ownerDays"><option value="">Choose</option><option value="7">Every day</option><option value="4">Most days</option><option value="1">Once or twice</option><option value="0">Not at all</option></select></div>
+        <div class="field"><label for="reply">How fast members get an answer</label><select id="reply"><option value="">Choose</option><option value="fast">Same day</option><option value="slow">Within a few days</option><option value="never">Often not at all</option></select></div>
+        <div class="field"><label for="churn">Members who leave each month</label><select id="churn"><option value="">Choose</option><option value="low">Hardly any</option><option value="some">A few</option><option value="many">Quite a lot</option><option value="unknown">Not sure</option></select></div>
+      </div>
+    </section>
+
+    <section class="panel stack">
+      <h2>Money and members</h2>
+      <div class="grid3">
+        <div class="field"><label for="payments">How you take payments</label><select id="payments"><option value="">Choose</option><option value="skool">Through Skool</option><option value="free">It's free, no payments</option><option value="outside">Outside Skool (Stripe link, PayPal, another site)</option></select></div>
+        <div class="field"><label for="real">Are all members real people?</label><select id="real"><option value="">Choose</option><option value="yes">Yes</option><option value="unsure">Some may be fake or bought</option></select></div>
+        <div class="field"><label for="engage">How engagement happens</label><select id="engage"><option value="">Choose</option><option value="genuine">Real conversations</option><option value="mixed">Some "comment YES" style posts</option><option value="spammy">Mostly bait, pods or copy-paste replies</option></select></div>
+      </div>
+      <div class="row"><button class="btn" type="submit">Check my group</button><span class="hint">Nothing is sent anywhere. Your answers stay on this page.</span></div>
+    </section>
+  </form>
+
+  <section id="out" class="stack" hidden style="margin-top:16px">
+    <div class="panel grid2" style="align-items:center">
+      <div><div class="eyebrow">Your checklist score</div><div class="score-ring" id="score"></div><p class="hint" id="scoreNote"></p></div>
+      <div class="grid3" id="sectionScores"></div>
+    </div>
+    <div class="panel"><h2>Fix these first</h2><div id="fixes"></div></div>
+    <div class="panel"><h2>Already looking good</h2><div id="goods"></div></div>
+    <div class="panel stack">
+      <h2>Rewrite your About page with Claude</h2>
+      <p class="hint">Copy this prompt into Claude (or any AI assistant). It includes your current text and the gaps found above.</p>
+      <textarea id="prompt" readonly style="min-height:220px"></textarea>
+      <div class="row"><button class="btn" id="copyPrompt" type="button">Copy the prompt</button><button class="btn ghost" id="copyFixes" type="button">Copy the fix list</button></div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/site.js"></script>
+<script>
+(() => {
+  const $ = (s) => document.getElementById(s);
+  const { esc, copyText, store } = ZTO;
+  const fields = ["name","tagline","about","cover","images","niche","ownerPosts","memberPosts","newMembers","ownerDays","reply","churn","payments","real","engage"];
+  // restore draft
+  const saved = store.get("zto.health", {});
+  fields.forEach((k) => { if (saved[k] != null) $(k).value = saved[k]; });
+  const count = () => ($("aboutCount").textContent = $("about").value.length);
+  $("about").addEventListener("input", count); count();
+  document.getElementById("f").addEventListener("input", () => { const o = {}; fields.forEach((k) => (o[k] = $(k).value)); store.set("zto.health", o); });
+
+  const HYPE = /\b(guarantee[sd]?|get rich|passive income|\$\s?\d+k\s*(\/|a|per)\s*(month|mo|week)|six figures?|seven figures?|millionaire|secret (system|method)|overnight|100% (results|success)|risk[- ]free)\b/i;
+  const OUTSIDE = /(stripe\.com|buy\.stripe|paypal\.|gumroad|lemonsqueezy|kajabi|teachable|thinkific|patreon|ko-fi|venmo|cash\.app|whatsapp|wa\.me|t\.me\/)/i;
+
+  function run(e) {
+    e && e.preventDefault();
+    const v = Object.fromEntries(fields.map((k) => [k, $(k).value.trim()]));
+    const num = (k) => (v[k] === "" ? null : Math.max(0, +v[k]));
+    const about = v.about, len = about.length, lower = about.toLowerCase();
+    const checks = [];
+    // add(section, weight, status, title, why, fix)
+    const add = (sec, w, st, title, fix) => checks.push({ sec, w, st, title, fix });
+
+    // ---- Skool eligibility and Skool's listed boosts and penalties ----
+    const S = "Skool's own list";
+    add(S, 6, v.tagline ? "good" : "bad", "Group description is filled in", "Add a short group description. Skool lists it as a must to show in Discovery. Say who it's for and what they get in one line.");
+    add(S, 6, len >= 200 ? "good" : len > 0 ? "warn" : "bad", "About page has a proper description", len ? "Your About description is short. Fill it out so a stranger knows in 20 seconds who it's for, what's inside and what to do first." : "Paste or write your About description. Skool lists an About description as a must to show in Discovery.");
+    add(S, 8, v.images === "3" ? "good" : v.images === "1" ? "warn" : v.images === "0" ? "bad" : "warn", "About page has images or a video", "Skool lists About images as a must and a polished About page as a boost. Aim for 3 or more: what's inside, who it's for, and a welcome from you.");
+    add(S, 8, v.cover === "good" ? "good" : v.cover === "basic" ? "warn" : v.cover === "none" ? "bad" : "warn", "Cover art looks polished", "Skool names polished cover art as a boost and weak cover art as a penalty. Make a clean cover with your group name, a short promise and your brand colours.");
+    add(S, 6, v.niche === "clear" ? "good" : v.niche === "broad" ? "warn" : v.niche === "anyone" ? "bad" : "warn", "Clear niche", "Skool lists a niche it finds interesting as a boost. Name one type of person you serve and the result they're after.");
+    const op = num("ownerPosts"), od = +v.ownerDays;
+    add(S, 10, v.ownerDays === "" ? "warn" : od >= 4 && (op ?? 0) >= 3 ? "good" : od >= 1 ? "warn" : "bad", "Active owner and admins", "Skool rewards an active owner and penalises an inactive one. Log in most days and post at least 3 times a week, even short posts.");
+    const mp = num("memberPosts");
+    add(S, 10, mp === null ? "warn" : mp >= 10 ? "good" : mp >= 3 ? "warn" : "bad", "Members are talking", "Genuine member interaction is a boost. Ask easy one-line questions, run a real poll, and reply to every intro so members feel seen.");
+    add(S, 10, v.engage === "genuine" ? "good" : v.engage === "mixed" ? "warn" : v.engage === "spammy" ? "bad" : "warn", "Engagement is genuine", "Spam or low-value engagement is a penalty. Drop \"comment YES\" bait and copy-paste replies. Reply to what each person actually wrote.");
+    add(S, 10, v.real === "yes" ? "good" : v.real === "unsure" ? "bad" : "warn", "No bots or fake accounts", "Bots and fake accounts are a penalty. Never buy members. Skool also says removing quiet or level 1 members doesn't improve your rank, so there's no need to purge real lurkers.");
+    add(S, 10, v.payments === "outside" || OUTSIDE.test(about) ? "bad" : v.payments ? "good" : "warn", "Payments stay on Skool", "Taking payments outside Skool is a penalty. Move paid tiers and courses onto Skool, and take outside checkout links off your About page and posts.");
+    add(S, 8, v.reply === "fast" ? "good" : v.reply === "slow" ? "warn" : v.reply === "never" ? "bad" : "warn", "Members get answers", "Poor customer support is a penalty. Answer questions the same day where you can. A pinned \"Stuck? Ask here\" post helps.");
+    const nm = num("newMembers");
+    add(S, 8, nm === null ? "warn" : nm >= 10 ? "good" : nm >= 3 ? "warn" : "bad", "Growing month to month", "Member growth is one of Skool's three ranking factors. Share your About page link everywhere you already show up: your bio, your email signature, other groups' promo threads.");
+    add(S, 6, v.churn === "low" ? "good" : v.churn === "some" ? "warn" : v.churn === "many" ? "bad" : "warn", "Members stay", "Retention is one of Skool's three ranking factors. Give new members one quick win in their first week, and check in on anyone who goes quiet.");
+
+    // ---- About page writing (our suggestions, good practice) ----
+    const A = "About page writing";
+    const has = (re) => re.test(lower);
+    add(A, 4, len > 1000 ? "bad" : len >= 400 ? "good" : "warn", "Length fits", len > 1000 ? "It's over about 1,000 characters, so Skool may cut it off. Trim the extras." : "Use most of the space. 400 to 1,000 characters gives people enough to decide.");
+    add(A, 4, has(/\b(for|if you('| a)re|built for|made for|perfect for|ideal for)\b/) ? "good" : "warn", "Says who it's for", "Add a line that starts \"For ...\" naming the person this is for.");
+    add(A, 4, has(/\b(inside|you get|you'll get|includes?|courses?|lessons?|modules?|tracks?|templates?|calls?|community)\b/) ? "good" : "warn", "Says what's inside", "List what members actually get: courses, posts, calls, templates. Keep it to a short list.");
+    add(A, 3, has(/\b(free|premium|paid|price|\$|us\$|a\$|tier|month|year)\b/) ? "good" : "warn", "Free and paid is clear", "Say plainly what's free and what's paid, so nobody feels tricked after joining.");
+    add(A, 3, has(/\b(start|first step|join|begin|step 1|day 1|first win)\b/) ? "good" : "warn", "Gives a first step", "End with what to do first after joining, like \"Start with the pinned post\".");
+    add(A, 3, about && about.split(/\n/).filter((l) => l.trim()).length >= 4 ? "good" : "warn", "Easy to scan", "Break it into short lines or a list. Most people read About pages on their phone.");
+    add(A, 4, HYPE.test(about) ? "bad" : "good", "No hype or income promises", "Take out income claims and words like \"guaranteed\". They put good members off and can look spammy.");
+    add(A, 3, (v.name && v.tagline && v.tagline.length <= 120) ? "good" : "warn", "Short, specific group description", "Keep the line under your group name short and specific: who it's for plus the result.");
+
+    // ---- score ----
+    const pts = { good: 1, warn: 0.5, bad: 0 };
+    const tot = checks.reduce((a, c) => a + c.w, 0);
+    const got = checks.reduce((a, c) => a + c.w * pts[c.st], 0);
+    const score = Math.round((got / tot) * 100);
+    $("score").innerHTML = `${score}<small> / 100</small>`;
+    $("scoreNote").textContent = score >= 80 ? "Looking healthy. Keep the activity steady." : score >= 60 ? "Solid base. A few fixes below should lift it." : "Plenty of easy wins below. Start with the red ones.";
+    const secs = [S, A];
+    $("sectionScores").innerHTML = secs.map((s) => {
+      const c = checks.filter((x) => x.sec === s);
+      const t = c.reduce((a, x) => a + x.w, 0), g = c.reduce((a, x) => a + x.w * pts[x.st], 0);
+      return `<div class="stat"><b>${Math.round((g / t) * 100)}%</b><span>${s}</span></div>`;
+    }).join("") + `<div class="stat"><b>${checks.filter((c) => c.st === "bad").length}</b><span>red items</span></div>`;
+
+    const order = { bad: 0, warn: 1, good: 2 };
+    const todo = checks.filter((c) => c.st !== "good").sort((a, b) => order[a.st] - order[b.st] || b.w - a.w);
+    const row = (c, showFix) => `<div class="check"><span class="dot ${c.st}"></span><div><strong>${esc(c.title)}</strong> <span class="pill">${esc(c.sec)}</span>${showFix ? `<p class="hint" style="margin:4px 0 0">${esc(c.fix)}</p>` : ""}</div></div>`;
+    $("fixes").innerHTML = todo.length ? todo.map((c) => row(c, true)).join("") : '<p class="hint">Nothing to fix. Nice work.</p>';
+    $("goods").innerHTML = checks.filter((c) => c.st === "good").map((c) => row(c, false)).join("") || '<p class="hint">Nothing yet. Work through the list above.</p>';
+
+    const gaps = todo.filter((c) => c.sec === A || /About|Cover|niche|Payments/.test(c.title)).map((c) => "- " + c.fix).join("\n");
+    $("prompt").value =
+`You are helping me rewrite the About page for my Skool community.
+
+Group name: ${v.name || "[group name]"}
+Group description: ${v.tagline || "[one line]"}
+Who it's for: ${v.niche === "clear" ? "[name the person]" : "[help me narrow this down to one clear type of person]"}
+
+My current About description:
+"""
+${about || "[paste it here]"}
+"""
+
+Things to fix:
+${gaps || "- Keep what works and tighten it."}
+
+Write a new About description under 1,000 characters. Use short lines that are easy to read on a phone. Say who it's for, what's inside, what's free and what's paid, and the first thing to do after joining. Use only facts from my text and ask me for anything missing instead of making it up. No income promises, no hype words, no em dashes. Then suggest 3 ideas for About page images.`;
+    $("out").hidden = false;
+    $("copyPrompt").onclick = () => copyText($("prompt").value);
+    $("copyFixes").onclick = () => copyText(todo.map((c) => `${c.st === "bad" ? "[red]" : "[amber]"} ${c.title}: ${c.fix}`).join("\n"));
+    $("out").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  document.getElementById("f").addEventListener("submit", run);
+})();
+</script>
+</body>
+</html>

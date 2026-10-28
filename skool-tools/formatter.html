@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skool Lesson Formatter</title>
+<meta name="description" content="Free tool for Skool owners: paste a lesson written in Claude, Google Docs or Markdown and get Skool-ready lessons that keep their formatting.">
+<link rel="icon" href="img/op-wave.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/marked.min.js"></script>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="bars"><span></span><span></span><span></span><span></span></div>
+      <div class="eyebrow">Free tool</div>
+      <h1>Lesson formatter</h1>
+      <p class="lead">Paste a lesson you wrote with Claude or in a doc. It comes back ready to paste into a Skool Classroom page, with the bits Skool handles badly already fixed, and long courses split into one lesson per page.</p>
+    </div>
+    <img class="op" src="img/op-laptop.png" alt="Op at a laptop">
+  </section>
+
+  <section class="grid2">
+    <div class="panel stack">
+      <h2>1. Paste your lesson</h2>
+      <div class="field"><label for="src">Markdown or plain text (what Claude gives you is Markdown)</label><textarea id="src" style="min-height:320px" placeholder="# Lesson 1: Getting started&#10;&#10;Paste your lesson here..."></textarea></div>
+      <div class="row"><button class="btn ghost small" id="sample" type="button">Load an example</button></div>
+    </div>
+    <div class="panel stack">
+      <h2>2. Choose the fixes</h2>
+      <label><input type="checkbox" id="oCode" checked> Turn code blocks into quote blocks <span class="hint">(Skool code blocks don't wrap, so long prompts run off the screen)</span></label>
+      <label><input type="checkbox" id="oTable" checked> Turn tables into simple lines <span class="hint">(so they read well on a phone)</span></label>
+      <label><input type="checkbox" id="oRule" checked> Remove divider lines (---) <span class="hint">(Skool turns three hyphens into a dash)</span></label>
+      <label><input type="checkbox" id="oDash"> Swap em dashes and en dashes for commas</label>
+      <label><input type="checkbox" id="oHead"> Turn headings into bold lines</label>
+      <div class="field"><label for="oSplit">Split into separate lessons at</label>
+        <select id="oSplit"><option value="0">Don't split</option><option value="1">Each # heading</option><option value="2" selected>Each ## heading</option><option value="3">Each ### heading</option></select>
+        <p class="hint">The heading becomes the lesson title. Skool would not save page titles over 50 characters when we tested, so long ones are flagged.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel stack" style="margin-top:16px">
+    <div class="row" style="justify-content:space-between"><h2 style="margin:0">3. Copy into Skool</h2><span class="hint" id="summary"></span></div>
+    <p class="hint">Open the Classroom page in Skool, click the pencil, click into the body and paste. Copy the title separately into the title box.</p>
+    <div id="lessons" class="stack"></div>
+  </section>
+</main>
+
+<script src="assets/site.js"></script>
+<script>
+(() => {
+  const $ = (s) => document.getElementById(s);
+  const { esc, toast, store } = ZTO;
+  const opts = ["oCode", "oTable", "oRule", "oDash", "oHead", "oSplit"];
+  const saved = store.get("zto.fmt", null);
+  if (saved) { opts.forEach((k) => { if (k in saved) { if ($(k).type === "checkbox") $(k).checked = saved[k]; else $(k).value = saved[k]; } }); if (saved.src) $("src").value = saved.src; }
+
+  function save() {
+    const o = { src: $("src").value.slice(0, 200000) };
+    opts.forEach((k) => (o[k] = $(k).type === "checkbox" ? $(k).checked : $(k).value));
+    store.set("zto.fmt", o);
+  }
+
+  function transform(html) {
+    const box = document.createElement("div");
+    box.innerHTML = html;
+    if ($("oCode").checked) box.querySelectorAll("pre").forEach((pre) => {
+      const bq = document.createElement("blockquote");
+      const lines = pre.textContent.replace(/\n$/, "").split("\n");
+      lines.forEach((l, i) => { if (i) bq.append(document.createElement("br")); bq.append(document.createTextNode(l)); });
+      pre.replaceWith(bq);
+    });
+    if ($("oTable").checked) box.querySelectorAll("table").forEach((t) => {
+      const heads = [...t.querySelectorAll("thead th")].map((th) => th.textContent.trim());
+      const frag = document.createDocumentFragment();
+      [...t.querySelectorAll("tbody tr")].forEach((tr) => {
+        const cells = [...tr.children].map((td) => td.textContent.trim());
+        const p = document.createElement("p");
+        if (heads.length && cells.length) {
+          const b = document.createElement("strong"); b.textContent = cells[0];
+          p.append(b);
+          const rest = cells.slice(1).map((c, i) => (heads[i + 1] ? `${heads[i + 1]}: ${c}` : c)).filter((x) => x.trim());
+          if (rest.length) p.append(document.createTextNode(". " + rest.join(". ")));
+        } else p.textContent = cells.join(". ");
+        frag.append(p);
+      });
+      t.replaceWith(frag);
+    });
+    if ($("oRule").checked) box.querySelectorAll("hr").forEach((h) => h.remove());
+    if ($("oHead").checked) box.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach((h) => {
+      const p = document.createElement("p"); const b = document.createElement("strong"); b.innerHTML = h.innerHTML; p.append(b); h.replaceWith(p);
+    });
+    const walker = document.createTreeWalker(box, NodeFilter.SHOW_TEXT);
+    const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((n) => {
+      let t = n.nodeValue;
+      if ($("oRule").checked) t = t.replace(/-{3,}/g, "-");
+      if ($("oDash").checked) t = t.replace(/\s*[—–]\s*/g, ", ").replace(/,\s*,/g, ",");
+      n.nodeValue = t;
+    });
+    box.querySelectorAll("a").forEach((a) => a.setAttribute("target", "_blank"));
+    return box;
+  }
+
+  function split(box, level) {
+    const kids = [...box.childNodes].filter((n) => n.nodeType === 1 || n.textContent.trim());
+    if (!level) return [{ title: "", nodes: kids }];
+    const tag = "H" + level;
+    const out = [];
+    let cur = { title: "", nodes: [] };
+    kids.forEach((n) => {
+      if (n.tagName === tag) { if (cur.nodes.length || cur.title) out.push(cur); cur = { title: n.textContent.trim(), nodes: [] }; }
+      else cur.nodes.push(n);
+    });
+    if (cur.nodes.length || cur.title) out.push(cur);
+    // drop a leading chunk that is only a course or module heading; keep a real intro as "Intro"
+    return out
+      .filter((c, i) => !(i === 0 && !c.title && c.nodes.every((n) => /^H[1-6]$/.test(n.tagName || ""))))
+      .map((c, i) => ({ ...c, title: c.title || (i === 0 ? "Intro" : "Untitled") }));
+  }
+
+  async function copyRich(html, text) {
+    try {
+      await navigator.clipboard.write([new ClipboardItem({ "text/html": new Blob([html], { type: "text/html" }), "text/plain": new Blob([text], { type: "text/plain" }) })]);
+      toast("Copied with formatting"); return;
+    } catch {}
+    const tmp = document.createElement("div");
+    tmp.contentEditable = "true"; tmp.innerHTML = html; tmp.style.position = "fixed"; tmp.style.left = "-9999px";
+    document.body.append(tmp);
+    const r = document.createRange(); r.selectNodeContents(tmp);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    let ok = false; try { ok = document.execCommand("copy"); } catch {}
+    s.removeAllRanges(); tmp.remove();
+    toast(ok ? "Copied with formatting" : "Select the preview and copy it");
+  }
+
+  function render() {
+    save();
+    const src = $("src").value;
+    const out = $("lessons");
+    if (!src.trim()) { out.innerHTML = '<p class="hint">Your Skool-ready lessons will show here.</p>'; $("summary").textContent = ""; return; }
+    const html = (window.marked ? marked.parse(src, { gfm: true, breaks: false }) : "<p>" + esc(src).replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>") + "</p>");
+    const box = transform(html);
+    const parts = split(box, +$("oSplit").value);
+    out.innerHTML = "";
+    parts.forEach((p, i) => {
+      const wrap = document.createElement("div");
+      wrap.className = "stack";
+      const tlen = p.title.length;
+      wrap.innerHTML = `
+        <div class="row" style="justify-content:space-between">
+          <div class="row"><span class="pill">${i + 1} of ${parts.length}</span>${p.title ? `<strong>${esc(p.title)}</strong> <span class="pill ${tlen > 50 ? "bad" : "good"}">${tlen} / 50</span>` : ""}</div>
+          <div class="row">${p.title ? '<button class="btn ghost small" data-act="title">Copy title</button>' : ""}<button class="btn small" data-act="body">Copy lesson</button></div>
+        </div>
+        ${tlen > 50 ? '<p class="notice bad" style="margin:0">This title is over 50 characters. Shorten it before you paste it into Skool.</p>' : ""}
+        <div class="preview"></div>`;
+      const pv = wrap.querySelector(".preview");
+      p.nodes.forEach((n) => pv.append(n));
+      if (!p.nodes.length) pv.innerHTML = '<p style="color:#888">No body text under this heading.</p>';
+      wrap.querySelector('[data-act="body"]').onclick = () => copyRich(pv.innerHTML, pv.innerText);
+      const tb = wrap.querySelector('[data-act="title"]'); if (tb) tb.onclick = () => ZTO.copyText(p.title);
+      out.append(wrap);
+    });
+    $("summary").textContent = `${parts.length} lesson${parts.length === 1 ? "" : "s"}`;
+  }
+
+  let t; const later = () => { clearTimeout(t); t = setTimeout(render, 250); };
+  $("src").addEventListener("input", later);
+  opts.forEach((k) => $(k).addEventListener("change", render));
+  $("sample").onclick = () => {
+    $("src").value = `# Module 1: Set up your business brief
+
+## Lesson 1.1: Why a brief matters
+
+Claude does its best work when it knows your business. A short brief saves you explaining it every time.
+
+---
+
+**What goes in it**
+
+| Part | Example |
+| --- | --- |
+| Who you are | A mobile dog groomer in Geelong |
+| Who you serve | Busy owners of small dogs |
+| Tone | Friendly, plain, no jargon |
+
+## Lesson 1.2: Write yours now
+
+Copy this prompt and fill in the brackets:
+
+\`\`\`
+I run [business], a [type of business] in [location]. My customers are [who they are]. Keep everything [tone]. Ask me up to 3 questions if anything is missing.
+\`\`\`
+
+**Done when** your brief is saved in your Claude Project.`;
+    render();
+  };
+  render();
+})();
+</script>
+</body>
+</html>
