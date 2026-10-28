@@ -77,7 +77,7 @@ h3 { font-size: 17px; margin: 0 0 6px; }
 .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
 .grid2 > *, .grid3 > * { min-width: 0; }
 label { display: block; font-size: 14px; color: var(--muted); margin-bottom: 6px; font-weight: 500; }
-input[type=text], input[type=url], input[type=number], input[type=date], select, textarea {
+input[type=text], input[type=email], input[type=url], input[type=number], input[type=date], select, textarea {
   width: 100%; background: var(--bg); color: var(--fg); border: 1px solid var(--line);
   border-radius: 10px; padding: 10px 12px; font: inherit; font-size: 15px;
 }
@@ -161,3 +161,10 @@ footer.site .cta p { margin: 0 0 6px; color: var(--fg); }
   .hero img.op { height: 120px; }
   .card-link img { height: 70px; }
 }
+
+/* Email gate (extension download) */
+.gate { display: grid; gap: 10px; padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+.gate .tick { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--muted); font-weight: 400; margin: 0; }
+.gate .tick input { margin-top: 3px; flex: none; }
+.gate .err { color: var(--red); font-size: 13px; margin: 0; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
