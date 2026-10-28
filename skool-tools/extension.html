@@ -36,7 +36,23 @@
       <h2>Install it (2 minutes)</h2>
       <p class="hint" style="margin:0">It isn't in the Chrome Web Store yet, so for now you add it yourself:</p>
       <ol style="margin:0;padding-left:20px;display:grid;gap:8px">
-        <li><a class="btn small" href="downloads/zto-promo-tracker-extension.zip" download>Download the extension (zip)</a></li>
+        <li>
+          <form class="gate" id="gate" novalidate>
+            <div class="field">
+              <label for="gateEmail">Your email, to unlock the download</label>
+              <input type="email" id="gateEmail" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <label class="tick"><input type="checkbox" id="gateUpdates"> <span>Yes, email me updates and new free tools from Zero to Operator. I can unsubscribe at any time.</span></label>
+            <div class="hp" aria-hidden="true"><label for="gateWebsite">Website</label><input type="text" id="gateWebsite" tabindex="-1" autocomplete="off"></div>
+            <p class="err" id="gateErr" hidden></p>
+            <div class="row"><button class="btn small" type="submit" id="gateBtn">Get the extension</button></div>
+            <p class="hint" style="margin:0">We only keep your email and which tool you came from. Nothing you put in the tools is sent to us. <a href="../privacy.html">Privacy</a></p>
+          </form>
+          <div id="gateDone" hidden>
+            <a class="btn small" id="dlLink" href="downloads/zto-promo-tracker-extension.zip" download>Download the extension (zip)</a>
+            <p class="hint">Thanks! If the download didn't start, tap the button.</p>
+          </div>
+        </li>
         <li>Unzip it. You'll get a folder with a file called <b>manifest.json</b> inside.</li>
         <li>In Chrome, go to <b>chrome://extensions</b> (type it into the address bar).</li>
         <li>Turn on <b>Developer mode</b> at the top right.</li>
@@ -48,5 +64,49 @@
   </section>
 </main>
 <script src="assets/site.js"></script>
+<script>
+(function () {
+  var API = 'https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/skool-tools-lead';
+  var KEY = 'zto-ext-unlocked';
+  var startedAt = Date.now();
+  var form = document.getElementById('gate');
+  var done = document.getElementById('gateDone');
+  var err = document.getElementById('gateErr');
+  var btn = document.getElementById('gateBtn');
+  var link = document.getElementById('dlLink');
+  function unlock(start) {
+    form.hidden = true; done.hidden = false;
+    try { localStorage.setItem(KEY, '1'); } catch (e) {}
+    if (start) link.click();
+  }
+  try { if (localStorage.getItem(KEY) === '1') unlock(false); } catch (e) {}
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.hidden = true;
+    var email = document.getElementById('gateEmail').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { err.textContent = 'Please check your email address.'; err.hidden = false; return; }
+    btn.disabled = true; btn.textContent = 'One sec...';
+    fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: email,
+        tool: 'extension',
+        wants_updates: document.getElementById('gateUpdates').checked,
+        website: document.getElementById('gateWebsite').value,
+        started_at: startedAt
+      })
+    }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (res) {
+        if (!res.ok) throw new Error((res.j && res.j.error) || 'Something went wrong. Please try again.');
+        unlock(true);
+      })
+      .catch(function (e2) {
+        err.textContent = e2.message || 'Something went wrong. Please try again.'; err.hidden = false;
+        btn.disabled = false; btn.textContent = 'Get the extension';
+      });
+  });
+})();
+</script>
 </body>
 </html>
