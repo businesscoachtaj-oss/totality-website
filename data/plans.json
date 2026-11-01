@@ -804,10 +804,7 @@
       "introPercentOff": 50,
       "introMonths": 2,
       "automatic": true,
-      "text": "7-day free trial, then 50% off your first 2 months on a monthly plan (Solo 10 and up). Applied automatically, no code needed.",
-      "excludes": [
-        "solo_5"
-      ]
+      "text": "7-day free trial, then 50% off your first 2 months on a monthly plan. Applied automatically, no code needed."
     },
     "referral": {
       "percentPerReferral": 20,
