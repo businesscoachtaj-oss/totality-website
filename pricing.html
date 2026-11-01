@@ -71,15 +71,16 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 .pr-save { font-size: var(--fs-xs); color: var(--success); font-weight: 800; margin-left: 4px; }
 .pr-billing button[aria-pressed="true"] .pr-save { color: #9BE3B8; }
 .pr-grid { display: grid; gap: var(--s-4); }
-.pr-grid--solo { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-.pr-grid--gym, .pr-grid--nut { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; }
+.pr-grid--solo { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.pr-grid--gym { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pr-grid--nut { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; }
 .price-card h3 { font-size: var(--fs-xl); }
 .price-card .price { font-size: clamp(1.4rem, 1.1rem + 0.7vw, 1.75rem); white-space: nowrap; }
 .price-card .ticks { font-size: var(--fs-sm); gap: 8px; }
 .price-card .btn { margin-top: auto; }
 .pc-note { font-size: var(--fs-xs); color: var(--muted); min-height: 1.3em; }
 .pc-tali { font-weight: 700; font-size: var(--fs-sm); }
-@media (max-width: 1100px) { .pr-grid--solo { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1100px) { .pr-grid--solo { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 720px) {
   .pr-grid--solo, .pr-grid--gym, .pr-grid--nut { grid-template-columns: 1fr; }
   .pr-controls { flex-direction: column; align-items: stretch; }
@@ -136,10 +137,30 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "AUD",
-        "lowPrice": "29.99",
-        "highPrice": "649.99",
-        "offerCount": 7,
+        "lowPrice": "19.99",
+        "highPrice": "999.99",
+        "offerCount": 10,
         "offers": [
+          {
+            "@type": "Offer",
+            "name": "Solo 5",
+            "price": "19.99",
+            "priceCurrency": "AUD",
+            "url": "https://totality360.com.au/pricing.html",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "19.99",
+              "priceCurrency": "AUD",
+              "unitCode": "MON",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            },
+            "description": "Up to 5 clients. For new and part-time trainers."
+          },
           {
             "@type": "Offer",
             "name": "Solo 10",
@@ -203,13 +224,13 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           {
             "@type": "Offer",
             "name": "Solo 50",
-            "price": "98.99",
+            "price": "94.99",
             "priceCurrency": "AUD",
             "url": "https://totality360.com.au/pricing.html",
             "availability": "https://schema.org/InStock",
             "priceSpecification": {
               "@type": "UnitPriceSpecification",
-              "price": "98.99",
+              "price": "94.99",
               "priceCurrency": "AUD",
               "unitCode": "MON",
               "referenceQuantity": {
@@ -242,6 +263,26 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           },
           {
             "@type": "Offer",
+            "name": "Solo 200",
+            "price": "249.99",
+            "priceCurrency": "AUD",
+            "url": "https://totality360.com.au/pricing.html",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "249.99",
+              "priceCurrency": "AUD",
+              "unitCode": "MON",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            },
+            "description": "Up to 200 clients. For the biggest independent coaching businesses."
+          },
+          {
+            "@type": "Offer",
             "name": "Studio",
             "price": "389.99",
             "priceCurrency": "AUD",
@@ -262,7 +303,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           },
           {
             "@type": "Offer",
-            "name": "Enterprise",
+            "name": "Club",
             "price": "649.99",
             "priceCurrency": "AUD",
             "url": "https://totality360.com.au/pricing.html",
@@ -278,7 +319,27 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
                 "unitCode": "MON"
               }
             },
-            "description": "Up to 5,000 clients. For larger gyms with a big team and member roster."
+            "description": "Up to 1,500 clients. For one large gym with a big team and member roster."
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise",
+            "price": "999.99",
+            "priceCurrency": "AUD",
+            "url": "https://totality360.com.au/pricing.html",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "999.99",
+              "priceCurrency": "AUD",
+              "unitCode": "MON",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            },
+            "description": "Up to 5,000 clients. For the largest gyms, with unlimited Tali AI."
           }
         ]
       }
@@ -637,8 +698,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       soloShared.map(function (f) { return '<li>' + esc(f.label) + U.statusPill(f.status) + '</li>'; }).join('') + '</ul>';
     soloEl.appendChild(inc);
 
+    // Shared list = features every gym plan has (client limit and Tali credits are shown per card).
     var studio = gym[0];
-    var gymShared = sharedList(studio.features, [studio.features[0].label, studio.features[1].label]);
+    var gymShared = sharedList(studio.features, [studio.features[0].label, studio.features[1].label]).filter(function (f) {
+      return gym.every(function (t) { return t.features.some(function (x) { return x.label === f.label; }); });
+    });
     document.getElementById('gymPlans').innerHTML = gym.map(function (t) {
       var extras = t.features.filter(function (f) {
         return gymShared.every(function (g) { return g.label !== f.label; }) && f !== t.features[0] && f !== t.features[1];
@@ -659,7 +723,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     var g = document.createElement('div');
     g.className = 'card card--flat';
     g.style.gridColumn = '1 / -1';
-    g.innerHTML = '<h3 class="h4">Both gym plans include</h3><ul class="ticks ticks--orange pr-inc">' +
+    g.innerHTML = '<h3 class="h4">Every gym plan includes</h3><ul class="ticks ticks--orange pr-inc">' +
       gymShared.map(function (f) { return '<li>' + esc(f.label) + U.statusPill(f.status) + '</li>'; }).join('') + '</ul>';
     document.getElementById('gymPlans').appendChild(g);
 
@@ -763,7 +827,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       why.map(function (w) { return '<li>' + esc(w) + '</li>'; }).join('') +
       '</ul>' +
       '<p class="mt-4"><strong>' + U.money(total) + ' a month</strong> at full price. New accounts get a ' + P.offers.newAccount.trialDays +
-      ' day free trial, then ' + P.offers.newAccount.introPercentOff + '% off the first ' + P.offers.newAccount.introMonths + ' months.</p>' +
+      ' day free trial, then ' + P.offers.newAccount.introPercentOff + '% off the first ' + P.offers.newAccount.introMonths + ' months on a monthly plan.</p>' +
       '<div class="btn-row mt-4"><a class="btn btn--primary" href="/get-totality.html">Start your ' + P.offers.newAccount.trialDays + ' day free trial</a></div>';
   }
   form.addEventListener('input', pick);

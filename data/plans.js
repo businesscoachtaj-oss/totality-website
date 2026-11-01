@@ -4,13 +4,78 @@
 window.TOTALITY_PLANS = {
   "_comment": "Mirror of Livewell-1 lib/tiers.ts. Update both together. Nutrition prices mirror TotalityNutrition-1 app/subscribe.tsx.",
   "currency": "AUD",
-  "verified": "2026-10-22",
+  "verified": "2026-11-01",
   "trial": {
     "days": 7,
     "text": "7-day free trial on every plan"
   },
   "yearlyDiscountPercent": 15,
   "tiers": [
+    {
+      "id": "solo_5",
+      "name": "Solo 5",
+      "audience": "solo",
+      "clientLimit": 5,
+      "trainers": "1",
+      "monthly": "A$19.99",
+      "monthlyCents": 1999,
+      "yearly": "A$203.90",
+      "yearlyNote": "Whole year, billed yearly (15% off monthly x 12)",
+      "taliCredits": 50,
+      "taliLabel": "50 a month",
+      "posIncluded": false,
+      "description": "For new and part-time trainers.",
+      "features": [
+        {
+          "label": "Up to 5 clients",
+          "status": "live"
+        },
+        {
+          "label": "50 Tali AI credits a month",
+          "status": "live"
+        },
+        {
+          "label": "Programme builder",
+          "status": "live"
+        },
+        {
+          "label": "Session logging",
+          "status": "live"
+        },
+        {
+          "label": "Client check-ins",
+          "status": "live"
+        },
+        {
+          "label": "Nutrition tracking",
+          "status": "live"
+        },
+        {
+          "label": "Messaging",
+          "status": "live"
+        },
+        {
+          "label": "Appointments and scheduling",
+          "status": "live"
+        },
+        {
+          "label": "Auto-regulation engine",
+          "status": "live"
+        },
+        {
+          "label": "Push notifications",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace and client payments (POS add-on)",
+          "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
+          "status": "addon"
+        }
+      ]
+    },
     {
       "id": "solo_10",
       "name": "Solo 10",
@@ -212,9 +277,9 @@ window.TOTALITY_PLANS = {
       "audience": "solo",
       "clientLimit": 50,
       "trainers": "1",
-      "monthly": "A$98.99",
-      "monthlyCents": 9899,
-      "yearly": "A$1,009.69",
+      "monthly": "A$94.99",
+      "monthlyCents": 9499,
+      "yearly": "A$968.90",
       "yearlyNote": "Whole year, billed yearly (15% off monthly x 12)",
       "taliCredits": 300,
       "taliLabel": "300 a month",
@@ -337,6 +402,71 @@ window.TOTALITY_PLANS = {
       ]
     },
     {
+      "id": "solo_200",
+      "name": "Solo 200",
+      "audience": "solo",
+      "clientLimit": 200,
+      "trainers": "1",
+      "monthly": "A$249.99",
+      "monthlyCents": 24999,
+      "yearly": "A$2,549.90",
+      "yearlyNote": "Whole year, billed yearly (15% off monthly x 12)",
+      "taliCredits": 600,
+      "taliLabel": "600 a month",
+      "posIncluded": false,
+      "description": "For the biggest independent coaching businesses.",
+      "features": [
+        {
+          "label": "Up to 200 clients",
+          "status": "live"
+        },
+        {
+          "label": "600 Tali AI credits a month",
+          "status": "live"
+        },
+        {
+          "label": "Programme builder",
+          "status": "live"
+        },
+        {
+          "label": "Session logging",
+          "status": "live"
+        },
+        {
+          "label": "Client check-ins",
+          "status": "live"
+        },
+        {
+          "label": "Nutrition tracking",
+          "status": "live"
+        },
+        {
+          "label": "Messaging",
+          "status": "live"
+        },
+        {
+          "label": "Appointments and scheduling",
+          "status": "live"
+        },
+        {
+          "label": "Auto-regulation engine",
+          "status": "live"
+        },
+        {
+          "label": "Push notifications",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace and client payments (POS add-on)",
+          "status": "addon"
+        },
+        {
+          "label": "Your logo and colours (branding add-on)",
+          "status": "addon"
+        }
+      ]
+    },
+    {
       "id": "studio",
       "name": "Studio",
       "audience": "gym",
@@ -406,19 +536,88 @@ window.TOTALITY_PLANS = {
       ]
     },
     {
-      "id": "enterprise",
-      "name": "Enterprise",
+      "id": "club",
+      "name": "Club",
       "audience": "gym",
-      "clientLimit": 5000,
+      "clientLimit": 1500,
       "trainers": "Unlimited",
       "monthly": "A$649.99",
       "monthlyCents": 64999,
       "yearly": "A$6,629.90",
       "yearlyNote": "Whole year, billed yearly (15% off monthly x 12)",
+      "taliCredits": 2500,
+      "taliLabel": "2,500 a month",
+      "posIncluded": true,
+      "description": "For one large gym with a big team and member roster.",
+      "features": [
+        {
+          "label": "Up to 1,500 clients",
+          "status": "live"
+        },
+        {
+          "label": "2,500 Tali AI credits a month",
+          "status": "live"
+        },
+        {
+          "label": "All trainer tools",
+          "status": "live"
+        },
+        {
+          "label": "Unlimited trainers",
+          "status": "live"
+        },
+        {
+          "label": "Member billing and POS",
+          "status": "live"
+        },
+        {
+          "label": "Classes and scheduling",
+          "status": "live"
+        },
+        {
+          "label": "Payroll summary",
+          "status": "live"
+        },
+        {
+          "label": "Compliance hub",
+          "status": "live"
+        },
+        {
+          "label": "Leads CRM",
+          "status": "live"
+        },
+        {
+          "label": "Import wizard",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace",
+          "status": "live"
+        },
+        {
+          "label": "Reports and exports",
+          "status": "live"
+        },
+        {
+          "label": "Your logo and colours (branding included)",
+          "status": "live"
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "audience": "gym",
+      "clientLimit": 5000,
+      "trainers": "Unlimited",
+      "monthly": "A$999.99",
+      "monthlyCents": 99999,
+      "yearly": "A$10,199.90",
+      "yearlyNote": "Whole year, billed yearly (15% off monthly x 12)",
       "taliCredits": null,
       "taliLabel": "Unlimited (fair use)",
       "posIncluded": true,
-      "description": "For larger gyms with a big team and member roster.",
+      "description": "For the largest gyms, with unlimited Tali AI.",
       "features": [
         {
           "label": "Up to 5,000 clients",
@@ -482,7 +681,7 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Solo plans",
-      "description": "Marketplace and client payments through your own Stripe account. Included on Studio and Enterprise.",
+      "description": "Marketplace and client payments through your own Stripe account. Included on Studio, Club and Enterprise.",
       "tali": "approved"
     },
     {
@@ -508,7 +707,7 @@ window.TOTALITY_PLANS = {
     {
       "id": "pos_ai_bundle",
       "name": "POS + AI bundle",
-      "price": "A$16.98",
+      "price": "A$16.99",
       "period": "month",
       "for": "Solo plans",
       "credits": 1000,
@@ -530,7 +729,7 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Studio",
-      "description": "Your gym's logo, name and colour in the Totality app, member emails and push notifications, for every member and trainer. Included on Enterprise.",
+      "description": "Your gym's logo, name and colour in the Totality app, member emails and push notifications, for every member and trainer. Included on Club and Enterprise.",
       "tali": "wink"
     },
     {
@@ -555,12 +754,13 @@ window.TOTALITY_PLANS = {
     }
   ],
   "fees": {
+    "platformFeePercent": 3.5,
     "processingFeePercent": 3.5,
     "commissionPercent": 0,
-    "text": "No commission on your coaching revenue. A 3.5% processing fee applies to in-app payments."
+    "text": "No commission on your coaching revenue. A 3.5% platform fee applies to in-app payments. It is taken from your payout, never added to what your clients pay."
   },
   "custom": {
-    "text": "More than 5,000 clients, multiple locations or white label: contact us for a custom quote."
+    "text": "More than 5,000 clients or a custom setup: contact us for a quote."
   },
   "tali": {
     "credits": {

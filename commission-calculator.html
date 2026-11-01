@@ -24,7 +24,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="See how much booking commission costs you each month, and compare it with a Totality plan plus its 3.5% processing fee.">
+<meta name="description" content="See how much booking commission costs you each month, and compare it with a Totality plan plus its 3.5% platform fee.">
 
 <link rel="canonical" href="https://totality360.com.au/commission-calculator.html">
 <meta property="og:type" content="website">
@@ -442,13 +442,13 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="field">
       <label class="field-label" for="plan">Plan</label>
       <select id="plan" aria-describedby="plan-hint"></select>
-      <p class="field-hint" id="plan-hint">Solo plans are priced by how many clients you coach. Studio and Enterprise are for gyms with a team.</p>
+      <p class="field-hint" id="plan-hint">Solo plans are priced by how many clients you coach. Studio, Club and Enterprise are for gyms with a team.</p>
     </div>
 
     <div class="field" id="pos-field">
       <label class="check-row" for="pos">
         <input type="checkbox" id="pos" checked />
-        <span>Add the POS add-on (<span id="pos-price">A$9.99</span>/month) so clients pay in the app. Solo plans need it to take payments; Studio and Enterprise include it.</span>
+        <span>Add the POS add-on (<span id="pos-price">A$9.99</span>/month) so clients pay in the app. Solo plans need it to take payments; Studio, Club and Enterprise include it.</span>
       </label>
     </div>
   </div>
@@ -488,7 +488,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
     <div class="result-cta" id="cta-block">
       <h3 id="cta-heading">Keep that money in your business.</h3>
-      <p id="cta-body">Totality is a flat monthly plan with no commission on your coaching revenue. A 3.5% processing fee applies to payments taken in the app, and it's itemised on every payout.</p>
+      <p id="cta-body">Totality is a flat monthly plan with no commission on your coaching revenue. A 3.5% platform fee applies to payments taken in the app. It comes out of your payout, is itemised on every payout, and is never added to what your clients pay.</p>
       <a href="get-totality.html" class="btn-cta" data-track-placement="commission_results">Start your 7 day free trial</a>
     </div>
 
@@ -590,22 +590,25 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
 <script src="/data/plans.js"></script>
 <script>
-  // Fallback mirrors Livewell-1 lib/tiers.ts (Oct 22 2026) if data/plans.js fails to load.
+  // Fallback mirrors data/plans.json (Nov 1 2026) if data/plans.js fails to load.
   const FALLBACK_TIERS = [
+    { id: 'solo_5', name: 'Solo 5', audience: 'solo', clientLimit: 5, monthlyCents: 1999, posIncluded: false },
     { id: 'solo_10', name: 'Solo 10', audience: 'solo', clientLimit: 10, monthlyCents: 2999, posIncluded: false },
     { id: 'solo_20', name: 'Solo 20', audience: 'solo', clientLimit: 20, monthlyCents: 3999, posIncluded: false },
     { id: 'solo_30', name: 'Solo 30', audience: 'solo', clientLimit: 30, monthlyCents: 6499, posIncluded: false },
-    { id: 'solo_50', name: 'Solo 50', audience: 'solo', clientLimit: 50, monthlyCents: 9899, posIncluded: false },
+    { id: 'solo_50', name: 'Solo 50', audience: 'solo', clientLimit: 50, monthlyCents: 9499, posIncluded: false },
     { id: 'solo_100', name: 'Solo 100', audience: 'solo', clientLimit: 100, monthlyCents: 14999, posIncluded: false },
+    { id: 'solo_200', name: 'Solo 200', audience: 'solo', clientLimit: 200, monthlyCents: 24999, posIncluded: false },
     { id: 'studio', name: 'Studio', audience: 'gym', clientLimit: 500, monthlyCents: 38999, posIncluded: true },
-    { id: 'enterprise', name: 'Enterprise', audience: 'gym', clientLimit: 5000, monthlyCents: 64999, posIncluded: true },
+    { id: 'club', name: 'Club', audience: 'gym', clientLimit: 1500, monthlyCents: 64999, posIncluded: true },
+    { id: 'enterprise', name: 'Enterprise', audience: 'gym', clientLimit: 5000, monthlyCents: 99999, posIncluded: true },
   ];
   const DATA = window.TOTALITY_PLANS || {};
   const TIERS = (Array.isArray(DATA.tiers) && DATA.tiers.length ? DATA.tiers : FALLBACK_TIERS)
     .filter(t => typeof t.monthlyCents === 'number');
   const posAddon = (DATA.addons || []).find(a => a.id === 'pos');
   const POS_PRICE = posAddon ? parseFloat(String(posAddon.price).replace(/[^0-9.]/g, '')) || 9.99 : 9.99;
-  const PROCESSING_RATE = ((DATA.fees && DATA.fees.processingFeePercent) || 3.5) / 100;
+  const PLATFORM_RATE = ((DATA.fees && (DATA.fees.platformFeePercent || DATA.fees.processingFeePercent)) || 3.5) / 100;
   const COMMISSION_CAP = 30;
 
   const state = { rate: 0.20 };
@@ -681,11 +684,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     const commissionPerBooking = Math.min(price * rate, COMMISSION_CAP);
     const monthlyCommissionCost = bookings * commissionPerBooking;
 
-    // Totality: plan price + POS add-on (Solo plans only, if ticked) + 3.5% processing
-    // on payments taken in the app. No commission.
+    // Totality: plan price + POS add-on (Solo plans only, if ticked) + 3.5% platform fee
+    // on payments taken in the app (taken from the payout, not added to the client's price). No commission.
     const planCost = tier.monthlyCents / 100;
     const posCost = (!tier.posIncluded && $('pos').checked) ? POS_PRICE : 0;
-    const processingCost = monthlyRevenue * PROCESSING_RATE;
+    const platformFeeCost = monthlyRevenue * PLATFORM_RATE;
     $('res-commission-cost').textContent = fmtMoney(monthlyCommissionCost);
 
     const capped = price * rate > COMMISSION_CAP;
@@ -693,19 +696,19 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       'Your bookings: ' + bookings.toLocaleString('en-AU') + ' x ' + fmtCents(price) + ' = ' + fmtMoney(monthlyRevenue) + ' a month.',
       'Commission: ' + Math.round(rate * 100) + '% of each booking' + (capped ? ', capped at A$30 per booking' : '') + ' = ' + fmtMoney(monthlyCommissionCost) + ' a month.',
       'Totality plan: ' + tier.name + ' at ' + fmtCents(planCost) + ' a month.',
-      tier.posIncluded ? 'POS: included in ' + tier.name + '.' : (posCost ? 'POS add-on: ' + fmtCents(posCost) + ' a month.' : 'POS add-on: not added, so clients would pay you outside the app (no processing fee counted below).'),
+      tier.posIncluded ? 'POS: included in ' + tier.name + '.' : (posCost ? 'POS add-on: ' + fmtCents(posCost) + ' a month.' : 'POS add-on: not added, so clients would pay you outside the app (no platform fee counted below).'),
     ];
-    const processingShown = tier.posIncluded || posCost ? processingCost : 0;
+    const platformFeeShown = tier.posIncluded || posCost ? platformFeeCost : 0;
     if (tier.posIncluded || posCost) {
-      lines.push('Processing fee: 3.5% of ' + fmtMoney(monthlyRevenue) + ' = ' + fmtMoney(processingCost) + ' a month. This is a card processing fee on in-app payments, not a commission.');
+      lines.push('Platform fee: ' + +(PLATFORM_RATE * 100).toFixed(2) + '% of ' + fmtMoney(monthlyRevenue) + ' = ' + fmtMoney(platformFeeCost) + ' a month. It is taken from your payout on in-app payments and never added to what your clients pay. It is not a commission.');
     }
-    const totShown = planCost + posCost + processingShown;
+    const totShown = planCost + posCost + platformFeeShown;
     $('res-totality-cost').textContent = fmtMoney(totShown);
     lines.push('Totality total: ' + fmtMoney(totShown) + ' a month, compared with ' + fmtMoney(monthlyCommissionCost) + ' in commission.');
     $('maths-list').innerHTML = '';
     lines.forEach(l => { const li = document.createElement('li'); li.textContent = l; $('maths-list').appendChild(li); });
 
-    // Headline uses what is actually counted (no processing fee if payments stay outside the app).
+    // Headline uses what is actually counted (no platform fee if payments stay outside the app).
     const realDiff = monthlyCommissionCost - totShown;
     const realSaves = realDiff > 0;
     $('res-hero-label').textContent = realSaves ? 'Estimated saving with Totality' : 'Commission costs less at this volume';
@@ -721,10 +724,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       $('cta-body').textContent = 'At this booking volume a commission platform costs less than a Totality plan. Totality is built for coaches and gyms who want programming, check-ins, nutrition and billing in one place, so it can still be worth a look as you grow.';
     } else if (isCoach === 'gym_owner') {
       $('cta-heading').textContent = 'Keep that money in your business.';
-      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your coaching and class revenue. A 3.5% processing fee applies to payments taken in the app, and it is itemised on every payout.';
+      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your coaching and class revenue. A 3.5% platform fee applies to payments taken in the app. It comes out of your payout, is itemised on every payout, and is never added to what your members pay.';
     } else {
       $('cta-heading').textContent = 'Keep more of what you earn.';
-      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your PT revenue. A 3.5% processing fee applies to payments taken in the app, and it is itemised on every payout.';
+      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your PT revenue. A 3.5% platform fee applies to payments taken in the app. It comes out of your payout, is itemised on every payout, and is never added to what your clients pay.';
     }
 
     $('results').style.display = 'block';

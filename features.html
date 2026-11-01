@@ -130,7 +130,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="container">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/totality.html">Totality</a> / Features</nav>
     <h1>Everything in Totality</h1>
-    <p class="lead">Tools for trainers, tools for gyms, and the app your clients use. Items marked Gym plans come with Studio and Enterprise. Everything else is on every plan.</p>
+    <p class="lead">Tools for trainers, tools for gyms, and the app your clients use. Items marked Gym plans come with Studio, Club and Enterprise. Everything else is on every plan.</p>
     <div class="ft-nav" aria-label="Jump to">
       <a href="#trainers">For trainers</a>
       <a href="#gyms">For gyms</a>
@@ -168,7 +168,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="container">
     <div class="section-head">
       <h2>For gyms and studios</h2>
-      <p class="section-sub">Run the front desk, the floor and the books. These come with the Studio and Enterprise plans.</p>
+      <p class="section-sub">Run the front desk, the floor and the books. These come with the Studio, Club and Enterprise plans.</p>
     </div>
     <div class="ft-grid">
       <article class="card"><div class="cluster"><span class="pill pill--orange">Gym plans</span><span class="pill pill--new">New</span></div><h3>Needs attention dashboard</h3><p>Failed payments, memberships expiring in the next 14 days, check-ins waiting for a reply, leads to follow up and classes that are full or nearly empty, on one screen.</p></article>
@@ -232,7 +232,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="table-wrap">
       <table class="table inc-table" id="incTable">
         <caption class="visually-hidden">Features by plan</caption>
-        <thead><tr><th scope="col">Feature</th><th scope="col">Solo plans</th><th scope="col">Studio</th><th scope="col">Enterprise</th></tr></thead>
+        <thead><tr><th scope="col">Feature</th><th scope="col">Solo plans</th><th scope="col">Studio</th><th scope="col">Club</th><th scope="col">Enterprise</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -336,15 +336,25 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   var U = window.PlansUI; if (!U) return;
   var esc = U.esc;
   var solo = U.tiersFor('solo'), gym = U.tiersFor('gym');
-  var studio = gym[0], ent = gym[gym.length - 1];
+  // One column for all Solo plans, then one column per gym plan (Studio, Club, Enterprise).
+  document.querySelector('#incTable thead tr').innerHTML = '<th scope="col">Feature</th><th scope="col">Solo plans</th>' +
+    gym.map(function (t) { return '<th scope="col">' + esc(t.name) + '</th>'; }).join('');
   var rows = [];
-  rows.push(['Clients', solo[0].clientLimit + ' to ' + solo[solo.length - 1].clientLimit.toLocaleString('en-AU') + ' (by plan)', 'Up to ' + studio.clientLimit.toLocaleString('en-AU'), 'Up to ' + ent.clientLimit.toLocaleString('en-AU')]);
-  rows.push(['Trainers', solo[0].trainers, studio.trainers, ent.trainers]);
-  rows.push(['Tali AI credits', solo[0].taliCredits + ' to ' + solo[solo.length - 1].taliCredits + ' a month', studio.taliLabel, ent.taliLabel]);
+  function perGym(fn) { return gym.map(fn); }
+  rows.push(['Clients', solo[0].clientLimit + ' to ' + solo[solo.length - 1].clientLimit.toLocaleString('en-AU') + ' (by plan)'].concat(
+    perGym(function (t) { return 'Up to ' + t.clientLimit.toLocaleString('en-AU'); })));
+  rows.push(['Trainers', esc(solo[0].trainers)].concat(perGym(function (t) { return esc(t.trainers); })));
+  rows.push(['Tali AI credits', solo[0].taliCredits + ' to ' + solo[solo.length - 1].taliCredits + ' a month'].concat(
+    perGym(function (t) { return esc(t.taliLabel); })));
+  function isBrand(label) { return /^Your logo and colours/.test(label); }
   function has(t, label) {
     var f = t.features.filter(function (x) { return x.label === label; })[0];
     if (!f) return null;
     return f.status;
+  }
+  function brandStatus(t) {
+    var f = t.features.filter(function (x) { return isBrand(x.label); })[0];
+    return f ? f.status : null;
   }
   function cell(st) {
     if (st === 'live') return '<span class="yes">Included</span>';
@@ -352,21 +362,26 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     if (st === 'coming_soon') return '<span class="no">Coming soon</span>';
     return '<span class="no">No</span>';
   }
-  // Solo tools: included on gym plans as "All trainer tools"
+  // Solo tools: included on gym plans as "All trainer tools", and POS is included on gym plans.
   solo[0].features.slice(2).forEach(function (f) {
+    if (isBrand(f.label)) {
+      rows.push(['Your logo and colours', cell(f.status)].concat(perGym(function (t) { return cell(brandStatus(t)); })));
+      return;
+    }
     var label = f.label.replace(' (POS add-on)', '');
-    var gymSt = f.status === 'addon' ? 'live' : (has(studio, 'All trainer tools') || 'live');
-    rows.push([esc(label), cell(f.status), cell(gymSt), cell(gymSt)]);
+    rows.push([esc(label), cell(f.status)].concat(perGym(function (t) {
+      return cell(f.status === 'addon' ? (t.posIncluded ? 'live' : 'addon') : (has(t, 'All trainer tools') || 'live'));
+    })));
   });
   // Gym-only features
   var seen = {};
   gym.forEach(function (t) { t.features.slice(2).forEach(function (f) { seen[f.label] = true; }); });
   Object.keys(seen).forEach(function (label) {
-    if (label === 'All trainer tools' || label === 'Marketplace' || label === 'Unlimited trainers') return;
-    rows.push([esc(label) + ' <span class="pill pill--orange">Gym plans</span>', cell(null), cell(has(studio, label)), cell(has(ent, label))]);
+    if (label === 'All trainer tools' || label === 'Marketplace' || label === 'Unlimited trainers' || isBrand(label)) return;
+    rows.push([esc(label) + ' <span class="pill pill--orange">Gym plans</span>', cell(null)].concat(perGym(function (t) { return cell(has(t, label)); })));
   });
   document.querySelector('#incTable tbody').innerHTML = rows.map(function (r) {
-    return '<tr><th scope="row">' + r[0] + '</th><td>' + r[1] + '</td><td>' + r[2] + '</td><td>' + r[3] + '</td></tr>';
+    return '<tr><th scope="row">' + r[0] + '</th>' + r.slice(1).map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>';
   }).join('');
 })();
 </script>
