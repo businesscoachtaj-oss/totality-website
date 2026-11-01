@@ -31,7 +31,7 @@ EXCLUDE = {
 EXCLUDE_DIRS = {"partials", "node_modules", ".git", "tools", "skool-tools"}
 NUTRITION_PAGES = {
     "nutrition.html", "get-nutrition.html", "nutrition-features.html",
-    "calculator.html", "high-protein-meals.html", "high-protein-meals-download.html",
+    "calculator.html",
 }
 
 def read(p):
