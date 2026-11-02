@@ -217,7 +217,7 @@
   <!-- ── Hero ── -->
   <div class="hero">
     <h1>Privacy Policy</h1>
-    <p>Last updated: October 2026 &nbsp;·&nbsp; Totality 360 Pty Ltd (ABN 58 698 902 975)</p>
+    <p>Last updated: 2 November 2026 &nbsp;·&nbsp; Totality 360 Pty Ltd (ABN 58 698 902 975)</p>
   </div>
 
   <!-- ── Body ── -->
@@ -468,6 +468,55 @@
         To have your email removed, email <a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a>.
       </p>
     </div>
+
+        <!-- 4c. Google account connection in Tali HQ and Totality (added 2 Nov 2026) -->
+    <div class="section" id="google">
+      <h2><span class="section-num">4c</span>Connecting Your Google Account (Gmail and Google Calendar)</h2>
+      <p>
+        In <strong>Tali HQ</strong> you can connect your Google account so Tali can sort your Gmail inbox and work with
+        your Google Calendar. In <strong>Totality</strong>, trainers can connect Google Calendar only. Both are optional.
+        Nothing is read until you choose Connect Google, sign in with Google and select Allow on Google's own screen.
+      </p>
+
+      <p><strong>What we ask Google for, and why</strong></p>
+      <ul>
+        <li><strong>Read your Gmail</strong> (Tali HQ only): so Tali can read new mail as it arrives, sort it into "needs you", "FYI" and spam, write a one-line summary and draft a reply for you to check.</li>
+        <li><strong>Send email from your Gmail</strong> (Tali HQ only): so a reply Tali drafted can go out from your own address when you tap Send. Tali never sends anything on her own.</li>
+        <li><strong>See your Google Calendar</strong>: so Tali can tell you what is on today, find free gaps, and in Totality grey out times you are already busy in the booking screen.</li>
+        <li><strong>Add and change calendar events</strong>: so a booking you approve lands in your Google Calendar, and in Totality your PT sessions and classes are mirrored to your calendar.</li>
+        <li><strong>Your email address</strong>: to show you which Google account is connected.</li>
+      </ul>
+
+      <p><strong>What we store</strong></p>
+      <ul>
+        <li>A sign-in token for your Google account, so you do not have to sign in every time. It is kept in our database at Supabase, is never shown in the app, and is deleted the moment you disconnect.</li>
+        <li>In Tali HQ: the emails Tali has sorted for you (sender, subject, the text, Tali's summary and category), so you can see them in the app. Only mail received after you connected is read. Each email is deleted 90 days after it arrived, or straight away when you disconnect.</li>
+        <li>In Totality: the link between a Totality appointment and its Google Calendar event, so changes stay in step.</li>
+        <li>We do not store your calendar events in Tali HQ. Tali reads today's events live when you open the app and when she writes your morning brief.</li>
+      </ul>
+
+      <p><strong>How your Google data is used</strong></p>
+      <p>
+        To sort an email, draft a reply or write your brief, Tali sends the email text or today's calendar to Anthropic's
+        Claude model and gets the summary or draft back. Anthropic processes this under its commercial terms, does not use
+        it to train its models, and does not keep it beyond the request. Nobody at Totality 360 reads your mail. Your Google
+        data is used only to provide the Tali features described above. It is never used for advertising, never sold,
+        never shared with any other third party, and never used to train AI models.
+      </p>
+      <p>
+        Our use of information received from Google APIs follows the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+        including the Limited Use requirements.
+      </p>
+
+      <p><strong>Your choices</strong></p>
+      <ul>
+        <li>Disconnect at any time: in Tali HQ under Me, then Connections; in Totality under your Google Calendar card. This deletes the sign-in token and the synced emails straight away.</li>
+        <li>You can also remove access from Google's side at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+        <li>Questions or a deletion request: email <a href="mailto:admintotality@gmail.com">admintotality@gmail.com</a>.</li>
+      </ul>
+    </div>
+
 
     <!-- 5. Sharing -->
     <div class="section">
