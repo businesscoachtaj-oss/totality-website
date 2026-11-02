@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Totality 360 | Links</title>
+<meta name="description" content="Totality, Totality Nutrition and Tali HQ in one place. Gym and coaching software, macro tracking and an AI teammate, made in Australia.">
+<meta name="theme-color" content="#0B0610">
+<meta property="og:title" content="Totality 360">
+<meta property="og:description" content="Gym software, nutrition and an AI teammate. Made in Australia.">
+<meta property="og:image" content="https://totality360.com.au/og-image.png">
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/favicon-180.png">
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -8,328 +24,363 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '3550080485153029');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Totality: Links</title>
-<meta name="description" content="Find Totality on Instagram, YouTube, and the web.">
 <style>
-  :root {
-    --orange: #ED8008;
-    --orange-light: #F5A543;
-    --orange-dark: #C46800;
-    --white: #FFFFFF;
-    --off-white: #F7F7F7;
-    --dark: #272626;
-    --muted: #A0A0A0;
-    --border: #E8E8E8;
-    --purple: #6C3483;
-    --purple-tint: #F0E6F6;
-    --nutrition-blue: #1565A0;
-  }
+@font-face { font-family: "Figtree"; font-weight: 300 900; font-display: swap; src: url("/fonts/figtree-latin-wght.woff2") format("woff2"); }
+@font-face { font-family: "Bricolage Grotesque"; font-weight: 200 800; font-display: swap; src: url("/fonts/bricolage-grotesque-latin-wght.woff2") format("woff2"); }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --orange: #ED8008; --orange-hi: #FFA53A;
+  --purple: #6C3483; --purple-hi: #B57AD6;
+  --blue: #1565A0; --blue-hi: #5AA9E6;
+  --bg: #0B0610; --bg-2: #140B1B;
+  --glass: rgba(255,255,255,0.06); --glass-2: rgba(255,255,255,0.1);
+  --line: rgba(255,255,255,0.12); --line-hi: rgba(255,255,255,0.22);
+  --text: #FFFFFF; --soft: #D9D2E0; --muted: #A79BB3;
+  --a1: var(--orange); --a2: var(--purple); --a3: var(--blue);
+  --display: "Bricolage Grotesque", "Figtree", system-ui, sans-serif;
+  --body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: dark;
+}
+/* Worlds: the same page in three atmospheres */
+:root[data-world="inferno"] { --a1: #FF6A00; --a2: #ED8008; --a3: #B3261E; --bg: #0E0604; --bg-2: #1A0B06; }
+:root[data-world="space"]   { --a1: #5AA9E6; --a2: #6C3483; --a3: #1565A0; --bg: #04060E; --bg-2: #0A0F1E; }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--off-white);
-    color: var(--dark);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 56px 20px 40px;
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); }
+body {
+  font-family: var(--body); color: var(--text); background: var(--bg);
+  -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden;
+  padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(40px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button, input { font: inherit; }
 
-  a { text-decoration: none; color: inherit; }
+/* ---------- Atmosphere ---------- */
+.sky { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; background: radial-gradient(120% 80% at 50% 0%, var(--bg-2), var(--bg) 70%); }
+.blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .55; mix-blend-mode: screen; will-change: transform; }
+.blob.b1 { width: 70vmax; height: 70vmax; left: -25vmax; top: -30vmax; background: var(--a1); animation: drift1 22s ease-in-out infinite alternate; opacity: .35; }
+.blob.b2 { width: 60vmax; height: 60vmax; right: -25vmax; top: 10vh; background: var(--a2); animation: drift2 26s ease-in-out infinite alternate; }
+.blob.b3 { width: 55vmax; height: 55vmax; left: -10vmax; bottom: -35vmax; background: var(--a3); animation: drift3 30s ease-in-out infinite alternate; opacity: .45; }
+@keyframes drift1 { to { transform: translate(18vmax, 12vmax) scale(1.15); } }
+@keyframes drift2 { to { transform: translate(-16vmax, 20vmax) scale(.9); } }
+@keyframes drift3 { to { transform: translate(20vmax, -14vmax) scale(1.1); } }
+.grain { position: absolute; inset: -50%; opacity: .07; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 
-  .wrap {
-    width: 100%;
-    max-width: 420px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.page { position: relative; z-index: 1; width: 100%; max-width: 480px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
 
-  .logo-block {
-    width: 100%;
-    background: var(--white);
-    border-radius: 20px;
-    padding: 28px 20px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 24px;
-  }
+/* ---------- Reveal on load ---------- */
+.rise { opacity: 0; transform: translateY(18px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+@keyframes rise { to { opacity: 1; transform: none; } }
 
-  .logo {
-    width: 140px;
-    height: auto;
-  }
+/* ---------- Header ---------- */
+.head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 6px 0 4px; }
+.avatar { width: 84px; height: 84px; border-radius: 26px; padding: 3px; background: conic-gradient(from 200deg, var(--orange), var(--purple), var(--blue), var(--orange)); animation: spin 8s linear infinite; }
+.avatar img { width: 100%; height: 100%; border-radius: 23px; background: #fff; animation: spin 8s linear infinite reverse; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.name { font-family: var(--display); font-weight: 800; font-size: 30px; letter-spacing: -.02em; line-height: 1; }
+.handle { color: var(--muted); font-size: 14px; font-weight: 600; }
+.bio { color: var(--soft); font-size: 15px; line-height: 1.45; max-width: 34ch; text-wrap: balance; }
+.socials { display: flex; gap: 10px; margin-top: 4px; }
+.soc { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: var(--glass); border: 1px solid var(--line); transition: transform .2s, background .2s, border-color .2s; }
+.soc:hover { transform: translateY(-3px); background: var(--glass-2); border-color: var(--line-hi); }
+.soc svg { width: 20px; height: 20px; fill: #fff; }
 
-  .eyebrow {
-    display: inline-block;
-    background: var(--purple-tint);
-    color: var(--purple);
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 6px 16px;
-    border-radius: 999px;
-    margin-bottom: 14px;
-    text-align: center;
-  }
+/* ---------- Cards ---------- */
+.card { position: relative; border-radius: 26px; background: var(--glass); border: 1px solid var(--line); overflow: hidden; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.label { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding: 10px 6px 0; }
+.label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line), transparent); }
 
-  .sub {
-    color: var(--muted);
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 8px;
-    margin-bottom: 32px;
-  }
+/* Tali hero */
+.hero { min-height: 420px; display: flex; align-items: flex-end; }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; transform: scale(1.04); animation: breathe 7s ease-in-out infinite; }
+@keyframes breathe { 50% { transform: scale(1.09) translateY(-6px); } }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(11,6,16,.6) 62%, rgba(11,6,16,.96)); }
+.hero-copy { position: relative; z-index: 1; padding: 22px; }
+.bubble { display: inline-block; background: #fff; color: #1C1420; font-weight: 800; font-size: 15px; padding: 9px 14px; border-radius: 16px 16px 16px 4px; margin-bottom: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.35); animation: pop 3.6s ease-in-out infinite; transform-origin: 0 100%; }
+@keyframes pop { 0%, 80%, 100% { transform: none; } 86% { transform: rotate(-3deg) scale(1.04); } 92% { transform: rotate(2deg); } }
+.hero h1 { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1.02; letter-spacing: -.025em; text-wrap: balance; }
+.hero h1 em { font-style: normal; background: linear-gradient(90deg, var(--orange-hi), var(--purple-hi), var(--blue-hi)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { color: var(--soft); font-size: 15px; margin-top: 8px; line-height: 1.45; }
 
-  .links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
+/* Ticker */
+.ticker { overflow: hidden; border-radius: 999px; border: 1px solid var(--line); background: var(--glass); padding: 11px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.ticker-track { display: flex; gap: 28px; width: max-content; animation: tick 28s linear infinite; font-weight: 700; font-size: 14px; color: var(--soft); white-space: nowrap; }
+.ticker-track span::before { content: "✦"; color: var(--orange-hi); margin-right: 10px; }
+@keyframes tick { to { transform: translateX(-50%); } }
 
-  .link-card {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    width: 100%;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px 18px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
-  }
+/* Tali HQ waitlist */
+.thq { padding: 22px; isolation: isolate; border-color: rgba(181,122,214,.45); }
+.thq > img { position: absolute; right: -10px; top: -4px; width: 150px; height: 175px; object-fit: cover; object-position: 50% 12%; z-index: -1; opacity: .95; border-radius: 0 0 0 40px; -webkit-mask-image: radial-gradient(120% 100% at 100% 0%, #000 45%, transparent 75%); mask-image: radial-gradient(120% 100% at 100% 0%, #000 45%, transparent 75%); }
+.thq::before { content: ""; position: absolute; inset: 0; z-index: -2; background: radial-gradient(90% 90% at 100% 0%, rgba(108,52,131,.65), transparent 60%), linear-gradient(160deg, rgba(108,52,131,.35), rgba(21,101,160,.15)); }
+.shine { position: absolute; inset: 0; z-index: -1; background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,.12) 50%, transparent 60%); background-size: 250% 100%; animation: shine 5s ease-in-out infinite; pointer-events: none; }
+@keyframes shine { 0% { background-position: 130% 0; } 60%, 100% { background-position: -30% 0; } }
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid var(--line-hi); }
+.pill .dot { width: 7px; height: 7px; border-radius: 50%; background: #3DDC84; box-shadow: 0 0 0 0 rgba(61,220,132,.7); animation: ping 1.8s infinite; }
+@keyframes ping { 70% { box-shadow: 0 0 0 8px rgba(61,220,132,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,132,0); } }
+.thq h2 { font-family: var(--display); font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1.05; margin-top: 12px; max-width: 9ch; }
+.thq .sub { color: var(--soft); font-size: 14px; line-height: 1.45; margin-top: 18px; }
+.deal { display: flex; flex-direction: column; gap: 2px; margin-top: 14px; }
+.deal b { font-family: var(--display); font-size: 40px; font-weight: 800; letter-spacing: -.03em; line-height: 1; background: linear-gradient(90deg, #fff, var(--purple-hi)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.deal span { color: var(--soft); font-size: 13px; font-weight: 600; }
+.join { display: flex; gap: 8px; margin-top: 16px; }
+.join input[type=email] { flex: 1; min-width: 0; height: 50px; border-radius: 16px; border: 1px solid var(--line-hi); background: rgba(0,0,0,.35); color: #fff; padding: 0 16px; font-size: 15px; outline: none; transition: border-color .2s, box-shadow .2s; }
+.join input[type=email]::placeholder { color: var(--muted); }
+.join input[type=email]:focus { border-color: var(--purple-hi); box-shadow: 0 0 0 4px rgba(181,122,214,.25); }
+.join button { height: 50px; padding: 0 18px; border: 0; border-radius: 16px; background: #fff; color: #2A1433; font-weight: 800; font-size: 15px; cursor: pointer; transition: transform .15s; white-space: nowrap; }
+.join button:active { transform: scale(.97); }
+.join button:disabled { opacity: .7; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.fine { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.msg { font-size: 13px; margin-top: 10px; color: #FFB4A8; }
+.done { margin-top: 16px; padding: 14px 16px; border-radius: 16px; background: rgba(61,220,132,.12); border: 1px solid rgba(61,220,132,.4); font-weight: 700; font-size: 15px; }
+.more { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 700; color: var(--soft); border-bottom: 1px solid var(--line-hi); }
 
-  .link-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--orange);
-    box-shadow: 0 6px 20px rgba(237,128,8,0.12);
-  }
+/* App tiles */
+.apps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.app { padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.app.tot { background: linear-gradient(170deg, rgba(237,128,8,.32), rgba(237,128,8,.06) 60%); border-color: rgba(237,128,8,.45); }
+.app.nut { background: linear-gradient(170deg, rgba(21,101,160,.45), rgba(21,101,160,.08) 60%); border-color: rgba(90,169,230,.45); }
+.app-top { display: flex; align-items: center; gap: 10px; }
+.app-top img { width: 46px; height: 46px; border-radius: 13px; box-shadow: 0 8px 20px rgba(0,0,0,.35); }
+.app h3 { font-family: var(--display); font-size: 17px; font-weight: 800; line-height: 1.1; letter-spacing: -.01em; }
+.app p { color: var(--soft); font-size: 13px; line-height: 1.4; flex: 1; }
+.btns { display: flex; flex-direction: column; gap: 6px; }
+.btn { display: flex; align-items: center; justify-content: center; gap: 6px; height: 40px; border-radius: 12px; font-weight: 800; font-size: 13px; background: rgba(255,255,255,.1); border: 1px solid var(--line); transition: background .2s, transform .15s; }
+.btn:hover { background: rgba(255,255,255,.18); }
+.btn:active { transform: scale(.97); }
+.btn.solid.tot { background: var(--orange); border-color: var(--orange); color: #fff; }
+.btn.solid.nut { background: var(--blue); border-color: var(--blue-hi); color: #fff; }
+.btn svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
+.btn.soon { opacity: .55; pointer-events: none; }
 
-  .link-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background: rgba(237,128,8,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    color: var(--orange);
-  }
+/* Row links */
+.row { display: flex; align-items: center; gap: 14px; padding: 14px 16px; transition: transform .2s, border-color .2s, background .2s; }
+.row:hover { transform: translateY(-2px); border-color: var(--line-hi); background: var(--glass-2); }
+.row .ic { width: 46px; height: 46px; border-radius: 14px; flex: none; display: grid; place-items: center; font-size: 22px; overflow: hidden; }
+.row .ic img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+.row .tx { flex: 1; min-width: 0; }
+.row .tx b { display: block; font-weight: 800; font-size: 15px; }
+.row .tx span { display: block; color: var(--muted); font-size: 13px; margin-top: 1px; }
+.row .go { color: var(--muted); font-size: 18px; transition: transform .2s; }
+.row:hover .go { transform: translateX(3px); color: #fff; }
 
-  .link-icon svg { width: 21px; height: 21px; display: block; }
+/* Perk code */
+.perk { padding: 18px; display: flex; align-items: center; gap: 14px; background: linear-gradient(120deg, rgba(255,214,0,.16), rgba(255,255,255,.04)); border-color: rgba(255,214,0,.35); }
+.perk .ic { width: 52px; height: 52px; border-radius: 16px; background: #FFD600; color: #111; display: grid; place-items: center; font-weight: 900; font-size: 13px; font-family: var(--display); flex: none; letter-spacing: -.02em; }
+.perk .tx { flex: 1; min-width: 0; }
+.perk .tx b { display: block; font-weight: 800; font-size: 15px; }
+.perk .tx span { display: block; color: var(--soft); font-size: 13px; margin-top: 2px; }
+.code { border: 1.5px dashed rgba(255,214,0,.7); background: rgba(0,0,0,.35); color: #FFE45C; font-weight: 900; font-size: 14px; letter-spacing: .08em; height: 44px; padding: 0 14px; border-radius: 12px; cursor: pointer; white-space: nowrap; transition: transform .15s; }
+.code:active { transform: scale(.96); }
 
-  .link-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-  }
+/* Free tools grid */
+.tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.tool { padding: 14px 12px; display: flex; flex-direction: column; gap: 6px; min-width: 0; transition: transform .2s, border-color .2s; }
+.tool:hover { transform: translateY(-3px); border-color: var(--line-hi); }
+.tool .em { font-size: 24px; }
+.tool b { font-size: 13px; font-weight: 800; line-height: 1.2; }
+.tool span { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
 
-  /* Brand-accurate treatments for the platform icons */
-  .link-icon.brand-nutrition {
-    background: rgba(21,101,160,0.1);
-    color: var(--nutrition-blue);
-    padding: 0;
-    overflow: hidden;
-  }
+/* Worlds + footer */
+.worlds { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
+.world { width: 30px; height: 30px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: transform .2s; }
+.world:hover { transform: scale(1.12); }
+.world[aria-pressed="true"] { border-color: #fff; }
+.world.w-hq { background: conic-gradient(var(--orange), #6C3483, #1565A0, var(--orange)); }
+.world.w-inferno { background: radial-gradient(circle at 35% 30%, #FFB000, #FF6A00 45%, #B3261E); }
+.world.w-space { background: radial-gradient(circle at 35% 30%, #9FD3FF, #1565A0 45%, #2A1240); }
+footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 14px; line-height: 1.7; }
+footer a { color: var(--soft); font-weight: 700; }
+.toast { position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translate(-50%, 30px); opacity: 0; background: #fff; color: #1C1420; font-weight: 800; padding: 12px 18px; border-radius: 999px; box-shadow: 0 12px 30px rgba(0,0,0,.4); transition: all .3s; z-index: 10; pointer-events: none; }
+.toast.on { transform: translate(-50%, 0); opacity: 1; }
 
-  .link-icon.brand-totality {
-    background: rgba(237,128,8,0.1);
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .link-icon.brand-instagram {
-    background: linear-gradient(135deg, #FEDA75 0%, #FA7E1E 25%, #D62976 50%, #962FBF 75%, #4F5BD5 100%);
-  }
-  .link-icon.brand-instagram svg { width: 20px; height: 20px; fill: #fff; }
-
-  .link-icon.brand-youtube {
-    background: #FF0000;
-  }
-  .link-icon.brand-youtube svg { width: 22px; height: 22px; fill: #fff; }
-
-  .link-icon.brand-chrome {
-    background: #fff;
-    padding: 2px;
-  }
-  .link-icon.brand-chrome svg { width: 26px; height: 26px; }
-
-  .link-icon.brand-guides {
-    background: var(--orange);
-  }
-  .link-icon.brand-guides svg { stroke: #fff; width: 20px; height: 20px; }
-
-  .link-text { flex-grow: 1; display: flex; flex-direction: column; }
-  .link-text .title { display: block; font-size: 0.95rem; font-weight: 700; color: var(--dark); }
-  .link-text .desc { display: block; font-size: 0.78rem; color: var(--muted); font-weight: 500; margin-top: 1px; }
-
-  .link-arrow { color: var(--muted); font-size: 1.1rem; flex-shrink: 0; }
-
-  .link-card.primary {
-    background: var(--white);
-    border-color: var(--orange);
-  }
-
-  .link-card.primary .link-icon { background: rgba(237,128,8,0.12); }
-  .link-card.primary .title { color: var(--dark); }
-  .link-card.primary .desc { color: var(--muted); }
-  .link-card.primary .link-arrow { color: var(--orange); }
-
-  footer {
-    margin-top: 48px;
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.78rem;
-  }
-
-  footer a { color: var(--muted); font-weight: 600; }
-  footer a:hover { color: var(--orange); }
+@media (max-width: 380px) {
+  .apps { grid-template-columns: 1fr; }
+  .tools { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .rise { opacity: 1; transform: none; }
+}
 </style>
 </head>
 <body>
 
-<div class="wrap">
-  <div class="logo-block">
-    <img src="logo.png" alt="Totality" class="logo" onerror="this.style.display='none'" />
-  </div>
-  <span class="eyebrow">Built for coaches. Built for business.</span>
-  <p class="sub">All-in-one coaching &amp; gym management. Find us here 👇</p>
+<div class="sky" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grain"></div></div>
 
-  <div class="links">
+<main class="page">
 
-    <a class="link-card primary" href="https://totality360.com.au" target="_blank" rel="noopener">
-      <span class="link-icon brand-chrome" aria-hidden="true">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 12 L3.34 7 A10 10 0 0 1 20.66 7 Z" fill="#EA4335"/>
-          <path d="M12 12 L20.66 7 A10 10 0 0 1 12 22 Z" fill="#34A853"/>
-          <path d="M12 12 L12 22 A10 10 0 0 1 3.34 7 Z" fill="#FBBC04"/>
-          <circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-width="0.4"/>
-          <circle cx="12" cy="12" r="5" fill="#fff"/>
-          <circle cx="12" cy="12" r="3.6" fill="#4285F4"/>
-        </svg>
-      </span>
-      <span class="link-text">
-        <span class="title">Totality360.com.au</span>
-        <span class="desc">Our website</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
+  <header class="head rise" style="animation-delay:.02s">
+    <div class="avatar"><img src="/icon-totality.png" alt="Totality 360" width="78" height="78"></div>
+    <div class="name">Totality 360</div>
+    <div class="handle">@totality360au · Made in Australia</div>
+    <p class="bio">Gym and coaching software, macro tracking, and Tali, the AI teammate who does the time consuming parts.</p>
+    <nav class="socials" aria-label="Socials">
+      <a class="soc" href="https://www.instagram.com/totality360au/" target="_blank" rel="noopener" aria-label="Instagram" data-ev="instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      </a>
+      <a class="soc" href="https://www.youtube.com/@TotalityApp" target="_blank" rel="noopener" aria-label="YouTube: Totality App" data-ev="youtube_app">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3 3 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3 3 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3 3 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3 3 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+      </a>
+      <a class="soc" href="https://www.youtube.com/@TotalityEvidenceBased" target="_blank" rel="noopener" aria-label="YouTube: Totality Evidence Based" data-ev="youtube_eb">
+        <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+      </a>
+      <a class="soc" href="https://g.page/r/CaQOc2X0qcVEEBM/review" target="_blank" rel="noopener" aria-label="Leave us a Google review" data-ev="google_review">
+        <svg viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      </a>
+    </nav>
+  </header>
 
-    <a class="link-card" href="https://totalityapp.com.au" target="_blank" rel="noopener">
-      <span class="link-icon brand-totality" aria-hidden="true">
-        <img src="icon-totality.png" alt="Totality" />
-      </span>
-      <span class="link-text">
-        <span class="title">Totality web app</span>
-        <span class="desc">Log in at totalityapp.com.au</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
+  <section class="card hero rise" style="animation-delay:.1s" aria-label="Meet Tali">
+    <img src="/img/tali/3d/wink_hip.webp" alt="Tali, Totality's robot, winking with a hand on her hip" width="720" height="984" fetchpriority="high">
+    <div class="hero-copy">
+      <span class="bubble">Hey, I'm Tali 😄</span>
+      <h1>The apps that run your <em>gym, clients and macros</em>.</h1>
+      <p>Programmes, check-ins, bookings, payments and food logging, with an AI teammate built in.</p>
+    </div>
+  </section>
 
-    <a class="link-card" href="get-totality.html">
-      <span class="link-icon brand-totality" aria-hidden="true">
-        <img src="icon-totality.png" alt="Totality" />
-      </span>
-      <span class="link-text">
-        <span class="title">Get the Totality app</span>
-        <span class="desc">iOS and Android</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
-    <a class="link-card" href="https://totalitynutrition.com.au" target="_blank" rel="noopener">
-      <span class="link-icon brand-nutrition" aria-hidden="true">
-        <img src="icon-nutrition.png" alt="Totality Nutrition" />
-      </span>
-      <span class="link-text">
-        <span class="title">Totality Nutrition web app</span>
-        <span class="desc">Log in at totalitynutrition.com.au</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
-    <a class="link-card" href="get-nutrition.html">
-      <span class="link-icon brand-nutrition" aria-hidden="true">
-        <img src="icon-nutrition.png" alt="Totality Nutrition" />
-      </span>
-      <span class="link-text">
-        <span class="title">Get the Totality Nutrition app</span>
-        <span class="desc">Android now, iOS coming soon</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
-    <a class="link-card" href="resources.html">
-      <span class="link-icon brand-guides" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="title">Free Guides</span>
-        <span class="desc">4 free PDFs for personal trainers</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
-    <a class="link-card" href="https://www.instagram.com/totality360au/" target="_blank" rel="noopener">
-      <span class="link-icon brand-instagram" aria-hidden="true">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.986 8.74 24 12 24s3.667-.014 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.058-1.28.072-1.687.072-4.947s-.014-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.014 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="title">Instagram</span>
-        <span class="desc">@totality360au</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
-    <a class="link-card" href="https://www.youtube.com/@TotalityApp" target="_blank" rel="noopener">
-      <span class="link-icon brand-youtube" aria-hidden="true">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="title">YouTube: Totality App</span>
-        <span class="desc">Updates &amp; walkthroughs</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
-    <a class="link-card" href="https://www.youtube.com/@TotalityEvidenceBased" target="_blank" rel="noopener">
-      <span class="link-icon brand-youtube" aria-hidden="true">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-      </span>
-      <span class="link-text">
-        <span class="title">YouTube: Totality Evidence Based</span>
-        <span class="desc">Training &amp; nutrition science</span>
-      </span>
-      <span class="link-arrow">→</span>
-    </a>
-
+  <div class="ticker rise" style="animation-delay:.16s" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Programmes</span><span>Check-ins</span><span>Bookings</span><span>Memberships</span><span>Payroll and Xero</span><span>Macros</span><span>Meal plans</span><span>Google Calendar</span><span>Morning briefs</span><span>Invoices</span>
+      <span>Programmes</span><span>Check-ins</span><span>Bookings</span><span>Memberships</span><span>Payroll and Xero</span><span>Macros</span><span>Meal plans</span><span>Google Calendar</span><span>Morning briefs</span><span>Invoices</span>
+    </div>
   </div>
 
-  <footer>
-    &copy; 2026 Totality 360 Pty Ltd · <a href="https://totality360.com.au">totality360.com.au</a>
+  <div class="label rise" style="animation-delay:.2s">New</div>
+  <section class="card thq rise" style="animation-delay:.22s" id="tali-hq" aria-labelledby="thqTitle">
+    <div class="shine"></div>
+    <img src="/img/tali/3d/point_close.webp" alt="" width="900" height="1229" loading="lazy">
+    <span class="pill"><span class="dot"></span>Waitlist open</span>
+    <h2 id="thqTitle">Tali HQ: your AI manager</h2>
+    <p class="sub">Morning briefs, client follow-ups and invoices she drafts for your yes. Your food, training and goals too.</p>
+    <div class="deal"><b>42.5% off</b><span>founding price, for as long as you stay</span></div>
+    <form class="join" id="thqForm" novalidate>
+      <input type="email" name="email" placeholder="Your email" autocomplete="email" required maxlength="200" aria-label="Your email">
+      <span class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></span>
+      <button type="submit" id="thqBtn">Join</button>
+    </form>
+    <p class="msg" id="thqErr" role="alert" hidden></p>
+    <div class="done" id="thqDone" hidden>You're on the list 🙌 Watch your inbox for your invite.</div>
+    <p class="fine">Early access when the beta opens. 7 day free trial, no card needed.</p>
+    <a class="more" href="/tali-hq.html" data-ev="tali_hq_page">See everything Tali HQ does →</a>
+  </section>
+
+  <div class="label rise" style="animation-delay:.28s">The apps</div>
+  <section class="apps rise" style="animation-delay:.3s">
+    <div class="card app tot">
+      <div class="app-top"><img src="/icon-totality.png" alt="" width="46" height="46"><h3>Totality</h3></div>
+      <p>For gyms, PTs and coaches. Clients, programmes, bookings and payments in one place.</p>
+      <div class="btns">
+        <a class="btn solid tot" href="https://totalityapp.com.au" target="_blank" rel="noopener" data-ev="totality_web">Open web app</a>
+        <a class="btn" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" target="_blank" rel="noopener" data-ev="totality_ios"><svg viewBox="0 0 24 24"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46a4.2 4.2 0 0 0-3.31-1.8c-1.4-.14-2.75.83-3.46.83-.72 0-1.82-.81-3-.79a4.43 4.43 0 0 0-3.73 2.27c-1.6 2.77-.41 6.86 1.14 9.1.76 1.1 1.66 2.33 2.84 2.29 1.14-.05 1.57-.74 2.95-.74 1.37 0 1.76.74 2.96.71 1.23-.02 2-1.11 2.75-2.22.87-1.27 1.22-2.5 1.24-2.57-.03-.01-2.37-.91-2.34-3.62zM14.1 5.86A4.1 4.1 0 0 0 15.05 3a4.2 4.2 0 0 0-2.73 1.41 3.9 3.9 0 0 0-.97 2.8 3.5 3.5 0 0 0 2.75-1.35z"/></svg>App Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=app.livewell" target="_blank" rel="noopener" data-ev="totality_android"><svg viewBox="0 0 24 24"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1zm13.3 13.4-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1zm.1-.1-3.4-3.4-10 10c.4.4 1 .4 1.7.1l11.7-6.7m0-6.8L5.3 1.6c-.7-.4-1.3-.3-1.7.1l10 10L17 8.3z"/></svg>Google Play</a>
+      </div>
+    </div>
+    <div class="card app nut">
+      <div class="app-top"><img src="/icon-nutrition.png" alt="" width="46" height="46"><h3>Totality Nutrition</h3></div>
+      <p>Australian-first macro tracking. Log a meal in plain words and Tali does the rest.</p>
+      <div class="btns">
+        <a class="btn solid nut" href="https://totalitynutrition.com.au" target="_blank" rel="noopener" data-ev="nutrition_web">Open web app</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=app.totality.nutrition" target="_blank" rel="noopener" data-ev="nutrition_android"><svg viewBox="0 0 24 24"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1zm13.3 13.4-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1zm.1-.1-3.4-3.4-10 10c.4.4 1 .4 1.7.1l11.7-6.7m0-6.8L5.3 1.6c-.7-.4-1.3-.3-1.7.1l10 10L17 8.3z"/></svg>Google Play</a>
+        <span class="btn soon"><svg viewBox="0 0 24 24"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46a4.2 4.2 0 0 0-3.31-1.8c-1.4-.14-2.75.83-3.46.83-.72 0-1.82-.81-3-.79a4.43 4.43 0 0 0-3.73 2.27c-1.6 2.77-.41 6.86 1.14 9.1.76 1.1 1.66 2.33 2.84 2.29 1.14-.05 1.57-.74 2.95-.74 1.37 0 1.76.74 2.96.71 1.23-.02 2-1.11 2.75-2.22.87-1.27 1.22-2.5 1.24-2.57-.03-.01-2.37-.91-2.34-3.62zM14.1 5.86A4.1 4.1 0 0 0 15.05 3a4.2 4.2 0 0 0-2.73 1.41 3.9 3.9 0 0 0-.97 2.8 3.5 3.5 0 0 0 2.75-1.35z"/></svg>iOS soon</span>
+      </div>
+    </div>
+  </section>
+
+  <a class="card row rise" style="animation-delay:.34s" href="/tali-ai.html" data-ev="tali_ai">
+    <span class="ic" style="background:linear-gradient(135deg,var(--orange),var(--purple))"><img src="/img/tali/3d/peace.webp" alt="" width="46" height="46" loading="lazy"></span>
+    <span class="tx"><b>Tali AI in the apps</b><span>Programmes, check-in replies and meal logging</span></span>
+    <span class="go">→</span>
+  </a>
+
+  <div class="label rise" style="animation-delay:.38s">Perks</div>
+  <section class="card perk rise" style="animation-delay:.4s">
+    <span class="ic">DUBBY</span>
+    <span class="tx"><b>10% off DUBBY</b><span>Our energy drink partner. Use the code at checkout.</span></span>
+    <button class="code" type="button" data-copy="TOTALITY" aria-label="Copy the code TOTALITY">TOTALITY</button>
+  </section>
+
+  <div class="label rise" style="animation-delay:.44s">Free stuff</div>
+  <section class="tools rise" style="animation-delay:.46s">
+    <a class="card tool" href="/resources.html" data-ev="free_guides"><span class="em">📘</span><b>Free guides</b><span>4 PDFs for personal trainers</span></a>
+    <a class="card tool" href="/calculator.html" data-ev="macro_calc"><span class="em">🥗</span><b>Macro calculator</b><span>Your calories and macros</span></a>
+    <a class="card tool" href="/commission-calculator.html" data-ev="commission_calc"><span class="em">💸</span><b>Commission calculator</b><span>What your gym's cut costs you</span></a>
+  </section>
+
+  <a class="card row rise" style="animation-delay:.5s" href="https://totality360.com.au" data-ev="website">
+    <span class="ic" style="background:rgba(255,255,255,.1)">🌐</span>
+    <span class="tx"><b>totality360.com.au</b><span>Features, pricing and everything else</span></span>
+    <span class="go">→</span>
+  </a>
+
+  <footer class="rise" style="animation-delay:.54s">
+    <div class="worlds" role="group" aria-label="Pick a look">
+      <button class="world w-hq" type="button" data-world="hq" aria-label="Totality look" aria-pressed="true"></button>
+      <button class="world w-inferno" type="button" data-world="inferno" aria-label="Inferno look" aria-pressed="false"></button>
+      <button class="world w-space" type="button" data-world="space" aria-label="Deep space look" aria-pressed="false"></button>
+    </div>
+    <div style="margin-top:12px">&copy; 2026 Totality 360 Pty Ltd · <a href="/privacy.html">Privacy</a></div>
   </footer>
-</div>
+</main>
 
-<script src="/js/track.js" defer></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var toast = document.getElementById('toast'), tt;
+  function say(m) { toast.textContent = m; toast.classList.add('on'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('on'); }, 1800); }
+  function track(name) { try { if (window.fbq) fbq('trackCustom', 'LinkTap', { link: name }); } catch (e) {} }
+
+  // Worlds (remembered per visitor; the page works the same without it)
+  function setWorld(w) {
+    if (w === 'hq') root.removeAttribute('data-world'); else root.setAttribute('data-world', w);
+    document.querySelectorAll('.world').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.world === w)); });
+  }
+  try { var saved = localStorage.getItem('t360-world'); if (saved) setWorld(saved); } catch (e) {}
+  document.querySelectorAll('.world').forEach(function (b) {
+    b.addEventListener('click', function () { setWorld(b.dataset.world); try { localStorage.setItem('t360-world', b.dataset.world); } catch (e) {} });
+  });
+
+  // Copy the partner code
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var code = b.dataset.copy;
+      var ok = function () { say('Code ' + code + ' copied'); track('dubby_code'); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(code).then(ok, function () { say('Code: ' + code); });
+      else say('Code: ' + code);
+    });
+  });
+
+  // Tap tracking
+  document.querySelectorAll('[data-ev]').forEach(function (a) { a.addEventListener('click', function () { track(a.dataset.ev); }); });
+
+  // Tali HQ waitlist, same endpoint as /tali-hq.html
+  var form = document.getElementById('thqForm'), err = document.getElementById('thqErr'),
+      btn = document.getElementById('thqBtn'), done = document.getElementById('thqDone'), started = Date.now();
+  function fail(m) { err.textContent = m; err.hidden = false; btn.disabled = false; btn.textContent = 'Join'; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); err.hidden = true;
+    var d = { email: form.email.value.trim(), website: form.website.value, started_at: started, source: 'links' };
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) return fail('Please check your email address.');
+    btn.disabled = true; btn.textContent = 'Joining...';
+    fetch('https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/talihq-waitlist', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d)
+    }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (x) {
+        if (x.ok && x.j.ok) {
+          form.hidden = true; done.hidden = false;
+          try { if (window.fbq) fbq('track', 'Lead', { content_name: 'Tali HQ waitlist (links)' }); } catch (e) {}
+        } else fail(x.j.error || 'Something went wrong. Please try again.');
+      })
+      .catch(function () { fail('Could not join. Check your connection and try again.'); });
+  });
+})();
+</script>
 </body>
 </html>
