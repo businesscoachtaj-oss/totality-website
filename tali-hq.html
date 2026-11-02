@@ -49,8 +49,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .thq-perks li { display: flex; gap: var(--s-3); align-items: flex-start; color: #fff; font-weight: 600; }
     .thq-perks svg { flex: none; margin-top: 3px; color: #F5C27A; }
     .thq-art { position: relative; display: flex; justify-content: center; align-items: center; min-height: 340px; }
-    .thq-art::before { content: ""; position: absolute; width: min(320px, 80vw); aspect-ratio: 1; border-radius: 50%; background: #55286B; }
-    .thq-art img { position: relative; height: 340px; width: auto; max-width: 100%; }
+    .thq-art::before { content: ""; position: absolute; width: min(360px, 86vw); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #7B3FA0 0%, #55286B 55%, transparent 72%); filter: blur(6px); }
+    .thq-art img { position: relative; width: min(380px, 100%); height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 20%; border-radius: 28px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08); }
     .thq-card { background: #fff; color: var(--ink); border-radius: var(--radius-lg); padding: var(--s-5); display: grid; gap: var(--s-4); box-shadow: 0 10px 30px rgba(20, 8, 30, 0.25); }
     .thq-card h2 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; }
     .thq-form { display: grid; gap: var(--s-4); }
@@ -89,7 +89,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     @media (max-width: 860px) {
       .thq-hero__in { grid-template-columns: minmax(0, 1fr); padding-top: var(--s-6); gap: var(--s-5); }
       .thq-art { min-height: 220px; order: -1; }
-      .thq-art img { height: 220px; }
+      .thq-art { min-height: 0; }
+      .thq-art img { width: min(300px, 100%); }
       .thq-art::before { width: 210px; }
       .thq-grid { grid-template-columns: minmax(0, 1fr); }
       .thq-trust { flex-direction: column; text-align: center; }
@@ -189,7 +190,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           </div>
         </div>
         <div class="thq-art">
-          <img src="/email/tali/all/076_Welcome.png" alt="Tali waving hello" width="234" height="340">
+          <img src="/img/tali/3d/lean_mug.webp" alt="Tali leaning on a counter with her coffee mug" width="900" height="1230">
         </div>
       </div>
     </section>
