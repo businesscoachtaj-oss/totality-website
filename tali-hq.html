@@ -75,13 +75,37 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .thq-feat span { color: var(--ink-2); }
     .thq-tag { justify-self: start; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--thq); background: var(--thq-tint); border-radius: var(--radius-pill); padding: 3px 10px; }
     .thq-trust { margin-top: var(--s-6); background: var(--thq-tint); border-radius: var(--radius-lg); padding: var(--s-6); display: flex; gap: var(--s-5); align-items: center; }
-    .thq-trust img { height: 150px; width: auto; flex: none; }
+    .thq-trust img { height: 170px; width: 128px; object-fit: cover; object-position: 50% 18%; border-radius: 18px; flex: none; box-shadow: 0 10px 26px rgba(39, 38, 38, 0.18); }
     .thq-trust h3 { margin: 0 0 var(--s-2); font-family: var(--font-display); font-size: 1.4rem; }
     .thq-trust p { margin: 0; color: var(--ink-2); }
     .thq-faq { display: grid; gap: var(--s-3); max-width: 760px; }
     .thq-faq details { border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius); padding: var(--s-4) var(--s-5); background: #fff; }
     .thq-faq summary { font-weight: 700; cursor: pointer; min-height: 28px; }
     .thq-faq p { margin: var(--s-3) 0 0; color: var(--ink-2); }
+    /* Pricing */
+    .thq-toggle { display: inline-flex; background: #EDE8F1; border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 var(--s-5); }
+    .thq-toggle button { border: 0; background: transparent; border-radius: 999px; padding: 8px 16px; font: inherit; font-weight: 700; color: var(--ink); cursor: pointer; }
+    .thq-toggle button[aria-pressed="true"] { background: #6C3483; color: #fff; }
+    .thq-toggle small { font-weight: 700; color: #1E8E4E; }
+    .thq-toggle button[aria-pressed="true"] small { color: #CFF5DD; }
+    .thq-plans { display: grid; gap: var(--s-4); grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+    .thq-plan { position: relative; background: #fff; border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius-lg); padding: var(--s-5); display: grid; gap: var(--s-3); align-content: start; grid-template-rows: auto auto auto auto 1fr auto; }
+    .thq-plan--hq { border: 2px solid #6C3483; box-shadow: 0 14px 40px rgba(108, 52, 131, 0.14); }
+    .thq-plan__pop { position: absolute; top: -12px; left: var(--s-5); background: #6C3483; color: #fff; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+    .thq-plan h3 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; }
+    .thq-plan__price { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+    .thq-plan__price b { font-family: var(--font-display); font-size: 2rem; letter-spacing: -0.02em; }
+    .thq-plan__price span { color: var(--ink-2); }
+    .thq-plan__was { color: var(--ink-2); font-size: 0.9375rem; line-height: 1.4; }
+    .thq-plan__was s { opacity: 0.8; }
+    .thq-plan__tag { display: inline-block; background: #F3EEF6; color: #5A2A6E; font-weight: 700; font-size: 0.8125rem; padding: 3px 10px; border-radius: 999px; }
+    .thq-plan ul { list-style: none; margin: var(--s-2) 0 0; padding: 0; display: grid; gap: 8px; }
+    .thq-plan li { display: flex; gap: 10px; align-items: flex-start; color: var(--ink-2); line-height: 1.45; }
+    .thq-plan li svg { flex: none; margin-top: 4px; color: #6C3483; }
+    .thq-plan__note { color: var(--ink-2); font-size: 0.875rem; margin: var(--s-2) 0 0; }
+    .thq-plan .thq-btn { display: block; text-align: center; text-decoration: none; margin-top: var(--s-2); align-self: end; }
+    .thq-plan--ghost .thq-btn { background: transparent; color: #6C3483; border: 2px solid #6C3483; }
+    .thq-fine-print { color: var(--ink-2); font-size: 0.9375rem; margin: var(--s-4) 0 0; max-width: 60em; }
     .thq-end { max-width: 1080px; margin: var(--s-8) auto 0; padding: 0 var(--gutter) var(--s-8); }
     .thq-end__in { background: var(--thq-deep); color: #fff; border-radius: var(--radius-lg); padding: var(--s-7) var(--s-6); display: flex; gap: var(--s-5); align-items: center; justify-content: space-between; flex-wrap: wrap; }
     .thq-end h2 { margin: 0; font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); color: #fff; }
@@ -93,8 +117,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       .thq-art img { width: min(300px, 100%); }
       .thq-art::before { width: 210px; }
       .thq-grid { grid-template-columns: minmax(0, 1fr); }
+      .thq-plans { grid-template-columns: minmax(0, 1fr); }
+      .thq-plan--hq { order: -1; }
       .thq-trust { flex-direction: column; text-align: center; }
-      .thq-trust img { height: 120px; }
+      .thq-trust img { height: 150px; width: 112px; }
     }
   </style>
 </head>
@@ -208,7 +234,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       </div>
 
       <div class="thq-trust">
-        <img src="/email/tali/all/084_Clipboard.png" alt="" width="85" height="150">
+        <img src="/img/tali/3d/thinking.webp" alt="" width="128" height="170" loading="lazy">
         <div>
           <h3>Nothing happens without your yes</h3>
           <p>Tali drafts, you decide. She never sends a message, an invoice or a booking until you approve it, and she never asks for your passwords.</p>
@@ -216,11 +242,63 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       </div>
     </section>
 
+    <section class="thq-sec" id="pricing" style="scroll-margin-top: 90px;">
+      <h2>Plans and pricing</h2>
+      <p>Three plans, in Australian dollars. Start free, upgrade when Tali is pulling her weight. Founding members from the waitlist pay 42.5% less on Tali HQ and Pro for as long as they stay.</p>
+      <div class="thq-toggle" role="group" aria-label="Billing period">
+        <button type="button" data-period="month" aria-pressed="true">Monthly</button>
+        <button type="button" data-period="year" aria-pressed="false">Yearly <small>save 15%</small></button>
+      </div>
+      <div class="thq-plans">
+        <div class="thq-plan thq-plan--ghost">
+          <h3>Free</h3>
+          <div class="thq-plan__price"><b>A$0</b></div>
+          <span class="thq-plan__tag">For getting to know Tali</span>
+          <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Chat with Tali, 50 messages a month</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Food, training and your journal</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>A Friday check-in</span></li>
+          </ul>
+          <a class="thq-btn" href="#join">Join the waitlist</a>
+        </div>
+        <div class="thq-plan thq-plan--hq">
+          <span class="thq-plan__pop">Most popular</span>
+          <h3>Tali HQ</h3>
+          <div class="thq-plan__price"><b data-price="hq">A$11.49</b><span data-per>a month</span></div>
+          <div class="thq-plan__was">Founding price. Normally <s data-was="hq">A$19.99 a month</s></div>
+          <span class="thq-plan__tag">1,000 Tali credits a month</span>
+          <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Morning brief and 12-hourly health checks</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Clients, leads and invoices</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Drafts replies and follow-ups for your yes</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Gmail and Google Calendar: she sorts your inbox and books your week</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Web search and her weekly journal</span></li>
+          </ul>
+          <a class="thq-btn" href="#join">Join the waitlist</a>
+        </div>
+        <div class="thq-plan">
+          <h3>Tali HQ Pro</h3>
+          <div class="thq-plan__price"><b data-price="pro">A$22.99</b><span data-per>a month</span></div>
+          <div class="thq-plan__was">Founding price. Normally <s data-was="pro">A$39.99 a month</s></div>
+          <span class="thq-plan__tag">3,000 Tali credits a month</span>
+          <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Everything in Tali HQ</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Night school: you pick what Tali studies each night</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Your own Tali email address for enquiries, with one-tap replies</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Automatic actions inside rules you set</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Coming soon: Tali reads her replies out loud in her own voice</span></li>
+          </ul>
+          <a class="thq-btn" href="#join">Join the waitlist</a>
+        </div>
+      </div>
+      <p class="thq-fine-print">Every new account starts with a 7 day free trial of Tali HQ. Credits reset each month on every plan, yearly included. Cancel any time. Founding prices are for people who join the waitlist before the beta opens.</p>
+    </section>
+
     <section class="thq-sec">
       <h2>Questions</h2>
       <div class="thq-faq">
         <details><summary>When does Tali HQ open?</summary><p>We're building it now. People on the waitlist get in first, before it opens to everyone.</p></details>
-        <details><summary>What does it cost?</summary><p>Pricing isn't final yet. Founding members get 42.5% off, kept for as long as they stay.</p></details>
+        <details><summary>What does it cost?</summary><p>Free, Tali HQ at A$19.99 a month, or Tali HQ Pro at A$39.99 a month, with 15% off if you pay yearly. Founding members from the waitlist get 42.5% off Tali HQ and Pro for as long as they stay, so A$11.49 and A$22.99 a month. <a href="#pricing">See the plans</a>.</p></details>
         <details><summary>Do I need Totality or Totality Nutrition?</summary><p>No. Tali HQ is its own app with its own sign-up. You don't need any other app to use it.</p></details>
         <details><summary>Who makes Tali HQ?</summary><p>Totality 360, the Australian team behind Totality and Totality Nutrition. Tali is the same AI that already works inside both apps.</p></details>
       </div>
@@ -350,6 +428,23 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     });
   })();
   </script>
-  <script src="/js/nav.js" defer></script>
+  <script>
+(function () {
+  var P = { hq: { month: [11.49, 19.99], year: [117.24, 203.90] }, pro: { month: [22.99, 39.99], year: [234.54, 407.90] } };
+  var money = function (n) { return 'A$' + n.toFixed(2); };
+  var btns = document.querySelectorAll('.thq-toggle button');
+  function setPeriod(per) {
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.period === per)); });
+    var unit = per === 'year' ? 'a year' : 'a month';
+    ['hq', 'pro'].forEach(function (k) {
+      var el = document.querySelector('[data-price="' + k + '"]'); if (el) el.textContent = money(P[k][per][0]);
+      var w = document.querySelector('[data-was="' + k + '"]'); if (w) w.textContent = money(P[k][per][1]) + ' ' + unit;
+    });
+    document.querySelectorAll('[data-per]').forEach(function (e) { e.textContent = unit; });
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { setPeriod(b.dataset.period); }); });
+})();
+</script>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>
