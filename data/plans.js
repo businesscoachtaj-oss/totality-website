@@ -824,5 +824,39 @@ window.TOTALITY_PLANS = {
     "instagram": "https://www.instagram.com/totality360au/",
     "wearables": "Apple Health on iPhone, Health Connect on Android"
   },
-  "products": []
+  "products": [],
+  "taliHq": {
+    "_comment": "Tali HQ (separate app, coming soon). Stripe products in the Totality 360 account, 2 Nov 2026. Founding = 42.5% off for waitlist members, kept for as long as they stay.",
+    "status": "coming soon, waitlist open",
+    "trialDays": 7,
+    "foundingDiscountPercent": 42.5,
+    "plans": [
+      {
+        "id": "free",
+        "name": "Free",
+        "monthly": "A$0",
+        "credits": 0,
+        "messagesMonth": 50
+      },
+      {
+        "id": "hq",
+        "name": "Tali HQ",
+        "monthly": "A$19.99",
+        "yearly": "A$203.90",
+        "foundingMonthly": "A$11.49",
+        "foundingYearly": "A$117.24",
+        "creditsMonth": 1000
+      },
+      {
+        "id": "pro",
+        "name": "Tali HQ Pro",
+        "monthly": "A$39.99",
+        "yearly": "A$407.90",
+        "foundingMonthly": "A$22.99",
+        "foundingYearly": "A$234.54",
+        "creditsMonth": 3000
+      }
+    ],
+    "yearlyDiscountPercent": 15
+  }
 };
