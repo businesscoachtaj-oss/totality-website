@@ -65,6 +65,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 .tl-hero picture { justify-self: center; }
 .tl-hero .tali { max-width: 220px; }
 .tl-art { width: 120px; flex-shrink: 0; }
+.card.tl-row { flex-direction: column; }
+.card .tl-3d.tl-art { width: 100%; }
+.tl-avail .tl-3d.tl-art { width: 220px; }
+.tl-3d { height: 260px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 24px rgba(39,38,38,.18); background: #1a1020; }
 .tl-row { display: flex; gap: var(--s-5); align-items: flex-start; }
 .tl-cost { font-size: var(--fs-xs); font-weight: 700; color: var(--muted); }
 .tl-steps { counter-reset: s; list-style: none; display: grid; gap: var(--s-4); grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -76,7 +80,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .tl-hero .tali { max-width: 160px; }
   .tl-steps { grid-template-columns: 1fr; }
   .tl-row { flex-direction: column; }
-  .tl-art { width: 96px; }
+  .tl-art, .tl-avail .tl-3d.tl-art { width: 100%; }
+  .tl-3d { height: 220px; }
   .tl-avail { flex-direction: column; align-items: flex-start; }
 }
 </style>
@@ -194,11 +199,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="section-head">
       <p class="kicker">Totality</p>
       <h2>What does Tali do for trainers and gyms?</h2>
-      <p class="section-sub">For trainers and gym admins. Clients do not use Tali in Totality.</p>
+      <p class="section-sub">For trainers and gym admins. Clients can use Tali too: they describe a meal in plain words and log it from their food diary, free for up to 5 meals a day.</p>
     </div>
     <div class="grid-2">
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_think.webp" type="image/webp"><img class="tali" src="/img/tali/tali_think.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/thinking.webp" width="600" height="820" alt="" loading="lazy" style="object-position:50% 10%">
         <div class="stack">
           <h3>Check-in replies</h3>
           <p>Open a client's check-in and Tali drafts a reply from what they wrote. You change what you like and send it.</p>
@@ -206,7 +211,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         </div>
       </article>
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_point.webp" type="image/webp"><img class="tali" src="/img/tali/tali_point.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/point_close.webp" width="600" height="820" alt="" loading="lazy" style="object-position:50% 12%">
         <div class="stack">
           <h3>Programme drafts</h3>
           <p>Write a short brief, pick days per week and how many weeks. Tali drafts a week of sessions using only exercises from the exercise library. You preview it, create it, then adjust anything in the programme editor.</p>
@@ -214,7 +219,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         </div>
       </article>
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_wave.webp" type="image/webp"><img class="tali" src="/img/tali/tali_wave.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/wink_hip.webp" width="600" height="820" alt="" loading="lazy" style="object-position:50% 8%">
         <div class="stack">
           <h3>Win-back messages</h3>
           <p>When a client has not opened the app for 14 days or more, their profile shows a card where Tali drafts a friendly nudge. You edit it and send it as a message.</p>
@@ -222,7 +227,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         </div>
       </article>
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_thumbs.webp" type="image/webp"><img class="tali" src="/img/tali/tali_thumbs.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/peace.webp" width="600" height="820" alt="" loading="lazy" style="object-position:45% 15%">
         <div class="stack">
           <h3>Lead follow-ups</h3>
           <p>In the gym leads CRM, Tali drafts a follow-up text or email for an enquiry.</p>
@@ -255,7 +260,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     </div>
     <div class="grid-2">
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_cook.webp" type="image/webp"><img class="tali" src="/img/tali/tali_cook.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/rug.webp" width="600" height="820" alt="" loading="lazy" style="object-position:50% 20%">
         <div class="stack">
           <h3>Describe a meal</h3>
           <p>Type what you ate in plain words. Tali splits it into foods and amounts, the app matches each one in the food database, and you check it before anything is logged.</p>
@@ -263,7 +268,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         </div>
       </article>
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_point.webp" type="image/webp"><img class="tali" src="/img/tali/tali_point.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/lean_mug.webp" width="600" height="820" alt="" loading="lazy" style="object-position:55% 10%">
         <div class="stack">
           <h3>Import any recipe</h3>
           <p>Paste a recipe link or the recipe text. Tali reads pages that the standard importer cannot, and you review the ingredients before saving.</p>
@@ -271,7 +276,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         </div>
       </article>
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_think.webp" type="image/webp"><img class="tali" src="/img/tali/tali_think.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/books.webp" width="600" height="820" alt="" loading="lazy" style="object-position:75% 20%">
         <div class="stack">
           <h3>Meal plans</h3>
           <p>Tali builds a plan from your saved meals, recipes and the foods you eat most, sized to your targets.</p>
@@ -279,7 +284,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         </div>
       </article>
       <article class="card tl-row">
-        <picture class="tl-art"><source srcset="/img/tali/tali_celebrate.webp" type="image/webp"><img class="tali" src="/img/tali/tali_celebrate.png" width="300" height="430" alt=""></picture>
+        <img class="tl-art tl-3d" src="/img/tali/3d/beanbag.webp" width="600" height="820" alt="" loading="lazy" style="object-position:50% 15%">
         <div class="stack">
           <h3>Weekly summary</h3>
           <p>A short read on how your week went, at the top of Trend Insights. Opening it again that week is free.</p>
@@ -293,7 +298,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
 <section class="section section--tint">
   <div class="container tl-avail">
-    <picture class="tl-art"><source srcset="/img/tali/tali_idle.webp" type="image/webp"><img class="tali" src="/img/tali/tali_idle.png" width="300" height="430" alt=""></picture>
+    <img class="tl-art tl-3d" src="/img/tali/3d/thumbs_full.webp" width="600" height="820" alt="" loading="lazy" style="object-position:50% 8%">
     <div class="stack">
       <h2>When can I use Tali?</h2>
       <p class="lead"><span data-p="tali.availability"></span></p>
