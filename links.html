@@ -181,7 +181,9 @@ button, input { font: inherit; }
 
 /* Perk code */
 .perk { padding: 18px; display: flex; align-items: center; gap: 14px; background: linear-gradient(120deg, rgba(255,214,0,.16), rgba(255,255,255,.04)); border-color: rgba(255,214,0,.35); }
-.perk .ic { width: 52px; height: 52px; border-radius: 16px; background: #FFD600; color: #111; display: grid; place-items: center; font-weight: 900; font-size: 13px; font-family: var(--display); flex: none; letter-spacing: -.02em; }
+.perk .ic { width: 52px; height: 52px; border-radius: 50%; flex: none; animation: wobble 4s ease-in-out infinite; }
+.perk .ic img { width: 100%; height: 100%; }
+@keyframes wobble { 0%, 85%, 100% { transform: none; } 90% { transform: rotate(-10deg) scale(1.06); } 95% { transform: rotate(8deg); } }
 .perk .tx { flex: 1; min-width: 0; }
 .perk .tx b { display: block; font-weight: 800; font-size: 15px; }
 .perk .tx span { display: block; color: var(--soft); font-size: 13px; margin-top: 2px; }
@@ -321,7 +323,7 @@ footer a { color: var(--soft); font-weight: 700; }
 
   <div class="label rise" style="animation-delay:.38s">Perks</div>
   <section class="card perk rise" style="animation-delay:.4s">
-    <span class="ic">DUBBY</span>
+    <span class="ic"><img src="/img/brand/dubby.png" alt="DUBBY" width="52" height="52"></span>
     <span class="tx"><b>10% off DUBBY</b><span>Our energy drink partner. Use the code at checkout.</span></span>
     <button class="code" type="button" data-copy="TOTALITY" aria-label="Copy the code TOTALITY">TOTALITY</button>
   </section>
@@ -334,7 +336,7 @@ footer a { color: var(--soft); font-weight: 700; }
   </section>
 
   <a class="card row rise" style="animation-delay:.5s" href="https://totality360.com.au" data-ev="website">
-    <span class="ic" style="background:rgba(255,255,255,.1)">🌐</span>
+    <span class="ic" style="background:#fff;padding:7px"><svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M12 12 L3.34 7 A10 10 0 0 1 20.66 7 Z" fill="#EA4335"/><path d="M12 12 L20.66 7 A10 10 0 0 1 12 22 Z" fill="#34A853"/><path d="M12 12 L12 22 A10 10 0 0 1 3.34 7 Z" fill="#FBBC04"/><circle cx="12" cy="12" r="5" fill="#fff"/><circle cx="12" cy="12" r="3.6" fill="#4285F4"/></svg></span>
     <span class="tx"><b>totality360.com.au</b><span>Features, pricing and everything else</span></span>
     <span class="go">→</span>
   </a>
