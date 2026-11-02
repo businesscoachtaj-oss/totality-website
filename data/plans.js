@@ -836,7 +836,7 @@ window.TOTALITY_PLANS = {
         "name": "Free",
         "monthly": "A$0",
         "credits": 0,
-        "messagesMonth": 150
+        "messagesMonth": 250
       },
       {
         "id": "hq",
