@@ -82,6 +82,14 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .thq-faq details { border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius); padding: var(--s-4) var(--s-5); background: #fff; }
     .thq-faq summary { font-weight: 700; cursor: pointer; min-height: 28px; }
     .thq-faq p { margin: var(--s-3) 0 0; color: var(--ink-2); }
+    /* Screens gallery */
+    .thq-screens__h { font-family: var(--font-display); font-weight: 800; font-size: 1.125rem; margin: var(--s-6) 0 var(--s-3); color: var(--ink); }
+    .thq-screens__h:first-of-type { margin-top: 0; }
+    .thq-sec > .thq-screens__cap { margin: calc(-1 * var(--s-2)) 0 var(--s-3); color: var(--ink-2); font-size: var(--fs-sm); }
+    .thq-shots { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .thq-shot { display: block; border-radius: 14px; overflow: hidden; background: var(--thq-tint); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+    .thq-shot:hover, .thq-shot:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(108, 52, 131, 0.18); }
+    .thq-shot img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; }
     /* Pricing */
     .thq-toggle { display: inline-flex; background: #EDE8F1; border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 var(--s-5); }
     .thq-toggle button { border: 0; background: transparent; border-radius: 999px; padding: 8px 16px; font: inherit; font-weight: 700; color: var(--ink); cursor: pointer; }
@@ -239,6 +247,86 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <h3>Nothing happens without your yes</h3>
           <p>Tali drafts, you decide. She never sends a message, an invoice or a booking until you approve it, and she never asks for your passwords.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="thq-sec thq-screens" id="screens" style="scroll-margin-top: 90px;">
+      <h2>Every screen in Tali HQ</h2>
+      <p>All 50 screens from the app as it stands today, from sign in to sleep. Tap any one to see it full size.</p>
+      <h3 class="thq-screens__h">Getting started</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_01_sign_in.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_01_sign_in.webp" alt="Tali HQ screen: Sign in" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_02_sign_up.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_02_sign_up.webp" alt="Tali HQ screen: Sign up" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_03_check_email.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_03_check_email.webp" alt="Tali HQ screen: Check your email" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_04_onboarding.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_04_onboarding.webp" alt="Tali HQ screen: Onboarding" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_14_reset_password.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_14_reset_password.webp" alt="Tali HQ screen: Reset password" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Today</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_05_today.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_05_today.webp" alt="Tali HQ screen: Today" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_05b_today_brief.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_05b_today_brief.webp" alt="Tali HQ screen: Today, morning brief" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_06_today_first_day.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_06_today_first_day.webp" alt="Tali HQ screen: Today, first day" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_19_today_pro.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_19_today_pro.webp" alt="Tali HQ screen: Today on Pro" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_19b_today_your_day.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_19b_today_your_day.webp" alt="Tali HQ screen: Today, your day" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_40_today_rework.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_40_today_rework.webp" alt="Tali HQ screen: Today, rework draft" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_41_today_reworked.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_41_today_reworked.webp" alt="Tali HQ screen: Today, reworked" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Talk</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_07_talk_new.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_07_talk_new.webp" alt="Tali HQ screen: Talk, new chat" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_08_talk_chat.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_08_talk_chat.webp" alt="Tali HQ screen: Talk, chat with Tali" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_32_talk_listen.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_32_talk_listen.webp" alt="Tali HQ screen: Talk, listening" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_45_talk_shared.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_45_talk_shared.webp" alt="Tali HQ screen: Talk, shared chat" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Clients and invoices</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_15_clients.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_15_clients.webp" alt="Tali HQ screen: Clients" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_16_leads.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_16_leads.webp" alt="Tali HQ screen: Leads" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_17_client_edit.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_17_client_edit.webp" alt="Tali HQ screen: Edit a client" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_18_add_reminder.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_18_add_reminder.webp" alt="Tali HQ screen: Add a reminder" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_20_invoices.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_20_invoices.webp" alt="Tali HQ screen: Invoices" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_21_invoice_edit.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_21_invoice_edit.webp" alt="Tali HQ screen: Edit an invoice" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_22_invoice_details.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_22_invoice_details.webp" alt="Tali HQ screen: Invoice details" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Email and connections</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_28_tali_email.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_28_tali_email.webp" alt="Tali HQ screen: Tali email" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_29_tali_email_open.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_29_tali_email_open.webp" alt="Tali HQ screen: Tali email, open message" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_44_inbox_outlook.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_44_inbox_outlook.webp" alt="Tali HQ screen: Inbox, Outlook" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_42_settings_connections.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_42_settings_connections.webp" alt="Tali HQ screen: Settings, connections" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_43_settings_outlook.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_43_settings_outlook.webp" alt="Tali HQ screen: Settings, Outlook" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_48_settings_notifications.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_48_settings_notifications.webp" alt="Tali HQ screen: Settings, notifications" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Journal and night school</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_09_journal.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_09_journal.webp" alt="Tali HQ screen: Journal" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_10_journal_entry.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_10_journal_entry.webp" alt="Tali HQ screen: Journal entry" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_23_tali_journal.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_23_tali_journal.webp" alt="Tali HQ screen: Tali's journal" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_24_tali_journal_entry.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_24_tali_journal_entry.webp" alt="Tali HQ screen: Tali's journal entry" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_25_night_school.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_25_night_school.webp" alt="Tali HQ screen: Night school" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_26_night_note.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_26_night_note.webp" alt="Tali HQ screen: Night note" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_27_rules.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_27_rules.webp" alt="Tali HQ screen: Rules" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_30_food_training.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_30_food_training.webp" alt="Tali HQ screen: Food and training" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_30b_food_training_plan.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_30b_food_training_plan.webp" alt="Tali HQ screen: Food and training plan" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Me, plans and settings</h3>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_11_me.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_11_me.webp" alt="Tali HQ screen: Me" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_11b_me_memories.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_11b_me_memories.webp" alt="Tali HQ screen: Me, memories" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_31_me_pro.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_31_me_pro.webp" alt="Tali HQ screen: Me on Pro" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_47_me_founder.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_47_me_founder.webp" alt="Tali HQ screen: Me, founder" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_12_plans.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_12_plans.webp" alt="Tali HQ screen: Plans" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_33_plans_new.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_33_plans_new.webp" alt="Tali HQ screen: Plans, new" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_13_settings.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_13_settings.webp" alt="Tali HQ screen: Settings" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_13b_settings_more.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_13b_settings_more.webp" alt="Tali HQ screen: Settings, more" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_46_founder.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_46_founder.webp" alt="Tali HQ screen: Founder" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_46b_founder_month.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_46b_founder_month.webp" alt="Tali HQ screen: Founder, month view" width="540" height="960" loading="lazy" decoding="async"></a>
+      </div>
+      <h3 class="thq-screens__h">Sleep</h3>
+      <p class="thq-screens__cap">Sleep sounds with a fade out timer, coming to the app this week.</p>
+      <div class="thq-shots">
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_50_sleep_pick.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_50_sleep_pick.webp" alt="Tali HQ screen: Sleep, pick a sound" width="540" height="960" loading="lazy" decoding="async"></a>
+        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_51_sleep_playing.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_51_sleep_playing.webp" alt="Tali HQ screen: Sleep, playing" width="540" height="960" loading="lazy" decoding="async"></a>
       </div>
     </section>
 
