@@ -84,6 +84,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .tl-3d { height: 220px; }
   .tl-avail { flex-direction: column; align-items: flex-start; }
 }
+  .addon-card { position: relative; }
+  .addon-card .addon-tali { position: absolute; top: 12px; right: 12px; display: block; width: auto !important; max-width: none; height: 92px !important; object-fit: contain; margin: 0; border-radius: 0; pointer-events: none; }
+  .addon-card > h3, .addon-card > .price { padding-right: 64px; }
+  .addon-card > .price { min-height: 2.6em; }
+  @media (max-width: 480px) { .addon-card .addon-tali { height: 80px !important; } }
 </style>
 <script type="application/ld+json">
 {
@@ -408,7 +413,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     return '<tr><th scope="row">' + esc(t.name) + '</th><td>' + esc(t.taliLabel) + '</td><td>' + esc(t.monthly) + ' a month</td></tr>';
   }).join('');
   document.getElementById('taliAddons').innerHTML = P.addons.filter(function (a) { return a.credits; }).map(function (a) {
-    return '<article class="card"><h3 class="h4">' + esc(a.name) + '</h3><p class="price" style="font-size:var(--fs-xl)">' + esc(a.price) +
+    var tali = a.tali ? '<img class="addon-tali" src="/email/tali/' + esc(a.tali) + '.png" alt="" loading="lazy" width="67" height="120">' : '';
+    return '<article class="card addon-card">' + tali + '<h3 class="h4">' + esc(a.name) + '</h3><p class="price" style="font-size:var(--fs-xl)">' + esc(a.price) +
       '<small> /' + esc(a.period) + '</small></p><p>' + esc(a.description) + '</p><p class="card-meta">For ' + esc(a['for']) + '</p></article>';
   }).join('');
 })();
