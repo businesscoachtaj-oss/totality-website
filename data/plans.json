@@ -823,8 +823,8 @@
   },
   "products": [],
   "taliHq": {
-    "_comment": "Tali HQ (separate app, coming soon). Stripe products in the Totality 360 account, 2 Nov 2026. Founding = 42.5% off for waitlist members, kept for as long as they stay.",
-    "status": "coming soon, waitlist open",
+    "_comment": "Tali HQ (separate app). Live as a web app at talihq.com.au from 4 Nov 2026; App Store and Google Play coming soon. Stripe products in the Totality 360 account, 2 Nov 2026. Founding = 42.5% off for people who joined the waitlist before launch, kept for as long as they stay. The waitlist is closed and founding prices are no longer advertised.",
+    "status": "live (web app); App Store and Google Play coming soon",
     "trialDays": 7,
     "foundingDiscountPercent": 42.5,
     "plans": [

@@ -123,7 +123,7 @@ button, input { font: inherit; }
 .ticker-track span::before { content: "✦"; color: var(--orange-hi); margin-right: 10px; }
 @keyframes tick { to { transform: translateX(-50%); } }
 
-/* Tali HQ waitlist */
+/* Tali HQ */
 .thq { padding: 22px; isolation: isolate; border-color: rgba(181,122,214,.45); }
 .thq > img { position: absolute; right: -10px; top: -4px; width: 150px; height: 175px; object-fit: cover; object-position: 50% 12%; z-index: -1; opacity: .95; border-radius: 0 0 0 40px; -webkit-mask-image: radial-gradient(120% 100% at 100% 0%, #000 45%, transparent 75%); mask-image: radial-gradient(120% 100% at 100% 0%, #000 45%, transparent 75%); }
 .thq::before { content: ""; position: absolute; inset: 0; z-index: -2; background: radial-gradient(90% 90% at 100% 0%, rgba(108,52,131,.65), transparent 60%), linear-gradient(160deg, rgba(108,52,131,.35), rgba(21,101,160,.15)); }
@@ -144,6 +144,7 @@ button, input { font: inherit; }
 .join button { height: 50px; padding: 0 18px; border: 0; border-radius: 16px; background: #fff; color: #2A1433; font-weight: 800; font-size: 15px; cursor: pointer; transition: transform .15s; white-space: nowrap; }
 .join button:active { transform: scale(.97); }
 .join button:disabled { opacity: .7; }
+.join a { display: inline-flex; align-items: center; height: 50px; padding: 0 22px; border-radius: 16px; background: #fff; color: #2A1433; font-weight: 800; font-size: 15px; text-decoration: none; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .fine { color: var(--muted); font-size: 12px; margin-top: 10px; }
 .msg { font-size: 13px; margin-top: 10px; color: #FFB4A8; }
@@ -282,18 +283,12 @@ footer a { color: var(--soft); font-weight: 700; }
   <section class="card thq rise" style="animation-delay:.22s" id="tali-hq" aria-labelledby="thqTitle">
     <div class="shine"></div>
     <img src="/img/tali/3d/wink_hip.webp" alt="" width="720" height="984" loading="lazy">
-    <span class="pill"><span class="dot"></span>Waitlist open</span>
+    <span class="pill"><span class="dot"></span>Out now</span>
     <h2 id="thqTitle">Tali HQ: your AI manager</h2>
     <p class="sub">Morning briefs, client follow-ups and invoices she drafts for your yes. Your food, training and goals too.</p>
-    <div class="deal"><b>42.5% off</b><span>founding price, for as long as you stay</span></div>
-    <form class="join" id="thqForm" novalidate>
-      <input type="email" name="email" placeholder="Your email" autocomplete="email" required maxlength="200" aria-label="Your email">
-      <span class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></span>
-      <button type="submit" id="thqBtn">Join</button>
-    </form>
-    <p class="msg" id="thqErr" role="alert" hidden></p>
-    <div class="done" id="thqDone" hidden>You're on the list 🙌 Watch your inbox for your invite.</div>
-    <p class="fine">Early access when the beta opens. 7 day free trial, no card needed.</p>
+    <div class="deal"><b>Start free</b><span>in your browser now. App Store and Google Play coming soon</span></div>
+    <div class="join"><a href="https://talihq.com.au" target="_blank" rel="noopener" data-ev="tali_hq_open">Open Tali HQ</a></div>
+    <p class="fine">7 day free trial of Tali HQ, no card needed.</p>
     <a class="more" href="/tali-hq.html" data-ev="tali_hq_page">See everything Tali HQ does →</a>
   </section>
 
@@ -387,26 +382,6 @@ footer a { color: var(--soft); font-weight: 700; }
   // Tap tracking
   document.querySelectorAll('[data-ev]').forEach(function (a) { a.addEventListener('click', function () { track(a.dataset.ev); }); });
 
-  // Tali HQ waitlist, same endpoint as /tali-hq.html
-  var form = document.getElementById('thqForm'), err = document.getElementById('thqErr'),
-      btn = document.getElementById('thqBtn'), done = document.getElementById('thqDone'), started = Date.now();
-  function fail(m) { err.textContent = m; err.hidden = false; btn.disabled = false; btn.textContent = 'Join'; }
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); err.hidden = true;
-    var d = { email: form.email.value.trim(), website: form.website.value, started_at: started, source: 'links' };
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) return fail('Please check your email address.');
-    btn.disabled = true; btn.textContent = 'Joining...';
-    fetch('https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/talihq-waitlist', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d)
-    }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
-      .then(function (x) {
-        if (x.ok && x.j.ok) {
-          form.hidden = true; done.hidden = false;
-          try { if (window.fbq) fbq('track', 'Lead', { content_name: 'Tali HQ waitlist (links)' }); } catch (e) {}
-        } else fail(x.j.error || 'Something went wrong. Please try again.');
-      })
-      .catch(function () { fail('Could not join. Check your connection and try again.'); });
-  });
 })();
 </script>
 </body>
