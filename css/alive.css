@@ -324,3 +324,4 @@ body.reading .card, body.reading .post-card, body.reading .contact-card, body.re
 @media (max-width: 900px) { .reviews__row { grid-template-columns: 1fr; } }
 .review blockquote { font-size: 1.12rem; } .review figcaption { font-size: .95rem; }
 .reviews__row--4 { grid-template-columns: repeat(2, 1fr); } @media (max-width: 900px) { .reviews__row--4 { grid-template-columns: 1fr; } }
+.page-hero, .app-shots, .reviews { overflow-x: clip; }
