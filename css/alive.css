@@ -282,3 +282,23 @@ body.reading .card, body.reading .post-card, body.reading .contact-card, body.re
 @media (max-width: 900px) {
   .card, .table-wrap, .offer, .faq, .post-card, .guide-card, .contact-card, [class*="thq-"], .hm .card { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
 }
+
+/* App screens on the Totality and Nutrition pages */
+.app-shots { position: relative; overflow: hidden; }
+.app-shots::before { content: ""; position: absolute; left: 50%; top: 58%; width: min(1100px, 120vw); height: 520px; transform: translate(-50%, -50%); border-radius: 50%; filter: blur(80px); opacity: .45; pointer-events: none; }
+.app-shots--orange::before { background: radial-gradient(closest-side, var(--orange), transparent); }
+.app-shots--blue::before { background: radial-gradient(closest-side, #1565A0, transparent); opacity: .6; }
+.app-shots .container { position: relative; }
+.app-shots__row { display: flex; gap: 28px; justify-content: center; align-items: flex-end; margin-top: 34px; }
+.app-shot { margin: 0; width: 230px; flex: 0 0 auto; text-align: center; }
+.app-shot img { width: 100%; height: auto; display: block; filter: drop-shadow(0 30px 40px rgba(0,0,0,.55)); transition: transform .4s; }
+.app-shot:hover img { transform: translateY(-8px); }
+.app-shot:nth-child(2) img, .app-shot:nth-child(3):last-child img { }
+.app-shot figcaption { margin-top: 16px; }
+.app-shot figcaption b { display: block; color: #fff; font-size: 1rem; }
+.app-shot figcaption span { display: block; color: var(--soft, #D9D2E0); font-size: .88rem; margin-top: 3px; }
+@media (max-width: 900px) {
+  .app-shots__row { justify-content: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 16px 24px; margin-left: -16px; margin-right: -16px; gap: 18px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .app-shots__row::-webkit-scrollbar { display: none; }
+  .app-shot { width: 66vw; max-width: 260px; scroll-snap-align: center; }
+}
