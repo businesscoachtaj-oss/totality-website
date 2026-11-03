@@ -1,6 +1,6 @@
 /* Tali next to the top buttons. Her expressions are handled by tali-sprites.js. */
 (function () {
-  var row = document.querySelector('.hm .hero-copy .ctas') || document.querySelector('main .btn-row');
+  var row = document.querySelector('.hm .hero2 .ctas') || document.querySelector('main .btn-row');
   if (!row) return;
   if (row.getBoundingClientRect().top + window.scrollY > 1400) return;
   var box = document.createElement('span');

@@ -269,3 +269,16 @@ footer:not(.site-footer) * { color: var(--muted) !important; }
 @media (min-width: 901px) { .has-tali-live { padding-right: 0; } .tali-live { position: relative; right: auto; bottom: auto; align-self: flex-end; margin-left: 10px; height: 110px; width: 52px; } }
 @media (prefers-reduced-motion: reduce) { .tali-live { animation: none; } .tali-live img { transition: none; } }
 
+
+/* Calmer motion: no bobbing, no bubble wiggle */
+.tali:not(.card), .tali-bubble, .tali-live { animation: none !important; }
+
+/* Reading pages (blog posts, legal, support): plain dark, no glows, no blur */
+body.reading::before, body.reading::after { display: none !important; }
+html:has(body.reading) { background: #0E0A12 !important; }
+body.reading .card, body.reading .post-card, body.reading .contact-card, body.reading .section, body.reading article { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+
+/* Phones: drop the frosted blur on cards so scrolling stays smooth */
+@media (max-width: 900px) {
+  .card, .table-wrap, .offer, .faq, .post-card, .guide-card, .contact-card, [class*="thq-"], .hm .card { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+}

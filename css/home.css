@@ -127,3 +127,38 @@
 @media (prefers-reduced-motion:reduce){.hm .spr{animation:none}}
 
 .hm a.chip:hover{border-color:var(--line-hi);background:rgba(255,255,255,.08)}
+/* Calmer: only the glows drift and the Talis change faces */
+.hm .tali>img,.hm .taliband>img,.hm .bubble,.hm .spr,.hm .shine,.hm .logo i,.hm .kicker .dot{animation:none!important}
+.hm .spr-thumbs{left:30px}
+@media (max-width:900px){.hm .spr-thumbs{position:static;width:96px;margin:0 auto 6px}}
+/* Hero like the links page: one image card with the words on it, buttons below */
+.hm .hero2{margin-top:22px;display:flex;flex-direction:column;gap:16px}
+.hm .heroimg{min-height:600px;display:flex;align-items:flex-end}
+.hm .heroimg>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 18%}
+.hm .heroimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,6,16,.92) 0%,rgba(11,6,16,.7) 38%,rgba(11,6,16,0) 68%),linear-gradient(180deg,transparent 60%,rgba(11,6,16,.55))}
+.hm .heroimg .over{position:relative;z-index:2;padding:48px;max-width:620px}
+.hm .heroimg .bubble{position:static;display:inline-block;margin-bottom:18px;max-width:none}
+.hm .heroimg h1{margin-top:0}
+.hm .hero2>.ctas{margin-top:6px}.hm .hero2>.fine{margin-top:0}
+@media (max-width:900px){
+ .hm .heroimg{min-height:640px}
+ .hm .heroimg>img{object-position:50% 0%;height:62%;bottom:auto}
+ .hm .heroimg::after{background:linear-gradient(180deg,transparent 30%,rgba(11,6,16,.85) 55%,#120a18 64%)}
+ .hm .heroimg .over{padding:24px}
+ .hm .heroimg .bubble{font-size:15px}
+}
+.hm .heroimg{flex-direction:column;justify-content:flex-end;align-items:flex-start}
+@media (max-width:900px){
+ .hm .heroimg{display:block;min-height:0}
+ .hm .heroimg>img{position:relative;inset:auto;height:auto;aspect-ratio:1/.95;object-position:50% 0%}
+ .hm .heroimg::after{background:linear-gradient(180deg,transparent 0%,transparent 34%,rgba(18,10,24,.9) 50%,#120a18 58%)}
+ .hm .heroimg .over{margin-top:-150px;padding:0 24px 28px}
+}
+.hm .heroimg{padding:0!important}
+@media (min-width:901px){
+ .hm .heroimg>img{left:auto;right:0;width:52%;object-position:50% 15%}
+ .hm .heroimg::after{background:linear-gradient(90deg,rgba(11,6,16,.95) 0%,rgba(11,6,16,.85) 44%,rgba(11,6,16,0) 62%)}
+}
+/* Fade the photo into the card instead of a hard edge */
+@media (min-width:901px){.hm .heroimg>img{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%)}.hm .heroimg::after{display:none}}
+@media (max-width:900px){.hm .heroimg>img{-webkit-mask-image:linear-gradient(180deg,#000 50%,transparent 100%);mask-image:linear-gradient(180deg,#000 50%,transparent 100%)}.hm .heroimg::after{display:none}}
