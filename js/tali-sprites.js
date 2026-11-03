@@ -8,7 +8,10 @@
   var seed = 0, path = location.pathname;
   for (var c = 0; c < path.length; c++) seed = (seed * 31 + path.charCodeAt(c)) >>> 0;
   function rnd() { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; }
-  var pool = ALL.slice();
+  // Gym and trainer pages keep Tali upbeat; the grumpy faces stay on the consumer pages
+  var GLOOMY = /Sad|Crying|Worried|Nervous|Ashamed|Disappointed|Tired|Big_sigh|Lonely|Defeated|Annoyed|Angry|Furious|Grumpy|Side_eye|Smug|Unimpressed|Eye_roll|Stubborn|Huffing|Shock|Gasp|Startled|Oops|Doubtful|Asleep|Yawn|Confused|Wait_what/;
+  var business = /^\/(totality|for-pts|for-gyms|features|pricing|compare|online-training)(\.html)?$/.test(location.pathname);
+  var pool = business ? ALL.filter(function (n) { return !GLOOMY.test(n); }) : ALL.slice();
   for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(rnd() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
   var k = 0;
 

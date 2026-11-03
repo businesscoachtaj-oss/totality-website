@@ -282,3 +282,46 @@ body.reading .card, body.reading .post-card, body.reading .contact-card, body.re
 @media (max-width: 900px) {
   .card, .table-wrap, .offer, .faq, .post-card, .guide-card, .contact-card, [class*="thq-"], .hm .card { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
 }
+
+/* App screens on the Totality and Nutrition pages */
+.app-shots { position: relative; overflow: hidden; }
+.app-shots::before { content: ""; position: absolute; left: 50%; top: 58%; width: min(1100px, 120vw); height: 520px; transform: translate(-50%, -50%); border-radius: 50%; filter: blur(80px); opacity: .45; pointer-events: none; }
+.app-shots--orange::before { background: radial-gradient(closest-side, var(--orange), transparent); }
+.app-shots--blue::before { background: radial-gradient(closest-side, #1565A0, transparent); opacity: .6; }
+.app-shots .container { position: relative; }
+.app-shots__row { display: flex; gap: 28px; justify-content: center; align-items: flex-end; margin-top: 34px; }
+.app-shot { margin: 0; width: 230px; flex: 0 0 auto; text-align: center; }
+.app-shot img { width: 100%; height: auto; display: block; filter: drop-shadow(0 30px 40px rgba(0,0,0,.55)); transition: transform .4s; }
+.app-shot:hover img { transform: translateY(-8px); }
+.app-shot:nth-child(2) img, .app-shot:nth-child(3):last-child img { }
+.app-shot figcaption { margin-top: 16px; }
+.app-shot figcaption b { display: block; color: #fff; font-size: 1rem; }
+.app-shot figcaption span { display: block; color: var(--soft, #D9D2E0); font-size: .88rem; margin-top: 3px; }
+@media (max-width: 900px) {
+  .app-shots__row { justify-content: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 16px 24px; margin-left: -16px; margin-right: -16px; gap: 18px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .app-shots__row::-webkit-scrollbar { display: none; }
+  .app-shot { width: 66vw; max-width: 260px; scroll-snap-align: center; }
+}
+/* Hero phone in place of the old video panel */
+.hero-phone { margin: 0; position: relative; justify-self: center; width: min(300px, 70vw); }
+.hero-phone::before { content: ""; position: absolute; inset: 10% -30%; border-radius: 50%; filter: blur(70px); opacity: .5; z-index: -1; }
+.hero-phone--orange::before { background: radial-gradient(closest-side, var(--orange), transparent); }
+.hero-phone--blue::before { background: radial-gradient(closest-side, #1565A0, transparent); opacity: .7; }
+.hero-phone img { width: 100%; height: auto; display: block; filter: drop-shadow(0 34px 44px rgba(0,0,0,.55)); }
+@media (max-width: 900px) { .hero-phone { width: min(260px, 66vw); margin-top: 10px; } }
+.app-shots__row { align-items: flex-start; }
+.app-shots::before { opacity: .6; }
+.app-shots--blue::before { opacity: .75; }
+
+/* Google reviews */
+.reviews__row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 26px; }
+.review { margin: 0; padding: 24px; border-radius: 22px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); display: flex; flex-direction: column; gap: 12px; }
+.review__stars { color: #FFC83D; letter-spacing: 2px; font-size: 1.05rem; }
+.review blockquote { margin: 0; color: #fff; font-size: 1rem; line-height: 1.55; flex: 1; }
+.review figcaption { color: var(--muted, #A79BB3); font-size: .88rem; font-weight: 600; }
+.reviews__score { color: #FFC83D; }
+.reviews-home { margin-top: 0; }
+@media (max-width: 900px) { .reviews__row { grid-template-columns: 1fr; } }
+.review blockquote { font-size: 1.12rem; } .review figcaption { font-size: .95rem; }
+.reviews__row--4 { grid-template-columns: repeat(2, 1fr); } @media (max-width: 900px) { .reviews__row--4 { grid-template-columns: 1fr; } }
+.page-hero, .app-shots, .reviews { overflow-x: clip; }
