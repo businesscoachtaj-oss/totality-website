@@ -115,6 +115,13 @@ body[data-brand="nutrition"] {
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+/* Big desktop screens (27 inch monitors, Macs set to "More space"):
+   scale the whole page up so it isn't a small strip in the middle.
+   The layout then works at roughly 1500 to 1600px wide. */
+@media (min-width: 1680px) { html { zoom: 1.125; } }
+@media (min-width: 1920px) { html { zoom: 1.25; } }
+@media (min-width: 2240px) { html { zoom: 1.4; } }
+@media (min-width: 2560px) { html { zoom: 1.6; } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
