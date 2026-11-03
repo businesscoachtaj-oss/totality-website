@@ -25,10 +25,10 @@
     cur = (cur + (step || 1)) % imgs.length;
     imgs[cur].className = 'on';
   }
-  var timer = setInterval(next, 2800);
-  box.addEventListener('click', function () { clearInterval(timer); next(); timer = setInterval(next, 2800); });
+  var timer = setInterval(next, 6000);
+  box.addEventListener('click', function () { clearInterval(timer); next(); timer = setInterval(next, 6000); });
   document.addEventListener('visibilitychange', function () {
     clearInterval(timer);
-    if (!document.hidden) timer = setInterval(next, 2800);
+    if (!document.hidden) timer = setInterval(next, 6000);
   });
 })();
