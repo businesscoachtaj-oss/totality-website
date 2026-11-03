@@ -268,4 +268,4 @@ footer:not(.site-footer) * { color: var(--muted) !important; }
 .tali-live img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
 @media (min-width: 901px) { .has-tali-live { padding-right: 0; } .tali-live { position: relative; right: auto; bottom: auto; align-self: flex-end; margin-left: 10px; height: 110px; width: 52px; } }
 @media (prefers-reduced-motion: reduce) { .tali-live { animation: none; } .tali-live img { transition: none; } }
-img.tali-swap { transition: opacity .7s ease-in-out; }
+

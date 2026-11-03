@@ -2,7 +2,7 @@
    so each Tali on a page gets its own set of 8, different from the others. */
 (function () {
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var BASE = '/email/tali/all/', EACH = 8, HOLD = 6000, FADE = 700;
+  var BASE = '/email/tali/all/', EACH = 8, HOLD = 6000;
   var ALL = ["001_Idle", "002_Blink", "003_Listening", "004_Look_right", "005_Look_up", "006_Look_down", "007_Talking_open", "008_Talking_O", "009_Talking_mid", "010_Ready", "011_Happy", "012_Big_grin", "013_Giggle", "014_Content", "015_Delighted", "016_Wink", "017_Blowing_a_kiss", "018_Cheeky", "019_Proud", "020_Thankful", "021_Cheer", "022_Jump_for_joy", "023_Flex", "024_Clapping", "025_Star_eyes", "026_Party", "027_Victory", "028_Dance_left", "029_Dance_right", "030_Hyped", "031_Shock", "032_Gasp", "033_Startled", "034_Mind_blown", "035_Oops", "036_Double_take", "037_Confused", "038_Wait_what", "039_Awe", "040_Eyes_popped", "041_Sad", "042_Crying", "043_Worried", "044_Nervous", "045_Ashamed", "046_Disappointed", "047_Tired", "048_Big_sigh", "049_Lonely", "050_Defeated", "051_Annoyed", "052_Angry", "053_Furious", "054_Grumpy", "055_Side_eye", "056_Smug", "057_Unimpressed", "058_Eye_roll", "059_Stubborn", "060_Huffing", "061_Thinking", "062_Hmm", "063_Bright_idea", "064_Calculating", "065_Question", "066_Pondering", "067_Remembering", "068_Doubtful", "069_Curious", "070_Eureka", "071_Explain_right", "072_Explain_left", "073_Explain_both", "074_Present_left", "075_Present_right", "076_Welcome", "077_Ta-da", "078_Emphasis", "079_Listing", "080_Big_gesture", "081_Dollar_eyes", "082_Approved", "083_On_the_phone", "084_Clipboard", "085_Gym_time", "086_Trophy", "087_Chat", "088_Client_love", "089_Stopwatch", "090_Progress_chart", "091_Asleep", "092_Yawn", "093_Bye", "094_Wave", "095_Wave_left", "096_Shy", "097_Peek", "098_Bow", "099_Shrug", "100_Hug"];
   // shuffle once per page (seeded by the path) so pages differ too
   var seed = 0, path = location.pathname;
@@ -27,12 +27,8 @@
     set.forEach(function (p) { var im = new Image(); im.src = BASE + p + '.png'; });
     var cur = -1;
     function next() {
-      img.style.opacity = '0';
-      setTimeout(function () {
-        cur = (cur + 1) % set.length;
-        img.src = BASE + set[cur] + '.png';
-        img.style.opacity = '';
-      }, FADE);
+      cur = (cur + 1) % set.length;
+      img.src = BASE + set[cur] + '.png';
     }
     setTimeout(function () { next(); setInterval(next, HOLD); }, 1200 + (k % 6) * 1000);
   }

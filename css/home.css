@@ -126,3 +126,4 @@
 }
 @media (prefers-reduced-motion:reduce){.hm .spr{animation:none}}
 
+.hm a.chip:hover{border-color:var(--line-hi);background:rgba(255,255,255,.08)}
