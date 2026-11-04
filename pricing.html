@@ -519,7 +519,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <p class="section-sub">Food tracking with Australian food data. Add Tali AI if you want to describe meals in plain words and get meal plans and weekly summaries.</p>
       </div>
       <div class="pr-grid pr-grid--nut" id="nutPlans"></div>
-      <p class="notice mt-5"><strong>Totality members</strong> get <span data-p="nutrition.memberDiscount.percent"></span>% off the Nutrition plan. The member price is shown on that plan.</p>
+      <p class="notice mt-5"><strong>Trainers and gym owners</strong> paying for their own Totality plan get <span data-p="nutrition.memberDiscount.percent"></span>% off the Nutrition plan. The member price is shown on that plan. It is not for clients of a gym or trainer.</p>
       <p class="small muted mt-4">Available on Android and the web now. The iPhone app is with Apple for review. <a href="/nutrition-features.html">See every Nutrition feature</a>.</p>
     </div>
   </div>
@@ -534,7 +534,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="grid-3">
       <article class="card"><h3 class="h4">Free</h3><p class="price" style="font-size:var(--fs-xl)">A$0</p><p>Chat with Tali (250 messages a month), log food and training by telling her, a private journal, a Friday check-in.</p></article>
       <article class="card" style="border:2px solid #6C3483"><h3 class="h4">Tali HQ</h3><p class="price" style="font-size:var(--fs-xl)">A$19.99<small> /month</small></p><p class="card-meta">or A$203.90 a year</p><p>Tali sorts your Gmail and drafts the replies, briefs you each morning, checks the business twice a day for overdue invoices and cold leads, keeps clients, leads and Stripe invoices in one place and books into your Google Calendar. Nothing sent without your yes. 1,000 credits a month.</p></article>
-      <article class="card"><h3 class="h4">Tali HQ Pro</h3><p class="price" style="font-size:var(--fs-xl)">A$39.99<small> /month</small></p><p class="card-meta">or A$407.90 a year</p><p>Everything in Tali HQ, plus your own Tali email address that customers write to and she answers with one tap, night school where you pick what she studies, and rules so she can act on her own inside lines you set. 3,000 credits a month.</p></article>
+      <article class="card"><h3 class="h4">Tali HQ Pro</h3><p class="price" style="font-size:var(--fs-xl)">A$39.99<small> /month</small></p><p class="card-meta">or A$407.90 a year</p><p>Everything in Tali HQ, plus your own Tali email address that customers write to and she answers with one tap, night school where you pick what she studies, and rules that flag quiet clients, new leads and overdue invoices, plus a weekly reminder. 3,000 credits a month.</p></article>
     </div>
     <p class="mt-4"><a class="btn btn--primary" href="https://talihq.com.au" target="_blank" rel="noopener" style="background:#6C3483;border-color:#6C3483">Open Tali HQ</a> <a class="btn btn--ghost" href="/tali-hq.html#pricing">See the full plans</a></p>
   </div>
@@ -779,7 +779,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         '<h3>' + esc(p.name) + '</h3>' +
         '<p class="small muted">' + esc(ai[p.id] || '') + '</p>' +
         priceBlock(p.monthly, p.yearly) +
-        (member ? '<p class="small"><strong>Totality members:</strong> ' + esc(member) + '</p>' : '') +
+        (member ? '<p class="small"><strong>Trainers and gym owners on a paid Totality plan:</strong> ' + esc(member) + '</p>' : '') +
         '<a class="btn btn--nutrition btn--block" href="/get-nutrition.html">Start 7 days free</a>' +
         '</article>';
     }).join('');
