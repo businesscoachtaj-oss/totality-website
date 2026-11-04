@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoices and Stripe | Tali HQ guide</title>
+<meta name="description" content="Make, share and track invoices, let Tali draft them, and send them through your own Stripe.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#6C3483;--accent-dark:#4E2560;--accent-soft:#F3EEF6;--on-accent:#FFFFFF}</style>
+</head>
+<body class="guide guide--tali-hq">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/tali-hq/"><img src="/img/tali/tali-icon-512.png" alt="" width="28" height="28"><span>Tali HQ guide</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="tali-hq"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For small business owners</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/tali-hq/">Welcome to Tali HQ</a></li><li><a href="/help/tali-hq/getting-started.html">Getting started</a></li><li><a href="/help/tali-hq/today.html">Today and your morning brief</a></li><li><a href="/help/tali-hq/evening.html">Shut the day down and night mode</a></li></ol><p class="toc__group">Talking to Tali</p><ol><li><a href="/help/tali-hq/talk.html">Talk to Tali</a></li><li><a href="/help/tali-hq/replies.html">How Tali&#x27;s replies work</a></li><li><a href="/help/tali-hq/approvals.html">Approvals, Tali never acts without your yes</a></li></ol><p class="toc__group">Email</p><ol><li><a href="/help/tali-hq/tali-email.html">Tali&#x27;s email address</a></li><li><a href="/help/tali-hq/gmail-outlook.html">Gmail, Outlook and your calendar</a></li></ol><p class="toc__group">Your business</p><ol><li><a href="/help/tali-hq/clients.html">Clients and leads</a></li><li><a href="/help/tali-hq/invoices.html" aria-current="page">Invoices and Stripe</a></li><li><a href="/help/tali-hq/money.html">Money</a></li><li><a href="/help/tali-hq/goals-review.html">Goals and weekly review</a></li><li><a href="/help/tali-hq/decisions.html">Decisions</a></li></ol><p class="toc__group">You and Tali</p><ol><li><a href="/help/tali-hq/journal.html">Journal and notes</a></li><li><a href="/help/tali-hq/what-tali-knows.html">What Tali knows</a></li><li><a href="/help/tali-hq/night-school-rules.html">Night school and Rules</a></li><li><a href="/help/tali-hq/food-training.html">Food and training</a></li><li><a href="/help/tali-hq/sleep.html">Sleep sounds and wind down</a></li></ol><p class="toc__group">Plans and account</p><ol><li><a href="/help/tali-hq/plans.html">Plans, credits and billing</a></li><li><a href="/help/tali-hq/settings.html">Settings and account</a></li><li><a href="/help/tali-hq/privacy.html">Privacy and your data</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/tali-hq/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/tali-hq/faq.html">FAQ</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Tali HQ guide</p>
+    <h1>Invoices and Stripe</h1>
+    <p class="lead">Make, share and track invoices, let Tali draft them, and send them through your own Stripe.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#set-up-your-invoice-details-first">Set up your invoice details first</a></li><li><a href="#the-invoice-list">The invoice list</a></li><li><a href="#make-an-invoice">Make an invoice</a></li><li><a href="#send-it">Send it</a></li><li><a href="#track-payment">Track payment</a></li><li><a href="#connect-your-stripe">Connect your Stripe</a></li><li><a href="#overdue-invoices">Overdue invoices</a></li><li><a href="#on-the-free-plan">On the Free plan</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Invoices lets you make an invoice in a minute, share it as a PDF, and keep track of who's paid. Tali can draft invoices for you, nudge you about overdue ones, and with your own Stripe connected, send them with a pay by card link that marks itself paid. <span class="badge badge--tali-hq">Tali HQ</span></p>
+<p>Open it from <strong>Me</strong>, <strong>Invoices</strong>, or the <strong>Invoices</strong> button on the Clients tab.</p>
+<h2 id="set-up-your-invoice-details-first">Set up your invoice details first<a class="anchor" href="#set-up-your-invoice-details-first" aria-label="Link to this section">#</a></h2>
+<p>These go on every invoice. Do this once.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/invoices-details.png" alt="Your invoice details" loading="lazy"><figcaption>Your invoice details</figcaption></figure></div>
+
+<div class="steps">
+<ol>
+<li>In Invoices, tap <strong>Your invoice details</strong>.</li>
+<li>Fill in <strong>Business name</strong>, <strong>ABN</strong>, <strong>Address</strong>, <strong>Email</strong> and <strong>Phone</strong>.</li>
+<li>In <strong>How to pay</strong>, put your bank details or how you like to be paid, for example your BSB, account number and "Reference: invoice number".</li>
+<li>Turn on <strong>Registered for GST</strong> if you are. It adds 10% GST and calls it a tax invoice.</li>
+<li>Under <strong>Usually due</strong>, pick On receipt, 7 days, 14 days or 30 days. New invoices use this.</li>
+<li>Add a <strong>Footer (optional)</strong>, like "Thanks for your business!".</li>
+<li>Tap <strong>Save</strong>.</li>
+</ol>
+</div>
+<h2 id="the-invoice-list">The invoice list<a class="anchor" href="#the-invoice-list" aria-label="Link to this section">#</a></h2>
+<div class="shots"><figure class="shot shot--phone"><img src="img/invoices-list.png" alt="Invoices with Stripe connected" loading="lazy"><figcaption>Invoices with Stripe connected</figcaption></figure><figure class="shot shot--phone"><img src="img/invoices-list-nostripe.png" alt="Without Stripe, a card offers to connect it" loading="lazy"><figcaption>Without Stripe, a card offers to connect it</figcaption></figure></div>
+
+<ul>
+<li><strong>Owed to you</strong>: everything sent and not paid, with how much is overdue and how many drafts aren't sent yet.</li>
+<li>Tabs: <strong>Unpaid</strong> (drafts and sent, soonest due first), <strong>Paid</strong> and <strong>All</strong>.</li>
+<li>Each invoice shows the client, number, total and status. Overdue invoices have a red edge and "Overdue since". Drafts have an orange edge, and "drafted by Tali" if Tali made it.</li>
+</ul>
+<h2 id="make-an-invoice">Make an invoice<a class="anchor" href="#make-an-invoice" aria-label="Link to this section">#</a></h2>
+<div class="shots"><figure class="shot shot--phone"><img src="img/invoices-edit.png" alt="An invoice Tali drafted" loading="lazy"><figcaption>An invoice Tali drafted</figcaption></figure><figure class="shot shot--phone"><img src="img/invoices-edit-bottom.png" alt="The buttons at the bottom" loading="lazy"><figcaption>The buttons at the bottom</figcaption></figure></div>
+
+<div class="steps">
+<ol>
+<li>Tap <strong>New invoice</strong>.</li>
+<li>In <strong>Bill to</strong>, type the client's name. Matching people from your client list show underneath; tap one to fill in their name and email.</li>
+<li>Add <strong>Their email (optional)</strong>. You need it to send through Stripe.</li>
+<li>Under <strong>Due</strong>, pick On receipt, 7 days, 14 days or 30 days. The line underneath shows the issue and due dates.</li>
+<li>Under <strong>What it's for</strong>, type a <strong>Description</strong>, the <strong>Qty</strong> and the price in <strong>A$</strong>. Tap <strong>+ Add a line</strong> for more lines, or <strong>Remove</strong> to take one off.</li>
+<li>Turn on <strong>Add GST (10%)</strong> if it applies. The box shows the Subtotal, GST and <strong>Total incl. GST</strong>.</li>
+<li>Add a <strong>Note on the invoice (optional)</strong>.</li>
+<li>Tap <strong>Save draft</strong>.</li>
+</ol>
+</div>
+<p>Invoice numbers go up by one each time, like INV-0015.</p>
+<h3 id="or-ask-tali">Or ask Tali<a class="anchor" href="#or-ask-tali" aria-label="Link to this section">#</a></h3>
+<p>In Talk, say "invoice Priya for 4 PT sessions at $80". Tali drafts it on the Invoices screen, marked "Tali drafted this one. Check it over before you send it." With Stripe connected, it also lands on Today under <strong>Needs your yes</strong> with <strong>Send with Stripe</strong>.</p>
+<h2 id="send-it">Send it<a class="anchor" href="#send-it" aria-label="Link to this section">#</a></h2>
+<p>You have two ways.</p>
+<p><strong>Share the PDF yourself.</strong> Open the invoice, tap <strong>Share PDF</strong>, and send it by email or message. Then tap <strong>Mark as sent</strong> (or <strong>Mark as sent (I sent it myself)</strong> when Stripe is connected).</p>
+<p><strong>Send with Stripe.</strong> With Stripe connected, open a draft and tap <strong>Send with Stripe</strong>. Stripe emails it to your client with a pay by card link, paid straight to you. You see "Sent INV-0015 to ... It'll mark itself paid when they pay." Tap <strong>View it in Stripe</strong> to see it in your Stripe account.</p>
+<h2 id="track-payment">Track payment<a class="anchor" href="#track-payment" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Mark as paid</strong>: when a client pays you outside Stripe.</li>
+<li><strong>Not paid after all</strong>: on a paid invoice, moves it back to sent.</li>
+<li><strong>Void this invoice</strong>: on a sent invoice. It asks <strong>Sure?</strong> first. A void invoice can't be edited.</li>
+<li><strong>Delete</strong>: on a draft or void invoice, then <strong>Tap again to delete</strong>.</li>
+</ul>
+<p>Paid and void invoices are locked, so you can't change their details.</p>
+<h2 id="connect-your-stripe">Connect your Stripe<a class="anchor" href="#connect-your-stripe" aria-label="Link to this section">#</a></h2>
+<p>If you already take card payments with Stripe, connect it so Tali can send invoices through it.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/connections-stripe.png" alt="Stripe connected in Settings" loading="lazy"><figcaption>Stripe connected in Settings</figcaption></figure></div>
+
+<div class="steps">
+<ol>
+<li>Open <strong>Me</strong>, <strong>Connections</strong> (or tap the <strong>Connect your Stripe</strong> card on Invoices).</li>
+<li>On the <strong>Stripe</strong> card, tap <strong>Connect Stripe</strong>.</li>
+<li>Sign in to the Stripe account you already have and approve it.</li>
+<li>You come back to Settings and see "Connected".</li>
+</ol>
+</div>
+<p>Payments go straight to your Stripe account. Tali HQ never takes a cut and never runs billing for you. To disconnect, tap <strong>Disconnect</strong>, then <strong>Yes, disconnect Stripe</strong>. Your Stripe account and the invoices already in it aren't touched.</p>
+<p>On a phone app, connect Stripe from the web app at talihq.com.au.</p>
+<h2 id="overdue-invoices">Overdue invoices<a class="anchor" href="#overdue-invoices" aria-label="Link to this section">#</a></h2>
+<p>Overdue invoices show on Today in <strong>Money</strong> and <strong>Health</strong>, in your morning brief, and Tali can draft a friendly nudge if you ask. On Pro, the <strong>Chase overdue invoices</strong> rule drafts the reminder for you. See <a href="night-school-rules.html#rules-pro">Night school and Rules</a>.</p>
+<h2 id="on-the-free-plan">On the Free plan<a class="anchor" href="#on-the-free-plan" aria-label="Link to this section">#</a></h2>
+<p>Invoices are part of Tali HQ. On Free, the screen says so, with <strong>See plans</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/invoices-free.png" alt="Invoices on the Free plan" loading="lazy"><figcaption>Invoices on the Free plan</figcaption></figure></div>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-does-tali-hq-take-a-fee-on-stripe-payments"><summary>Does Tali HQ take a fee on Stripe payments?</summary><div class="faq__a"><p>No. Payments go straight to your own Stripe account. Stripe's normal fees apply.</p></div></details>
+
+<details class="faq" id="q-can-i-send-an-invoice-without-stripe"><summary>Can I send an invoice without Stripe?</summary><div class="faq__a"><p>Yes. Tap <strong>Share PDF</strong>, send it however you like, then tap <strong>Mark as sent</strong>.</p></div></details>
+
+<details class="faq" id="q-why-can-t-i-tap-send-with-stripe"><summary>Why can&#x27;t I tap Send with Stripe?</summary><div class="faq__a"><p>The client needs an email. Add it in <strong>Their email (optional)</strong>, save, then send. The button only shows on drafts when Stripe is connected.</p></div></details>
+
+<details class="faq" id="q-will-tali-send-an-invoice-on-her-own"><summary>Will Tali send an invoice on her own?</summary><div class="faq__a"><p>No. Tali drafts invoices. You send them.</p></div></details>
+
+<details class="faq" id="q-can-i-change-an-invoice-after-it-s-paid"><summary>Can I change an invoice after it&#x27;s paid?</summary><div class="faq__a"><p>No, paid and void invoices are locked. If it was marked paid by mistake, tap <strong>Not paid after all</strong>.</p></div></details>
+
+<details class="faq" id="q-how-do-i-add-gst-to-every-invoice"><summary>How do I add GST to every invoice?</summary><div class="faq__a"><p>Turn on <strong>Registered for GST</strong> in <strong>Your invoice details</strong>.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/tali-hq/clients.html"><span>Previous</span>Clients and leads</a><a class="pager__next" href="/help/tali-hq/money.html"><span>Next</span>Money</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

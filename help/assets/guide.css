@@ -59,7 +59,7 @@ th{background:var(--surface);font-weight:700}
 /* badges */
 .badge{display:inline-block;vertical-align:.1em;padding:1px 9px;border-radius:999px;font:800 .7rem/1.6 var(--font);letter-spacing:.05em;text-transform:uppercase;background:var(--surface);color:var(--ink-2);border:1px solid var(--line);margin:0 2px}
 .badge--free{background:var(--good-soft);color:var(--good);border-color:#BFE3CC}
-.badge--paid,.badge--pro,.badge--plus,.badge--ai{background:var(--accent-soft);color:var(--accent-dark);border-color:transparent}
+.badge--paid,.badge--pro,.badge--plus,.badge--ai,.badge--tali-hq{background:var(--accent-soft);color:var(--accent-dark);border-color:transparent}
 .badge--trial{background:var(--warn-soft);color:var(--warn);border-color:transparent}
 .badge--owner,.badge--admin,.badge--trainer,.badge--client,.badge--web,.badge--iphone,.badge--android{background:#fff}
 /* screens */

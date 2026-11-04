@@ -1,0 +1,17 @@
+{
+  "title": "Tali HQ guide",
+  "audience": "For small business owners",
+  "accent": "purple",
+  "icon": "/img/tali/tali-icon-512.png",
+  "updated": "5 November 2026",
+  "groups": [
+    {"title": "Start here", "pages": ["index", "getting-started", "today", "evening"]},
+    {"title": "Talking to Tali", "pages": ["talk", "replies", "approvals"]},
+    {"title": "Email", "pages": ["tali-email", "gmail-outlook"]},
+    {"title": "Your business", "pages": ["clients", "invoices", "money", "goals-review", "decisions"]},
+    {"title": "You and Tali", "pages": ["journal", "what-tali-knows", "night-school-rules", "food-training", "sleep"]},
+    {"title": "Plans and account", "pages": ["plans", "settings", "privacy"]},
+    {"title": "Help", "pages": ["troubleshooting", "faq"]}
+  ],
+  "pages": ["index", "getting-started", "today", "evening", "talk", "replies", "approvals", "tali-email", "gmail-outlook", "clients", "invoices", "money", "goals-review", "decisions", "journal", "what-tali-knows", "night-school-rules", "food-training", "sleep", "plans", "settings", "privacy", "troubleshooting", "faq"]
+}
