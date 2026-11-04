@@ -122,3 +122,5 @@ th{background:var(--surface);font-weight:700}
   .topbar__brand span{display:none}
 }
 @media print{.topbar,.toc,.pager,.search-results{display:none}.layout{display:block}}
+.hub__card small{color:var(--accent-dark);font-weight:700;font-size:.82rem;margin-top:4px}
+.hub__back{margin:0 0 18px;font-weight:600}.hub__back a{color:var(--muted);text-decoration:none}

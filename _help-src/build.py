@@ -217,9 +217,9 @@ def build_guide(key):
 
 def build_hub(cfgs):
     cards = ''.join(
-        f'<a class="hub__card" href="/help/{k}/" style="--accent:{ACCENTS[c.get("accent","orange")][0]}"><img src="{c.get("icon","/favicon-96.png")}" alt="" width="40" height="40"><b>{html.escape(c["title"])}</b><span>{html.escape(c.get("audience",""))}</span></a>'
+        f'<a class="hub__card" href="/help/{k}/" style="--accent:{ACCENTS[c.get("accent","orange")][0]}"><img src="{c.get("icon","/favicon-96.png")}" alt="" width="40" height="40"><b>{html.escape(c["title"])}</b><span>{html.escape(c.get("audience",""))}</span><small>{len(c["pages"])} pages</small></a>'
         for k, c in cfgs)
-    (OUT / 'index.html').write_text(f'''<!DOCTYPE html><html lang="en-AU"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to use Totality, Totality Nutrition and Tali HQ</title><link rel="icon" href="/favicon-96.png" sizes="any"><link rel="stylesheet" href="/help/assets/guide.css"></head><body class="hub"><main class="hub__main"><h1>How to use our apps</h1><p class="lead">Pick your guide. Every guide has screens from the real app and a search box at the top.</p><div class="hub__grid">{cards}</div><p class="foot__small">Still stuck? Email admintotality@gmail.com.</p></main></body></html>''')
+    (OUT / 'index.html').write_text(f'''<!DOCTYPE html><html lang="en-AU"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to use Totality, Totality Nutrition and Tali HQ</title><link rel="icon" href="/favicon-96.png" sizes="any"><link rel="stylesheet" href="/help/assets/guide.css"></head><body class="hub"><main class="hub__main"><p class="hub__back"><a href="/">&larr; totality360.com.au</a></p><h1>How to use our apps</h1><p class="lead">Pick your guide. Every guide has screens from the real app and a search box at the top.</p><div class="hub__grid">{cards}</div><p class="foot__small">Still stuck? Email admintotality@gmail.com.</p></main></body></html>''')
 
 if __name__ == '__main__':
     keys = sys.argv[1:] or sorted(p.name for p in SRC.iterdir() if p.is_dir() and (p / 'guide.json').exists())
