@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stripe Connect and payouts | Totality for gym owners</title>
+<meta name="description" content="Connect your own Stripe account so members can pay you, and understand the 3.5% platform fee.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html" aria-current="page">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Stripe Connect and payouts</h1>
+    <p class="lead">Connect your own Stripe account so members can pay you, and understand the 3.5% platform fee.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#connect-stripe">Connect Stripe</a></li><li><a href="#if-stripe-needs-more-details">If Stripe needs more details</a></li><li><a href="#managing-payouts">Managing payouts</a></li><li><a href="#the-platform-fee">The platform fee</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Totality takes member payments through <strong>Stripe</strong>, a payments company used by millions of businesses. Your gym gets its own Stripe Express account. Members pay by card in the app, and the money goes to your Stripe balance and then to your bank.</p>
+<p>You need Stripe connected before you can sell memberships, PT packages, paid classes, POS payment links, one-off charges or shop products.</p>
+<h2 id="connect-stripe">Connect Stripe<a class="anchor" href="#connect-stripe" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap the <strong>Sales</strong> tab. Until Stripe is set up, an orange <strong>Connect Stripe to get paid</strong> card sits at the top. Tap it, or tap <strong>Stripe Connect setup</strong>.</li>
+<li>Read the <strong>Connect your Stripe account</strong> card and tap <strong>Connect Stripe account</strong>.</li>
+<li>Stripe opens in your browser. Enter your business details, your ID and the bank account you want payouts to go to. Stripe checks these for you (this is called KYC).</li>
+<li>When Stripe says you are done, come back to Totality.</li>
+<li>Pull down on the Connect Stripe screen to refresh it.</li>
+</ol>
+</div>
+<div class="shots"><figure class="shot shot--phone"><img src="img/stripe-connect-start.png" alt="Before you connect" loading="lazy"><figcaption>Before you connect</figcaption></figure><figure class="shot shot--phone"><img src="img/stripe-connect-done.png" alt="Connected, with charges and payouts on" loading="lazy"><figcaption>Connected, with charges and payouts on</figcaption></figure></div>
+
+<p>When everything is approved, the screen says <strong>Stripe connected</strong> with a green tick next to <strong>Charges</strong> and <strong>Payouts</strong>. The <strong>Connect payments</strong> step on your dashboard's setup card ticks itself off.</p>
+<h2 id="if-stripe-needs-more-details">If Stripe needs more details<a class="anchor" href="#if-stripe-needs-more-details" aria-label="Link to this section">#</a></h2>
+<p>If you left Stripe before finishing, the screen says <strong>Onboarding in progress</strong> and the button changes to <strong>Complete Stripe setup</strong>. Your dashboard shows <strong>Finish your Stripe setup</strong>. Tap the button to carry on where you left off. Payments and payouts start once Stripe has everything it needs.</p>
+<h2 id="managing-payouts">Managing payouts<a class="anchor" href="#managing-payouts" aria-label="Link to this section">#</a></h2>
+<p>Payout timing, your bank account and tax details are managed by Stripe. Use the Stripe Express dashboard at <strong>dashboard.stripe.com</strong> to see payouts, update your bank account or answer any Stripe questions.</p>
+<h2 id="the-platform-fee">The platform fee<a class="anchor" href="#the-platform-fee" aria-label="Link to this section">#</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Commission on your coaching or membership revenue</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Platform fee on payments members make in the app</td>
+<td>3.5%</td>
+</tr>
+<tr>
+<td>Who pays it</td>
+<td>You, out of the payout. It is never added to what your member pays</td>
+</tr>
+<tr>
+<td>Stripe card fees</td>
+<td>Charged by Stripe as normal</td>
+</tr>
+</tbody>
+</table>
+<p>The fee applies to memberships, PT packages, paid class bookings, POS payment links, one-off charges and shop sales. Payouts, net of the fee, go straight to your bank.</p>
+<aside class="callout callout--note"><p class="callout__title">Your Totality subscription is separate</p><p>What you pay Totality for your plan is billed to your own card. It has nothing to do with your Stripe Connect account. See <a href="your-plan.html">Your Totality plan</a>.</p></aside>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-how-long-does-stripe-take-to-approve-me"><summary>How long does Stripe take to approve me?</summary><div class="faq__a"><p>Often a few minutes. If Stripe needs extra documents it can take longer, and Stripe will email you.</p></div></details>
+
+<details class="faq" id="q-when-does-money-reach-my-bank"><summary>When does money reach my bank?</summary><div class="faq__a"><p>On Stripe's payout schedule for your account. You can see and change it in the Stripe Express dashboard.</p></div></details>
+
+<details class="faq" id="q-can-i-use-the-stripe-account-i-already-have"><summary>Can I use the Stripe account I already have?</summary><div class="faq__a"><p>Totality creates a new Stripe Express account for your gym, connected to Totality. You sign in to it with your email. Your old Stripe account and its customers are not moved across.</p></div></details>
+
+<details class="faq" id="q-do-my-members-need-a-stripe-account"><summary>Do my members need a Stripe account?</summary><div class="faq__a"><p>No. They just add a card in the Totality app.</p></div></details>
+
+<details class="faq" id="q-why-does-revenue-in-totality-look-3-5-lower-than-the-amount-"><summary>Why does revenue in Totality look 3.5% lower than the amount charged?</summary><div class="faq__a"><p>Totality shows what you actually receive, after the platform fee. See <a href="revenue-insights.html">Revenue and insights</a>.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/gym-settings.html"><span>Previous</span>Gym details and settings</a><a class="pager__next" href="/help/totality-owner/branding.html"><span>Next</span>Branding your gym</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

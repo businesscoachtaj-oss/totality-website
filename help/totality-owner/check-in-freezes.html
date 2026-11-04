@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Front desk check-in, member status and freezes | Totality for gym owners</title>
+<meta name="description" content="Check members in at the door with payment and membership warnings, see a member&#x27;s attendance, and freeze or unfreeze a membership.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html" aria-current="page">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Front desk check-in, member status and freezes</h1>
+    <p class="lead">Check members in at the door with payment and membership warnings, see a member&#x27;s attendance, and freeze or unfreeze a membership.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#front-desk-check-in">Front desk check-in</a></li><li><a href="#member-status">Member status</a></li><li><a href="#freeze-a-membership">Freeze a membership</a></li><li><a href="#unfreeze">Unfreeze</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <h2 id="front-desk-check-in">Front desk check-in<a class="anchor" href="#front-desk-check-in" aria-label="Link to this section">#</a></h2>
+<p><strong>Check-in</strong> is for the front desk. Search for a member, see straight away if anything is wrong with their membership or payments, and check them in. It is made for the gym owner or admin login, so keep it open on the front desk tablet or computer (totalityapp.com.au works well).</p>
+<p>Open the <strong>Members</strong> tab, then <strong>Front desk check-in</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/check-in-today.png" alt="Today&#x27;s check-ins" loading="lazy"><figcaption>Today&#x27;s check-ins</figcaption></figure><figure class="shot shot--phone"><img src="img/check-in-search.png" alt="Search a member and check them in" loading="lazy"><figcaption>Search a member and check them in</figcaption></figure></div>
+
+<div class="steps">
+<ol>
+<li>Type in <strong>Search name, email or phone</strong>.</li>
+<li>Each member shows their membership, email, any classes they have booked today, and their warnings.</li>
+<li>Tap <strong>Check in</strong>. If they already checked in today it says <strong>Check in again</strong>.</li>
+</ol>
+</div>
+<p>The list under <strong>Today</strong> shows everyone checked in, with the time, and the header counts them ("3 checked in today").</p>
+<h3 id="warnings-at-the-door">Warnings at the door<a class="anchor" href="#warnings-at-the-door" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Warning</th>
+<th>Colour</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Good to go</td>
+<td>Green</td>
+<td>Nothing wrong</td>
+</tr>
+<tr>
+<td>Frozen until Sat, 21 Nov / Membership frozen</td>
+<td>Red</td>
+<td>Blocks: you are asked "Check in anyway?"</td>
+</tr>
+<tr>
+<td>Membership inactive / cancelled</td>
+<td>Red</td>
+<td>Blocks: you are asked to confirm</td>
+</tr>
+<tr>
+<td>Membership ended Fri, 16 Oct</td>
+<td>Red</td>
+<td>Blocks: you are asked to confirm</td>
+</tr>
+<tr>
+<td>Membership payment past due</td>
+<td>Orange</td>
+<td>Checks in, and the warning is saved with the check-in</td>
+</tr>
+<tr>
+<td>PT package payment past due</td>
+<td>Orange</td>
+<td>Checks in, and the warning is saved with the check-in</td>
+</tr>
+<tr>
+<td>Freeze starts ... / No membership plan on file</td>
+<td>Grey</td>
+<td>For your information only</td>
+</tr>
+</tbody>
+</table>
+<p>Warnings are saved on the check-in, so you can see later who came in with a payment problem. To sort out a payment, see <a href="failed-payments.html">Failed payments</a>.</p>
+<p>Tap a member's name (the arrow) to open their member status.</p>
+<h2 id="member-status">Member status<a class="anchor" href="#member-status" aria-label="Link to this section">#</a></h2>
+<p><strong>Member status</strong> shows one member's membership, freezes and attendance. Open it from check-in, or from the member's page with <strong>Membership, freeze and attendance</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/check-in-member-status.png" alt="Member status with an active freeze" loading="lazy"><figcaption>Member status with an active freeze</figcaption></figure></div>
+
+<ul>
+<li><strong>MEMBERSHIP</strong>: their plan, status, start date, whether it is billed through a Stripe subscription, and any warning.</li>
+<li><strong>FREEZE</strong>: current and upcoming freezes.</li>
+<li>Three counts: <strong>Visits, 30 days</strong>, <strong>Classes, 30 days</strong> and <strong>No-shows</strong>.</li>
+<li><strong>Attendance history (6 months)</strong>: front desk check-ins, class bookings (attended, no-show, booked, cancelled) and any attendance you imported.</li>
+</ul>
+<h2 id="freeze-a-membership">Freeze a membership<a class="anchor" href="#freeze-a-membership" aria-label="Link to this section">#</a></h2>
+<p>Freeze a member's membership when they are injured, travelling or taking a break.</p>
+<div class="steps">
+<ol>
+<li>Open the member's status and tap <strong>Freeze membership</strong>.</li>
+<li>Pick the <strong>Start date</strong>.</li>
+<li>Pick an <strong>End date (optional)</strong>. Leave it empty, or tap <strong>Clear end date</strong>, to keep them frozen until you unfreeze them.</li>
+<li>Add a <strong>Reason</strong> ("Injury, travel, ...").</li>
+<li>Tap <strong>Freeze</strong>.</li>
+</ol>
+</div>
+<p>While frozen:</p>
+<ul>
+<li>The member cannot book classes.</li>
+<li>Check-in shows a red <strong>Frozen</strong> warning.</li>
+<li>If they pay through a Stripe subscription with your gym, their billing is paused from the start date, and starts again the day after the end date. A future freeze pauses billing automatically on its start date.</li>
+</ul>
+<p>The message after you save tells you what happened, for example "The member cannot book classes while frozen. Stripe billing is paused." A membership not paid through Stripe shows <strong>Not billed through Stripe</strong>: the freeze still stops class bookings, but there is no payment to pause.</p>
+<h2 id="unfreeze">Unfreeze<a class="anchor" href="#unfreeze" aria-label="Link to this section">#</a></h2>
+<p>Tap <strong>Unfreeze</strong> next to the freeze and confirm. Stripe billing starts again straight away.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-do-frozen-members-get-charged"><summary>Do frozen members get charged?</summary><div class="faq__a"><p>Not for the frozen time, if they pay through a Stripe subscription with your gym. Billing is paused (the invoices for that time are skipped), and starts again after the end date or when you unfreeze.</p></div></details>
+
+<details class="faq" id="q-can-a-member-freeze-their-own-membership"><summary>Can a member freeze their own membership?</summary><div class="faq__a"><p>No. Freezes are set by you.</p></div></details>
+
+<details class="faq" id="q-can-trainers-use-front-desk-check-in"><summary>Can trainers use front desk check-in?</summary><div class="faq__a"><p>No. Check-in is in the gym owner or admin login. Trainers who try see "Only the gym admin can use check-in."</p></div></details>
+
+<details class="faq" id="q-can-members-check-themselves-in-with-a-qr-code"><summary>Can members check themselves in with a QR code?</summary><div class="faq__a"><p>Not at the moment. Check-in is done by staff at the front desk.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/memberships.html"><span>Previous</span>Memberships</a><a class="pager__next" href="/help/totality-owner/failed-payments.html"><span>Next</span>Failed payments and cards</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

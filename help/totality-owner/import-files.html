@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>File formats and columns | Totality for gym owners</title>
+<meta name="description" content="Which files the import accepts, the columns each import type needs, how dates and statuses are read, and how to export from PTminder, ABC Trainerize and Mindbody.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html" aria-current="page">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>File formats and columns</h1>
+    <p class="lead">Which files the import accepts, the columns each import type needs, how dates and statuses are read, and how to export from PTminder, ABC Trainerize and Mindbody.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#file-types">File types</a></li><li><a href="#columns-for-each-import-type">Columns for each import type</a></li><li><a href="#dates">Dates</a></li><li><a href="#how-statuses-are-read">How statuses are read</a></li><li><a href="#exporting-from-other-systems">Exporting from other systems</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>This page is the reference for the <a href="import.html">Import wizard</a>: what to put in your spreadsheet so everything comes across cleanly.</p>
+<h2 id="file-types">File types<a class="anchor" href="#file-types" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>CSV</strong> (comma separated values), the most common export format</li>
+<li><strong>XLS</strong> and <strong>XLSX</strong> (Excel workbooks)</li>
+<li>Exports that come out of a button called "Export" but are really a web table or tab separated text. Mindbody does this. The wizard reads these as they are.</li>
+</ul>
+<p>The first row must be your column headings. Each row after that is one record. Up to 2,000 rows per run.</p>
+<h2 id="columns-for-each-import-type">Columns for each import type<a class="anchor" href="#columns-for-each-import-type" aria-label="Link to this section">#</a></h2>
+<p><strong>Bold</strong> fields are required. Column names in your file do not have to match exactly: the wizard guesses, and you can fix any match on the Map Columns step.</p>
+<h3 id="clients">Clients<a class="anchor" href="#clients" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Full Name</strong></td>
+<td>One column with the whole name</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td>Must be a real email address. Used as the login</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td></td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td>See dates below</td>
+</tr>
+<tr>
+<td>Membership Status</td>
+<td>active, inactive, lead or cancelled (see statuses below)</td>
+</tr>
+<tr>
+<td>Member Since Date</td>
+<td>Their start date</td>
+</tr>
+<tr>
+<td>Emergency Contact Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Emergency Contact Phone</td>
+<td></td>
+</tr>
+<tr>
+<td>Assigned Trainer</td>
+<td>The trainer's full name or email, exactly as it is in Totality</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trainers-staff">Trainers / Staff<a class="anchor" href="#trainers-staff" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Full Name</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td>Used as their login</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td></td>
+</tr>
+<tr>
+<td>Role</td>
+<td>Leave blank or write trainer. See the note below</td>
+</tr>
+<tr>
+<td>Hire Date</td>
+<td></td>
+</tr>
+<tr>
+<td>Certifications</td>
+<td>Comma separated, for example First Aid, Cert IV</td>
+</tr>
+</tbody>
+</table>
+<aside class="callout callout--warn"><p class="callout__title">Role column</p><p>If the Role column contains admin, manager or owner, Totality creates an admin login instead of a trainer login. Each gym is run from one owner account, so for staff who should coach clients, leave Role blank or write trainer.</p></aside>
+
+<h3 id="payment-history">Payment History<a class="anchor" href="#payment-history" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Client Email</strong></td>
+<td>Matched to the member with that email</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Amount</strong></td>
+<td>Dollars, for example 29.00</td>
+</tr>
+<tr>
+<td>Description</td>
+<td></td>
+</tr>
+<tr>
+<td>Payment Method</td>
+<td>cash, card, bank transfer or other</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>paid, pending, failed or refunded</td>
+</tr>
+</tbody>
+</table>
+<h3 id="membership-types">Membership Types<a class="anchor" href="#membership-types" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>For example Unlimited</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>Dollars. Blank imports as $0</td>
+</tr>
+<tr>
+<td>Billing Cycle</td>
+<td>Use weekly, fortnightly, monthly, quarterly or yearly</td>
+</tr>
+<tr>
+<td>Session Count</td>
+<td>Optional number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attendance-sessions">Attendance / Sessions<a class="anchor" href="#attendance-sessions" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Client Email</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Session Name</td>
+<td>For example Strength Circuit</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>attended, no-show, cancelled or late-cancel</td>
+</tr>
+</tbody>
+</table>
+<h3 id="documents-waivers">Documents / Waivers<a class="anchor" href="#documents-waivers" aria-label="Link to this section">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Client Email</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Document Type</strong></td>
+<td>waiver, health-questionnaire, contract or other</td>
+</tr>
+<tr>
+<td>Signed Date</td>
+<td></td>
+</tr>
+<tr>
+<td>Expiry Date</td>
+<td></td>
+</tr>
+<tr>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="dates">Dates<a class="anchor" href="#dates" aria-label="Link to this section">#</a></h2>
+<p>Write dates as <strong>YYYY-MM-DD</strong>, for example <strong>2025-04-03</strong> for 3 April 2025. This is the safest format.</p>
+<aside class="callout callout--warn"><p class="callout__title">Day and month can swap</p><p>A date like 03/04/2025 can be read the American way, as 4 March. Dates where the day is 13 or more, like 25/04/2025, are read correctly as day/month. To be safe, change your date columns to YYYY-MM-DD in Excel or Google Sheets before you import (Format, then Number, then Custom date).</p></aside>
+
+<h2 id="how-statuses-are-read">How statuses are read<a class="anchor" href="#how-statuses-are-read" aria-label="Link to this section">#</a></h2>
+<p>The wizard looks for words in your status columns, so most systems' wording works:</p>
+<table>
+<thead>
+<tr>
+<th>Your file says something like</th>
+<th>Saved as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cancelled, cancel</td>
+<td>Cancelled</td>
+</tr>
+<tr>
+<td>inactive, suspended, frozen</td>
+<td>Inactive</td>
+</tr>
+<tr>
+<td>lead, prospect, trial</td>
+<td>Lead</td>
+</tr>
+<tr>
+<td>anything else, or blank</td>
+<td>Active</td>
+</tr>
+</tbody>
+</table>
+<p>For payments: fail or declined is Failed, refund is Refunded, pending is Pending, anything else is Paid. Payment methods: cash; bank, EFT or transfer; card, credit, debit or Stripe; anything else is Other. For attendance: no or absent is No-show, late or cancel is Late cancel, anything else is Attended.</p>
+<h2 id="exporting-from-other-systems">Exporting from other systems<a class="anchor" href="#exporting-from-other-systems" aria-label="Link to this section">#</a></h2>
+<h3 id="ptminder">PTminder<a class="anchor" href="#ptminder" aria-label="Link to this section">#</a></h3>
+<div class="steps">
+<ol>
+<li>Log in to your PTminder account.</li>
+<li>Go to <strong>Reports</strong> in the left sidebar.</li>
+<li>Select <strong>Client List</strong> and download it as CSV.</li>
+<li>Go to <strong>Reports</strong>, then <strong>Payments</strong>, and download as CSV.</li>
+<li>Go to <strong>Reports</strong>, then <strong>Attendance</strong>, and download as CSV.</li>
+<li>Upload each file separately, one import run per file. Use the <strong>PTminder</strong> type for the client list, <strong>Payment History</strong> for payments and <strong>Attendance / Sessions</strong> for attendance.</li>
+</ol>
+</div>
+<h3 id="abc-trainerize">ABC Trainerize<a class="anchor" href="#abc-trainerize" aria-label="Link to this section">#</a></h3>
+<div class="steps">
+<ol>
+<li>Log in to ABC Trainerize on the web (not the mobile app).</li>
+<li>Open the <strong>Clients</strong> tab in the left-hand menu.</li>
+<li>Select all clients, or tick just the ones you want to bring over.</li>
+<li>Click the <strong>Export</strong> icon to download a CSV.</li>
+<li>In Totality, open the ABC Trainerize guide on the Import screen and tap <strong>Start Client Import</strong>, then upload that CSV.</li>
+</ol>
+</div>
+<p>This export only includes first name, last name, email, phone and trainer name. It has no workout history, programmes or weight logs, and Trainerize does not offer a self-serve export of those. Keep your Trainerize account active, or ask their support for a manual export, if you need that history.</p>
+<aside class="callout callout--tip"><p class="callout__title">First and last name in separate columns?</p><p>Totality needs one Full Name column. In your spreadsheet, add a column with a formula like =A2&amp;" "&amp;B2 to join them, then map that column to Full Name.</p></aside>
+
+<h3 id="mindbody-members">Mindbody: members<a class="anchor" href="#mindbody-members" aria-label="Link to this section">#</a></h3>
+<div class="steps">
+<ol>
+<li>Log in to Mindbody and open <strong>Insights</strong>, then <strong>Reports</strong>, from the left navigation.</li>
+<li>Click the <strong>Clients</strong> category tile, then open <strong>Mailing Lists</strong>.</li>
+<li>Change the report type dropdown to <strong>Email List</strong>. Do not use "Mailing List": it looks like the obvious choice but has no email addresses.</li>
+<li>Click <strong>Generate</strong>, then the small <strong>XLS</strong> icon above the results to download it.</li>
+<li>In Totality, tap <strong>Start Client Import</strong> in the Mindbody guide and upload the file as it is.</li>
+</ol>
+</div>
+<p>The Email List covers name, phone and email. It does not include membership status or start date. Those are optional, so the import still works. Fill them in per member afterwards, or ask Mindbody support about their paid export if you need them in bulk.</p>
+<h3 id="mindbody-payment-history">Mindbody: payment history<a class="anchor" href="#mindbody-payment-history" aria-label="Link to this section">#</a></h3>
+<div class="steps">
+<ol>
+<li>In Mindbody, go to <strong>Reports</strong>, then <strong>Sales</strong>.</li>
+<li>Filter by date range or location if you only want part of it.</li>
+<li>Click <strong>Export</strong> to download the sales CSV.</li>
+<li>In Totality, tap <strong>Start Payment Import</strong> in the Mindbody guide and upload the file. Mindbody's column names are not recognised automatically for this report, so match client email, date, amount and the rest yourself on the Map Columns step.</li>
+</ol>
+</div>
+<h3 id="any-other-system">Any other system<a class="anchor" href="#any-other-system" aria-label="Link to this section">#</a></h3>
+<p>Most gym software can export a client list to CSV or Excel. Use the <strong>Clients</strong> type and match the columns. If your system only gives you a PDF or you are stuck, email the export to admintotality@gmail.com and we will help.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-my-file-has-a-column-the-wizard-does-not-know-will-it-break"><summary>My file has a column the wizard does not know. Will it break?</summary><div class="faq__a"><p>No. Columns you do not match are ignored.</p></div></details>
+
+<details class="faq" id="q-can-i-import-a-file-with-first-and-last-names-in-separate-co"><summary>Can I import a file with first and last names in separate columns?</summary><div class="faq__a"><p>Join them into one Full Name column first. See the tip above.</p></div></details>
+
+<details class="faq" id="q-do-i-need-the-membership-status-column"><summary>Do I need the Membership Status column?</summary><div class="faq__a"><p>No. Without it, members come in as active.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/import.html"><span>Previous</span>Importing your data</a><a class="pager__next" href="/help/totality-owner/after-import.html"><span>Next</span>After importing, and running alongside your old system</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

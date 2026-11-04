@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classes and bookings | Totality for gym owners</title>
+<meta name="description" content="Create your classes, put them on the timetable (once or every week), set capacity and prices, and manage bookings and cancellations.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html" aria-current="page">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Classes and bookings</h1>
+    <p class="lead">Create your classes, put them on the timetable (once or every week), set capacity and prices, and manage bookings and cancellations.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#create-a-class">Create a class</a></li><li><a href="#who-pays-for-a-class">Who pays for a class</a></li><li><a href="#put-a-class-on-the-timetable">Put a class on the timetable</a></li><li><a href="#manage-one-session">Manage one session</a></li><li><a href="#cancel-a-session">Cancel a session</a></li><li><a href="#when-members-cancel">When members cancel</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Classes work in two layers:</p>
+<ul>
+<li>A <strong>class</strong> is the template: Strength Circuit, 45 minutes, 12 people, Sam teaching.</li>
+<li>A <strong>session</strong> is one time it runs on the timetable: Thursday 9:30am.</li>
+</ul>
+<p>Members see your sessions in their app, book in, and pay if the class is not covered by their membership. Classes are part of every gym plan <span class="badge badge--studio">Studio</span> <span class="badge badge--club">Club</span> <span class="badge badge--enterprise">Enterprise</span>.</p>
+<p>Open the <strong>Schedule</strong> tab, then <strong>Classes</strong>. Use the <strong>Classes</strong> and <strong>Sessions</strong> buttons at the top to switch.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/classes-list.png" alt="Your classes" loading="lazy"><figcaption>Your classes</figcaption></figure><figure class="shot shot--phone"><img src="img/classes-new.png" alt="A new class" loading="lazy"><figcaption>A new class</figcaption></figure></div>
+
+<h2 id="create-a-class">Create a class<a class="anchor" href="#create-a-class" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>On <strong>Classes</strong>, tap <strong>+ New class</strong>.</li>
+<li>Enter the <strong>Name</strong> (for example Yoga) and an optional <strong>Description</strong> ("What's the vibe of this class?").</li>
+<li>Set the <strong>Duration (minutes)</strong> and <strong>Capacity</strong> (the most people who can book).</li>
+<li>Pick the usual <strong>Trainer (optional)</strong>.</li>
+<li>Decide who pays (see below): turn on <strong>Included in membership</strong>, and/or set a <strong>Casual price ($)</strong>.</li>
+<li>Pick a <strong>Colour</strong> for the timetable, leave <strong>Active</strong> on, and save.</li>
+</ol>
+</div>
+<p>Each class shows its length, capacity and price, for example "45 min · cap 12 · Members free" or "60 min · cap 16 · $30.00 casual". Use the switch to make a class inactive, or the bin to delete it.</p>
+<h2 id="who-pays-for-a-class">Who pays for a class<a class="anchor" href="#who-pays-for-a-class" aria-label="Link to this section">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Class setting</th>
+<th>Member on a membership with <strong>Includes classes</strong></th>
+<th>Everyone else</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Included in membership on</td>
+<td>Books free</td>
+<td>Pays the casual price (free if it is $0)</td>
+</tr>
+<tr>
+<td>Included in membership off</td>
+<td>Pays the casual price</td>
+<td>Pays the casual price</td>
+</tr>
+<tr>
+<td>Casual price $0</td>
+<td>Free</td>
+<td>Free</td>
+</tr>
+</tbody>
+</table>
+<p>Paid bookings are charged to the member's saved card when they book, and they get a confirmation by push and email. Set <strong>Includes classes</strong> on the membership itself in <a href="memberships.html">Memberships</a>.</p>
+<h2 id="put-a-class-on-the-timetable">Put a class on the timetable<a class="anchor" href="#put-a-class-on-the-timetable" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>On <strong>Sessions</strong>, tap <strong>+ Schedule</strong>.</li>
+<li>Pick the <strong>Class</strong> and the <strong>Trainer</strong>.</li>
+<li>Pick the <strong>Date</strong> and type the <strong>Start time (HH:MM, 24hr)</strong>, for example 09:00 or 18:30.</li>
+<li>Pick a <strong>Duration</strong>, or <strong>Custom (minutes)</strong>.</li>
+<li>Optional: add <strong>Notes</strong> ("Anything trainers / clients should know?").</li>
+<li>To run it every week, turn on <strong>Recurring schedule</strong>, tick the days under <strong>Repeat on</strong>, and pick <strong>For how many weeks</strong>: 2, 4, 6, 8 or 12.</li>
+<li>Tap <strong>Schedule</strong>. You see how many sessions were scheduled.</li>
+</ol>
+</div>
+<div class="shots"><figure class="shot shot--phone"><img src="img/classes-sessions.png" alt="Upcoming sessions" loading="lazy"><figcaption>Upcoming sessions</figcaption></figure><figure class="shot shot--phone"><img src="img/classes-session-detail.png" alt="One session and its bookings" loading="lazy"><figcaption>One session and its bookings</figcaption></figure></div>
+
+<p>The Sessions list shows each session's date, time, trainer and how full it is (for example 12 / 12 spots, in red when full).</p>
+<h2 id="manage-one-session">Manage one session<a class="anchor" href="#manage-one-session" aria-label="Link to this section">#</a></h2>
+<p>Tap a session to open it:</p>
+<ul>
+<li>The date, time, trainer and <strong>Capacity</strong> (for example 9 / 16).</li>
+<li><strong>Bookings</strong>: everyone booked in, and whether they are on a membership or paid.</li>
+<li><strong>Add client</strong>: book a member in yourself. Bookings you make here are free for the member (<strong>Book client (waived)</strong>).</li>
+<li><strong>Roster and attendance</strong>: mark who came. See <a href="class-roster.html">Class roster and waitlists</a>.</li>
+<li><strong>Reassign trainer</strong>: pick a substitute trainer and tap <strong>Confirm reassignment</strong>. The new trainer gets a push ("New class assigned") and the session shows them.</li>
+<li><strong>Complete</strong>: mark the session as done once it has run. Completed classes count towards the trainer's <a href="payroll.html">pay</a>.</li>
+</ul>
+<h2 id="cancel-a-session">Cancel a session<a class="anchor" href="#cancel-a-session" aria-label="Link to this section">#</a></h2>
+<p>Tap <strong>Cancel session</strong> on the session and confirm. Totality:</p>
+<ul>
+<li>cancels the session and every booking,</li>
+<li>refunds everyone who paid by card, automatically,</li>
+<li>sends every attendee a push notification and an email.</li>
+</ul>
+<p>You then see how many were refunded. If a refund failed, cancel the session again to retry it. Bookings paid outside Stripe are listed for you to refund yourself.</p>
+<h2 id="when-members-cancel">When members cancel<a class="anchor" href="#when-members-cancel" aria-label="Link to this section">#</a></h2>
+<p>Members can cancel their own booking in the app any time before the class starts. Paid bookings they cancel are not refunded automatically: the app tells them to contact the gym first. If you want to refund them, email admintotality@gmail.com.</p>
+<p>When a member cancels, the next person on the waitlist gets the spot. See <a href="class-roster.html">Class roster and waitlists</a>.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-can-a-frozen-member-book-a-class"><summary>Can a frozen member book a class?</summary><div class="faq__a"><p>No. Members with a frozen membership cannot book until the freeze ends. See <a href="check-in-freezes.html">Check-in and freezes</a>.</p></div></details>
+
+<details class="faq" id="q-members-are-not-seeing-my-class"><summary>Members are not seeing my class.</summary><div class="faq__a"><p>Check the class is <strong>Active</strong> and that you have scheduled a session (a class with no sessions does not show on the timetable). Members only see classes at gyms they belong to.</p></div></details>
+
+<details class="faq" id="q-can-i-change-the-time-of-one-session"><summary>Can I change the time of one session?</summary><div class="faq__a"><p>Cancel that session and schedule a new one at the new time. Cancelling tells everyone booked and refunds anyone who paid.</p></div></details>
+
+<details class="faq" id="q-do-members-get-reminders"><summary>Do members get reminders?</summary><div class="faq__a"><p>Yes. Members get a push and an email about an hour before each class they have booked.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/marketplace.html"><span>Previous</span>Marketplace, shop and products</a><a class="pager__next" href="/help/totality-owner/class-roster.html"><span>Next</span>Class roster, attendance and waitlists</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trainers | Totality for gym owners</title>
+<meta name="description" content="Invite trainers to your gym, see their clients, and deactivate or remove them.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html" aria-current="page">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Trainers</h1>
+    <p class="lead">Invite trainers to your gym, see their clients, and deactivate or remove them.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#invite-a-trainer">Invite a trainer</a></li><li><a href="#the-trainers-list">The Trainers list</a></li><li><a href="#deactivate-a-trainer">Deactivate a trainer</a></li><li><a href="#remove-a-trainer">Remove a trainer</a></li><li><a href="#roles">Roles</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Every trainer at your gym gets their own Totality login with the trainer tools: their clients, programmes, sessions, check-ins and messages. They are covered by your gym plan, and your plan has no limit on trainers.</p>
+<p>Trainers are under the <strong>More</strong> tab, then <strong>Staff</strong>, then <strong>Trainers</strong>. Inviting more than one trainer needs a gym plan <span class="badge badge--studio">Studio</span> <span class="badge badge--club">Club</span> <span class="badge badge--enterprise">Enterprise</span>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/trainers-list.png" alt="Your trainers" loading="lazy"><figcaption>Your trainers</figcaption></figure><figure class="shot shot--phone"><img src="img/trainers-detail.png" alt="One trainer and their clients" loading="lazy"><figcaption>One trainer and their clients</figcaption></figure></div>
+
+<h2 id="invite-a-trainer">Invite a trainer<a class="anchor" href="#invite-a-trainer" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Open <strong>Staff</strong>, then <strong>Invite trainer</strong>. Or tap <strong>+ Invite</strong> at the top of the Trainers list.</li>
+<li>Type their <strong>Full Name</strong> and <strong>Email</strong>.</li>
+<li>Tap <strong>Invite Trainer</strong>.</li>
+</ol>
+</div>
+<div class="shots"><figure class="shot shot--phone"><img src="img/trainers-invite.png" alt="Invite a trainer" loading="lazy"><figcaption>Invite a trainer</figcaption></figure></div>
+
+<p>What happens next depends on the email:</p>
+<table>
+<thead>
+<tr>
+<th>If the email</th>
+<th>You see</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Is new to Totality</td>
+<td><strong>Trainer invited</strong>: "Invite email sent to ... with login credentials."</td>
+<td>Their account is made and they get an email with their login and a temporary password. They set their own password the first time they sign in</td>
+</tr>
+<tr>
+<td>Already has a Totality account</td>
+<td><strong>Trainer invited</strong>: "They already have a Totality account. They will join your gym once they accept the invite in the app."</td>
+<td>They see an invite at the top of their app with <strong>Accept</strong> and <strong>Decline</strong>. Nothing is linked until they accept</td>
+</tr>
+</tbody>
+</table>
+<p>If a trainer who pays for their own Solo plan accepts, their Solo plan and any add-ons they bought are cancelled at the end of their paid period, because your gym now covers them. Their own independent clients stay with them.</p>
+<h2 id="the-trainers-list">The Trainers list<a class="anchor" href="#the-trainers-list" aria-label="Link to this section">#</a></h2>
+<p>Each trainer shows their name, email, an <strong>Active</strong> or <strong>Inactive</strong> badge and how many clients they have. Tap a trainer to see their phone, when they joined, their <strong>Active clients</strong> count and the list of their clients.</p>
+<p>To give a member to a trainer, or move members between trainers, use <strong>Clients</strong>. See <a href="members.html#assign-a-trainer">Members</a>.</p>
+<h2 id="deactivate-a-trainer">Deactivate a trainer<a class="anchor" href="#deactivate-a-trainer" aria-label="Link to this section">#</a></h2>
+<p>Use this when someone is on leave or has left and you may want them back.</p>
+<div class="steps">
+<ol>
+<li>Tap the trainer, then <strong>Deactivate trainer</strong>.</li>
+<li>Read the message and tap <strong>Deactivate</strong>.</li>
+</ol>
+</div>
+<p>They lose access to your gym and its members straight away, and their clients at your gym become unassigned. Their own independent clients stay with them. You will see how many clients are now unassigned, so you can give them to another trainer from Clients.</p>
+<p>To bring them back, tap the trainer and <strong>Reactivate trainer</strong>. Their old clients are not given back automatically, so assign them again from Clients.</p>
+<h2 id="remove-a-trainer">Remove a trainer<a class="anchor" href="#remove-a-trainer" aria-label="Link to this section">#</a></h2>
+<p><strong>Remove from gym</strong> does the same as deactivating and also ends their place in your gym. They no longer appear in your list. You can invite them again later.</p>
+<h2 id="roles">Roles<a class="anchor" href="#roles" aria-label="Link to this section">#</a></h2>
+<p>There are two kinds of login at a gym:</p>
+<ul>
+<li><strong>Gym owner or admin</strong> (you): everything in this guide.</li>
+<li><strong>Trainer</strong>: the trainer tools for their own clients, the gym's members list, the schedule and their own roster shifts. Trainers cannot see your billing, payroll, revenue or settings.</li>
+</ul>
+<p>On the <a href="staff-roster.html">staff roster</a> you can also give each shift a role label, like front desk, floor or PT.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-do-i-pay-extra-for-each-trainer"><summary>Do I pay extra for each trainer?</summary><div class="faq__a"><p>No. Every gym plan includes unlimited trainers.</p></div></details>
+
+<details class="faq" id="q-the-trainer-never-got-the-email"><summary>The trainer never got the email.</summary><div class="faq__a"><p>Ask them to check spam. They can also use <strong>Forgot Password?</strong> on the sign in screen with the email you invited. If they already had an account, they need to open the app and accept the invite at the top of their home screen.</p></div></details>
+
+<details class="faq" id="q-can-a-trainer-see-all-my-members"><summary>Can a trainer see all my members?</summary><div class="faq__a"><p>Trainers see their own clients in full. They can see your gym's members list with basic details, so they can help on the floor, but not other trainers' clients' programmes or notes.</p></div></details>
+
+<details class="faq" id="q-can-a-trainer-take-payments"><summary>Can a trainer take payments?</summary><div class="faq__a"><p>Trainers at your gym can create POS payment links for your gym. The money goes to your gym's Stripe account. See <a href="charges-pos.html">Charges and POS</a>.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/after-import.html"><span>Previous</span>After importing, and running alongside your old system</a><a class="pager__next" href="/help/totality-owner/staff-roster.html"><span>Next</span>Staff roster</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

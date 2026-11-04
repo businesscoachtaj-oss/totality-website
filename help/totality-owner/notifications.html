@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notifications | Totality for gym owners</title>
+<meta name="description" content="Choose which push notifications and emails you get, and set quiet hours.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html" aria-current="page">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Notifications</h1>
+    <p class="lead">Choose which push notifications and emails you get, and set quiet hours.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#push-notifications">Push notifications</a></li><li><a href="#email">Email</a></li><li><a href="#quiet-hours">Quiet hours</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>You decide which alerts reach you. Open <strong>More</strong>, then <strong>Settings</strong>, and scroll to <strong>NOTIFICATIONS</strong>, <strong>EMAIL</strong> and <strong>QUIET HOURS</strong>. Each switch saves as soon as you tap it.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/notifications-settings.png" alt="Notification settings in the phone app. On the web this section shows a note instead." loading="lazy"><figcaption>Notification settings in the phone app. On the web this section shows a note instead.</figcaption></figure></div>
+
+<h2 id="push-notifications">Push notifications<a class="anchor" href="#push-notifications" aria-label="Link to this section">#</a></h2>
+<p>Push notifications need the Totality phone app on iPhone or Android. On the web, this section says <strong>Push notifications are available in the phone app</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Switch</th>
+<th>When you get one</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Push notifications</td>
+<td>Turns every push on or off</td>
+</tr>
+<tr>
+<td>Messages</td>
+<td>When a client sends you a message</td>
+</tr>
+<tr>
+<td>Client logged a session</td>
+<td>When a client finishes a training session</td>
+</tr>
+<tr>
+<td>Client submitted a check-in</td>
+<td>When a client sends their weekly check-in</td>
+</tr>
+<tr>
+<td>New client added</td>
+<td>When a new client is added to your list</td>
+</tr>
+<tr>
+<td>New member joined</td>
+<td>When a new member joins your gym</td>
+</tr>
+<tr>
+<td>Staff messages</td>
+<td>When a staff member sends you a message</td>
+</tr>
+</tbody>
+</table>
+<p>On iPhone, the first time the app asks, tap <strong>Allow</strong> so notifications can come through. If you tapped Don't Allow, turn them on in your iPhone's Settings, then Notifications, then Totality. On Android, check Settings, then Apps, then Totality, then Notifications.</p>
+<h2 id="email">Email<a class="anchor" href="#email" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Email notifications</strong>: turns all non-essential emails on or off.</li>
+<li><strong>Tips and reports</strong>: weekly reports, tips and feature news.</li>
+</ul>
+<p>Essential emails, like password resets, still come through when this is off.</p>
+<h2 id="quiet-hours">Quiet hours<a class="anchor" href="#quiet-hours" aria-label="Link to this section">#</a></h2>
+<p><strong>Quiet hours</strong> holds non-urgent notifications between 9pm and 7am. They arrive after 7am instead.</p>
+<aside class="callout callout--note"><p class="callout__title">Your members&#x27; settings</p><p>Each member and trainer has their own notification settings. When you send a <a href="messages-announcements.html">group announcement</a>, Totality respects each person's choices, including their quiet hours and email unsubscribe.</p></aside>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-i-m-not-getting-push-notifications"><summary>I&#x27;m not getting push notifications.</summary><div class="faq__a"><p>Check you are using the phone app, not the website. Make sure <strong>Push notifications</strong> is on here and that your phone allows notifications for Totality. Quiet hours may be holding them overnight.</p></div></details>
+
+<details class="faq" id="q-does-turning-off-email-stop-my-members-emails"><summary>Does turning off email stop my members&#x27; emails?</summary><div class="faq__a"><p>No. These switches only change what you receive. Members manage their own emails in their app.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/units-region.html"><span>Previous</span>Units and region</a><a class="pager__next" href="/help/totality-owner/import.html"><span>Next</span>Importing your data</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

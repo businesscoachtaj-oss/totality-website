@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Failed payments and cards | Totality for gym owners</title>
+<meta name="description" content="Follow up payments that did not go through, retry them, send members a link to update their card, and get members to add a card in the first place.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html" aria-current="page">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Failed payments and cards</h1>
+    <p class="lead">Follow up payments that did not go through, retry them, send members a link to update their card, and get members to add a card in the first place.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#what-is-listed">What is listed</a></li><li><a href="#retry-a-payment">Retry a payment</a></li><li><a href="#send-an-update-card-link">Send an update card link</a></li><li><a href="#ask-a-member-to-add-a-card">Ask a member to add a card</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Cards expire and get declined. <strong>Failed payments</strong> lists every member payment that needs following up, so nothing slips through. Your dashboard shows the count as "2 failed payments".</p>
+<p>Open the <strong>Sales</strong> tab, then <strong>Failed payments</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/failed-payments-list.png" alt="Failed payments, with Retry and Send update card link" loading="lazy"><figcaption>Failed payments, with Retry and Send update card link</figcaption></figure></div>
+
+<h2 id="what-is-listed">What is listed<a class="anchor" href="#what-is-listed" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>Card payments that failed in the last 120 days, unless a later retry paid them.</li>
+<li>Memberships that are <strong>past due</strong> (the last billing failed).</li>
+<li>PT packages that are <strong>past due</strong>.</li>
+</ul>
+<p>Each row shows the member, what it was for (for example "Off Peak membership" or "PT package past due"), when, and the amount. The header totals it up, for example "2 to follow up, about $109.00".</p>
+<h2 id="retry-a-payment">Retry a payment<a class="anchor" href="#retry-a-payment" aria-label="Link to this section">#</a></h2>
+<p>Tap <strong>Retry</strong>. Totality tries the member's newest saved card with your gym again. While it works it says "Retrying...". If it goes through, the row shows a green tick, and it drops off the list next time you open it. If it fails again, you see why.</p>
+<p>Retrying is safe: tapping twice, or two people retrying at once, will not charge the member twice.</p>
+<h2 id="send-an-update-card-link">Send an update card link<a class="anchor" href="#send-an-update-card-link" aria-label="Link to this section">#</a></h2>
+<p>Tap <strong>Send update card link</strong> ("Sending link..."). The member gets a push notification and an email (if their settings allow) with:</p>
+<ul>
+<li>a link to the Payments screen in their app, to add a new card, and</li>
+<li>when there is an unpaid invoice, a link to pay the overdue amount straight away with a new card.</li>
+</ul>
+<p>Once they have added a new card, tap <strong>Retry</strong> if the payment is still listed.</p>
+<h2 id="ask-a-member-to-add-a-card">Ask a member to add a card<a class="anchor" href="#ask-a-member-to-add-a-card" aria-label="Link to this section">#</a></h2>
+<p>A member needs a card saved with your gym before you can start their membership, charge them or book them into paid classes. On the member's page, under <strong>PAYMENT</strong>:</p>
+<ul>
+<li><strong>Card on file</strong> shows their card, for example Visa ending 4242.</li>
+<li><strong>No payment method</strong> means they have not added one yet. You get two buttons:</li>
+<li><strong>Request Payment Method</strong>: sends them a push notification ("Iron Works is requesting you to add a payment method. Open the app and go to Payments."). You see "Request sent".</li>
+<li><strong>Add Card Manually</strong>: opens a secure Stripe page where you type the card in for them, for example at the front desk with the member there.</li>
+</ul>
+<div class="shots"><figure class="shot shot--phone"><img src="img/failed-payments-no-card.png" alt="A member with no card on file" loading="lazy"><figcaption>A member with no card on file</figcaption></figure></div>
+
+<aside class="callout callout--note"><p class="callout__title">Card details are safe</p><p>Cards are stored by Stripe, in your gym's Stripe account. Totality never sees or stores the full card number.</p></aside>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-does-stripe-retry-failed-membership-payments-by-itself"><summary>Does Stripe retry failed membership payments by itself?</summary><div class="faq__a"><p>Stripe may retry automatically, depending on the retry settings in your Stripe account. You do not have to wait: tap <strong>Retry</strong> any time.</p></div></details>
+
+<details class="faq" id="q-a-member-updated-their-card-but-the-row-is-still-there"><summary>A member updated their card but the row is still there.</summary><div class="faq__a"><p>Tap <strong>Retry</strong>. The payment is only cleared when it is actually paid.</p></div></details>
+
+<details class="faq" id="q-why-does-a-payment-show-up-twice-on-the-dashboard-and-here"><summary>Why does a payment show up twice on the dashboard and here?</summary><div class="faq__a"><p>It should not. The dashboard count and this list use the same rules, and a past due membership is only listed once even when it also has a failed payment. Pull down to refresh.</p></div></details>
+
+<details class="faq" id="q-can-the-member-pay-another-way"><summary>Can the member pay another way?</summary><div class="faq__a"><p>Yes. Take the money in cash or by bank transfer, then cancel or settle it in your own records. For a card payment on the spot, send a <a href="charges-pos.html">POS payment link</a>.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/check-in-freezes.html"><span>Previous</span>Front desk check-in, member status and freezes</a><a class="pager__next" href="/help/totality-owner/charges-pos.html"><span>Next</span>One-off charges and POS payment links</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

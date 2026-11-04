@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>After importing, and running alongside your old system | Totality for gym owners</title>
+<meta name="description" content="What to check once your data is in, how your existing members get into the app, and how to move billing across without double charging anyone.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html" aria-current="page">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>After importing, and running alongside your old system</h1>
+    <p class="lead">What to check once your data is in, how your existing members get into the app, and how to move billing across without double charging anyone.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#check-list-after-an-import">Check list after an import</a></li><li><a href="#how-your-existing-members-get-in">How your existing members get in</a></li><li><a href="#getting-members-onto-totality-billing">Getting members onto Totality billing</a></li><li><a href="#running-side-by-side">Running side by side</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Your data is in. Before you tell members, run through this list, then plan how you move their payments across.</p>
+<h2 id="check-list-after-an-import">Check list after an import<a class="anchor" href="#check-list-after-an-import" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Open <strong>Members</strong>, then <strong>Clients</strong>. Check the count matches your old system and spot check a few members.</li>
+<li>Tap a few members and check their <strong>Date of Birth</strong> and <strong>Member Since</strong> dates. If any look like the day and month swapped (for example 4 March instead of 3 April), fix them with <strong>Edit</strong> on their profile, and see <a href="import-files.html#dates">the dates note</a> before your next import.</li>
+<li>Use the trainer filter chips at the top of Clients to check each trainer has the right members. Use <strong>Select</strong>, then <strong>Assign</strong>, to fix any that were not matched. See <a href="members.html">Members</a>.</li>
+<li>If you imported <strong>Membership Types</strong>, open <strong>Sales</strong>, then <strong>Memberships</strong>. Each one comes in switched on, with <strong>Includes classes</strong> off. Check the price and billing frequency, and turn <strong>Includes classes</strong> on for any that should cover classes.</li>
+<li>If you imported <strong>Attendance</strong>, it shows in each member's <strong>Membership, freeze and attendance</strong> history.</li>
+<li>If any rows failed, open the error report, fix those rows and import them again.</li>
+</ol>
+</div>
+<aside class="callout callout--note"><p class="callout__title">Payment history and documents</p><p>Imported <strong>Payment History</strong> and <strong>Documents / Waivers</strong> are kept on file in Totality as a record. They do not appear in Revenue, Insights or the Compliance hub, which only show what happens in Totality from now on. Keep your original export as well.</p></aside>
+
+<h2 id="how-your-existing-members-get-in">How your existing members get in<a class="anchor" href="#how-your-existing-members-get-in" aria-label="Link to this section">#</a></h2>
+<p>Every member you imported was emailed an invite from your gym with their login details and a temporary password. When they first sign in, they are asked to set their own password.</p>
+<ul>
+<li>Tell members to look out for the email (and check spam).</li>
+<li>If someone lost theirs, they can use <strong>Forgot Password?</strong> on the sign in screen with the same email.</li>
+<li>Members who already had a Totality account (for example from another gym or a trainer) are not sent a new password. Add them with <a href="add-members.html">Add client</a>: they get an invite inside the app and join your gym when they tap <strong>Accept</strong>.</li>
+</ul>
+<h2 id="getting-members-onto-totality-billing">Getting members onto Totality billing<a class="anchor" href="#getting-members-onto-totality-billing" aria-label="Link to this section">#</a></h2>
+<p>The import does not move anyone's payments. Their direct debits or card subscriptions keep running in your old system until you stop them there. To move a member across without charging them twice:</p>
+<div class="steps">
+<ol>
+<li><a href="stripe-connect.html">Connect Stripe</a> and <a href="memberships.html">create your memberships</a> in Totality.</li>
+<li>Ask the member to add a card in the Totality app. From their profile you can tap <strong>Request Payment Method</strong> to send them a reminder. See <a href="client-detail.html">Client detail</a>.</li>
+<li>Pick a changeover date, ideally the day after their last payment in the old system.</li>
+<li>Cancel their billing in the old system.</li>
+<li>Start their membership in Totality: <strong>Memberships</strong>, then <strong>Members</strong>, then <strong>Add membership</strong>. Their card is charged and billing continues on the frequency you set.</li>
+</ol>
+</div>
+<p>Members can also buy a membership themselves from your shop in the app. See <a href="marketplace.html">Marketplace and shop</a>.</p>
+<h2 id="running-side-by-side">Running side by side<a class="anchor" href="#running-side-by-side" aria-label="Link to this section">#</a></h2>
+<p>Many gyms run both systems for a few weeks. A simple way to do it:</p>
+<ul>
+<li><strong>Week 1:</strong> import trainers and members, set up memberships, classes and PT packages. Trainers start using Totality for programmes and sessions.</li>
+<li><strong>Weeks 2 to 4:</strong> move members' billing across in batches, on each member's next billing date. Take new sign-ups only in Totality.</li>
+<li><strong>When billing is all moved:</strong> keep your old system read only until you no longer need its history, then close it.</li>
+</ul>
+<aside class="callout callout--tali"><p class="callout__title">Tali says</p><p>Do your trainers first. Once they're in, the members follow, and I can start flagging who's gone quiet. Easy as.</p></aside>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-a-member-says-they-never-got-their-invite"><summary>A member says they never got their invite.</summary><div class="faq__a"><p>Check the email address on their profile. Ask them to check spam, or to use <strong>Forgot Password?</strong> on the sign in screen with that email.</p></div></details>
+
+<details class="faq" id="q-can-i-re-send-the-invite"><summary>Can I re-send the invite?</summary><div class="faq__a"><p>There is no re-send button for imported members. <strong>Forgot Password?</strong> gives them a fresh way in. If that does not work, email admintotality@gmail.com.</p></div></details>
+
+<details class="faq" id="q-will-members-be-charged-twice"><summary>Will members be charged twice?</summary><div class="faq__a"><p>Only if both systems are billing them at once. Cancel billing in the old system before you start their membership in Totality.</p></div></details>
+
+<details class="faq" id="q-can-members-keep-their-existing-card-details"><summary>Can members keep their existing card details?</summary><div class="faq__a"><p>Card details cannot be moved from another system. Each member adds their card once in the Totality app.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/import-files.html"><span>Previous</span>File formats and columns</a><a class="pager__next" href="/help/totality-owner/trainers.html"><span>Next</span>Trainers</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

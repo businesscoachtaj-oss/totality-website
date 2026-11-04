@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One-off charges and POS payment links | Totality for gym owners</title>
+<meta name="description" content="Charge a member&#x27;s saved card for a one-off item, or send anyone a payment link to pay on their own phone.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html" aria-current="page">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>One-off charges and POS payment links</h1>
+    <p class="lead">Charge a member&#x27;s saved card for a one-off item, or send anyone a payment link to pay on their own phone.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#charge-a-member">Charge a member</a></li><li><a href="#create-a-pos-payment-link">Create a POS payment link</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>There are two ways to take a one-off payment, both included on every gym plan:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Charge a member</th>
+<th>POS payment link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who</td>
+<td>A member with a card saved with your gym</td>
+<td>Anyone, including walk-ins</td>
+</tr>
+<tr>
+<td>How they pay</td>
+<td>Their saved card is charged straight away</td>
+<td>They open a link and pay on their own device</td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>A drink, merch, a replacement bottle, a missed fee</td>
+<td>Casual visits, drop-in PT, merch for non-members</td>
+</tr>
+</tbody>
+</table>
+<p>Both go to your <a href="stripe-connect.html">Stripe account</a>, with the 3.5% platform fee taken from your payout. The member pays the price you set.</p>
+<h2 id="charge-a-member">Charge a member<a class="anchor" href="#charge-a-member" aria-label="Link to this section">#</a></h2>
+<p>Open the <strong>Sales</strong> tab, then <strong>Charge a member</strong>.</p>
+<div class="steps">
+<ol>
+<li>Pick the <strong>Client</strong>.</li>
+<li>Under <strong>What are you charging for?</strong> pick <strong>Product</strong> and choose one of your <a href="marketplace.html">products</a>, or pick <strong>Custom amount</strong> and type the <strong>Amount (AUD)</strong> and a <strong>Description</strong> (for example Replacement water bottle).</li>
+<li>Tap <strong>Charge now</strong>.</li>
+<li>Check the message ("Charge Priya Nair $15.00 for ...") and tap <strong>Charge</strong>.</li>
+</ol>
+</div>
+<div class="shots"><figure class="shot shot--phone"><img src="img/charges-pos-charge.png" alt="Charge a member" loading="lazy"><figcaption>Charge a member</figcaption></figure><figure class="shot shot--phone"><img src="img/charges-pos-link.png" alt="Create a POS payment link" loading="lazy"><figcaption>Create a POS payment link</figcaption></figure></div>
+
+<p>"The client's default saved card on this gym will be charged. They must add a payment method in the app before you can charge them."</p>
+<p>The result tells you exactly what happened:</p>
+<table>
+<thead>
+<tr>
+<th>Message</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Payment successful</td>
+<td>Charged. It shows in Revenue</td>
+</tr>
+<tr>
+<td>Payment processing</td>
+<td>The bank is still processing it. It usually clears shortly</td>
+</tr>
+<tr>
+<td>Needs client approval</td>
+<td>Their bank wants them to approve it (3D Secure). This cannot be done on your device. Send them a POS link instead</td>
+</tr>
+<tr>
+<td>Card declined</td>
+<td>The card was declined, with the reason</td>
+</tr>
+<tr>
+<td>Charge not completed</td>
+<td>Something went wrong. "It is safe to try again: the client will not be charged twice."</td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-a-pos-payment-link">Create a POS payment link<a class="anchor" href="#create-a-pos-payment-link" aria-label="Link to this section">#</a></h2>
+<p>Open the <strong>Sales</strong> tab, then <strong>POS payment link</strong>.</p>
+<div class="steps">
+<ol>
+<li>Enter the <strong>Amount ($)</strong>.</li>
+<li>Enter a <strong>Description</strong>, for example "PT session" or "Merch: Totality tee".</li>
+<li>Optional: pick a <strong>Client</strong>, or leave it as <strong>Walk-in</strong>.</li>
+<li>Tap <strong>Generate payment link</strong>.</li>
+<li>Share it: <strong>Copy</strong>, <strong>SMS</strong> or <strong>Email</strong>. Or let them scan or tap it on your screen.</li>
+</ol>
+</div>
+<p>They pay on Stripe's secure checkout page with any card. <strong>Recent charges</strong> at the bottom shows each link as <strong>Pending</strong>, <strong>Paid</strong>, <strong>Expired</strong> or <strong>Failed</strong>. Tap <strong>New charge</strong> to start another.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-can-i-take-a-card-on-a-terminal-or-tap-to-pay-reader"><summary>Can I take a card on a terminal or tap-to-pay reader?</summary><div class="faq__a"><p>No card reader is needed or supported. Use a POS payment link: the person pays on their own phone.</p></div></details>
+
+<details class="faq" id="q-do-trainers-see-the-pos-screen"><summary>Do trainers see the POS screen?</summary><div class="faq__a"><p>Trainers at your gym can create POS payment links too. The money goes to your gym's Stripe account and the trainer is recorded on the payment.</p></div></details>
+
+<details class="faq" id="q-how-do-i-refund-a-charge"><summary>How do I refund a charge?</summary><div class="faq__a"><p>There is no refund button in Totality for one-off charges. Email admintotality@gmail.com with the member's name, the date and the amount, and we will help. (When you cancel a class session, paid bookings are refunded automatically. See <a href="classes.html">Classes</a>.)</p></div></details>
+
+<details class="faq" id="q-is-there-a-fee-on-pos-payments"><summary>Is there a fee on POS payments?</summary><div class="faq__a"><p>Yes, the 3.5% platform fee, taken from your payout. Stripe's card fees also apply.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/failed-payments.html"><span>Previous</span>Failed payments and cards</a><a class="pager__next" href="/help/totality-owner/marketplace.html"><span>Next</span>Marketplace, shop and products</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

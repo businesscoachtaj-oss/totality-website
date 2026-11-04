@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Importing your data | Totality for gym owners</title>
+<meta name="description" content="Bring members, trainers, membership types and history across from a spreadsheet or another gym system, step by step.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html" aria-current="page">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Importing your data</h1>
+    <p class="lead">Bring members, trainers, membership types and history across from a spreadsheet or another gym system, step by step.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#before-you-start">Before you start</a></li><li><a href="#step-1-type">Step 1: Type</a></li><li><a href="#step-2-upload">Step 2: Upload</a></li><li><a href="#step-3-map-columns">Step 3: Map columns</a></li><li><a href="#step-4-review-and-import">Step 4: Review and import</a></li><li><a href="#when-it-finishes">When it finishes</a></li><li><a href="#what-happens-to-imported-members">What happens to imported members</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>The <strong>Import</strong> wizard brings your data across from a spreadsheet or your old gym software in four steps: pick what you are importing, upload the file, match the columns, then import. You can run it as many times as you like, one file per run.</p>
+<p>Open it from <strong>Members</strong>, then <strong>Import data</strong>, or from <strong>Settings</strong>, then <strong>Import</strong>. The dashboard's setup card also has a link.</p>
+<aside class="callout callout--tip"><p class="callout__title">We can do it for you</p><p>Rather not do it yourself? Email your spreadsheet to the Totality team (the address is on the dashboard's Set up your gym card, or use admintotality@gmail.com) and we will import it for you, free.</p></aside>
+
+<h2 id="before-you-start">Before you start<a class="anchor" href="#before-you-start" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>Export your data from your old system as <strong>CSV</strong>, <strong>XLS</strong> or <strong>XLSX</strong>. See <a href="import-files.html">File formats and columns</a> for exactly what each import needs and how to export from PTminder, ABC Trainerize and Mindbody.</li>
+<li><strong>Import your trainers first</strong>, then your clients. The client import can link each member to their trainer, but only to trainers already in your gym.</li>
+<li>Check your plan's member limit. The import cannot add more active members than your plan allows.</li>
+<li>Each run imports up to <strong>2,000 rows</strong>. Split bigger files into parts.</li>
+</ul>
+<h2 id="step-1-type">Step 1: Type<a class="anchor" href="#step-1-type" aria-label="Link to this section">#</a></h2>
+<p>Pick one type for this run under <strong>What would you like to import?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What it brings in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clients</td>
+<td>Members: names, emails, phones, date of birth, membership status, start date, emergency contacts, assigned trainer</td>
+</tr>
+<tr>
+<td>Trainers / Staff</td>
+<td>Names, emails, phones, role, hire date, certifications</td>
+</tr>
+<tr>
+<td>Payment History</td>
+<td>Past payments: client email, date, amount, description, method, status</td>
+</tr>
+<tr>
+<td>Membership Types</td>
+<td>Your membership options: name, price, billing cycle, session count</td>
+</tr>
+<tr>
+<td>Attendance / Sessions</td>
+<td>Past visits: client email, date, session name, attended or no-show</td>
+</tr>
+<tr>
+<td>Mindbody</td>
+<td>A Mindbody client list, read as-is</td>
+</tr>
+<tr>
+<td>PTminder</td>
+<td>PTminder client exports, read as-is</td>
+</tr>
+<tr>
+<td>Documents / Waivers</td>
+<td>Client email, document type, signed date, expiry date</td>
+</tr>
+</tbody>
+</table>
+<p>Under <strong>MIGRATING FROM ANOTHER PLATFORM?</strong> there are step-by-step export guides for <strong>PTminder</strong>, <strong>ABC Trainerize</strong> and <strong>Mindbody</strong>. Tap one to open it, follow the steps, then tap its <strong>Start Import</strong> button.</p>
+<p>Tap <strong>Next: Upload File</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/import-type.png" alt="Step 1: pick what you are importing" loading="lazy"><figcaption>Step 1: pick what you are importing</figcaption></figure><figure class="shot shot--phone"><img src="img/import-guide.png" alt="The Mindbody export guide" loading="lazy"><figcaption>The Mindbody export guide</figcaption></figure></div>
+
+<h2 id="step-2-upload">Step 2: Upload<a class="anchor" href="#step-2-upload" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap <strong>Select File</strong> ("Tap to browse your device: CSV, XLS, or XLSX").</li>
+<li>Pick your file. Exports straight from Mindbody can be uploaded as they are, without opening or converting them first.</li>
+<li>Check <strong>PREVIEW: FIRST 5 ROWS</strong> looks right. If your file has more than 2,000 rows, you will see a warning that only the first 2,000 will be imported.</li>
+<li>Tap <strong>Next: Map Columns</strong>. Tap the file name if you want to pick a different file.</li>
+</ol>
+</div>
+<div class="shots"><figure class="shot shot--phone"><img src="img/import-upload.png" alt="Step 2: the file preview" loading="lazy"><figcaption>Step 2: the file preview</figcaption></figure></div>
+
+<h2 id="step-3-map-columns">Step 3: Map columns<a class="anchor" href="#step-3-map-columns" aria-label="Link to this section">#</a></h2>
+<p>Totality matches your column headings to its own fields automatically. Check each one under <strong>REQUIRED FIELDS</strong> and <strong>OPTIONAL FIELDS</strong>, and change any that are wrong by tapping the field and picking the right column. Pick <strong>Skip this field</strong> for anything you do not want to bring in.</p>
+<p>Check the guesses carefully. For example, if your phone column is called Mobile, the wizard may match <strong>Phone</strong> to your emergency phone column instead. Required fields must be matched before you can go on. For Clients these are <strong>Full Name</strong> and <strong>Email</strong>.</p>
+<p>If you match <strong>Assigned Trainer</strong>, the screen lists <strong>Trainers in your gym, matched by name</strong>. A member is linked to a trainer when the value in your file matches the trainer's full name or email exactly (capitals do not matter).</p>
+<p><strong>LIVE PREVIEW: FIRST 3 ROWS</strong> shows how your first rows will come in. Tap <strong>Next: Review &amp; Import</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/import-map.png" alt="Step 3: match your columns" loading="lazy"><figcaption>Step 3: match your columns</figcaption></figure></div>
+
+<h2 id="step-4-review-and-import">Step 4: Review and import<a class="anchor" href="#step-4-review-and-import" aria-label="Link to this section">#</a></h2>
+<p>Totality checks which emails already have an account ("Checking for existing records...") and shows:</p>
+<ul>
+<li><strong>New records to create</strong></li>
+<li><strong>Existing records to update</strong></li>
+<li><strong>Skipped (missing required fields)</strong>: rows with no name or a missing or invalid email</li>
+</ul>
+<p>Tap <strong>Import N Records</strong>. A progress screen shows "Importing 12 of 48..." Keep the app open until it finishes.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/import-review.png" alt="Step 4: review the counts" loading="lazy"><figcaption>Step 4: review the counts</figcaption></figure><figure class="shot shot--phone"><img src="img/import-done.png" alt="Import complete" loading="lazy"><figcaption>Import complete</figcaption></figure></div>
+
+<h2 id="when-it-finishes">When it finishes<a class="anchor" href="#when-it-finishes" aria-label="Link to this section">#</a></h2>
+<p><strong>Import Complete</strong> shows how many were <strong>Created</strong>, <strong>Updated</strong>, <strong>Skipped (missing data)</strong> and <strong>Failed</strong>.</p>
+<ul>
+<li>If any failed, tap <strong>Download Error Report</strong> to get a list of those rows and why, fix them in your spreadsheet and import just those rows again.</li>
+<li>Tap <strong>Import Another File</strong> to start the next run, or <strong>Done</strong> to finish.</li>
+</ul>
+<p>Now go through <a href="after-import.html">After importing</a>.</p>
+<h2 id="what-happens-to-imported-members">What happens to imported members<a class="anchor" href="#what-happens-to-imported-members" aria-label="Link to this section">#</a></h2>
+<p>For each new member, Totality:</p>
+<ul>
+<li>creates their account and adds them to your gym</li>
+<li>emails them an invite from your gym with their login details and a temporary password</li>
+<li>saves their phone, date of birth and emergency contact</li>
+<li>sets their membership status and start date, if you included them</li>
+<li>links them to their trainer, if you included an assigned trainer that matches</li>
+</ul>
+<p>If an email already has a Totality account, their details are updated instead and no new invite is sent.</p>
+<aside class="callout callout--warn"><p class="callout__title">Invites go out straight away</p><p>Each new member gets their invite email during the import. If you are not ready for members to log in yet, wait to run the client import until you are.</p></aside>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-can-i-undo-an-import"><summary>Can I undo an import?</summary><div class="faq__a"><p>No. Check the preview and the mapping carefully first. If something went wrong, email admintotality@gmail.com.</p></div></details>
+
+<details class="faq" id="q-what-if-the-same-email-is-in-my-file-twice"><summary>What if the same email is in my file twice?</summary><div class="faq__a"><p>Remove duplicate emails before you import. A second row with the same email can send that person a second invite email with a password that will not work, which is confusing for them.</p></div></details>
+
+<details class="faq" id="q-can-i-import-programmes-or-workout-history"><summary>Can I import programmes or workout history?</summary><div class="faq__a"><p>Not with this wizard. Most systems, including ABC Trainerize, do not offer a self-serve export of programmes or workout history. Keep your old account until you no longer need that history.</p></div></details>
+
+<details class="faq" id="q-does-importing-move-my-members-payments-across"><summary>Does importing move my members&#x27; payments across?</summary><div class="faq__a"><p>No. Billing in your old system keeps running until you stop it there. See <a href="after-import.html">After importing</a> for how to move members onto Totality billing.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/notifications.html"><span>Previous</span>Notifications</a><a class="pager__next" href="/help/totality-owner/import-files.html"><span>Next</span>File formats and columns</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>
