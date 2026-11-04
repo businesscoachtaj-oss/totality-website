@@ -19,18 +19,18 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing | Totality and Totality Nutrition</title>
-<meta name="description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free Nutrition plan. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
+<meta name="description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free plans for solo trainers and for Nutrition. 7 days of everything to start, then 50% off your first 2 months on monthly plans. Prices in AUD.">
 <link rel="canonical" href="https://totality360.com.au/pricing.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
 <meta property="og:locale" content="en_AU">
 <meta property="og:title" content="Pricing | Totality and Totality Nutrition">
-<meta property="og:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free Nutrition plan. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
+<meta property="og:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free plans for solo trainers and for Nutrition. 7 days of everything to start, then 50% off your first 2 months on monthly plans. Prices in AUD.">
 <meta property="og:url" content="https://totality360.com.au/pricing.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pricing | Totality and Totality Nutrition">
-<meta name="twitter:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free Nutrition plan. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
+<meta name="twitter:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free plans for solo trainers and for Nutrition. 7 days of everything to start, then 50% off your first 2 months on monthly plans. Prices in AUD.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -72,6 +72,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 .pr-billing button[aria-pressed="true"] .pr-save { color: #9BE3B8; }
 .pr-grid { display: grid; gap: var(--s-4); }
 .pr-grid--solo { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.pr-grid--solo > .price-card:first-child { border-color: var(--orange, #ED8008); }
 .pr-grid--gym { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .pr-grid--nut { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1080px; }
 .price-card h3 { font-size: var(--fs-xl); }
@@ -490,7 +491,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div role="tabpanel" id="panel-totality" aria-labelledby="tab-totality">
       <div class="section-head mt-6">
         <h2>Solo plans</h2>
-        <p class="section-sub">For one trainer. Every Solo plan has the same tools. You pick the plan by how many clients you coach.</p>
+        <p class="section-sub">For one trainer. Start on Free, or pick a Solo plan by how many clients you coach. Every Solo plan has the same tools and includes Tali.</p>
       </div>
       <div class="pr-grid pr-grid--solo" id="soloPlans"></div>
 
@@ -696,14 +697,22 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
   function renderTotality() {
     var solo = U.tiersFor('solo'), gym = U.tiersFor('gym');
-    document.getElementById('soloPlans').innerHTML = solo.map(function (t) {
+    // Free plan (4 Nov 2026): solo trainers start on Free, 3 clients, no Tali, forever.
+    var freeSolo = '<article class="card price-card">' +
+      '<h3>Free</h3>' +
+      '<p class="small muted">For trying it out, or a trainer with a couple of clients.</p>' +
+      '<p class="price">A$0<small> forever</small></p>' +
+      '<ul class="ticks ticks--orange"><li>Up to 3 clients</li><li>No Tali AI</li><li>All Solo tools</li></ul>' +
+      '<a class="btn btn--primary btn--block" href="/get-totality.html">Start free</a>' +
+      '</article>';
+    document.getElementById('soloPlans').innerHTML = freeSolo + solo.map(function (t) {
       return '<article class="card price-card">' +
         '<h3>' + esc(t.name) + '</h3>' +
         '<p class="small muted">' + esc(t.description) + '</p>' +
         priceBlock(t.monthly, t.yearly) +
         '<ul class="ticks ticks--orange"><li>Up to ' + t.clientLimit.toLocaleString('en-AU') + ' clients</li>' +
         '<li>' + esc(t.features[1].label) + '</li><li>All Solo tools</li></ul>' +
-        '<a class="btn btn--primary btn--block" href="/get-totality.html">Start free trial</a>' +
+        '<a class="btn btn--primary btn--block" href="/get-totality.html">Start 7 days free</a>' +
         '</article>';
     }).join('') +
     '';
