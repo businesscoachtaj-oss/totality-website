@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A member&#x27;s page and intake | Totality for gym owners</title>
+<meta name="description" content="Everything about one member in one place, and how to do their intake (PAR-Q, health history and waiver) with them.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html" aria-current="page">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>A member&#x27;s page and intake</h1>
+    <p class="lead">Everything about one member in one place, and how to do their intake (PAR-Q, health history and waiver) with them.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#profile">Profile</a></li><li><a href="#membership">Membership</a></li><li><a href="#intake-par-q-and-waiver">Intake (PAR-Q and waiver)</a></li><li><a href="#payment">Payment</a></li><li><a href="#funding-amp-referrals">Funding &amp;amp; Referrals</a></li><li><a href="#tali-s-nudge">Tali&#x27;s nudge</a></li><li><a href="#training">Training</a></li><li><a href="#admin-notes">Admin notes</a></li><li><a href="#deactivate">Deactivate</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Tap any member on the <strong>Clients</strong> list to open their page. It has everything about them, top to bottom.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/client-detail-top.png" alt="Profile and membership" loading="lazy"><figcaption>Profile and membership</figcaption></figure><figure class="shot shot--phone"><img src="img/client-detail-payment.png" alt="Payment and funding" loading="lazy"><figcaption>Payment and funding</figcaption></figure></div>
+
+<h2 id="profile">Profile<a class="anchor" href="#profile" aria-label="Link to this section">#</a></h2>
+<p>Phone, date of birth (with their age), emergency contact name and phone. Tap <strong>Edit</strong> to change them, then <strong>Save</strong>.</p>
+<h2 id="membership">Membership<a class="anchor" href="#membership" aria-label="Link to this section">#</a></h2>
+<p>Their status (Active, Inactive or Lead), <strong>Member Since</strong> and <strong>Assigned Trainer</strong>.</p>
+<ul>
+<li><strong>Reassign Trainer</strong>: give them to a different trainer.</li>
+<li><strong>Membership, freeze and attendance</strong>: opens their <a href="check-in-freezes.html#member-status">member status</a>, where you can freeze their membership and see their visits.</li>
+</ul>
+<h2 id="intake-par-q-and-waiver">Intake (PAR-Q and waiver)<a class="anchor" href="#intake-par-q-and-waiver" aria-label="Link to this section">#</a></h2>
+<p>The <strong>COMPLIANCE</strong> card shows <strong>Intake form not completed</strong> with a <strong>Complete Intake</strong> button, or <strong>Intake Complete</strong> with the date and a <strong>View Intake</strong> button.</p>
+<p>Do the intake with the member, on your phone or tablet, when they join:</p>
+<div class="steps">
+<ol>
+<li>Tap <strong>Complete Intake</strong>.</li>
+<li><strong>Emergency Contact</strong>: their <strong>Contact Name</strong> and <strong>Contact Phone</strong>. Tap <strong>Next</strong>.</li>
+<li><strong>PAR-Q</strong> (Physical Activity Readiness Questionnaire): seven yes or no health questions. Each starts on <strong>No</strong>. Tap <strong>Yes</strong> where it applies and add notes. Tap <strong>Next</strong>.</li>
+<li><strong>Health History</strong>: <strong>Injuries</strong> and <strong>Medical Conditions</strong>. <strong>Goals</strong>: their <strong>Primary Goal</strong> (Lose Weight, Build Muscle, Improve Fitness, Sport Performance or Rehabilitation) and <strong>Fitness Level</strong> (Beginner, Intermediate or Advanced). Tap <strong>Next</strong>.</li>
+<li><strong>Liability Waiver</strong>: the member types their full name, draws their signature with their finger, and ticks <strong>I have read and agree to the above</strong>.</li>
+<li>Tap <strong>Save Intake</strong>.</li>
+</ol>
+</div>
+<div class="shots"><figure class="shot shot--phone"><img src="img/client-detail-intake.png" alt="Step 1: emergency contact" loading="lazy"><figcaption>Step 1: emergency contact</figcaption></figure><figure class="shot shot--phone"><img src="img/client-detail-parq.png" alt="Step 2: PAR-Q" loading="lazy"><figcaption>Step 2: PAR-Q</figcaption></figure></div>
+
+<p><strong>View Intake</strong> shows the answers, the PAR-Q, their goals and the signed waiver with who signed and when.</p>
+<aside class="callout callout--warn"><p class="callout__title">A Yes on the PAR-Q</p><p>If a member answers Yes to any PAR-Q question, ask them to get clearance from their doctor before they start training.</p></aside>
+
+<h2 id="payment">Payment<a class="anchor" href="#payment" aria-label="Link to this section">#</a></h2>
+<p>Their card on file (for example Visa ending 4242), or <strong>No payment method</strong> with <strong>Request Payment Method</strong> and <strong>Add Card Manually</strong>. See <a href="failed-payments.html#ask-a-member-to-add-a-card">Failed payments and cards</a>.</p>
+<h2 id="funding-amp-referrals">Funding &amp; Referrals<a class="anchor" href="#funding-amp-referrals" aria-label="Link to this section">#</a></h2>
+<p>For members whose training is funded, for example through Medicare, DVA, Workcover, NDIS or Aged Care.</p>
+<ul>
+<li><strong>Add Referral</strong>: pick the <strong>Funding Type</strong> and fill in what it needs, such as the referring GP and provider number, the Workcover claim and case manager, or NDIS plan dates and support coordinator. You can upload the referral document.</li>
+<li><strong>Service Codes</strong>: your gym's list of item codes and rates for funded services. These can also be attached to <a href="pt-packages.html">PT packages</a>.</li>
+</ul>
+<h2 id="tali-s-nudge">Tali's nudge<a class="anchor" href="#tali-s-nudge" aria-label="Link to this section">#</a></h2>
+<p>If the member has not used the app for 14 days or more, a card says "Zack has gone quiet" with <strong>Draft a nudge with Tali</strong> (uses 1 credit). Tali writes a friendly message in your voice, you edit it, and <strong>Send message</strong> sends it to them in the app. See <a href="tali.html">Tali AI for gyms</a>.</p>
+<h2 id="training">Training<a class="anchor" href="#training" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>TRAINING SUMMARY</strong>: total sets logged, when they last trained, their weight trend and strength progress, and <strong>View full session history</strong>.</li>
+<li><strong>ASSIGNED PROGRAMME</strong>: their programme (the main one is marked <strong>PRIMARY</strong>), this week's sessions with <strong>Run Session</strong> to coach one live, and <strong>Remove from client</strong>. See <a href="programmes.html">Programmes</a>.</li>
+</ul>
+<h2 id="admin-notes">Admin notes<a class="anchor" href="#admin-notes" aria-label="Link to this section">#</a></h2>
+<p>Private notes about the member, with who wrote them and when. Type in <strong>Add a note...</strong> and tap <strong>Save Note</strong>. Members never see these.</p>
+<h2 id="deactivate">Deactivate<a class="anchor" href="#deactivate" aria-label="Link to this section">#</a></h2>
+<p>At the very bottom, <strong>Deactivate Client</strong> makes them inactive (or <strong>Reactivate Client</strong> brings them back). See <a href="members.html#member-statuses">Members</a>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/client-detail-nudge.png" alt="Tali&#x27;s nudge for a member who has gone quiet" loading="lazy"><figcaption>Tali&#x27;s nudge for a member who has gone quiet</figcaption></figure></div>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-can-members-fill-in-their-own-intake"><summary>Can members fill in their own intake?</summary><div class="faq__a"><p>Members answer their own onboarding questions when they first set up the app. The intake here is the version you do together at the gym, with the waiver and signature.</p></div></details>
+
+<details class="faq" id="q-can-members-see-admin-notes"><summary>Can members see admin notes?</summary><div class="faq__a"><p>No. Members never see them.</p></div></details>
+
+<details class="faq" id="q-i-need-to-change-a-member-s-email"><summary>I need to change a member&#x27;s email.</summary><div class="faq__a"><p>Email admintotality@gmail.com with the old and new address.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/pt-packages.html"><span>Previous</span>PT packages and credits</a><a class="pager__next" href="/help/totality-owner/programmes.html"><span>Next</span>Programmes, exercises, check-ins and your own training</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

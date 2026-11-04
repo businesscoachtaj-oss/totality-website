@@ -1,0 +1,16 @@
+{
+  "title": "Totality Nutrition guide",
+  "audience": "Free and paid members",
+  "accent": "blue",
+  "icon": "/icon-nutrition.png",
+  "updated": "5 November 2026",
+  "groups": [
+    {"title": "Start here", "pages": ["index", "create-account", "onboarding", "targets", "units-region", "home"]},
+    {"title": "Logging food", "pages": ["food-log", "add-food", "barcode", "saved-meals", "tell-tali", "editing"]},
+    {"title": "Tracking", "pages": ["water", "progress", "insights", "streaks", "wearables"]},
+    {"title": "Planning and recipes", "pages": ["meal-plan", "grocery-list", "recipes"]},
+    {"title": "Tali AI", "pages": ["tali-ai"]},
+    {"title": "Your account", "pages": ["plans", "billing", "settings", "trainer", "troubleshooting", "faq"]}
+  ],
+  "pages": ["index", "create-account", "onboarding", "targets", "units-region", "home", "food-log", "add-food", "barcode", "saved-meals", "tell-tali", "editing", "water", "progress", "insights", "streaks", "wearables", "meal-plan", "grocery-list", "recipes", "tali-ai", "plans", "billing", "settings", "trainer", "troubleshooting", "faq"]
+}

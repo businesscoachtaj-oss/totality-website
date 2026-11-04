@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Messaging | Totality for trainers</title>
+<meta name="description" content="Chat with each client, message all your clients at once, use templates, and message your gym admin.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-trainer">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-trainer/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for trainers</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-trainer"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For personal trainers</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-trainer/">Welcome to Totality for trainers</a></li><li><a href="/help/totality-trainer/plans.html">Plans and prices</a></li><li><a href="/help/totality-trainer/sign-up.html">Signing up</a></li><li><a href="/help/totality-trainer/tour-and-home.html">The tour and your Home screen</a></li><li><a href="/help/totality-trainer/joining-a-gym.html">Joining a gym</a></li></ol><p class="toc__group">Clients</p><ol><li><a href="/help/totality-trainer/adding-clients.html">Adding and inviting clients</a></li><li><a href="/help/totality-trainer/client-list.html">Your client list</a></li><li><a href="/help/totality-trainer/client-profile.html">The client profile</a></li><li><a href="/help/totality-trainer/gym-members.html">Gym members</a></li></ol><p class="toc__group">Programmes</p><ol><li><a href="/help/totality-trainer/programmes.html">Programmes</a></li><li><a href="/help/totality-trainer/programme-builder.html">The programme builder</a></li><li><a href="/help/totality-trainer/session-builder.html">The session builder</a></li><li><a href="/help/totality-trainer/exercise-library.html">The exercise library</a></li><li><a href="/help/totality-trainer/auto-regulation.html">The auto-regulation engine</a></li></ol><p class="toc__group">Training sessions</p><ol><li><a href="/help/totality-trainer/running-a-session.html">Running a session with a client</a></li><li><a href="/help/totality-trainer/session-history.html">Session summary and history</a></li></ol><p class="toc__group">Check-ins</p><ol><li><a href="/help/totality-trainer/check-ins.html">Weekly check-ins</a></li><li><a href="/help/totality-trainer/waiting-on-you.html">Waiting on you and nudges</a></li></ol><p class="toc__group">Nutrition</p><ol><li><a href="/help/totality-trainer/client-nutrition.html">Client nutrition and targets</a></li><li><a href="/help/totality-trainer/my-nutrition.html">Your own food log</a></li></ol><p class="toc__group">Schedule</p><ol><li><a href="/help/totality-trainer/schedule.html">Your schedule and appointments</a></li><li><a href="/help/totality-trainer/credits.html">PT credits, packages and settling sessions</a></li><li><a href="/help/totality-trainer/classes.html">Classes</a></li><li><a href="/help/totality-trainer/calendar-sync.html">Calendar sync</a></li></ol><p class="toc__group">Messaging</p><ol><li><a href="/help/totality-trainer/messages.html" aria-current="page">Messaging</a></li></ol><p class="toc__group">Getting paid</p><ol><li><a href="/help/totality-trainer/getting-paid.html">Getting paid</a></li><li><a href="/help/totality-trainer/payment-links.html">Payment links and cards on file</a></li><li><a href="/help/totality-trainer/marketplace.html">Your shop, products and revenue</a></li><li><a href="/help/totality-trainer/reports.html">Reports</a></li></ol><p class="toc__group">Tali AI</p><ol><li><a href="/help/totality-trainer/tali.html">Tali AI</a></li></ol><p class="toc__group">Your own training</p><ol><li><a href="/help/totality-trainer/my-training.html">Your own training</a></li></ol><p class="toc__group">Settings</p><ol><li><a href="/help/totality-trainer/settings.html">Settings</a></li><li><a href="/help/totality-trainer/branding.html">Branding</a></li><li><a href="/help/totality-trainer/subscription.html">Your subscription</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-trainer/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-trainer/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for trainers</p>
+    <h1>Messaging</h1>
+    <p class="lead">Chat with each client, message all your clients at once, use templates, and message your gym admin.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#your-inbox">Your inbox</a></li><li><a href="#chat-with-a-client">Chat with a client</a></li><li><a href="#templates">Templates</a></li><li><a href="#message-all-clients">Message all clients</a></li><li><a href="#messages-from-tali">Messages from Tali</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>The <strong>Messages</strong> tab is direct messaging with your clients. A red badge on the tab shows how many unread messages you have.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/messages-list.png" alt="Messages" loading="lazy"><figcaption>Messages</figcaption></figure><figure class="shot shot--phone"><img src="img/messages-thread.png" alt="A conversation" loading="lazy"><figcaption>A conversation</figcaption></figure></div>
+
+<h2 id="your-inbox">Your inbox<a class="anchor" href="#your-inbox" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Totality (Announcement)</strong> at the top holds news from Totality. It's read only.</li>
+<li>At a gym, <strong>Iron Works (Gym admin)</strong> (your gym's name) is always there so you can message your gym admin.</li>
+<li>Then every client, with their last message, the time and an unread count. Clients you haven't messaged show "No messages yet. Say hello!".</li>
+<li><strong>Search clients...</strong> finds a client by name.</li>
+</ul>
+<p>The list updates live as messages arrive.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/messages-gym.png" alt="At a gym, the gym admin thread sits near the top" loading="lazy"><figcaption>At a gym, the gym admin thread sits near the top</figcaption></figure></div>
+
+<h2 id="chat-with-a-client">Chat with a client<a class="anchor" href="#chat-with-a-client" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap the client.</li>
+<li>Type in <strong>Message (name)...</strong>.</li>
+<li>Tap the send arrow.</li>
+</ol>
+</div>
+<p>The client gets a notification "New message from Sam" (with your name). If a message fails to send, it shows "Not sent. Tap to retry" and your text goes back in the box, so nothing is lost.</p>
+<h2 id="templates">Templates<a class="anchor" href="#templates" aria-label="Link to this section">#</a></h2>
+<p>Tap the template button next to the message box to insert a saved message. Built-in templates are <strong>Check-in reminder</strong>, <strong>Great week</strong>, <strong>Missed session</strong>, <strong>New programme</strong> and <strong>Schedule change</strong>.</p>
+<ul>
+<li>Type a message, then <strong>Save current message as a template</strong> with a name to add your own.</li>
+<li>Delete your own templates from the same list. Built-in ones are marked <strong>Built in</strong>.</li>
+</ul>
+<h2 id="message-all-clients">Message all clients<a class="anchor" href="#message-all-clients" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap <strong>Message all clients</strong> at the top of Messages.</li>
+<li>Write your message (up to 1,000 characters), or tap <strong>Templates</strong>.</li>
+<li>Tap <strong>Send to N clients</strong> and confirm.</li>
+</ol>
+</div>
+<p>Each active client gets it as a normal message from you in their own thread, with a notification. Archived clients are left out. You see progress while it sends, then a summary. If any fail, <strong>Retry failed</strong> sends to those again.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/messages-broadcast.png" alt="Message all clients" loading="lazy"><figcaption>Message all clients</figcaption></figure></div>
+
+<h2 id="messages-from-tali">Messages from Tali<a class="anchor" href="#messages-from-tali" aria-label="Link to this section">#</a></h2>
+<p>Nudges you send from <a href="waiting-on-you.html">Waiting on you</a> arrive in the client's thread as normal messages from you.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-can-clients-message-each-other"><summary>Can clients message each other?</summary><div class="faq__a"><p>No. Clients message you (and the gym, at a gym). They can't see other clients.</p></div></details>
+
+<details class="faq" id="q-can-i-send-photos-or-files"><summary>Can I send photos or files?</summary><div class="faq__a"><p>Messages are text only.</p></div></details>
+
+<details class="faq" id="q-i-m-not-getting-notified-of-new-messages"><summary>I&#x27;m not getting notified of new messages.</summary><div class="faq__a"><p>Check <strong>Settings &gt; Notifications &gt; Messages</strong> is on, and that notifications for Totality are allowed in your phone's settings. Push notifications only work in the phone app, not the web.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-trainer/calendar-sync.html"><span>Previous</span>Calendar sync</a><a class="pager__next" href="/help/totality-trainer/getting-paid.html"><span>Next</span>Getting paid</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting | Tali HQ guide</title>
+<meta name="description" content="Fixes for sign in problems, messages that won&#x27;t send, missing briefs and notifications, connections and more.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#6C3483;--accent-dark:#4E2560;--accent-soft:#F3EEF6;--on-accent:#FFFFFF}</style>
+</head>
+<body class="guide guide--tali-hq">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/tali-hq/"><img src="/img/tali/tali-icon-512.png" alt="" width="28" height="28"><span>Tali HQ guide</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="tali-hq"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For small business owners</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/tali-hq/">Welcome to Tali HQ</a></li><li><a href="/help/tali-hq/getting-started.html">Getting started</a></li><li><a href="/help/tali-hq/today.html">Today and your morning brief</a></li><li><a href="/help/tali-hq/evening.html">Shut the day down and night mode</a></li></ol><p class="toc__group">Talking to Tali</p><ol><li><a href="/help/tali-hq/talk.html">Talk to Tali</a></li><li><a href="/help/tali-hq/replies.html">How Tali&#x27;s replies work</a></li><li><a href="/help/tali-hq/approvals.html">Approvals, Tali never acts without your yes</a></li></ol><p class="toc__group">Email</p><ol><li><a href="/help/tali-hq/tali-email.html">Tali&#x27;s email address</a></li><li><a href="/help/tali-hq/gmail-outlook.html">Gmail, Outlook and your calendar</a></li></ol><p class="toc__group">Your business</p><ol><li><a href="/help/tali-hq/clients.html">Clients and leads</a></li><li><a href="/help/tali-hq/invoices.html">Invoices and Stripe</a></li><li><a href="/help/tali-hq/money.html">Money</a></li><li><a href="/help/tali-hq/goals-review.html">Goals and weekly review</a></li><li><a href="/help/tali-hq/decisions.html">Decisions</a></li></ol><p class="toc__group">You and Tali</p><ol><li><a href="/help/tali-hq/journal.html">Journal and notes</a></li><li><a href="/help/tali-hq/what-tali-knows.html">What Tali knows</a></li><li><a href="/help/tali-hq/night-school-rules.html">Night school and Rules</a></li><li><a href="/help/tali-hq/food-training.html">Food and training</a></li><li><a href="/help/tali-hq/sleep.html">Sleep sounds and wind down</a></li></ol><p class="toc__group">Plans and account</p><ol><li><a href="/help/tali-hq/plans.html">Plans, credits and billing</a></li><li><a href="/help/tali-hq/settings.html">Settings and account</a></li><li><a href="/help/tali-hq/privacy.html">Privacy and your data</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/tali-hq/troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="/help/tali-hq/faq.html">FAQ</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Tali HQ guide</p>
+    <h1>Troubleshooting</h1>
+    <p class="lead">Fixes for sign in problems, messages that won&#x27;t send, missing briefs and notifications, connections and more.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#first-refresh">First, refresh</a></li><li><a href="#can-t-sign-in">Can&#x27;t sign in</a></li><li><a href="#forgot-your-password">Forgot your password</a></li><li><a href="#the-confirmation-email-never-came">The confirmation email never came</a></li><li><a href="#a-message-won-t-send">A message won&#x27;t send</a></li><li><a href="#no-morning-brief">No morning brief</a></li><li><a href="#no-notifications">No notifications</a></li><li><a href="#today-says-it-couldn-t-load">Today says it couldn&#x27;t load</a></li><li><a href="#connecting-google-microsoft-or-stripe-fails">Connecting Google, Microsoft or Stripe fails</a></li><li><a href="#email-isn-t-showing-up">Email isn&#x27;t showing up</a></li><li><a href="#can-t-send-an-invoice-with-stripe">Can&#x27;t send an invoice with Stripe</a></li><li><a href="#tali-s-email-address">Tali&#x27;s email address</a></li><li><a href="#sleep-sound-stops">Sleep sound stops</a></li><li><a href="#can-t-delete-my-account">Can&#x27;t delete my account</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Most problems have a quick fix. Find yours below. If you're still stuck, email admintotality@gmail.com and a real person will help.</p>
+<h2 id="first-refresh">First, refresh<a class="anchor" href="#first-refresh" aria-label="Link to this section">#</a></h2>
+<p>Tali HQ updates itself. If something looks wrong or out of date:</p>
+<div class="steps">
+<ol>
+<li>Pull down on the screen to refresh it. Most screens reload this way.</li>
+<li>Close Tali HQ fully (close the browser tab, or swipe the app away), then open it again.</li>
+<li>If you just added Tali HQ to your home screen, close it and open it once more so it picks up the latest version.</li>
+</ol>
+</div>
+<h2 id="can-t-sign-in">Can't sign in<a class="anchor" href="#can-t-sign-in" aria-label="Link to this section">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"That email and password don't match. Try again or reset it."</td>
+<td>Check the email for typos and try again, or reset your password (below).</td>
+</tr>
+<tr>
+<td>"Check your inbox first, there's a confirmation email waiting."</td>
+<td>Tap the link in the confirmation email first. Check junk and spam.</td>
+</tr>
+<tr>
+<td>"Too many goes. Give it a minute."</td>
+<td>Wait a minute, then try again.</td>
+</tr>
+<tr>
+<td>"Pop in your email and password."</td>
+<td>One of the boxes is empty.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="forgot-your-password">Forgot your password<a class="anchor" href="#forgot-your-password" aria-label="Link to this section">#</a></h2>
+<div class="shots"><figure class="shot shot--phone"><img src="img/troubleshooting-signin-error.png" alt="Type your email first, then tap Forgot password" loading="lazy"><figcaption>Type your email first, then tap Forgot password</figcaption></figure></div>
+
+<div class="steps">
+<ol>
+<li>On the sign in screen, type your email in the <strong>Email</strong> box.</li>
+<li>Tap <strong>Forgot password</strong>. (If the email box is empty, you'll see "Type your email above first, then tap this again.")</li>
+<li>You see "Check your email for a link to set a new password."</li>
+<li>Open the email and tap the link. Tali HQ opens on <strong>Set a new password</strong>.</li>
+<li>Type a <strong>New password</strong> (at least 8 characters) and <strong>Type it again</strong>.</li>
+<li>Tap <strong>Save new password</strong>. You're signed in.</li>
+</ol>
+</div>
+<p>If the two don't match, you'll see "Those two don't match." Tap <strong>Cancel and sign out</strong> to leave without changing it.</p>
+<h2 id="the-confirmation-email-never-came">The confirmation email never came<a class="anchor" href="#the-confirmation-email-never-came" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>Check junk, spam and promotions folders.</li>
+<li>On the <strong>Check your email</strong> screen, tap <strong>Resend email</strong>.</li>
+<li>If you typed the wrong address, tap <strong>Wrong email? Start again</strong>.</li>
+</ul>
+<h2 id="a-message-won-t-send">A message won't send<a class="anchor" href="#a-message-won-t-send" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>"Not sent. Try again"</strong>: Tali couldn't be reached. Check your internet, then tap <strong>Try again</strong>. Your words were put back in the box, so nothing is lost.</li>
+<li><strong>"That's your 250 free messages for this month."</strong> You've used Free's messages. They reset on the 1st, or upgrade. See <a href="plans.html">Plans, credits and billing</a>.</li>
+<li><strong>"You've used this month's Tali credits."</strong> Credits reset on the 1st, or move up a plan.</li>
+<li><strong>"Easy, tiger. Give me a minute and try again."</strong> More than 20 things went to Tali in 5 minutes. Wait a minute.</li>
+<li><strong>"Photos are free, PDFs are part of Tali HQ."</strong> PDFs need Tali HQ or Pro. Photos work on Free.</li>
+<li><strong>"... is over 10 MB."</strong> Use a smaller file.</li>
+</ul>
+<div class="shots"><figure class="shot shot--phone"><img src="img/talk-out-of-messages.png" alt="Out of messages on Free" loading="lazy"><figcaption>Out of messages on Free</figcaption></figure></div>
+
+<h2 id="no-morning-brief">No morning brief<a class="anchor" href="#no-morning-brief" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>The daily brief is part of Tali HQ and Pro (and the trial). On Free, you get a Friday check-in instead.</li>
+<li>It lands at the time in <strong>Settings</strong>, <strong>Morning brief time</strong>. If it's earlier than that, it isn't due yet.</li>
+<li>If you're out of credits, the brief is skipped until the 1st.</li>
+</ul>
+<h2 id="no-notifications">No notifications<a class="anchor" href="#no-notifications" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>In <strong>Me</strong>, <strong>Settings</strong>, make sure <strong>Notifications from Tali</strong> is on, and tap <strong>Save</strong>.</li>
+<li>Tap <strong>Turn on notifications on this device</strong> and allow notifications when asked. A test should arrive.</li>
+<li>On iPhone, add Tali HQ to your Home Screen first (Share, then <strong>Add to Home Screen</strong>), open it from there and turn notifications on. iPhone doesn't allow them in the Safari tab.</li>
+<li>If you see "Notifications are blocked for Tali HQ in your browser settings", allow them in your browser or phone settings, then try again.</li>
+</ol>
+</div>
+<p>Turn notifications on separately on each device you use.</p>
+<h2 id="today-says-it-couldn-t-load">Today says it couldn't load<a class="anchor" href="#today-says-it-couldn-t-load" aria-label="Link to this section">#</a></h2>
+<p>You'll see "Could not load today. Pull down to try again." Check your internet, then pull down on Today.</p>
+<h2 id="connecting-google-microsoft-or-stripe-fails">Connecting Google, Microsoft or Stripe fails<a class="anchor" href="#connecting-google-microsoft-or-stripe-fails" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>"Google didn't finish connecting"</strong>: try again and tick every box Google asks about.</li>
+<li><strong>"Google hasn't verified this app"</strong>: while Tali HQ is in beta, tap <strong>Advanced</strong>, then <strong>Continue</strong>.</li>
+<li><strong>"Microsoft didn't finish connecting"</strong>: try again and accept every permission. Work accounts may need your IT admin to approve Tali HQ the first time.</li>
+<li><strong>"That link timed out"</strong>: start again from <strong>Me</strong>, <strong>Connections</strong>.</li>
+<li><strong>"Connect ... from the web app for now"</strong>: on a phone app, connect from talihq.com.au in your browser. It shows in the app straight after.</li>
+<li><strong>"Google signed us out"</strong> or <strong>"Microsoft signed us out"</strong>: tap <strong>Reconnect Google</strong> or <strong>Reconnect Microsoft</strong>.</li>
+</ul>
+<h2 id="email-isn-t-showing-up">Email isn't showing up<a class="anchor" href="#email-isn-t-showing-up" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>Tali checks Gmail and Outlook every 10 minutes and only reads mail from the moment you connected.</li>
+<li>Check the <strong>FYI</strong> and <strong>Junk</strong> tabs. If you were out of credits when an email arrived, it's in FYI without a summary.</li>
+<li>For Tali's own address, check you're on Pro and copied the address exactly. Send a test email to it.</li>
+</ul>
+<h2 id="can-t-send-an-invoice-with-stripe">Can't send an invoice with Stripe<a class="anchor" href="#can-t-send-an-invoice-with-stripe" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Send with Stripe</strong> only shows on draft invoices when Stripe is connected.</li>
+<li>The client needs an email. Add it in <strong>Their email (optional)</strong> and save. On Today, the draft shows <strong>Add their email</strong> instead of Send until you do.</li>
+</ul>
+<h2 id="tali-s-email-address">Tali's email address<a class="anchor" href="#tali-s-email-address" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>"That one is taken"</strong>: someone has that word already. Try another.</li>
+<li><strong>"Use 3 to 24 letters or numbers"</strong>: no spaces, dots or dashes, and 3 to 24 characters.</li>
+</ul>
+<h2 id="sleep-sound-stops">Sleep sound stops<a class="anchor" href="#sleep-sound-stops" aria-label="Link to this section">#</a></h2>
+<p>In a browser, Sleep plays while the Tali HQ tab is open. If it stops when the screen locks, leave Tali HQ open on screen (it dims itself after 20 seconds).</p>
+<h2 id="can-t-delete-my-account">Can't delete my account<a class="anchor" href="#can-t-delete-my-account" aria-label="Link to this section">#</a></h2>
+<p>If you see "Cancel your Tali HQ subscription first, then delete your account.", open <strong>Me</strong>, <strong>See plans</strong>, <strong>Manage billing</strong> and cancel. Once the plan has ended, try again.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-something-still-isn-t-working"><summary>Something still isn&#x27;t working.</summary><div class="faq__a"><p>Email admintotality@gmail.com with what you tapped, what you expected and what happened. A screenshot helps.</p></div></details>
+
+<details class="faq" id="q-tali-got-something-wrong"><summary>Tali got something wrong.</summary><div class="faq__a"><p>Tell her in Talk, plainly: "that's wrong, Priya pays monthly". If she remembered something wrong, forget it on the <strong>Me</strong> screen.</p></div></details>
+
+<details class="faq" id="q-a-screen-is-blank-or-stuck-on-loading"><summary>A screen is blank or stuck on loading.</summary><div class="faq__a"><p>Pull down to refresh. If it's still stuck, close Tali HQ fully and open it again.</p></div></details>
+
+<details class="faq" id="q-i-m-signed-in-on-the-wrong-account"><summary>I&#x27;m signed in on the wrong account.</summary><div class="faq__a"><p><strong>Me</strong>, <strong>Sign out</strong>, then <strong>Sure?</strong>. On the setup screen, tap <strong>Not you? Sign out</strong>.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/tali-hq/privacy.html"><span>Previous</span>Privacy and your data</a><a class="pager__next" href="/help/tali-hq/faq.html"><span>Next</span>FAQ</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

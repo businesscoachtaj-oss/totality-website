@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your dashboard | Totality for gym owners</title>
+<meta name="description" content="The middle tab: your setup steps, Tali&#x27;s brief, what needs you today, your key numbers and shortcuts to every section.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html" aria-current="page">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Your dashboard</h1>
+    <p class="lead">The middle tab: your setup steps, Tali&#x27;s brief, what needs you today, your key numbers and shortcuts to every section.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#set-up-your-gym-card">Set up your gym card</a></li><li><a href="#tali-s-brief">Tali&#x27;s brief</a></li><li><a href="#needs-attention-today">Needs attention today</a></li><li><a href="#key-numbers">Key numbers</a></li><li><a href="#sections">Sections</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>The <strong>Dashboard</strong> is the middle tab. It answers one question: what needs me today? Pull down on it to refresh.</p>
+<h2 id="set-up-your-gym-card">Set up your gym card<a class="anchor" href="#set-up-your-gym-card" aria-label="Link to this section">#</a></h2>
+<p>Until your gym is fully set up, a <strong>Set up your gym</strong> card sits at the top with three steps:</p>
+<ul>
+<li><strong>Add your trainers</strong>: "They get their own login by email." Tap <strong>Add</strong> to <a href="trainers.html">invite a trainer</a>.</li>
+<li><strong>Add your members</strong>: "One by one, or import a spreadsheet." Tap <strong>Add</strong> to <a href="add-members.html">add a member</a>.</li>
+<li><strong>Connect payments</strong>: "Link Stripe so members can pay you in the app and your revenue shows here." Tap <strong>Connect</strong> to <a href="stripe-connect.html">set up Stripe</a>.</li>
+</ul>
+<p>Each step gets a green tick when it is done, and the card disappears once all three are ticked. Under the steps there is a shortcut to <strong>Import</strong>, for bringing members across from another system, and an email address you can send your spreadsheet to if you would like the Totality team to import it for you, free.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/dashboard-setup.png" alt="The Set up your gym card on a new account" loading="lazy"><figcaption>The Set up your gym card on a new account</figcaption></figure></div>
+
+<h2 id="tali-s-brief">Tali's brief<a class="anchor" href="#tali-s-brief" aria-label="Link to this section">#</a></h2>
+<p>The <strong>TALI'S BRIEF</strong> card sums up your day in a line or two: how many classes are on today, how many PT sessions are booked this week, and how many things need you. When Tali has drafted messages for you during the week, it says so here too. Writing the brief costs no credits.</p>
+<h2 id="needs-attention-today">Needs attention today<a class="anchor" href="#needs-attention-today" aria-label="Link to this section">#</a></h2>
+<p>This is a list of things to act on, most urgent first. Red rows are urgent. Tap any row to open the screen where you fix it. You might see:</p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>What it means</th>
+<th>Tapping it opens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Your free trial has ended / Trial ends in 3 days</td>
+<td>Pick a plan so nothing stops working</td>
+<td>Choose a plan</td>
+</tr>
+<tr>
+<td>Your Totality payment failed</td>
+<td>Your own Totality subscription payment did not go through</td>
+<td>Your Totality plan</td>
+</tr>
+<tr>
+<td>Close to your member limit / Member limit reached</td>
+<td>You are at 90% or 100% of your plan's members</td>
+<td>Choose a plan</td>
+</tr>
+<tr>
+<td>Connect Stripe to take payments / Finish your Stripe setup</td>
+<td>Stripe is not connected or still needs details</td>
+<td>Stripe Connect setup</td>
+</tr>
+<tr>
+<td>2 failed payments</td>
+<td>Member payments that did not go through in the last 120 days</td>
+<td>Failed payments</td>
+</tr>
+<tr>
+<td>1 membership expiring in 14 days</td>
+<td>A fixed-term membership or PT package ends in the next 14 days</td>
+<td>The member, or Memberships</td>
+</tr>
+<tr>
+<td>1 compliance document expired</td>
+<td>A staff certificate has expired or expires within 30 days</td>
+<td>Compliance</td>
+</tr>
+<tr>
+<td>2 incident reports not closed</td>
+<td>Reports that are Open or In Review</td>
+<td>Incident reports</td>
+</tr>
+<tr>
+<td>2 check-ins waiting for your reply</td>
+<td>Weekly check-ins from clients you coach yourself</td>
+<td>Check-ins</td>
+</tr>
+<tr>
+<td>Leads: 2 new, 2 follow ups due</td>
+<td>New leads and follow-ups due today or overdue</td>
+<td>Leads</td>
+</tr>
+<tr>
+<td>2 unread messages</td>
+<td>Messages to you from members</td>
+<td>Messages</td>
+</tr>
+<tr>
+<td>Strength Circuit at 09:30 is at capacity</td>
+<td>Today's class is full or over capacity</td>
+<td>Classes</td>
+</tr>
+<tr>
+<td>Mobility Flow at 18:00 has 2 booked</td>
+<td>Today's class is less than a quarter full. "Worth a reminder post?"</td>
+<td>Classes</td>
+</tr>
+</tbody>
+</table>
+<p>When nothing needs you, it says <strong>All clear. Nothing needs you right now.</strong></p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/dashboard-attention.png" alt="Tali&#x27;s brief and the attention list" loading="lazy"><figcaption>Tali&#x27;s brief and the attention list</figcaption></figure><figure class="shot shot--phone"><img src="img/dashboard-numbers.png" alt="Key numbers" loading="lazy"><figcaption>Key numbers</figcaption></figure></div>
+
+<h2 id="key-numbers">Key numbers<a class="anchor" href="#key-numbers" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Revenue this month</strong>: money in from Stripe this calendar month, after the platform fee. Tap it to open <a href="revenue-insights.html">Revenue</a>. Before Stripe is connected it says <strong>Connect Stripe to see revenue</strong>.</li>
+<li><strong>Active members</strong> and <strong>Trainers</strong>: tap to open the lists.</li>
+<li><strong>Sessions booked this week</strong> and <strong>Sessions completed this week</strong>: PT sessions across the whole gym. Tap to open the <a href="gym-schedule.html">gym schedule</a>.</li>
+<li><strong>Workouts logged this week</strong>: workouts your clients logged in the app.</li>
+<li><strong>Open leads</strong>: tap to open <a href="leads.html">Leads</a>.</li>
+</ul>
+<p>Under the numbers you can see how much of your plan you are using, for example "48 of 500 members used on your plan".</p>
+<h2 id="sections">Sections<a class="anchor" href="#sections" aria-label="Link to this section">#</a></h2>
+<p>The <strong>SECTIONS</strong> grid has a tile for each part of the app: <strong>Members</strong>, <strong>Sales and billing</strong>, <strong>Schedule</strong>, <strong>Staff</strong> and <strong>Insights</strong>, plus a <strong>Calorie calculator</strong> for quick nutrition maths with a member. At the very bottom is <strong>Sign out</strong>, and links to the Terms &amp; Conditions and Privacy Policy.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/dashboard-sections.png" alt="The sections grid" loading="lazy"><figcaption>The sections grid</figcaption></figure></div>
+
+<aside class="callout callout--tip"><p class="callout__title">Your gym&#x27;s name at the top</p><p>The dashboard title is your gym's name. With the <a href="branding.html">branding add-on</a>, it shows your own logo, name and colour.</p></aside>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-how-often-does-the-dashboard-update"><summary>How often does the dashboard update?</summary><div class="faq__a"><p>Every time you open it. If you have been on it a while, pull down to refresh.</p></div></details>
+
+<details class="faq" id="q-why-does-revenue-on-the-dashboard-not-match-my-bank"><summary>Why does revenue on the dashboard not match my bank?</summary><div class="faq__a"><p>The dashboard shows money taken through Stripe this calendar month, after the 3.5% platform fee. Your bank receives Stripe payouts on Stripe's own schedule and after Stripe's card fees. See <a href="revenue-insights.html">Revenue and insights</a>.</p></div></details>
+
+<details class="faq" id="q-why-is-a-check-in-row-showing-when-i-don-t-coach-anyone"><summary>Why is a check-in row showing when I don&#x27;t coach anyone?</summary><div class="faq__a"><p>That row only counts check-ins from clients assigned to you personally. If you do not coach, it will not appear.</p></div></details>
+
+<details class="faq" id="q-can-i-hide-a-row"><summary>Can I hide a row?</summary><div class="faq__a"><p>No. A row goes away when the thing behind it is dealt with, for example when a failed payment is retried and paid, or a lead is contacted.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/sign-up.html"><span>Previous</span>Signing up and your first login</a><a class="pager__next" href="/help/totality-owner/gym-settings.html"><span>Next</span>Gym details and settings</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

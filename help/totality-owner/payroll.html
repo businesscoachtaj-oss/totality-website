@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payroll | Totality for gym owners</title>
+<meta name="description" content="Set each trainer&#x27;s pay rates, open pay periods, log hours, check the total, mark it paid and export it.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html" aria-current="page">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Payroll</h1>
+    <p class="lead">Set each trainer&#x27;s pay rates, open pay periods, log hours, check the total, mark it paid and export it.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#1-set-pay-rates">1. Set pay rates</a></li><li><a href="#2-open-a-pay-period">2. Open a pay period</a></li><li><a href="#3-check-the-breakdown">3. Check the breakdown</a></li><li><a href="#4-log-hours">4. Log hours</a></li><li><a href="#5-pay-and-record-it">5. Pay and record it</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p><strong>Payroll</strong> works out what each trainer has earned in a pay period from the work recorded in Totality: completed PT sessions, completed classes they taught, and hours you log. You set the rates once, open a pay period, and Totality adds it up. Paying people still happens through your bank or <a href="xero.html">Xero</a>.</p>
+<p>Open <strong>More</strong>, then <strong>Staff</strong>, then <strong>Payroll</strong>. It is also under <strong>Settings</strong>, then <strong>Payroll &amp; Xero</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/payroll-overview.png" alt="Payroll with an open period per trainer" loading="lazy"><figcaption>Payroll with an open period per trainer</figcaption></figure><figure class="shot shot--phone"><img src="img/payroll-trainer.png" alt="One trainer&#x27;s breakdown" loading="lazy"><figcaption>One trainer&#x27;s breakdown</figcaption></figure></div>
+
+<h2 id="1-set-pay-rates">1. Set pay rates<a class="anchor" href="#1-set-pay-rates" aria-label="Link to this section">#</a></h2>
+<p>Tap <strong>Pay Rates</strong> to open it. Each trainer has their own rates. Tap <strong>Add Rate</strong> next to a trainer and fill in:</p>
+<ul>
+<li><strong>Rate Name</strong>: for example PT Session.</li>
+<li><strong>Rate Type</strong>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Badge</th>
+<th>Pays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Per session</td>
+<td>PT</td>
+<td>Each completed 1:1 PT session</td>
+</tr>
+<tr>
+<td>Per class</td>
+<td>Class</td>
+<td>Each completed class they taught</td>
+</tr>
+<tr>
+<td>Hourly</td>
+<td>Hourly</td>
+<td>Hours you log for them</td>
+</tr>
+<tr>
+<td>Custom</td>
+<td>Custom</td>
+<td>A fixed amount, once per pay period</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Amount (AUD)</strong>: for example 45.00.</li>
+<li><strong>Session length (minutes)</strong>, for PT rates only: "Sessions of this length are paid at this rate. Leave blank to pay any length that doesn't have its own rate." So you can pay 45 minute sessions at one rate and 60 minute sessions at another.</li>
+</ul>
+<p>Tap <strong>Save</strong>. Tap a rate to edit it, or the bin to delete it.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/payroll-rates.png" alt="Pay rates for each trainer" loading="lazy"><figcaption>Pay rates for each trainer</figcaption></figure></div>
+
+<aside class="callout callout--warn"><p class="callout__title">One rate per kind</p><p>Each trainer can have one PT rate per session length, one class rate, and one hourly rate per name. If two rates clash, Payroll will not pay that trainer until you fix it, and shows <strong>Fix rates</strong>. A trainer with no rate for a kind of work shows <strong>Set rate</strong>.</p></aside>
+
+<h2 id="2-open-a-pay-period">2. Open a pay period<a class="anchor" href="#2-open-a-pay-period" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap <strong>+ New Period</strong> at the top.</li>
+<li>Under <strong>Trainer</strong>, pick one trainer, or <strong>All Trainers</strong> to open a period for everyone at once.</li>
+<li>Enter the <strong>Period Start</strong> and <strong>Period End</strong> dates (YYYY-MM-DD).</li>
+<li>Tap <strong>Confirm</strong>.</li>
+</ol>
+</div>
+<p>A trainer with no open period shows "No open period. Tap + to create".</p>
+<h2 id="3-check-the-breakdown">3. Check the breakdown<a class="anchor" href="#3-check-the-breakdown" aria-label="Link to this section">#</a></h2>
+<p>Tap a trainer to open their period. You see:</p>
+<ul>
+<li><strong>PT sessions</strong>: the count at each rate, with the date, time, client and length of each session.</li>
+<li><strong>Classes</strong>: classes they taught that are marked complete.</li>
+<li><strong>Hours</strong>: hours you logged, at the hourly rate.</li>
+<li>Any custom amounts.</li>
+<li><strong>TOTAL</strong>.</li>
+</ul>
+<p>Only work that is <strong>marked complete</strong> counts. If sessions or classes in the period are not marked complete yet, a note tells you how many. Settle sessions on the <a href="gym-schedule.html">gym schedule</a> (or the trainer does in their app) and mark classes complete on <a href="classes.html">Classes</a>. Anything completed after you pay a period is added to the next one, and the trainer's card shows "Has unpaid late sessions. Create a period to pay them".</p>
+<h2 id="4-log-hours">4. Log hours<a class="anchor" href="#4-log-hours" aria-label="Link to this section">#</a></h2>
+<p>For floor shifts, front desk or anything not booked in Totality:</p>
+<div class="steps">
+<ol>
+<li>In the trainer's period, tap <strong>Add hours</strong>.</li>
+<li>Enter the <strong>Date</strong>, <strong>Hours</strong> (for example 2.5), the <strong>Rate</strong> if they have more than one hourly rate, and optional <strong>Notes</strong> (for example Induction shift).</li>
+<li>Tap <strong>Save</strong>.</li>
+</ol>
+</div>
+<p>If a trainer has no hourly rate you will see "No hourly rate is set for this trainer, so these hours can't be paid until one is added." Tap the bin next to an entry to delete it.</p>
+<h2 id="5-pay-and-record-it">5. Pay and record it<a class="anchor" href="#5-pay-and-record-it" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Pay the trainer through your bank or payroll system.</li>
+<li>Tap <strong>Mark as Paid</strong>. Check the amount and dates in the message and tap <strong>Mark as paid</strong>.</li>
+</ol>
+</div>
+<p>The period moves to <strong>Past Periods</strong> with a <strong>PAID</strong> badge. The paid amount flows into your <a href="reports.html">Expenses report</a> as staff pay.</p>
+<p><strong>Export CSV</strong> downloads the period's breakdown as a spreadsheet, for your accountant or payroll system.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-why-is-a-session-missing-from-the-total"><summary>Why is a session missing from the total?</summary><div class="faq__a"><p>It is not marked complete. Sessions booked with no credit stay "pending settlement" until they are cashed off or marked complete. See <a href="gym-schedule.html#cash-off-and-cash-off-week">Gym schedule</a>.</p></div></details>
+
+<details class="faq" id="q-does-payroll-pay-my-trainers-automatically"><summary>Does payroll pay my trainers automatically?</summary><div class="faq__a"><p>No. Payroll works out what they are owed. You pay them yourself, or export a draft pay run to <a href="xero.html">Xero</a>.</p></div></details>
+
+<details class="faq" id="q-can-i-see-past-pay-periods"><summary>Can I see past pay periods?</summary><div class="faq__a"><p>Yes, under <strong>Past Periods</strong> at the bottom.</p></div></details>
+
+<details class="faq" id="q-does-payroll-handle-tax-and-super"><summary>Does Payroll handle tax and super?</summary><div class="faq__a"><p>No. Totality works out gross pay from your rates. Tax, super and payslips are handled in your payroll system or Xero.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/staff-roster.html"><span>Previous</span>Staff roster</a><a class="pager__next" href="/help/totality-owner/xero.html"><span>Next</span>Xero payroll and membership income</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

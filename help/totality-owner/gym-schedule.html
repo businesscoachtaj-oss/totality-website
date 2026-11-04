@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gym schedule, PT bookings and cash off | Totality for gym owners</title>
+<meta name="description" content="See every trainer&#x27;s week in one place, book PT sessions for any member, settle sessions against credits one at a time or a whole week at once.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html" aria-current="page">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Gym schedule, PT bookings and cash off</h1>
+    <p class="lead">See every trainer&#x27;s week in one place, book PT sessions for any member, settle sessions against credits one at a time or a whole week at once.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#find-your-way-around">Find your way around</a></li><li><a href="#book-a-pt-session">Book a PT session</a></li><li><a href="#manage-a-session">Manage a session</a></li><li><a href="#cash-off-and-cash-off-week">Cash off and Cash off week</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>The <strong>Gym schedule</strong> shows every 1:1 PT session and class across your gym. You can see one trainer or everyone, book sessions for any member, and settle sessions so PT credits are used and trainers get paid.</p>
+<p>Open the <strong>Schedule</strong> tab, then <strong>Gym schedule</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/gym-schedule-day.png" alt="The gym schedule for one day" loading="lazy"><figcaption>The gym schedule for one day</figcaption></figure><figure class="shot shot--phone"><img src="img/gym-schedule-pending.png" alt="A session waiting to be settled" loading="lazy"><figcaption>A session waiting to be settled</figcaption></figure></div>
+
+<h2 id="find-your-way-around">Find your way around<a class="anchor" href="#find-your-way-around" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Trainer</strong>: tap <strong>All</strong> or one trainer's name to filter.</li>
+<li>The week strip: tap a day, or use the arrows to change week. A dot under a day means something is booked.</li>
+<li>The list shows the day's sessions, grouped into Morning, Afternoon and Evening. Each shows the time, length, member and trainer. Classes show with a <strong>CLASS</strong> tag.</li>
+<li><strong>Complete</strong> on a session marks it done.</li>
+</ul>
+<h2 id="book-a-pt-session">Book a PT session<a class="anchor" href="#book-a-pt-session" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap <strong>+ Book</strong>.</li>
+<li>Pick the <strong>Client</strong> and the <strong>Trainer</strong>.</li>
+<li>Pick the <strong>Date</strong> and <strong>Start time</strong>, and a <strong>Duration</strong>: 30, 45, 60, 75 or 90 minutes.</li>
+<li>Optional: add <strong>Notes</strong>.</li>
+<li>To book the same slot every week, turn on <strong>Recurring (weekly)</strong> ("Book the same slot every week") and pick the <strong>Number of weeks</strong>: 4, 6, 8, 12 or 16.</li>
+<li>Tap <strong>Book session</strong>.</li>
+</ol>
+</div>
+<p>If the member has an unused PT credit with that trainer, one credit is used for the session (and given back if you cancel it). If they have none, the session is booked as <strong>pending settlement</strong>, ready to be cashed off once they have a credit. See <a href="pt-packages.html">PT packages and credits</a>.</p>
+<h2 id="manage-a-session">Manage a session<a class="anchor" href="#manage-a-session" aria-label="Link to this section">#</a></h2>
+<p>Tap a session to see its <strong>Session details</strong>: trainer, client, date, time, status and whether a credit was used.</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mark complete</td>
+<td>The session happened. It counts towards the trainer's pay</td>
+</tr>
+<tr>
+<td>Mark no-show</td>
+<td>The member did not turn up. The credit is still used</td>
+</tr>
+<tr>
+<td>Cancel session</td>
+<td>Cancels it and gives the credit back. For a weekly booking, choose <strong>This session only</strong> or <strong>All future sessions</strong></td>
+</tr>
+<tr>
+<td>Edit Session</td>
+<td>For completed or no-show sessions: change the status or whether a credit was used. A reason is required and the change is logged</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cash-off-and-cash-off-week">Cash off and Cash off week<a class="anchor" href="#cash-off-and-cash-off-week" aria-label="Link to this section">#</a></h2>
+<p>A session is <strong>pending settlement</strong> when it was booked with no credit: "Pending Settlement: no credit was available when this session was booked." It is not paid to the trainer until it is settled. Open it and tap:</p>
+<ul>
+<li><strong>Cash Off (use 1 credit)</strong>: uses one of the member's credits and marks it complete. Use this once they have bought or been given more credits.</li>
+<li><strong>Mark complete (no credit)</strong>: marks it complete without using a credit, for example if they paid you some other way.</li>
+</ul>
+<p>To settle a whole week at once, tap <strong>Cash off week (3)</strong> under the week strip. The number is how many sessions in that week are pending. The button changes to <strong>Sure? Cash off 3</strong>: tap it again within 3 seconds to go ahead.</p>
+<p>Totality settles every pending session in the week that has a credit available, using the member's oldest unexpired credit for that trainer. You then see a summary, for example "Cashed off 2 sessions. No credits: Zack Donaldson (Thu 5 Nov 7:00am). These stay pending." Sessions with no credit stay pending until you sort them out.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/gym-schedule-cash-off.png" alt="Cash off week" loading="lazy"><figcaption>Cash off week</figcaption></figure></div>
+
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-a-session-will-not-cash-off"><summary>A session will not cash off.</summary><div class="faq__a"><p>The member has no unused, unexpired credit with that trainer. Give them credits (see <a href="pt-packages.html">PT packages</a>), or use <strong>Mark complete (no credit)</strong>.</p></div></details>
+
+<details class="faq" id="q-can-trainers-book-their-own-sessions"><summary>Can trainers book their own sessions?</summary><div class="faq__a"><p>Yes. Trainers book and settle their own clients' sessions in their app, and those show here too.</p></div></details>
+
+<details class="faq" id="q-does-the-gym-schedule-sync-to-my-calendar"><summary>Does the gym schedule sync to my calendar?</summary><div class="faq__a"><p>Your own sessions, classes you teach and lead appointments assigned to you can sync with <a href="gym-settings.html#calendar-sync">Calendar sync</a> in Settings.</p></div></details>
+
+<details class="faq" id="q-what-happens-to-a-pending-session-i-never-settle"><summary>What happens to a pending session I never settle?</summary><div class="faq__a"><p>It stays pending, and payroll does not pay the trainer for it. Payroll shows a note when a pay period has sessions that are not complete.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/class-roster.html"><span>Previous</span>Class roster, attendance and waitlists</a><a class="pager__next" href="/help/totality-owner/pt-packages.html"><span>Next</span>PT packages and credits</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

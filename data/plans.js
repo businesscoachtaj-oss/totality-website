@@ -792,7 +792,7 @@ window.TOTALITY_PLANS = {
     ],
     "memberDiscount": {
       "percent": 50,
-      "text": "Totality members get 50% off Nutrition."
+      "text": "Trainers and gym owners paying for their own Totality plan get 50% off the Nutrition plan. This member price is not for clients of a gym or trainer."
     },
     "platforms": {
       "web": "https://totalitynutrition.com.au",

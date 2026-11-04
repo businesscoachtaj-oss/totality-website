@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Staff roster | Totality for gym owners</title>
+<meta name="description" content="Plan who is working when, copy a week forward, and let staff see their own shifts.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html" aria-current="page">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Staff roster</h1>
+    <p class="lead">Plan who is working when, copy a week forward, and let staff see their own shifts.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#add-a-shift">Add a shift</a></li><li><a href="#change-or-delete-a-shift">Change or delete a shift</a></li><li><a href="#copy-a-week">Copy a week</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>The <strong>Staff roster</strong> is a weekly grid of your staff (down the side) by day (across the top). Your trainers see their own upcoming shifts in their app under <strong>My shifts</strong>.</p>
+<p>Open <strong>More</strong>, then <strong>Staff</strong>, then <strong>Rosters</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/staff-roster-week.png" alt="The staff roster for one week" loading="lazy"><figcaption>The staff roster for one week</figcaption></figure></div>
+
+<p>At the top you see the week's totals, for example "11 shifts, 60.5 hours this week". Use the arrows either side of the dates to move between weeks. Each person's row shows their total hours for the week. Scroll sideways to see the rest of the week.</p>
+<p>Everyone with a trainer or admin place at your gym appears on the roster, including you.</p>
+<h2 id="add-a-shift">Add a shift<a class="anchor" href="#add-a-shift" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Tap an empty cell (the <strong>+</strong>) for that person and day.</li>
+<li>Check <strong>Staff</strong> and <strong>Date</strong>, and set the <strong>Start</strong> and end times.</li>
+<li>Optional: add a <strong>Role</strong> ("Front desk, floor, PT...") and <strong>Notes</strong> ("Open up, cover for...").</li>
+<li>Tap <strong>Save</strong>.</li>
+</ol>
+</div>
+<h2 id="change-or-delete-a-shift">Change or delete a shift<a class="anchor" href="#change-or-delete-a-shift" aria-label="Link to this section">#</a></h2>
+<p>Tap the shift, change anything and tap <strong>Save</strong>, or tap <strong>Delete</strong>.</p>
+<h2 id="copy-a-week">Copy a week<a class="anchor" href="#copy-a-week" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Copy last week</strong> fills this week with last week's shifts.</li>
+<li><strong>Copy to next week</strong> copies this week's shifts into next week.</li>
+</ul>
+<p>Shifts that already exist (same person, same day, same start time) are not doubled up, so it is safe to tap these more than once.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-do-trainers-get-told-about-new-shifts"><summary>Do trainers get told about new shifts?</summary><div class="faq__a"><p>They see their shifts for the next 14 days in their app under My shifts. There is no separate alert for a new shift, so let them know if you make a late change.</p></div></details>
+
+<details class="faq" id="q-does-the-roster-feed-into-payroll"><summary>Does the roster feed into payroll?</summary><div class="faq__a"><p>No. Payroll pays completed sessions, classes and the hours you log in Payroll. The roster is for planning. See <a href="payroll.html">Payroll</a>.</p></div></details>
+
+<details class="faq" id="q-someone-is-missing-from-the-roster"><summary>Someone is missing from the roster.</summary><div class="faq__a"><p>Only trainers and admins of your gym appear. <a href="trainers.html">Invite them as a trainer</a> first.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/trainers.html"><span>Previous</span>Trainers</a><a class="pager__next" href="/help/totality-owner/payroll.html"><span>Next</span>Payroll</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 5 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>
