@@ -19,18 +19,18 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing | Totality and Totality Nutrition</title>
-<meta name="description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
+<meta name="description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free Nutrition plan. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
 <link rel="canonical" href="https://totality360.com.au/pricing.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
 <meta property="og:locale" content="en_AU">
 <meta property="og:title" content="Pricing | Totality and Totality Nutrition">
-<meta property="og:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
+<meta property="og:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free Nutrition plan. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
 <meta property="og:url" content="https://totality360.com.au/pricing.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pricing | Totality and Totality Nutrition">
-<meta name="twitter:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
+<meta name="twitter:description" content="Plans and prices for Totality (personal trainers, gyms and studios) and Totality Nutrition, including the free Nutrition plan. 7 day free trial, then 50% off your first 2 months on monthly plans. Prices in AUD.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -73,7 +73,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 .pr-grid { display: grid; gap: var(--s-4); }
 .pr-grid--solo { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .pr-grid--gym { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.pr-grid--nut { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; }
+.pr-grid--nut { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1080px; }
 .price-card h3 { font-size: var(--fs-xl); }
 .price-card .price { font-size: clamp(1.4rem, 1.1rem + 0.7vw, 1.75rem); white-space: nowrap; }
 .price-card .ticks { font-size: var(--fs-sm); gap: 8px; }
@@ -758,7 +758,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     var n = P.nutrition.plans;
     var ai = { nutrition: 'Food tracking with full nutrient breakdown, streaks, grocery list, hydration and progress.',
       nutrition_ai: 'Everything in Nutrition, plus Tali AI: describe a meal, import any recipe, meal plans and weekly summaries.' };
-    document.getElementById('nutPlans').innerHTML = n.map(function (p) {
+    var free = '<article class="card price-card"><h3>Free</h3><p class="small muted">Food logging with full history, macro targets, water, weight and progress, 10 saved meals, 7 barcode scans a week and Tell Tali what you ate 3 times a day. No ads.</p>' +
+      '<p class="price">A$0<small> forever</small></p>' +
+      '<p class="small">Every new account starts with 7 days of the full Nutrition plan, then moves to Free if you don\'t pick a plan.</p>' +
+      '<a class="btn btn--nutrition btn--block" href="/get-nutrition.html">Start free</a></article>';
+    document.getElementById('nutPlans').innerHTML = free + n.map(function (p) {
       // Member price shown for the standard Nutrition plan only (Taj removed the Nutrition + AI member price on 20 Oct).
       var member = p.id === 'nutrition' ? (billing === 'yearly' ? p.memberYearly + ' a year' : p.memberMonthly + ' a month') : '';
       return '<article class="card price-card">' +
@@ -766,7 +770,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         '<p class="small muted">' + esc(ai[p.id] || '') + '</p>' +
         priceBlock(p.monthly, p.yearly) +
         (member ? '<p class="small"><strong>Totality members:</strong> ' + esc(member) + '</p>' : '') +
-        '<a class="btn btn--nutrition btn--block" href="/get-nutrition.html">Start free trial</a>' +
+        '<a class="btn btn--nutrition btn--block" href="/get-nutrition.html">Start 7 days free</a>' +
         '</article>';
     }).join('');
   }
