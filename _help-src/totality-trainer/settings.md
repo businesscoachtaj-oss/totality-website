@@ -71,7 +71,7 @@ On the web you see "Push notifications are available in the phone app". Email se
 
 ## Security
 
-Tap **Change Password**, enter the **New password** twice (at least 6 characters), then **Save Password**.
+Tap **Change Password**, enter the **New password** twice (at least 8 characters), then **Save Password**.
 
 ## Account
 
