@@ -37,6 +37,17 @@ The result tells you exactly what happened:
 | Card declined | The card was declined, with the reason |
 | Charge not completed | Something went wrong. "It is safe to try again: the client will not be charged twice." |
 
+### Refund a charge
+
+**Recent charges**, under the Charge now button, lists the last 20 one-off charges with the member, amount, description and date.
+
+!steps
+1. Find the charge and tap **Refund**.
+2. The button changes to **Sure? Refund $15.00**. Tap it again within a few seconds to confirm, or wait and it goes back to **Refund**.
+3. You'll see "Refunded": the full amount goes back to the card that paid, usually within 5 to 10 business days.
+
+The charge then shows **Refunded** with the date, and counts under **Refunded** in [Insights](revenue-insights.html). Refunds are always for the full amount. Class booking payments are not listed here: cancel the booking from the [class roster](class-roster.html) or cancel the session to refund those.
+
 ## Create a POS payment link
 
 Open the **Sales** tab, then **POS payment link**.
@@ -59,7 +70,7 @@ No card reader is needed or supported. Use a POS payment link: the person pays o
 Trainers at your gym can create POS payment links too. The money goes to your gym's Stripe account and the trainer is recorded on the payment.
 
 ?? How do I refund a charge?
-There is no refund button in Totality for one-off charges. Email admintotality@gmail.com with the member's name, the date and the amount, and we will help. (When you cancel a class session, paid bookings are refunded automatically. See [Classes](classes.html).)
+Tap **Refund** on the charge under **Recent charges** on the Charge a member screen, then tap **Sure? Refund** to confirm. See [Refund a charge](#refund-a-charge). POS payment links cannot be refunded in the app yet: email admintotality@gmail.com with the payer's name, the date and the amount. (When you cancel a class session, paid bookings are refunded automatically. See [Classes](classes.html).)
 
 ?? Is there a fee on POS payments?
 Yes, the 3.5% platform fee, taken from your payout. Stripe's card fees also apply.

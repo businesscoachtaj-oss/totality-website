@@ -76,7 +76,7 @@ No more payments are taken after the current period ends. Members can also cance
 To change what an existing member pays, cancel their membership at the end of the period and start them again on the new one, or with a **Custom amount**.
 
 ?? Can I offer a one-off pass, like a 10 visit pass?
-Memberships repeat. For a one-off sale, create a product in [Marketplace products](marketplace.html) with **One-off** billing, or use [Charge a member](charges-pos.html).
+Memberships repeat. For a one-off sale, create a product in [Products](marketplace.html) with **One-off** billing, or use [Charge a member](charges-pos.html).
 
 ?? Can I pause a membership for an injury or holiday?
 Yes, with a freeze. See [Check-in and freezes](check-in-freezes.html).

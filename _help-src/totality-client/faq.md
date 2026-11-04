@@ -137,7 +137,7 @@ Home > **MORE** > **Classes**. Tap the class, then the **Book** button. See [Ses
 Tap **Class is full: join waitlist**. You'll be told if a spot opens.
 
 ?? How do I cancel a class?
-Open **Schedule** and tap **Cancel booking**. Paid classes aren't refunded automatically, contact your gym.
+Open **Schedule** and tap **Cancel booking**. A paid class is refunded to your card if you cancel more than 2 hours before it starts; inside 2 hours it's cancelled without a refund. See [Sessions, classes and credits](schedule-classes.html#cancel-a-class-booking).
 
 ?? What are credits?
 Paid PT sessions. Each session uses one. See them on your Schedule and in **Payments > Credits**.
@@ -157,7 +157,7 @@ Home > **Payment Method** tile > **Add card**. See [Payments](payments.html#paym
 **Payments > Purchases**, under **Receipts**.
 
 ?? How do I get a refund?
-Ask your gym or trainer. They handle refunds.
+Paid class bookings you cancel more than 2 hours ahead are refunded automatically. For anything else, ask your gym or trainer. They handle refunds, and they can refund a one-off charge from their app.
 
 ## Messages and notifications
 

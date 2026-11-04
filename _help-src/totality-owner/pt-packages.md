@@ -40,6 +40,17 @@ Each member on a package shows the package, trainer, start date and status: **Ac
 - Booking a PT session uses the member's oldest unused credit with that trainer. Cancelling the session gives it back. A no-show still uses it.
 - A session booked with no credit is **pending settlement**. Once the member has a credit, cash it off on the [gym schedule](gym-schedule.html#cash-off-and-cash-off-week).
 
+## Packs sold in your shop
+
+A **PT Package** product in your [shop](marketplace.html) (Sales, then Products) is a pack of sessions, for example "10 PT sessions, $650". When a member buys one:
+
+- the number of sessions on the product is added to their credits straight away, under your gym,
+- the credits are for their assigned trainer at your gym if they have one, otherwise any trainer can use them,
+- they expire a year after the purchase, like weekly credits,
+- the pack shows under **Client subscriptions** with "(shop)" after its name.
+
+A pack sold with **Weekly**, **Fortnightly** or **Monthly** billing adds the same number of credits every time it bills. Ending it with the bin stops future billing; credits already issued stay until they expire.
+
 ## End a package
 
 Tap the bin next to the member and tap **End**: "The client keeps their remaining credits until the current billing period ends, no charges after that." Tap **Keep** to leave it.
@@ -50,7 +61,7 @@ Tap the bin next to the member and tap **End**: "The client keeps their remainin
 Check their package is **Active** and not past due. Credits are only issued while the package is paid up. Then tap **Generate**.
 
 ?? Can I sell a one-off pack of 10 sessions?
-You can sell a **PT Package** product with a number of sessions in your [shop](marketplace.html). Weekly credits for booking come from the packages on this screen.
+Yes. Sell a **PT Package** product with **Number of sessions** 10 and **One-off** billing in your [shop](marketplace.html). The 10 credits land on the member's account as soon as they pay. See [Packs sold in your shop](#packs-sold-in-your-shop).
 
 ?? Do unused credits roll over?
 Yes. Unused credits stay available until they expire, a year after they were issued.

@@ -7,21 +7,21 @@ Your gym has its own shop. Members see it in their app, and anyone can open your
 
 Everything for the shop is in the **Sales** tab:
 
-- **Marketplace products**: what you sell.
+- **Products**: what you sell. One list for everything: your shop, your public store, Memberships, Charge a member and POS all read it.
 - **Storefront**: how your shop looks, and your shareable store link.
 - **Shop**: your shop as it looks today, and the Totality Store.
 - **Marketplace revenue** (under Insights): what has sold.
 
 ## Add a product
 
-Open **Sales**, then **Marketplace products**, and tap **+ New**.
+Open **Sales**, then **Products**, and tap **+ New**.
 
 !phones[Your marketplace products](img/marketplace-products.png)[A new product](img/marketplace-new.png)
 
 !steps
 1. Pick a **Product type**:
    - **Membership**: ongoing gym access (also listed in [Memberships](memberships.html)).
-   - **PT Package**: a pack of sessions. Enter the **Number of sessions**.
+   - **PT Package**: a pack of sessions. Enter the **Number of sessions**. When a member buys one, those sessions are added to their PT credits straight away (see [PT packages and credits](pt-packages.html#packs-sold-in-your-shop)).
    - **Custom**: anything else, like a challenge or a workshop.
    - **Physical Product**: something you hand over, like a shaker or a t-shirt. Always one-off.
 2. Enter a **Name**, a **Description** and the **Price ($)**. A 3.5% platform fee comes out of your payout. Buyers pay the price you set.
@@ -52,9 +52,9 @@ Tap **Share** at the top to copy your public store link. Put it on your website,
 
 Open **More**, then **Insights**, then **Marketplace revenue**. It shows **TOTAL EARNED**, **THIS MONTH**, how many **MEMBERSHIPS** are active, your **Recent Purchases** and your **Active Memberships**.
 
-## Gym products
+## One product list
 
-The **Gym products** screen (Sales tab) is an older product list. Products added there are created in your Stripe account, with **Recurring** or **One-off** pricing, but they do not appear in your shop or on the Charge a member screen. Use **Marketplace products** for anything members buy.
+There used to be a second list, **Gym products**, that the shop and Charge a member never read, so the two could drift apart. It is gone. Anything you had there has been copied into **Products** (unless a product with the same name already existed), so check the list once and tidy up any doubles.
 
 ## Questions
 

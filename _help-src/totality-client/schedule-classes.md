@@ -25,7 +25,7 @@ Your bookings can go straight into Google Calendar or Apple Calendar on your pho
 
 ## PT credits
 
-If you buy PT sessions in a pack or a weekly package, each paid session is a **credit**. When you have a PT session, your trainer uses one credit.
+If you buy PT sessions in a pack or a weekly package, each paid session is a **credit**. When you have a PT session, your trainer uses one credit. A pack bought from your gym's [Shop](shop.html) adds its sessions to your credits as soon as you pay.
 
 - Your Schedule shows how many credits you have and when the next one expires.
 - **Payments > Credits** shows your PT package, when it next bills, and every credit with its status: **Available**, **Used**, **Expired** or **Cancelled**. See [Payments](payments.html#credits).
@@ -79,8 +79,13 @@ To leave the waitlist, open the class and tap **Leave waitlist**.
 
 You can cancel any time before the class starts. Your spot goes to the next person.
 
+If you paid for the class, the confirm box tells you what happens to your money:
+
+- **More than 2 hours before the class:** "You'll be refunded in full. Refunded to your card, 5 to 10 business days." The refund goes back to the card you paid with.
+- **Less than 2 hours before:** "It's less than 2 hours before this class starts, so this booking will not be refunded."
+
 :::warn
-Cancelling a **paid** class doesn't refund you automatically. Contact your gym about a refund.
+Cancel at least 2 hours before a paid class to get your money back. Inside 2 hours the booking is cancelled but not refunded.
 :::
 
 ### Frozen memberships
@@ -100,6 +105,9 @@ No, your trainer books them. Message them with a time that suits.
 
 ?? I can't cancel a class.
 Once a class has started it can't be cancelled. The screen says "This class has started, so it can no longer be cancelled."
+
+?? I cancelled a paid class. Where's my refund?
+If you cancelled more than 2 hours before the class, it was refunded to the card you paid with and takes 5 to 10 business days to show up. If you cancelled inside 2 hours, there's no refund. If the gym cancelled the class, you're refunded automatically.
 
 ?? Will I get a reminder before my class?
 Yes, in the phone app, if **Class reminders** is on in [Settings](settings.html#notifications).

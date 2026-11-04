@@ -74,7 +74,12 @@ You then see how many were refunded. If a refund failed, cancel the session agai
 
 ## When members cancel
 
-Members can cancel their own booking in the app any time before the class starts. Paid bookings they cancel are not refunded automatically: the app tells them to contact the gym first. If you want to refund them, email admintotality@gmail.com.
+Members can cancel their own booking in the app any time before the class starts. What happens to a paid casual booking depends on when they cancel:
+
+- **More than 2 hours before the class**: the card payment is refunded in full, automatically, to the card that paid (5 to 10 business days). The booking shows **Refunded** and the refund counts in [Insights](revenue-insights.html).
+- **Less than 2 hours before**: the booking is cancelled without a refund. The app tells them this before they confirm.
+
+Bookings included with a membership, free bookings and ones you waived are simply cancelled. A booking paid outside Totality is cancelled and the member is told to contact you about the refund.
 
 When a member cancels, the next person on the waitlist gets the spot. See [Class roster and waitlists](class-roster.html).
 

@@ -80,7 +80,7 @@ Open **Failed payments**, send an update card link, then retry. See [Failed paym
 When you start their membership, turn on **Custom amount** and set their price. See [Memberships](memberships.html).
 
 ?? How do refunds work?
-Cancelling a class session refunds paid bookings automatically. For anything else, email admintotality@gmail.com.
+Cancelling a class session refunds paid bookings automatically, and a member who cancels a paid class booking more than 2 hours before it starts is refunded automatically too. One-off charges have a **Refund** button under **Recent charges** on [Charge a member](charges-pos.html#refund-a-charge). For anything else (POS payment links, memberships, shop purchases), email admintotality@gmail.com.
 
 ## Members
 

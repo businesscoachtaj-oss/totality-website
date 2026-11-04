@@ -29,6 +29,8 @@ Under the tabs, tap a type to narrow the list, for example **Membership**, **Mer
 
 Things you already own show **✓ Owned**, and the button says **Buy Again**.
 
+If you buy a **PT Package** from your gym, its sessions are added to your PT credits as soon as you pay. See them on your Schedule or under **Payments > Credits**.
+
 Your purchases are listed in **Payments > Purchases**. See [Payments](payments.html#purchases-and-receipts).
 
 ## Questions

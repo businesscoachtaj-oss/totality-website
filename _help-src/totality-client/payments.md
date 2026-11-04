@@ -86,7 +86,7 @@ The Payment Method tile only shows when your gym or trainer takes payments throu
 Add a new card or update your default card in the **Payment method** tab, then tell your gym or trainer. They can retry the payment. Your gym can also send you an email called "Please update your card for [gym name]" with a link to update it.
 
 ?? How do I get a refund?
-Refunds are handled by your gym or trainer, not Totality. Contact them. You can read Totality's refund policy in Settings under **Refund Policy**.
+A paid class booking you cancel more than 2 hours before the class is refunded to your card automatically (5 to 10 business days). Everything else is handled by your gym or trainer, not Totality: contact them, and they can refund a one-off charge from their app. You can read Totality's refund policy in Settings under **Refund Policy**.
 
 ?? Can I pause my membership?
 Your gym can freeze (pause) a membership. Ask them.
