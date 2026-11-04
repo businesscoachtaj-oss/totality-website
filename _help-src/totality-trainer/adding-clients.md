@@ -26,7 +26,7 @@ You can tap **Share Credentials** even when the email did send, which is handy i
 
 ## Got a lot of clients to add?
 
-Email your spreadsheet to taj@totality360.com.au and the team sets them up for you, free.
+Email your spreadsheet to admintotality@gmail.com and the team sets them up for you, free.
 
 ## Client limits
 

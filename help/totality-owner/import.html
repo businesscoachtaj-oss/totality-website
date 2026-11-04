@@ -102,7 +102,7 @@
 
 <h2 id="step-3-map-columns">Step 3: Map columns<a class="anchor" href="#step-3-map-columns" aria-label="Link to this section">#</a></h2>
 <p>Totality matches your column headings to its own fields automatically. Check each one under <strong>REQUIRED FIELDS</strong> and <strong>OPTIONAL FIELDS</strong>, and change any that are wrong by tapping the field and picking the right column. Pick <strong>Skip this field</strong> for anything you do not want to bring in.</p>
-<p>Check the guesses carefully. For example, if your phone column is called Mobile, the wizard may match <strong>Phone</strong> to your emergency phone column instead. Required fields must be matched before you can go on. For Clients these are <strong>Full Name</strong> and <strong>Email</strong>.</p>
+<p>Check the guesses. An exact heading wins, so a <strong>Phone</strong> column goes to <strong>Phone</strong> and an <strong>Emergency Phone</strong> column goes to <strong>Emergency Contact Phone</strong>. Required fields must be matched before you can go on. For Clients these are <strong>Full Name</strong> and <strong>Email</strong>.</p>
 <p>If you match <strong>Assigned Trainer</strong>, the screen lists <strong>Trainers in your gym, matched by name</strong>. A member is linked to a trainer when the value in your file matches the trainer's full name or email exactly (capitals do not matter).</p>
 <p><strong>LIVE PREVIEW: FIRST 3 ROWS</strong> shows how your first rows will come in. Tap <strong>Next: Review &amp; Import</strong>.</p>
 <div class="shots"><figure class="shot shot--phone"><img src="img/import-map.png" alt="Step 3: match your columns" loading="lazy"><figcaption>Step 3: match your columns</figcaption></figure></div>
@@ -113,12 +113,13 @@
 <li><strong>New records to create</strong></li>
 <li><strong>Existing records to update</strong></li>
 <li><strong>Skipped (missing required fields)</strong>: rows with no name or a missing or invalid email</li>
+<li><strong>Skipped (same email as an earlier row)</strong>: shows if an email is in your file more than once. Only the first row with that email is imported</li>
 </ul>
 <p>Tap <strong>Import N Records</strong>. A progress screen shows "Importing 12 of 48..." Keep the app open until it finishes.</p>
 <div class="shots"><figure class="shot shot--phone"><img src="img/import-review.png" alt="Step 4: review the counts" loading="lazy"><figcaption>Step 4: review the counts</figcaption></figure><figure class="shot shot--phone"><img src="img/import-done.png" alt="Import complete" loading="lazy"><figcaption>Import complete</figcaption></figure></div>
 
 <h2 id="when-it-finishes">When it finishes<a class="anchor" href="#when-it-finishes" aria-label="Link to this section">#</a></h2>
-<p><strong>Import Complete</strong> shows how many were <strong>Created</strong>, <strong>Updated</strong>, <strong>Skipped (missing data)</strong> and <strong>Failed</strong>.</p>
+<p><strong>Import Complete</strong> shows how many were <strong>Created</strong>, <strong>Updated</strong>, <strong>Skipped (missing data)</strong>, <strong>Skipped (duplicate email)</strong> and <strong>Failed</strong>. If any emails were in the file more than once, it lists them. A trainer import also tells you if any rows asked for an admin role (see <a href="import-files.html#trainers-staff">the Role column</a>).</p>
 <ul>
 <li>If any failed, tap <strong>Download Error Report</strong> to get a list of those rows and why, fix them in your spreadsheet and import just those rows again.</li>
 <li>Tap <strong>Import Another File</strong> to start the next run, or <strong>Done</strong> to finish.</li>
@@ -139,7 +140,7 @@
 <h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
 <details class="faq" id="q-can-i-undo-an-import"><summary>Can I undo an import?</summary><div class="faq__a"><p>No. Check the preview and the mapping carefully first. If something went wrong, email admintotality@gmail.com.</p></div></details>
 
-<details class="faq" id="q-what-if-the-same-email-is-in-my-file-twice"><summary>What if the same email is in my file twice?</summary><div class="faq__a"><p>Remove duplicate emails before you import. A second row with the same email can send that person a second invite email with a password that will not work, which is confusing for them.</p></div></details>
+<details class="faq" id="q-what-if-the-same-email-is-in-my-file-twice"><summary>What if the same email is in my file twice?</summary><div class="faq__a"><p>Only the first row with that email is imported, so they get one invite. The other rows are skipped (capitals do not matter) and listed on the <strong>Import Complete</strong> screen, so check that the first row was the one you wanted.</p></div></details>
 
 <details class="faq" id="q-can-i-import-programmes-or-workout-history"><summary>Can I import programmes or workout history?</summary><div class="faq__a"><p>Not with this wizard. Most systems, including ABC Trainerize, do not offer a self-serve export of programmes or workout history. Keep your old account until you no longer need that history.</p></div></details>
 

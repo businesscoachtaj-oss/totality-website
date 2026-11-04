@@ -38,12 +38,12 @@ The first row must be your column headings. Each row after that is one record. U
 | **Full Name** | |
 | **Email** | Used as their login |
 | Phone | |
-| Role | Leave blank or write trainer. See the note below |
+| Role | Optional. Everyone is imported as a trainer. See the note below |
 | Hire Date | |
 | Certifications | Comma separated, for example First Aid, Cert IV |
 
-:::warn Role column
-If the Role column contains admin, manager or owner, Totality creates an admin login instead of a trainer login. Each gym is run from one owner account, so for staff who should coach clients, leave Role blank or write trainer.
+:::note Role column
+Everyone in a trainer import is added as a trainer, whatever the Role column says. If any rows say admin, manager or owner, the **Import Complete** screen tells you how many. Only the gym owner can make someone an admin, in the app after the import.
 :::
 
 ### Payment History
@@ -87,11 +87,15 @@ If the Role column contains admin, manager or owner, Totality creates an admin l
 
 ## Dates
 
-Write dates as **YYYY-MM-DD**, for example **2025-04-03** for 3 April 2025. This is the safest format.
+Dates are read the Australian way, day first:
 
-:::warn Day and month can swap
-A date like 03/04/2025 can be read the American way, as 4 March. Dates where the day is 13 or more, like 25/04/2025, are read correctly as day/month. To be safe, change your date columns to YYYY-MM-DD in Excel or Google Sheets before you import (Format, then Number, then Custom date).
-:::
+- **03/04/2025**, **3/4/2025** and **3/4/25** are all 3 April 2025. You can use / - or . between the numbers.
+- **2025-04-03** (YYYY-MM-DD) works too.
+- A date with the month written out, like **3 April 2025**, is read as written.
+- Two digit years up to this year are 2000s, later ones are 1900s, so a birthday of 15/6/90 is 1990.
+- Real date cells in an Excel file come through correctly whatever format they show in.
+
+If a date cannot be a real date (for example 31/02/2025) it is left empty.
 
 ## How statuses are read
 

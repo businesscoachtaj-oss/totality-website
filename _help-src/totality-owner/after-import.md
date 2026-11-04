@@ -9,7 +9,7 @@ Your data is in. Before you tell members, run through this list, then plan how y
 
 !steps
 1. Open **Members**, then **Clients**. Check the count matches your old system and spot check a few members.
-2. Tap a few members and check their **Date of Birth** and **Member Since** dates. If any look like the day and month swapped (for example 4 March instead of 3 April), fix them with **Edit** on their profile, and see [the dates note](import-files.html#dates) before your next import.
+2. Tap a few members and check their **Date of Birth** and **Member Since** dates. If any look wrong, fix them with **Edit** on their profile. See [how dates are read](import-files.html#dates).
 3. Use the trainer filter chips at the top of Clients to check each trainer has the right members. Use **Select**, then **Assign**, to fix any that were not matched. See [Members](members.html).
 4. If you imported **Membership Types**, open **Sales**, then **Memberships**. Each one comes in switched on, with **Includes classes** off. Check the price and billing frequency, and turn **Includes classes** on for any that should cover classes.
 5. If you imported **Attendance**, it shows in each member's **Membership, freeze and attendance** history.

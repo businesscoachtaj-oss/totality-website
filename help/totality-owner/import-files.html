@@ -110,7 +110,7 @@
 </tr>
 <tr>
 <td>Role</td>
-<td>Leave blank or write trainer. See the note below</td>
+<td>Optional. Everyone is imported as a trainer. See the note below</td>
 </tr>
 <tr>
 <td>Hire Date</td>
@@ -122,7 +122,7 @@
 </tr>
 </tbody>
 </table>
-<aside class="callout callout--warn"><p class="callout__title">Role column</p><p>If the Role column contains admin, manager or owner, Totality creates an admin login instead of a trainer login. Each gym is run from one owner account, so for staff who should coach clients, leave Role blank or write trainer.</p></aside>
+<aside class="callout callout--note"><p class="callout__title">Role column</p><p>Everyone in a trainer import is added as a trainer, whatever the Role column says. If any rows say admin, manager or owner, the <strong>Import Complete</strong> screen tells you how many. Only the gym owner can make someone an admin, in the app after the import.</p></aside>
 
 <h3 id="payment-history">Payment History<a class="anchor" href="#payment-history" aria-label="Link to this section">#</a></h3>
 <table>
@@ -245,9 +245,15 @@
 </tbody>
 </table>
 <h2 id="dates">Dates<a class="anchor" href="#dates" aria-label="Link to this section">#</a></h2>
-<p>Write dates as <strong>YYYY-MM-DD</strong>, for example <strong>2025-04-03</strong> for 3 April 2025. This is the safest format.</p>
-<aside class="callout callout--warn"><p class="callout__title">Day and month can swap</p><p>A date like 03/04/2025 can be read the American way, as 4 March. Dates where the day is 13 or more, like 25/04/2025, are read correctly as day/month. To be safe, change your date columns to YYYY-MM-DD in Excel or Google Sheets before you import (Format, then Number, then Custom date).</p></aside>
-
+<p>Dates are read the Australian way, day first:</p>
+<ul>
+<li><strong>03/04/2025</strong>, <strong>3/4/2025</strong> and <strong>3/4/25</strong> are all 3 April 2025. You can use / - or . between the numbers.</li>
+<li><strong>2025-04-03</strong> (YYYY-MM-DD) works too.</li>
+<li>A date with the month written out, like <strong>3 April 2025</strong>, is read as written.</li>
+<li>Two digit years up to this year are 2000s, later ones are 1900s, so a birthday of 15/6/90 is 1990.</li>
+<li>Real date cells in an Excel file come through correctly whatever format they show in.</li>
+</ul>
+<p>If a date cannot be a real date (for example 31/02/2025) it is left empty.</p>
 <h2 id="how-statuses-are-read">How statuses are read<a class="anchor" href="#how-statuses-are-read" aria-label="Link to this section">#</a></h2>
 <p>The wizard looks for words in your status columns, so most systems' wording works:</p>
 <table>

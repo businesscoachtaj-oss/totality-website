@@ -53,7 +53,7 @@ Tap **Next: Upload File**.
 
 Totality matches your column headings to its own fields automatically. Check each one under **REQUIRED FIELDS** and **OPTIONAL FIELDS**, and change any that are wrong by tapping the field and picking the right column. Pick **Skip this field** for anything you do not want to bring in.
 
-Check the guesses carefully. For example, if your phone column is called Mobile, the wizard may match **Phone** to your emergency phone column instead. Required fields must be matched before you can go on. For Clients these are **Full Name** and **Email**.
+Check the guesses. An exact heading wins, so a **Phone** column goes to **Phone** and an **Emergency Phone** column goes to **Emergency Contact Phone**. Required fields must be matched before you can go on. For Clients these are **Full Name** and **Email**.
 
 If you match **Assigned Trainer**, the screen lists **Trainers in your gym, matched by name**. A member is linked to a trainer when the value in your file matches the trainer's full name or email exactly (capitals do not matter).
 
@@ -68,6 +68,7 @@ Totality checks which emails already have an account ("Checking for existing rec
 - **New records to create**
 - **Existing records to update**
 - **Skipped (missing required fields)**: rows with no name or a missing or invalid email
+- **Skipped (same email as an earlier row)**: shows if an email is in your file more than once. Only the first row with that email is imported
 
 Tap **Import N Records**. A progress screen shows "Importing 12 of 48..." Keep the app open until it finishes.
 
@@ -75,7 +76,7 @@ Tap **Import N Records**. A progress screen shows "Importing 12 of 48..." Keep t
 
 ## When it finishes
 
-**Import Complete** shows how many were **Created**, **Updated**, **Skipped (missing data)** and **Failed**.
+**Import Complete** shows how many were **Created**, **Updated**, **Skipped (missing data)**, **Skipped (duplicate email)** and **Failed**. If any emails were in the file more than once, it lists them. A trainer import also tells you if any rows asked for an admin role (see [the Role column](import-files.html#trainers-staff)).
 
 - If any failed, tap **Download Error Report** to get a list of those rows and why, fix them in your spreadsheet and import just those rows again.
 - Tap **Import Another File** to start the next run, or **Done** to finish.
@@ -104,7 +105,7 @@ Each new member gets their invite email during the import. If you are not ready 
 No. Check the preview and the mapping carefully first. If something went wrong, email admintotality@gmail.com.
 
 ?? What if the same email is in my file twice?
-Remove duplicate emails before you import. A second row with the same email can send that person a second invite email with a password that will not work, which is confusing for them.
+Only the first row with that email is imported, so they get one invite. The other rows are skipped (capitals do not matter) and listed on the **Import Complete** screen, so check that the first row was the one you wanted.
 
 ?? Can I import programmes or workout history?
 Not with this wizard. Most systems, including ABC Trainerize, do not offer a self-serve export of programmes or workout history. Keep your old account until you no longer need that history.

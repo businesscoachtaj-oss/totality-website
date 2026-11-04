@@ -29,7 +29,7 @@
     <p class="crumb">Totality for gym owners</p>
     <h1>Memberships</h1>
     <p class="lead">Create your membership options, start a member on one, see who is on what, and cancel at the end of a billing period.</p>
-    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#create-a-membership">Create a membership</a></li><li><a href="#start-a-member-on-a-membership">Start a member on a membership</a></li><li><a href="#the-members-tab">The Members tab</a></li><li><a href="#cancel-a-membership">Cancel a membership</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#create-a-membership">Create a membership</a></li><li><a href="#start-a-member-on-a-membership">Start a member on a membership</a></li><li><a href="#the-members-tab">The Members tab</a></li><li><a href="#ask-a-member-to-add-a-card">Ask a member to add a card</a></li><li><a href="#cancel-a-membership">Cancel a membership</a></li><li><a href="#questions">Questions</a></li></ul></nav>
     <p><strong>Memberships</strong> is where you set up what you sell (Unlimited, Off Peak, 12 Month Upfront and so on) and where you see who is paying for which one. Members pay by card through your <a href="stripe-connect.html">Stripe account</a>, so connect Stripe first.</p>
 <p>Open the <strong>Sales</strong> tab, then <strong>Memberships</strong>. There are two tabs: <strong>Products</strong> and <strong>Members</strong>.</p>
 <div class="shots"><figure class="shot shot--phone"><img src="img/memberships-products.png" alt="Your membership options" loading="lazy"><figcaption>Your membership options</figcaption></figure><figure class="shot shot--phone"><img src="img/memberships-members.png" alt="Who is on each one" loading="lazy"><figcaption>Who is on each one</figcaption></figure></div>
@@ -51,7 +51,7 @@
 <p>Each membership shows its price and frequency (for example $29.00 AUD/wk) and a <strong>Classes</strong> pill if it includes classes. Use the switch to make it active or inactive. Tap one to edit it.</p>
 <p>Active memberships also appear in your gym's shop, where members can buy them themselves. See <a href="marketplace.html">Marketplace and shop</a>.</p>
 <h2 id="start-a-member-on-a-membership">Start a member on a membership<a class="anchor" href="#start-a-member-on-a-membership" aria-label="Link to this section">#</a></h2>
-<p>The member needs a card saved with your gym first. If they do not have one, ask them to add one (see <a href="failed-payments.html#ask-a-member-to-add-a-card">Failed payments and cards</a>).</p>
+<p>The member needs a card saved with your gym first. If they do not have one, ask them to add one (see <a href="#ask-a-member-to-add-a-card">Ask a member to add a card</a>).</p>
 <div class="steps">
 <ol>
 <li>Open the <strong>Members</strong> tab and tap <strong>+ New</strong> (or <strong>Add membership</strong>).</li>
@@ -90,6 +90,16 @@
 </tr>
 </tbody>
 </table>
+<h2 id="ask-a-member-to-add-a-card">Ask a member to add a card<a class="anchor" href="#ask-a-member-to-add-a-card" aria-label="Link to this section">#</a></h2>
+<p>If a member on the <strong>Members</strong> tab has no card saved, you can email them a link to add one.</p>
+<div class="steps">
+<ol>
+<li>On the <strong>Members</strong> tab, find the member's row.</li>
+<li>Tap <strong>Ask to add card</strong>. It shows "Sending..." while it works.</li>
+<li>You see <strong>Request sent</strong>: "We emailed (their name) a link to add a card." If it could not send, you see <strong>Could not send</strong> with the reason.</li>
+</ol>
+</div>
+<p>The email comes from your gym and links to the page where they add their card in Totality. You can also ask from the member's page. See <a href="failed-payments.html#ask-a-member-to-add-a-card">Failed payments and cards</a>.</p>
 <h2 id="cancel-a-membership">Cancel a membership<a class="anchor" href="#cancel-a-membership" aria-label="Link to this section">#</a></h2>
 <div class="steps">
 <ol>

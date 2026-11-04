@@ -44,7 +44,7 @@ You see **Plan change scheduled**: "Your new plan will take effect at your next 
 
 !phone[Change plan from Subscription & Billing](img/your-plan-change.png)
 
-The **Change plan** row on the Sales subscription screen opens the plan picker, which is for starting a new subscription. If you tap **Subscribe** there while you already have a plan, you will see "This gym already has an active subscription", so use the steps above instead.
+You can also tap **Change plan** on the Sales subscription screen and pick a plan there. Once you are subscribed it changes your plan the same way, with the same **Plan change scheduled** message.
 
 ## Add-ons
 

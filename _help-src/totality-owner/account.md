@@ -32,9 +32,9 @@ Totality 360 Pty Ltd handles personal information under the Australian Privacy P
 :::warn Before you delete
 Deleting your account cannot be undone. Before you do it:
 
-1. **Cancel your Totality plan** in [Your Totality plan](your-plan.html), so you are not billed again.
-2. If you are closing the gym, **cancel your members' memberships and PT packages** in [Memberships](memberships.html) and [PT packages](pt-packages.html), so they stop being charged.
-3. **Download anything you want to keep** (see Your data above).
+1. If you are closing the gym, **cancel your members' memberships and PT packages** in [Memberships](memberships.html) and [PT packages](pt-packages.html), so they stop being charged.
+2. **Download anything you want to keep** (see Your data above).
+Deleting your account also cancels your gym's Totality plan in Stripe, so you are not billed again. You do not need to cancel it first.
 :::
 
 !steps

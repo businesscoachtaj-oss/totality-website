@@ -21,7 +21,7 @@ Until you have a client and a programme, a **Get set up** card sits at the top o
 - **Add your first client**: tap **Add** to open Invite Client.
 - **Build a programme**: tap **Build** to open your programmes.
 
-Each step ticks off once it's done. Under them: "Got clients in a spreadsheet? Email it to taj@totality360.com.au and we'll set them up for you, free." Tap that line to start the email.
+Each step ticks off once it's done. Under them: "Got clients in a spreadsheet? Email it to admintotality@gmail.com and we'll set them up for you, free." Tap that line to start the email.
 
 !phone[Home for a brand new account](img/home-new.png)
 

@@ -41,6 +41,8 @@ A member needs a card saved with your gym before you can start their membership,
   - **Request Payment Method**: sends them a push notification ("Iron Works is requesting you to add a payment method. Open the app and go to Payments."). You see "Request sent".
   - **Add Card Manually**: opens a secure Stripe page where you type the card in for them, for example at the front desk with the member there.
 
+On the **Members** tab in [Memberships](memberships.html#ask-a-member-to-add-a-card), **Ask to add card** on a member's row emails them a link to add a card.
+
 !phone[A member with no card on file](img/failed-payments-no-card.png)
 
 :::note Card details are safe

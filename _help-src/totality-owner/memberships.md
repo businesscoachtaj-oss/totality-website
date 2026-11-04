@@ -28,7 +28,7 @@ Active memberships also appear in your gym's shop, where members can buy them th
 
 ## Start a member on a membership
 
-The member needs a card saved with your gym first. If they do not have one, ask them to add one (see [Failed payments and cards](failed-payments.html#ask-a-member-to-add-a-card)).
+The member needs a card saved with your gym first. If they do not have one, ask them to add one (see [Ask a member to add a card](#ask-a-member-to-add-a-card)).
 
 !steps
 1. Open the **Members** tab and tap **+ New** (or **Add membership**).
@@ -49,6 +49,17 @@ Each row shows the member, their membership and price, their **Next bill** date 
 | Past due | The last payment failed. See [Failed payments](failed-payments.html) |
 | Paused | Paused, for example by a freeze. See [Check-in and freezes](check-in-freezes.html) |
 | Cancelled | Ended |
+
+## Ask a member to add a card
+
+If a member on the **Members** tab has no card saved, you can email them a link to add one.
+
+!steps
+1. On the **Members** tab, find the member's row.
+2. Tap **Ask to add card**. It shows "Sending..." while it works.
+3. You see **Request sent**: "We emailed (their name) a link to add a card." If it could not send, you see **Could not send** with the reason.
+
+The email comes from your gym and links to the page where they add their card in Totality. You can also ask from the member's page. See [Failed payments and cards](failed-payments.html#ask-a-member-to-add-a-card).
 
 ## Cancel a membership
 
