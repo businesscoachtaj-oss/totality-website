@@ -13,10 +13,10 @@
 .btn[style*="6C3483"], a.btn[style*="6C3483"], a.btn--primary[style*="6C3483"] { background:#6C3483 !important; color:#fff !important; }
 
 /* Tali beside the hero buttons (js/tali-live.js) */
-.has-tali-live { position: relative; padding-right: 84px; }
-.tali-live { position: absolute; right: 0; bottom: -6px; width: 62px; height: 132px; pointer-events: auto; cursor: pointer; animation: none; filter: drop-shadow(0 8px 10px rgba(0,0,0,.18)); }
+.has-tali-live { position: relative; padding-right: 112px; }
+.tali-live { position: absolute; right: 0; bottom: -6px; width: 92px; height: 132px; pointer-events: auto; cursor: pointer; animation: none; filter: drop-shadow(0 8px 10px rgba(0,0,0,.18)); }
 .tali-live img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
-@media (min-width: 901px) { .has-tali-live { padding-right: 0; } .tali-live { position: relative; right: auto; bottom: auto; align-self: flex-end; margin-left: 10px; height: 110px; width: 52px; } }
+@media (min-width: 901px) { .has-tali-live { padding-right: 0; } .tali-live { position: relative; right: auto; bottom: auto; align-self: flex-end; margin-left: 10px; height: 110px; width: 76px; } }
 
 /* App screens on the Totality and Nutrition pages */
 .app-shots { position: relative; overflow: hidden; }
