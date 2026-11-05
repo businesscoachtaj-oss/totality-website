@@ -24,7 +24,14 @@
     var r = img.getBoundingClientRect();
     // (not for Tali beside the hero buttons: her CSS box already sets the size, and a locked size
     // spills onto the text below when the window is resized or the screen scales the page)
-    if (r.height > 0 && !img.closest('.tali-live')) { img.style.height = r.height + 'px'; img.style.width = r.width + 'px'; }
+    // Poses are all 360 tall but 146 to 248 wide, so the box is made wide enough for the widest
+    // (0.7 of the height) and every pose comes out the same height. Negative side margins keep the
+    // page layout exactly as it was with the first pose.
+    if (r.height > 0 && !img.closest('.tali-live')) {
+      var w = Math.max(r.width, Math.round(r.height * 0.7)), extra = (w - r.width) / 2;
+      img.style.height = r.height + 'px'; img.style.width = w + 'px';
+      if (extra > 0) { img.style.marginLeft = -extra + 'px'; img.style.marginRight = -extra + 'px'; img.style.maxWidth = 'none'; }
+    }
     img.style.objectFit = 'contain'; img.style.objectPosition = '50% 100%';
     img.classList.add('tali-swap');
     var set = [], start = (k++ * EACH) % pool.length;
