@@ -22,7 +22,9 @@
     if (pic) Array.prototype.slice.call(pic.querySelectorAll('source')).forEach(function (s) { s.remove(); });
     // keep the sprite's current box so a narrower pose never changes the layout
     var r = img.getBoundingClientRect();
-    if (r.height > 0) { img.style.height = r.height + 'px'; img.style.width = r.width + 'px'; }
+    // (not for Tali beside the hero buttons: her CSS box already sets the size, and a locked size
+    // spills onto the text below when the window is resized or the screen scales the page)
+    if (r.height > 0 && !img.closest('.tali-live')) { img.style.height = r.height + 'px'; img.style.width = r.width + 'px'; }
     img.style.objectFit = 'contain'; img.style.objectPosition = '50% 100%';
     img.classList.add('tali-swap');
     var set = [], start = (k++ * EACH) % pool.length;
