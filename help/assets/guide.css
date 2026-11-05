@@ -7,8 +7,8 @@
 --font:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--display:"Bricolage Grotesque","Figtree",system-ui,sans-serif;
 --gut:max(16px,env(safe-area-inset-left,0px));--gutr:max(16px,env(safe-area-inset-right,0px));color-scheme:light}
 *{box-sizing:border-box}
-html{scroll-padding-top:84px}
-body{margin:0;background:var(--page);color:var(--ink);font:400 17px/1.65 var(--font);-webkit-font-smoothing:antialiased}
+html{scroll-padding-top:84px;font-size:16px}
+body{margin:0;background:var(--page);color:var(--ink);font:400 1.0625rem/1.65 var(--font);-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto}
 a{color:var(--accent-dark)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
@@ -29,7 +29,7 @@ a{color:var(--accent-dark)}
 .search-results small{color:var(--muted);font-size:.85rem}
 .search-results .none{padding:12px;color:var(--muted)}
 /* layout */
-.layout{display:grid;grid-template-columns:290px minmax(0,1fr);max-width:1240px;margin:0 auto}
+.layout{display:grid;grid-template-columns:18.125rem minmax(0,1fr);max-width:77.5rem;margin:0 auto}
 .toc{position:sticky;top:62px;align-self:start;height:calc(100vh - 62px);overflow:auto;padding:22px 18px 40px var(--gut);border-right:1px solid var(--line)}
 .toc__audience{margin:0 0 14px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dark)}
 .toc__group{margin:18px 0 6px;font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
@@ -37,7 +37,7 @@ a{color:var(--accent-dark)}
 .toc li a{display:block;padding:6px 10px;border-radius:9px;text-decoration:none;color:var(--ink-2);font-size:.94rem;line-height:1.35}
 .toc li a:hover{background:var(--surface)}
 .toc li a[aria-current]{background:var(--accent-soft);color:var(--ink);font-weight:700;box-shadow:inset 3px 0 0 var(--accent)}
-.content{min-width:0;padding:30px var(--gutr) 60px clamp(16px,4vw,56px);max-width:860px}
+.content{min-width:0;padding:30px var(--gutr) 60px clamp(16px,4vw,56px);max-width:53.75rem}
 .crumb{margin:0 0 6px;color:var(--muted);font-size:.85rem;font-weight:600}
 h1{font:800 clamp(1.9rem,4vw,2.6rem)/1.12 var(--display);margin:0 0 12px;text-wrap:balance;letter-spacing:-.01em}
 h2{font:750 1.55rem/1.2 var(--display);margin:46px 0 12px;padding-top:6px;text-wrap:balance}
@@ -66,7 +66,7 @@ th{background:var(--surface);font-weight:700}
 .shots{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;margin:20px 0 28px}
 .shot{margin:0;text-align:center}
 .shot img{display:block;margin:0 auto;border-radius:30px;border:8px solid #141416;background:#141416;box-shadow:0 18px 34px rgba(39,38,38,.22)}
-.shot--phone{width:min(270px,78vw)}
+.shot--phone{width:min(16.875rem,78vw)}
 .shot--phone img{width:100%}
 .shot--wide{width:100%}
 .shot--wide img{border-radius:14px;border-width:4px;width:100%}
@@ -103,13 +103,18 @@ th{background:var(--surface);font-weight:700}
 .mail{user-select:all;font-weight:700;color:var(--ink)}
 /* hub */
 .hub{background:var(--page)}
-.hub__main{max-width:960px;margin:0 auto;padding:48px var(--gutr) 60px var(--gut)}
-.hub__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin:24px 0}
+.hub__main{max-width:60rem;margin:0 auto;padding:48px var(--gutr) 60px var(--gut)}
+.hub__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.625rem,1fr));gap:16px;margin:24px 0}
 .hub__card{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:18px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--accent);text-decoration:none;color:var(--ink)}
-.hub__card img{border-radius:10px}
+.hub__card img{border-radius:10px;width:2.25rem;height:2.25rem}
 .hub__card b{font:750 1.15rem/1.25 var(--display)}
 .hub__card span{color:var(--muted);font-size:.92rem}
 .hub__card:hover{box-shadow:0 12px 28px rgba(39,38,38,.1)}
+/* big screens: everything sized in rem grows with the root size */
+@media (min-width:1440px){html{font-size:18px}}
+@media (min-width:1800px){html{font-size:20px}}
+@media (min-width:2200px){html{font-size:22px}}
+@media (min-width:2500px){html{font-size:24px}}
 /* mobile */
 @media (max-width:900px){
   .layout{grid-template-columns:1fr}
