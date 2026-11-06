@@ -150,6 +150,27 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       .thq-trust { flex-direction: column; text-align: center; }
       .thq-trust img { height: 150px; width: 112px; }
     }
+    /* Brain demo (6 Nov 2026) */
+    .bd { margin-top: var(--s-2); background: radial-gradient(120% 90% at 30% 20%, #2B2363 0%, #17133A 55%, #0E0B26 100%); border-radius: var(--radius-lg); padding: var(--s-6); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: var(--s-6); align-items: center; color: #EEE9FF; box-shadow: 0 24px 60px rgba(23, 19, 58, 0.35); position: relative; overflow: hidden; }
+    .bd::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(1px 1px at 12% 18%, #fff8 50%, transparent 51%), radial-gradient(1px 1px at 72% 12%, #fff6 50%, transparent 51%), radial-gradient(1.5px 1.5px at 88% 64%, #fff7 50%, transparent 51%), radial-gradient(1px 1px at 36% 86%, #fff5 50%, transparent 51%), radial-gradient(1px 1px at 55% 40%, #fff4 50%, transparent 51%); pointer-events: none; }
+    .bd__stage { position: relative; }
+    .bd canvas { display: block; width: 100%; max-width: 460px; aspect-ratio: 1; margin: 0 auto; touch-action: none; cursor: grab; }
+    .bd__hint { text-align: center; margin: var(--s-2) 0 0; font-size: var(--fs-sm); color: #A9A2D6; }
+    .bd-panel { min-height: 220px; position: relative; }
+    .bd-kicker { margin: 0 0 var(--s-1); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+    .bd-panel h3 { margin: 0 0 var(--s-3); font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.02em; color: #fff; }
+    .bd-tali { margin: 0 0 var(--s-4); color: #D9D3F5; font-size: 1.0625rem; line-height: 1.55; }
+    .bd-tali b { color: #fff; }
+    .bd-eg-h { margin: 0 0 var(--s-2); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #8F88C2; }
+    .bd-eg { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .bd-eg li { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.10); border-left: 3px solid var(--c); border-radius: 12px; padding: 10px 14px; color: #EEE9FF; }
+    .bd-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: var(--s-5); position: relative; }
+    .bd-chips button { border: 1px solid rgba(255, 255, 255, 0.16); background: rgba(255, 255, 255, 0.06); color: #D9D3F5; border-radius: 999px; padding: 7px 12px; font: inherit; font-size: 0.8125rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; min-height: 36px; }
+    .bd-chips button::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); box-shadow: 0 0 8px var(--c); }
+    .bd-chips button:hover { background: rgba(255, 255, 255, 0.12); }
+    .bd-chips button[aria-pressed="true"] { background: #fff; color: #17133A; border-color: #fff; }
+    .bd__fine { margin: var(--s-4) 0 0; font-size: var(--fs-sm); color: #8F88C2; position: relative; }
+    @media (max-width: 860px) { .bd { grid-template-columns: minmax(0, 1fr); padding: var(--s-5) var(--s-4); gap: var(--s-4); } .bd-panel { min-height: 0; } }
   </style>
 <link rel="stylesheet" href="/css/hybrid.css?v=4">
 </head>
@@ -255,6 +276,22 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div>
           <h3>Nothing happens without your yes</h3>
           <p>Tali drafts, you decide. She never sends a message, an invoice or a booking until you approve it, and she never asks for your passwords.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="thq-sec" id="brain" style="scroll-margin-top: 90px;">
+      <h2>Have a play with Tali's brain</h2>
+      <p>Tali files what she learns into parts of a brain, a bit like yours does. Spin it, tap a part, and see what she keeps there. This is a demo with made up memories.</p>
+      <div class="bd" id="brain-demo">
+        <div class="bd__stage">
+          <canvas aria-label="Tali's brain, a 3D cloud of glowing dots. Drag to spin it, or tap a part." role="img"></canvas>
+          <p class="bd__hint">Drag to spin. Tap a part.</p>
+        </div>
+        <div>
+          <div class="bd-panel" aria-live="polite"></div>
+          <div class="bd-chips" aria-label="Parts of Tali's brain"></div>
+          <p class="bd__fine">Your own Tali starts with an empty brain and fills it as you talk. You can see and delete anything she keeps.</p>
         </div>
       </div>
     </section>
@@ -535,5 +572,6 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 })();
 </script>
 <script src="/js/nav.js" defer></script>
+<script src="/js/brain-demo.js" defer></script>
 </body>
 </html>
