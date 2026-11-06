@@ -11,6 +11,14 @@
     "10000": "contractor-pt-first-8-weeks.html: insurance minimums, example rent maths, 2016 survey and GST threshold (not Totality prices)",
     "75000": "contractor-pt-first-8-weeks.html: insurance minimums, example rent maths, 2016 survey and GST threshold (not Totality prices)",
     "10000000": "contractor-pt-first-8-weeks.html: insurance minimums, example rent maths, 2016 survey and GST threshold (not Totality prices)",
-    "5000000": "contractor-pt-first-8-weeks.html: insurance minimums, example rent maths, 2016 survey and GST threshold (not Totality prices)"
+    "5000000": "contractor-pt-first-8-weeks.html: insurance minimums, example rent maths, 2016 survey and GST threshold (not Totality prices)",
+    "16": "compare/tali-hq-vs-copilot.html: Microsoft 365 Personal AUD price (competitor)",
+    "159": "compare/tali-hq-vs-copilot.html: Microsoft 365 Personal yearly (competitor)",
+    "18": "compare/tali-hq-vs-copilot.html: Microsoft 365 Family (competitor)",
+    "179": "compare/tali-hq-vs-copilot.html: Microsoft 365 Family yearly (competitor)",
+    "33": "compare/tali-hq-vs-copilot.html: Microsoft 365 Premium (competitor)",
+    "329": "compare/tali-hq-vs-copilot.html: Microsoft 365 Premium yearly (competitor)",
+    "7.99": "compare/tali-hq-vs-gemini.html: Google AI Plus AUD (competitor)",
+    "32.99": "compare/tali-hq-vs-gemini.html: Google AI Pro AUD (competitor)"
   }
 }

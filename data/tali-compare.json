@@ -1,0 +1,309 @@
+{
+  "_comment": "Tali HQ comparison pages, built by tools/build_tali_pages.py. Competitor facts only from their own pages (listed in sources). Recheck before changing 'checked'.",
+  "checked": "Nov 2026",
+  "tali": {
+    "who": "Small business owners and busy people who want one AI to run their week, their business and their life.",
+    "price": "Free A$0. Tali HQ A$19.99 a month. Tali HQ Pro A$39.99 a month. 15% off yearly.",
+    "free": "Free plan with 250 messages a month. Every new account gets a 7 day free trial of Tali HQ.",
+    "memory": "Yes. She keeps what she learns in a brain you can see, and you can delete any memory.",
+    "email": "On paid plans, connect Gmail or Outlook: she sorts it, flags what needs you and drafts replies. Pro adds her own email address for enquiries.",
+    "calendar": "Knows your week from Google Calendar and books into it when you approve.",
+    "invoices": "Clients, leads and invoices in one place. Invoices go through your own Stripe and mark themselves paid.",
+    "approval": "Always. Nothing is sent, invoiced or booked until you tap yes.",
+    "proactive": "A morning brief at the time you pick, health checks twice a day and a Friday goals check-in.",
+    "apps": "Web app on iPhone, Android and computer. App Store and Google Play versions coming soon.",
+    "currency": "Australian dollars. Made by Totality 360 in Australia."
+  },
+  "pages": [
+    {
+      "slug": "tali-hq-vs-chatgpt",
+      "name": "ChatGPT",
+      "title": "ChatGPT alternative for small business: Tali HQ and ChatGPT compared",
+      "desc": "Tali HQ and ChatGPT side by side for running a small business: price in AUD, memory, email, calendar, invoices and approvals, from each company's own pages.",
+      "h1": "ChatGPT alternative for small business: Tali HQ and ChatGPT compared",
+      "lead": "ChatGPT is OpenAI's general AI assistant for writing, research, images and coding. Tali HQ is an AI manager built around running your week, your inbox, your clients and your invoices. Here is how they line up.",
+      "who": "Individuals and teams who want a general AI assistant for writing, research, images and coding.",
+      "price": "Free. Go US$8 a month. Plus US$20 a month. Pro from US$100 a month. Business US$25 a user a month, or US$20 billed yearly, for 2 or more users. The pages show $ without a currency code.",
+      "free": "Free plan with usage limits OpenAI doesn't publish, covering chat, uploads, images, voice, memory and more.",
+      "memory": "Yes. It remembers across chats (a lighter version on Free), and you can view, delete or clear memories, or turn memory off.",
+      "email": "Gmail can be connected, and OpenAI says sending email needs your active oversight. Inbox sorting with drafted replies wasn't confirmed.",
+      "calendar": "Google Calendar can be connected, for example to draft meeting agendas. Booking events wasn't confirmed.",
+      "invoices": "Not offered.",
+      "approval": "Yes. OpenAI says its agent asks permission before actions of consequence, like sending email.",
+      "proactive": "Scheduled tasks on Go, Plus and Pro. Pulse gives morning update cards (its current rollout wasn't confirmed).",
+      "apps": "iPhone, Android, Windows, Mac and web.",
+      "currency": "Prices shown in $, read as US dollars.",
+      "them_better": [
+        "The biggest general AI models for research, writing and reasoning.",
+        "Image generation, voice with video, and Codex for coding.",
+        "A large library of GPTs and connected apps."
+      ],
+      "us_better": [
+        "You want an AI built around running a small business, with clients, leads and Stripe invoices included.",
+        "You want your inbox sorted, a morning brief and follow-ups, with nothing sent until you tap yes.",
+        "You want prices in Australian dollars and an AI that keeps what she learns in a brain you can see."
+      ],
+      "faq": [
+        [
+          "Is Tali HQ as smart as ChatGPT?",
+          "Tali HQ runs on leading AI models from Anthropic and OpenAI. She isn't trying to be a general assistant for everything. She's built to remember you and run your business week."
+        ],
+        [
+          "Can I use both?",
+          "Yes. Plenty of people use ChatGPT for general questions and Tali HQ to run their inbox, clients and invoices."
+        ]
+      ],
+      "sources": [
+        "https://chatgpt.com/pricing/",
+        "https://learn.chatgpt.com/docs/pricing",
+        "https://chatgpt.com/plans/free/",
+        "https://openai.com/index/memory-and-new-controls-for-chatgpt/",
+        "https://openai.com/index/introducing-chatgpt-agent/",
+        "https://openai.com/index/introducing-chatgpt-pulse/",
+        "https://chatgpt.com/download/"
+      ]
+    },
+    {
+      "slug": "tali-hq-vs-claude",
+      "name": "Claude",
+      "title": "Claude alternative for small business: Tali HQ and Claude compared",
+      "desc": "Tali HQ and Claude side by side for running a small business: price in AUD, memory, email, calendar, invoices and approvals, from each company's own pages.",
+      "h1": "Claude alternative for small business: Tali HQ and Claude compared",
+      "lead": "Claude is Anthropic's AI assistant for writing, analysis, coding and agentic work. Tali HQ is an AI manager built around running your week, your inbox, your clients and your invoices. Here is how they line up.",
+      "who": "Individuals and teams who want an AI assistant for writing, analysis, coding and agentic work.",
+      "price": "Free. Pro US$20 a month, or US$17 a month billed yearly. Max from US$100 a month. Team from US$25 a seat a month, or US$20 billed yearly. The page shows $ without a currency code.",
+      "free": "Free plan for chat on web, phone and desktop, with web search, memory and connectors, and usage limits that reset every 5 hours and weekly.",
+      "memory": "Yes. You can see what it remembers by topic and edit or delete any of it.",
+      "email": "The Gmail connector can search, read, draft, send, reply and forward, on every plan.",
+      "calendar": "The Google Calendar connector can create, update and delete events.",
+      "invoices": "Not offered.",
+      "approval": "Yes by default: each action needs your approval. Team and Enterprise owners can allow some actions without asking.",
+      "proactive": "Scheduled tasks on paid plans run on a schedule.",
+      "apps": "Web, iPhone, Android and desktop.",
+      "currency": "Prices shown in $, read as US dollars.",
+      "them_better": [
+        "Strong models for writing, analysis and coding, with Claude Code.",
+        "Agentic work in Cowork and Claude in Chrome on paid plans.",
+        "A wide connector library, and files and documents it can make for you."
+      ],
+      "us_better": [
+        "You want an AI built around a small business, with clients, leads and Stripe invoices included.",
+        "You want a morning brief, a sorted inbox and follow-ups ready each day without setting them up.",
+        "You want prices in Australian dollars and a brain you can see that fills up as you work."
+      ],
+      "faq": [
+        [
+          "Does Tali HQ use Claude?",
+          "Tali HQ runs on AI models from Anthropic, the makers of Claude, and from OpenAI. Tali HQ adds the parts built for running a business: her brain, the morning brief, your inbox, clients and invoices."
+        ]
+      ],
+      "sources": [
+        "https://claude.com/pricing",
+        "https://support.claude.com/en/articles/10166901-use-google-workspace-connectors",
+        "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+        "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork"
+      ]
+    },
+    {
+      "slug": "tali-hq-vs-gemini",
+      "name": "Google Gemini",
+      "title": "Gemini alternative for small business: Tali HQ and Google Gemini compared",
+      "desc": "Tali HQ and Google Gemini side by side for running a small business in Australia: AUD prices, memory, Gmail, calendar, invoices and approvals, from each company's own pages.",
+      "h1": "Gemini alternative for small business: Tali HQ and Gemini compared",
+      "lead": "Gemini is Google's AI across the Gemini app, Gmail, Docs and Search. Tali HQ is an AI manager built around running your week, your inbox, your clients and your invoices. Here is how they line up.",
+      "who": "Google account users who want AI across the Gemini app, Gmail, Docs and Search.",
+      "price": "Free. Google AI Plus A$7.99 a month. Google AI Pro A$32.99 a month. Google AI Ultra from A$149.99 a month.",
+      "free": "Free Gemini app with usage limits that reset every five hours and weekly, plus 15 GB of storage. Gemini in Gmail starts on AI Plus.",
+      "memory": "Yes, when Memory and Keep Activity are on. You can turn it off and delete past chats. A list of what it remembers wasn't confirmed.",
+      "email": "Drafts Gmail messages in a Gemini chat, and you press Send. Gemini in Gmail is included from AI Plus up.",
+      "calendar": "Creates, finds and edits Google Calendar events once Workspace is connected.",
+      "invoices": "Not offered.",
+      "approval": "For email you press Send. A confirmation step for calendar edits wasn't confirmed.",
+      "proactive": "Scheduled actions (up to 10) can give daily digests of your calendar and email, rolling out to personal accounts.",
+      "apps": "Web, Android and iPhone.",
+      "currency": "Australian dollars on Google's Australian page.",
+      "them_better": [
+        "Built deep into Gmail, Docs, Calendar and Search.",
+        "Video and image generation.",
+        "Bundled cloud storage, up to 5 TB on some plans."
+      ],
+      "us_better": [
+        "You want clients, leads and Stripe invoices in the same place as your inbox and week.",
+        "You use Outlook as well as Gmail.",
+        "You want an AI that keeps what she learns in a brain you can see, and checks in on your goals each Friday."
+      ],
+      "faq": [
+        [
+          "Does Tali HQ work with Google?",
+          "Yes. On paid plans Tali connects to Gmail and Google Calendar. She works with Outlook too."
+        ]
+      ],
+      "sources": [
+        "https://gemini.google/au/subscriptions/?hl=en-AU",
+        "https://one.google.com/intl/en_au/about/google-ai-plans/",
+        "https://support.google.com/gemini/answer/16316416?hl=en&co=GENIE.Platform%3DDesktop",
+        "https://support.google.com/gemini/answer/16598469?hl=en&co=GENIE.Platform%3DAndroid",
+        "https://support.google.com/gemini/answer/15305236?hl=en&co=GENIE.Platform%3DDesktop"
+      ]
+    },
+    {
+      "slug": "tali-hq-vs-copilot",
+      "name": "Microsoft Copilot",
+      "title": "Copilot alternative for small business: Tali HQ and Microsoft Copilot compared",
+      "desc": "Tali HQ and Microsoft Copilot side by side for running a small business in Australia: AUD prices, memory, email, calendar, invoices and approvals, from each company's own pages.",
+      "h1": "Copilot alternative for small business: Tali HQ and Copilot compared",
+      "lead": "Microsoft Copilot is Microsoft's AI, built into Word, Excel, PowerPoint and Outlook on Microsoft 365. Tali HQ is an AI manager built around running your week, your inbox, your clients and your invoices. Here is how they line up.",
+      "who": "Microsoft 365 users who want AI inside Word, Excel, PowerPoint and Outlook.",
+      "price": "Copilot free. Microsoft 365 Personal A$16 a month or A$159 a year. Family A$18 a month or A$179 a year. Premium A$33 a month or A$329 a year.",
+      "free": "A limited free Copilot. Microsoft doesn't publish the limits.",
+      "memory": "Yes. You can ask what it knows, ask it to forget things, delete all memory or turn it off.",
+      "email": "Finds and summarises Outlook.com and Gmail email through connectors, and is built into Outlook on paid plans. Drafting and sending through connectors wasn't confirmed.",
+      "calendar": "Finds Outlook.com and Google Calendar events. Booking wasn't confirmed.",
+      "invoices": "Not offered.",
+      "approval": "Asks permission to connect a service. Approval before sending wasn't confirmed.",
+      "proactive": "Not confirmed for personal plans.",
+      "apps": "Windows, Mac, iPhone, Android and web.",
+      "currency": "Australian dollars on Microsoft's Australian page.",
+      "them_better": [
+        "AI inside Word, Excel, PowerPoint and Outlook.",
+        "Bundled with the Microsoft 365 apps and cloud storage.",
+        "Image creation and research tools on Premium."
+      ],
+      "us_better": [
+        "You want clients, leads and Stripe invoices in the same place as your inbox and week.",
+        "You want replies drafted and a morning brief every day, with nothing sent until you tap yes.",
+        "You want an AI that keeps what she learns in a brain you can see, and checks in on your goals each Friday."
+      ],
+      "faq": [
+        [
+          "Does Tali HQ work with Outlook?",
+          "Yes. On paid plans Tali connects to Outlook or Gmail, sorts your inbox and drafts replies."
+        ]
+      ],
+      "sources": [
+        "https://www.microsoft.com/en-au/microsoft-365/buy/compare-all-microsoft-365-products",
+        "https://www.microsoft.com/en/copilot/pricing/individuals",
+        "https://support.microsoft.com/en-us/microsoft-copilot/connecting-microsoft-copilot-to-other-services",
+        "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
+        "https://www.microsoft.com/en-us/copilot/download-copilot-app"
+      ]
+    },
+    {
+      "slug": "tali-hq-vs-reclaim",
+      "name": "Reclaim",
+      "title": "Reclaim alternative: Tali HQ and Reclaim.ai compared",
+      "desc": "Looking for a Reclaim.ai alternative? Tali HQ and Reclaim side by side: price, free plan, email, calendar, invoices and memory, from each company's own pages.",
+      "h1": "Reclaim alternative: Tali HQ and Reclaim compared",
+      "lead": "Reclaim.ai is a calendar tool that protects time for habits, focus and meetings. Tali HQ is an AI manager that runs your inbox, clients and invoices as well as your week. Here is how they line up.",
+      "who": "People and teams on Google Calendar or Outlook Calendar who want focus time, habits and meetings scheduled automatically.",
+      "price": "Lite free. Starter US$10 a seat a month billed yearly (US$12 monthly). Business US$15 (US$18 monthly). Enterprise US$22 billed yearly. The page shows $ without a currency code.",
+      "free": "Lite is free for one user, with a one week scheduling range, 1 calendar sync, 1 scheduling link and 2 connected calendars.",
+      "memory": "The pricing page lists AI Memories. Whether you can see and delete them isn't stated.",
+      "email": "No inbox sorting or reply drafting. Email is used for booking reminders and a daily digest.",
+      "calendar": "Its main job: blocks time for habits, tasks, focus and buffers, reschedules around conflicts, and gives you scheduling links.",
+      "invoices": "Not offered.",
+      "approval": "Reclaim 2.0 stages changes in a Preview Mode, and nothing goes live until you review and apply them.",
+      "proactive": "Agents run in the background to protect your week, with a Daily Digest of problems and suggestions.",
+      "apps": "Web, working with Google Calendar and Outlook. Also usable from other AI tools through MCP.",
+      "currency": "Prices shown in $, read as US dollars.",
+      "them_better": [
+        "Deep automatic scheduling of habits, focus time and meetings.",
+        "Team calendar features like a shared out of office calendar, SSO and SCIM.",
+        "A free plan built around your calendar."
+      ],
+      "us_better": [
+        "You want your inbox sorted and replies drafted, not just your calendar.",
+        "You send invoices and want clients, leads and Stripe invoices with the rest of your week.",
+        "You want prices in Australian dollars and an AI that remembers you in a brain you can see."
+      ],
+      "faq": [
+        [
+          "Is Tali HQ a calendar app like Reclaim?",
+          "No. Tali knows your Google Calendar and books into it when you approve, but she doesn't auto-schedule habits and focus blocks the way Reclaim does. She also runs your inbox, clients and invoices."
+        ]
+      ],
+      "sources": [
+        "https://reclaim.ai/pricing",
+        "https://help.reclaim.ai/en/articles/15280604-reclaim-2-0-faq"
+      ]
+    },
+    {
+      "slug": "tali-hq-vs-notion-ai",
+      "name": "Notion AI",
+      "title": "Notion AI alternative: Tali HQ and Notion compared",
+      "desc": "Looking for a Notion AI alternative for running your business? Tali HQ and Notion side by side: price, email, calendar, invoices and memory, from each company's own pages.",
+      "h1": "Notion AI alternative: Tali HQ and Notion compared",
+      "lead": "Notion is a workspace for docs, wikis and databases, with AI built in. Tali HQ is an AI manager that runs your inbox, clients, invoices and week. Here is how they line up.",
+      "who": "Individuals and teams who want docs, wikis, databases and AI in one connected workspace.",
+      "price": "Free. Plus US$10 a member a month. Business US$20 a member a month. Enterprise by quote. Yearly billing saves up to 20%. Custom Agents are an add-on at US$10 per 1,000 credits a month.",
+      "free": "Free for individuals, including a trial of Notion AI. The full Notion Agent, AI Meeting Notes and Enterprise Search are on Business.",
+      "memory": "Uses context from your Notion workspace and connected apps. A separate memory you can see and delete isn't described.",
+      "email": "Notion Mail is a separate product. Inbox sorting and reply drafting weren't confirmed on Notion's own pages.",
+      "calendar": "Notion Calendar brings several calendars into one place.",
+      "invoices": "No built-in invoicing. You can keep a client list in a database.",
+      "approval": "Not stated on the pages checked.",
+      "proactive": "Notion says its agents keep work moving around the clock, and AI Meeting Notes automates follow-ups on Business.",
+      "apps": "Notion offers app downloads. Platforms weren't confirmed on the pages checked.",
+      "currency": "US dollars.",
+      "them_better": [
+        "Docs, wikis and databases for a whole team.",
+        "Search across Slack, GitHub and other tools on Business.",
+        "AI meeting notes without a bot joining the call."
+      ],
+      "us_better": [
+        "You want an AI that runs your day, not a workspace you have to build first.",
+        "You want your inbox sorted, replies drafted and Stripe invoices sent on your yes.",
+        "You want prices in Australian dollars and an AI that remembers you in a brain you can see."
+      ],
+      "faq": [
+        [
+          "Can I use Tali HQ and Notion together?",
+          "Yes. They do different jobs: Notion holds your team's docs, and Tali runs your inbox, clients, invoices and week. Tali HQ doesn't connect to Notion today."
+        ]
+      ],
+      "sources": [
+        "https://www.notion.com/pricing?country=US",
+        "https://www.notion.com/mail"
+      ]
+    },
+    {
+      "slug": "tali-hq-vs-lindy",
+      "name": "Lindy",
+      "title": "Lindy alternative: Tali HQ and Lindy compared",
+      "desc": "Looking for a Lindy alternative? Tali HQ and Lindy side by side: price, free plan, email, calendar, invoices and memory, from each company's own pages.",
+      "h1": "Lindy alternative: Tali HQ and Lindy compared",
+      "lead": "Lindy is an AI assistant that works across email, meetings and thousands of connected tools. Tali HQ is an AI manager for small business owners, with clients and invoices built in. Here is how they line up.",
+      "who": "Professionals and teams who want an AI assistant across email, meetings and many connected tools.",
+      "price": "Plus US$29.99 a user a month (3,000 credits). Pro US$99.99 (15,000 credits). Max US$199.99 (35,000 credits). Enterprise by quote. The page shows $ without a currency code.",
+      "free": "No free plan. A 7 day free trial with no card, once per person.",
+      "memory": "Advertises persistent workspace context. Whether you can see and delete it isn't stated.",
+      "email": "Manages up to 5 inboxes and drafts replies in your voice. Sending waits for your approval.",
+      "calendar": "Meeting scheduling, prep and follow-up. Booking details weren't confirmed.",
+      "invoices": "Not offered.",
+      "approval": "Yes. Lindy says anything with outside impact, like sending an email, waits for approval.",
+      "proactive": "Works through credit-based tasks and can be reached over iMessage. Scheduled automations weren't confirmed.",
+      "apps": "iMessage and a Chrome extension. Phone and desktop apps weren't confirmed.",
+      "currency": "Prices shown in $, read as US dollars.",
+      "them_better": [
+        "Thousands of integrations and MCP support.",
+        "Up to 5 inboxes on one account.",
+        "A choice of AI model for each task."
+      ],
+      "us_better": [
+        "You want a free plan to start, and paid plans from A$19.99 a month.",
+        "You send invoices and want clients, leads and Stripe invoices built in.",
+        "You want an AI that remembers you in a brain you can see and edit."
+      ],
+      "faq": [
+        [
+          "Is Tali HQ cheaper than Lindy?",
+          "Tali HQ has a free plan, and paid plans are A$19.99 and A$39.99 a month. Lindy's plans start at US$29.99 a user a month after a 7 day trial."
+        ]
+      ],
+      "sources": [
+        "https://docs.lindy.ai/pricing",
+        "https://wf.lindy.ai/pricing"
+      ]
+    }
+  ]
+}
