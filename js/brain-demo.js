@@ -92,14 +92,14 @@
   var proj = [];
 
   function resize() {
-    var w = canvas.clientWidth; size = w; dpr = Math.min(2, window.devicePixelRatio || 1);
+    var w = canvas.clientWidth; size = w; dpr = Math.min(3, window.devicePixelRatio || 1);
     canvas.width = Math.round(w * dpr); canvas.height = Math.round(w * dpr);
   }
   function project(p) {
     var cy = Math.cos(ry), sy = Math.sin(ry), x1 = p.x * cy + p.z * sy, z1 = -p.x * sy + p.z * cy;
     var cx = Math.cos(rx), sx = Math.sin(rx), y2 = p.y * cx - z1 * sx, z2 = p.y * sx + z1 * cx;
-    var k = 3.2 / (3.2 - z2), half = size / 2, sc = half * 0.8 * k;
-    return { sx: half + x1 * sc, sy: half - y2 * sc - size * 0.01, k: k, z: z2 };
+    var k = 3.2 / (3.2 - z2), half = size / 2, sc = half * 0.98 * k;
+    return { sx: half + x1 * sc, sy: half - y2 * sc + size * 0.02, k: k, z: z2 };
   }
   function draw() {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -107,14 +107,24 @@
     proj = dots.map(function (d) { var p = project(d); p.d = d; return p; });
     proj.sort(function (a, b) { return a.z - b.z; });
     var focus = hover || selected, scale = size / 400;
-    ctx.globalCompositeOperation = 'lighter';
+    // 6 Nov 2026 (Taj: too blurry on phones): every dot is a crisp circle; only the part you picked
+    // gets a soft glow behind it.
     for (var i = 0; i < proj.length; i++) {
       var p = proj[i], d = p.d, on = focus === d.region;
       var depth = (p.z + 1.1) / 2.2;
-      var base = focus ? (on ? 0.8 : 0.13) : (deep[d.region] ? 0.95 : 0.8);
-      var s = d.size * p.k * scale * (on ? 3.8 : 3.2);
-      ctx.globalAlpha = Math.max(0.04, Math.min(1, base * (0.35 + depth * 0.75)));
-      ctx.drawImage(sprites[d.region], p.sx - s / 2, p.sy - s / 2, s, s);
+      var base = focus ? (on ? 1 : 0.22) : (deep[d.region] ? 1 : 0.85);
+      var a = Math.max(0.06, Math.min(1, base * (0.3 + depth * 0.8)));
+      var rad = d.size * p.k * scale * (on ? 0.95 : 0.78);
+      if (on) {
+        var g = rad * 6;
+        ctx.globalCompositeOperation = 'lighter'; ctx.globalAlpha = a * 0.5;
+        ctx.drawImage(sprites[d.region], p.sx - g / 2, p.sy - g / 2, g, g);
+        ctx.globalCompositeOperation = 'source-over';
+      }
+      ctx.globalAlpha = a;
+      ctx.fillStyle = REGIONS[d.region].colour;
+      ctx.beginPath(); ctx.arc(p.sx, p.sy, rad, 0, Math.PI * 2); ctx.fill();
+      if (on) { ctx.globalAlpha = a * 0.8; ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(p.sx, p.sy, rad * 0.45, 0, Math.PI * 2); ctx.fill(); }
     }
     ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
   }
