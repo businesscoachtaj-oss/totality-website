@@ -1,0 +1,198 @@
+{
+  "_comment": "Comparison data for tools/build_compare_more.py. Competitor facts only from their own App Store listings or sites (sources). Checked 7 Nov 2026.",
+  "checked": "Nov 2026",
+  "totality": [],
+  "nutrition": [
+    {
+      "slug": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "title": "MyFitnessPal alternative in Australia: Totality Nutrition and MyFitnessPal compared",
+      "desc": "Looking for a MyFitnessPal alternative in Australia? Totality Nutrition and MyFitnessPal side by side: price, free version, food database, barcode scanning, AI logging and nutrients.",
+      "h1": "MyFitnessPal alternative in Australia: Totality Nutrition and MyFitnessPal compared",
+      "lead": "MyFitnessPal is one of the best known calorie counters, with a very large food database. Here is how it lines up with Totality Nutrition, using each company's own published information.",
+      "who": "Anyone counting calories and macros, with Premium and Premium Plus tiers.",
+      "price": "Free to download. Premium and Premium Plus are in-app purchases. The Australian App Store lists them from $14.99 to $129.99 (monthly and yearly), without saying which price is which tier.",
+      "free": "Free food logging with the full database, macro goals, water and activity tracking. The listing says Premium is ad-free, which suggests the free version has ads.",
+      "food_database": "Over 20.5 million items, including restaurant dishes.",
+      "barcode": "Premium.",
+      "ai_logging": "Meal scanning and voice logging on Premium.",
+      "micronutrients": "The App Store description doesn't mention vitamins and minerals.",
+      "coaching": "Custom macro goals on Premium. Personalised meal plans, grocery delivery and 1,000+ recipes on Premium Plus.",
+      "apps": "iPhone, iPad and Apple Watch on the App Store, with Wear OS integration.",
+      "currency": "Australian App Store prices shown in $.",
+      "them_better": [
+        "A food database of over 20.5 million items, including restaurant dishes.",
+        "Photo and voice logging on Premium.",
+        "Personalised meal plans and grocery delivery on Premium Plus."
+      ],
+      "us_better": [
+        "You want barcode scanning without paying (7 scans a week on Free, unlimited on Nutrition).",
+        "You want Australian Food Composition Database foods first, and a full vitamin and mineral breakdown against Australian recommended intakes.",
+        "You want a free version with no ads, and prices in Australian dollars."
+      ],
+      "faq": [],
+      "sources": [
+        "https://apps.apple.com/au/app/id341232718?l=en-au"
+      ]
+    },
+    {
+      "slug": "macrofactor",
+      "name": "MacroFactor",
+      "title": "MacroFactor alternative in Australia: Totality Nutrition and MacroFactor compared",
+      "desc": "Looking for a MacroFactor alternative in Australia? Totality Nutrition and MacroFactor side by side: price, free version, food database, barcode scanning, AI logging and nutrients.",
+      "h1": "MacroFactor alternative in Australia: Totality Nutrition and MacroFactor compared",
+      "lead": "MacroFactor is a paid macro tracker known for its adaptive coaching, which adjusts your targets from your intake and weight. Here is how it lines up with Totality Nutrition.",
+      "who": "People tracking macros who want targets that adapt to their metabolism.",
+      "price": "US$71.99 a year (about US$5.99 a month) per its App Store description. Monthly and other plans are also offered in the store.",
+      "free": "No free version. Free to download with a 7 day trial.",
+      "food_database": "A large verified food database (size not stated).",
+      "barcode": "Yes, included.",
+      "ai_logging": "AI label scanning for custom foods and photo or text recipe import. Voice logging isn't mentioned.",
+      "micronutrients": "Tracks micronutrients alongside macros.",
+      "coaching": "A dynamic algorithm adapts your targets to changes in your metabolism.",
+      "apps": "iPhone, iPad and Apple Watch on the App Store.",
+      "currency": "US dollars in its description.",
+      "them_better": [
+        "Adaptive targets that adjust from your weight and intake.",
+        "A verified food database built for accuracy.",
+        "An ad-free app built around macro coaching."
+      ],
+      "us_better": [
+        "You want a free version to keep using after the trial.",
+        "You want Australian Food Composition Database foods first, and nutrients measured against Australian recommended intakes.",
+        "You want a grocery list from your meal plan and prices in Australian dollars."
+      ],
+      "faq": [],
+      "sources": [
+        "https://apps.apple.com/gb/app/id1553503471"
+      ]
+    },
+    {
+      "slug": "cronometer",
+      "name": "Cronometer",
+      "title": "Cronometer alternative in Australia: Totality Nutrition and Cronometer compared",
+      "desc": "Looking for a Cronometer alternative in Australia? Totality Nutrition and Cronometer side by side: price, free version, food database, barcode scanning, AI logging and nutrients.",
+      "h1": "Cronometer alternative in Australia: Totality Nutrition and Cronometer compared",
+      "lead": "Cronometer is a nutrition tracker known for detailed vitamin and mineral tracking from a curated database. Here is how it lines up with Totality Nutrition.",
+      "who": "People who want detailed nutrient tracking, with a free version and a Gold upgrade.",
+      "price": "Free. Gold US$10.99 a month or US$59.99 a year on the US App Store.",
+      "free": "Free version with barcode scanning. Gold removes ads and adds photo and voice logging, a fasting tracker, a recipe importer and more.",
+      "food_database": "More than 1.1 million verified foods in a curated database.",
+      "barcode": "Free.",
+      "ai_logging": "Photo and voice logging, where AI identifies foods and estimates portions, on Gold.",
+      "micronutrients": "95+ vitamins and minerals.",
+      "coaching": "Crono Coach and deeper insights on Gold.",
+      "apps": "iPhone, iPad and Apple Watch on the App Store.",
+      "currency": "US dollars on the US App Store.",
+      "them_better": [
+        "95+ vitamins and minerals tracked.",
+        "Free barcode scanning.",
+        "Photo and voice logging on Gold."
+      ],
+      "us_better": [
+        "You want Australian Food Composition Database foods first, with nutrients measured against Australian recommended intakes.",
+        "You want a weekly meal plan that writes your grocery list, grouped by supermarket aisle.",
+        "You want a free version with no ads, and prices in Australian dollars."
+      ],
+      "faq": [],
+      "sources": [
+        "https://apps.apple.com/app/cronometer-calorie-counter/id1145935738"
+      ]
+    },
+    {
+      "slug": "easy-diet-diary",
+      "name": "Easy Diet Diary",
+      "title": "Easy Diet Diary alternative in Australia: Totality Nutrition and Easy Diet Diary compared",
+      "desc": "Looking for a Easy Diet Diary alternative in Australia? Totality Nutrition and Easy Diet Diary side by side: price, free version, food database, barcode scanning, AI logging and nutrients.",
+      "h1": "Easy Diet Diary alternative in Australia: Totality Nutrition and Easy Diet Diary compared",
+      "lead": "Easy Diet Diary is an Australian food diary from Xyris, with an Australian food database. Here is how it lines up with Totality Nutrition.",
+      "who": "Australians who want a simple, free food diary.",
+      "price": "Free. The App Store listing says it is completely free with no ads.",
+      "free": "The whole app is free, with no ads.",
+      "food_database": "An extensive Australian food database based on official sources.",
+      "barcode": "Yes.",
+      "ai_logging": "No AI logging mentioned. You can attach photos to diary entries.",
+      "micronutrients": "Energy, protein, fat and carbs, plus sodium, potassium, calcium and phosphorus.",
+      "coaching": "Not described on the listing.",
+      "apps": "iPhone and iPad on the App Store.",
+      "currency": "Free, so no currency.",
+      "them_better": [
+        "It's completely free, with no ads.",
+        "An Australian food database from an Australian developer."
+      ],
+      "us_better": [
+        "You want a full vitamin and mineral breakdown measured against Australian recommended intakes.",
+        "You want a weekly meal plan that writes your grocery list, plus weight, progress photos and streaks.",
+        "You want to describe a meal in plain words and have Tali log it for you to check."
+      ],
+      "faq": [],
+      "sources": [
+        "https://apps.apple.com/au/app/easy-diet-diary/id436104108"
+      ]
+    },
+    {
+      "slug": "lose-it",
+      "name": "Lose It!",
+      "title": "Lose It! alternative in Australia: Totality Nutrition and Lose It! compared",
+      "desc": "Looking for a Lose It! alternative in Australia? Totality Nutrition and Lose It! side by side: price, free version, food database, barcode scanning, AI logging and nutrients.",
+      "h1": "Lose It! alternative in Australia: Totality Nutrition and Lose It! compared",
+      "lead": "Lose It! is a calorie counter built around weight loss, with a large food database. Here is how it lines up with Totality Nutrition.",
+      "who": "People who want to lose weight with a calorie budget.",
+      "price": "Free basic version. Premium is an in-app purchase; the US App Store lists prices from US$9.99 to US$79.99, and lifetime from US$49.99, without saying which is monthly or yearly.",
+      "free": "Free calorie tracking, a weight loss plan and community support.",
+      "food_database": "56+ million items and recipes.",
+      "barcode": "Premium only.",
+      "ai_logging": "Photo meal logging and AI voice logging on Premium.",
+      "micronutrients": "Vitamins and minerals in Premium's advanced tracking.",
+      "coaching": "A weight loss plan on Free. Meal planning and targets, and diet plans on Premium.",
+      "apps": "iPhone, iPad, Mac and Apple Watch on the App Store.",
+      "currency": "US dollars on the US App Store.",
+      "them_better": [
+        "A database of 56+ million items and recipes.",
+        "Photo and AI voice logging on Premium.",
+        "A lifetime Premium option."
+      ],
+      "us_better": [
+        "You want barcode scanning on the free version (7 scans a week, unlimited on Nutrition).",
+        "You want vitamins and minerals measured against Australian recommended intakes without a premium tier for advanced tracking.",
+        "You want Australian Food Composition Database foods first, and prices in Australian dollars."
+      ],
+      "faq": [],
+      "sources": [
+        "https://apps.apple.com/us/app/lose-it-calorie-counter/id297368629?uo=4"
+      ]
+    },
+    {
+      "slug": "carb-manager",
+      "name": "Carb Manager",
+      "title": "Carb Manager alternative in Australia: Totality Nutrition and Carb Manager compared",
+      "desc": "Looking for a Carb Manager alternative in Australia? Totality Nutrition and Carb Manager side by side: price, free version, food database, barcode scanning, AI logging and nutrients.",
+      "h1": "Carb Manager alternative in Australia: Totality Nutrition and Carb Manager compared",
+      "lead": "Carb Manager is a keto and low carb tracker with free net carb tracking. Here is how it lines up with Totality Nutrition.",
+      "who": "People on keto or low carb diets who track net carbs.",
+      "price": "Free to use. Premium is an in-app purchase; the US App Store lists options from US$8.49 a month to US$49.99, without saying which are current.",
+      "free": "Free net carb, calorie and macro tracking, unlimited barcode scans, water, exercise and weight.",
+      "food_database": "1M+ foods.",
+      "barcode": "Free and unlimited.",
+      "ai_logging": "Not described on the listing.",
+      "micronutrients": "Micronutrients on Premium, with goals for 30+ nutrients.",
+      "coaching": "Keto recipes, carb cycling, a fasting app and advanced reports on Premium.",
+      "apps": "iPhone, iPad and Apple Watch on the App Store.",
+      "currency": "US dollars on the US App Store.",
+      "them_better": [
+        "Built around keto and net carbs.",
+        "Unlimited free barcode scanning.",
+        "5,000+ keto recipes on Premium."
+      ],
+      "us_better": [
+        "You want vitamins and minerals measured against Australian recommended intakes on your plan, not a premium add-on.",
+        "You want Australian Food Composition Database foods first.",
+        "You want a weekly meal plan with a grocery list grouped by supermarket aisle, and prices in Australian dollars."
+      ],
+      "faq": [],
+      "sources": [
+        "https://apps.apple.com/us/app/id410089731"
+      ]
+    }
+  ]
+}
