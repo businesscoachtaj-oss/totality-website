@@ -87,7 +87,7 @@
 
   // ---- State ----
   var ry = 0.6, rx = 0.18, vy = reduce ? 0 : 0.0035, size = 400, dpr = 1;
-  var selected = null, hover = null, touring = !reduce, tourAt = 0, tourIdx = 0, lastInput = 0;
+  var selected = null, hover = null, touring = !reduce, tourAt = 0, tourIdx = 0, lastInput = 0, lastTouch = 0;
   var dragging = false, lastX = 0, lastY = 0, moved = 0;
   var proj = [];
 
@@ -98,7 +98,7 @@
   function project(p) {
     var cy = Math.cos(ry), sy = Math.sin(ry), x1 = p.x * cy + p.z * sy, z1 = -p.x * sy + p.z * cy;
     var cx = Math.cos(rx), sx = Math.sin(rx), y2 = p.y * cx - z1 * sx, z2 = p.y * sx + z1 * cx;
-    var k = 3.2 / (3.2 - z2), half = size / 2, sc = half * 0.98 * k;
+    var k = 3.2 / (3.2 - z2), half = size / 2, sc = half * 0.88 * k;
     return { sx: half + x1 * sc, sy: half - y2 * sc + size * 0.02, k: k, z: z2 };
   }
   function draw() {
@@ -129,8 +129,16 @@
     ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
   }
 
+  // 6 Nov 2026 (Taj): tap the part again, tap empty space or "Whole brain" to see every part lit up.
   function show(id) {
     selected = id;
+    if (!id) {
+      panel.innerHTML =
+        '<p class="bd-kicker" style="color:#B9A6FF">13 parts</p>' +
+        '<h3>The whole brain</h3>' +
+        '<p class="bd-tali">Every part lit up at once. Each one holds a different kind of memory, and the more Tali learns, the brighter it glows.</p>' +
+        '<p class="bd-tali" style="margin:0">Tap a part, or a name below, to see what she keeps there.</p>';
+    } else {
     var R = REGIONS[id];
     panel.innerHTML =
       '<p class="bd-kicker" style="color:' + R.colour + '">' + R.human + ' in you</p>' +
@@ -138,15 +146,20 @@
       '<p class="bd-tali"><b>In Tali:</b> ' + R.tali + '.</p>' +
       '<p class="bd-eg-h">Example memories</p>' +
       '<ul class="bd-eg">' + R.eg.map(function (e) { return '<li style="--c:' + R.colour + '">' + e + '</li>'; }).join('') + '</ul>';
-    Array.prototype.forEach.call(chipsEl.children, function (b) { b.setAttribute('aria-pressed', b.dataset.id === id ? 'true' : 'false'); });
+    }
+    Array.prototype.forEach.call(chipsEl.children, function (b) { b.setAttribute('aria-pressed', (b.dataset.id || null) === id ? 'true' : 'false'); });
   }
-  function stopTour() { touring = false; lastInput = performance.now(); }
+  function stopTour() { touring = false; lastTouch = performance.now(); }
 
+  var all = document.createElement('button');
+  all.type = 'button'; all.textContent = 'Whole brain'; all.style.setProperty('--c', '#fff'); all.setAttribute('aria-pressed', 'false');
+  all.addEventListener('click', function () { stopTour(); show(null); });
+  chipsEl.appendChild(all);
   ORDER.forEach(function (id) {
     var b = document.createElement('button');
     b.type = 'button'; b.dataset.id = id; b.textContent = REGIONS[id].name; b.style.setProperty('--c', REGIONS[id].colour);
     b.setAttribute('aria-pressed', 'false');
-    b.addEventListener('click', function () { stopTour(); show(id); });
+    b.addEventListener('click', function () { stopTour(); show(selected === id ? null : id); });
     chipsEl.appendChild(b);
   });
 
@@ -170,7 +183,7 @@
   });
   canvas.addEventListener('pointerup', function (e) {
     dragging = false;
-    if (moved < 6) { var q = pos(e), hit = pick(q.x, q.y); if (hit) show(hit); }
+    if (moved < 6) { var q = pos(e), hit = pick(q.x, q.y); show(hit && hit !== selected ? hit : null); }
   });
   canvas.addEventListener('pointerleave', function () { hover = null; });
 
@@ -180,7 +193,7 @@
     if (visible) {
       if (!dragging && !reduce && now - lastInput > 2500) ry += vy;
       if (touring && now - tourAt > 4200) { show(ORDER[tourIdx % ORDER.length]); tourIdx++; tourAt = now; }
-      if (!touring && !reduce && now - lastInput > 20000) { touring = true; tourAt = 0; }
+      if (!touring && !reduce && now - lastTouch > 20000) { touring = true; tourAt = 0; }
       draw();
     }
     requestAnimationFrame(frame);
