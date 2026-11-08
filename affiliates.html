@@ -89,7 +89,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .ot-msg[hidden] { display: none; }
     .ot-msg--err { background: #FDECEA; color: #8A1C12; border-left: 4px solid #C62828; }
     .af-done { max-width: 640px; display: grid; gap: var(--s-4); justify-items: start; padding: var(--s-6) 0; }
-    .af-done[hidden], .af-top[hidden], .af-stepper[hidden], .af-grid[hidden], .af-side[hidden], #afSide[hidden], #afStart[hidden] { display: none; }
+    .af-done[hidden], #afRoleOtherWrap[hidden], .af-top[hidden], .af-stepper[hidden], .af-grid[hidden], .af-side[hidden], #afSide[hidden], #afStart[hidden] { display: none; }
     .af-stepper { scroll-margin-top: 90px; }
     .af-done img { height: 240px; width: auto; }
     @media (max-width: 560px) { .af-opts .af-opt { flex: 1 1 100%; } .af-sprite { height: 160px; } }
@@ -170,13 +170,14 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
               <div><h2>About you</h2><p class="af-sub">Start with the basics so we know who we are talking to.</p></div>
               <div class="af-row"><div><label class="label" for="afFn">First name</label><input class="input" id="afFn" name="first_name" type="text" autocomplete="given-name" maxlength="80"></div><div><label class="label" for="afLn">Last name</label><input class="input" id="afLn" name="last_name" type="text" autocomplete="family-name" maxlength="80"></div></div>
               <div><label class="label" for="afEm">Email</label><input class="input" id="afEm" name="email" type="email" autocomplete="email" maxlength="200"><p class="af-sub" style="font-size:13px">We will use this to reply to you.</p></div>
-              <div class="af-row"><div><label class="label" for="afIg">Instagram handle</label><input class="input" id="afIg" name="instagram" type="text" placeholder="@yourhandle" maxlength="80"></div><div><label class="label" for="afCo">Country</label><select class="input" id="afCo" name="country"><option>Australia</option><option>Canada</option><option>New Zealand</option><option>United Kingdom</option><option>United States</option><option>Somewhere else</option></select></div></div>
+              <div class="af-row"><div><label class="label" for="afIg">Instagram or social handle</label><input class="input" id="afIg" name="instagram" type="text" placeholder="@yourhandle" maxlength="80"></div><div><label class="label" for="afCo">Country</label><select class="input" id="afCo" name="country"><option>Australia</option><option>Canada</option><option>New Zealand</option><option>United Kingdom</option><option>United States</option><option>Somewhere else</option></select></div></div>
               <div><label class="label" for="afBn">Business or brand name <span class="ot-opt">(optional)</span></label><input class="input" id="afBn" name="business_name" type="text" maxlength="120"></div>
               <div class="ot-hp" aria-hidden="true"><label for="afWeb">Leave this empty</label><input id="afWeb" name="website" type="text" tabindex="-1" autocomplete="off"></div>
             </section>
             <section class="af-panel" data-p="2" hidden>
               <div><h2>Your audience</h2><p class="af-sub">Who you are and where people find you.</p></div>
               <fieldset class="af-opts" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))"><legend>What best describes you?</legend><label class="af-opt"><input type="radio" name="role" value="Personal trainer or coach" checked> Personal trainer or coach</label><label class="af-opt"><input type="radio" name="role" value="Dietitian or nutritionist"> Dietitian or nutritionist</label><label class="af-opt"><input type="radio" name="role" value="Fitness or food creator"> Fitness or food creator</label><label class="af-opt"><input type="radio" name="role" value="Gym or studio owner"> Gym or studio owner</label><label class="af-opt"><input type="radio" name="role" value="Business owner"> Business owner</label><label class="af-opt"><input type="radio" name="role" value="Something else"> Something else</label></fieldset>
+              <div id="afRoleOtherWrap" hidden><label class="label" for="afRoleOther">What do you do?</label><input class="input" id="afRoleOther" name="role_other" type="text" maxlength="60" placeholder="Tell us in a few words"></div>
               <fieldset class="af-opts"><legend>Where do you share content? <span class="ot-opt">Pick all that apply</span></legend><label class="af-opt"><input type="checkbox" name="platform" value="Instagram" checked> Instagram</label><label class="af-opt"><input type="checkbox" name="platform" value="TikTok"> TikTok</label><label class="af-opt"><input type="checkbox" name="platform" value="YouTube"> YouTube</label><label class="af-opt"><input type="checkbox" name="platform" value="Facebook"> Facebook</label><label class="af-opt"><input type="checkbox" name="platform" value="Podcast"> Podcast</label><label class="af-opt"><input type="checkbox" name="platform" value="Email newsletter"> Email newsletter</label></fieldset>
               <div class="af-row"><div><label class="label" for="afSz">Audience size on your biggest platform</label><select class="input" id="afSz" name="audience_size"><option>Under 1,000</option><option>1,000 to 5,000</option><option>5,000 to 10,000</option><option>10,000 to 50,000</option><option>50,000 or more</option></select></div><div><label class="label" for="afLk">Link to your main profile or website</label><input class="input" id="afLk" name="profile_link" type="url" placeholder="https://" maxlength="300"></div></div>
             </section>
@@ -308,6 +309,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     function fail(m) { err.textContent = m; err.hidden = false; }
     function val(n) { var e = form.elements[n]; return e ? e.value.trim() : ''; }
     function radio(n) { var e = form.querySelector('input[name="' + n + '"]:checked'); return e ? e.value : ''; }
+    function role() { var r = radio('role'); return r === 'Something else' && val('role_other') ? 'Something else: ' + val('role_other') : r; }
     function platforms() { return Array.prototype.map.call(form.querySelectorAll('input[name="platform"]:checked'), function (e) { return e.value; }); }
     var APPS = { nutrition: 'Totality Nutrition', totality: 'Totality', both: 'Totality Nutrition and Totality' };
     function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -325,7 +327,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     function review() {
       var rows = [
         ['About you', val('first_name') + ' ' + val('last_name') + '<br>' + val('email') + '<br>' + (val('instagram') || 'No Instagram') + ', ' + val('country') + (val('business_name') ? '<br>' + val('business_name') : ''), 1],
-        ['Your audience', radio('role') + '<br>' + platforms().join(', ') + '<br>' + val('audience_size') + (val('profile_link') ? ', ' + val('profile_link') : ''), 2],
+        ['Your audience', role() + '<br>' + platforms().join(', ') + '<br>' + val('audience_size') + (val('profile_link') ? ', ' + val('profile_link') : ''), 2],
         ['Fit and sharing', APPS[radio('app_choice')] + '<br>' + (radio('used') === 'yes' ? 'Has used the app' : 'Has not used the app yet') + (val('how_share') ? '<br>' + val('how_share') : ''), 3]
       ];
       document.getElementById('afReview').innerHTML = rows.map(function (r) {
@@ -337,11 +339,14 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       if (n === 1) {
         if (!val('first_name')) return 'Please add your first name.';
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('email'))) return 'Please check your email address.';
+        if (!val('instagram')) return 'Please add your Instagram or social handle.';
       }
+      if (n === 2 && radio('role') === 'Something else' && !val('role_other')) return 'Tell us what you do.';
       if (n === 2 && !platforms().length) return 'Pick at least one place you share content.';
       if (n === 3 && !val('how_share')) return 'Add a few lines on how you would share it.';
       return '';
     }
+    form.addEventListener('change', function (e) { if (e.target.name === 'role') document.getElementById('afRoleOtherWrap').hidden = radio('role') !== 'Something else'; });
     document.getElementById('afStart').addEventListener('click', function () {
       grid.hidden = false; stepper.hidden = false; this.hidden = true; show(1);
     });
@@ -354,7 +359,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       if (!document.getElementById('afConsent').checked) return fail('Please tick the box so we can email you.');
       var d = {
         first_name: val('first_name'), last_name: val('last_name'), email: val('email'), instagram: val('instagram'),
-        country: val('country'), business_name: val('business_name'), role: radio('role'), platforms: platforms(),
+        country: val('country'), business_name: val('business_name'), role: role(), platforms: platforms(),
         audience_size: val('audience_size'), profile_link: val('profile_link'), app_choice: radio('app_choice'),
         used_app: radio('used') === 'yes', how_share: val('how_share'), notes: val('notes'),
         email_consent: true, website: val('website'), started_at: started
