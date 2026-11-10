@@ -1,0 +1,455 @@
+{
+ "fetched_at": "2026-11-11",
+ "books": [
+  {
+   "id": "pg1227",
+   "state": "reading",
+   "title": "The Expression of the Emotions in Man and Animals",
+   "author": "Charles Darwin",
+   "subject": "emotions",
+   "lessons": 90,
+   "studied": 100,
+   "passages": 469,
+   "source_url": "https://www.gutenberg.org/ebooks/1227",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1882. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Charles Darwin held that many expressions come from habits that once served a purpose, such as the three chief principles he sets out in the first chapter. Expressions can outlast the reason they first existed."
+    },
+    {
+     "n": 2,
+     "text": "Charles Darwin's principle of antithesis suggests that opposite moods often show up as opposite postures. A relaxed, friendly stance is often the reverse of a hostile one, and people read these signals without being taught."
+    },
+    {
+     "n": 3,
+     "text": "Charles Darwin noticed that the body reacts to strong feelings without waiting for the will. Blushing, trembling and changes in the skin show what someone feels even when they try to hide it."
+    },
+    {
+     "n": 4,
+     "text": "Charles Darwin observed that people of very different backgrounds show many of the same expressions. Recognising a face or gesture is largely instinctive, so most of us can read a stranger's mood without a shared language."
+    },
+    {
+     "n": 6,
+     "text": "Charles Darwin noted that Sir Charles Bell's real service was showing how the movements of expression are tied to breathing. He also showed that the muscles round the eyes tighten during hard breathing out, to protect the eyes."
+    },
+    {
+     "n": 7,
+     "text": "Charles Darwin held that a list of how a face looks is not enough; a good account must also explain why each muscle moves as it does under each feeling. Flowery descriptions that never explain the cause add little understanding."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg1228",
+   "state": "reading",
+   "title": "On the Origin of Species",
+   "author": "Charles Darwin",
+   "subject": "big ideas",
+   "lessons": 87,
+   "studied": 100,
+   "passages": 631,
+   "source_url": "https://www.gutenberg.org/ebooks/1228",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1882. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 1,
+     "text": "Charles Darwin's opening quotes hold that events come about through general laws rather than separate interventions of divine power, and that a person should keep studying both the book of God's word and the book of God's works. Keep learning widely and never stop."
+    },
+    {
+     "n": 3,
+     "text": "Darwin observed that every species can increase far faster than its food and space allow, so competition is universal. The fiercest struggle is usually between individuals and varieties of the same species, not between different kinds of creatures."
+    },
+    {
+     "n": 4,
+     "text": "Darwin noted that traits that are used grow stronger and those left unused tend to fade, and that changes in one part of a body often bring changes in another. Competition among small differences is what shapes which forms survive."
+    },
+    {
+     "n": 7,
+     "text": "Darwin spent years gathering and reflecting on facts before he trusted his conclusions, and he said so openly to show he had not been hasty. Careful, patient evidence-gathering comes before a firm decision."
+    },
+    {
+     "n": 8,
+     "text": "Darwin held back his work for years, but he chose to publish a shorter version once another researcher had reached much the same ideas. Sharing your work in time matters more than waiting for it to be perfect."
+    },
+    {
+     "n": 10,
+     "text": "Darwin held that a conclusion about descent is unsatisfying until you can show how the modifications arose. Explaining fine adaptation by a vague outside cause is not enough."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg1232",
+   "state": "reading",
+   "title": "The Prince",
+   "author": "Niccolo Machiavelli",
+   "subject": "strategy",
+   "lessons": 95,
+   "studied": 100,
+   "passages": 203,
+   "source_url": "https://www.gutenberg.org/ebooks/1232",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1527, translator died 1927. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Machiavelli held that a prince's strength should be judged by whether he can stand on his own arms and resources, rather than by borrowed forces or luck. Those who depend on others' armies tend to fall when fortune turns."
+    },
+    {
+     "n": 2,
+     "text": "Machiavelli held that flatterers should be kept at a distance, because they tell a leader what he wants to hear. He also saw that fortune governs much of human affairs, but a wise person can prepare to meet her."
+    },
+    {
+     "n": 2,
+     "text": "Machiavelli held that a ruler who is feared but not hated is usually safer than one who is loved but easily despised. He saw the bond of obligation as fragile, since people break it when it suits them."
+    },
+    {
+     "n": 4,
+     "text": "Machiavelli was shaped by the two opposing currents of his city, the austere Savonarola and the splendour-loving Lorenzo de' Medici. He drew on both, and his writings return often to the magnificence of Lorenzo's rule."
+    },
+    {
+     "n": 5,
+     "text": "Machiavelli urged his son Guido to study hard, saying that others will help you if you help yourself. Effort you put in yourself is what draws help from others."
+    },
+    {
+     "n": 6,
+     "text": "Machiavelli held that it is far better to earn the confidence of the people than to rely on fortresses. A leader's real protection is the goodwill of those they govern, not their walls."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg14474",
+   "state": "reading",
+   "title": "The Chemical History of a Candle",
+   "author": "Michael Faraday",
+   "subject": "physics",
+   "lessons": 87,
+   "studied": 100,
+   "passages": 150,
+   "source_url": "https://www.gutenberg.org/ebooks/14474",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1867, editor died 1919. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Faraday's point is that knowledge is built piece by piece, and weak links get replaced by better work over time. Today's understanding is built the same way, so it is worth testing and repairing our own reasoning."
+    },
+    {
+     "n": 3,
+     "text": "Faraday spoke to his young audience as an equal and did not hide behind his seniority. Plain, friendly speech helps people understand, even when the subject is serious."
+    },
+    {
+     "n": 3,
+     "text": "Faraday held that a single ordinary thing, like a candle, opens a door to nearly every law of nature. Starting from something familiar is often the best way into a hard subject."
+    },
+    {
+     "n": 4,
+     "text": "Faraday showed that a piece of wood can hold everything a candle needs: fuel, a way to bring fuel to the flame, and a steady supply of air. Good systems share these same basic parts."
+    },
+    {
+     "n": 5,
+     "text": "Faraday shows that a thing's history can be read from its use: old miners' candles were made small so they would be less likely to set off gas in the mine. Good designs often come from a real problem and its safety."
+    },
+    {
+     "n": 6,
+     "text": "Faraday shows that a common material can be transformed by a clear chemical process into something cleaner and better. He also notes that impurities are pushed out step by step, leaving a purer product."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg148",
+   "state": "reading",
+   "title": "The Autobiography of Benjamin Franklin",
+   "author": "Benjamin Franklin",
+   "subject": "habits",
+   "lessons": 87,
+   "studied": 100,
+   "passages": 283,
+   "source_url": "https://www.gutenberg.org/ebooks/148",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1790, editor died 1926. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Franklin rose from a poorly schooled runaway apprentice to a respected printer by steadily building his own trade, using his newspaper and almanac to reach ordinary readers."
+    },
+    {
+     "n": 3,
+     "text": "Franklin pursued science and public work in the spare time left over from earning a living, and he sold his business once he had enough to free himself for study."
+    },
+    {
+     "n": 4,
+     "text": "Franklin wrote his life story for his son so that his descendants could copy the practical habits that had lifted him out of poverty. He believed a record of what worked was worth passing on."
+    },
+    {
+     "n": 5,
+     "text": "Franklin says that if he could live his life again he would still accept, and that writing down one's past is the next best thing. Looking back carefully is a way to learn from experience."
+    },
+    {
+     "n": 5,
+     "text": "Franklin admits his vanity and argues it can do good for the person and those around them. Owning up to your own motives honestly is better than pretending to have none."
+    },
+    {
+     "n": 6,
+     "text": "Franklin credits his past success to providence, while admitting he cannot know the future. Staying humble about what you cannot control is a sound way to approach both good and bad fortune."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg16287",
+   "state": "reading",
+   "title": "Talks to Teachers on Psychology",
+   "author": "William James",
+   "subject": "learning",
+   "lessons": 93,
+   "studied": 100,
+   "passages": 260,
+   "source_url": "https://www.gutenberg.org/ebooks/16287",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1910. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "William James held that a learner's mind is a living whole, not a set of separate compartments, so teaching should help people see ideas as they flow rather than chopping them into neat boxes."
+    },
+    {
+     "n": 3,
+     "text": "William James held that no single mind can grasp the whole truth, so many people must look at life from their own view, and we should tolerate whatever is not itself intolerant."
+    },
+    {
+     "n": 4,
+     "text": "William James held that teaching methods must agree with what psychology shows, but cannot be drawn straight from it, so teachers still need judgement in the classroom."
+    },
+    {
+     "n": 4,
+     "text": "William James held that a teacher's job is to train pupils in behaviour, since conduct is what education ultimately produces."
+    },
+    {
+     "n": 5,
+     "text": "William James held that habits are made by repeated exercise, so the aim of education is to make useful habits automatic. Start a new habit with strong initiative, act on it without exception, and seize the first chance to act."
+    },
+    {
+     "n": 6,
+     "text": "William James held that we cannot recall anything without a cue, so memory depends on connecting ideas. To remember something, one must think about it and link it to what one already knows."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg2274",
+   "state": "finished",
+   "title": "How to Live on 24 Hours a Day",
+   "author": "Arnold Bennett",
+   "subject": "habits",
+   "lessons": 45,
+   "studied": 48,
+   "passages": 48,
+   "source_url": "https://www.gutenberg.org/ebooks/2274",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1931. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 3,
+     "text": "Arnold Bennett held that wasting a few hours a day is less disastrous than wasting the whole day, so it is better to have lived a bit than never to have lived at all."
+    },
+    {
+     "n": 4,
+     "text": "Arnold Bennett held that it is always the person who has already tasted life who wants more of it, and that someone who is worn out by daily work should adjust the balance of their life rather than accept exhaustion."
+    },
+    {
+     "n": 5,
+     "text": "Arnold Bennett argued that much of the sleep people take is habit and slackness, and that rising earlier often shows you can manage on less. Use the early hours for your own projects before your ordinary work drains you."
+    },
+    {
+     "n": 6,
+     "text": "Arnold Bennett held that the way to gain time is to prepare the night before, so the morning starts with no obstacles. Small arrangements made in advance can decide whether you can use the quiet hours at all."
+    },
+    {
+     "n": 7,
+     "text": "Arnold Bennett observed that money troubles often come from poor management, not low income, and that we are quick to judge others' spending. He suggested that time is worth more than money, since money can be earned back with time but time cannot be bought."
+    },
+    {
+     "n": 8,
+     "text": "Arnold Bennett saw time as a daily gift that no one can steal, that every person receives equally, and that cannot be borrowed against. Since you can only waste the present moment, the way you spend today is the only part of your time you can control."
+    }
+   ],
+   "preview": [
+    {
+     "n": 3,
+     "text": "Nevertheless, I admit that the minority is of sufficient importance to\nmerit attention, and that I ought not to have ignored it so completely\nas I did do.  The whole difficulty of the hard-working minority was put\nin a single colloquial sentence by one of my correspondents.  He wrote:\n\"I am just as keen as anyone on doing something to 'exceed my\nprogramme,' but allow me to tell you that when I get home at six thirty\np.m. I am not anything like so fresh as you seem to imagine.\"\n\nNow I must point out that the case of the minority, who throw\nthemselves with passion and gusto into their daily business task, is\ninfinitely less deplorable than the case of the majority, who go\nhalf-heartedly and feebly through their official day.  The former are\nless in need of advice \"how to live.\"  At any rate during their\nofficial day of, say, eight hours they are really alive; their engines\nare giving the full indicated \"h.p.\"  The other eight working hours of\ntheir day may be badly organised, or even frittered away; but it is\nless disastrous to waste eight hours a day than sixteen hours a day; it\nis better to have lived a bit than never to have lived at all. The real\ntragedy is the tragedy of the man who is braced to effort neither in\nthe office nor out of it, and to this man this book is primarily\naddressed.  \"But,\" says the other and more fortunate man, \"although my\nordinary programme is bigger than his, I want to exceed my programme\ntoo!  I am living a bit; I want to live more. But I really can't do\nanother day's work on the top of my official day.\""
+    }
+   ]
+  },
+  {
+   "id": "pg2680",
+   "state": "reading",
+   "title": "Meditations",
+   "author": "Marcus Aurelius",
+   "subject": "philosophy",
+   "lessons": 102,
+   "studied": 104,
+   "passages": 282,
+   "source_url": "https://www.gutenberg.org/ebooks/2680",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 180, translator died 1671. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Marcus learned gentleness and freedom from anger from his grandfather, and he kept himself from the excitement and corruption of the crowd, living plainly and training his body and character with discipline."
+    },
+    {
+     "n": 4,
+     "text": "Marcus faced crisis after crisis without losing his steadiness, carrying the work of leadership through war, famine and plague by doing the hard duty in front of him rather than seeking comfort or pleasure."
+    },
+    {
+     "n": 7,
+     "text": "Marcus Aurelius was careful and conscientious as an administrator, and did not try to remodel the world on a grand plan. He simply tried to do his duty as well as he could and keep out corruption."
+    },
+    {
+     "n": 7,
+     "text": "Marcus Aurelius sought to protect the weak, from slaves to fatherless children. Caring for those who cannot easily protect themselves was the strong point of his reign."
+    },
+    {
+     "n": 7,
+     "text": "Marcus Aurelius's failure to look into what was being done in his name is hard to excuse. A leader is responsible for knowing what happens under their authority, and not knowing is itself a failure of duty."
+    },
+    {
+     "n": 8,
+     "text": "Two words can sound alike in aim yet drift apart in practice: Stoic calm became a byword for stubborn endurance, while Epicurean calm became a byword for unbridled licence. Ideals are judged by how they end up being lived."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg3300",
+   "state": "reading",
+   "title": "The Wealth of Nations",
+   "author": "Adam Smith",
+   "subject": "economics",
+   "lessons": 85,
+   "studied": 100,
+   "passages": 1645,
+   "source_url": "https://www.gutenberg.org/ebooks/3300",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1790. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 3,
+     "text": "Adam Smith held that a nation's supply of goods depends on two things: how skilfully and wisely its labour is applied, and how many of its people are doing useful work compared with those who are not."
+    },
+    {
+     "n": 4,
+     "text": "Adam Smith held that the skill and method with which work is done matters more to a society's abundance than the sheer number of people working, and that a frugal, hard-working person can gain more than the poorest societies could give."
+    },
+    {
+     "n": 5,
+     "text": "Adam Smith held that a nation's yearly supply of goods depends on how many people are doing useful productive work compared with those who are not. The more capital put to work, the more productive labour it sets going."
+    },
+    {
+     "n": 8,
+     "text": "Adam Smith held that the biggest gains in what labour can produce come from dividing work into separate parts, with each worker doing one piece. The division is often easiest to see in small trades, where all the workers can be watched in one place."
+    },
+    {
+     "n": 9,
+     "text": "Adam Smith showed with the pin factory that splitting a job into many small distinct operations, each done by a practised hand, multiplies what a group can produce far beyond what the same people could manage working alone."
+    },
+    {
+     "n": 10,
+     "text": "Adam Smith held that the division of labour raises productive power in every trade, and that the more advanced a society becomes, the more each person tends to do just one part of the work."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg37134",
+   "state": "finished",
+   "title": "The Elements of Style",
+   "author": "William Strunk",
+   "subject": "writing",
+   "lessons": 48,
+   "studied": 52,
+   "passages": 52,
+   "source_url": "https://www.gutenberg.org/ebooks/37134",
+   "last_read_at": "2026-11-10",
+   "licence_note": "The 1918 first edition. Author died 1946. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 3,
+     "text": "Strunk held that a short set of firm essentials, learned well, serves a writer better than a long list of rules. He believed that most people get the most from individual guidance based on their own work."
+    },
+    {
+     "n": 4,
+     "text": "Strunk advised that a learner should follow the standard rules of writing until they can write plain, clear English well. Only after that should they study the great writers for the finer secrets of style."
+    },
+    {
+     "n": 4,
+     "text": "Strunk noted that skilled writers sometimes break the rules, but usually they gain something in return. Unless you are sure you can do as well, it is safer to keep to the rules."
+    },
+    {
+     "n": 5,
+     "text": "Strunk's rule is to put a comma after each term in a series of three or more, except the last, so that each item stands clearly apart. He also holds that a parenthetic expression needs commas on both sides, never just one."
+    },
+    {
+     "n": 6,
+     "text": "Strunk's rule is that a restrictive clause, which identifies the thing it describes, takes no commas, while a non-restrictive clause, which only adds a side remark, is set off by commas. Ask whether the sentence still works if the clause is removed."
+    },
+    {
+     "n": 8,
+     "text": "Strunk warns that a writer who makes every sentence tight and formal wears out the reader, so an occasional loose sentence gives relief. He also advises replacing a casual so with as or since to make the link between clauses clear."
+    }
+   ],
+   "preview": [
+    {
+     "n": 3,
+     "text": "This book aims to give in brief space the principal requirements of\nplain English style. It aims to lighten the task of instructor and\nstudent by concentrating attention (in Chapters II and III) on a few\nessentials, the rules of usage and principles of composition most\ncommonly violated. In accordance with this plan it lays down three rules\nfor the use of the comma, instead of a score or more, and one for the\nuse of the semicolon, in the belief that these four rules provide for\nall the internal punctuation that is required by nineteen sentences out\nof twenty. Similarly, it gives in Chapter III only those principles of\nthe paragraph and the sentence which are of the widest application. The\nbook thus covers only a small portion of the field of English style. The\nexperience of its writer has been that once past the essentials,\nstudents profit most by individual instruction based on the problems of\ntheir own work, and that each instructor has his own body of theory,\nwhich he may prefer to that offered by any textbook.\n\nThe numbers of the sections may be used as references in correcting\nmanuscript.\n\nThe writer's colleagues in the Department of English in Cornell\nUniversity have greatly helped him in the preparation of his manuscript.\nMr. George McLane Wood has kindly consented to the inclusion under\nRule 10 of some material from his _Suggestions to Authors_."
+    }
+   ]
+  },
+  {
+   "id": "pg5000",
+   "state": "reading",
+   "title": "The Notebooks of Leonardo da Vinci",
+   "author": "Leonardo da Vinci",
+   "subject": "art",
+   "lessons": 82,
+   "studied": 100,
+   "passages": 912,
+   "source_url": "https://www.gutenberg.org/ebooks/5000",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1519, translator died 1937. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Richter observed that a hard task can still be mastered with practice and patience, even when the method looks awkward or backwards at first."
+    },
+    {
+     "n": 3,
+     "text": "Leonardo da Vinci worked as an enquirer, testing things one by one through detailed research. He never gathered his findings into order, which left his notes in confusion."
+    },
+    {
+     "n": 4,
+     "text": "Leonardo da Vinci held that each observation should be finished on the page where it began. Richter notes that a clear final arrangement can still be built from scattered material if each part is well defined."
+    },
+    {
+     "n": 5,
+     "text": "Leonardo's notebooks can be put in order by their dates and page layout, and a numbered index lets a reader trace each passage back to its place in the original. Checking where a note came from keeps the record trustworthy."
+    },
+    {
+     "n": 6,
+     "text": "Copies made from copies drift away from the original, and a compiler who leaves the order unsettled hands the mess on to every later editor. Go back to the source where you can, and do not adopt someone else's arrangement without checking it."
+    },
+    {
+     "n": 7,
+     "text": "The editor gained access to the original manuscripts by asking owners and institutions directly and thanking them for their help. Careful research depends on patient requests and on being open about who helped you."
+    }
+   ],
+   "preview": []
+  }
+ ]
+}
