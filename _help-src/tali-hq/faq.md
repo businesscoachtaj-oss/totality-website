@@ -28,7 +28,7 @@ Yes. Sign in with the same email on each. Turn notifications on separately on ea
 ## Plans and money
 
 ?? How much does it cost?
-Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 credits. Tali HQ Pro is A$39.99 a month with 3,000 credits. Yearly is 15% less. See [Plans, credits and billing](plans.html).
+Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 credits. Tali HQ Pro is A$49.99 a month with 3,000 credits. Yearly is 15% less. See [Plans, credits and billing](plans.html).
 
 ?? Is there a free trial?
 Yes, 7 days of Tali HQ on every new account, no card needed.

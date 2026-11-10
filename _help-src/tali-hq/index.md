@@ -19,7 +19,7 @@ Every new account starts with a free 7 day trial of Tali HQ. No card needed. Whe
 
 | | [[Free]] | [[Tali HQ]] | [[Pro]] |
 |---|---|---|---|
-| Price | A$0 | A$19.99 a month, or A$203.90 a year | A$39.99 a month, or A$407.90 a year |
+| Price | A$0 | A$19.99 a month, or A$203.90 a year | A$49.99 a month, or A$509.90 a year |
 | Chat with Tali | 250 messages a month | 1,000 credits a month | 3,000 credits a month |
 | Drafts, reminders, clients and leads | Yes | Yes | Yes |
 | Journal, notes, food and training, Sleep | Yes | Yes | Yes |

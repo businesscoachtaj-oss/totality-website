@@ -11,8 +11,8 @@ Tali HQ has three plans: Free, Tali HQ and Tali HQ Pro. Every new account starts
 
 | | [[Free]] | [[Tali HQ]] | [[Pro]] |
 |---|---|---|---|
-| Monthly | A$0 | A$19.99 a month | A$39.99 a month |
-| Yearly | A$0 | A$203.90 a year (works out at A$16.99 a month) | A$407.90 a year (works out at A$33.99 a month) |
+| Monthly | A$0 | A$19.99 a month | A$49.99 a month |
+| Yearly | A$0 | A$203.90 a year (works out at A$16.99 a month) | A$509.90 a year (works out at A$42.49 a month) |
 | Each month | 250 messages | 1,000 credits | 3,000 credits |
 
 **Free** is for getting to know Tali: chat (250 messages a month), drafts, reminders, clients and leads, decisions, your journal and notes, food and training, the end of day shutdown, Sleep and a Friday check-in on your goals. Photos in chat work too.
