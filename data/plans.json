@@ -823,10 +823,9 @@
   },
   "products": [],
   "taliHq": {
-    "_comment": "Tali HQ (separate app). Live as a web app at talihq.com.au from 4 Nov 2026; App Store and Google Play coming soon. Stripe products in the Totality 360 account, 2 Nov 2026. Founding = 42.5% off for people who joined the waitlist before launch, kept for as long as they stay. The waitlist is closed and founding prices are no longer advertised.",
+    "_comment": "Tali HQ (separate app). Live as a web app at talihq.com.au from 4 Nov 2026; App Store and Google Play coming soon. Stripe products in the Totality 360 account, 2 Nov 2026. Founder pricing (42.5% off) closed to new sign-ups on 10 Nov 2026; people who already have it keep it.",
     "status": "live (web app); App Store and Google Play coming soon",
     "trialDays": 7,
-    "foundingDiscountPercent": 42.5,
     "plans": [
       {
         "id": "free",
@@ -840,17 +839,13 @@
         "name": "Tali HQ",
         "monthly": "A$19.99",
         "yearly": "A$203.90",
-        "foundingMonthly": "A$11.49",
-        "foundingYearly": "A$117.24",
         "creditsMonth": 1000
       },
       {
         "id": "pro",
         "name": "Tali HQ Pro",
-        "monthly": "A$39.99",
-        "yearly": "A$407.90",
-        "foundingMonthly": "A$22.99",
-        "foundingYearly": "A$234.54",
+        "monthly": "A$49.99",
+        "yearly": "A$509.90",
         "creditsMonth": 3000
       }
     ],

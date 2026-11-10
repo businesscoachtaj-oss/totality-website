@@ -113,7 +113,7 @@ When a paid plan ends, you drop back to Free. Your chats, journal, clients and e
 
 ## Founding members
 
-If you're a founding member, Plans says "You are a founding member: 42.5% off Tali HQ and Pro for as long as you stay", shows your price with the full price crossed out, and the discount is applied at checkout.
+Founder pricing closed to new sign-ups on 10 November 2026. If you already have it, Plans says "You are a founding member: 42.5% off every paid plan for as long as you stay", shows your price with the full price crossed out, and the discount is applied at checkout.
 
 ## Questions
 
