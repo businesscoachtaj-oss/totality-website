@@ -192,6 +192,23 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .lib-side h2 { font-family: var(--font-display); font-size: 1.35rem; margin: 0 0 4px; }
     .lib-side > p { color: var(--ink-2); margin: 0 0 var(--s-4); }
     @media (max-width: 800px) { .lib-hero__in, .lib-two, .lib-gate { grid-template-columns: 1fr; } .lib-hero img { width: 110px; } }
+
+    /* MOCKUP: the bookcase */
+    .lib-case { background: #24150E; border: 10px solid #5B3620; border-radius: 16px; padding: 26px 0 8px; box-shadow: 0 22px 50px rgba(20,16,51,.28); }
+    .lib-plaque { display: table; margin: 0 auto 14px; background: #D4AE5C; color: #3B2A0A; font-size: .7rem; font-weight: 900; letter-spacing: .14em; padding: 5px 14px; border-radius: 4px; border: 1px solid #F1D58F; box-shadow: 0 3px 6px rgba(0,0,0,.4); }
+    .lib-row { display: flex; align-items: flex-end; gap: 8px; padding: 0 26px; min-height: 250px; }
+    .lib-plank { height: 20px; background: linear-gradient(#A06A40 0 6px, #7A4A2A 6px); box-shadow: 0 10px 14px rgba(0,0,0,.55); margin-bottom: 8px; }
+    .lib-labels { display: flex; gap: 8px; padding: 0 26px; margin-bottom: 26px; }
+    .lib-labels span { text-align: center; font-size: .72rem; font-weight: 800; color: #C9B8A6; }
+    .lib-labels span.open { color: #F1D58F; }
+    .lib-sp { position: relative; border-radius: 6px 6px 3px 3px; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 3px 0 8px rgba(0,0,0,.5), inset 7px 0 0 rgba(255,255,255,.28), inset -8px 0 0 rgba(0,0,0,.16); transition: transform .15s; }
+    a.lib-sp:hover { transform: translateY(-10px); }
+    .lib-sp::before, .lib-sp::after { content: ""; position: absolute; left: 0; right: 0; height: 4px; background: rgba(40,24,60,.45); }
+    .lib-sp::before { top: 18px; } .lib-sp::after { bottom: 18px; }
+    .lib-sp b { writing-mode: vertical-rl; transform: rotate(180deg); font-family: Georgia, serif; font-weight: 400; color: #1C1433; font-size: 1.05rem; line-height: 1.15; max-height: 78%; text-align: center; padding: 0 6px; }
+    .lib-sp i { position: absolute; top: 0; right: 14px; width: 11px; background: #C8372D; border-radius: 0 0 5px 5px; }
+    .lib-room { flex: 1; color: #C9B8A6; text-align: right; font-size: .95rem; padding: 0 6px 18px 20px; }
+    @media (max-width: 800px) { .lib-row { gap: 5px; padding: 0 12px; min-height: 190px; } .lib-labels { gap: 5px; padding: 0 12px; } .lib-sp b { font-size: .8rem; } }
     </style>
 </head>
 <body class="thq">
@@ -250,9 +267,18 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <p>Tali reads a few pages every night and files what is still worth knowing into her brain. When she finishes a book, the whole thing opens here for you to read, with her notes beside it.</p>
       <div class="lib-stats"><div><b>12</b><span>books on her shelf</span></div><div><b>2</b><span>finished and open</span></div><div><b>901</b><span>things kept so far</span></div></div>
     </div><img src="/img/tali/tali_think.webp" alt="Tali thinking" width="340" height="460"></div></section>
-    <section class="thq-sec"><h2>Finished and open to read</h2><p>Free to read. Enter your email once and every finished book opens.</p>
+    <section class="thq-sec"><h2>Her shelf</h2><p>Pick a finished book off the shelf to read it. The red ribbon is her bookmark in the ones she is still reading.</p>
+      <div class="lib-case">
+        <span class="lib-plaque">FINISHED · OPEN TO READ</span>
+        <div class="lib-row"><a href="#" class="lib-sp" style="width:86px;height:240px;background:#C6F08A"><b>How to Live on 24 Hours a Day</b></a><a href="#" class="lib-sp" style="width:80px;height:224px;background:#FFC978"><b>The Elements of Style</b></a><div class="lib-room">Room on this shelf for the next one she finishes.</div></div>
+        <div class="lib-plank"></div><div class="lib-labels"><span class="open" style="width:86px">OPEN</span><span class="open" style="width:80px">OPEN</span></div>
+        <span class="lib-plaque">STILL READING</span>
+        <div class="lib-row"><span class="lib-sp" style="width:74px;height:244px;background:#6FC3F7"><b>The Chemical History of a Candle</b><i style="height:56px"></i></span><span class="lib-sp" style="width:68px;height:226px;background:#B9A6FF"><b>The Prince</b><i style="height:46px"></i></span><span class="lib-sp" style="width:78px;height:236px;background:#A893F5"><b>Meditations</b><i style="height:40px"></i></span><span class="lib-sp" style="width:72px;height:230px;background:#C6F08A"><b>The Autobiography of Benjamin Franklin</b><i style="height:40px"></i></span><span class="lib-sp" style="width:70px;height:246px;background:#7FE0B0"><b>Talks to Teachers on Psychology</b><i style="height:41px"></i></span><span class="lib-sp" style="width:80px;height:234px;background:#F7A6C8"><b>On the Origin of Species</b><i style="height:30px"></i></span></div>
+        <div class="lib-plank"></div><div class="lib-labels"><span class="" style="width:74px">67%</span><span class="" style="width:68px">49%</span><span class="" style="width:78px">37%</span><span class="" style="width:72px">35%</span><span class="" style="width:70px">38%</span><span class="" style="width:80px">16%</span></div>
+      </div></section>
+    <section class="thq-sec"><h2>The catalogue</h2><p>The same books as a list. Free to read: enter your email once and every finished book opens.</p>
       <div class="lib-grid"><a class="lib-book" href="#"><span class="lib-spine" style="background:#C6F08A"></span><span style="flex:1;min-width:0"><h3>How to Live on 24 Hours a Day</h3><small>Arnold Bennett · habits</small><small>45 things kept so far</small><span class="lib-tag lib-tag--open">Finished. Open to read</span></span></a><a class="lib-book" href="#"><span class="lib-spine" style="background:#FFC978"></span><span style="flex:1;min-width:0"><h3>The Elements of Style</h3><small>William Strunk · writing</small><small>48 things kept so far</small><span class="lib-tag lib-tag--open">Finished. Open to read</span></span></a></div></section>
-    <section class="thq-sec"><h2>Still reading</h2><p>You can see her notes so far. The full book opens the night she finishes it.</p>
+    <section class="thq-sec" style="padding-top: var(--s-5);"><h2 style="font-size:1.3rem">Still reading</h2>
       <div class="lib-grid"><a class="lib-book" href="#"><span class="lib-spine" style="background:#6FC3F7"></span><span style="flex:1;min-width:0"><h3>The Chemical History of a Candle</h3><small>Michael Faraday · physics</small><small>87 things kept so far</small><span class="lib-tag lib-tag--reading">67% read</span><div class="lib-bar"><i style="width:67%;background:#6FC3F7"></i></div></span></a><a class="lib-book" href="#"><span class="lib-spine" style="background:#B9A6FF"></span><span style="flex:1;min-width:0"><h3>The Prince</h3><small>Niccolo Machiavelli · strategy</small><small>95 things kept so far</small><span class="lib-tag lib-tag--reading">49% read</span><div class="lib-bar"><i style="width:49%;background:#B9A6FF"></i></div></span></a><a class="lib-book" href="#"><span class="lib-spine" style="background:#A893F5"></span><span style="flex:1;min-width:0"><h3>Meditations</h3><small>Marcus Aurelius · philosophy</small><small>102 things kept so far</small><span class="lib-tag lib-tag--reading">37% read</span><div class="lib-bar"><i style="width:37%;background:#A893F5"></i></div></span></a><a class="lib-book" href="#"><span class="lib-spine" style="background:#C6F08A"></span><span style="flex:1;min-width:0"><h3>The Autobiography of Benjamin Franklin</h3><small>Benjamin Franklin · habits</small><small>87 things kept so far</small><span class="lib-tag lib-tag--reading">35% read</span><div class="lib-bar"><i style="width:35%;background:#C6F08A"></i></div></span></a><a class="lib-book" href="#"><span class="lib-spine" style="background:#7FE0B0"></span><span style="flex:1;min-width:0"><h3>Talks to Teachers on Psychology</h3><small>William James · learning</small><small>93 things kept so far</small><span class="lib-tag lib-tag--reading">38% read</span><div class="lib-bar"><i style="width:38%;background:#7FE0B0"></i></div></span></a><a class="lib-book" href="#"><span class="lib-spine" style="background:#F7A6C8"></span><span style="flex:1;min-width:0"><h3>On the Origin of Species</h3><small>Charles Darwin · big ideas</small><small>87 things kept so far</small><span class="lib-tag lib-tag--reading">16% read</span><div class="lib-bar"><i style="width:16%;background:#F7A6C8"></i></div></span></a></div></section>
     <section class="thq-end" style="margin-top: var(--s-8);"><div class="thq-end__in"><h2>Want a Tali who reads for you too?</h2><a href="https://talihq.com.au" target="_blank" rel="noopener">Open Tali HQ</a></div></section>
   </main>
