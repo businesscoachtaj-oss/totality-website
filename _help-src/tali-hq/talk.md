@@ -93,7 +93,7 @@ Yes. What she learns about you goes into her memory of you, which she uses in ev
 No. Send a follow-up message with the correction and Tali will use it.
 
 ?? Why didn't Tali search the web?
-Web search is part of Tali HQ and Pro. Tali only searches for things that change or that she doesn't know, and never for personal details about private people.
+Web search is on every plan: 10 searches a month on Free, and up to 150, 400 or 1,000 a month on Tali HQ, Pro and Max, at 2 credits each. Tali only searches for things that change or that she doesn't know, and never for personal details about private people.
 
 ?? Can Tali send a text or email for me?
 She drafts it and it waits on Today. With Gmail or Outlook connected, you can send her email drafts with one tap from Today. Texts and social posts you copy and send yourself.

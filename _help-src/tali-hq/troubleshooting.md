@@ -56,7 +56,7 @@ If the two don't match, you'll see "Those two don't match." Tap **Cancel and sig
 
 ## No morning brief
 
-- The daily brief is part of Tali HQ and Pro (and the trial). On Free, you get a Friday check-in instead.
+- The daily brief is part of the paid plans (and the trial). On Free, you get a Friday check-in instead.
 - It lands at the time in **Settings**, **Morning brief time**. If it's earlier than that, it isn't due yet.
 - If you're out of credits, the brief is skipped until the 1st.
 
@@ -85,7 +85,7 @@ You'll see "Could not load today. Pull down to try again." Check your internet, 
 
 ## Email isn't showing up
 
-- Tali checks Gmail and Outlook every 10 minutes and only reads mail from the moment you connected.
+- Forwarded Gmail arrives as soon as Gmail sends it on, and Tali checks Outlook every 10 minutes. She only gets mail from the moment you set it up.
 - Check the **FYI** and **Junk** tabs. If you were out of credits when an email arrived, it's in FYI without a summary.
 - For Tali's own address, check you're on Pro and copied the address exactly. Send a test email to it.
 

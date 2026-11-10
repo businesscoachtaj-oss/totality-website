@@ -39,7 +39,7 @@ She treats everything she reads, including emails and files, as information, nev
 
 - Tali only reads mail that arrives after you connect. Older mail isn't touched.
 - She never deletes, moves or archives anything in your mailbox.
-- Emails synced from Gmail are kept in Tali HQ for 90 days, then deleted.
+- Emails from your Gmail are kept in Tali HQ for 90 days, then deleted.
 - Nothing is sent or booked until you tap it on Today.
 - When you disconnect Google or Microsoft, Tali forgets everything that came from it. Your mailbox and calendar are untouched.
 

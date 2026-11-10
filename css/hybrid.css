@@ -128,3 +128,61 @@ body > .hero h1, body > .hero p, body > .hero .sub, body.reading .hero h1, body.
 /* white-on-orange page headers (privacy, terms, refund, support) take dark ink */
 .hm .app.tot .big.tot { background:#272626 !important; border-color:#272626 !important; color:#fff !important; }
 .hm .app.nut .big.nut { background:#fff !important; border-color:#fff !important; color:#0F4F80 !important; }
+
+/* ---------- Tali HQ as the third door on the home page (10 Nov 2026) ---------- */
+.hm .big.hqb, .hm > .hero2 > .ctas .big.hqb, .hm .offer .big.hqb { background:#6C3483; border-color:#6C3483; color:#fff !important; }
+.hm .app.hqa { background:#6C3483; color:#fff; }
+.hm .app.hqa h3, .hm .app.hqa p, .hm .app.hqa li, .hm .app.hqa .price, .hm .app.hqa .price small, .hm .app.hqa .tag, .hm .app.hqa li::before { color:#fff; }
+.hm .app.hqa .chip { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.3); color:#fff; }
+.hm .app.hqa .big { background:#fff !important; border-color:#fff !important; color:#4A2360 !important; }
+.hm .app.hqa .big + .big { background: transparent !important; border-color:#fff !important; color:#fff !important; }
+@media (min-width: 1101px) {
+  .hm .apps { grid-template-columns: repeat(3, 1fr); }
+  .hm .apps .app { grid-template-columns: 1fr; min-height: 0; padding: 30px 26px 0; }
+  .hm .apps .app .device { width: 210px; justify-self: center; margin: 6px 0 28px; }
+  .hm .apps .app .ctas { flex-wrap: wrap; }
+  .hm .apps .app h3 { font-size: 30px; }
+}
+@media (min-width: 901px) and (max-width: 1100px) { .hm .apps { grid-template-columns: 1fr; } .hm .apps .app { grid-template-columns: 1fr 230px; } }
+.hm .pcols { grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.hm .pcols .h h3::before { background:#6C3483; }
+.hm .pcols .h li::before { color:#6C3483; }
+.hm .facts { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 900px) { .hm .pcols { grid-template-columns: 1fr; } .hm .facts { grid-template-columns: 1fr 1fr; } }
+.hm .bd { margin-top: 26px; border-radius: 28px; }
+.hm .bd-panel h3 { font-family: var(--display); }
+
+/* ---------- Depth on buttons and tiles (10 Nov 2026, asked for by Taj) ---------- */
+/* Buttons sit up off the page with a lit top edge and a soft shadow, lift on hover, press on tap. */
+.btn:not(.btn--ghost):not(.btn--ghost-light), .hm .big, .thq-btn, .thq-get:not(.thq-get--soon), .post-cta-btn, .guide-download, .res-cta-btn, .email-btn, .btn-submit {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.28), inset 0 -2px 0 rgba(0,0,0,.14), 0 2px 3px rgba(39,38,38,.14), 0 10px 22px -8px rgba(39,38,38,.38);
+  transition: transform .15s, box-shadow .15s, background-color .15s, border-color .15s, color .15s;
+}
+.btn:not(.btn--ghost):not(.btn--ghost-light):hover, .hm .big:hover, .thq-btn:hover, .thq-get:not(.thq-get--soon):hover, .post-cta-btn:hover, .guide-download:hover, .res-cta-btn:hover, .email-btn:hover, .btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.3), inset 0 -2px 0 rgba(0,0,0,.14), 0 4px 6px rgba(39,38,38,.14), 0 18px 30px -10px rgba(39,38,38,.45);
+}
+.btn:not(.btn--ghost):not(.btn--ghost-light):active, .hm .big:active, .thq-btn:active, .thq-get:not(.thq-get--soon):active, .post-cta-btn:active, .guide-download:active, .res-cta-btn:active, .email-btn:active, .btn-submit:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.22), 0 1px 2px rgba(39,38,38,.16);
+}
+.btn--ghost, .btn--ghost-light { box-shadow: 0 1px 2px rgba(39,38,38,.08), 0 6px 14px -8px rgba(39,38,38,.25); }
+/* Outline buttons inside the coloured doors stay flat fills, with a shadow only */
+.hm .app .big + .big { box-shadow: 0 8px 18px -10px rgba(0,0,0,.45); }
+/* Tiles: a soft two layer shadow and a lit top edge, and they rise a little under the pointer. */
+.card:not(.card--flat), .review, .thq-feat, .thq-plan, .thq-card, .hm .mini, .hm .proof, .post-card, .guide-card, .res-card {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 0 1px 2px rgba(39,38,38,.06), 0 14px 30px -14px rgba(39,38,38,.22);
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.card:not(.card--flat):hover, .review:hover, .thq-feat:hover, .thq-plan:hover, .post-card:hover, .guide-card:hover, .res-card:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 0 2px 4px rgba(39,38,38,.07), 0 24px 44px -18px rgba(39,38,38,.3);
+}
+.card--dark, .hm .heroimg, .hm .taliband, .hm .offer, .hm .mini { box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 2px 4px rgba(39,38,38,.1), 0 26px 50px -20px rgba(39,38,38,.5); }
+.hm .app { box-shadow: inset 0 1px 0 rgba(255,255,255,.3), inset 0 -3px 0 rgba(0,0,0,.12), 0 2px 4px rgba(39,38,38,.1), 0 28px 50px -22px rgba(39,38,38,.5); transition: transform .25s, box-shadow .25s; }
+.hm .app:hover { transform: translateY(-4px); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), inset 0 -3px 0 rgba(0,0,0,.12), 0 4px 8px rgba(39,38,38,.12), 0 38px 60px -24px rgba(39,38,38,.55); }
+.hm .chip { box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+@media (prefers-reduced-motion: reduce) { .btn, .hm .big, .card, .hm .app, .review, .thq-feat, .thq-plan { transition: none; } .btn:hover, .hm .big:hover, .card:hover, .hm .app:hover, .review:hover, .thq-feat:hover, .thq-plan:hover { transform: none !important; } }
+.bd a, .bd p a { color:#fff !important; text-decoration: underline; }
+@media (max-width: 480px) { .hm > .hero2 > .ctas .big { font-size: 14px; padding: 0 14px; white-space: nowrap; } }
+main .bd p a:not([class*="btn"]):not(.big) { color:#fff !important; }

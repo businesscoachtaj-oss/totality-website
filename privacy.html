@@ -205,7 +205,7 @@
       .section { padding: 24px 20px; }
     }
   </style>
-<link rel="stylesheet" href="/css/hybrid.css?v=4">
+<link rel="stylesheet" href="/css/hybrid.css?v=5">
 </head>
 <body class="reading">
 
@@ -218,7 +218,7 @@
   <!-- ── Hero ── -->
   <div class="hero">
     <h1>Privacy Policy</h1>
-    <p>Last updated: 6 November 2026 &nbsp;·&nbsp; Totality 360 Pty Ltd (ABN 58 698 902 975)</p>
+    <p>Last updated: 10 November 2026 &nbsp;·&nbsp; Totality 360 Pty Ltd (ABN 58 698 902 975)</p>
   </div>
 
   <!-- ── Body ── -->
@@ -474,14 +474,14 @@
     <div class="section" id="google">
       <h2><span class="section-num">4c</span>Connecting Your Google Account (Gmail and Google Calendar)</h2>
       <p>
-        In <strong>Tali HQ</strong> you can connect your Google account so Tali can sort your Gmail inbox and work with
-        your Google Calendar. In <strong>Totality</strong>, trainers can connect Google Calendar only. Both are optional.
+        In <strong>Tali HQ</strong> you can connect your Google account so replies Tali drafts go out from your own Gmail and so she can work with
+        your Google Calendar. From 10 November 2026 Tali no longer asks to read your Gmail. To have her sort your inbox you switch on Gmail's own forwarding to your Tali address, and she only sees the emails Gmail forwards after that. In <strong>Totality</strong>, trainers can connect Google Calendar only. Both are optional.
         Nothing is read until you choose Connect Google, sign in with Google and select Allow on Google's own screen.
       </p>
 
       <p><strong>What we ask Google for, and why</strong></p>
       <ul>
-        <li><strong>Read your Gmail</strong> (Tali HQ only): so Tali can read new mail as it arrives, sort it into "needs you", "FYI" and spam, write a one-line summary and draft a reply for you to check.</li>
+        <li><strong>Read your Gmail</strong> (Tali HQ only, accounts connected before 10 November 2026): Tali no longer asks for this. If you connected before that date, she keeps reading new mail the old way until your first forwarded email arrives or until the end of 24 November 2026, whichever comes first. After that she does not read your Gmail through Google.</li>
         <li><strong>Send email from your Gmail</strong> (Tali HQ only): so a reply Tali drafted can go out from your own address when you tap Send. Tali never sends anything on her own.</li>
         <li><strong>See your Google Calendar</strong>: so Tali can tell you what is on today, find free gaps, and in Totality grey out times you are already busy in the booking screen.</li>
         <li><strong>Add and change calendar events</strong>: so a booking you approve lands in your Google Calendar, and in Totality your PT sessions and classes are mirrored to your calendar.</li>
@@ -491,7 +491,7 @@
       <p><strong>What we store</strong></p>
       <ul>
         <li>A sign-in token for your Google account, so you do not have to sign in every time. It is kept in our database at Supabase, is never shown in the app, and is deleted the moment you disconnect.</li>
-        <li>In Tali HQ: the emails Tali has sorted for you (sender, subject, the text, Tali's summary and category), so you can see them in the app. Only mail received after you connected is read. Each email is deleted 90 days after it arrived, or straight away when you disconnect.</li>
+        <li>In Tali HQ: the emails Tali has sorted for you (sender, subject, the text, Tali's summary and category), so you can see them in the app. Only mail that arrives after you set up forwarding (or, for older accounts, after you connected) is kept. Each email is deleted 90 days after it arrived. Mail read the old way through Google is deleted straight away when you disconnect.</li>
         <li>In Totality: the link between a Totality appointment and its Google Calendar event, so changes stay in step.</li>
         <li>We do not store your calendar events in Tali HQ. Tali reads today's events live when you open the app and when she writes your morning brief.</li>
       </ul>

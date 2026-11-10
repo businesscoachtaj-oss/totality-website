@@ -74,7 +74,7 @@ On Free, Goals and Weekly review explain what they do, with **See plans**. Your 
 ## Questions
 
 ?? Do goals cost credits?
-No. Adding, updating and tracking goals is free on Tali HQ and Pro. Only the weekly review uses credits, 3 each time.
+No. Adding, updating and tracking goals is free on the paid plans. Only the weekly review uses credits, 3 each time.
 
 ?? What does "Behind pace" mean?
 Based on your due date and target, you're further behind than you'd expect at this point.

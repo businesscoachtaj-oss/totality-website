@@ -58,7 +58,7 @@ Tap **Next** to move on, **Back** to go back, or **Skip tour** at the top to fin
 
 - Open **Talk** and tell Tali about your business. The more she knows, the more useful she gets.
 - Pick your morning brief time in **Me**, **Settings**.
-- On the trial, connect your Gmail or Outlook and calendar. See [Gmail and Outlook](gmail-outlook.html).
+- On the trial, send your Gmail to Tali or connect Outlook, and connect your calendar. See [Gmail and Outlook](gmail-outlook.html).
 - Turn on notifications so you hear when your brief lands. See [Settings and account](settings.html).
 
 ## Questions
