@@ -24,7 +24,7 @@ window.TOTALITY_PLANS = {
       "taliCredits": 50,
       "taliLabel": "50 a month",
       "posIncluded": false,
-      "description": "For new and part-time trainers.",
+      "description": "For new and part-time solo operators.",
       "features": [
         {
           "label": "Up to 5 clients",
@@ -89,7 +89,7 @@ window.TOTALITY_PLANS = {
       "taliCredits": 100,
       "taliLabel": "100 a month",
       "posIncluded": false,
-      "description": "For trainers just getting started.",
+      "description": "For anyone just getting started.",
       "features": [
         {
           "label": "Up to 10 clients",
@@ -479,7 +479,7 @@ window.TOTALITY_PLANS = {
       "taliCredits": 1000,
       "taliLabel": "1,000 a month",
       "posIncluded": true,
-      "description": "For gyms and studios with a team of trainers.",
+      "description": "For studios, gyms and clinics with a team.",
       "features": [
         {
           "label": "Up to 500 clients",
@@ -548,7 +548,7 @@ window.TOTALITY_PLANS = {
       "taliCredits": 2500,
       "taliLabel": "2,500 a month",
       "posIncluded": true,
-      "description": "For one large gym with a big team and member roster.",
+      "description": "For one large business with a big team and client roster.",
       "features": [
         {
           "label": "Up to 1,500 clients",
@@ -617,7 +617,7 @@ window.TOTALITY_PLANS = {
       "taliCredits": null,
       "taliLabel": "Unlimited (fair use)",
       "posIncluded": true,
-      "description": "For the largest gyms, with unlimited Tali AI.",
+      "description": "For the largest rosters, with unlimited Tali AI.",
       "features": [
         {
           "label": "Up to 5,000 clients",
@@ -729,7 +729,7 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Studio",
-      "description": "Your gym's logo, name and colour in the Totality app, member emails and push notifications, for every member and trainer. Included on Club and Enterprise.",
+      "description": "Your business's logo, name and colour in the Totality app, client emails and push notifications, for every client and team member. Included on Club and Enterprise.",
       "tali": "wink"
     },
     {
@@ -749,7 +749,7 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Studio",
       "credits": 3000,
-      "description": "+3,000 Tali AI credits a month and your gym's branding. Cheaper than buying both.",
+      "description": "+3,000 Tali AI credits a month and your business's branding. Cheaper than buying both.",
       "tali": "grin"
     }
   ],
@@ -792,7 +792,7 @@ window.TOTALITY_PLANS = {
     ],
     "memberDiscount": {
       "percent": 50,
-      "text": "Trainers and gym owners paying for their own Totality plan get 50% off the Nutrition plan. This member price is not for clients of a gym or trainer."
+      "text": "Anyone paying for their own Totality plan get 50% off the Nutrition plan. This member price is not for clients of a Totality business."
     },
     "platforms": {
       "web": "https://totalitynutrition.com.au",

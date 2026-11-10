@@ -166,6 +166,7 @@ PLANS = """    <h2>Plans and prices</h2>
           <tr><th scope="row">Free</th><td>A$0</td><td>Chat with Tali (250 messages a month), log food and training by telling her, a private journal she reads and remembers, and a Friday check-in on your goals.</td></tr>
           <tr><th scope="row">Tali HQ</th><td>A$19.99 a month</td><td>1,000 credits a month. Gmail or Outlook sorted with drafted replies, a morning brief, clients, leads and Stripe invoices, Google Calendar, web search with sources.</td></tr>
           <tr><th scope="row">Tali HQ Pro</th><td>A$39.99 a month</td><td>3,000 credits a month. Everything in Tali HQ, plus your own Tali email address, night school and Rules.</td></tr>
+          <tr><th scope="row">Tali HQ Max</th><td>A$99.99 a month</td><td>10,000 credits a month. Everything in Tali HQ Pro, with Deep think, Big brain and second opinions at half the credits, and more memories in every reply.</td></tr>
         </tbody>
       </table>
     </div>
@@ -236,7 +237,7 @@ SEARCH_PAGES = [
             ], []),
         ],
         "faq": [
-            ("Is Tali HQ free?", "Yes. The Free plan is A$0 with 250 messages a month, a private journal and a Friday goals check-in. Paid plans are A$19.99 and A$39.99 a month, and every new account gets a 7 day free trial of Tali HQ."),
+            ("Is Tali HQ free?", "Yes. The Free plan is A$0 with 250 messages a month, a private journal and a Friday goals check-in. Paid plans are A$19.99, A$39.99 and A$99.99 a month, and every new account gets a 7 day free trial of Tali HQ."),
             ("Can I delete what Tali remembers?", "Yes. Open her brain, find the memory and delete it. You can see everything she keeps."),
             ("How is it different from ChatGPT?", "Tali HQ is built around running your week: she remembers you in a brain you can see, sorts your inbox, drafts replies and invoices, and checks in on your goals. ChatGPT is a general assistant. See the full comparison for details."),
         ],
@@ -268,7 +269,7 @@ SEARCH_PAGES = [
             ], []),
         ],
         "faq": [
-            ("How much does Tali HQ cost?", "Free at A$0, Tali HQ at A$19.99 a month or Tali HQ Pro at A$39.99 a month, with 15% off yearly. Every new account starts with a 7 day free trial of Tali HQ."),
+            ("How much does Tali HQ cost?", "Free at A$0, Tali HQ at A$19.99 a month, Tali HQ Pro at A$39.99 a month or Tali HQ Max at A$99.99 a month, with 15% off yearly. Every new account starts with a 7 day free trial of Tali HQ."),
             ("Does Tali send emails or invoices on her own?", "No. She drafts them and nothing goes out until you tap yes."),
             ("Which email does it work with?", "Gmail and Outlook on the paid plans."),
         ],
@@ -296,7 +297,7 @@ SEARCH_PAGES = [
             ], []),
         ],
         "faq": [
-            ("Which plans include email?", "Gmail and Outlook sorting with drafted replies come with Tali HQ (A$19.99 a month) and Tali HQ Pro (A$39.99 a month). Every new account gets a 7 day free trial of Tali HQ."),
+            ("Which plans include email?", "Gmail and Outlook sorting with drafted replies come with Tali HQ (A$19.99 a month), Tali HQ Pro (A$39.99 a month) and Tali HQ Max (A$99.99 a month). Every new account gets a 7 day free trial of Tali HQ."),
             ("Can Tali send emails without asking?", "No. She drafts, and nothing is sent until you tap send."),
             ("Does she need my email password?", "No. You connect your account with Google or Microsoft's own sign-in. Tali never asks for your passwords."),
         ],
@@ -320,7 +321,7 @@ SEARCH_PAGES = [
             ], []),
         ],
         "faq": [
-            ("Which plans include invoices?", "Clients, leads and Stripe invoices come with Tali HQ (A$19.99 a month) and Tali HQ Pro (A$39.99 a month). Every new account gets a 7 day free trial of Tali HQ."),
+            ("Which plans include invoices?", "Clients, leads and Stripe invoices come with Tali HQ (A$19.99 a month), Tali HQ Pro (A$39.99 a month) and Tali HQ Max (A$99.99 a month). Every new account gets a 7 day free trial of Tali HQ."),
             ("Do I need a Stripe account?", "Yes, to send invoices. You connect the Stripe account you already have."),
             ("Does Tali send invoices on her own?", "No. She drafts them and nothing is sent until you tap send."),
         ],

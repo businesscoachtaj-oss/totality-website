@@ -3,7 +3,7 @@
   "checked": "Nov 2026",
   "tali": {
     "who": "Small business owners and busy people who want one AI to run their week, their business and their life.",
-    "price": "Free A$0. Tali HQ A$19.99 a month. Tali HQ Pro A$39.99 a month. 15% off yearly.",
+    "price": "Free A$0. Tali HQ A$19.99 a month. Tali HQ Pro A$39.99 a month. Tali HQ Max A$99.99 a month. 15% off yearly.",
     "free": "Free plan with 250 messages a month. Every new account gets a 7 day free trial of Tali HQ.",
     "memory": "Yes. She keeps what she learns in a brain you can see, and you can delete any memory.",
     "email": "On paid plans, connect Gmail or Outlook: she sorts it, flags what needs you and drafts replies. Pro adds her own email address for enquiries.",
@@ -297,7 +297,7 @@
       "faq": [
         [
           "Is Tali HQ cheaper than Lindy?",
-          "Tali HQ has a free plan, and paid plans are A$19.99 and A$39.99 a month. Lindy's plans start at US$29.99 a user a month after a 7 day trial."
+          "Tali HQ has a free plan, and paid plans are A$19.99, A$39.99 and A$99.99 a month. Lindy's plans start at US$29.99 a user a month after a 7 day trial."
         ]
       ],
       "sources": [
