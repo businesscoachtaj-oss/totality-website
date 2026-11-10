@@ -1,0 +1,34 @@
+# Keeps Tali's library pages up to date: once a day it asks Tali HQ what she has read,
+# rebuilds /library/ and saves the pages if anything changed. Run it by hand from the Actions tab too.
+name: Refresh Tali's library
+on:
+  schedule:
+    - cron: "40 19 * * *"   # 6:40am Sydney in summer, after her night's reading
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: library
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the library
+        run: |
+          python3 tools/build_library.py --fetch
+          python3 tools/apply_chrome.py
+      - name: Save if anything changed
+        run: |
+          git add -A library data/tali-library.json
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          python3 tools/build_sitemap.py
+          git add sitemap.xml
+          git config user.name "Tali's library"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Tali's library: refresh from her reading"
+          git push
