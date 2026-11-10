@@ -112,7 +112,7 @@ When an email needs you (from your Gmail or Outlook, or sent to Tali's own addre
 ## Questions
 
 ?? Why don't I see a morning brief?
-The daily brief is part of Tali HQ and Pro (and the trial). It lands at the time set in Settings, so if it's earlier than that, it isn't there yet. On Free you get a Friday check-in instead.
+The daily brief is part of the paid plans (and the trial). It lands at the time set in Settings, so if it's earlier than that, it isn't there yet. On Free you get a Friday check-in instead.
 
 ?? Can I change when my brief arrives?
 Yes. **Me**, **Settings**, **Morning brief time**, pick a time, then tap **Save**.

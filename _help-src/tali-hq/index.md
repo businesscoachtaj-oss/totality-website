@@ -17,25 +17,27 @@ Tali HQ runs in your browser on iPhone, Android and computer at **talihq.com.au*
 
 Every new account starts with a free 7 day trial of Tali HQ. No card needed. When the trial ends you drop to Free unless you choose a plan. Full details are on [Plans, credits and billing](plans.html).
 
-| | [[Free]] | [[Tali HQ]] | [[Pro]] |
-|---|---|---|---|
-| Price | A$0 | A$19.99 a month, or A$203.90 a year | A$49.99 a month, or A$509.90 a year |
-| Chat with Tali | 250 messages a month | 1,000 credits a month | 3,000 credits a month |
-| Drafts, reminders, clients and leads | Yes | Yes | Yes |
-| Journal, notes, food and training, Sleep | Yes | Yes | Yes |
-| End of day shutdown | Yes | Yes | Yes |
-| Check-in from Tali | Friday check-in | Morning brief every day | Morning brief every day |
-| Photos in chat | Yes | Yes | Yes |
-| PDFs in chat and web search | No | Yes | Yes |
-| Gmail or Outlook sorted, Google or Outlook calendar | No | Yes | Yes |
-| Invoices, Stripe, Money, Goals, Weekly review | No | Yes | Yes |
-| Business health checks and Tali's weekly journal | No | Yes | Yes |
-| Tali's own email address | No | No | Yes |
-| Night school, Rules, Patterns | No | No | Yes |
+| | [[Free]] | [[Tali HQ]] | [[Pro]] | Max |
+|---|---|---|---|---|
+| Price | A$0 | A$19.99 a month, or A$203.90 a year | A$49.99 a month, or A$509.90 a year | A$149.99 a month, or A$1,529.90 a year |
+| Chat with Tali | 250 messages a month | 1,000 credits a month | 3,000 credits a month | 10,000 credits a month |
+| Drafts, reminders, clients and leads | Yes | Yes | Yes | Yes |
+| Journal, notes, food and training, Sleep | Yes | Yes | Yes | Yes |
+| End of day shutdown | Yes | Yes | Yes | Yes |
+| Check-in from Tali | Friday check-in | Morning brief every day | Morning brief every day | Morning brief every day |
+| Photos in chat | Yes | Yes | Yes | Yes |
+| PDFs in chat | No | Yes | Yes | Yes |
+| Web search with sources | 10 a month | Up to 150 a month | Up to 400 a month | Up to 1,000 a month |
+| Gmail or Outlook sorted, Google or Outlook calendar | No | Yes | Yes | Yes |
+| Invoices, Stripe, Money, Goals, Weekly review | No | Yes | Yes | Yes |
+| Business health checks and Tali's weekly journal | No | Yes | Yes | Yes |
+| Tali's own email address | No | No | Yes | Yes |
+| Night school, Rules, Patterns | No | No | Yes | Yes |
+| Half price Deep think, Big brain and second opinions (first 100 a month) | No | No | No | Yes |
 
 The 7 day trial [[Trial]] gives you everything in the Tali HQ column. Pro features (Tali's email address, Night school, Rules and Patterns) are not part of the trial.
 
-Throughout this guide, badges show which plans have a feature: [[Free]] means every plan, [[Tali HQ]] means Tali HQ and Pro (and the trial), and [[Pro]] means Pro only.
+Throughout this guide, badges show which plans have a feature: [[Free]] means every plan, [[Tali HQ]] means every paid plan (and the trial), and [[Pro]] means Pro and Max.
 
 ## Finding your way around
 
@@ -53,7 +55,7 @@ Five tabs sit along the bottom of the app.
 1. Make your account and confirm your email. See [Getting started](getting-started.html).
 2. Open **Talk** and tell Tali about your business: what you do, who your clients are and what keeps you busy.
 3. Add a few clients or just tell Tali about them ("Priya Nair is a new client, follow up Friday").
-4. On the trial or a paid plan, connect your Gmail or Outlook and calendar in **Me**, **Settings**, **Connections**. See [Gmail and Outlook](gmail-outlook.html).
+4. On the trial or a paid plan, send your Gmail to Tali from **Me**, **Email**, or connect Outlook, and connect your calendar in **Me**, **Settings**, **Connections**. See [Gmail and Outlook](gmail-outlook.html).
 5. Pick your morning brief time in **Settings**.
 
 :::tali

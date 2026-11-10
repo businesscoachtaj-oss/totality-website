@@ -104,4 +104,4 @@ No. It just tells Tali you've sent it yourself, and clears the draft.
 Not in the app. Copy it and change it wherever you send it, or ask Tali to change it with **something else...**.
 
 ?? Why can't I see the Send from Gmail button?
-It only shows when Google is connected with Gmail. Connect it in **Me**, **Settings**, **Connections**. See [Gmail and Outlook](gmail-outlook.html).
+It only shows when Google is connected with Gmail sending. Connect it in **Me**, **Settings**, **Connections**. See [Gmail and Outlook](gmail-outlook.html).

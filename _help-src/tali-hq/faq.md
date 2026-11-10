@@ -34,7 +34,7 @@ Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 cre
 Yes, 7 days of Tali HQ on every new account, no card needed.
 
 ?? What's a credit?
-A unit of Tali's AI work on Tali HQ and Pro. A message is 1 credit, a file adds 1, a web search adds 2, the weekly review is 3. See the full list on [Plans, credits and billing](plans.html#what-a-credit-is).
+A unit of Tali's AI work on the paid plans. A message is 1 credit, a file adds 1, a web search adds 2, the weekly review is 3. See the full list on [Plans, credits and billing](plans.html#what-a-credit-is).
 
 ?? When do my credits reset?
 On the 1st of each month in your time zone, on monthly and yearly plans.
@@ -57,10 +57,10 @@ Add clients and leads, set reminders, draft messages, emails, posts and invoices
 Yes. She remembers you across every chat. See [What Tali knows](what-tali-knows.html).
 
 ?? Can I send Tali a photo or a PDF?
-Photos on every plan, PDFs on Tali HQ and Pro. Up to 4 files a message, 10 MB each. See [How Tali's replies work](replies.html#send-tali-a-photo-or-pdf).
+Photos on every plan, PDFs on the paid plans. Up to 4 files a message, 10 MB each. See [How Tali's replies work](replies.html#send-tali-a-photo-or-pdf).
 
 ?? Can Tali search the internet?
-Yes, on Tali HQ and Pro. She names her sources. Each search uses 2 credits.
+Yes. She names her sources. Free has 10 searches a month. On the paid plans each search uses 2 credits, up to 150 a month on Tali HQ, 400 on Pro and 1,000 on Max.
 
 ?? How do I start a fresh chat?
 Tap **New chat** at the top of Talk. Tap **Chats** to see, rename, pin or delete old ones.
@@ -71,7 +71,7 @@ Tell her the right one in Talk, and forget the wrong memory on **Me**.
 ## Today and your day
 
 ?? What's the morning brief?
-Tali's summary of your day, every morning at the time you pick. Part of Tali HQ and Pro. Free gets a Friday check-in. See [Today and your morning brief](today.html).
+Tali's summary of your day, every morning at the time you pick. Part of the paid plans. Free gets a Friday check-in. See [Today and your morning brief](today.html).
 
 ?? What is "Needs your yes"?
 Drafts waiting for you to send, rework or clear. See [Approvals](approvals.html).
@@ -88,7 +88,7 @@ A bit of fun on the top card of Today. She gains XP as she learns your business 
 ## Email and connections
 
 ?? Can Tali read my Gmail or Outlook?
-On Tali HQ and Pro, once you connect it. She only reads new mail from the moment you connect, sorts it, and drafts replies for your tap. See [Gmail, Outlook and your calendar](gmail-outlook.html).
+On the paid plans and the trial. For Gmail, you forward your mail to your Tali address and she sorts what arrives from then on. For Outlook, you connect it and she reads new mail from that moment. Either way she drafts replies for your tap. See [Gmail, Outlook and your calendar](gmail-outlook.html).
 
 ?? Will Tali delete my emails?
 No. She never deletes, moves or archives anything in your mailbox.

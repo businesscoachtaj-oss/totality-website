@@ -18,7 +18,7 @@
     prefrontal: { name: 'Prefrontal cortex', human: 'Planning ahead', tali: 'Plans, ideas, your live goals and open decisions', colour: '#D7B5FF', eg: ['Goal: 20 new clients by March', 'Deciding: a second location?'] },
     amygdala: { name: 'Amygdala', human: 'Urgency and threat', tali: 'Anything urgent, and contradictions for you to settle', colour: '#FF7A6E', eg: ['Lease renewal due Friday', 'Two prices on file for the large tray'] },
     occipital: { name: 'Occipital lobe', human: 'Vision', tali: 'What she saw in photos and screenshots you sent, and the images she made for you', colour: '#8EF0C8', eg: ['The new menu photo from Tuesday', 'A flyer she made for the open day'] },
-    parietal: { name: 'Parietal lobe', human: 'The senses', tali: 'What she can feel: your connected Gmail and Calendar', colour: '#7FD1FF', eg: ['3 emails need a reply', 'Free from 2pm to 4pm today'] },
+    parietal: { name: 'Parietal lobe', human: 'The senses', tali: 'What she can feel: your email and your calendar', colour: '#7FD1FF', eg: ['3 emails need a reply', 'Free from 2pm to 4pm today'] },
     thalamus: { name: 'Thalamus', human: 'The relay station', tali: 'The router that files every new memory into the right part', colour: '#FFE38A', eg: ['Filed 12 new memories today', 'Sent “Priya” to people'] },
     hypothalamus: { name: 'Hypothalamus', human: 'The body clock', tali: 'Her schedule: morning brief, health checks, shutdown, night school', colour: '#FFB38A', eg: ['Morning brief at 7am', 'Shutdown at 6pm'] },
     basal_ganglia: { name: 'Basal ganglia', human: 'Habits', tali: 'Skills and routines she has learned', colour: '#C6F28A', eg: ['Fridays: chase unpaid invoices', 'Mondays: plan the week'] },
@@ -76,6 +76,27 @@
   }
   var deep = { hippocampus: 1, amygdala: 1, thalamus: 1, hypothalamus: 1, basal_ganglia: 1, corpus_callosum: 1 };
 
+  // 10 Nov 2026 (Taj: make the brain feel alive). Each dot knows its nearest few dots, so little
+  // sparks can run from one to the next like a thought firing. Each dot also twinkles a little.
+  dots.forEach(function (d, i) {
+    d.ph = r() * 6.283; d.near = [];
+    var best = [];
+    for (var j = 0; j < dots.length; j++) {
+      if (j === i) continue;
+      var o = dots[j], dx = o.x - d.x, dy = o.y - d.y, dz = o.z - d.z, dd = dx * dx + dy * dy + dz * dz;
+      if (best.length < 4 || dd < best[best.length - 1].dd) { best.push({ j: j, dd: dd }); best.sort(function (a, b) { return a.dd - b.dd; }); if (best.length > 4) best.pop(); }
+    }
+    d.near = best.map(function (b) { return dots[b.j]; });
+  });
+  var byRegion = {};
+  dots.forEach(function (d) { (byRegion[d.region] = byRegion[d.region] || []).push(d); });
+  var sparks = [], lastSpark = 0, clock = 0;
+  function fire(now, region) {
+    var pool = region && byRegion[region] ? byRegion[region] : dots;
+    var a = pool[Math.floor(Math.random() * pool.length)];
+    sparks.push({ a: a, b: a.near[Math.floor(Math.random() * a.near.length)], t0: now, dur: 260 + Math.random() * 240, hops: 3 + Math.floor(Math.random() * 5) });
+  }
+
   // A soft glowing dot per colour, drawn once.
   var sprites = {};
   ORDER.forEach(function (id) {
@@ -86,7 +107,7 @@
   });
 
   // ---- State ----
-  var ry = 0.6, rx = 0.18, vy = reduce ? 0 : 0.0035, size = 400, dpr = 1;
+  var ry = 0.6, rx = 0.18, vy = reduce ? 0 : 0.0035, size = 400, dpr = 1, spin = 0, breathe = 1;
   var selected = null, hover = null, touring = !reduce, tourAt = 0, tourIdx = 0, lastInput = 0, lastTouch = 0;
   var dragging = false, lastX = 0, lastY = 0, moved = 0;
   var proj = [];
@@ -98,13 +119,13 @@
   function project(p) {
     var cy = Math.cos(ry), sy = Math.sin(ry), x1 = p.x * cy + p.z * sy, z1 = -p.x * sy + p.z * cy;
     var cx = Math.cos(rx), sx = Math.sin(rx), y2 = p.y * cx - z1 * sx, z2 = p.y * sx + z1 * cx;
-    var k = 3.2 / (3.2 - z2), half = size / 2, sc = half * 0.88 * k;
+    var k = 3.2 / (3.2 - z2), half = size / 2, sc = half * 0.88 * k * breathe;
     return { sx: half + x1 * sc, sy: half - y2 * sc + size * 0.02, k: k, z: z2 };
   }
   function draw() {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, size, size);
-    proj = dots.map(function (d) { var p = project(d); p.d = d; return p; });
+    proj = dots.map(function (d) { var p = project(d); p.d = d; d.p = p; return p; });
     proj.sort(function (a, b) { return a.z - b.z; });
     var focus = hover || selected, scale = size / 400;
     // 6 Nov 2026 (Taj: too blurry on phones): every dot is a crisp circle; only the part you picked
@@ -112,8 +133,8 @@
     for (var i = 0; i < proj.length; i++) {
       var p = proj[i], d = p.d, on = focus === d.region;
       var depth = (p.z + 1.1) / 2.2;
-      var base = focus ? (on ? 1 : 0.22) : (deep[d.region] ? 1 : 0.85);
-      var a = Math.max(0.06, Math.min(1, base * (0.3 + depth * 0.8)));
+      var base = focus ? (on ? 1 : 0.5) : (deep[d.region] ? 1 : 0.9);
+      var a = Math.max(0.12, Math.min(1, base * (0.45 + depth * 0.75) * (reduce ? 1 : 0.86 + 0.14 * Math.sin(clock * 0.0021 + d.ph))));
       var rad = d.size * p.k * scale * (on ? 0.95 : 0.78);
       if (on) {
         var g = rad * 6;
@@ -126,12 +147,31 @@
       ctx.beginPath(); ctx.arc(p.sx, p.sy, rad, 0, Math.PI * 2); ctx.fill();
       if (on) { ctx.globalAlpha = a * 0.8; ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(p.sx, p.sy, rad * 0.45, 0, Math.PI * 2); ctx.fill(); }
     }
+    // The sparks: a thin line that fades behind a bright point running to the next dot.
+    if (!reduce) {
+      ctx.globalCompositeOperation = 'lighter'; ctx.lineCap = 'round';
+      for (var s = sparks.length - 1; s >= 0; s--) {
+        var sp = sparks[s], t = (clock - sp.t0) / sp.dur;
+        if (t >= 1) {
+          if (sp.hops > 0 && sp.b.near.length) { var nx = sp.b.near[Math.floor(Math.random() * sp.b.near.length)]; sp.a = sp.b; sp.b = nx === sp.a ? sp.b.near[0] : nx; sp.t0 = clock; sp.hops--; t = 0; }
+          else { sparks.splice(s, 1); continue; }
+        }
+        var A = sp.a.p, B = sp.b.p; if (!A || !B) continue;
+        var x = A.sx + (B.sx - A.sx) * t, y = A.sy + (B.sy - A.sy) * t;
+        var dim = focus && sp.b.region !== focus ? 0.5 : 1, col = REGIONS[sp.b.region].colour;
+        ctx.globalAlpha = 0.5 * dim; ctx.strokeStyle = col; ctx.lineWidth = 1.2 * scale;
+        ctx.beginPath(); ctx.moveTo(A.sx, A.sy); ctx.lineTo(x, y); ctx.stroke();
+        var g2 = 16 * scale * B.k;
+        ctx.globalAlpha = 0.9 * dim; ctx.drawImage(sprites[sp.b.region], x - g2 / 2, y - g2 / 2, g2, g2);
+      }
+    }
     ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
   }
 
   // 6 Nov 2026 (Taj): tap the part again, tap empty space or "Whole brain" to see every part lit up.
   function show(id) {
     selected = id;
+    if (id && !reduce) for (var q = 0; q < 8; q++) fire(clock, id);
     if (!id) {
       panel.innerHTML =
         '<p class="bd-kicker" style="color:#B9A6FF">13 parts</p>' +
@@ -176,7 +216,7 @@
   canvas.addEventListener('pointermove', function (e) {
     if (dragging) {
       var dx = e.clientX - lastX, dy = e.clientY - lastY; moved += Math.abs(dx) + Math.abs(dy);
-      ry += dx * 0.01; rx = Math.max(-0.8, Math.min(0.8, rx + dy * 0.008)); lastX = e.clientX; lastY = e.clientY; lastInput = performance.now();
+      spin = dx * 0.01; ry += spin; rx = Math.max(-0.8, Math.min(0.8, rx + dy * 0.008)); lastX = e.clientX; lastY = e.clientY; lastInput = performance.now();
     } else if (e.pointerType === 'mouse') {
       var q = pos(e); hover = pick(q.x, q.y); canvas.style.cursor = hover ? 'pointer' : 'grab';
     }
@@ -191,6 +231,13 @@
   if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(root);
   function frame(now) {
     if (visible) {
+      clock = now;
+      if (!reduce) {
+        breathe = 1 + 0.014 * Math.sin(now / 1700);
+        // Keeps turning for a moment after a flick, then eases back to its slow spin.
+        if (!dragging && Math.abs(spin) > 0.0005) { ry += spin; spin *= 0.94; }
+        if (now - lastSpark > 140 && sparks.length < 26) { fire(now, (hover || selected) && Math.random() < 0.7 ? (hover || selected) : null); lastSpark = now; }
+      }
       if (!dragging && !reduce && now - lastInput > 2500) ry += vy;
       if (touring && now - tourAt > 4200) { show(ORDER[tourIdx % ORDER.length]); tourIdx++; tourAt = now; }
       if (!touring && !reduce && now - lastTouch > 20000) { touring = true; tourAt = 0; }

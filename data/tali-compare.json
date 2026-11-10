@@ -6,7 +6,7 @@
     "price": "Free A$0. Tali HQ A$19.99 a month. Tali HQ Pro A$49.99 a month. Tali HQ Max A$149.99 a month. 15% off yearly.",
     "free": "Free plan with 250 messages a month. Every new account gets a 7 day free trial of Tali HQ.",
     "memory": "Yes. She keeps what she learns in a brain you can see, and you can delete any memory.",
-    "email": "On paid plans, connect Gmail or Outlook: she sorts it, flags what needs you and drafts replies. Pro adds her own email address for enquiries.",
+    "email": "On paid plans, forward your Gmail to Tali or connect Outlook: she sorts it, flags what needs you and drafts replies. Pro adds her own email address for enquiries.",
     "calendar": "Knows your week from Google Calendar and books into it when you approve.",
     "invoices": "Clients, leads and invoices in one place. Invoices go through your own Stripe and mark themselves paid.",
     "approval": "Always. Nothing is sent, invoiced or booked until you tap yes.",
@@ -135,7 +135,7 @@
       "faq": [
         [
           "Does Tali HQ work with Google?",
-          "Yes. On paid plans Tali connects to Gmail and Google Calendar. She works with Outlook too."
+          "Yes. On paid plans you forward your Gmail to Tali and connect Google Calendar, and replies go out from your own Gmail. She works with Outlook too."
         ]
       ],
       "sources": [
@@ -177,7 +177,7 @@
       "faq": [
         [
           "Does Tali HQ work with Outlook?",
-          "Yes. On paid plans Tali connects to Outlook or Gmail, sorts your inbox and drafts replies."
+          "Yes. On paid plans you connect Outlook, or forward your Gmail to Tali, and she sorts your inbox and drafts replies."
         ]
       ],
       "sources": [

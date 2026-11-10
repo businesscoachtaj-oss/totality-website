@@ -3,17 +3,19 @@ title: Plans, credits and billing
 summary: What each plan includes, what a credit is, what happens when you run out, and how to upgrade, change or cancel.
 ---
 
-Tali HQ has three plans: Free, Tali HQ and Tali HQ Pro. Every new account starts with a 7 day free trial of Tali HQ. Prices are in Australian dollars, and you can pay monthly or yearly (15% less).
+Tali HQ has four plans: Free, Tali HQ, Tali HQ Pro and Tali HQ Max. Every new account starts with a 7 day free trial of Tali HQ. Prices are in Australian dollars, and you can pay monthly or yearly (15% less).
 
 ## The plans
 
 !phones[Plans, monthly](img/plans-monthly.png)[Plans, yearly](img/plans-yearly.png)
 
-| | [[Free]] | [[Tali HQ]] | [[Pro]] |
-|---|---|---|---|
-| Monthly | A$0 | A$19.99 a month | A$49.99 a month |
-| Yearly | A$0 | A$203.90 a year (works out at A$16.99 a month) | A$509.90 a year (works out at A$42.49 a month) |
-| Each month | 250 messages | 1,000 credits | 3,000 credits |
+| | [[Free]] | [[Tali HQ]] | [[Pro]] | Max |
+|---|---|---|---|---|
+| Monthly | A$0 | A$19.99 a month | A$49.99 a month | A$149.99 a month |
+| Yearly | A$0 | A$203.90 a year | A$509.90 a year | A$1,529.90 a year |
+| Each month | 250 messages | 1,000 credits | 3,000 credits | 10,000 credits |
+| Images Tali makes each month | None | 30 | 100 | 300 |
+| Web searches each month | 10 | Up to 150 | Up to 400 | Up to 1,000 |
 
 **Free** is for getting to know Tali: chat (250 messages a month), drafts, reminders, clients and leads, decisions, your journal and notes, food and training, the end of day shutdown, Sleep and a Friday check-in on your goals. Photos in chat work too.
 
@@ -39,6 +41,12 @@ Tali HQ has three plans: Free, Tali HQ and Tali HQ Pro. Every new account starts
 - Patterns: what Tali noticed in your last 60 days, once a month
 - first in line for new features
 
+**Tali HQ Max** is for leaning on Tali all day. Everything in Tali HQ Pro, plus:
+
+- 10,000 credits and 300 images a month
+- Deep think, Big brain and second opinions at half the credits, for your first 100 a month
+- more of what she remembers in every answer
+
 ## The free trial [[Trial]]
 
 Every new account gets 7 days of Tali HQ, with 1,000 credits. No card needed. Today shows how many days are left, and **Me** shows "Trial ends" and the date.
@@ -47,13 +55,16 @@ When the trial ends, you move to Free automatically. Nothing is deleted. Pro fea
 
 ## What a credit is
 
-On Tali HQ and Pro, everything Tali does with AI uses credits from your monthly allowance. On Free you have 250 messages instead.
+On the paid plans, everything Tali does with AI uses credits from your monthly allowance. On Free you have 250 messages instead.
 
 | What Tali does | Credits |
 |---|---|
 | A message in Talk | 1 |
 | A message with photos or a PDF | 1 extra (per message) |
 | Each web search during a message | 2 extra |
+| Deep think | 20 |
+| Big brain [[Pro]] | 40 |
+| A second opinion | 20 |
 | Reworking a draft (shorter, warmer, more formal, something else) | 1 |
 | Morning brief | 1 a day |
 | Your shutdown | 1 |
@@ -81,9 +92,19 @@ Open **Me**. **Your plan** shows your plan and how many credits you have left th
 Credits and messages reset on the 1st of each month, in your time zone. That's true on yearly plans too. Unused credits don't carry over.
 
 - **Free**: when your 250 messages are used, Talk says "That's your 250 free messages for this month. Upgrade to Tali HQ to keep chatting."
-- **Tali HQ and Pro**: Talk says "You've used this month's Tali credits. They top up on the 1st, or you can move up a plan." Scheduled jobs (brief, Night school and so on) skip until the 1st. New emails still come in, without a summary or draft.
+- **Paid plans**: Talk says "You've used this month's Tali credits. They top up on the 1st, or you can move up a plan." Scheduled jobs (brief, Night school and so on) skip until the 1st. New emails still come in, without a summary or draft.
 
-There are no credit top ups to buy. To get more, move up from Tali HQ to Pro (three times the credits), or wait for the 1st.
+You can also top up. On a paid plan or the trial, open **Me** and tap the top up link under Your plan to buy a one-off pack of extra credits, extra images, or both. Extras never expire and are used after your monthly allowance.
+
+| Pack | Price |
+|---|---|
+| 500 credits | A$9.99 |
+| 1,500 credits | A$24.99 |
+| 5,000 credits | A$69.99 |
+| 20 images | A$4.99 |
+| 50 images | A$9.99 |
+| Busy month: 1,500 credits and 30 images | A$29.99 |
+| Big month: 5,000 credits and 100 images | A$79.99 |
 
 ## Choose a plan
 
@@ -121,10 +142,10 @@ Founder pricing closed to new sign-ups on 10 November 2026. If you already have 
 No. The 7 day trial starts when you make your account, with no card.
 
 ?? What happens to my data if I go back to Free?
-It all stays. Features that need Tali HQ or Pro are locked until you upgrade again.
+It all stays. Features that need a paid plan are locked until you upgrade again.
 
 ?? Can I buy extra credits?
-No. Credits reset on the 1st of each month. If you keep running out on Tali HQ, Pro has three times as many.
+Yes, on a paid plan or the trial. Open **Me** and tap the top up link under Your plan. Extras never expire. If you keep running out, the next plan up has about three times as many credits.
 
 ?? Do unused credits roll over?
 No. Each month starts fresh on the 1st.
