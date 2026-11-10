@@ -1,246 +1,6 @@
 {
- "fetched_at": "2026-11-11",
+ "fetched_at": "2026-11-10",
  "books": [
-  {
-   "id": "pg1227",
-   "state": "reading",
-   "title": "The Expression of the Emotions in Man and Animals",
-   "author": "Charles Darwin",
-   "subject": "emotions",
-   "lessons": 90,
-   "studied": 100,
-   "passages": 469,
-   "source_url": "https://www.gutenberg.org/ebooks/1227",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1882. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 2,
-     "text": "Charles Darwin held that many expressions come from habits that once served a purpose, such as the three chief principles he sets out in the first chapter. Expressions can outlast the reason they first existed."
-    },
-    {
-     "n": 2,
-     "text": "Charles Darwin's principle of antithesis suggests that opposite moods often show up as opposite postures. A relaxed, friendly stance is often the reverse of a hostile one, and people read these signals without being taught."
-    },
-    {
-     "n": 3,
-     "text": "Charles Darwin noticed that the body reacts to strong feelings without waiting for the will. Blushing, trembling and changes in the skin show what someone feels even when they try to hide it."
-    },
-    {
-     "n": 4,
-     "text": "Charles Darwin observed that people of very different backgrounds show many of the same expressions. Recognising a face or gesture is largely instinctive, so most of us can read a stranger's mood without a shared language."
-    },
-    {
-     "n": 6,
-     "text": "Charles Darwin noted that Sir Charles Bell's real service was showing how the movements of expression are tied to breathing. He also showed that the muscles round the eyes tighten during hard breathing out, to protect the eyes."
-    },
-    {
-     "n": 7,
-     "text": "Charles Darwin held that a list of how a face looks is not enough; a good account must also explain why each muscle moves as it does under each feeling. Flowery descriptions that never explain the cause add little understanding."
-    }
-   ],
-   "preview": []
-  },
-  {
-   "id": "pg1228",
-   "state": "reading",
-   "title": "On the Origin of Species",
-   "author": "Charles Darwin",
-   "subject": "big ideas",
-   "lessons": 87,
-   "studied": 100,
-   "passages": 631,
-   "source_url": "https://www.gutenberg.org/ebooks/1228",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1882. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 1,
-     "text": "Charles Darwin's opening quotes hold that events come about through general laws rather than separate interventions of divine power, and that a person should keep studying both the book of God's word and the book of God's works. Keep learning widely and never stop."
-    },
-    {
-     "n": 3,
-     "text": "Darwin observed that every species can increase far faster than its food and space allow, so competition is universal. The fiercest struggle is usually between individuals and varieties of the same species, not between different kinds of creatures."
-    },
-    {
-     "n": 4,
-     "text": "Darwin noted that traits that are used grow stronger and those left unused tend to fade, and that changes in one part of a body often bring changes in another. Competition among small differences is what shapes which forms survive."
-    },
-    {
-     "n": 7,
-     "text": "Darwin spent years gathering and reflecting on facts before he trusted his conclusions, and he said so openly to show he had not been hasty. Careful, patient evidence-gathering comes before a firm decision."
-    },
-    {
-     "n": 8,
-     "text": "Darwin held back his work for years, but he chose to publish a shorter version once another researcher had reached much the same ideas. Sharing your work in time matters more than waiting for it to be perfect."
-    },
-    {
-     "n": 10,
-     "text": "Darwin held that a conclusion about descent is unsatisfying until you can show how the modifications arose. Explaining fine adaptation by a vague outside cause is not enough."
-    }
-   ],
-   "preview": []
-  },
-  {
-   "id": "pg1232",
-   "state": "reading",
-   "title": "The Prince",
-   "author": "Niccolo Machiavelli",
-   "subject": "strategy",
-   "lessons": 95,
-   "studied": 100,
-   "passages": 203,
-   "source_url": "https://www.gutenberg.org/ebooks/1232",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1527, translator died 1927. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 2,
-     "text": "Machiavelli held that a prince's strength should be judged by whether he can stand on his own arms and resources, rather than by borrowed forces or luck. Those who depend on others' armies tend to fall when fortune turns."
-    },
-    {
-     "n": 2,
-     "text": "Machiavelli held that flatterers should be kept at a distance, because they tell a leader what he wants to hear. He also saw that fortune governs much of human affairs, but a wise person can prepare to meet her."
-    },
-    {
-     "n": 2,
-     "text": "Machiavelli held that a ruler who is feared but not hated is usually safer than one who is loved but easily despised. He saw the bond of obligation as fragile, since people break it when it suits them."
-    },
-    {
-     "n": 4,
-     "text": "Machiavelli was shaped by the two opposing currents of his city, the austere Savonarola and the splendour-loving Lorenzo de' Medici. He drew on both, and his writings return often to the magnificence of Lorenzo's rule."
-    },
-    {
-     "n": 5,
-     "text": "Machiavelli urged his son Guido to study hard, saying that others will help you if you help yourself. Effort you put in yourself is what draws help from others."
-    },
-    {
-     "n": 6,
-     "text": "Machiavelli held that it is far better to earn the confidence of the people than to rely on fortresses. A leader's real protection is the goodwill of those they govern, not their walls."
-    }
-   ],
-   "preview": []
-  },
-  {
-   "id": "pg14474",
-   "state": "reading",
-   "title": "The Chemical History of a Candle",
-   "author": "Michael Faraday",
-   "subject": "physics",
-   "lessons": 87,
-   "studied": 100,
-   "passages": 150,
-   "source_url": "https://www.gutenberg.org/ebooks/14474",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1867, editor died 1919. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 2,
-     "text": "Faraday's point is that knowledge is built piece by piece, and weak links get replaced by better work over time. Today's understanding is built the same way, so it is worth testing and repairing our own reasoning."
-    },
-    {
-     "n": 3,
-     "text": "Faraday spoke to his young audience as an equal and did not hide behind his seniority. Plain, friendly speech helps people understand, even when the subject is serious."
-    },
-    {
-     "n": 3,
-     "text": "Faraday held that a single ordinary thing, like a candle, opens a door to nearly every law of nature. Starting from something familiar is often the best way into a hard subject."
-    },
-    {
-     "n": 4,
-     "text": "Faraday showed that a piece of wood can hold everything a candle needs: fuel, a way to bring fuel to the flame, and a steady supply of air. Good systems share these same basic parts."
-    },
-    {
-     "n": 5,
-     "text": "Faraday shows that a thing's history can be read from its use: old miners' candles were made small so they would be less likely to set off gas in the mine. Good designs often come from a real problem and its safety."
-    },
-    {
-     "n": 6,
-     "text": "Faraday shows that a common material can be transformed by a clear chemical process into something cleaner and better. He also notes that impurities are pushed out step by step, leaving a purer product."
-    }
-   ],
-   "preview": []
-  },
-  {
-   "id": "pg148",
-   "state": "reading",
-   "title": "The Autobiography of Benjamin Franklin",
-   "author": "Benjamin Franklin",
-   "subject": "habits",
-   "lessons": 87,
-   "studied": 100,
-   "passages": 283,
-   "source_url": "https://www.gutenberg.org/ebooks/148",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1790, editor died 1926. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 2,
-     "text": "Franklin rose from a poorly schooled runaway apprentice to a respected printer by steadily building his own trade, using his newspaper and almanac to reach ordinary readers."
-    },
-    {
-     "n": 3,
-     "text": "Franklin pursued science and public work in the spare time left over from earning a living, and he sold his business once he had enough to free himself for study."
-    },
-    {
-     "n": 4,
-     "text": "Franklin wrote his life story for his son so that his descendants could copy the practical habits that had lifted him out of poverty. He believed a record of what worked was worth passing on."
-    },
-    {
-     "n": 5,
-     "text": "Franklin says that if he could live his life again he would still accept, and that writing down one's past is the next best thing. Looking back carefully is a way to learn from experience."
-    },
-    {
-     "n": 5,
-     "text": "Franklin admits his vanity and argues it can do good for the person and those around them. Owning up to your own motives honestly is better than pretending to have none."
-    },
-    {
-     "n": 6,
-     "text": "Franklin credits his past success to providence, while admitting he cannot know the future. Staying humble about what you cannot control is a sound way to approach both good and bad fortune."
-    }
-   ],
-   "preview": []
-  },
-  {
-   "id": "pg16287",
-   "state": "reading",
-   "title": "Talks to Teachers on Psychology",
-   "author": "William James",
-   "subject": "learning",
-   "lessons": 93,
-   "studied": 100,
-   "passages": 260,
-   "source_url": "https://www.gutenberg.org/ebooks/16287",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1910. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 2,
-     "text": "William James held that a learner's mind is a living whole, not a set of separate compartments, so teaching should help people see ideas as they flow rather than chopping them into neat boxes."
-    },
-    {
-     "n": 3,
-     "text": "William James held that no single mind can grasp the whole truth, so many people must look at life from their own view, and we should tolerate whatever is not itself intolerant."
-    },
-    {
-     "n": 4,
-     "text": "William James held that teaching methods must agree with what psychology shows, but cannot be drawn straight from it, so teachers still need judgement in the classroom."
-    },
-    {
-     "n": 4,
-     "text": "William James held that a teacher's job is to train pupils in behaviour, since conduct is what education ultimately produces."
-    },
-    {
-     "n": 5,
-     "text": "William James held that habits are made by repeated exercise, so the aim of education is to make useful habits automatic. Start a new habit with strong initiative, act on it without exception, and seize the first chance to act."
-    },
-    {
-     "n": 6,
-     "text": "William James held that we cannot recall anything without a cue, so memory depends on connecting ideas. To remember something, one must think about it and link it to what one already knows."
-    }
-   ],
-   "preview": []
-  },
   {
    "id": "pg2274",
    "state": "finished",
@@ -277,6 +37,162 @@
     {
      "n": 8,
      "text": "Arnold Bennett saw time as a daily gift that no one can steal, that every person receives equally, and that cannot be borrowed against. Since you can only waste the present moment, the way you spend today is the only part of your time you can control."
+    },
+    {
+     "n": 9,
+     "text": "Arnold Bennett held that time is a fixed daily income that everyone must spend well, since it is more limited than money and cannot be earned more of. Poor use of it muddles a whole life."
+    },
+    {
+     "n": 10,
+     "text": "Arnold Bennett held that we never get more time, because we have always had all the time there is. Putting off the things that matter until we have more time is the habit to break."
+    },
+    {
+     "n": 12,
+     "text": "Arnold Bennett held that the restless feeling of unlived aspiration often comes from not starting at all, and that taking even a first step is far better than staying put. Doing the duties we already owe is hard enough to count as a real achievement."
+    },
+    {
+     "n": 13,
+     "text": "Arnold Bennett held that the urge to learn beyond one's formal duties is common to thoughtful people, and that literature is only one well of knowledge among many."
+    },
+    {
+     "n": 14,
+     "text": "Arnold Bennett held that there is no secret shortcut to arranging a full life, and that the first step is accepting how hard and effortful the task really is."
+    },
+    {
+     "n": 15,
+     "text": "Arnold Bennett held that you simply begin, since waiting for a better moment only makes the start harder, and that a clear time-table on paper will not do the work for you."
+    },
+    {
+     "n": 16,
+     "text": "Arnold Bennett held that eagerness at the start is treacherous, so it is wiser to take on a modest load and avoid early failure, because lost confidence does more harm than a small result."
+    },
+    {
+     "n": 17,
+     "text": "Arnold Bennett held that there is no average person, so each man's day should be judged by his own case. The real question is his general attitude to his work, not the money it brings."
+    },
+    {
+     "n": 18,
+     "text": "Arnold Bennett held that treating the working hours as the whole day and the rest as mere margin is illogical. He urged people to treat their free hours as a day of their own, to be used fully for body, mind and relationships."
+    },
+    {
+     "n": 19,
+     "text": "Arnold Bennett held that the mind does not tire like a limb and needs change rather than rest, so full attention to free hours need not weaken work. Small gaps in the morning, such as waiting for a train, are time quietly lost."
+    },
+    {
+     "n": 20,
+     "text": "Arnold Bennett held that losing a few minutes twice a day is like paying a hidden fee for small change of time. He said that people who would never accept such a fee on money still accept it on their time."
+    },
+    {
+     "n": 21,
+     "text": "Arnold Bennett warned against spending the idle minutes of a train ride on newspapers, since time is limited for everyone and the daily reading should be fitted in where it truly belongs."
+    },
+    {
+     "n": 22,
+     "text": "Arnold Bennett observed that a day can vanish unnoticed when evenings drift without a plan, with tiredness and idle pottering filling time that was never deliberately chosen."
+    },
+    {
+     "n": 23,
+     "text": "Arnold Bennett noticed that people who have something definite to look forward to in the evening find more energy and vitality through the whole day, even when they are tired."
+    },
+    {
+     "n": 24,
+     "text": "Arnold Bennett advised setting aside a few protected evenings each week for serious study or work, treating them as sacred as any other important commitment rather than letting them slip away."
+    },
+    {
+     "n": 25,
+     "text": "Arnold Bennett suggested that most people should keep a full programme to six days a week and treat any extra time as a windfall, so a return to the routine never feels like failure."
+    },
+    {
+     "n": 26,
+     "text": "Arnold Bennett held that a small, regular block of focused mental effort, even a few hours a week, can lift the whole quality of your life, much as short daily exercise improves the body."
+    },
+    {
+     "n": 27,
+     "text": "Arnold Bennett advised starting small and quietly, because a failed grand plan damages self-respect, which is the root of all purposefulness, and leaving generous slack in your timings for accidents."
+    },
+    {
+     "n": 28,
+     "text": "Arnold Bennett argued that the mind can be trained to obey, that concentration is a power anyone can build, and that the time spent getting to work is a good moment to practise it."
+    },
+    {
+     "n": 29,
+     "text": "Arnold Bennett held that when your mind wanders, you should bring it back again and again, because steady perseverance is the whole secret of concentration. You can practise this in any spare moment, such as walking to the station."
+    },
+    {
+     "n": 30,
+     "text": "Arnold Bennett suggested that it matters less what you concentrate on than that you train your thinking at all. He recommended reading a short chapter of Marcus Aurelius or Epictetus in the evening and reflecting on it the next morning."
+    },
+    {
+     "n": 31,
+     "text": "Arnold Bennett argued that the most useful study is the study of yourself, and that most busy people lack the habit of reflecting on what really matters, such as their direction, their happiness and whether their actions match their principles."
+    },
+    {
+     "n": 32,
+     "text": "Arnold Bennett held that happiness comes from developing reason and making your conduct match your principles, not from chasing pleasure. Daily examination and reflection are what keep your actions in line with what you claim to believe."
+    },
+    {
+     "n": 33,
+     "text": "Arnold Bennett held that we are far more instinctive than reasonable, and that pausing to consult reason before getting cross, such as over an overcooked steak, saves us dignity and calm. Examining what we have done and are about to do, honestly, matters more than reading about it."
+    },
+    {
+     "n": 34,
+     "text": "Arnold Bennett held that the quiet of the evening journey home suits a daily honest review of the day. He treated that reflection as a basic duty that has to happen at some point each day."
+    },
+    {
+     "n": 35,
+     "text": "Arnold Bennett held that not loving literature is no failing, and that a person can take real pleasure in other fields of knowledge, such as music, without any formal training. Enjoyment is a sound reason to learn more about a subject."
+    },
+    {
+     "n": 36,
+     "text": "Arnold Bennett held that you can enjoy a piece of music far more if you train your ears to pick out its details, such as which instruments carry the main theme. Learning how a thing is built deepens the pleasure you already get from it."
+    },
+    {
+     "n": 37,
+     "text": "Arnold Bennett held that a little steady study, a few brief evenings a week, lets you really know a subject, so that an outing like a concert becomes living rather than a passive daze."
+    },
+    {
+     "n": 38,
+     "text": "Arnold Bennett held that the same method works for every art: choose one good introductory book and build knowledge on it, rather than writing the arts off with a shrug."
+    },
+    {
+     "n": 39,
+     "text": "Arnold Bennett held that seeing cause and effect everywhere makes ordinary life interesting and softens the sting of setbacks, since nothing in the world is truly humdrum."
+    },
+    {
+     "n": 40,
+     "text": "Arnold Bennett held that even an everyday job such as estate agency or banking becomes absorbing once you study the forces behind it for a short, regular time each week."
+    },
+    {
+     "n": 41,
+     "text": "Arnold Bennett held that good novels flow easily and so do less for the mind, and that real mental growth comes from effortful reading where part of you wants to give up. Set aside time for that kind of reading and keep novels for leisure."
+    },
+    {
+     "n": 42,
+     "text": "Arnold Bennett advised starting with Hazlitt's essay on poetry, then reading narrative poetry, because a clear introduction can remove a fear that has no real basis. Hazlitt's essay is a good way in for anyone who thinks poetry is not for them."
+    },
+    {
+     "n": 43,
+     "text": "Arnold Bennett suggested that a reader who thinks they dislike a form should test that belief honestly, since a story told in an unfamiliar form may prove them wrong. Once you have tried something properly, your opinion of it is worth more."
+    },
+    {
+     "n": 44,
+     "text": "Arnold Bennett advised choosing a limited period, subject or author to study, and then reflecting carefully on what you read. Reading many books quickly with no thought gives little benefit, while slow, thoughtful reading builds real understanding."
+    },
+    {
+     "n": 45,
+     "text": "Arnold Bennett warned against becoming a prig, a self-impressed person who expects the world to share his enthusiasm. Remember that your time is yours to manage, and the world carries on whether or not you succeed."
+    },
+    {
+     "n": 46,
+     "text": "Arnold Bennett held that a daily programme should be respected but never worshipped as a fetish. Keep enough elasticity that the schedule serves your life rather than running it, or you end up living like a prisoner to the next task."
+    },
+    {
+     "n": 47,
+     "text": "Arnold Bennett advised that if your plans feel oppressive, the cure is to attempt less rather than to overfill them. Start new habits at an easy, steady pace, and finish any tedious task you commit to, since that builds lasting self-confidence."
+    },
+    {
+     "n": 48,
+     "text": "Arnold Bennett suggested choosing what you study by your own taste and natural inclination, not by what seems impressive. Pursuing something you actually enjoy beats forcing yourself through a subject you dislike."
     }
    ],
    "preview": [
@@ -287,84 +203,526 @@
    ]
   },
   {
-   "id": "pg2680",
-   "state": "reading",
-   "title": "Meditations",
-   "author": "Marcus Aurelius",
-   "subject": "philosophy",
-   "lessons": 102,
-   "studied": 104,
-   "passages": 282,
-   "source_url": "https://www.gutenberg.org/ebooks/2680",
+   "id": "pg1232",
+   "state": "finished",
+   "title": "The Prince",
+   "author": "Niccolo Machiavelli",
+   "subject": "strategy",
+   "lessons": 186,
+   "studied": 203,
+   "passages": 203,
+   "source_url": "https://www.gutenberg.org/ebooks/1232",
    "last_read_at": "2026-11-10",
-   "licence_note": "Author died 180, translator died 1671. Public domain in the USA and Australia.",
+   "licence_note": "Author died 1527, translator died 1927. Public domain in the USA and Australia.",
    "notes": [
     {
      "n": 2,
-     "text": "Marcus learned gentleness and freedom from anger from his grandfather, and he kept himself from the excitement and corruption of the crowd, living plainly and training his body and character with discipline."
+     "text": "Machiavelli held that a prince's strength should be judged by whether he can stand on his own arms and resources, rather than by borrowed forces or luck. Those who depend on others' armies tend to fall when fortune turns."
+    },
+    {
+     "n": 2,
+     "text": "Machiavelli held that a ruler who is feared but not hated is usually safer than one who is loved but easily despised. He saw the bond of obligation as fragile, since people break it when it suits them."
+    },
+    {
+     "n": 2,
+     "text": "Machiavelli held that flatterers should be kept at a distance, because they tell a leader what he wants to hear. He also saw that fortune governs much of human affairs, but a wise person can prepare to meet her."
     },
     {
      "n": 4,
-     "text": "Marcus faced crisis after crisis without losing his steadiness, carrying the work of leadership through war, famine and plague by doing the hard duty in front of him rather than seeking comfort or pleasure."
-    },
-    {
-     "n": 7,
-     "text": "Marcus Aurelius was careful and conscientious as an administrator, and did not try to remodel the world on a grand plan. He simply tried to do his duty as well as he could and keep out corruption."
-    },
-    {
-     "n": 7,
-     "text": "Marcus Aurelius sought to protect the weak, from slaves to fatherless children. Caring for those who cannot easily protect themselves was the strong point of his reign."
-    },
-    {
-     "n": 7,
-     "text": "Marcus Aurelius's failure to look into what was being done in his name is hard to excuse. A leader is responsible for knowing what happens under their authority, and not knowing is itself a failure of duty."
-    },
-    {
-     "n": 8,
-     "text": "Two words can sound alike in aim yet drift apart in practice: Stoic calm became a byword for stubborn endurance, while Epicurean calm became a byword for unbridled licence. Ideals are judged by how they end up being lived."
-    }
-   ],
-   "preview": []
-  },
-  {
-   "id": "pg3300",
-   "state": "reading",
-   "title": "The Wealth of Nations",
-   "author": "Adam Smith",
-   "subject": "economics",
-   "lessons": 85,
-   "studied": 100,
-   "passages": 1645,
-   "source_url": "https://www.gutenberg.org/ebooks/3300",
-   "last_read_at": "2026-11-10",
-   "licence_note": "Author died 1790. Public domain in the USA and Australia.",
-   "notes": [
-    {
-     "n": 3,
-     "text": "Adam Smith held that a nation's supply of goods depends on two things: how skilfully and wisely its labour is applied, and how many of its people are doing useful work compared with those who are not."
-    },
-    {
-     "n": 4,
-     "text": "Adam Smith held that the skill and method with which work is done matters more to a society's abundance than the sheer number of people working, and that a frugal, hard-working person can gain more than the poorest societies could give."
+     "text": "Machiavelli was shaped by the two opposing currents of his city, the austere Savonarola and the splendour-loving Lorenzo de' Medici. He drew on both, and his writings return often to the magnificence of Lorenzo's rule."
     },
     {
      "n": 5,
-     "text": "Adam Smith held that a nation's yearly supply of goods depends on how many people are doing useful productive work compared with those who are not. The more capital put to work, the more productive labour it sets going."
+     "text": "Machiavelli urged his son Guido to study hard, saying that others will help you if you help yourself. Effort you put in yourself is what draws help from others."
+    },
+    {
+     "n": 6,
+     "text": "Machiavelli held that it is far better to earn the confidence of the people than to rely on fortresses. A leader's real protection is the goodwill of those they govern, not their walls."
+    },
+    {
+     "n": 7,
+     "text": "Machiavelli saw that a man who rises on the fortune of others tends to fall with them. He also noted that those who are prepared for every outcome except the one that actually happens are still undone."
     },
     {
      "n": 8,
-     "text": "Adam Smith held that the biggest gains in what labour can produce come from dividing work into separate parts, with each worker doing one piece. The division is often easiest to see in small trades, where all the workers can be watched in one place."
-    },
-    {
-     "n": 9,
-     "text": "Adam Smith showed with the pin factory that splitting a job into many small distinct operations, each done by a practised hand, multiplies what a group can produce far beyond what the same people could manage working alone."
+     "text": "Machiavelli judged that boldness, rather than caution, is what wins and holds fortune. He also observed that a leader who lacks force of character and never insists on his wishes will fail, however grand his schemes."
     },
     {
      "n": 10,
-     "text": "Adam Smith held that the division of labour raises productive power in every trade, and that the more advanced a society becomes, the more each person tends to do just one part of the work."
+     "text": "Machiavelli Machiavelli described, in a letter to Vettori, how he moved from his daily work into his study and gained focus by sitting with the great minds of the past. Reading the old thinkers gave him the substance he wanted to write about."
+    },
+    {
+     "n": 11,
+     "text": "Machiavelli wrote The Prince to set out how states are acquired, kept and lost, and he kept revising it instead of treating it as finished. His dedication shows that a clear, practical guide for a new leader can be worth offering to the powerful."
+    },
+    {
+     "n": 12,
+     "text": "Machiavelli held that experience gained by watching others' mistakes is valuable, and that a person who has always kept faith should not find it hard to stay honest. He also argued that a long, patient study of practical affairs was worth more than leisure."
+    },
+    {
+     "n": 15,
+     "text": "Machiavelli was a keen observer who turned his experience into writing, and his literary skill was stronger than his success in public affairs. Careful watching of how people actually behave is a useful habit for anyone."
+    },
+    {
+     "n": 16,
+     "text": "Machiavelli held that men tend to see things as they wish them to be, and that those who ignore this are ruined. Looking at situations as they really are is a sound basis for any decision."
+    },
+    {
+     "n": 16,
+     "text": "Machiavelli held that in politics there are no perfectly safe courses, so prudence means choosing the least dangerous one. Accepting that every choice carries some risk helps in running any business or organisation."
+    },
+    {
+     "n": 16,
+     "text": "Machiavelli held that crimes may win an empire but do not win glory. Reputation built on fair dealing lasts longer than gains taken by cunning."
+    },
+    {
+     "n": 17,
+     "text": "Machiavelli chose every word with care, and the translator held that a clear, exact rendering matters more than smooth modern phrasing, even if the result is a little rough."
+    },
+    {
+     "n": 19,
+     "text": "Machiavelli held that the best gift to offer someone you want to impress is something you truly value, such as hard-won knowledge, offered plainly and without decoration so the substance does the work."
+    },
+    {
+     "n": 20,
+     "text": "Machiavelli held that to understand the common people you must be one of them, and to understand rulers you must look at things from their side, much as a painter must stand low to see mountains and high to see plains."
+    },
+    {
+     "n": 21,
+     "text": "Machiavelli held that a hereditary ruler has fewer difficulties than a new one, since long-established rule breeds goodwill and the memories that drive change fade over time."
+    },
+    {
+     "n": 22,
+     "text": "Machiavelli warned that people often swap rulers hoping to do better, then find things worse, so a new leader makes enemies of those he hurt and cannot fully trust those who put him in power."
+    },
+    {
+     "n": 23,
+     "text": "Machiavelli observed that a newly taken territory is harder to hold on a second takeover, because a ruler who regains it can punish plotters, remove suspects and shore up weak points."
+    },
+    {
+     "n": 24,
+     "text": "Machiavelli advised that when new lands share the same language and customs, a conqueror should end the old ruling family and keep existing laws and taxes, so the lands soon become one body with the rest."
+    },
+    {
+     "n": 25,
+     "text": "Machiavelli held that a ruler taking over a foreign land should live there himself, since problems are fixed quickly when seen early and the people then have a reason to love a ruler who is close at hand."
+    },
+    {
+     "n": 26,
+     "text": "Machiavelli advised that harms done to people should be either small enough that they cannot take revenge or so severe that they cannot retaliate, because wronged people who are left with some power will strike back."
+    },
+    {
+     "n": 27,
+     "text": "Machiavelli warned that a powerful outsider who is invited in by discontented locals will soon dominate, so a ruler should keep neighbours balanced and not let any rival grow strong enough to threaten him."
+    },
+    {
+     "n": 28,
+     "text": "Machiavelli held that problems are cheap to fix when spotted early and become incurable once they have grown, so a wise leader deals with trouble before it arrives rather than waiting for it to come to a head."
+    },
+    {
+     "n": 30,
+     "text": "Machiavelli held that a ruler who wants to hold a new territory should keep his allies secure and protected, since they are the support that keeps him safe against the powerful."
+    },
+    {
+     "n": 30,
+     "text": "Machiavelli warned that helping a rival grow stronger, such as by enlarging another power's territory, weakens your own position and can force you into further mistakes."
+    },
+    {
+     "n": 31,
+     "text": "Machiavelli held that wanting to gain is natural, but reaching beyond what you can actually manage is folly, so a ruler should act only within his real strength."
+    },
+    {
+     "n": 32,
+     "text": "Machiavelli held that a blunder should never be made just to avoid a war, because the war is only postponed and will come back on worse terms."
+    },
+    {
+     "n": 33,
+     "text": "Machiavelli held that whoever helps another become powerful is often ruined later, because the rising power comes to distrust the one who raised it."
+    },
+    {
+     "n": 34,
+     "text": "Machiavelli saw two kinds of government: a ruler served by appointed ministers who owe everything to his favour, and a ruler sharing power with hereditary lords who hold their own standing and loyalty."
+    },
+    {
+     "n": 35,
+     "text": "Machiavelli observed that a state run tightly from the top by appointed servants is hard to seize but easy to hold once conquered, since it has no rival centres of loyalty to rally against the conqueror."
+    },
+    {
+     "n": 36,
+     "text": "Machiavelli warned that a state with many powerful local lords is easy to enter by winning over a discontented noble, but hard to keep, because the lords you crushed or relied on keep stirring up new trouble."
+    },
+    {
+     "n": 37,
+     "text": "Machiavelli held that a conquest can be hard to keep when the conquered land is split into many separate parts, so the difficulty lies in the lack of unity rather than only in the conqueror's skill."
+    },
+    {
+     "n": 38,
+     "text": "Machiavelli held that a city used to freedom is hard to hold, because its people never forget their liberties and will rally to them when they get the chance. Ruling through its own leaders is often the easier path."
+    },
+    {
+     "n": 40,
+     "text": "Machiavelli held that a new leader who relies least on luck tends to stand the strongest. Opportunity matters, but it only pays off when paired with the ability to shape it."
+    },
+    {
+     "n": 40,
+     "text": "Machiavelli held that a wise person should copy the paths of the great, aiming higher than the target so that even a shortfall still lands close to the mark."
+    },
+    {
+     "n": 41,
+     "text": "Machiavelli held that great leaders often rise when circumstances are ready for them, and that their ability lies in seeing and seizing the opening. Hardship and disorder can create the chance for a capable person to act."
+    },
+    {
+     "n": 42,
+     "text": "Machiavelli held that whoever introduces a new way of doing things makes enemies of those who did well under the old way, while the new arrangement gets only lukewarm support. Expect resistance from those who benefit from the status quo and doubt from those who are yet to be convinced."
+    },
+    {
+     "n": 43,
+     "text": "Machiavelli held that people are easy to win over but hard to keep convinced, so a new plan needs a way to hold its supporters together when belief fades. Relying only on persuasion, without the means to back it up, tends to fail."
+    },
+    {
+     "n": 44,
+     "text": "Machiavelli held that Hiero of Syracuse rose by ability and the trust of his people, then rebuilt the army and alliances on his own foundations. Building on your own strengths and resources makes what you have far easier to keep."
+    },
+    {
+     "n": 45,
+     "text": "Machiavelli held that a ruler who rises by luck, through someone else's favour, often has little ability to command and no loyal forces of their own, so the rise is easy but the holding is hard."
+    },
+    {
+     "n": 45,
+     "text": "Machiavelli observed that a sudden rise leaves shallow foundations, so a newcomer must lay the foundations that others would have laid before they got power, and lay them quickly."
+    },
+    {
+     "n": 47,
+     "text": "Machiavelli held that a leader who builds foundations late can still succeed, but the work costs more trouble and carries more risk to the whole structure."
+    },
+    {
+     "n": 48,
+     "text": "Machiavelli showed that Cesare Borgia's power collapsed because he relied on borrowed forces and the goodwill of others, and he concluded he must depend on his own arms rather than those of others."
+    },
+    {
+     "n": 49,
+     "text": "Machiavelli held that a ruler who wins over the followers of rival factions, paying and honouring them, can turn their loyalty away from the factions and toward himself. Gaining people's adherents is often better than simply crushing them."
+    },
+    {
+     "n": 50,
+     "text": "Machiavelli observed that a harsh agent can restore order, but a leader who wants to be loved should shift the blame for cruelty onto that agent and remove him. Public spectacle can satisfy and frighten people at the same time."
+    },
+    {
+     "n": 51,
+     "text": "Machiavelli held that a leader must weigh his allies by their interests, since a powerful outside partner may not support him when it counts. Securing your own position before you need it is wiser than relying on others."
+    },
+    {
+     "n": 52,
+     "text": "Machiavelli advised that a leader facing an uncertain future should prepare several defences in advance, so that he can withstand the first shock of a change in leadership. Strength of his own, not the luck or forces of others, is what keeps a position safe."
+    },
+    {
+     "n": 53,
+     "text": "Machiavelli held that a well-laid foundation can keep a plan standing for a while, but a leader's own health and the fortunes of others can still undo everything. Plans need a backup for the leader's own failure."
+    },
+    {
+     "n": 54,
+     "text": "Machiavelli praised the Duke's habit of acting boldly and deciding things with a clear aim in mind, noting that he could not have acted otherwise given his ambitions. Firm, far-reaching goals shape how a person has to act."
+    },
+    {
+     "n": 55,
+     "text": "Machiavelli argued that people hurt others out of fear or hatred, so a leader should avoid choosing allies or successors whom they have wronged. Believing that new favours will erase old injuries is a costly mistake."
+    },
+    {
+     "n": 58,
+     "text": "Machiavelli holds that cruelty, betrayal and lack of faith may win power but never glory, so a leader's methods are judged by more than whether they succeed."
+    },
+    {
+     "n": 58,
+     "text": "Machiavelli argues that a rise built on hard steps, endured hardships and personal courage is earned by skill, not luck, and it is the leader's own ability that counts."
+    },
+    {
+     "n": 60,
+     "text": "Machiavelli shows that a leader who gains power by treachery stays in danger, since his own cruelty makes enemies and he can be overreached by someone craftier."
+    },
+    {
+     "n": 60,
+     "text": "Machiavelli notes that a trusted ally can turn on you at a dinner or meeting, so be wary of people who seem friendly while hiding a plan against you."
+    },
+    {
+     "n": 61,
+     "text": "Machiavelli held that harsh measures are used well when they are applied all at once, are truly needed for security, and are not kept up afterwards. They go badly when they start small and grow over time."
+    },
+    {
+     "n": 62,
+     "text": "Machiavelli advised that hard actions should be taken all at one time so people feel them less, while kindnesses should be spread out so they are enjoyed for longer. Delay leaves a leader with no room to soften later."
+    },
+    {
+     "n": 63,
+     "text": "Machiavelli observed that in any community the powerful and the ordinary people want different things, and that a leader who rises with popular support usually stands on firmer ground than one lifted up by the elite."
     }
    ],
-   "preview": []
+   "preview": [
+    {
+     "n": 2,
+     "text": "THE PRINCE\n CHAPTER I. HOW MANY KINDS OF PRINCIPALITIES THERE ARE, AND BY WHAT MEANS THEY ARE ACQUIRED\n CHAPTER II. CONCERNING HEREDITARY PRINCIPALITIES\n CHAPTER III. CONCERNING MIXED PRINCIPALITIES\n CHAPTER IV. WHY THE KINGDOM OF DARIUS, CONQUERED BY ALEXANDER, DID NOT REBEL AGAINST THE SUCCESSORS OF ALEXANDER AT HIS DEATH\n CHAPTER V. CONCERNING THE WAY TO GOVERN CITIES OR PRINCIPALITIES WHICH LIVED UNDER THEIR OWN LAWS BEFORE THEY WERE ANNEXED\n CHAPTER VI. CONCERNING NEW PRINCIPALITIES WHICH ARE ACQUIRED BY ONE’S OWN ARMS AND ABILITY\n CHAPTER VII. CONCERNING NEW PRINCIPALITIES WHICH ARE ACQUIRED EITHER BY THE ARMS OF OTHERS OR BY GOOD FORTUNE\n CHAPTER VIII. CONCERNING THOSE WHO HAVE OBTAINED A PRINCIPALITY BY WICKEDNESS\n CHAPTER IX. CONCERNING A CIVIL PRINCIPALITY\n CHAPTER X. CONCERNING THE WAY IN WHICH THE STRENGTH OF ALL PRINCIPALITIES OUGHT TO BE MEASURED\n CHAPTER XI. CONCERNING ECCLESIASTICAL PRINCIPALITIES\n CHAPTER XII. HOW MANY KINDS OF SOLDIERY THERE ARE AND CONCERNING MERCENARIES\n CHAPTER XIII. CONCERNING AUXILIARIES, MIXED SOLDIERY, AND ONE’S OWN\n CHAPTER XIV. THAT WHICH CONCERNS A PRINCE ON THE SUBJECT OF WAR\n CHAPTER XV. CONCERNING THINGS FOR WHICH MEN, AND ESPECIALLY PRINCES, ARE PRAISED OR BLAMED\n CHAPTER XVI. CONCERNING LIBERALITY AND MEANNESS\n CHAPTER XVII. CONCERNING CRUELTY AND CLEMENCY, AND WHETHER IT IS BETTER TO BE LOVED THAN FEARED\n CHAPTER XVIII. CONCERNING THE WAY IN WHICH PRINCES SHOULD KEEP FAITH\n CHAPTER XIX. THAT ONE SHOULD AVOID BEING DESPISED AND HATED\n CHAPTER XX. ARE FORTRESSES, AND MANY OTHER THINGS TO WHICH PRINCES OFTEN RESORT, ADVANTAGEOUS OR HURTFUL?\n CHAPTER XXI. HOW A PRINCE SHOULD CONDUCT HIMSELF SO AS TO GAIN RENOWN\n CHAPTER XXII. CONCERNING THE SECRETARIES OF PRINCES\n CHAPTER XXIII. HOW FLATTERERS SHOULD BE AVOIDED\n CHAPTER XXIV. WHY THE PRINCES OF ITALY HAVE LOST THEIR STATES\n CHAPTER XXV. WHAT FORTUNE CAN EFFECT IN HUMAN AFFAIRS AND HOW TO WITHSTAND HER\n CHAPTER XXVI. AN EXHORTATION TO LIBERATE ITALY FROM THE BARBARIANS"
+    }
+   ]
+  },
+  {
+   "id": "pg14474",
+   "state": "finished",
+   "title": "The Chemical History of a Candle",
+   "author": "Michael Faraday",
+   "subject": "physics",
+   "lessons": 131,
+   "studied": 150,
+   "passages": 150,
+   "source_url": "https://www.gutenberg.org/ebooks/14474",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1867, editor died 1919. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Faraday's point is that knowledge is built piece by piece, and weak links get replaced by better work over time. Today's understanding is built the same way, so it is worth testing and repairing our own reasoning."
+    },
+    {
+     "n": 3,
+     "text": "Faraday held that a single ordinary thing, like a candle, opens a door to nearly every law of nature. Starting from something familiar is often the best way into a hard subject."
+    },
+    {
+     "n": 3,
+     "text": "Faraday spoke to his young audience as an equal and did not hide behind his seniority. Plain, friendly speech helps people understand, even when the subject is serious."
+    },
+    {
+     "n": 4,
+     "text": "Faraday showed that a piece of wood can hold everything a candle needs: fuel, a way to bring fuel to the flame, and a steady supply of air. Good systems share these same basic parts."
+    },
+    {
+     "n": 5,
+     "text": "Faraday shows that a thing's history can be read from its use: old miners' candles were made small so they would be less likely to set off gas in the mine. Good designs often come from a real problem and its safety."
+    },
+    {
+     "n": 6,
+     "text": "Faraday shows that a common material can be transformed by a clear chemical process into something cleaner and better. He also notes that impurities are pushed out step by step, leaving a purer product."
+    },
+    {
+     "n": 7,
+     "text": "Faraday warns that a process is not always obvious from the outcome: a candle looks like it could simply be cast, but wax cannot be. Test your assumptions about how things are made before you commit to a method."
+    },
+    {
+     "n": 8,
+     "text": "Faraday describes wax candles built up by many thin coats, poured one after another as the frame turns. Steady, repeated small effort, with each layer allowed to cool, builds a finished result."
+    },
+    {
+     "n": 9,
+     "text": "Faraday held that a thing can look fine and still be poor at its job, and that decoration often costs some usefulness. Judge a product by how well it does its work, not by how it looks."
+    },
+    {
+     "n": 12,
+     "text": "Faraday held that the best thing is the one that works well, not the one that looks best. Usefulness is the truer kind of beauty."
+    },
+    {
+     "n": 12,
+     "text": "Faraday held that the faults and surprises in a process often teach more than success does. When something unexpected happens, ask what the cause is and why it occurred."
+    },
+    {
+     "n": 13,
+     "text": "Faraday admired how a candle's flame keeps to its own place, fenced off from the melted fuel below, so each part serves the other until the candle is spent. He saw this fine balance of parts as a beautiful thing."
+    },
+    {
+     "n": 14,
+     "text": "Faraday explained that a wick draws melted fuel upward by capillary attraction, the same pull that makes a wet hand or a finger stay wet. He used a salt column soaked in coloured liquid to show the fluid climbing without dissolving."
+    },
+    {
+     "n": 16,
+     "text": "Faraday showed that a porous thing can hold a liquid and still seem empty, because the fine mesh keeps the liquid clinging to it. Particles pull each other along in a chain, so the fuel keeps rising to the flame."
+    },
+    {
+     "n": 17,
+     "text": "Faraday shows that a fuel can rise through a narrow channel by capillary attraction and be lit at the top, so a candle works the same way as a wick drawing up melted fuel. The flame also goes out if the fuel runs back onto the wick, because the wick must have time to heat the fuel."
+    },
+    {
+     "n": 18,
+     "text": "Faraday holds that a candle burns only once its solid fuel has turned into vapour, so the flame is really burning a gas rather than the wax itself. Watching the vapour from a candle that has just been blown out makes this visible."
+    },
+    {
+     "n": 19,
+     "text": "Faraday notes that a diamond shines only when light falls on it, while a flame gives its own light. He suggests the flame is the most brilliant thing we know, shining by itself and for itself."
+    },
+    {
+     "n": 20,
+     "text": "Hooke's drawing shows that a flame is pulled upward by a current of air that you cannot see. Faraday suggests the flame is shaped by its surroundings as much as by its fuel."
+    },
+    {
+     "n": 21,
+     "text": "Michael Faraday observed that the darkest-looking part of a flame's shadow is in fact its brightest part, and that a hot air current rising through the flame feeds it air and draws it upward."
+    },
+    {
+     "n": 22,
+     "text": "Michael Faraday showed that the direction of a flame follows the direction of the air current, so blowing across a flame can make it point downwards."
+    },
+    {
+     "n": 24,
+     "text": "Michael Faraday explained that a flame's tongues appear because air creeps in unevenly, so what looks like one steady shape is really many shapes passing so quickly that the eye blends them together."
+    },
+    {
+     "n": 26,
+     "text": "Faraday teaches that a vapour is not a gas: a gas stays permanent, while a vapour can condense back into liquid or solid. Learning this difference helps you think clearly about what you are actually observing."
+    },
+    {
+     "n": 26,
+     "text": "Faraday's method is to take a small everyday event and produce it on a larger scale so each part can be examined. Scaling up a small thing is a good way to understand how it really works."
+    },
+    {
+     "n": 27,
+     "text": "Faraday separates two processes that happen in different places: producing the fuel vapour, and burning it. Breaking a complex process into its separate stages makes it easier to see where each one happens and what controls it."
+    },
+    {
+     "n": 28,
+     "text": "Faraday shows that the heat of a candle sits in a thin ring where the fuel meets the air, not in the hollow core. Good results often come from testing a simple idea with a cheap home experiment you can check yourself."
+    },
+    {
+     "n": 29,
+     "text": "Faraday showed that a flame needs fresh air, not just any air. A jar can be full of air and still starve a candle once the oxygen in it is used up."
+    },
+    {
+     "n": 29,
+     "text": "Faraday held that a flame burns poorly when air is restricted, and that careful design, such as Argand's opening to the centre of the flame, lets it burn much better."
+    },
+    {
+     "n": 31,
+     "text": "Faraday taught that burning does not always look the same. Some substances burn with a flame and others glow and burn without one, and this difference decides how useful a fuel is for light."
+    },
+    {
+     "n": 31,
+     "text": "Faraday urged young learners to test things with care and to avoid trying dangerous experiments for fun, because careless handling does real harm."
+    },
+    {
+     "n": 33,
+     "text": "Faraday shows that the black smoke from a candle is the same carbon that was in the candle, so nothing is lost; it shows up as soot when it is not fully burnt. Careful watching of a simple flame can reveal what is really happening inside it."
+    },
+    {
+     "n": 34,
+     "text": "Faraday holds that a substance glows brightly when it burns while staying solid rather than turning to vapour. Solid particles in the flame are what give it its brilliance."
+    },
+    {
+     "n": 35,
+     "text": "Faraday teaches that a flame can give little light even when it is very hot, because light depends on solid particles, not heat alone. Testing an idea with a plain experiment, such as heating a solid wire in a flame, makes the point clear to anyone watching."
+    },
+    {
+     "n": 36,
+     "text": "Faraday invites his listeners to reason from what they can see, such as the smoke and the bright flame, to judge for themselves what is happening in a burning. He values careful observation over simply taking an authority's word for it."
+    },
+    {
+     "n": 37,
+     "text": "Faraday shows that a substance can glow only while it is kept hot, so brightness comes from heat during burning rather than from the material itself. Watching a thing closely at small scale can reveal what happens at large scale."
+    },
+    {
+     "n": 38,
+     "text": "Faraday held that a flame gives light only when tiny solid particles of carbon are released and heated, and that adding enough air so the fuel burns before those particles separate makes the flame pale and blue. The difference lies in whether the particles separate before they burn."
+    },
+    {
+     "n": 39,
+     "text": "Faraday's method is to trap the products of a burning candle so you can measure them, instead of letting them drift off at random. Careful containment turns a vague process into something you can observe and understand."
+    },
+    {
+     "n": 40,
+     "text": "Faraday suggests testing a claim at home with simple things like a cold spoon held over a candle, so you can see for yourself what the burning produces. Learning by doing a small experiment yourself makes the idea stick."
+    },
+    {
+     "n": 42,
+     "text": "Michael Faraday used a sure, visible test to prove a hidden thing was there, so that a whole room could see it at once. Choosing a clear demonstration helps others believe what you are showing them."
+    },
+    {
+     "n": 43,
+     "text": "Michael Faraday held that water is one unchanging substance, so water made by a candle or a gas lamp is exactly the same as river or ocean water. Its form may change but its nature does not."
+    },
+    {
+     "n": 43,
+     "text": "Faraday's advice was to test a claim yourself, using simple things like a clean cold spoon or the head of a poker to catch the water. A plain experiment you can repeat beats a bare assertion."
+    },
+    {
+     "n": 45,
+     "text": "Faraday held that water is one thing whether it is ice, liquid or steam, since a change of state does not change what the substance is chemically."
+    },
+    {
+     "n": 47,
+     "text": "Faraday pointed out that a small amount of liquid can turn into a very large volume of vapour, so a steam flask that seems to lose little water is really pushing out a great deal of steam."
+    },
+    {
+     "n": 48,
+     "text": "Faraday urged his listeners to puzzle out a familiar fact for themselves, asking why ice floats, and to reason from the answer rather than simply accept it."
+    },
+    {
+     "n": 49,
+     "text": "Faraday's point is that water stays water through every change: heating turns it to steam and cooling turns it back, so a change of state does not change what the substance is. Keep that in mind when a change looks like a transformation."
+    },
+    {
+     "n": 49,
+     "text": "Faraday showed that cooling steam in a sealed vessel makes it collapse, because the vapour returns to liquid and leaves a vacuum. Hidden pressure changes can do more than the eye expects."
+    },
+    {
+     "n": 51,
+     "text": "Faraday held that the water from a candle comes from the candle and the air together, not from either alone. Many results come from two sources acting jointly, so look at both before blaming one."
+    },
+    {
+     "n": 51,
+     "text": "Faraday preferred that his listeners reach an idea by linking facts they already knew, rather than simply being told it. Teaching works best when people connect new things to what they have already seen."
+    },
+    {
+     "n": 53,
+     "text": "Faraday held that the way to understand a substance is to watch how it behaves under changed conditions, such as heat, and let it reveal its story step by step. Careful observation of one reaction at a time builds real knowledge."
+    },
+    {
+     "n": 55,
+     "text": "Faraday showed that a claim should be tested with several checks, not just assumed. Here he tested a gas by cooling it, then by seeing whether it burns, to find out what it really was."
+    },
+    {
+     "n": 55,
+     "text": "Faraday noticed that iron gained weight after steam passed over it, so something in the steam had been taken up. Weighing before and after is a simple way to learn what a process really does."
+    },
+    {
+     "n": 56,
+     "text": "Faraday pointed out that a gas can be poured from one jar to another and still keep its identity. Testing whether a thing keeps its properties after handling is a good way to tell it apart from what it is mixed with."
+    },
+    {
+     "n": 57,
+     "text": "Faraday showed that a metal such as zinc can stall in water because the reaction coats it in a protective layer, and removing that coat with a little acid lets the reaction carry on. Stubborn results often hide a simple blocking cause."
+    },
+    {
+     "n": 58,
+     "text": "Faraday said careful, attentive practice lets people do useful experiments safely, and that handling hazardous materials calls for care rather than avoidance. Caution and skill go together."
+    },
+    {
+     "n": 59,
+     "text": "Faraday tuned his acid and zinc so the gas came out steadily, not too fast and not too slow. He also warned that a flammable gas mixed with air must be purged first, so good process control includes safety."
+    },
+    {
+     "n": 61,
+     "text": "Faraday shows that a plain test can settle a question: a cold glass held over a flame collects water, which tells you what the flame produced. Careful observation beats guessing."
+    },
+    {
+     "n": 61,
+     "text": "Faraday notes that weighing what goes into an experiment and what comes out can reveal what has gone missing. A gap in the numbers points to a substance you have not yet found."
+    },
+    {
+     "n": 63,
+     "text": "Faraday's method is to start with substances you already understand, then test an unknown tool on them. Known cases teach you how the instrument behaves before you rely on it."
+    },
+    {
+     "n": 64,
+     "text": "Faraday prepares carefully before a key trial, checking that the apparatus works and that a safe test is run first. Checking your equipment before the real job prevents avoidable failures."
+    },
+    {
+     "n": 66,
+     "text": "Faraday showed that two things can do nothing alone but act together when joined, so a result can depend on a combination rather than either part. Test an idea by bringing the pieces together, not by staring at them apart."
+    },
+    {
+     "n": 67,
+     "text": "Faraday showed that a substance taken out of a solution can be moved to another place by the same means that put it in. Nothing is lost in the process, it only changes where it sits."
+    }
+   ],
+   "preview": [
+    {
+     "n": 2,
+     "text": "Atom by atom, link by link, has the reasoning chain been forged. Some\nlinks, too quickly and too slightly made, have given way, and been\nreplaced by better work; but now the great phenomena are known—the\noutline is correctly and firmly drawn—cunning artists are filling in the\nrest, and the child who masters these Lectures knows more of fire than\nAristotle did.\n\nThe candle itself is now made to light up the dark places of nature; the\nblowpipe and the prism are adding to our knowledge of the earth’s crust;\nbut the torch must come first.\n\nAmong the readers of this book some few may devote themselves to\nincreasing the stores of knowledge: the Lamp of Science _must_ burn.\n“_Alere flammam._”\n\nW. CROOKES.\n\nCONTENTS.\n\nLECTURE I.\n\nA CANDLE: THE FLAME—ITS SOURCES—STRUCTURE—MOBILITY—BRIGHTNESS\n\nLECTURE II.\n\nBRIGHTNESS OF THE FLAME—AIR NECESSARY FOR COMBUSTION—PRODUCTION OF WATER\n\nLECTURE III.\n\nPRODUCTS: WATER FROM THE COMBUSTION—NATURE OF WATER—A COMPOUND—HYDROGEN\n\nLECTURE IV.\n\nHYDROGEN IN THE CANDLE—BURNS INTO WATER—THE OTHER PART OF WATER—OXYGEN\n\nLECTURE V.\n\nOXYGEN PRESENT IN THE AIR—NATURE OF THE ATMOSPHERE—ITS PROPERTIES—OTHER\nPRODUCTS FROM THE CANDLE—CARBONIC ACID—ITS PROPERTIES\n\nLECTURE VI.\n\nCARBON OR CHARCOAL—COAL-GAS—RESPIRATION AND ITS ANALOGY TO THE BURNING\nOP A CANDLE—CONCLUSION\n\nLECTURE ON PLATINUM.\n\nNOTES.\n\nTHE CHEMICAL HISTORY OF A CANDLE\n\nLECTURE I.\n\nA CANDLE: THE FLAME—ITS SOURCES—STRUCTURE—MOBILITY—BRIGHTNESS."
+    }
+   ]
   },
   {
    "id": "pg37134",
@@ -402,6 +760,174 @@
     {
      "n": 8,
      "text": "Strunk warns that a writer who makes every sentence tight and formal wears out the reader, so an occasional loose sentence gives relief. He also advises replacing a casual so with as or since to make the link between clauses clear."
+    },
+    {
+     "n": 9,
+     "text": "Strunk holds that two closely related independent clauses may be joined by a semicolon, or split into two sentences, rather than run together with only a comma."
+    },
+    {
+     "n": 10,
+     "text": "Strunk holds that a semicolon joins two closely related statements, even when a connecting adverb like thus or therefore follows, and that this device is one of the most useful in writing."
+    },
+    {
+     "n": 11,
+     "text": "Strunk warns that an opening phrase must describe the subject of the sentence, so the writer should check who or what is actually doing the action before writing."
+    },
+    {
+     "n": 12,
+     "text": "Strunk's rule is to give each topic its own paragraph, since a new paragraph signals to the reader that the subject has moved on to a new step."
+    },
+    {
+     "n": 14,
+     "text": "Strunk's rule is that a good paragraph opens with a topic sentence, builds on it with explanation or proof, and closes by reinforcing the main point or stating its consequence. Ending on a digression or a trivial detail should be avoided."
+    },
+    {
+     "n": 14,
+     "text": "Strunk holds that a paragraph should be written so the reader knows its purpose from the first line and keeps that purpose in mind to the end. Transitions like 'therefore' or 'again' can link it to what came before."
+    },
+    {
+     "n": 15,
+     "text": "Stevenson held that a walking tour is best taken alone, so that you can set your own pace, change direction on a whim, and stay open to whatever you see. Company turns it into something closer to a picnic."
+    },
+    {
+     "n": 16,
+     "text": "Lecky held that historians in the eighteenth century shifted from simply painting a picture of the past to trying to explain it, tracing chains of causes and effects in the life of whole peoples rather than only their kings."
+    },
+    {
+     "n": 17,
+     "text": "Strunk suggests that a paragraph often opens with a clear topic sentence that holds the details together. Narrative can drop this and let a short, separate paragraph act as a pause that highlights one detail."
+    },
+    {
+     "n": 18,
+     "text": "Strunk says to avoid the passive voice when it hides the actor or when one passive depends on another. Pick the subject that fits what the paragraph is about, then choose the voice that suits it."
+    },
+    {
+     "n": 19,
+     "text": "Strunk's rule is to replace limp phrases like there was or could be heard with a strong active verb. Vivid, direct sentences make ordinary description and explanation far more lively."
+    },
+    {
+     "n": 20,
+     "text": "Strunk holds that a negative is weaker than a positive: tell readers what something is rather than what it is not. Say it was dishonest rather than not honest, and say it was forgotten rather than not remembered."
+    },
+    {
+     "n": 21,
+     "text": "Strunk says vivid writing comes from definite, concrete details, so the reader can picture the scene. Even general principles need particular examples to land."
+    },
+    {
+     "n": 22,
+     "text": "Herbert Spencer held that specific words are easier to take in than abstract ones, because the reader does not have to work out a picture from a general term. Choosing the concrete word saves effort and gives a stronger impression."
+    },
+    {
+     "n": 23,
+     "text": "Strunk's rule is to cut needless words, such as stock phrases like 'the fact that' that can usually be replaced by a single plain word. Write the direct version, since it is shorter and clearer."
+    },
+    {
+     "n": 24,
+     "text": "Strunk warns against a string of loose sentences joined by 'and' and 'but', which becomes monotonous. Combine related ideas into one well-built sentence instead."
+    },
+    {
+     "n": 25,
+     "text": "William Strunk held that a run of sentences built on the same mechanical pattern becomes monotonous, so the writer should vary them with simple, compound, or periodic sentences that match the real shape of the thought."
+    },
+    {
+     "n": 26,
+     "text": "William Strunk held that parallel ideas should be written in matching form, so the reader can see at once that they are alike, and that a writer who keeps switching forms looks undecided."
+    },
+    {
+     "n": 27,
+     "text": "William Strunk held that the words of a sentence should be placed so that related words stay together, since word order is the main way a reader tells how the parts of a sentence connect."
+    },
+    {
+     "n": 28,
+     "text": "William Strunk advised placing a modifier next to the word it modifies, such as 'only' before the word it limits, so that no wrong meaning is suggested to the reader."
+    },
+    {
+     "n": 29,
+     "text": "Strunk's rule is to keep one tense throughout a summary, since switching between present and past makes the writer seem uncertain and irresolute. Say once at the outset that what follows is a summary, rather than repeating 'he said' along the way."
+    },
+    {
+     "n": 30,
+     "text": "Strunk warns that in criticism the writer should not slide into retelling the work; a good discussion makes general conclusions supported by evidence, not a summary with occasional comment."
+    },
+    {
+     "n": 31,
+     "text": "Strunk's rule is to place the emphatic words at the end of a sentence, since the end is the most prominent position. The same principle applies to the sentences of a paragraph and the paragraphs of a composition."
+    },
+    {
+     "n": 32,
+     "text": "Strunk's rule is to write dates and serial numbers in figures or Roman numerals, never spelled out. Put an aside in parentheses without changing the punctuation the sentence would have on its own."
+    },
+    {
+     "n": 33,
+     "text": "Strunk advised that familiar phrases and proverbs need no quotation marks, and the same goes for colloquialisms and slang. Quoting them only signals that the writer is not comfortable with the words."
+    },
+    {
+     "n": 35,
+     "text": "Strunk held that when a writer finds a worn-out expression in a sentence, the fix is to rebuild the sentence around what he means, not to swap one word for another. Ready-made formulas save thinking, so refuse them."
+    },
+    {
+     "n": 36,
+     "text": "Strunk warned against stacking one contrast on another with repeated but, which leaves the reader confused. Rearranging the sentence so the ideas sit in clear order usually fixes it."
+    },
+    {
+     "n": 36,
+     "text": "Strunk noticed that filler words such as case and character often add nothing and come from habit. Cutting them, as in Hostile acts instead of Acts of a hostile character, makes writing tighter."
+    },
+    {
+     "n": 38,
+     "text": "Strunk's rule is that the writer with a definite meaning to express will not hide behind vague words like effect used loosely. Be concrete about what you actually mean."
+    },
+    {
+     "n": 39,
+     "text": "Strunk's rule is to avoid hackneyed words like factor and feature, since they usually add nothing and can be replaced by something more direct. Say what you mean in plain, specific words."
+    },
+    {
+     "n": 40,
+     "text": "Strunk's rule is to skip the perfunctory preamble such as calling something interesting. Make the point interesting by telling it directly, without announcing it first."
+    },
+    {
+     "n": 40,
+     "text": "Strunk's rule is to use less for quantity and fewer for number, and to use as rather than like before a phrase or clause. Small distinctions like these make writing precise."
+    },
+    {
+     "n": 41,
+     "text": "William Strunk warned that a writer seeking freshness should drop worn-out phrases such as along these lines, which have been so overused they have lost their force. Say the plain thing instead."
+    },
+    {
+     "n": 42,
+     "text": "William Strunk noted that literal and most are often stretched beyond their meaning for exaggeration, so writers should use almost or plain words when they mean that. Precision beats inflated emphasis."
+    },
+    {
+     "n": 43,
+     "text": "William Strunk held that a sentence should be recast whenever a clumsy construction stands in for something simpler. Choose the plainer wording, such as an if clause, over a tangled phrase."
+    },
+    {
+     "n": 44,
+     "text": "William Strunk advised cutting needless words like respectively, and replacing padded phrases such as student body with the simple word. Short, direct wording is almost always stronger."
+    },
+    {
+     "n": 45,
+     "text": "Strunk advises replacing a weak word like 'very' with words that are strong in themselves when emphasis is needed. Use sparingly, since overuse dulls the effect."
+    },
+    {
+     "n": 45,
+     "text": "Strunk says a distributive word such as 'each' or 'everybody' takes a singular pronoun, even though it implies more than one person. Plural pronouns with these words are a common mistake."
+    },
+    {
+     "n": 46,
+     "text": "Strunk's test for a sentence built on 'while' is to rewrite it as two separate statements joined by 'at the same time'. If the rewrite makes sense, the use is fine; if not, a semicolon is better."
+    },
+    {
+     "n": 47,
+     "text": "Strunk holds that for habitual action the plain past tense is briefer and more emphatic than adding 'would'. Brevity usually makes a sentence stronger."
+    },
+    {
+     "n": 49,
+     "text": "Strunk's passage on the 1788 French crisis shows how a leader who misjudges the gravity of a situation can drive people to act in ways he never intended. Byron's account of Childe Harold shows that a writer's strongest work often lies in concrete description rather than in the invented persona."
+    },
+    {
+     "n": 51,
+     "text": "Strunk's examples teach that a sentence should make clear what it is about, so modifiers and participial phrases must attach to the word they describe. A stated principle of law, that a person is innocent until proved guilty, is a good model of a clear, balanced idea."
     }
    ],
    "preview": [
@@ -412,13 +938,1293 @@
    ]
   },
   {
+   "id": "pg16287",
+   "state": "reading",
+   "title": "Talks to Teachers on Psychology",
+   "author": "William James",
+   "subject": "learning",
+   "lessons": 99,
+   "studied": 108,
+   "passages": 260,
+   "source_url": "https://www.gutenberg.org/ebooks/16287",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1910. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "William James held that a learner's mind is a living whole, not a set of separate compartments, so teaching should help people see ideas as they flow rather than chopping them into neat boxes."
+    },
+    {
+     "n": 3,
+     "text": "William James held that no single mind can grasp the whole truth, so many people must look at life from their own view, and we should tolerate whatever is not itself intolerant."
+    },
+    {
+     "n": 4,
+     "text": "William James held that teaching methods must agree with what psychology shows, but cannot be drawn straight from it, so teachers still need judgement in the classroom."
+    },
+    {
+     "n": 4,
+     "text": "William James held that a teacher's job is to train pupils in behaviour, since conduct is what education ultimately produces."
+    },
+    {
+     "n": 5,
+     "text": "William James held that habits are made by repeated exercise, so the aim of education is to make useful habits automatic. Start a new habit with strong initiative, act on it without exception, and seize the first chance to act."
+    },
+    {
+     "n": 6,
+     "text": "William James held that we cannot recall anything without a cue, so memory depends on connecting ideas. To remember something, one must think about it and link it to what one already knows."
+    },
+    {
+     "n": 7,
+     "text": "William James held that effort of will is largely effort of attention. Holding your attention on the right course of action is the core of building good character."
+    },
+    {
+     "n": 8,
+     "text": "William James saw teachers as the reflective leaders who shape a nation's future, since a nation's renewal starts among its thoughtful people and spreads outward. Teachers who keep examining the highest aims of their work are a sign of real progress."
+    },
+    {
+     "n": 10,
+     "text": "William James warned that a hyped 'new psychology' can mystify teachers, and that disciples should stay independent and critical rather than simply accept whatever is handed down from above."
+    },
+    {
+     "n": 11,
+     "text": "William James held that psychology is a science while teaching is an art, so psychology cannot produce classroom methods directly; an inventive mind has to make the application."
+    },
+    {
+     "n": 12,
+     "text": "William James held that knowing a science like logic or ethics does not make a person reason or behave well; it only helps us catch and check our own mistakes."
+    },
+    {
+     "n": 12,
+     "text": "William James held that good teaching depends on tact and ingenuity in meeting the actual pupil in front of you, and no body of theory can supply that."
+    },
+    {
+     "n": 13,
+     "text": "William James held that teaching is like strategy: the principles are simple, but the real difficulty is that the pupil's mind is an active opponent that the teacher must read through tact and intuition."
+    },
+    {
+     "n": 14,
+     "text": "William James held that knowing the principles of how minds work is useful mainly for ruling out methods that will fail, and for giving a teacher confidence and a fuller view of each pupil."
+    },
+    {
+     "n": 15,
+     "text": "William James held that most teachers need only a general, sound grasp of how the mind works, enough to fit on the palm of a hand, rather than deep technical study."
+    },
+    {
+     "n": 16,
+     "text": "William James held that teachers should not be forced to become researchers, since the caring, concrete attitude toward a child can clash with the detached attitude of an observer."
+    },
+    {
+     "n": 17,
+     "text": "William James held that a teacher who feels like a failure at psychology should not carry a bad conscience about it. The best teacher and the best contributor of research are often different people."
+    },
+    {
+     "n": 18,
+     "text": "William James held that the most basic fact of the mind is that some stream of awareness is always running, whether we are awake or asleep. Describing and sorting that stream is a sound starting point, even before asking why it works as it does."
+    },
+    {
+     "n": 19,
+     "text": "William James admitted that we do not really know where our thoughts come from or how the brain produces them. He thought it wiser to admit that gap plainly than to dress up a vague explanation as if it were knowledge."
+    },
+    {
+     "n": 20,
+     "text": "William James observed that our experience is always mixed, with a clear centre of attention surrounded by a fringe of feeling and thought. When the mind wanders, the thing in front of us fades to the edge, which explains why we can miss what is said right in front of us."
+    },
+    {
+     "n": 21,
+     "text": "William James held that our awareness has a focal object and a marginal one, and that these can shift, swap places or change together. Vague descriptions of this stream are safer than neat, over-sharpened ones."
+    },
+    {
+     "n": 22,
+     "text": "William James warned against building the mind out of tiny fixed mental bricks, a theory he called 'ideas', because it is only conjecture. A looser picture of the stream of thought, always changing, is enough for practical work such as teaching."
+    },
+    {
+     "n": 23,
+     "text": "Wundt admitted that after decades of laboratory self-observation, psychology still had no universally accepted body of doctrine. Honest reflection on one's own inner experience can be useful, even when its results remain uncertain."
+    },
+    {
+     "n": 24,
+     "text": "Wundt came to see mental life as one indivisible, fleeting process, where thinking, feeling and willing are closely joined rather than separate parts. He concluded that the neat labels we give mental functions are often self-deceptions."
+    },
+    {
+     "n": 25,
+     "text": "William James notes an old split: popular belief judges the mind by its practical effects, while philosophers have prized pure contemplation as the higher life."
+    },
+    {
+     "n": 26,
+     "text": "William James argues that evolution has shifted psychology toward the practical side, since consciousness is best understood as a tool for guiding useful conduct."
+    },
+    {
+     "n": 27,
+     "text": "William James suggests that when learning a hard subject, you first grasp one deep, basic aspect firmly, then gradually add the neglected features that complete the picture."
+    },
+    {
+     "n": 28,
+     "text": "William James reasons that since the brain's signals run back out into action, and even lofty thought depends on practical capacity, practical purpose is the more basic result of the mind."
+    },
+    {
+     "n": 29,
+     "text": "William James held that no truth, however abstract, is ever taken in without some day shaping our action. Even theoretical thinking has practical effects, because it changes what we answer, read and do later."
+    },
+    {
+     "n": 30,
+     "text": "William James held that a teacher's main job is training the pupil in behaviour, meaning every fitting reaction to life's circumstances. Holding back from speaking or acting is also a deliberate reaction that takes real effort."
+    },
+    {
+     "n": 31,
+     "text": "William James described education as the organising of acquired habits of conduct and tendencies to behaviour. A truly educated person can work through situations they have never met before, using memory and general ideas."
+    },
+    {
+     "n": 32,
+     "text": "William James observed that even quiet listening is a active form of conduct, with the body and attention set in a particular way. Every impression we make on others tends to build their capacity to act, so it is worth keeping that in mind."
+    },
+    {
+     "n": 34,
+     "text": "William James held that every impression a teacher gives should be met by some reaction from the learner, since no reception without reaction is the rule to keep in the classroom."
+    },
+    {
+     "n": 35,
+     "text": "William James held that ideas stick best when they lead to some action by the learner, because doing something with a thing is what clinches it in memory. Passive reading or hearing alone leaves little behind."
+    },
+    {
+     "n": 36,
+     "text": "William James held that hands-on work such as experiments, drawings and measuring trains precision, honesty and self-reliance. Making things shows plainly whether you really understand, which words alone can hide."
+    },
+    {
+     "n": 37,
+     "text": "William James held that learning is incomplete until the learner gets news of what they did and what came of it. Feedback about our actions is part of the whole experience, not an extra."
+    },
+    {
+     "n": 38,
+     "text": "James argued that a learner's wish to know how well they are doing is natural and should rarely be blocked. Unless there is a specific practical reason, people should be told where they stand."
+    },
+    {
+     "n": 39,
+     "text": "William James held that most learning builds on what a person already does by instinct, either adding to that reaction or replacing it. A good teacher starts from the learner's existing tendencies, since nothing can be taught without some first response to build on."
+    },
+    {
+     "n": 40,
+     "text": "William James showed that memory is what turns a single experience into learning: the learner recalls the earlier result and changes course before repeating the mistake. An easily taught learner may need only one lesson to set a new habit."
+    },
+    {
+     "n": 41,
+     "text": "William James held that a new habit works by substitution: a learner keeps the native impulse but turns it toward a new object or response, so the teacher's first task is to understand the child's natural reactive tendencies."
+    },
+    {
+     "n": 42,
+     "text": "William James held that people keep their instincts even when reasoning overlays them, so the life of instinct is disguised rather than lost. Fear and love remain powerful levers for a teacher, and being liked gets results a forbidding manner cannot."
+    },
+    {
+     "n": 43,
+     "text": "William James held that curiosity is strongest in childhood and youth and fades in middle life, when routine absorbs attention and new, demanding ideas feel out of reach."
+    },
+    {
+     "n": 44,
+     "text": "William James held that young learners are first drawn by material objects, movement, living things and human action, so teaching should begin with things shown or done, and abstract reasons can wait until adolescence."
+    },
+    {
+     "n": 45,
+     "text": "William James held that we become who we are mainly by imitating others, and that each generation passes on its language, arts and sciences by imitating the last. Invention and imitation are the two legs humanity has walked on."
+    },
+    {
+     "n": 46,
+     "text": "William James observed that a teacher's own visible effort is more persuasive than exhortation, so a teacher should never ask pupils to do what she cannot do herself. Showing beats telling: 'Come and let me show you how' works better than 'Go and do it as the book directs.'"
+    },
+    {
+     "n": 47,
+     "text": "William James noted that the tone of any school or workplace is a tradition passed on by imitation, and it shifts slowly, mostly when a strong new personality sets a fresh pattern. Good culture depends on the character and tact of the leader who sets the example."
+    },
+    {
+     "n": 48,
+     "text": "Rousseau argued that children should be spurred by measuring their own progress over time rather than by rivalry with others. Comparing someone with their former self builds drive without jealousy."
+    },
+    {
+     "n": 49,
+     "text": "William James held that rivalry is rooted in human nature and can be channelled into fairness and generosity. Banning all competition may throw away a useful ally in learning."
+    },
+    {
+     "n": 50,
+     "text": "William James observed that people are moved most by seeing others act, so the spectacle of effort wakes and sustains our own. A runner pushes harder when rivals are at his heels."
+    },
+    {
+     "n": 51,
+     "text": "William James argued that a stubborn unwillingness to be beaten by difficulty, and the pride that goes with it, can be a healthy spur. Interest cannot be found in every step, so some hard work must be met head on."
+    },
+    {
+     "n": 52,
+     "text": "William James saw a strong urge to own things as part of human nature from early childhood. Any plan to remove private property would have to reckon with this deep need for something that is one's own."
+    },
+    {
+     "n": 54,
+     "text": "William James held that the collecting impulse can be turned into school work, so that neatness, order and method are picked up along the way rather than forced on the child."
+    },
+    {
+     "n": 55,
+     "text": "William James observed that children learn the world by handling things, and that real, hands-on acquaintance with objects gives a firmer grasp of reality than books alone."
+    },
+    {
+     "n": 56,
+     "text": "William James described a law of transitoriness: an instinct that is not met with the right object at its ripe moment may fade, and a habit that should have formed may then be hard to teach later."
+    },
+    {
+     "n": 57,
+     "text": "William James held that a child's interests ripen in a set order, and that a teacher should press a skill when the native impulse is strongest, since that window may be short."
+    },
+    {
+     "n": 58,
+     "text": "William James advised teachers to start from a pupil's existing impulses, even unhelpful ones, because those natural reactions are the best place to begin shaping new behaviour."
+    },
+    {
+     "n": 59,
+     "text": "William James argued that our virtues are habits just as much as our vices, and that habit forms because the living nervous system is plastic and grows to the way it is exercised."
+    },
+    {
+     "n": 60,
+     "text": "William James observed that most of our daily activity runs on automatic habit, so the most useful thing to build early is a set of habits that will serve us for life."
+    },
+    {
+     "n": 61,
+     "text": "William James held that the great aim of education is to make our nervous system our ally, by making useful actions automatic early on, so our higher powers are free for their proper work."
+    },
+    {
+     "n": 62,
+     "text": "James's first maxim is to launch a new habit with as strong an initiative as possible, surrounding yourself with reinforcements, incompatible commitments and even a public pledge. His second is to never allow an exception until the habit is firmly rooted."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg2680",
+   "state": "reading",
+   "title": "Meditations",
+   "author": "Marcus Aurelius",
+   "subject": "philosophy",
+   "lessons": 110,
+   "studied": 112,
+   "passages": 282,
+   "source_url": "https://www.gutenberg.org/ebooks/2680",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 180, translator died 1671. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Marcus learned gentleness and freedom from anger from his grandfather, and he kept himself from the excitement and corruption of the crowd, living plainly and training his body and character with discipline."
+    },
+    {
+     "n": 4,
+     "text": "Marcus faced crisis after crisis without losing his steadiness, carrying the work of leadership through war, famine and plague by doing the hard duty in front of him rather than seeking comfort or pleasure."
+    },
+    {
+     "n": 7,
+     "text": "Marcus Aurelius was careful and conscientious as an administrator, and did not try to remodel the world on a grand plan. He simply tried to do his duty as well as he could and keep out corruption."
+    },
+    {
+     "n": 7,
+     "text": "Marcus Aurelius sought to protect the weak, from slaves to fatherless children. Caring for those who cannot easily protect themselves was the strong point of his reign."
+    },
+    {
+     "n": 7,
+     "text": "Marcus Aurelius's failure to look into what was being done in his name is hard to excuse. A leader is responsible for knowing what happens under their authority, and not knowing is itself a failure of duty."
+    },
+    {
+     "n": 8,
+     "text": "Two words can sound alike in aim yet drift apart in practice: Stoic calm became a byword for stubborn endurance, while Epicurean calm became a byword for unbridled licence. Ideals are judged by how they end up being lived."
+    },
+    {
+     "n": 9,
+     "text": "Zeno taught that the goal of life is to live consistently, in conformity with nature. Living well means first understanding what nature is, which is why the Stoics studied physics, logic and ethics together."
+    },
+    {
+     "n": 11,
+     "text": "The Stoics sorted things into those within our control, such as our judgements and responses, and those outside it, such as wealth, health and reputation. They held that good and bad lie in how we respond, not in the outside things themselves."
+    },
+    {
+     "n": 12,
+     "text": "Focus your effort on what is in your power, namely your desires, opinions and choices, and let go of what is not. This was the Stoic form of moderation, a discipline still useful today."
+    },
+    {
+     "n": 12,
+     "text": "The Stoics saw each person as part of a larger whole and urged them to act with public spirit, a duty that reaches beyond their own town or country to all people."
+    },
+    {
+     "n": 13,
+     "text": "Marcus Aurelius wrote his Meditations to ease his own heart and steady himself for the burden of duty, not to teach students. His private notes are a useful model for anyone who keeps a journal to think clearly."
+    },
+    {
+     "n": 14,
+     "text": "Marcus Aurelius held that a modest self-reliance was the right way to examine your faults, with a steady eye on your own conduct rather than on other people's opinions of you. Praise and blame from the crowd are worth little."
+    },
+    {
+     "n": 15,
+     "text": "Marcus Aurelius saw that we all belong to one community and must work together, and he put the focus on doing the task well rather than on the feelings that come with it. A complaint about a small slight is pointless, since such things will keep coming."
+    },
+    {
+     "n": 16,
+     "text": "Marcus Aurelius held that the best answer to an offence is to refuse to become like the offender, and that someone who does wrong needs patience rather than anger. Nature gives us a counter-virtue for every fault in others, such as goodness and meekness against the ungrateful."
+    },
+    {
+     "n": 17,
+     "text": "Marcus Aurelius kept a grateful record of the people who shaped him, naming what each had given him. Noticing and thanking the good influences in your life is a habit worth keeping."
+    },
+    {
+     "n": 19,
+     "text": "Marcus Aurelius treated death as a necessary change, as a grain of wheat must die before it grows. He saw that much of what looks like loss can be the start of something new."
+    },
+    {
+     "n": 20,
+     "text": "Marcus Aurelius held that thoughts shape character, and character shapes action, so the mind must be trained in good principles before the emergency comes. Waiting until a crisis to decide your values is too late."
+    },
+    {
+     "n": 20,
+     "text": "Marcus Aurelius argued that happiness lies in good inclinations, good desires and good actions, not in pleasure or wealth. Judge a good life by the character you build, not by the comforts you collect."
+    },
+    {
+     "n": 21,
+     "text": "Marcus Aurelius showed that a person can keep a quiet, inner mind even amid noise, pressure and duties they did not choose. He did his hard work well without seeking the honours that came with it."
+    },
+    {
+     "n": 22,
+     "text": "Marcus Aurelius held that you can rejoice in the good qualities of the people around you, such as one's industry, another's modesty, another's generosity. Noticing these virtues in others is a source of gladness that is always within reach."
+    },
+    {
+     "n": 23,
+     "text": "Marcus Aurelius was grateful for what each person in his life taught him, from his grandfather's gentleness to his mother's generosity and modest living. He also valued learning to endure hard work, doing a task himself, and not being quick to believe slander."
+    },
+    {
+     "n": 24,
+     "text": "Marcus Aurelius chose not to waste his attention on empty spectacles, rumours or claims of miracles. He set his time instead on serious study and learning from good teachers."
+    },
+    {
+     "n": 25,
+     "text": "Marcus Aurelius learned from Rusticus to read with diligence and not rest on a light, superficial knowledge, nor quickly agree with things commonly said. Keep your judgement slow until you have looked closely."
+    },
+    {
+     "n": 26,
+     "text": "Marcus Aurelius admired Apollonius for staying steady in pain, grief and illness, and for not being vexed by slow students. He also learned to accept favours from friends without becoming beholden to them, and without being ungrateful."
+    },
+    {
+     "n": 27,
+     "text": "Marcus Aurelius saw in Sextus a man who was very learned yet made little show, and who could be gentle with everyone. His rule was to correct others quietly and indirectly, never with reproach, a lesson for anyone managing people."
+    },
+    {
+     "n": 28,
+     "text": "Marcus Aurelius resolved not to keep brushing off the people he owed time to with the excuse of being too busy. He also resolved to hear out a friend's complaint even when it was unjust, and to try to win them back."
+    },
+    {
+     "n": 29,
+     "text": "Marcus Aurelius held that we should keep command of ourselves, stay calm in sudden setbacks, and do our work thoroughly and without complaint. He admired Claudius Maximus for being steady and never rushed or sulky."
+    },
+    {
+     "n": 30,
+     "text": "Marcus Aurelius admired his father for listening patiently to anyone with something useful to say, and for not dropping a friend or a decision on a whim. He also weighed matters carefully before settling on them."
+    },
+    {
+     "n": 31,
+     "text": "Marcus Aurelius valued living in measure, without pride or chasing applause, and being content whether comforts were present or absent. He also thought a person should be judged by sound, mature character rather than by cleverness or flattery."
+    },
+    {
+     "n": 32,
+     "text": "Marcus Aurelius admired doing every task unhurriedly and in order, never with a frantic sweat, and staying steady whether one has much or little. He saw this balance as a sign of a strong, settled mind."
+    },
+    {
+     "n": 33,
+     "text": "Marcus Aurelius held that a leader can live simply and keep a modest household, yet still be firm and capable in the matters that truly need authority."
+    },
+    {
+     "n": 34,
+     "text": "Marcus Aurelius was grateful for the people who shaped him, and he kept his word to them, giving them real responsibility rather than promising it later."
+    },
+    {
+     "n": 36,
+     "text": "Marcus Aurelius advised starting each morning by expecting difficult people, and meeting them calmly, because they act from ignorance and we are all made to work together."
+    },
+    {
+     "n": 36,
+     "text": "Marcus Aurelius taught that getting angry at people who are close to us in nature goes against nature itself, since fighting those we need only makes us more divided."
+    },
+    {
+     "n": 37,
+     "text": "Marcus Aurelius held that you should stop letting your mind be pulled about by distractions and by desires, and instead keep your ruling reason steady, neither fretting over the present nor fearing what is to come."
+    },
+    {
+     "n": 39,
+     "text": "Marcus Aurelius advised treating every action as if it were your last, doing it with honesty, care and fairness, and dropping vanity and self-interest. Most of what a good life needs is simple and not many things."
+    },
+    {
+     "n": 39,
+     "text": "Marcus Aurelius observed that a person's happiness depends on themselves, and that looking for worth in the opinions of others wastes the life you have left."
+    },
+    {
+     "n": 40,
+     "text": "Marcus Aurelius, drawing on Theophrastus, judged that wrongs done out of appetite are worse than wrongs done in anger, since the person chose them deliberately rather than being pushed by hurt."
+    },
+    {
+     "n": 41,
+     "text": "Marcus Aurelius held that the things people fear or chase, such as wealth, honour, pain and death, are neither good nor bad in themselves. Real harm lies in vice and wickedness, which are within our own power to avoid."
+    },
+    {
+     "n": 42,
+     "text": "Marcus Aurelius advised picturing how quickly all things pass away and are forgotten, and how little the praise and status people chase are really worth. Death is simply a natural event, so there is no need to fear it."
+    },
+    {
+     "n": 43,
+     "text": "Marcus Aurelius held that the best use of our attention is to keep our own mind pure from anger, rashness and vanity, and to treat others with patience and compassion, since they often act from ignorance."
+    },
+    {
+     "n": 44,
+     "text": "Marcus Aurelius pointed out that the only life anyone truly has is the present moment, so a long life and a short one are equal in what we can actually lose. Focusing on today is what matters."
+    },
+    {
+     "n": 45,
+     "text": "Marcus Aurelius held that we harm ourselves when we act without thought for the end, acting rashly or pretending. Every action should be measured against the common good."
+    },
+    {
+     "n": 46,
+     "text": "Marcus Aurelius held that life is short and fame fades, so what stays with a person is how they keep their inner character steady. He urged meeting what happens with calm acceptance, without rashness or pretence."
+    },
+    {
+     "n": 47,
+     "text": "Marcus Aurelius held that since our clear thinking can fade with age or illness, we should use our best judgement now rather than wait. Time spent sharp is never wasted."
+    },
+    {
+     "n": 48,
+     "text": "Marcus Aurelius held that things we might call flaws, such as a cracked loaf or a wrinkled fig, can be beautiful when seen as part of nature. Looking closely with an open mind finds delight in ordinary things."
+    },
+    {
+     "n": 49,
+     "text": "Marcus Aurelius held that even the clever and powerful meet their end, so death is no reason to fear or envy anyone. Whatever comes after, the thing to do is live well now."
+    },
+    {
+     "n": 50,
+     "text": "Marcus Aurelius advised guarding your thoughts from idle gossip and curiosity about what others are doing. Keep your mind on what is your own to act on, and spend your attention on work that matters."
+    },
+    {
+     "n": 51,
+     "text": "Marcus Aurelius held that you should focus on what is in your own power and accept what you cannot control as part of the natural order. He also judged praise only by the people whose judgement you respect."
+    },
+    {
+     "n": 52,
+     "text": "Marcus Aurelius advised doing nothing against your own conscience or without careful thought, and speaking plainly rather than showily. Let your word be enough, so that no oath or witness is needed."
+    },
+    {
+     "n": 53,
+     "text": "Marcus Aurelius held that when you weigh up what to pursue, you should choose what is truly best, namely what is right and reasonable, and then hold to it. Popular applause, honour, riches and pleasures should not be allowed to pull you off course."
+    },
+    {
+     "n": 54,
+     "text": "Marcus Aurelius taught that you should never count as worthwhile anything that forces you to break your word, lose your decency, or hide what you are doing. A mind kept clear and disciplined has nothing hidden or festering in it."
+    },
+    {
+     "n": 55,
+     "text": "Marcus Aurelius reminded himself that only the present moment is truly ours, and that even a lasting reputation is brief and soon forgotten. This is a good cure for chasing fame or worrying about the future."
+    },
+    {
+     "n": 56,
+     "text": "Marcus Aurelius advised breaking any object that confronts you into its plain parts and calling each by its true name. Seeing a thing bare and naked, and asking what it is really for, builds steadiness and clear judgement."
+    },
+    {
+     "n": 57,
+     "text": "Marcus Aurelius held that when someone wrongs you, you can remember they act from ignorance of what is truly good, and so treat them kindly and justly anyway."
+    },
+    {
+     "n": 58,
+     "text": "Marcus Aurelius advised keeping your core principles ready at hand, like a doctor's instruments, so you can apply them to small everyday actions as well as big decisions."
+    },
+    {
+     "n": 59,
+     "text": "Marcus Aurelius held that the mark of a good person is to accept what happens to them calmly, keep their inner judgment clear, and never speak falsely or act unjustly."
+    },
+    {
+     "n": 60,
+     "text": "Marcus Aurelius observed that a well-ordered mind turns setbacks into new material to work with, the way a growing fire feeds on what gets in its way. He also urged doing every task with care and by the best rules of the craft, never rashly."
+    },
+    {
+     "n": 61,
+     "text": "Marcus Aurelius held that you can always step back into your own mind for quiet, so a calm inner place is always within reach, even when you cannot leave your work."
+    },
+    {
+     "n": 62,
+     "text": "Marcus Aurelius held that most of our distress comes from how we judge things rather than from the things themselves, and that the praise and blame of others is fleeting and narrow."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg148",
+   "state": "reading",
+   "title": "The Autobiography of Benjamin Franklin",
+   "author": "Benjamin Franklin",
+   "subject": "habits",
+   "lessons": 94,
+   "studied": 108,
+   "passages": 283,
+   "source_url": "https://www.gutenberg.org/ebooks/148",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1790, editor died 1926. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Franklin rose from a poorly schooled runaway apprentice to a respected printer by steadily building his own trade, using his newspaper and almanac to reach ordinary readers."
+    },
+    {
+     "n": 3,
+     "text": "Franklin pursued science and public work in the spare time left over from earning a living, and he sold his business once he had enough to free himself for study."
+    },
+    {
+     "n": 4,
+     "text": "Franklin wrote his life story for his son so that his descendants could copy the practical habits that had lifted him out of poverty. He believed a record of what worked was worth passing on."
+    },
+    {
+     "n": 5,
+     "text": "Franklin says that if he could live his life again he would still accept, and that writing down one's past is the next best thing. Looking back carefully is a way to learn from experience."
+    },
+    {
+     "n": 5,
+     "text": "Franklin admits his vanity and argues it can do good for the person and those around them. Owning up to your own motives honestly is better than pretending to have none."
+    },
+    {
+     "n": 6,
+     "text": "Franklin credits his past success to providence, while admitting he cannot know the future. Staying humble about what you cannot control is a sound way to approach both good and bad fortune."
+    },
+    {
+     "n": 8,
+     "text": "Franklin's family history shows that a person's life can be shaped by encouragement, such as a patron who backed a bright young man's learning. Support for a capable person can change the course of a whole family."
+    },
+    {
+     "n": 9,
+     "text": "Benjamin Franklin described an uncle who kept a large private collection of pamphlets and notes on public affairs, and who was thoughtful and steady in his interests. Keeping careful records and a habit of study can outlast any single job or station in life."
+    },
+    {
+     "n": 11,
+     "text": "Benjamin Franklin noted that his father's friend Peter Folger wrote openly under his own name, favouring liberty of conscience, so that his criticism would be known to come from good will. Speaking up honestly and owning your words is a principle worth keeping."
+    },
+    {
+     "n": 14,
+     "text": "Benjamin Franklin learnt that nothing is truly useful if it is not honest, after his boyhood wharf built from stolen stones taught him the lesson."
+    },
+    {
+     "n": 15,
+     "text": "Benjamin Franklin admired his father's sound understanding and solid judgment in practical matters, the kind of prudent sense that made neighbours seek his advice and settle disputes."
+    },
+    {
+     "n": 16,
+     "text": "Benjamin Franklin's father steered dinner talk toward sensible and useful subjects, so the children learnt to value what was good, just and prudent over fuss about food and comfort."
+    },
+    {
+     "n": 17,
+     "text": "Benjamin Franklin noted that his parents, with no estate and no steady income, raised a large family comfortably through constant labor and industry. Diligence in one's calling, and not distrusting that things will work out, are his lessons."
+    },
+    {
+     "n": 18,
+     "text": "Benjamin Franklin's father took him to watch joiners, bricklayers and other craftsmen so he could see where his interest lay. Watching good workers closely before choosing a trade is a sensible way to find the work you will actually stick at."
+    },
+    {
+     "n": 19,
+     "text": "Benjamin Franklin spent his small earnings on books and sold cheap ones to buy better ones, so his reading grew as his means did. Reading widely, even in small amounts, can shape how a person thinks for the rest of their life."
+    },
+    {
+     "n": 20,
+     "text": "Benjamin Franklin borrowed books from booksellers' apprentices, returned them promptly and in clean condition, and read through much of the night. Keeping your word and treating lent items with care earns the trust that opens doors to more."
+    },
+    {
+     "n": 22,
+     "text": "Franklin held that a habit of contradicting others for sport sours conversation and can create enmities where you later need friendship. Winning every argument is rarely worth the cost to relationships."
+    },
+    {
+     "n": 23,
+     "text": "Franklin learned that his father's quiet feedback on his writing, about elegance, method and clarity, mattered more than simply winning the point. Ask for honest critique of how you say things, not only whether you were right."
+    },
+    {
+     "n": 24,
+     "text": "Franklin improved his writing by reading a good essay, noting its main ideas, and rebuilding it from those notes before comparing it with the original. Deliberate practice with a model beats reading alone."
+    },
+    {
+     "n": 24,
+     "text": "He also rewrote his notes after a few weeks had passed so he could practise arranging thoughts in a clear order. Clear structure is a skill you can train on purpose."
+    },
+    {
+     "n": 25,
+     "text": "Benjamin Franklin found that a light, simple diet kept his mind clear and quick, so he had more energy left for study. He also saved money from his board to buy books."
+    },
+    {
+     "n": 25,
+     "text": "Benjamin Franklin tackled a subject he had failed at as a schoolboy by working through a textbook alone and at his own pace. Being ashamed of a gap in his knowledge was enough to make him act."
+    },
+    {
+     "n": 26,
+     "text": "Benjamin Franklin held that a modest, tentative way of speaking, such as saying 'I conceive it to be so', persuades better than a positive, assuming manner that provokes opposition. He learned this after giving up winning arguments by trapping people with questions."
+    },
+    {
+     "n": 28,
+     "text": "Benjamin Franklin submitted an anonymous piece to his brother's paper so that his work would be judged on its merits rather than on his name. The praise he heard from its readers gave him confidence to keep writing."
+    },
+    {
+     "n": 29,
+     "text": "Franklin noticed that a brother who was also his boss expected more from him than a stranger would, and he felt that a family relationship should bring more patience, not less. Clear expectations between people who work together matter."
+    },
+    {
+     "n": 31,
+     "text": "Franklin admitted that taking advantage of a loophole to win an argument was unfair, and he counted it among the first mistakes of his life. Being honest about our own wrongs, even when the other side was also at fault, is worth doing."
+    },
+    {
+     "n": 32,
+     "text": "Franklin found that his older brother had quietly blocked him from work with every other printer in town. A person who leaves a business or a job can be hurt by a former employer who turns others against them."
+    },
+    {
+     "n": 34,
+     "text": "Benjamin Franklin noticed that Bunyan's Pilgrim's Progress had spread across most of Europe's languages, and that Bunyan was among the first to mix narration with dialogue so the reader feels present in the scene."
+    },
+    {
+     "n": 36,
+     "text": "Franklin's story of Dr. Brown shows that a chance conversation with a stranger can become a lasting friendship. Being willing to talk with people you meet on the road often pays off."
+    },
+    {
+     "n": 38,
+     "text": "Benjamin Franklin observed that a man is sometimes more generous when he has little money than when he has plenty, perhaps from fear of being thought poor. Small gifts given freely can matter more than large ones."
+    },
+    {
+     "n": 39,
+     "text": "Franklin noticed that he had not known the local names and prices of bread, so he paid for something he did not expect. Learn the local terms and prices before you buy or sell in a new place."
+    },
+    {
+     "n": 40,
+     "text": "Franklin found that a plain, honest stranger could still be helped by a kind word from a stranger. Being open and courteous with people you do not know can open doors that money alone cannot."
+    },
+    {
+     "n": 42,
+     "text": "Franklin saw that Bradford, by asking artful questions and raising little doubts, drew Keimer into explaining all his plans. Listening quietly while others talk can reveal far more than talking yourself."
+    },
+    {
+     "n": 43,
+     "text": "Franklin fixed the broken press and got the shop ready before doing the job asked of him. Taking care of the basic tools of your trade first makes everything you do afterwards possible."
+    },
+    {
+     "n": 44,
+     "text": "Franklin judged the two printers by their real skills, noting that one was untrained and the other knew composing but not presswork. Be honest about where your own skills stop, and find people who fill those gaps."
+    },
+    {
+     "n": 45,
+     "text": "Franklin kept his own counsel while building a new life, sharing his whereabouts only with a trusted friend. Discretion about your plans can protect them until they are ready."
+    },
+    {
+     "n": 46,
+     "text": "Franklin's reasoning, as he tells it, shows that a clear, fair letter can change how others see you. Explaining your reasons calmly and fully can win over someone who first thought you were mistaken."
+    },
+    {
+     "n": 47,
+     "text": "Franklin's account suggests that people with influence often open doors for capable young workers who show promise. Being willing to be seen and to accept an invitation can turn a quiet skill into real opportunity."
+    },
+    {
+     "n": 48,
+     "text": "Franklin met a rough return with composure, arriving well presented and with savings in hand, which spoke for him more than words could. Steady progress often answers doubters better than argument."
+    },
+    {
+     "n": 49,
+     "text": "Franklin's father judged that a youth should not be set up in business before he is mature enough to manage it, since a business needs careful handling and preparation. Showing off one's possessions to others can also build resentment, as his brother's anger shows."
+    },
+    {
+     "n": 50,
+     "text": "Franklin's father advised that steady industry and prudent saving, rather than borrowing or help from others, would build a young man's start in business. He also urged him to earn general esteem and avoid mocking or slandering others."
+    },
+    {
+     "n": 52,
+     "text": "Franklin took the advice of an older, experienced stranger who warned him about company that seemed pleasant but was dangerous. Heeding a sensible warning about people, even when they seem friendly, saved him from theft and worse."
+    },
+    {
+     "n": 53,
+     "text": "Benjamin Franklin saw that a friend who was gifted and promising could still be undone by one habit, drink, which turned his talents to waste. Watch for the slow decline in people you care about."
+    },
+    {
+     "n": 54,
+     "text": "Franklin learned that lending money to a friend who keeps promising to repay, while having no income to show for it, can leave you exposed. Be careful about how much you let someone borrow from you when their prospects are unclear."
+    },
+    {
+     "n": 55,
+     "text": "Franklin held that anger and a sour mood cloud judgment, so a small quarrel can grow into a bigger one than it needs to be. Notice when your own feelings are steering your decisions."
+    },
+    {
+     "n": 56,
+     "text": "Franklin found that an offer of help can look generous and sincere while hiding a habit of making promises that are never kept. Check a person's reputation with others before you rely on their word, especially when you are depending on it."
+    },
+    {
+     "n": 57,
+     "text": "Benjamin Franklin saw that going to the source in person, choosing your own stock and meeting the people in your trade, can pay off in useful contacts and better goods. Being on the spot often beats ordering from afar."
+    },
+    {
+     "n": 58,
+     "text": "Benjamin Franklin noticed how easily a reasonable mind can find a reason for whatever it already wants to do. Be wary of building arguments to suit your appetite."
+    },
+    {
+     "n": 59,
+     "text": "Benjamin Franklin used a Socratic method of patient questions that led an opponent step by step into contradictions. It works best when you ask, not when you lecture, and it wins people over."
+    },
+    {
+     "n": 60,
+     "text": "Benjamin Franklin observed that a sudden change of habit often sits easier than a slow, gradual one. He also warned that a plan you have lost interest in is easily abandoned when temptation arrives."
+    },
+    {
+     "n": 62,
+     "text": "Benjamin Franklin noticed that Osborne's advice to Ralph was sound: steady diligence and punctuality can earn a start in business, even without capital. Ralph, by contrast, was chasing a dream that was unlikely to pay."
+    },
+    {
+     "n": 63,
+     "text": "Franklin passed off Ralph's poem as his own and let his friends judge it on its merits. Praise for work that is unsigned or unclaimed shows what people really think of it, and it humbled Osborne's habit of criticising too freely."
+    },
+    {
+     "n": 64,
+     "text": "Franklin's tale of the governor shows how a promise of help that keeps being postponed can leave a person stranded. Ask for a firm date and written commitments before you plan around someone else's word."
+    },
+    {
+     "n": 67,
+     "text": "Benjamin Franklin learned to check claims before relying on them: he compared the letters he was given with what he knew of the sender. Trust should follow evidence about a person's character, not just a polite manner."
+    },
+    {
+     "n": 67,
+     "text": "Benjamin Franklin took his setback to a trusted, experienced friend, who advised him to improve his skills in his own trade while in London. A setback can become a chance to build the skills you will need later."
+    },
+    {
+     "n": 68,
+     "text": "Benjamin Franklin observed that a man who wishes to please everybody, and has little to give, ends up giving only expectations. Promises that cannot be kept do lasting damage to trust."
+    },
+    {
+     "n": 68,
+     "text": "Benjamin Franklin passed on information to Hamilton, who was in a position to use it, even though it was not in his own interest to make a fuss. Telling a person what affects them is a fair and useful thing to do."
+    },
+    {
+     "n": 69,
+     "text": "Franklin saw that his friend Ralph kept chasing jobs that were beneath his pride, and so kept failing. Being willing to take honest, modest work while looking for something better is a sound way to get by."
+    },
+    {
+     "n": 70,
+     "text": "Franklin called his own choices like neglecting a far-off obligation and printing a provocative pamphlet his 'errata', and wished he could correct them. Owning past mistakes plainly, without excuse, is a useful habit."
+    },
+    {
+     "n": 71,
+     "text": "Franklin got ahead by making himself useful to people and by showing a curious, willing mind, so new acquaintances opened doors. Good work and an open manner tend to bring useful contacts."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg1227",
+   "state": "reading",
+   "title": "The Expression of the Emotions in Man and Animals",
+   "author": "Charles Darwin",
+   "subject": "emotions",
+   "lessons": 98,
+   "studied": 108,
+   "passages": 469,
+   "source_url": "https://www.gutenberg.org/ebooks/1227",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1882. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 2,
+     "text": "Charles Darwin held that many expressions come from habits that once served a purpose, such as the three chief principles he sets out in the first chapter. Expressions can outlast the reason they first existed."
+    },
+    {
+     "n": 2,
+     "text": "Charles Darwin's principle of antithesis suggests that opposite moods often show up as opposite postures. A relaxed, friendly stance is often the reverse of a hostile one, and people read these signals without being taught."
+    },
+    {
+     "n": 3,
+     "text": "Charles Darwin noticed that the body reacts to strong feelings without waiting for the will. Blushing, trembling and changes in the skin show what someone feels even when they try to hide it."
+    },
+    {
+     "n": 4,
+     "text": "Charles Darwin observed that people of very different backgrounds show many of the same expressions. Recognising a face or gesture is largely instinctive, so most of us can read a stranger's mood without a shared language."
+    },
+    {
+     "n": 6,
+     "text": "Charles Darwin noted that Sir Charles Bell's real service was showing how the movements of expression are tied to breathing. He also showed that the muscles round the eyes tighten during hard breathing out, to protect the eyes."
+    },
+    {
+     "n": 7,
+     "text": "Charles Darwin held that a list of how a face looks is not enough; a good account must also explain why each muscle moves as it does under each feeling. Flowery descriptions that never explain the cause add little understanding."
+    },
+    {
+     "n": 8,
+     "text": "Charles Darwin warned that confident explanations which are really just fancy can be worse than none. He quoted Le Brun's theory of fright as an example of nonsense dressed up as science, so claims should be tested, not admired."
+    },
+    {
+     "n": 9,
+     "text": "Darwin praised Duchenne for studying each facial muscle closely and for showing which muscles are hardest to control by the will. He also noted that a careful researcher can be right even when some of his claims are overstated."
+    },
+    {
+     "n": 11,
+     "text": "Darwin held that many gestures, like a billiards player nudging a wayward ball, come from long habit: we repeat the body movements that once worked, even when they no longer do anything. Habit can explain behaviour that looks purposeless."
+    },
+    {
+     "n": 12,
+     "text": "Darwin suggested that a dog's pricked ears and fixed gaze are linked because the two actions were repeated together for many generations. A simpler habit-based explanation is often better than a mystical idea of sympathy between body parts."
+    },
+    {
+     "n": 14,
+     "text": "Charles Darwin noted that Bain saw expression as part of feeling itself, a general spreading of excitement through the body. Darwin judged this too broad to explain any particular expression."
+    },
+    {
+     "n": 15,
+     "text": "Charles Darwin held that many expressions grow out of the actions that feeling would naturally bring on, such as the cries, tremblings and tensed muscles of fear. Spencer's law is that strong feeling spills over into bodily action along the most habitual nerve routes."
+    },
+    {
+     "n": 16,
+     "text": "Charles Darwin argued that a feature shared with other species, such as the facial muscles we have in common with apes, is unlikely to exist only for display. Before assuming a single purpose, look for the other jobs a thing might do."
+    },
+    {
+     "n": 17,
+     "text": "Darwin argued that animals, like the dog greeting its master, show real emotional expression, so claiming it is only instinct or will is too narrow a view. Careful observation should replace a quick assumption that the matter is settled."
+    },
+    {
+     "n": 19,
+     "text": "Darwin held that if each species is seen as a separate creation, the question of why we show emotions is closed off and nothing is really explained. Viewing all creatures as gradually changing from common ancestors opens up useful investigation."
+    },
+    {
+     "n": 20,
+     "text": "Darwin warned that sympathy during a strong emotion and our own expectations both make careful observation harder, since we easily see what we expect to see. He recommended watching infants first, because they show feelings more plainly than adults."
+    },
+    {
+     "n": 21,
+     "text": "Darwin held that the best way to learn about extreme emotion was to study people who give their feelings uncontrolled vent, and he gained much from an expert who shared notes freely. Learning from a generous specialist can speed up your own understanding."
+    },
+    {
+     "n": 22,
+     "text": "Darwin found that viewers who saw photographs without any explanation disagreed widely about what the faces showed. He also saw that once he read the intended meaning, he judged the pictures far more truthful, showing how easily our imagination misleads us."
+    },
+    {
+     "n": 23,
+     "text": "Darwin reasoned that if the same expression appears across very different peoples, it is probably natural rather than learned, since learned gestures would vary like languages do. Look for patterns that hold across different groups before trusting a conclusion."
+    },
+    {
+     "n": 24,
+     "text": "Darwin asked his questions in a way that favoured actual observation over memory, and he admitted later that his queries could have been much better written. When gathering evidence, ask for what people have directly seen, and be willing to say your method could be improved."
+    },
+    {
+     "n": 26,
+     "text": "Charles Darwin held that answers resting on a written record of the circumstances and the expression itself deserve more trust than bare yes or no replies. Vague general remarks count for less."
+    },
+    {
+     "n": 26,
+     "text": "Charles Darwin held that watching animals is a safer guide than watching people, since animals are less shaped by imagination or convention. Their expressions give a firmer basis for working out where behaviours come from."
+    },
+    {
+     "n": 27,
+     "text": "Charles Darwin held that observing expressions is hard, because fleeting changes, distraction, imagination and long familiarity all bias what we think we see. He stressed checking what we believe against careful evidence."
+    },
+    {
+     "n": 28,
+     "text": "Charles Darwin held that a theory is best tested by checking whether the same principle also explains related cases, including animals as well as people. A good idea should hold up across the wider evidence."
+    },
+    {
+     "n": 29,
+     "text": "Charles Darwin held that a question should be approached with a fresh view once a working belief forms, so he reframed each expression as something needing its own rational explanation rather than accepting a fixed answer."
+    },
+    {
+     "n": 29,
+     "text": "Darwin's approach was to test an idea by gathering many careful observations from people across different places, not by relying on a single authority's account."
+    },
+    {
+     "n": 31,
+     "text": "Darwin noted that people often hide their feelings around strangers, so observers must be patient and trusted before they can read what is really going on."
+    },
+    {
+     "n": 31,
+     "text": "Darwin valued a habit of careful, detailed observation, showing that a skill built in one field, such as botany, can sharpen judgement in another."
+    },
+    {
+     "n": 33,
+     "text": "Charles Darwin noted that the facial muscles vary a great deal from one person to another, in both their structure and what they can do. So any single textbook picture only describes the typical case."
+    },
+    {
+     "n": 36,
+     "text": "Charles Darwin held that useful actions tied to a state of mind become habits, so they keep happening under that state even when they no longer serve any purpose. Muscles least under the will are the most likely to slip out."
+    },
+    {
+     "n": 36,
+     "text": "Charles Darwin held that when a directly opposite state of mind arises, we tend to make movements that are the opposite of the earlier ones, even though those movements do no good."
+    },
+    {
+     "n": 38,
+     "text": "Darwin held that habit makes complex movements easy over time, and that repeated use can even be passed on to offspring, as with trained gaits in horses and pointing in young dogs."
+    },
+    {
+     "n": 39,
+     "text": "Darwin noted that an inherited tendency often needs some practice in the individual before it works well, since young dogs may point at the wrong scent. Good results depend on both inheritance and experience."
+    },
+    {
+     "n": 40,
+     "text": "Darwin quoted Bain's principle that actions and feelings occurring together tend to become linked, so that one later brings the other to mind. Many everyday habits, like putting on gloves without thinking, come from this."
+    },
+    {
+     "n": 41,
+     "text": "Darwin observed that people often scratch their heads, rub their eyes or cough when perplexed or embarrassed, as if relieving a small discomfort. Many of our habits are small ways of responding to our own inner states."
+    },
+    {
+     "n": 42,
+     "text": "Darwin noted that we often shut our eyes or turn away from things we reject, and raise our eyebrows when trying to remember something, even when there is nothing to see. Our bodies tend to act out our thinking in ways we rarely notice."
+    },
+    {
+     "n": 43,
+     "text": "Darwin observed that we often copy or mirror the movements of people around us, such as clearing our throats when a singer is hoarse. Much of what we do in company is driven by imitation and sympathy rather than deliberate choice."
+    },
+    {
+     "n": 44,
+     "text": "Darwin explained that many actions, such as coughing and sneezing, happen without thought, and even a decapitated frog can wipe off acid with a leg. Some behaviour that looks intelligent runs on automatic nerve responses."
+    },
+    {
+     "n": 45,
+     "text": "Darwin observed that acts we perform by will are often weaker and slower than the same acts done by reflex, because the conscious mind takes time and effort to act. Deliberate effort can get in the way of what the body does best."
+    },
+    {
+     "n": 46,
+     "text": "Darwin's wager showed that a strong wish to succeed can stop a natural reflex from working. Trying too hard at a simple, automatic act can make it harder to do well."
+    },
+    {
+     "n": 47,
+     "text": "Darwin found that resolving calmly not to flinch failed the moment a threat seemed real, because reason alone cannot override what the imagination believes is danger. Fear is often stronger than logic, so plan for that rather than trusting willpower alone."
+    },
+    {
+     "n": 49,
+     "text": "Darwin observed that his infants started at sudden sounds but did not blink, and he reasoned that a reflex learned by experience over many generations could be passed on before it is needed."
+    },
+    {
+     "n": 50,
+     "text": "Darwin suggested that some actions first done on purpose, such as expelling an irritant by sneezing or coughing, can become automatic reflexes over long habit and inheritance."
+    },
+    {
+     "n": 51,
+     "text": "Darwin argued that some reflexes, such as the iris narrowing in bright light, cannot have been learned by the will and fixed by habit, so they need a different explanation."
+    },
+    {
+     "n": 52,
+     "text": "Darwin held that reflexes, like other bodily traits, vary slightly, and useful variations tend to be kept and passed on, so a reflex built for one purpose can later be adapted to another."
+    },
+    {
+     "n": 53,
+     "text": "Charles Darwin held that many habits are inherited movements that once served a purpose, such as a dog turning round to flatten grass. Such habits are often repeated long after they have stopped being useful."
+    },
+    {
+     "n": 54,
+     "text": "Darwin observed that a habit can be triggered by circumstances where it no longer fits, such as a dog crouching when it sees a distant stranger on an open road. Actions can outlast the situations that first gave them a point."
+    },
+    {
+     "n": 55,
+     "text": "Darwin noticed that the dog's habit of scratching backwards after going to the toilet is a leftover from an ancestor that covered its waste, even though dogs no longer do this. Some habits are kept for a very long time without any clear use."
+    },
+    {
+     "n": 56,
+     "text": "Darwin observed that a terrier will toss, roll on and worry a biscuit as if it were prey, which suggests that a habit can supply a feeling of value that the situation lacks. Habits can run on their own logic rather than on what the mind knows to be true."
+    },
+    {
+     "n": 57,
+     "text": "Darwin noticed that a horse rubbed on the neck will move its jaws as if nibbling another horse, since it could never reach its own neck. Expressions can be stirred by a stimulus that the animal cannot actually act on."
+    },
+    {
+     "n": 58,
+     "text": "Darwin observed that a habit can be set off by the wrong cue, as when a kitten scraped ashes over spilt water, or shook its feet at a sound of pouring. Routines fire on signals that look like the real trigger, not only on the real thing."
+    },
+    {
+     "n": 59,
+     "text": "Darwin saw that a movement which began as a feeding action, kneading the mother for milk, can later become a sign of comfort, as with cats pounding a soft shawl while purring. Over time, an old action can turn into a way of showing a feeling."
+    },
+    {
+     "n": 60,
+     "text": "Darwin noted that some useful actions, such as a chick pecking at food, can be triggered by a simple cue like a tapping sound, not by sight or smell. Many skilled habits run on a single signal, so the cue matters as much as the skill."
+    },
+    {
+     "n": 61,
+     "text": "Charles Darwin held that a movement which once served a feeling becomes habit, and can still appear faintly when that feeling returns, even when it does no good. Under strain, the will gives way first on the muscles it controls most."
+    },
+    {
+     "n": 62,
+     "text": "Charles Darwin held that the principle of antithesis means a strongly opposite state of mind tends to produce movements opposite to those of the first state, even when those movements serve no purpose."
+    },
+    {
+     "n": 63,
+     "text": "Charles Darwin observed that a dog's friendly greeting is the reverse of its hostile stance: a relaxed body, lowered tail and smooth hair, where the threatening dog stands stiff and upright. Such signs are easier to read once you know the opposing state."
+    },
+    {
+     "n": 64,
+     "text": "Charles Darwin noted that a cat's anger and its readiness to fight show in a crouch, lashing tail and flattened ears, and that a leaping predator shows much the same signs. Reading body language means comparing a creature's posture against its likely intention."
+    },
+    {
+     "n": 66,
+     "text": "Charles Darwin noticed that a dog's gloomy look at being turned away from a walk was the opposite of its joyful bearing, showing how a small disappointment can change a whole posture at once."
+    },
+    {
+     "n": 67,
+     "text": "Charles Darwin observed that social animals depend on being understood by one another, so gestures and expressions matter greatly to their survival and to getting along together."
+    },
+    {
+     "n": 68,
+     "text": "Charles Darwin held that a gesture can be inherited even if it began as a deliberate act, since habits repeated over many generations may eventually become innate."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg1228",
+   "state": "reading",
+   "title": "On the Origin of Species",
+   "author": "Charles Darwin",
+   "subject": "big ideas",
+   "lessons": 95,
+   "studied": 108,
+   "passages": 631,
+   "source_url": "https://www.gutenberg.org/ebooks/1228",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1882. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 1,
+     "text": "Charles Darwin's opening quotes hold that events come about through general laws rather than separate interventions of divine power, and that a person should keep studying both the book of God's word and the book of God's works. Keep learning widely and never stop."
+    },
+    {
+     "n": 3,
+     "text": "Darwin observed that every species can increase far faster than its food and space allow, so competition is universal. The fiercest struggle is usually between individuals and varieties of the same species, not between different kinds of creatures."
+    },
+    {
+     "n": 4,
+     "text": "Darwin noted that traits that are used grow stronger and those left unused tend to fade, and that changes in one part of a body often bring changes in another. Competition among small differences is what shapes which forms survive."
+    },
+    {
+     "n": 7,
+     "text": "Darwin spent years gathering and reflecting on facts before he trusted his conclusions, and he said so openly to show he had not been hasty. Careful, patient evidence-gathering comes before a firm decision."
+    },
+    {
+     "n": 8,
+     "text": "Darwin held back his work for years, but he chose to publish a shorter version once another researcher had reached much the same ideas. Sharing your work in time matters more than waiting for it to be perfect."
+    },
+    {
+     "n": 10,
+     "text": "Darwin held that a conclusion about descent is unsatisfying until you can show how the modifications arose. Explaining fine adaptation by a vague outside cause is not enough."
+    },
+    {
+     "n": 11,
+     "text": "Darwin held that the best way to understand how living things change is to study domesticated animals and cultivated plants, which show variation openly. He thought this was neglected but valuable."
+    },
+    {
+     "n": 12,
+     "text": "Darwin held that more individuals are born than can survive, so any slight variation that helps an individual has a better chance and is passed on. Small advantages accumulate over generations."
+    },
+    {
+     "n": 14,
+     "text": "Darwin held that our knowledge of how living things depend on one another is so limited that much about the origin of species will stay unexplained for a long time. He still saw that these relations shape the future of every living thing."
+    },
+    {
+     "n": 14,
+     "text": "Darwin argued that species are not fixed but descend from earlier, often extinct, species, much as varieties descend from their parent species. He saw natural selection as the main, though not the only, means of change."
+    },
+    {
+     "n": 16,
+     "text": "Darwin observed that cultivated plants and animals vary more among themselves than wild species do, likely because they are raised under less uniform conditions. A change in conditions has to last several generations before it produces noticeable variation."
+    },
+    {
+     "n": 17,
+     "text": "Darwin suspected that most variation starts in the reproductive elements before conception, since confinement and cultivation disturb breeding far more than other bodily functions. Changes in conditions can quietly stop an organism from reproducing."
+    },
+    {
+     "n": 18,
+     "text": "Darwin noted that 'sporting' buds, which suddenly differ from the rest of a plant, are rare in nature but common under cultivation. He took this as support for the idea that variation comes from the parent's treatment before reproduction."
+    },
+    {
+     "n": 19,
+     "text": "Darwin observed that seedlings and young from the same parents can differ noticeably even under identical conditions. So the direct effect of food, light and climate is usually small compared with the laws of reproduction and inheritance."
+    },
+    {
+     "n": 20,
+     "text": "Darwin held that use and disuse shape a body over generations, so a domestic duck with less flying and more walking ends up with lighter wings and heavier legs. Habit can therefore leave a lasting mark that is passed on."
+    },
+    {
+     "n": 21,
+     "text": "Charles Darwin noted that changing one part of an animal often changes other, distinct parts too, so a breeder who selects for one trait will likely alter others without meaning to."
+    },
+    {
+     "n": 23,
+     "text": "Charles Darwin argued that inheritance should be treated as the normal rule and non-inheritance as the exception, since rare traits that reappear in a family are unlikely to be coincidence."
+    },
+    {
+     "n": 24,
+     "text": "Charles Darwin observed that a trait tends to show up in offspring at the same stage of life it first appeared in the parent, a rule he thought central to understanding embryology."
+    },
+    {
+     "n": 25,
+     "text": "Darwin argued that the claim that domestic varieties always revert to wild ancestors is unproven. Reversion is possible, but the outcome depends on changed conditions, and natural selection decides which new traits survive."
+    },
+    {
+     "n": 26,
+     "text": "Darwin held that domestic races of one species differ from each other much as closely related species do in nature, only usually to a lesser degree. Experts often disagree whether a given form is a variety or a distinct species."
+    },
+    {
+     "n": 27,
+     "text": "Darwin noted that it is hard to measure how different domestic races are when we do not know whether they came from one parent species or several. Settling that question would bear on whether closely allied wild species are truly fixed."
+    },
+    {
+     "n": 28,
+     "text": "Darwin doubted the idea that people chose animals and plants for domestication because they were unusually variable or hardy. Early humans could not have known such traits in advance, and any species given time under breeding would vary much as domesticated ones have."
+    },
+    {
+     "n": 29,
+     "text": "Darwin admitted that the origin of most ancient domestic animals and plants cannot be settled, since old records show diversity that may have arisen long before those records. Ancient evidence can only show when a breed was already known, not how it began."
+    },
+    {
+     "n": 31,
+     "text": "Darwin warned that it is absurd to assume a separate wild ancestor for every slight, true-breeding variety. Inherited variation within a species can explain much of what looks like many separate origins."
+    },
+    {
+     "n": 32,
+     "text": "Darwin held that crossing two very different breeds rarely gives a stable new one, since the mongrels of later generations differ widely. Producing a lasting new form takes careful, long-continued selection of the best individuals."
+    },
+    {
+     "n": 33,
+     "text": "Charles Darwin held that choosing one special group to study closely, such as domestic pigeons, is the best way to learn general truths. He kept every breed he could obtain and talked with expert fanciers."
+    },
+    {
+     "n": 34,
+     "text": "Charles Darwin noticed that many separate features of a body, from bones to feathers to eggs, can each vary independently. Careful study means looking at all of these traits, not just the most obvious one."
+    },
+    {
+     "n": 36,
+     "text": "Charles Darwin reasoned by testing each rival explanation against the evidence. He asked whether the supposed original stocks could still exist unnoticed, or could have vanished, and found the second story hard to believe."
+    },
+    {
+     "n": 37,
+     "text": "Darwin held that when many unlikely coincidences must all be true for a claim to work, the claim becomes improbable in the highest degree. He weighed how many strange chances a theory needed, not just whether it could be true."
+    },
+    {
+     "n": 38,
+     "text": "Darwin held that when a trait keeps reappearing after crossbreeding, the simplest explanation is that the birds share a common ancestor, since the trait is hidden in their family history. Competing explanations often need several improbable assumptions to hold at once."
+    },
+    {
+     "n": 39,
+     "text": "Darwin held that when several separate pieces of evidence each point the same way, taken together they can justify a conclusion that no single piece could. He also warned against stretching a hypothesis, such as easy fertility between distinct kinds, without any direct test."
+    },
+    {
+     "n": 40,
+     "text": "Darwin held that a claim gains strength when it is backed by many independent lines of evidence, such as a smooth series of forms, traits that vary widely within a group, and long human records. He treated careful watching and patient breeding over time as a real source of knowledge."
+    },
+    {
+     "n": 41,
+     "text": "Darwin noticed that breeders are firmly sure their breeds came from separate species, yet they accept slight differences as they win prizes by them. He urged caution before dismissing an idea just because its steps are too small to see."
+    },
+    {
+     "n": 42,
+     "text": "Darwin held that the great variety of useful domestic breeds comes from accumulative selection: nature supplies small variations, and people add them up in the directions they find useful, one generation at a time."
+    },
+    {
+     "n": 43,
+     "text": "Darwin pointed out that skilled breeders treat a living form as something they can shape steadily over the years. Patient, repeated selection, judged again and again, can change a flock far more than most people expect."
+    },
+    {
+     "n": 44,
+     "text": "Darwin observed that the real gains came from small differences, too fine for an untrained eye, piled up over many generations. Mastery needs a sharp eye, years of study and sustained perseverance, and most people will not reach it."
+    },
+    {
+     "n": 46,
+     "text": "Darwin noted that different varieties of one plant species often differ sharply in one valued part, such as leaves, flowers or fruit, while looking nearly alike in others. Choosing one trait over generations can reshape that part alone."
+    },
+    {
+     "n": 47,
+     "text": "Darwin argued that the principle of selection was not a modern discovery, since ancient writers and early breeders already valued it. Careful attention to what gets passed on is an old and common practice."
+    },
+    {
+     "n": 48,
+     "text": "Darwin held that unconscious selection works quietly: each person who keeps and breeds from their best individuals slowly changes a line over time, even without meaning to. Small steady choices add up to large change."
+    },
+    {
+     "n": 49,
+     "text": "Charles Darwin observed that small, steady choices over generations can make animals and plants very different from their origins, and that breeders following the same method can end up with two quite different strains."
+    },
+    {
+     "n": 50,
+     "text": "Charles Darwin held that people often keep the most useful animal alive in hard times, so the best individuals leave more offspring and a quiet selection happens even without anyone intending it."
+    },
+    {
+     "n": 51,
+     "text": "Charles Darwin argued that gardeners improved fruit and flowers by always growing and saving seed from the best plant they had, so that progress came slowly and almost unconsciously."
+    },
+    {
+     "n": 52,
+     "text": "Charles Darwin noted that improvement built up over centuries is why the wild ancestors of many garden plants are now hard to recognise at all."
+    },
+    {
+     "n": 53,
+     "text": "Charles Darwin held that breeders can only select from variations nature first provides, and that the breeder rarely sets out to build a final form, since the first small deviation is what catches the eye."
+    },
+    {
+     "n": 54,
+     "text": "Charles Darwin observed that people notice very small differences and value any novelty they own, so a slight change can matter far more to a keen eye than it would to an outsider."
+    },
+    {
+     "n": 55,
+     "text": "Charles Darwin noted that improvements usually build up slowly and unrecorded, like a dialect, so the true history of a gradual change is often lost even when its results are plain to see."
+    },
+    {
+     "n": 56,
+     "text": "Charles Darwin argued that improvement comes from keeping many individuals and paying close attention to small differences, since useful variations appear only now and then and are easily neglected."
+    },
+    {
+     "n": 57,
+     "text": "Darwin noted that breeders succeed more easily when they can keep different lines apart and mate animals reliably, since pigeons pair for life and can be bred quickly in numbers. Breeds only form where someone actually chooses which animals to keep and breed."
+    },
+    {
+     "n": 58,
+     "text": "Darwin held that the accumulated effect of selection, whether done deliberately and quickly or unconsciously and slowly, is the strongest force shaping change. Many other causes add to this, but they are harder to predict and matter less."
+    },
+    {
+     "n": 60,
+     "text": "Darwin admitted that no one has yet given a definition of a species that satisfies every naturalist, yet people still use the word with a rough shared understanding. Good working terms can stay useful even when their exact edges are disputed."
+    },
+    {
+     "n": 61,
+     "text": "Darwin noted that individual differences within one species are common, and that even important-looking parts vary. He warned that people who assume important features never vary are arguing in a circle."
+    },
+    {
+     "n": 61,
+     "text": "Darwin observed that experts often dislike finding variation in what they consider key traits, so they seldom examine internal organs across many specimens. Careful, patient checking often shows more variety than expected."
+    },
+    {
+     "n": 63,
+     "text": "Darwin observed that when two forms are linked by intermediate examples, scientists usually class one as a variety of the other. He warned that assumptions about missing links open a wide door to doubt and guesswork."
+    },
+    {
+     "n": 64,
+     "text": "Darwin held that when judging whether a form is a species or a variety, the opinion of experienced, sound-judging experts is the best guide. Where they disagree, a majority view is often the practical answer."
+    },
+    {
+     "n": 65,
+     "text": "Darwin noticed that experts often disagree on whether a form is a species or a mere variety, so the line between them is vague and arbitrary. Ask two careful judges and you may get two different answers."
+    },
+    {
+     "n": 66,
+     "text": "Darwin held that arguing over whether a doubtful form is a species or a variety is pointless until the terms are clearly defined. Settle what you mean by the words before you argue about the answer."
+    },
+    {
+     "n": 67,
+     "text": "Darwin weighed a case from many angles, such as appearance, habitat, range and crossing, and found the evidence pointing in different directions. Judge a hard question by gathering several kinds of evidence, not by one striking feature."
+    },
+    {
+     "n": 68,
+     "text": "Darwin observed that the things people care most about get studied most, and so they collect the most disputed labels. Close, patient investigation usually brings careful people to agreement in the end."
+    },
+    {
+     "n": 69,
+     "text": "Darwin observed that a beginner tends to make too many species, because they are impressed by small differences and lack wider knowledge. Only by studying widely does one learn to tell varieties from species, and even then at the cost of admitting more variation."
+    },
+    {
+     "n": 70,
+     "text": "Darwin held that there is no clear dividing line between species, sub-species, varieties and individual differences, which blend into one another in an unbroken series. Each slight difference can be seen as a first step towards a more marked one."
+    }
+   ],
+   "preview": []
+  },
+  {
    "id": "pg5000",
    "state": "reading",
    "title": "The Notebooks of Leonardo da Vinci",
    "author": "Leonardo da Vinci",
    "subject": "art",
-   "lessons": 82,
-   "studied": 100,
+   "lessons": 93,
+   "studied": 112,
    "passages": 912,
    "source_url": "https://www.gutenberg.org/ebooks/5000",
    "last_read_at": "2026-11-10",
@@ -447,6 +2253,478 @@
     {
      "n": 7,
      "text": "The editor gained access to the original manuscripts by asking owners and institutions directly and thanking them for their help. Careful research depends on patient requests and on being open about who helped you."
+    },
+    {
+     "n": 9,
+     "text": "Leonardo's genius is judged to lie in his restless curiosity across many fields, not in a squandering of effort. The editor argues that his studies needed centuries of work just to begin to explain them."
+    },
+    {
+     "n": 9,
+     "text": "Leonardo's principles often agreed more with later science than with his own contemporaries. Good thinking can be ahead of its time and be recognised only when others catch up."
+    },
+    {
+     "n": 10,
+     "text": "Leonardo meant to arrange his scattered notes by subject before publishing them. The notes were a working collection, and the job of sorting them was a discipline in its own right."
+    },
+    {
+     "n": 10,
+     "text": "Leonardo held that a painter needs theoretical knowledge of how the eye works, not just skill with the brush. Understanding the reasons behind what you see makes the craft sounder."
+    },
+    {
+     "n": 13,
+     "text": "Leonardo da Vinci treated careful observation as the basis of skill, testing how distance, light and shade change the way things look before drawing them."
+    },
+    {
+     "n": 15,
+     "text": "Leonardo da Vinci studied nature closely, noting how light, shade and wind change a tree, so that his work rested on watching the real thing."
+    },
+    {
+     "n": 16,
+     "text": "Leonardo da Vinci held that an artist must work with industry and thoroughness, and that a painter should learn anatomy and study widely rather than only one narrow skill."
+    },
+    {
+     "n": 16,
+     "text": "Leonardo da Vinci advised a student to choose his company carefully and to plan his time for study, so that daily habits support the craft."
+    },
+    {
+     "n": 17,
+     "text": "Leonardo da Vinci held that a useful science should always include its application and use, so that the knowledge does not end up useless."
+    },
+    {
+     "n": 18,
+     "text": "Leonardo da Vinci admitted that his notes were a disordered collection, and he meant to sort them later by subject, so a messy first draft is fine if you plan to tidy it."
+    },
+    {
+     "n": 19,
+     "text": "Leonardo da Vinci separated theory from practice when arranging his work, so each proven principle came first and its practical uses followed, keeping the whole coherent."
+    },
+    {
+     "n": 20,
+     "text": "Leonardo da Vinci ordered his teaching from simple cases to complex ones, starting with simple beams before moving to supported and suspended ones."
+    },
+    {
+     "n": 21,
+     "text": "Leonardo da Vinci held that a man of wisdom values the food of the mind above material riches, and that the soul's possessions outrank those of the body."
+    },
+    {
+     "n": 22,
+     "text": "Leonardo da Vinci held that experience, rather than borrowed words, is the true mistress of those who write well, so he would rely on observed evidence over quotation."
+    },
+    {
+     "n": 23,
+     "text": "Leonardo da Vinci held that inventors and interpreters of nature deserve more esteem than those who only repeat the works of others, and that trusting pure experience beats deferring to reputed authority."
+    },
+    {
+     "n": 24,
+     "text": "Leonardo da Vinci held that the certainty of mathematical demonstration lifts the mind, and he planned to set out his ideas in short, ordered steps that move from causes to effects and back again."
+    },
+    {
+     "n": 26,
+     "text": "Leonardo da Vinci held that a picture needs both convincing depth and varied, purposeful action in its figures, so that the people shown do not all look alike."
+    },
+    {
+     "n": 27,
+     "text": "Leonardo da Vinci held that practice must be founded on sound theory, since a painter who works by eye alone without reasons is like a sailor with no rudder or compass."
+    },
+    {
+     "n": 27,
+     "text": "Leonardo da Vinci held that knowing your own mistakes lets you correct them and avoid repeating them, and that sound judgment grows from clear understanding built on tested experience."
+    },
+    {
+     "n": 28,
+     "text": "Leonardo da Vinci held that we should not accept old authorities on matters that can be checked, and should test claims against our own careful observation and experience."
+    },
+    {
+     "n": 29,
+     "text": "Leonardo da Vinci held that painting rests on the attributes of sight, such as light, shade, colour, form, position, distance and motion, and that a painter must master these to imitate nature. Looking at a thing closely and carefully is the basis of good work."
+    },
+    {
+     "n": 30,
+     "text": "Leonardo da Vinci noticed that a flat picture seen with one eye can look like real relief, while seen with both eyes it does not. The lesson is that how you look at something changes what you perceive."
+    },
+    {
+     "n": 32,
+     "text": "Leonardo da Vinci observed that a shadowed place looks darker when you step in from bright light, because the eye adjusts to the light it has just been in. Judge a thing by what you see after your eyes have adjusted, not by the glare you came from."
+    },
+    {
+     "n": 33,
+     "text": "Leonardo da Vinci noticed that the eye takes time to adjust when moving between bright and shaded places, so it cannot see well right away. He learnt this from a painting he had made of an eye."
+    },
+    {
+     "n": 34,
+     "text": "Leonardo da Vinci suggested a simple test: hold a candle near a star and lower it slowly, and the star seems to fade as the light grows. The point is that what we see depends on the light around us as well as the thing itself."
+    },
+    {
+     "n": 36,
+     "text": "Leonardo da Vinci held that perspective is the best guide to painting, and that it makes flat things look raised and raised things look flat. Good work starts with understanding how the eye actually sees."
+    },
+    {
+     "n": 36,
+     "text": "Leonardo da Vinci used the camera obscura to explain how the eye forms images, which gave painters a way to build a true picture of depth from observation rather than guesswork."
+    },
+    {
+     "n": 37,
+     "text": "Leonardo built his account of perspective on the basic terms of geometry: point, line, angle, surface and solid. He insisted that a point is not part of a line, so the simplest parts must be clear before the harder problems can be solved."
+    },
+    {
+     "n": 38,
+     "text": "Leonardo held that a line has no substance and is closer to an imagined idea than a physical thing. Study the outline of every object closely, noting whether its curves are arched convexities or angular concavities."
+    },
+    {
+     "n": 39,
+     "text": "Leonardo advised painters not to surround bodies with hard lines, since outlines blur at a distance and the parts of small objects vanish. Show edges through light and shade rather than drawn borders."
+    },
+    {
+     "n": 40,
+     "text": "Leonardo described perspective as a reasoned way of showing that every object sends its image to the eye through a pyramid of lines converging at one point. Bodies of equal size look smaller as they recede because their pyramids shrink."
+    },
+    {
+     "n": 41,
+     "text": "Leonardo da Vinci held that the eye takes in an object clearly only when its image lies along the central line of sight, so we must turn the eye from letter to letter to read a row of them."
+    },
+    {
+     "n": 42,
+     "text": "Leonardo da Vinci argued that every visible object sends its lines to the eye in a pyramid meeting at one indivisible point, so a tiny object seen from afar keeps its size rather than shrinking into a speck."
+    },
+    {
+     "n": 43,
+     "text": "Leonardo da Vinci observed that the eye is a poor judge of distance between objects of equal size, and that a vertical plane, the standard of perspective, is needed to judge them correctly."
+    },
+    {
+     "n": 44,
+     "text": "Leonardo da Vinci taught that the nearer a cut is made across the pyramid of sight, the smaller the image of the object appears, which is the basis for drawing true size on a flat surface."
+    },
+    {
+     "n": 45,
+     "text": "Leonardo da Vinci held that the eye judges both how far away an object is and in which direction it lies, and both must be read together, kept on the same level. Objects on a flat ground seem to rise toward the eye with distance but never rise above the eye's own level."
+    },
+    {
+     "n": 46,
+     "text": "Leonardo da Vinci suggested a simple test of perspective: walk beside a ploughed field and watch the straight furrows seem to draw together toward a point in the distance. That meeting point is the vanishing point that moves as you move."
+    },
+    {
+     "n": 47,
+     "text": "Leonardo da Vinci showed that you can measure distance by sliding a rod back and forth until its ends line up with a tower's ends, then noting how the image shrinks as the rod is brought nearer the eye. Judging size by comparison with a known object works without any instruments."
+    },
+    {
+     "n": 50,
+     "text": "Leonardo da Vinci held that every body fills the surrounding air with images of itself, so each small part of the air carries the whole form of the object it comes from."
+    },
+    {
+     "n": 50,
+     "text": "Leonardo da Vinci's method was to test a claim against a concrete example, such as a light between two mirrors, before trusting it."
+    },
+    {
+     "n": 52,
+     "text": "Leonardo da Vinci observed that two facing mirrors reflect each other endlessly, a small example of how many images can share the same space without mixing or blocking one another."
+    },
+    {
+     "n": 52,
+     "text": "Leonardo da Vinci reasoned that the eye sends its own image out to the objects in front of it while taking in their images, which is why seeing is a two-way exchange through the air."
+    },
+    {
+     "n": 53,
+     "text": "Leonardo da Vinci observed that images of objects spread through the air in every direction, so that every point of a scene is present in every part of the air. He tested this with pinholes in a dark chamber."
+    },
+    {
+     "n": 54,
+     "text": "Leonardo da Vinci argued that the eye does not send out a visible ray to reach the sun, since such a ray would take time to travel and would be bent by the wind. Seeing happens instantly and undisturbed, so the eye must receive images rather than project them."
+    },
+    {
+     "n": 56,
+     "text": "Leonardo da Vinci reasoned that if objects sent their images to the eye, they would shrink as they lost material. He proposed instead that the air itself draws in the images of things, like a loadstone, and so the nature of the medium matters as much as the object."
+    },
+    {
+     "n": 57,
+     "text": "Leonardo observed that a small hole in a wall lets light from a sunlit scene project an upside-down image onto the opposite wall. Every point of the scene reaches every part of that wall, so the picture is complete in each small piece."
+    },
+    {
+     "n": 59,
+     "text": "Leonardo held that the eye works like a darkened chamber with a small opening, where images cross and arrive upside down. He tested this by letting sunlit objects pass through a pinhole onto white paper inside a dark room."
+    },
+    {
+     "n": 60,
+     "text": "Leonardo noted that light bends when it passes from thinner air into denser water or glass, so objects seen through water appear out of their true place. He used this to explain why the eye's judgment of position can mislead."
+    },
+    {
+     "n": 61,
+     "text": "Leonardo da Vinci reasoned from experiment: if you shift one edge of a small hole in a dark room, the image moves, because light travels in straight lines and each edge decides which rays get through. Careful observation of how a simple setup behaves can reveal how light works."
+    },
+    {
+     "n": 62,
+     "text": "Leonardo da Vinci held that every point of a line can be treated as a point, so a whole circle's image can meet at one point without the rays getting in each other's way. Working through a problem by breaking it into its simplest parts can make a hard idea clear."
+    },
+    {
+     "n": 63,
+     "text": "Leonardo da Vinci argued from first principles that a line has no thickness, so two sides of it cannot cross each other. Testing an idea by moving the parts in your head and checking what must follow is a sound way to think."
+    },
+    {
+     "n": 64,
+     "text": "Leonardo da Vinci observed that the narrower the opening, the closer to the opening the light rays cross each other. Small changes to the size of an opening change the whole pattern, so look closely at how each part of a system shapes the result."
+    },
+    {
+     "n": 65,
+     "text": "Leonardo da Vinci observed that an image cannot be seen between the object and the opening that admits its light, since the air there is not visibly lit. He also noted that where images overlap they look darker."
+    },
+    {
+     "n": 66,
+     "text": "Leonardo da Vinci described perspective as seeing objects through a flat transparent plane, such as glass, and drawing what the eye sees on it. Each object is traced along lines running to a single point in the eye."
+    }
+   ],
+   "preview": []
+  },
+  {
+   "id": "pg3300",
+   "state": "reading",
+   "title": "The Wealth of Nations",
+   "author": "Adam Smith",
+   "subject": "economics",
+   "lessons": 95,
+   "studied": 112,
+   "passages": 1645,
+   "source_url": "https://www.gutenberg.org/ebooks/3300",
+   "last_read_at": "2026-11-10",
+   "licence_note": "Author died 1790. Public domain in the USA and Australia.",
+   "notes": [
+    {
+     "n": 3,
+     "text": "Adam Smith held that a nation's supply of goods depends on two things: how skilfully and wisely its labour is applied, and how many of its people are doing useful work compared with those who are not."
+    },
+    {
+     "n": 4,
+     "text": "Adam Smith held that the skill and method with which work is done matters more to a society's abundance than the sheer number of people working, and that a frugal, hard-working person can gain more than the poorest societies could give."
+    },
+    {
+     "n": 5,
+     "text": "Adam Smith held that a nation's yearly supply of goods depends on how many people are doing useful productive work compared with those who are not. The more capital put to work, the more productive labour it sets going."
+    },
+    {
+     "n": 8,
+     "text": "Adam Smith held that the biggest gains in what labour can produce come from dividing work into separate parts, with each worker doing one piece. The division is often easiest to see in small trades, where all the workers can be watched in one place."
+    },
+    {
+     "n": 9,
+     "text": "Adam Smith showed with the pin factory that splitting a job into many small distinct operations, each done by a practised hand, multiplies what a group can produce far beyond what the same people could manage working alone."
+    },
+    {
+     "n": 10,
+     "text": "Adam Smith held that the division of labour raises productive power in every trade, and that the more advanced a society becomes, the more each person tends to do just one part of the work."
+    },
+    {
+     "n": 11,
+     "text": "Adam Smith noted that farming resists this kind of splitting, since the seasons call for the same workers to do many different tasks, which is one reason farm productivity improves more slowly than manufacturing."
+    },
+    {
+     "n": 12,
+     "text": "Adam Smith argued that each country tends to gain most from making the goods that suit its own soil, climate and situation, since those goods can then be made better and cheaper than elsewhere."
+    },
+    {
+     "n": 13,
+     "text": "Adam Smith held that dividing work into simple steps raises output in three ways: workers get more skilled, less time is lost switching tasks, and machines get invented."
+    },
+    {
+     "n": 15,
+     "text": "Adam Smith noticed that switching between different tasks wastes time and dulls focus, since a person who keeps changing jobs seldom applies full effort to any of them."
+    },
+    {
+     "n": 16,
+     "text": "Adam Smith observed that people who focus on one simple task are more likely to find easier methods for it, so many useful improvements come from the workers doing the job."
+    },
+    {
+     "n": 17,
+     "text": "Adam Smith observed that improvements to machines often come from the makers of machines and from thinkers who watch closely, and that dividing intellectual work into branches makes each person more skilled and saves time."
+    },
+    {
+     "n": 18,
+     "text": "Adam Smith held that when each worker specialises and produces more than they need, trading the surplus with others spreads plenty through every rank of society."
+    },
+    {
+     "n": 19,
+     "text": "Adam Smith showed that even a plain woollen coat depends on the work of many people, from shepherds and carriers to dyers and weavers, so everyday goods reflect a web of cooperation most of us never see."
+    },
+    {
+     "n": 20,
+     "text": "Adam Smith argued that even the humblest person's household goods rely on the combined skills of thousands, so we should not underrate how much we depend on others."
+    },
+    {
+     "n": 22,
+     "text": "Adam Smith held that the division of labour grows slowly from a natural human urge to trade and exchange, not from anyone planning the wealth it later creates."
+    },
+    {
+     "n": 24,
+     "text": "Adam Smith held that we get most of what we need from others by appealing to their self-interest rather than their kindness, so a good offer says: give me what I want and you shall have what you want."
+    },
+    {
+     "n": 24,
+     "text": "Adam Smith observed that people in civilised society need the help of great numbers of others, while their own lives are enough to win only a few real friends."
+    },
+    {
+     "n": 26,
+     "text": "Adam Smith held that people specialise because they can trade their surplus for what they need, so the certainty of exchange is what encourages each person to develop a particular skill to a high level."
+    },
+    {
+     "n": 27,
+     "text": "Adam Smith argued that many differences in talent between adults grow out of habit, custom and training after childhood, rather than being fixed by nature, and that the division of labour widens them."
+    },
+    {
+     "n": 28,
+     "text": "Adam Smith observed that differences in talent only help people when they can exchange what they make, since animals of one species with different skills gain little from each other without a way to trade."
+    },
+    {
+     "n": 29,
+     "text": "Adam Smith held that the division of labour is limited by the size of the market, since a person can only specialise if he can trade his surplus for what he needs. A small market keeps people doing many jobs themselves."
+    },
+    {
+     "n": 30,
+     "text": "Adam Smith observed that a trade can only support full-time work where there are enough customers nearby, so a village workman must do many kinds of work. Specialists thrive in towns and places with more buyers."
+    },
+    {
+     "n": 31,
+     "text": "Adam Smith showed that water transport opens a far wider market than land carriage, so industry grows first along coasts and navigable rivers. Cheap transport is what lets a business reach enough customers to specialise."
+    },
+    {
+     "n": 32,
+     "text": "Adam Smith argued that trade between distant places depends on the cost of moving goods, and cheap transport lets each place become a market for the other. Lowering the cost of reaching customers widens what can be sold profitably."
+    },
+    {
+     "n": 33,
+     "text": "Adam Smith held that markets grow outward from the sea and great rivers, so the inland parts of a country improve later, since their market is only the land around them. Cheap transport opens the whole world to a producer."
+    },
+    {
+     "n": 34,
+     "text": "Adam Smith observed that early civilisation grew around the calm Mediterranean, where fear of open water kept navigation close to shore. Safe, sheltered routes let trade and skill spread before people dared bolder voyages."
+    },
+    {
+     "n": 35,
+     "text": "Adam Smith saw that Egypt's many canals let goods and people move cheaply between towns, villages and farms, and he thought this easy inland trade was a main cause of its early improvement."
+    },
+    {
+     "n": 36,
+     "text": "Adam Smith noted that Bengal and eastern China grew rich through their dense networks of inland waterways rather than through foreign trade. Making it cheap to move goods nearby can build prosperity on its own."
+    },
+    {
+     "n": 37,
+     "text": "Adam Smith noted that land far from the sea or from navigable rivers stays poor in trade, and that a river running through another territory can be blocked by whoever controls its mouth."
+    },
+    {
+     "n": 38,
+     "text": "Adam Smith observed that once labour is divided, most of a person's needs are met by trading the surplus of their own work for what others produce, so everyone becomes a kind of merchant."
+    },
+    {
+     "n": 39,
+     "text": "Adam Smith saw that barter stalls when the person with spare goods cannot find someone who wants what they have to offer in return. Every prudent person therefore keeps a stock of something others are likely to accept."
+    },
+    {
+     "n": 40,
+     "text": "Adam Smith argued that metals suit money because they keep well, can be divided without loss and be joined back together, so a buyer can pay the exact amount needed."
+    },
+    {
+     "n": 42,
+     "text": "Adam Smith held that a public stamp on coins saves everyone the trouble of weighing and testing metal, which makes trade faster and fairer. Without it, buyers were open to cheap fakes that looked like the real thing."
+    },
+    {
+     "n": 42,
+     "text": "Smith's point is that a trusted, standard mark lets people accept value without checking every detail themselves. Good certification, in any trade, cuts the cost of doing business and protects honest sellers and buyers alike."
+    },
+    {
+     "n": 44,
+     "text": "Smith observed that the names of old coins, like the pound, first described a set weight of metal before they became mere labels. Over time a unit's name can drift away from the real thing it once measured, so it is worth asking what a standard truly stands for."
+    },
+    {
+     "n": 46,
+     "text": "Adam Smith observed that when rulers quietly reduce the metal in their coins, debtors gain and creditors lose, since debts are paid back in the same nominal sum. Watch out for loose money, as it quietly shifts wealth from lenders to borrowers."
+    },
+    {
+     "n": 47,
+     "text": "Adam Smith drew a useful split between value in use, what a thing is good for, and value in exchange, what it will buy. The two often run in opposite directions, as water is vital yet cheap while a diamond is nearly useless yet costly."
+    },
+    {
+     "n": 48,
+     "text": "Adam Smith was willing to be tedious in order to be clear, and he admitted that abstract subjects may stay hard even after careful explanation. For any hard idea, it is worth taking the time to explain it fully rather than rushing."
+    },
+    {
+     "n": 49,
+     "text": "Adam Smith held that a person is rich or poor according to how much other people's labour they can command or afford to buy, since few needs can be met by one's own work once trade is divided up."
+    },
+    {
+     "n": 50,
+     "text": "Adam Smith held that the true cost of anything is the toil and trouble of getting it, and that money and goods are really stored labour exchanged for other labour. Before money, labour was the first price paid for everything."
+    },
+    {
+     "n": 51,
+     "text": "Adam Smith held that wealth is really the power to command other people's work and its produce, so a fortune is worth exactly the amount of labour it can buy."
+    },
+    {
+     "n": 52,
+     "text": "Adam Smith held that labour is the true measure of value, but since hardship and skill are hard to measure exactly, prices are settled by rough bargaining in the market, which is good enough for ordinary business."
+    },
+    {
+     "n": 54,
+     "text": "Adam Smith observed that once money is the common medium of trade, people judge the value of everything by its price in money, since that is the figure they meet first in daily dealings."
+    },
+    {
+     "n": 55,
+     "text": "Adam Smith held that money itself changes in value, so it makes a poor fixed measure. He argued that the real worth of anything is the labour it costs to acquire, which stays steady for the person doing the work."
+    },
+    {
+     "n": 56,
+     "text": "Adam Smith distinguished the real price of labour, meaning the goods and necessities a worker can buy with it, from its nominal price in money. He taught that a worker is rich or poor according to the real price."
+    },
+    {
+     "n": 57,
+     "text": "Adam Smith held that a money rent can lose its value over time, so a family wanting a steady income should not fix it as a set sum of coin. Tying it to a quantity of goods or metal protects it better."
+    },
+    {
+     "n": 58,
+     "text": "Adam Smith observed that a fixed amount of coin can buy less as the value of the metal it holds falls. Long-term agreements should be wary of this slow erosion."
+    },
+    {
+     "n": 59,
+     "text": "Adam Smith showed that rents fixed in corn kept their worth far better than rents fixed in money over the centuries. Payments linked to a real good hold up better than a fixed sum of currency."
+    },
+    {
+     "n": 60,
+     "text": "Adam Smith warned that repeatedly changing the official denomination or metal content of coins can shrink old money debts almost to nothing. Anyone owed a fixed sum should watch for this kind of hidden loss."
+    },
+    {
+     "n": 62,
+     "text": "Adam Smith observed that the everyday money price of a commodity can stay steady for decades while its price moves sharply from year to year. Short-term swings can hide a steady underlying level, so judge prices over the long run."
+    },
+    {
+     "n": 63,
+     "text": "Adam Smith held that labour is the only universal and accurate measure of value, since it lets us compare what things are really worth across different times and places. Money measures value well only at the same time and place."
+    },
+    {
+     "n": 64,
+     "text": "Adam Smith noted that a merchant trading between distant places need only consider the difference between the money he pays and the money he will receive. Real value differences abroad matter less to him than the margin he earns."
+    },
+    {
+     "n": 65,
+     "text": "Adam Smith noted that people attend mainly to the money price of goods, yet to judge real value across times and places you must compare what the money could buy in labour, not just the silver amount."
+    },
+    {
+     "n": 66,
+     "text": "Adam Smith observed that a trading nation tends to keep using the metal it first adopted as money for its measure of value, even after the original need for it has passed."
+    },
+    {
+     "n": 67,
+     "text": "Adam Smith pointed out that people often keep counting their wealth in an old unit, so accounts can outlast the coins they once described, and a debtor's offer in a different form could be refused or accepted on agreed terms."
+    },
+    {
+     "n": 68,
+     "text": "Adam Smith explained that when the government fixes a legal exchange rate between two metals, the difference between the standard metal and the other becomes little more than a name while that rate holds."
+    },
+    {
+     "n": 69,
+     "text": "Adam Smith observed that which metal seems the true measure of value depends on which one people use for keeping accounts and writing debts. The metal named in everyday contracts is the one that looks steady."
+    },
+    {
+     "n": 70,
+     "text": "Adam Smith held that when a coin's value is fixed by law against another metal, the most valuable metal in it effectively sets its worth. Coins that are worn or made of cheap metal still pass at face value, so people judge them by the good metal behind them."
+    },
+    {
+     "n": 71,
+     "text": "Adam Smith explained that when the mint takes bullion without charging a fee, the coin price becomes the fixed benchmark for the metal. Market prices tend to settle around that benchmark."
     }
    ],
    "preview": []
