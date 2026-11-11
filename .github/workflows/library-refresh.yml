@@ -1,0 +1,27 @@
+# Refresh Tali's library pages from Tali HQ and push them to a branch for review.
+# Run it from the Actions tab (or the API). It never touches main: it pushes library-refresh-<run>.
+name: Refresh Tali's library
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch and build
+        run: |
+          python3 tools/build_library.py --fetch
+          python3 tools/apply_chrome.py
+      - name: Push to a branch
+        run: |
+          git config user.name Claude
+          git config user.email noreply@anthropic.com
+          git checkout -b library-refresh-${{ github.run_number }}
+          git add -A data library
+          git commit -m "Tali's library: refresh from Tali HQ" || exit 0
+          git push origin library-refresh-${{ github.run_number }}
