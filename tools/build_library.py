@@ -388,9 +388,49 @@ def card(book):
     p, c = pct(book), colour(book)
     tag = ('<span class="lib-tag lib-tag--open">Finished. Open to read</span>' if finished(book) else
            f'<span class="lib-tag lib-tag--reading">{p}% read</span><div class="lib-bar"><i style="width:{p}%;background:{c}"></i></div>')
-    return (f'<a class="lib-book" href="/library/{slug(book["title"])}.html">{cover(book)}'
+    find = f'{book["title"]} {book["author"]} {book["subject"] or ""}'.lower()
+    return (f'<a class="lib-book" href="/library/{slug(book["title"])}.html" data-find="{e(find)}" data-subject="{e((book["subject"] or "").lower())}" data-open="{1 if finished(book) else 0}">{cover(book)}'
             f'<span style="flex:1;min-width:0"><h3>{e(book["title"])}</h3><small>{e(book["author"])} · {e(book["subject"] or "")}</small>'
             f'<small>{book["lessons"]} things kept{"" if finished(book) else " so far"}</small>{tag}</span></a>')
+
+
+# The catalogue's search and filters, the same as the app's (11 Nov 2026). Chips wrap, never scroll sideways.
+FILTERS = """
+    <style>
+      .lib-q{display:block;width:100%;box-sizing:border-box;margin:var(--s-4,16px) 0 10px;padding:12px 16px;border-radius:999px;border:1px solid rgba(108,52,131,.25);font:inherit;font-size:16px;background:#fff;color:#272626}
+      .lib-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+      .lib-chips button{font:inherit;font-size:14px;font-weight:700;padding:7px 14px;border-radius:999px;border:1px solid rgba(108,52,131,.3);background:#fff;color:#6C3483;cursor:pointer}
+      .lib-chips button[aria-pressed="true"]{background:#6C3483;border-color:#6C3483;color:#fff}
+      .lib-count{color:#6b6460;font-size:13px;margin:0 0 12px}
+      .lib-book[hidden]{display:none!important}
+    </style>
+    <script>
+    (function () {
+      var q = document.getElementById('libQ'), grid = document.getElementById('libGrid'), count = document.getElementById('libCount');
+      if (!q || !grid) return;
+      var books = Array.prototype.slice.call(grid.querySelectorAll('.lib-book')), status = 'all', subject = 'all';
+      function apply() {
+        var t = q.value.trim().toLowerCase(), n = 0;
+        books.forEach(function (b) {
+          var ok = (!t || b.dataset.find.indexOf(t) >= 0) && (subject === 'all' || b.dataset.subject === subject) &&
+                   (status === 'all' || (status === 'open') === (b.dataset.open === '1'));
+          b.hidden = !ok; if (ok) n++;
+        });
+        count.textContent = n + ' of ' + books.length + ' books';
+      }
+      function chips(id, set) {
+        var box = document.getElementById(id);
+        box.addEventListener('click', function (e) {
+          var btn = e.target.closest('button'); if (!btn) return;
+          box.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === btn ? 'true' : 'false'); });
+          set(btn.dataset.v); apply();
+        });
+      }
+      chips('libStatus', function (v) { status = v; });
+      chips('libSubject', function (v) { subject = v; });
+      q.addEventListener('input', apply);
+    })();
+    </script>"""
 
 
 def build_index(books):
@@ -398,8 +438,12 @@ def build_index(books):
     reading = sorted([b for b in books if not finished(b)], key=lambda b: -pct(b))
     kept = sum(b["lessons"] for b in books)
     rows = [reading[i:i + 5] for i in range(0, len(reading), 5)]
-    case = ['<span class="lib-plaque">FINISHED · OPEN TO READ</span>',
-            shelf_row(done, '<div class="lib-room">Room on this shelf for the next one she finishes.</div>')]
+    # 11 Nov 2026: five books to a shelf, finished ones too. One long row squashed 85 books into slivers.
+    done_rows = [done[i:i + 5] for i in range(0, len(done), 5)] or [[]]
+    case = ['<span class="lib-plaque">FINISHED · OPEN TO READ</span>']
+    for i, r in enumerate(done_rows):
+        last = i == len(done_rows) - 1
+        case.append(shelf_row(r, '<div class="lib-room">Room on this shelf for the next one she finishes.</div>' if last and len(r) < 5 else ""))
     for i, r in enumerate(rows):
         case.append('<span class="lib-plaque">STILL READING</span>' if i == 0 else "")
         case.append(shelf_row(r))
@@ -412,19 +456,27 @@ def build_index(books):
                         "url": f'{SITE}/library/{slug(b["title"])}.html'} for b in books]}]
     main = f"""    <section class="lib-hero"><div class="lib-hero__in"><div>
       <span class="thq-eyebrow">Tali's library</span>
-      <h1>The books Tali has read, and what she kept from each one.</h1>
-      <p>Tali reads a few pages every night and files what is still worth knowing into her brain. When she finishes a book, the whole thing opens here for you to read, with her notes beside it.</p>
+      <h1>A whole library, read by Tali. Free for you to read.</h1>
+      <p>Every night Tali reads, and keeps what is still worth knowing. So far that is {kept:,} lessons from {len(books)} books, from Meditations to War and Peace, and every one she finishes opens here for free with her notes beside the page.</p>
+      <p style="margin-top:10px">Scroll to see <a href="#shelf">her bookshelf</a>, or see <a href="#catalogue">the full catalogue</a> below.</p>
       <div class="lib-stats"><div><b>{len(books)}</b><span>books on her shelf</span></div><div><b>{len(done)}</b><span>finished and open</span></div><div><b>{kept}</b><span>things kept so far</span></div></div>
     </div><img src="/img/tali/tali_think.webp" alt="Tali thinking" width="340" height="460"></div></section>
-    <section class="thq-sec"><h2>Her shelf</h2><p>Pick a book off the shelf. The finished ones open to read. The red ribbon is her bookmark in the ones she is still reading, and you can see her notes so far.</p>
+    <section class="thq-sec" id="shelf" style="scroll-margin-top:90px"><h2>Her shelf</h2><p>Pick a book off the shelf. The finished ones open to read. The red ribbon is her bookmark in the ones she is still reading, and you can see her notes so far.</p>
       <div class="lib-case">
         {chr(10).join(x for x in case if x)}
       </div></section>
-    <section class="thq-sec"><h2>The catalogue</h2><p>The same books as a list. Free to read: enter your email once and every finished book opens.</p>
-      <div class="lib-grid">{"".join(card(b) for b in done)}</div></section>
-    <section class="thq-sec" style="padding-top: var(--s-5);"><h2 style="font-size:1.3rem">Still reading</h2>
-      <div class="lib-grid">{"".join(card(b) for b in reading)}</div></section>
+    <section class="thq-sec" id="catalogue" style="scroll-margin-top:90px"><h2>The catalogue</h2><p>The same books as a list. Free to read: enter your email once and every finished book opens.</p>
+      <input class="lib-q" id="libQ" type="search" placeholder="Search by title, author or subject" aria-label="Search the library" autocomplete="off">
+      <div class="lib-chips" id="libStatus" role="radiogroup" aria-label="Show">
+        <button type="button" data-v="all" aria-pressed="true">All</button><button type="button" data-v="open" aria-pressed="false">Open to read</button><button type="button" data-v="reading" aria-pressed="false">Tali still reading</button>
+      </div>
+      <div class="lib-chips" id="libSubject" role="radiogroup" aria-label="Subject">
+        <button type="button" data-v="all" aria-pressed="true">Every subject</button>{"".join(f'<button type="button" data-v="{e(x)}" aria-pressed="false">{e(x[:1].upper() + x[1:])}</button>' for x in sorted({(b["subject"] or "").lower() for b in books if b["subject"]}))}
+      </div>
+      <p class="lib-count" id="libCount">{len(books)} of {len(books)} books</p>
+      <div class="lib-grid" id="libGrid">{"".join(card(b) for b in done + reading)}</div></section>
     <section class="thq-end" style="margin-top: var(--s-8);"><div class="thq-end__in"><h2>Want a Tali who reads for you too?</h2><a href="{APP}/?ref=site-library" target="_blank" rel="noopener">Open Tali HQ</a></div></section>"""
+    main += FILTERS
     (OUT / "index.html").write_text(page(head(title + " | Totality 360", desc, "/library/", ld), main), encoding="utf-8")
 
 
