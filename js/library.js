@@ -38,7 +38,7 @@
         out.push({ kind: 'footnote', text: flat });
       } else if (lines.every(function (l) { return /\s{3,}\d+$/.test(l); })) {
         out.push({ kind: 'contents', lines: lines.map(function (l) { return l.replace(/\s{3,}\d+$/, '').trim(); }) });
-      } else if (caps && flat.length <= 90) {
+      } else if (caps && (flat.length <= 90 || (flat.length <= 240 && /^(CHAPTER|LECTURE|BOOK|PART|SECTION)\s+[IVXLC\d]+\.?$/.test(lines[0].trim())))) {
         var first = lines[0].trim();
         if (flat.length <= 14 && /\.$/.test(flat) && /\.\s*[A-Z]/.test(flat) && !/^(CHAPTER|LECTURE|BOOK|PART)\b/.test(flat)) out.push({ kind: 'sign', text: flat });
         else if (/^[IVXLC]+\.?$/.test(flat)) { out.push({ kind: 'number', text: flat.replace(/\.$/, '') }); lead = true; }
@@ -58,16 +58,38 @@
     return out;
   }
   function ink(s) { return esc(s).replace(/_([^_]+)_/g, '<em>$1</em>'); }
+  // "CHAPTER IV." reads "Chapter IV", and a title set in capitals reads in ordinary title case.
+  var SMALL = { a: 1, an: 1, and: 1, as: 1, at: 1, by: 1, 'for': 1, from: 1, 'in': 1, into: 1, of: 1, on: 1, or: 1, the: 1, to: 1, 'with': 1 };
+  function softCaps(t) {
+    t = String(t).replace(/\.$/, '');
+    var letters = t.replace(/[^A-Za-z]/g, '');
+    if (!letters || letters.replace(/[^A-Z]/g, '').length / letters.length < 0.8) return t;
+    return t.toLowerCase().split(' ').map(function (w, i) {
+      if (/^[ivxlc]+\.?$/.test(w)) return w.toUpperCase();
+      if (i && SMALL[w]) return w;
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    }).join(' ');
+  }
+  // A new chapter after some of the book's words gets an end mark and a page break,
+  // so every chapter opens on a fresh page.
   function setType(text) {
+    var words = false, prev = null;
     return blocks(text).map(function (b) {
-      if (b.kind === 'number') return '<div class="lib-t-num">' + ink(b.text) + '</div>';
-      if (b.kind === 'heading') return '<h3 class="lib-t-head">' + ink(b.text) + '</h3>';
-      if (b.kind === 'sign') return '<p class="lib-t-sign">' + ink(b.text) + '</p>';
-      if (b.kind === 'caption') return '<p class="lib-t-cap">' + ink(b.text) + '</p>';
-      if (b.kind === 'footnote') return '<p class="lib-t-foot">' + ink(b.text) + '</p>';
-      if (b.kind === 'contents') return '<ul class="lib-t-toc">' + b.lines.map(function (l) { return '<li>' + ink(l) + '</li>'; }).join('') + '</ul>';
-      if (b.kind === 'verse') return '<p class="lib-t-verse">' + b.lines.map(ink).join('<br>') + '</p>';
-      return '<p' + (b.lead ? ' class="lib-t-lead"' : '') + '>' + ink(b.text) + '</p>';
+      var out = '';
+      if ((b.kind === 'number' || (b.kind === 'heading' && prev !== 'number')) && words) {
+        out += '<div class="lib-t-end" aria-hidden="true">&#10086;</div><div class="lib-t-break" aria-hidden="true"></div>';
+        words = false;
+      }
+      prev = b.kind;
+      if (b.kind === 'number') return out + '<div class="lib-t-num">' + ink(softCaps(b.text)) + '</div>';
+      if (b.kind === 'heading') return out + '<h3 class="lib-t-head">' + ink(softCaps(b.text)) + '</h3>';
+      if (b.kind === 'sign') return out + '<p class="lib-t-sign">' + ink(b.text) + '</p>';
+      if (b.kind === 'caption') return out + '<p class="lib-t-cap">' + ink(b.text) + '</p>';
+      if (b.kind === 'footnote') return out + '<p class="lib-t-foot">' + ink(b.text) + '</p>';
+      if (b.kind === 'contents') return out + '<ul class="lib-t-toc">' + b.lines.map(function (l) { return '<li>' + ink(l) + '</li>'; }).join('') + '</ul>';
+      words = true;
+      if (b.kind === 'verse') return out + '<p class="lib-t-verse">' + b.lines.map(ink).join('<br>') + '</p>';
+      return out + '<p' + (b.lead ? ' class="lib-t-lead"' : '') + '>' + ink(b.text) + '</p>';
     }).join('');
   }
 
