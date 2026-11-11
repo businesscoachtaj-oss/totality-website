@@ -184,8 +184,24 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .lib-paper .lib-eyebrow { font-family: var(--font-body, system-ui); font-size: .72rem; font-weight: 800; letter-spacing: .12em; color: #7A6F8F; margin: 0 0 10px; }
     .lib-paper .lib-eyebrow + p { margin-top: 0; }
     .lib-paper hr { border: 0; border-top: 1px solid #CDBFA6; margin: var(--s-5) 0; }
-    .lib-kept { font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; background: #fff; border-left: 4px solid #B9A6FF; border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
-    .lib-kept b { display: block; font-size: .68rem; letter-spacing: .12em; color: #5B3FA8; margin-bottom: 4px; }
+    .lib-t-num { font-family: var(--font-body, system-ui); font-size: .95rem; font-weight: 800; letter-spacing: .22em; color: #B23A30; text-align: center; margin: 2.2em 0 .5em; }
+    .lib-t-num::after { content: ""; display: block; width: 40px; height: 2px; background: #CDBFA6; margin: .8em auto 0; }
+    .lib-t-head { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.01em; font-size: 1.45rem; line-height: 1.2; text-align: center; text-wrap: balance; margin: 1.6em 0 1em; color: #1C1433; }
+    .lib-t-num + .lib-t-head { margin-top: .6em; }
+    .lib-paper > .lib-eyebrow + .lib-t-num, .lib-paper > .lib-eyebrow + .lib-t-head { margin-top: .6em; }
+    .lib-t-lead::first-letter { float: left; font-size: 3.3em; line-height: .82; padding: .08em .1em 0 0; color: #B23A30; }
+    .lib-paper p.lib-t-verse { font-style: italic; margin: 1.2em 0 1.2em 1.6em; padding-left: 1em; border-left: 2px solid #CDBFA6; line-height: 1.55; }
+    .lib-paper p.lib-t-foot { font-family: var(--font-body, system-ui); font-size: .82rem; line-height: 1.5; color: #7A6F8F; border-top: 1px solid #CDBFA6; padding-top: .6em; margin-top: 1.2em; }
+    .lib-paper p.lib-t-foot + p.lib-t-foot { border-top: 0; padding-top: 0; margin-top: 0; }
+    .lib-paper p.lib-t-cap { font-style: italic; font-size: .95rem; text-align: center; color: #7A6F8F; }
+    .lib-paper p.lib-t-sign { text-align: right; font-variant: small-caps; letter-spacing: .08em; }
+    .lib-t-toc { list-style: none; padding: 0; margin: 0 0 .4em; font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; }
+    .lib-t-toc li { padding: .25em 0; border-bottom: 1px dotted #CDBFA6; }
+    .lib-folio { font-family: var(--font-body, system-ui); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #A89C86; text-align: center; margin: 1.6em 0 2em; }
+    .lib-folio::before, .lib-folio::after { content: ""; display: inline-block; width: 36px; height: 1px; background: #CDBFA6; vertical-align: middle; margin: 0 12px; }
+    .lib-paper > .lib-folio:last-child { margin-bottom: 0; }
+    .lib-kept { font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; background: #EFEAFB; color: #2A2340; border-radius: 12px; padding: 12px 14px 12px 16px; margin: 14px 0; border-left: 4px solid #6C3483; }
+    .lib-kept b { display: block; font-size: .68rem; letter-spacing: .14em; color: #6C3483; margin-bottom: 4px; }
     .lib-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 190px; background: linear-gradient(rgba(243,236,221,0), #F3ECDD 70%); }
     .lib-gate { background: var(--thq-deep); color: #fff; border-radius: var(--radius-lg); padding: var(--s-6); margin-top: calc(-1 * var(--s-6)); position: relative; box-shadow: 0 18px 44px rgba(20,16,51,.3); display: grid; grid-template-columns: auto 1fr; gap: var(--s-5); align-items: center; }
     .lib-gate img { width: 96px; height: auto; }
@@ -303,25 +319,25 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <p>Atom by atom, link by link, has the reasoning chain been forged. Some links, too quickly and too slightly made, have given way, and been replaced by better work; but now the great phenomena are known—the outline is correctly and firmly drawn—cunning artists are filling in the rest, and the child who masters these Lectures knows more of fire than Aristotle did.</p>
           <p>The candle itself is now made to light up the dark places of nature; the blowpipe and the prism are adding to our knowledge of the earth’s crust; but the torch must come first.</p>
           <p>Among the readers of this book some few may devote themselves to increasing the stores of knowledge: the Lamp of Science <em>must</em> burn. “<em>Alere flammam.</em>”</p>
-          <p>W. CROOKES.</p>
-          <p>CONTENTS.</p>
-          <p>LECTURE I.</p>
-          <p>A CANDLE: THE FLAME—ITS SOURCES—STRUCTURE—MOBILITY—BRIGHTNESS</p>
-          <p>LECTURE II.</p>
-          <p>BRIGHTNESS OF THE FLAME—AIR NECESSARY FOR COMBUSTION—PRODUCTION OF WATER</p>
-          <p>LECTURE III.</p>
-          <p>PRODUCTS: WATER FROM THE COMBUSTION—NATURE OF WATER—A COMPOUND—HYDROGEN</p>
-          <p>LECTURE IV.</p>
-          <p>HYDROGEN IN THE CANDLE—BURNS INTO WATER—THE OTHER PART OF WATER—OXYGEN</p>
-          <p>LECTURE V.</p>
-          <p>OXYGEN PRESENT IN THE AIR—NATURE OF THE ATMOSPHERE—ITS PROPERTIES—OTHER PRODUCTS FROM THE CANDLE—CARBONIC ACID—ITS PROPERTIES</p>
-          <p>LECTURE VI.</p>
-          <p>CARBON OR CHARCOAL—COAL-GAS—RESPIRATION AND ITS ANALOGY TO THE BURNING OP A CANDLE—CONCLUSION</p>
-          <p>LECTURE ON PLATINUM.</p>
-          <p>NOTES.</p>
-          <p>THE CHEMICAL HISTORY OF A CANDLE</p>
-          <p>LECTURE I.</p>
-          <p>A CANDLE: THE FLAME—ITS SOURCES—STRUCTURE—MOBILITY—BRIGHTNESS.</p>
+          <p class="lib-t-sign">W. CROOKES.</p>
+          <h3 class="lib-t-head">CONTENTS.</h3>
+          <div class="lib-t-num">LECTURE I</div>
+          <h3 class="lib-t-head">A CANDLE: THE FLAME—ITS SOURCES—STRUCTURE—MOBILITY—BRIGHTNESS</h3>
+          <div class="lib-t-num">LECTURE II</div>
+          <h3 class="lib-t-head">BRIGHTNESS OF THE FLAME—AIR NECESSARY FOR COMBUSTION—PRODUCTION OF WATER</h3>
+          <div class="lib-t-num">LECTURE III</div>
+          <h3 class="lib-t-head">PRODUCTS: WATER FROM THE COMBUSTION—NATURE OF WATER—A COMPOUND—HYDROGEN</h3>
+          <div class="lib-t-num">LECTURE IV</div>
+          <h3 class="lib-t-head">HYDROGEN IN THE CANDLE—BURNS INTO WATER—THE OTHER PART OF WATER—OXYGEN</h3>
+          <div class="lib-t-num">LECTURE V</div>
+          <p class="lib-t-lead">OXYGEN PRESENT IN THE AIR—NATURE OF THE ATMOSPHERE—ITS PROPERTIES—OTHER PRODUCTS FROM THE CANDLE—CARBONIC ACID—ITS PROPERTIES</p>
+          <div class="lib-t-num">LECTURE VI</div>
+          <p class="lib-t-lead">CARBON OR CHARCOAL—COAL-GAS—RESPIRATION AND ITS ANALOGY TO THE BURNING OP A CANDLE—CONCLUSION</p>
+          <h3 class="lib-t-head">LECTURE ON PLATINUM.</h3>
+          <h3 class="lib-t-head">NOTES.</h3>
+          <h3 class="lib-t-head">THE CHEMICAL HISTORY OF A CANDLE</h3>
+          <div class="lib-t-num">LECTURE I</div>
+          <h3 class="lib-t-head">A CANDLE: THE FLAME—ITS SOURCES—STRUCTURE—MOBILITY—BRIGHTNESS.</h3>
           <div class="lib-fade" id="lib-fade"></div>
         </div>
         <div class="lib-gate" id="lib-gate">
@@ -436,7 +452,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <script src="/js/track.js" defer></script>
 <!-- /chrome:footer -->
 <script>window.TALI_LIBRARY = {"id": "pg14474", "finished": true, "passages": 150, "kept": 131, "baked": 60};</script>
-<script src="/js/library.js?v=1" defer></script>
+<script src="/js/library.js?v=2" defer></script>
 <script src="/js/nav.js" defer></script>
 </body>
 </html>
