@@ -7,20 +7,20 @@ The shutdown is two minutes with Tali at the end of the day. You say how it went
 
 ## When it shows up
 
-From two hours before your shutdown time, a **Tonight** card appears on Today with **Shut the day down** and a **Start** button. Your shutdown time is 9pm unless you change it.
+From two hours before your shutdown time, a **Tonight** card appears on Today with **Shut the day down** and a **Start** button. Your shutdown time is 9pm unless you change it. Over the same two hours, the sky behind the app fades from its daytime blue into her night sky.
 
 !phone[The Tonight card on Today in the evening](img/evening-card.png)
 
 If **Nudge me to shut down** is on in Settings, Tali also sends one notification at your shutdown time if the day isn't closed yet.
 
-You can start a shutdown any time from **Me**, **Tali's jobs**, **Shut the day down**.
+You can start a shutdown any time from **Your world**, **Growth**, **Shut down**.
 
 ## Do your shutdown
 
 !phones[How did today go?](img/evening-shutdown.png)[Tomorrow's three](img/evening-shutdown-three.png)
 
 !steps
-1. Tap **Start** on the Tonight card (or open it from Me).
+1. Tap **Start** on the Tonight card (or open it from Your world).
 2. Under **How did today go?**, tap one: Rough, Meh, Fine, Good or Great. You have to pick one.
 3. In **One thing that went well**, write something. Even a small one counts.
 4. **Anything on your mind (optional)**: get it out of your head.
@@ -39,17 +39,17 @@ The shutdown uses 1 credit on the trial and paid plans. On Free it counts as one
 
 !phone[Day closed](img/evening-done.png)
 
-The screen says **G'night** with Tali's line, how today went and tomorrow's three. Tap **G'night** to go back to Today.
+The screen says **G'night** with Tali's line, how today went and tomorrow's three. Tap **G'night 😊** to go back to Today.
 
 Changed your mind? Tap **Change my answers**, edit anything, and tap **Done** again. That uses another credit (or message on Free). Tap **Keep what I had** to leave it as it was.
 
 ## Night mode
 
-Once the day is closed, the top card on Today turns into a night sky. Tali shows her sign off line, asks **Bed time?** and the brief button is swapped for **Sleep sounds**. A **Day closed** card shows your mood and tomorrow's three.
+Once the day is closed, Today goes quiet. All that's left is her brain, turning at half speed in the night sky, her goodnight line with "Day's done. Bed time?", and two buttons: **Sleep sounds** and **Write in your journal**. Under them, the **Day closed** card shows your mood and tomorrow's three. The day's lists, drafts and tiles come back in the morning.
 
-!phone[Today in night mode](img/evening-night.png)
+!phone[Today after the day is closed](img/evening-night.png)
 
-Tap **Sleep sounds** to open Sleep. See [Sleep sounds and wind down](sleep.html). Night mode lasts until the next day.
+Tap **Sleep sounds** to open Sleep. See [Sleep sounds and wind down](sleep.html). Night mode lasts until dawn, between 5am and 6am.
 
 ## Change your shutdown time
 
@@ -72,10 +72,10 @@ Yes. On Free it counts as one of your 250 messages a month.
 They become reminders at 9am tomorrow and show under Due today in the morning.
 
 ?? Can I do the shutdown early, say at 4pm?
-Yes. Open **Me**, **Tali's jobs**, **Shut the day down** any time. The Tonight card on Today just shows up from two hours before your shutdown time.
+Yes. Open **Your world**, **Growth**, **Shut down** any time. The Tonight card on Today just shows up from two hours before your shutdown time.
 
 ?? I closed the day by mistake. Can I undo it?
 You can't reopen it, but you can tap **Change my answers** on the shutdown screen and save different answers. Night mode stays on for the rest of the day.
 
 ?? Does Tali see what I write in "Anything on your mind"?
-Yes. It goes into your journal as a normal entry, which Tali can read and learn from. To hide it from her, open the Shutdown entry in your Journal and turn on **Keep this from Tali**.
+Yes. It goes into your journal as a normal entry, which Tali can read and learn from. To hide it from her, open the entry in your Journal (**Your world**, **Journal**) and turn on **Keep this from Tali**.

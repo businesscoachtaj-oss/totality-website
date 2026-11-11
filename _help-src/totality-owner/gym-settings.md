@@ -20,6 +20,10 @@ Your gym's name shows at the top of your dashboard, on member emails and in the 
 
 The **Current usage** card shows how many **Active clients** you have out of your plan's limit (for example 48/500) and how many **Trainers**. Under it, **Subscription & Billing** opens your Totality plan. See [Your Totality plan](your-plan.html).
 
+## What kind of business is this?
+
+Pick **Gym or studio** or **Allied health or clinic**. A clinic gets services, intake forms and treatment notes, each with its own switch, and clinic wording across the app. See [Allied health and clinic tools](clinic-tools.html).
+
 ## Tools
 
 The **Tools** list is a shortcut to:

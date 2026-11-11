@@ -19,6 +19,12 @@ If you don't have targets, you'll see **No targets set: ask your trainer to set 
 If your trainer set your targets for pregnancy or breastfeeding, your calories show as a minimum to reach. Instead of "remaining" it shows how many to go, then **Minimum reached**. Nothing turns red for eating more.
 :::
 
+## Copy yesterday
+
+Eat the same thing most days? On today's log, tap **Copy Yesterday** at the top right and everything you logged yesterday is copied into today, meal by meal. If today already has food in it, the app asks first, then adds yesterday's on top. If there was nothing logged yesterday, it says so.
+
+!phone[Copy Yesterday at the top of today's log](img/food-log-copy.png)
+
 ## Meals
 
 Below the card are your meals: **Breakfast**, **Lunch**, **Dinner** and **Snack**. Each shows its total calories, protein, carbs and fat, and every food in it.

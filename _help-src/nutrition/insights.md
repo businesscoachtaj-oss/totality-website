@@ -31,7 +31,7 @@ Weekly summaries use AI credits: [[Trial]] 10 credits for the whole trial, Nutri
 **Nutrition Breakdown** shows everything you ate on one day, added up. Open it from the **Breakdown** tile. Use the arrows to change the day.
 
 - **CALORIES & MACROS.** Calories, protein, carbs and fat against your targets, with a percentage.
-- **FIBRE, SUGAR, FAT & SALT.** Fibre, sugars, saturated fat and sodium against label Daily Intake values. Sugars, saturated fat and sodium are limits, so the bar reads "of limit".
+- **FIBRE, SUGAR, FAT & SALT.** Fibre, sugars, saturated fat and sodium against label Daily Intake values, or your own fibre target and sugar and sodium limits if you set them in Custom Targets ("Your target" or "Your limit"). Sugars, saturated fat and sodium are limits, so the bar reads "of limit".
 - **VITAMINS** and **MINERALS.** Each against the adult RDI used on Australian food labels.
 
 !phones[Calories and macros](img/insights-breakdown.png)[Vitamins](img/insights-breakdown-lower.png)

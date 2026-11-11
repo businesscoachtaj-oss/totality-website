@@ -16,6 +16,9 @@ Open **More**, then **Settings**, then **Units and region** under Tools.
 
 ## Units
 
+When you change your country, every unit switches to that country's usual ones, and a message says so. You can still change any single unit after that. **Use Australia's usual units** (or your country's) puts them all back.
+
+
 | Setting | Choices |
 |---|---|
 | Body weight | kg, lb, st lb |

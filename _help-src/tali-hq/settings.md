@@ -1,18 +1,19 @@
 ---
 title: Settings and account
-summary: Change your details, brief time, notifications, shutdown and review times, connections, and sign out or delete your account.
+summary: Change your details and the business switch, brief time, notifications, shutdown and review times, connections, privacy, and sign out or delete your account.
 ---
 
 Settings holds everything Tali reads about you before every chat and brief, plus your times, notifications and connections. Open **Me**, then tap **Settings**.
 
 !phones[Settings](img/settings-top.png)[Times and notifications](img/settings-notifications.png)
 
-## About you and your business
+## About you
 
 - **First name**: what Tali calls you.
-- **Business name**. On Pro, a line underneath says Tali's email address stays the same if you change this.
+- **Do you run a business?**: tap yes or **No, just me**. With a business, Tali shows invoices, clients and leads, receipts and rules. Just you, and she keeps to your life: people, money, health and goals. Your business details are kept if you switch back.
+- **Business name (if you have one)**. On Pro, a line underneath says Tali's email address stays the same if you change this.
 - **What kind of business**: Personal trainer, Gym or studio, Coach or consultant, Trades, Health and beauty, Online business or Something else.
-- **About you and your business**: up to 1,000 characters. Tell Tali the things she should always keep in mind.
+- **About you**: up to 1,000 characters. Tell Tali the things she should always keep in mind.
 
 ## Morning brief time
 
@@ -52,25 +53,32 @@ Tap **Save** at the bottom of these settings. "Saved." shows underneath. If you 
 
 ## Connections
 
-Below Save is **Connections**: Google, Microsoft 365 (Outlook), Stripe and Tali's own email address. **Me**, **Connections** opens Settings with these at the top.
+Below Save is **Connections**: Google, Microsoft 365 (Outlook), Stripe and Tali's own email address. Buttons elsewhere in the app that say **Connect** open Settings with these at the top.
 
 - Google and Microsoft: see [Gmail, Outlook and your calendar](gmail-outlook.html). [[Tali HQ]]
 - Stripe: see [Invoices and Stripe](invoices.html#connect-your-stripe). [[Tali HQ]]
 - Tali's own email address: see [Tali's email address](tali-email.html). [[Pro]]
 
+## Your privacy
+
+**Help every Tali learn** is on unless you turn it off. Lessons that would help any small business are shared with every Tali, rewritten with no names, clients or numbers. Your facts, people and journal are never shared. Turn it off and nothing new of yours is shared. See [Privacy and your data](privacy.html).
+
 ## The Me screen
 
 **Me** is your home for your account.
 
-!phones[The top of Me](img/me-top.png)[Tali's jobs on Me](img/me-jobs.png)
+!phone[Me](img/me-top.png)
 
-- **Your plan**: your plan, credits left and **See plans**. See [Plans, credits and billing](plans.html).
-- **Settings**.
-- **Tali's jobs**: Food and training, Sleep, Night school, Invoices, Money, Decisions, Goals, Weekly review, Shut the day down, Clients, Rules, Email and Connections. Ones your plan doesn't include show a **TALI HQ** or **PRO** tag; tap them to see what they do.
-- **Patterns**. [[Pro]]
-- **What Tali knows about you**. See [What Tali knows](what-tali-knows.html).
+- **Your plan**: your plan, credits left with a bar, **Top up**, and images, web searches and Deep think left this month. **Plans ›** opens the plans. See [Plans, credits and billing](plans.html).
+- **Patterns** [[Pro]]: when Tali last looked for patterns, with **Run now**. On other plans it says Patterns are part of Pro. See [Her brain](what-tali-knows.html#patterns-pro).
+- **Every memory as a list**: read every memory one by one, **Fix** its words or **Forget** it. See [Her brain](what-tali-knows.html).
+- **Share her brain**: a card of how much she knows, with nothing private on it.
+- **Download her brain**: everything she knows about you, as a file you keep.
+- **Settings**: your details, rhythm and notifications. The gear at the top opens it too.
 - **Show me around again**: replays the first run tour.
-- **Sign out**: tap it, then tap **Sure?**.
+- **Sign out**: tap it, then **Sure? Tap again to sign out**. This signs out only the device you're on.
+
+Everything else, like Food and training, Sleep, Money, Invoices, Email, Goals and the shutdown, has moved to [Your world](world.html).
 
 ## Change your password
 
@@ -101,6 +109,12 @@ Tali uses the time zone of the device you set up on. If you move time zones for 
 
 ?? Notifications say they're blocked.
 Notifications are turned off for Tali HQ in your browser or phone settings. Allow them there, then tap **Turn on notifications on this device** again.
+
+?? Where did Tali's jobs go?
+They live in **Your world** now, in the part of your life they belong to. For example Sleep is under Health, and Invoices are under Work. See [Your world](world.html).
+
+?? If I sign out on my phone, am I signed out on my computer too?
+No. Signing out only signs out the device you're on.
 
 ?? Do I get my morning brief by email?
 No. It shows on Today, with a notification if you've turned them on.

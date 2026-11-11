@@ -3,18 +3,109 @@
   "audience": "For clients and gym members",
   "accent": "orange",
   "icon": "/icon-totality.png",
-  "updated": "5 November 2026",
+  "updated": "12 November 2026",
   "groups": [
-    {"title": "Start here", "pages": ["index", "your-invite", "install", "first-time-setup", "home"]},
-    {"title": "Training", "pages": ["programmes", "workouts", "history", "progress", "exercise-library"]},
-    {"title": "Check-ins", "pages": ["check-ins"]},
-    {"title": "Nutrition", "pages": ["food-log", "adding-food", "saved-meals-water", "nutrition-targets", "totality-nutrition"]},
-    {"title": "Schedule", "pages": ["schedule-classes"]},
-    {"title": "Messages", "pages": ["messages"]},
-    {"title": "Payments", "pages": ["payments", "shop"]},
-    {"title": "Wearables", "pages": ["wearables"]},
-    {"title": "Settings", "pages": ["settings"]},
-    {"title": "Help", "pages": ["troubleshooting", "faq"]}
+    {
+      "title": "Start here",
+      "pages": [
+        "index",
+        "your-invite",
+        "install",
+        "first-time-setup",
+        "home"
+      ]
+    },
+    {
+      "title": "Training",
+      "pages": [
+        "programmes",
+        "workouts",
+        "history",
+        "progress",
+        "exercise-library"
+      ]
+    },
+    {
+      "title": "Check-ins",
+      "pages": [
+        "check-ins"
+      ]
+    },
+    {
+      "title": "Nutrition",
+      "pages": [
+        "food-log",
+        "adding-food",
+        "saved-meals-water",
+        "nutrition-targets",
+        "totality-nutrition"
+      ]
+    },
+    {
+      "title": "Schedule",
+      "pages": [
+        "schedule-classes"
+      ]
+    },
+    {
+      "title": "Messages",
+      "pages": [
+        "messages"
+      ]
+    },
+    {
+      "title": "Payments",
+      "pages": [
+        "payments",
+        "shop"
+      ]
+    },
+    {
+      "title": "Wearables and sleep",
+      "pages": [
+        "wearables",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Settings",
+      "pages": [
+        "settings"
+      ]
+    },
+    {
+      "title": "Help",
+      "pages": [
+        "troubleshooting",
+        "faq"
+      ]
+    }
   ],
-  "pages": ["index", "your-invite", "install", "first-time-setup", "home", "programmes", "workouts", "history", "progress", "exercise-library", "check-ins", "food-log", "adding-food", "saved-meals-water", "nutrition-targets", "totality-nutrition", "schedule-classes", "messages", "payments", "shop", "wearables", "settings", "troubleshooting", "faq"]
+  "pages": [
+    "index",
+    "your-invite",
+    "install",
+    "first-time-setup",
+    "home",
+    "programmes",
+    "workouts",
+    "history",
+    "progress",
+    "exercise-library",
+    "check-ins",
+    "food-log",
+    "adding-food",
+    "saved-meals-water",
+    "nutrition-targets",
+    "totality-nutrition",
+    "schedule-classes",
+    "messages",
+    "payments",
+    "shop",
+    "wearables",
+    "sleep",
+    "settings",
+    "troubleshooting",
+    "faq"
+  ]
 }

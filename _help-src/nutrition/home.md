@@ -28,6 +28,8 @@ At the end you see "You're all set!" with three first jobs, then the option to *
 
 **Quick access.** Six tiles: **Breakdown**, **Meal Plan**, **Grocery List**, **Hydration**, **Insights** and **Progress**.
 
+**Sleep sounds.** "Rain, brown noise and more. One tap to wind down." Tap it to open [Sleep sounds](sleep.html). Free on every plan.
+
 ## Home on Free
 
 On [[Free]], a "You're on Free" card shows how many of your 7 barcode scans are left this week, with a **See plans** button. Breakdown, Meal Plan, Grocery List and Insights show a small padlock. Tapping a locked tile opens the plans screen. Hydration and Progress stay open.

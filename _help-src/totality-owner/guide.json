@@ -3,29 +3,150 @@
   "audience": "For gym owners and admins",
   "accent": "orange",
   "icon": "/icon-totality.png",
-  "updated": "5 November 2026",
+  "updated": "12 November 2026",
   "groups": [
-    {"title": "Start here", "pages": ["index", "plans", "sign-up", "dashboard"]},
-    {"title": "Setting up your gym", "pages": ["gym-settings", "stripe-connect", "branding", "units-region", "notifications"]},
-    {"title": "Moving to Totality", "pages": ["import", "import-files", "after-import"]},
-    {"title": "Trainers and staff", "pages": ["trainers", "staff-roster", "payroll", "xero", "compliance", "incident-reports"]},
-    {"title": "Members and memberships", "pages": ["members", "add-members", "memberships", "check-in-freezes", "failed-payments", "charges-pos", "marketplace"]},
-    {"title": "Classes and schedule", "pages": ["classes", "class-roster", "gym-schedule", "pt-packages"]},
-    {"title": "Clients and programmes", "pages": ["client-detail", "programmes"]},
-    {"title": "Leads and messages", "pages": ["leads", "messages-announcements"]},
-    {"title": "Numbers and Tali", "pages": ["revenue-insights", "reports", "tali"]},
-    {"title": "Billing and account", "pages": ["your-plan", "account"]},
-    {"title": "Help", "pages": ["troubleshooting", "faq"]}
+    {
+      "title": "Start here",
+      "pages": [
+        "index",
+        "plans",
+        "sign-up",
+        "dashboard"
+      ]
+    },
+    {
+      "title": "Setting up your gym",
+      "pages": [
+        "gym-settings",
+        "stripe-connect",
+        "branding",
+        "units-region",
+        "notifications",
+        "locations",
+        "clinic-tools"
+      ]
+    },
+    {
+      "title": "Moving to Totality",
+      "pages": [
+        "import",
+        "import-files",
+        "after-import"
+      ]
+    },
+    {
+      "title": "Trainers and staff",
+      "pages": [
+        "trainers",
+        "staff-roster",
+        "payroll",
+        "xero",
+        "compliance",
+        "incident-reports"
+      ]
+    },
+    {
+      "title": "Members and memberships",
+      "pages": [
+        "members",
+        "add-members",
+        "memberships",
+        "check-in-freezes",
+        "failed-payments",
+        "charges-pos",
+        "invoices",
+        "marketplace"
+      ]
+    },
+    {
+      "title": "Classes and schedule",
+      "pages": [
+        "classes",
+        "class-roster",
+        "gym-schedule",
+        "pt-packages"
+      ]
+    },
+    {
+      "title": "Clients and programmes",
+      "pages": [
+        "client-detail",
+        "programmes"
+      ]
+    },
+    {
+      "title": "Leads and messages",
+      "pages": [
+        "leads",
+        "messages-announcements"
+      ]
+    },
+    {
+      "title": "Numbers and Tali",
+      "pages": [
+        "revenue-insights",
+        "reports",
+        "tali"
+      ]
+    },
+    {
+      "title": "Billing and account",
+      "pages": [
+        "your-plan",
+        "account"
+      ]
+    },
+    {
+      "title": "Help",
+      "pages": [
+        "troubleshooting",
+        "faq"
+      ]
+    }
   ],
-  "pages": ["index", "plans", "sign-up", "dashboard",
-    "gym-settings", "stripe-connect", "branding", "units-region", "notifications",
-    "import", "import-files", "after-import",
-    "trainers", "staff-roster", "payroll", "xero", "compliance", "incident-reports",
-    "members", "add-members", "memberships", "check-in-freezes", "failed-payments", "charges-pos", "marketplace",
-    "classes", "class-roster", "gym-schedule", "pt-packages",
-    "client-detail", "programmes",
-    "leads", "messages-announcements",
-    "revenue-insights", "reports", "tali",
-    "your-plan", "account",
-    "troubleshooting", "faq"]
+  "pages": [
+    "index",
+    "plans",
+    "sign-up",
+    "dashboard",
+    "gym-settings",
+    "stripe-connect",
+    "branding",
+    "units-region",
+    "notifications",
+    "locations",
+    "clinic-tools",
+    "import",
+    "import-files",
+    "after-import",
+    "trainers",
+    "staff-roster",
+    "payroll",
+    "xero",
+    "compliance",
+    "incident-reports",
+    "members",
+    "add-members",
+    "memberships",
+    "check-in-freezes",
+    "failed-payments",
+    "charges-pos",
+    "invoices",
+    "marketplace",
+    "classes",
+    "class-roster",
+    "gym-schedule",
+    "pt-packages",
+    "client-detail",
+    "programmes",
+    "leads",
+    "messages-announcements",
+    "revenue-insights",
+    "reports",
+    "tali",
+    "your-plan",
+    "account",
+    "troubleshooting",
+    "faq"
+  ]
 }

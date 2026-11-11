@@ -18,7 +18,7 @@ Tali no longer asks Google for permission to read your Gmail. If you connected G
 Do this on a computer. Gmail only shows its forwarding settings in a web browser.
 
 !steps
-1. Open **Me**, then **Email**. The card **Send your Gmail to me** shows your own Tali address. Tap **Copy**.
+1. Open **Your world**, **Work**, **Email**. The card **Send your Gmail to me** shows your own Tali address. Tap **Copy**.
 2. Tap **Open Gmail's forwarding settings**, choose **Add a forwarding address** and paste the address in.
 3. Gmail emails a confirmation code to Tali. The code shows on the same card in Tali HQ within a minute or so. Type it into Gmail, or tap **Confirm with Gmail**.
 4. Back in Gmail's forwarding settings, switch forwarding on and save.
@@ -31,7 +31,7 @@ Your Gmail keeps every email as normal. Tali only gets a copy.
 Connect Google so replies Tali drafts go out from your own Gmail when you tap Send, and so she can see your calendar.
 
 !steps
-1. Open **Me**, then **Connections** (or **Settings** and scroll to **Connections**).
+1. Open **Me**, **Settings** and scroll down to **Connections**.
 2. On the **Google** card, tap **Connect Google**. Or tap **Just the calendar** if you only want your calendar.
 3. Google's sign in opens. Pick your account.
 4. Tick every box Google asks about, then continue.
@@ -40,7 +40,7 @@ Connect Google so replies Tali drafts go out from your own Gmail when you tap Se
 Google asks for permission to send email, to see and change your calendar, and to see your email address. It does not ask to read your email.
 
 :::note "Google hasn't verified this app"
-While Tali HQ is in beta, Google may show this page. Tap **Advanced**, then **Continue**.
+Until Google finishes checking Tali HQ, it may show this page. Tap **Advanced**, then **Continue**.
 :::
 
 If you connected just the calendar, tap **Add Gmail sending** later.
@@ -48,7 +48,7 @@ If you connected just the calendar, tap **Add Gmail sending** later.
 ## Connect Outlook
 
 !steps
-1. Open **Me**, then **Connections**.
+1. Open **Me**, **Settings**, **Connections**.
 2. On the **Microsoft 365 (Outlook)** card, tap **Connect Outlook mail and calendar**, or **Just the calendar**.
 3. Sign in with Microsoft and accept every permission it asks about.
 4. You come back to Settings and see "Connected to" with your Outlook address.
@@ -61,7 +61,7 @@ If you use a Tali HQ phone app rather than the browser, connecting Google, Micro
 
 ## Your sorted email
 
-Once your Gmail is forwarding or Outlook is connected, open **Me**, then **Email**. Under your email address you'll see three tabs with counts: **Needs you**, **FYI** and **Junk**.
+Once your Gmail is forwarding or Outlook is connected, open **Your world**, **Work**, **Email**. Under your email address you'll see three tabs with counts: **Needs you**, **FYI** and **Junk**.
 
 !phones[Email sorted into tabs](img/gmail-tabs.png)[An email opened](img/gmail-open.png)
 
@@ -94,7 +94,7 @@ With a calendar connected:
 ## Disconnect
 
 !steps
-1. Open **Me**, **Connections**.
+1. Open **Me**, **Settings**, **Connections**.
 2. On the Google or Microsoft card, tap **Disconnect**.
 3. Tap **Yes, disconnect Google** (or Microsoft) to confirm, or **Keep it connected**.
 
@@ -104,7 +104,7 @@ If Google or Microsoft signs Tali out (for example after a password change), the
 
 ## On the Free plan
 
-On Free, **Me**, **Email** explains what you get on Tali HQ, with **See plans**. Gmail forwarding, Outlook and calendars are part of the paid plans (Tali HQ, Pro and Max) and the trial.
+On Free, **Your world**, **Email** explains what you get on Tali HQ, with **See plans**. Gmail forwarding, Outlook and calendars are part of the paid plans (Tali HQ, Pro and Max) and the trial.
 
 !phone[Email on the Free plan](img/gmail-free.png)
 

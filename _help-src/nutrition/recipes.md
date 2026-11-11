@@ -6,6 +6,8 @@ My Recipes holds recipes you've imported. Each one is broken into ingredients, m
 
 !phones[My Recipes](img/recipes-list.png)[On Free](img/recipes-locked.png)
 
+With a few recipes saved, a **Search your recipes** box sits at the top of My Recipes. For 200 ready made recipes, see the [Cookbook](cookbook.html).
+
 ## Import a recipe from a link
 
 !steps

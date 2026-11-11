@@ -55,6 +55,14 @@ When nothing needs you, it says **All clear. Nothing needs you right now.**
 
 Under the numbers you can see how much of your plan you are using, for example "48 of 500 members used on your plan".
 
+## Quick actions
+
+Under **QUICK ACTIONS** are the things you do most, one tap away: **Book session** (**Book appointment** for a clinic), **Add client**, **Charge a card**, **Payment link**, **Invoices**, **Messages**, **Services** (clinics), **Locations** (Studio, Club and Enterprise) and **Invite trainer** (**Invite practitioner** for a clinic). See [Invoices](invoices.html), [More than one location](locations.html) and [Allied health and clinic tools](clinic-tools.html).
+
+!phone[Quick actions](img/dashboard-quick.png)
+
+With more than one location, a bar at the very top says which one you're in, with **Switch**.
+
 ## Sections
 
 The **SECTIONS** grid has a tile for each part of the app: **Members**, **Sales and billing**, **Schedule**, **Staff** and **Insights**, plus a **Calorie calculator** for quick nutrition maths with a member. At the very bottom is **Sign out**, and links to the Terms & Conditions and Privacy Policy.

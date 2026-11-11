@@ -17,7 +17,7 @@ Tali HQ has four plans: Free, Tali HQ, Tali HQ Pro and Tali HQ Max. Every new ac
 | Images Tali makes each month | None | 30 | 100 | 300 |
 | Web searches each month | 10 | Up to 150 | Up to 400 | Up to 1,000 |
 
-**Free** is for getting to know Tali: chat (250 messages a month), drafts, reminders, clients and leads, decisions, your journal and notes, food and training, the end of day shutdown, Sleep and a Friday check-in on your goals. Photos in chat work too.
+**Free** is for getting to know Tali: chat (250 messages a month), her brain, Your world with your people, dates and all nine lists, drafts, reminders, decisions, your journal and notes, food and training, the end of day shutdown, Sleep, her library and a Friday check-in on your goals. Photos in chat work too, with 10 web searches and 1 Deep think a month.
 
 **Tali HQ** is for running the business. Everything in Free, plus:
 
@@ -25,16 +25,21 @@ Tali HQ has four plans: Free, Tali HQ, Tali HQ Pro and Tali HQ Max. Every new ac
 - Gmail or Outlook sorted into Needs you, FYI and Junk, with replies drafted for one tap sending
 - Google or Outlook calendar in your brief, with bookings on your yes
 - business health checks, with a nudge twice a day when something needs a look
-- invoices, sent through your own Stripe on your yes, and the Money screen
+- invoices, sent through your own Stripe on your yes
+- Money, with a business side and a personal side for your spending, budgets and bills
+- Receipts, ready for tax time
 - goals, the weekly review and three promises for the week
 - what Tali knows about each client, and a nudge before you meet them
-- web search with sources, PDFs in chat, and draft rework (shorter, warmer, more formal)
+- web search with sources, PDFs, videos and voice notes in chat, and draft rework (shorter, warmer, more formal)
+- Deep think and second opinions, and 30 images a month
 - Tali's own journal every Sunday
 - 1,000 credits a month
 
 **Tali HQ Pro** is for handing Tali the front desk. Everything in Tali HQ, plus:
 
-- 3,000 credits a month
+- 3,000 credits and 100 images a month
+- Big brain, her strongest thinking
+- voice notes with no monthly cap
 - Tali's own email address for enquiries, with one tap replies
 - Night school: you pick what Tali studies each night
 - Rules: jobs Tali handles on her own inside Tali HQ, like spotting quiet clients and drafting overdue invoice reminders
@@ -65,6 +70,8 @@ On the paid plans, everything Tali does with AI uses credits from your monthly a
 | Deep think | 20 |
 | Big brain [[Pro]] | 40 |
 | A second opinion | 20 |
+| Watching a video | 5 for each started minute |
+| A voice note | 1 |
 | Reworking a draft (shorter, warmer, more formal, something else) | 1 |
 | Morning brief | 1 a day |
 | Your shutdown | 1 |
@@ -75,7 +82,11 @@ On the paid plans, everything Tali does with AI uses credits from your monthly a
 | A night of Night school [[Pro]] | 1, plus 2 per web search (usually 3 to 7) |
 | Patterns [[Pro]] | 10 a month |
 
-These use no credits: reminders, clients, invoices, Money, goals, decisions, your journal, food and training, Sleep, Rules, forgetting memories, and sending or booking from Today.
+These use no credits: reminders, your people, your lists, invoices, Money, reading receipts, goals, decisions, your journal, food and training, Sleep, the library, Rules, overnight tidying of her brain, fixing or forgetting memories, and sending or booking from Today.
+
+Images are counted on their own, not in credits: 5 on the trial, 30 a month on Tali HQ, 100 on Pro and 300 on Max.
+
+On **Max**, Deep think, Big brain and second opinions cost half the credits (10, 20 and 10) for your first 100 a month.
 
 If something goes wrong on Tali's side, the credit is given back.
 
@@ -85,7 +96,7 @@ On **Free**, each message in Talk counts as one of your 250, and so does your sh
 
 !phones[Me on the trial](img/plans-me-card.png)[Me on Free](img/plans-me-free.png)
 
-Open **Me**. **Your plan** shows your plan and how many credits you have left this month, with a bar. On Free it shows "250 messages a month with Tali."
+Open **Me**. Your plan card shows how many credits you have left this month, with a bar, plus extras you've bought. Underneath are images left, web searches left, and the date your credits top up. On Free it shows how many of your 250 messages are left, your web searches and your Deep think for the month.
 
 ## When you run out
 
@@ -94,7 +105,9 @@ Credits and messages reset on the 1st of each month, in your time zone. That's t
 - **Free**: when your 250 messages are used, Talk says "That's your 250 free messages for this month. Upgrade to Tali HQ to keep chatting."
 - **Paid plans**: Talk says "You've used this month's Tali credits. They top up on the 1st, or you can move up a plan." Scheduled jobs (brief, Night school and so on) skip until the 1st. New emails still come in, without a summary or draft.
 
-You can also top up. On a paid plan or the trial, open **Me** and tap the top up link under Your plan to buy a one-off pack of extra credits, extra images, or both. Extras never expire and are used after your monthly allowance.
+### Top up
+
+On a paid plan or the trial, open **Me** and tap **Top up** on your plan card (Talk also shows a **Top up** button when you run out) to buy a one-off pack of extra credits, extra images, or both. Extras never expire and are used after your monthly allowance.
 
 | Pack | Price |
 |---|---|
@@ -109,9 +122,9 @@ You can also top up. On a paid plan or the trial, open **Me** and tap the top up
 ## Choose a plan
 
 !steps
-1. Open **Me** and tap **See plans** under Your plan.
+1. Open **Me** and tap **Plans** on your plan card.
 2. Choose **Monthly** or **Yearly, save 15%** at the top.
-3. On the trial, tap **Keep Tali HQ after my trial** on Tali HQ, or **Choose Tali HQ Pro**. On Free, tap **Choose Tali HQ** or **Choose Tali HQ Pro**.
+3. On the trial, tap **Keep Tali HQ after my trial** on Tali HQ, or **Choose Tali HQ Pro** or **Choose Tali HQ Max**. On Free, tap **Choose** on the plan you want.
 4. Stripe's secure checkout opens. Enter your card (and a promotion code if you have one) and pay.
 5. You come back to Tali HQ. Your new plan shows on **Me**.
 
@@ -145,7 +158,7 @@ No. The 7 day trial starts when you make your account, with no card.
 It all stays. Features that need a paid plan are locked until you upgrade again.
 
 ?? Can I buy extra credits?
-Yes, on a paid plan or the trial. Open **Me** and tap the top up link under Your plan. Extras never expire. If you keep running out, the next plan up has about three times as many credits.
+Yes, on a paid plan or the trial. Open **Me** and tap **Top up**. Extras never expire. If you keep running out, the next plan up has about three times as many credits.
 
 ?? Do unused credits roll over?
 No. Each month starts fresh on the 1st.
@@ -154,7 +167,7 @@ No. Each month starts fresh on the 1st.
 No. Credits reset each month on yearly plans too.
 
 ?? How do I cancel?
-**Me**, **See plans**, **Manage billing**, then cancel in Stripe.
+**Me**, **Plans**, **Manage billing**, then cancel in Stripe.
 
 ?? I paid but Me still shows my old plan.
 Close the Plans screen and open **Me** again, or pull down to refresh. It can take a moment for Stripe to tell Tali HQ. Still wrong after a few minutes? Email admintotality@gmail.com.

@@ -5,7 +5,7 @@ summary: Log what you decided and why, so you stop going over it again, and ask 
 
 Decisions is a log of what you decided and why. Next time you start second guessing yourself, the reasoning is right there, and Tali reads it too. Logging is free on every plan. [[Free]] Asking Tali why is part of Tali HQ. [[Tali HQ]]
 
-Open it from **Me**, **Decisions**. Your latest decision also shows under **More from Tali** on Today.
+Open it from **Your world**, **Growth**, **Decisions**. Your latest decision also shows under **More from Tali** on Today.
 
 !phones[Decisions on Tali HQ](img/decisions.png)[On Free, Ask Tali why is greyed out](img/decisions-free.png)
 

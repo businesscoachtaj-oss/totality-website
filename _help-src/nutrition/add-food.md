@@ -24,7 +24,7 @@ Under it, **Describe your meal to Tali** opens Tell Tali. See [Tell Tali what yo
 
 !phones[Search results](img/add-food-search.png)[The Brand filter](img/add-food-filter.png)
 
-Australian foods from the **AFCD** (the Australian Food Composition Database) and other government data come first, then packaged foods from **Open Food Facts**. Foods you've logged recently rank higher. To narrow by brand, tap the gear and pick a brand, or **All**. **Clear filter** removes it.
+Australian foods from the **AFCD** (the Australian Food Composition Database) and other government data come first, then packaged supermarket products. The app keeps its own copy of Australian products from **Open Food Facts**, so search keeps working when Open Food Facts is down. Foods you've logged recently rank higher. To narrow by brand, tap the gear and pick a brand, or **All**. **Clear filter** removes it.
 
 ## Choose your serving
 

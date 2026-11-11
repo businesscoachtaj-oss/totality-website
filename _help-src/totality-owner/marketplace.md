@@ -52,9 +52,9 @@ Tap **Share** at the top to copy your public store link. Put it on your website,
 
 Open **More**, then **Insights**, then **Marketplace revenue**. It shows **TOTAL EARNED**, **THIS MONTH**, how many **MEMBERSHIPS** are active, your **Recent Purchases** and your **Active Memberships**.
 
-## Gym products
+## One product list
 
-The **Gym products** screen (Sales tab) is an older product list. Products added there are created in your Stripe account, with **Recurring** or **One-off** pricing, but they do not appear in your shop or on the Charge a member screen. Use **Marketplace products** for anything members buy.
+**Sales and billing**, **Products** opens the same products screen as your shop. Memberships, PT packs and anything else you sell live in one list, in the app and in your shop. Products from the old gym products screen were copied into it.
 
 ## Questions
 

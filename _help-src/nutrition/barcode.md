@@ -23,7 +23,7 @@ Live camera scanning works in the phone apps. In a web browser that can't scan, 
 
 ## Where the food data comes from
 
-The app checks its own food list first (foods other people have already scanned and saved), then Open Food Facts. If a product's label has no serving size, it starts at 100g and tells you so. If the numbers look wrong, tap **Edit** on the Per 100g card and copy them from the label.
+The app checks its own food list first (foods other people have already scanned and saved), then its own copy of Australian supermarket products from Open Food Facts, then Open Food Facts itself. Keeping its own copy means scans keep working when Open Food Facts is slow or down. If a product's label has no serving size, it starts at 100g and tells you so. If the numbers look wrong, tap **Edit** on the Per 100g card and copy them from the label.
 
 ## Scans on Free
 

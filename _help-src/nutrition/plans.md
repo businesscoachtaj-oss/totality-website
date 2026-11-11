@@ -17,6 +17,9 @@ Prices are in Australian dollars and there's no lock-in. On the web and Android 
 | Insights and Breakdown | No | Yes | Yes | Yes |
 | Meal Plan and Grocery List | No | Yes | Yes | Yes |
 | Recipes (import from a link) | No | Yes | Yes | Yes |
+| Cookbook: read the 200 recipes | Yes | Yes | Yes | Yes |
+| Cookbook: save to My Recipes and add to meal plan | No | Yes | Yes | Yes |
+| Sleep sounds | Yes | Yes | Yes | Yes |
 | Apple Health and Health Connect | No | Yes | Yes | Yes |
 | Tali credits (recipes, weekly summary, meal plans) | No | 10 for the trial | No | 100 a month |
 | Ads | None | None | None | None |

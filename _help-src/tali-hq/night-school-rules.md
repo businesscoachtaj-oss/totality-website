@@ -5,13 +5,13 @@ summary: Pick what Tali studies each night, and set rules for the jobs she handl
 
 Night school and Rules are part of Pro. With Night school, Tali studies topics you pick late at night and turns up sharper on your industry in the morning. With Rules, you set something once, like spotting quiet clients, and she handles it automatically. [[Pro]]
 
-On Free and Tali HQ, both screens explain what they do, with **See plans**. In the Me menu they show a **PRO** tag.
+On Free and Tali HQ, both screens explain what they do, with **See plans**. In Your world they show a **PRO** tag.
 
 !phone[Night school on Tali HQ](img/night-school-hq.png)
 
 ## Night school [[Pro]]
 
-Open **Me**, **Night school**. On Pro you can also get there from the **Tali's** side of Journal.
+Open **Your world**, **Your words**, **Night school**. On Pro you can also get there from the **Tali's** side of Journal.
 
 !phones[Night school](img/night-school.png)[What I learnt](img/night-school-notes.png)
 
@@ -28,15 +28,27 @@ Open **Me**, **Night school**. On Pro you can also get there from the **Tali's**
 
 Between 11pm and 3am your time, on the nights you picked, Tali takes the next topic in turn, researches it on the web, and saves what she learnt to her memory of you. In the morning, a note is waiting under **What I learnt**.
 
-Tap a note to read it: the headline, what she learnt as a numbered list, and **Where I read it** with links to her sources. What she learns shows on the Me screen as **Lesson** memories, and she uses it in chats and briefs.
+Tap a note to read it: the headline, what she learnt as a numbered list, and **Where I read it** with links to her sources. What she learns shows in Her brain as **Lesson** memories, and she uses it in chats and briefs.
 
 Each night uses 1 credit, plus 2 for each web search. Usually 3 to 7 credits a night. If you're out of credits, she skips the night.
 
 To pause it, turn the switch to **Night school is off** and tap **Save**.
 
+### An idea in the morning
+
+Each class can also leave you one idea, with why she thinks it suits you. It shows on Today under **AN IDEA FROM NIGHT SCHOOL** for up to three days. Tap **Let's try it** to open Talk with the idea ready and save it to her brain, or **Not for me** to hide it.
+
+### What Tali does overnight on every plan
+
+Night school is the part you steer. Three other things happen overnight on every plan, with no credits used:
+
+- **Her reading.** She reads a few pages of the books in her library each night and keeps what is still worth knowing. See [Tali's library](library.html).
+- **Sleep.** She tidies her memories of you: repeats are put together and small stale notes are let go. Every change shows on Her brain under **WHILE YOU SLEPT** with an undo. See [Her brain](what-tali-knows.html#while-you-slept).
+- **Learning from her mistakes.** When you corrected her in a chat that day, she turns it into a lesson so she gets it right next time.
+
 ## Rules [[Pro]]
 
-Open **Me**, **Rules**.
+Open **Your world**, **Work**, **Rules**. Rules only show if you told Tali you run a business.
 
 !phones[Rules](img/rules.png)[More rules](img/rules-bottom.png)
 
@@ -62,6 +74,10 @@ To stop a rule, flip its switch off. To remove it altogether, switch it off, tap
 
 Rules use no credits.
 
+### Tali suggests
+
+After your weekly review, a night of study or your chats, Tali may suggest a rule under **Tali suggests** at the top of Rules, tagged with where it came from. A suggestion is either a way of working she will remember ("How I work") or one of the rules above with the settings filled in. Tap **Yes, add it** or **Not now**. She suggests at most two at a time and never repeats one you already have or have turned down.
+
 ## Questions
 
 ?? Is Night school part of the free trial?
@@ -78,3 +94,6 @@ It needs reminder text. Type what it should say, then tap **Save changes**. It r
 
 ?? Can I add my own kind of rule?
 Not yet. The four rules above are the ones available.
+
+?? I can't find Rules in Your world.
+Rules are for people who run a business. Open **Me**, **Settings**, and under **Do you run a business?** choose yes and tap **Save**.

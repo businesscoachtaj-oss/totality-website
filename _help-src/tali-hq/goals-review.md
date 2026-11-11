@@ -7,7 +7,7 @@ Goals are the numbers you're chasing, with Tali holding you to them. The weekly 
 
 ## Goals
 
-Open **Me**, **Goals**, or tap the **Goals** tile on Today.
+Open **Your world**, **Growth**, **Goals**, or tap the **Goals** tile on Today.
 
 !phones[Goals](img/goals.png)[A new goal](img/goals-add.png)
 
@@ -15,15 +15,18 @@ Open **Me**, **Goals**, or tap the **Goals** tile on Today.
 
 !steps
 1. Tap **Add a goal**.
-2. In **Goal**, name it, for example "5 more regular clients".
-3. Add a **Target** number, where you are **Now**, and a **Unit** like "clients". All optional, but a number makes it real.
-4. Under **Due**, pick No date, 2 weeks, 1 month, 3 months, 6 months or End of year. Or type a date in **Or a date (YYYY-MM-DD)**.
-5. Add **Notes (optional)**: why it matters and how you'll get there.
-6. Tap **Add goal**.
+2. Pick whether it's a **Business** goal (or **Work** if you don't run a business) or a **Personal** one.
+3. In **Goal**, name it, for example "5 more regular clients" or "Run a half marathon".
+4. Add a **Target** number, where you are **Now**, and a **Unit** like "clients". All optional, but a number makes it real.
+5. Under **Due**, pick No date, 2 weeks, 1 month, 3 months, 6 months or End of year. Or type a date in **Or a date (YYYY-MM-DD)**.
+6. Add **Notes (optional)**: why it matters and how you'll get there.
+7. Tap **Add goal**.
 
 Or tell Tali in Talk: "my goal is 80 members by March, I'm at 61". She saves it and tells you where you stand.
 
 ### Keep it up to date
+
+When you have both kinds, the Goals screen groups them, business first, then personal.
 
 Each goal shows a progress bar, how many days are left, and **On track** or **Behind pace** (orange).
 
@@ -36,7 +39,7 @@ Tali keeps your goals in front of you: the Goals tile on Today, a mention in you
 
 ## Weekly review
 
-Open **Me**, **Weekly review**, or tap the **This week** tile on Today when it says the review is due.
+Open **Your world**, **Growth**, **Weekly review**, or tap the **This week** tile on Today when it says the review is due.
 
 !phones[Start your review](img/review-start.png)[Tali's review of your week](img/review-done.png)
 
