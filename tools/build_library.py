@@ -65,7 +65,7 @@ def fetch():
             "id": s["id"], "state": s.get("state"), "title": s.get("title"), "author": s.get("author"),
             "subject": s.get("subject"), "lessons": s.get("lessons") or 0, "studied": s.get("studied") or 0,
             "passages": s.get("passages") or 0, "source_url": s.get("source_url"),
-            "last_read_at": (s.get("last_read_at") or "")[:10], "licence_note": s.get("licence_note"),
+            "last_read_at": sydney_day(s.get("last_read_at") or ""), "licence_note": s.get("licence_note"),
             "notes": notes, "preview": preview,
         })
     old = json.loads(DATA.read_text(encoding="utf-8")) if DATA.exists() else {}
@@ -77,6 +77,16 @@ def fetch():
 
 
 # ---------- helpers ----------
+
+def sydney_day(stamp):
+    """The day in Sydney, so a book finished on the morning of the 11th is not stamped the 10th."""
+    try:
+        import datetime, zoneinfo
+        t = datetime.datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+        return t.astimezone(zoneinfo.ZoneInfo("Australia/Sydney")).date().isoformat()
+    except Exception:
+        return stamp[:10]
+
 
 def slug(title):
     return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
