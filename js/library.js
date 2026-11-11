@@ -19,13 +19,56 @@
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
-  // Book text arrives hard wrapped: join each paragraph's lines, keep the words as written.
-  function paragraphs(text) {
-    return String(text || '').replace(/\r/g, '').split(/\n\s*\n/).map(function (b) {
-      return b.replace(/\s+/g, ' ').trim();
-    }).filter(function (l) { return l && !/^produced by/i.test(l); }).map(function (l) {
-      return '<p>' + esc(l).replace(/_([^_]+)_/g, '<em>$1</em>') + '</p>';
+  // Book text arrives hard wrapped, with headings, verse and footnotes as plain lines. Work out what
+  // each block is so the page can set it like a printed book. The words are kept as written.
+  function blocks(text) {
+    var out = [], lead = false;
+    String(text || '').replace(/\r/g, '').split(/\n\s*\n+/).forEach(function (raw) {
+      var lines = raw.split('\n').map(function (l) { return l.replace(/\s+$/, ''); }).filter(function (l) { return l.trim(); });
+      if (!lines.length) return;
+      var flat = lines.map(function (l) { return l.trim(); }).join(' ').replace(/\s{2,}/g, ' ');
+      if (/^(produced by|e-text prepared by|transcribed by)\b/i.test(flat)) return;
+      var letters = flat.replace(/[^A-Za-zÀ-ɏ]/g, '');
+      var upper = letters.replace(/[^A-ZÀ-Þ]/g, '').length;
+      var caps = letters.length > 0 && upper / letters.length >= 0.8;
+      if (/^\[illustration/i.test(flat)) {
+        var cap = flat.replace(/^\[illustration:?\s*/i, '').replace(/\]$/, '');
+        if (cap) out.push({ kind: 'caption', text: cap });
+      } else if (/^\[(\d+|footnote)/i.test(flat)) {
+        out.push({ kind: 'footnote', text: flat });
+      } else if (lines.every(function (l) { return /\s{3,}\d+$/.test(l); })) {
+        out.push({ kind: 'contents', lines: lines.map(function (l) { return l.replace(/\s{3,}\d+$/, '').trim(); }) });
+      } else if (caps && flat.length <= 90) {
+        var first = lines[0].trim();
+        if (flat.length <= 14 && /\.$/.test(flat) && /\.\s*[A-Z]/.test(flat) && !/^(CHAPTER|LECTURE|BOOK|PART)\b/.test(flat)) out.push({ kind: 'sign', text: flat });
+        else if (/^[IVXLC]+\.?$/.test(flat)) { out.push({ kind: 'number', text: flat.replace(/\.$/, '') }); lead = true; }
+        else if (/^(CHAPTER|LECTURE|BOOK|PART|SECTION)\s+[IVXLC\d]+\.?$/.test(first)) {
+          out.push({ kind: 'number', text: first.replace(/\.$/, '') });
+          var rest = lines.slice(1).map(function (l) { return l.trim(); }).join(' ');
+          if (rest) out.push({ kind: 'heading', text: rest });
+          lead = true;
+        } else { out.push({ kind: 'heading', text: flat }); lead = true; }
+      } else if (lines.length >= 2 && lines.every(function (l) { return l.trim().length < 56; })) {
+        out.push({ kind: 'verse', lines: lines.map(function (l) { return l.trim(); }) });
+      } else {
+        out.push({ kind: 'p', text: flat, lead: lead });
+        lead = false;
+      }
     });
+    return out;
+  }
+  function ink(s) { return esc(s).replace(/_([^_]+)_/g, '<em>$1</em>'); }
+  function setType(text) {
+    return blocks(text).map(function (b) {
+      if (b.kind === 'number') return '<div class="lib-t-num">' + ink(b.text) + '</div>';
+      if (b.kind === 'heading') return '<h3 class="lib-t-head">' + ink(b.text) + '</h3>';
+      if (b.kind === 'sign') return '<p class="lib-t-sign">' + ink(b.text) + '</p>';
+      if (b.kind === 'caption') return '<p class="lib-t-cap">' + ink(b.text) + '</p>';
+      if (b.kind === 'footnote') return '<p class="lib-t-foot">' + ink(b.text) + '</p>';
+      if (b.kind === 'contents') return '<ul class="lib-t-toc">' + b.lines.map(function (l) { return '<li>' + ink(l) + '</li>'; }).join('') + '</ul>';
+      if (b.kind === 'verse') return '<p class="lib-t-verse">' + b.lines.map(ink).join('<br>') + '</p>';
+      return '<p' + (b.lead ? ' class="lib-t-lead"' : '') + '>' + ink(b.text) + '</p>';
+    }).join('');
   }
 
   // ----- her notes -----
@@ -52,9 +95,9 @@
 
   function show(passages, replace) {
     var html = passages.map(function (p) {
-      var kept = (p.kept || []).map(function (k) { return '<div class="lib-kept"><b>TALI KEPT THIS</b>' + esc(k) + '</div>'; }).join('');
-      return '<div class="lib-eyebrow">PASSAGE ' + p.n + ' OF ' + cfg.passages + '</div>' + paragraphs(p.text).join('') + kept;
-    }).join('<hr>');
+      var kept = (p.kept || []).map(function (k) { return '<div class="lib-kept"><b>TALI\'S NOTE</b>' + esc(k) + '</div>'; }).join('');
+      return setType(p.text) + kept + '<div class="lib-folio">page ' + p.n + ' of ' + cfg.passages + '</div>';
+    }).join('');
     paper.innerHTML = html;
     var last = passages[passages.length - 1].n;
     from = last + 1;

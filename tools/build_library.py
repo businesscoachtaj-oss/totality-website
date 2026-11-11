@@ -120,15 +120,73 @@ def nice_date(iso):
         return ""
 
 
-def paragraphs(text):
-    """Book text arrives hard wrapped. Join the lines of each paragraph, keep the words as written."""
-    out = []
-    for block in re.split(r"\n\s*\n", text.replace("\r", "")):
-        line = re.sub(r"\s+", " ", block).strip()
-        if not line or line.lower().startswith("produced by"):
+def blocks(text):
+    """Book text arrives hard wrapped, with headings, verse and footnotes as plain lines. Work out
+    what each block is so the page can set it like a printed book. Same rules as js/library.js."""
+    out, lead = [], False
+    for raw in re.split(r"\n\s*\n+", text.replace("\r", "")):
+        lines = [l.rstrip() for l in raw.split("\n") if l.strip()]
+        if not lines:
             continue
-        out.append(re.sub(r"_([^_]+)_", r"<em>\1</em>", e(line, quote=False)))
+        flat = re.sub(r"\s{2,}", " ", " ".join(l.strip() for l in lines))
+        if re.match(r"(produced by|e-text prepared by|transcribed by)\b", flat, re.I):
+            continue
+        letters = re.sub(r"[^A-Za-zÀ-ɏ]", "", flat)
+        upper = len(re.sub(r"[^A-ZÀ-Þ]", "", letters))
+        caps = bool(letters) and upper / len(letters) >= 0.8
+        if re.match(r"\[illustration", flat, re.I):
+            cap = re.sub(r"\]$", "", re.sub(r"^\[illustration:?\s*", "", flat, flags=re.I))
+            if cap:
+                out.append(("caption", cap, False))
+        elif re.match(r"\[(\d+|footnote)", flat, re.I):
+            out.append(("footnote", flat, False))
+        elif all(re.search(r"\s{3,}\d+$", l) for l in lines):
+            out.append(("contents", [re.sub(r"\s{3,}\d+$", "", l).strip() for l in lines], False))
+        elif caps and len(flat) <= 90:
+            first = lines[0].strip()
+            if len(flat) <= 14 and flat.endswith(".") and re.search(r"\.\s*[A-Z]", flat) and not re.match(r"(CHAPTER|LECTURE|BOOK|PART)\b", flat):
+                out.append(("sign", flat, False))
+            elif re.fullmatch(r"[IVXLC]+\.?", flat):
+                out.append(("number", flat.rstrip("."), False)); lead = True
+            elif re.fullmatch(r"(CHAPTER|LECTURE|BOOK|PART|SECTION)\s+[IVXLC\d]+\.?", first):
+                out.append(("number", first.rstrip("."), False))
+                rest = " ".join(l.strip() for l in lines[1:])
+                if rest:
+                    out.append(("heading", rest, False))
+                lead = True
+            else:
+                out.append(("heading", flat, False)); lead = True
+        elif len(lines) >= 2 and all(len(l.strip()) < 56 for l in lines):
+            out.append(("verse", [l.strip() for l in lines], False))
+        else:
+            out.append(("p", flat, lead)); lead = False
     return out
+
+
+def ink(s):
+    return re.sub(r"_([^_]+)_", r"<em>\1</em>", e(s, quote=False))
+
+
+def set_type(text):
+    html_out = []
+    for kind, val, lead in blocks(text):
+        if kind == "number":
+            html_out.append(f'<div class="lib-t-num">{ink(val)}</div>')
+        elif kind == "heading":
+            html_out.append(f'<h3 class="lib-t-head">{ink(val)}</h3>')
+        elif kind == "sign":
+            html_out.append(f'<p class="lib-t-sign">{ink(val)}</p>')
+        elif kind == "caption":
+            html_out.append(f'<p class="lib-t-cap">{ink(val)}</p>')
+        elif kind == "footnote":
+            html_out.append(f'<p class="lib-t-foot">{ink(val)}</p>')
+        elif kind == "contents":
+            html_out.append('<ul class="lib-t-toc">' + "".join(f"<li>{ink(l)}</li>" for l in val) + "</ul>")
+        elif kind == "verse":
+            html_out.append('<p class="lib-t-verse">' + "<br>".join(ink(l) for l in val) + "</p>")
+        else:
+            html_out.append(f'<p{" class=" + chr(34) + "lib-t-lead" + chr(34) if lead else ""}>{ink(val)}</p>')
+    return html_out
 
 
 # ---------- shared page parts ----------
@@ -162,8 +220,24 @@ STYLE = """<style>
     .lib-paper .lib-eyebrow { font-family: var(--font-body, system-ui); font-size: .72rem; font-weight: 800; letter-spacing: .12em; color: #7A6F8F; margin: 0 0 10px; }
     .lib-paper .lib-eyebrow + p { margin-top: 0; }
     .lib-paper hr { border: 0; border-top: 1px solid #CDBFA6; margin: var(--s-5) 0; }
-    .lib-kept { font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; background: #fff; border-left: 4px solid #B9A6FF; border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
-    .lib-kept b { display: block; font-size: .68rem; letter-spacing: .12em; color: #5B3FA8; margin-bottom: 4px; }
+    .lib-t-num { font-family: var(--font-body, system-ui); font-size: .95rem; font-weight: 800; letter-spacing: .22em; color: #B23A30; text-align: center; margin: 2.2em 0 .5em; }
+    .lib-t-num::after { content: ""; display: block; width: 40px; height: 2px; background: #CDBFA6; margin: .8em auto 0; }
+    .lib-t-head { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.01em; font-size: 1.45rem; line-height: 1.2; text-align: center; text-wrap: balance; margin: 1.6em 0 1em; color: #1C1433; }
+    .lib-t-num + .lib-t-head { margin-top: .6em; }
+    .lib-paper > .lib-eyebrow + .lib-t-num, .lib-paper > .lib-eyebrow + .lib-t-head { margin-top: .6em; }
+    .lib-t-lead::first-letter { float: left; font-size: 3.3em; line-height: .82; padding: .08em .1em 0 0; color: #B23A30; }
+    .lib-paper p.lib-t-verse { font-style: italic; margin: 1.2em 0 1.2em 1.6em; padding-left: 1em; border-left: 2px solid #CDBFA6; line-height: 1.55; }
+    .lib-paper p.lib-t-foot { font-family: var(--font-body, system-ui); font-size: .82rem; line-height: 1.5; color: #7A6F8F; border-top: 1px solid #CDBFA6; padding-top: .6em; margin-top: 1.2em; }
+    .lib-paper p.lib-t-foot + p.lib-t-foot { border-top: 0; padding-top: 0; margin-top: 0; }
+    .lib-paper p.lib-t-cap { font-style: italic; font-size: .95rem; text-align: center; color: #7A6F8F; }
+    .lib-paper p.lib-t-sign { text-align: right; font-variant: small-caps; letter-spacing: .08em; }
+    .lib-t-toc { list-style: none; padding: 0; margin: 0 0 .4em; font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; }
+    .lib-t-toc li { padding: .25em 0; border-bottom: 1px dotted #CDBFA6; }
+    .lib-folio { font-family: var(--font-body, system-ui); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #A89C86; text-align: center; margin: 1.6em 0 2em; }
+    .lib-folio::before, .lib-folio::after { content: ""; display: inline-block; width: 36px; height: 1px; background: #CDBFA6; vertical-align: middle; margin: 0 12px; }
+    .lib-paper > .lib-folio:last-child { margin-bottom: 0; }
+    .lib-kept { font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; background: #EFEAFB; color: #2A2340; border-radius: 12px; padding: 12px 14px 12px 16px; margin: 14px 0; border-left: 4px solid #6C3483; }
+    .lib-kept b { display: block; font-size: .68rem; letter-spacing: .14em; color: #6C3483; margin-bottom: 4px; }
     .lib-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 190px; background: linear-gradient(rgba(243,236,221,0), #F3ECDD 70%); }
     .lib-gate { background: var(--thq-deep); color: #fff; border-radius: var(--radius-lg); padding: var(--s-6); margin-top: calc(-1 * var(--s-6)); position: relative; box-shadow: 0 18px 44px rgba(20,16,51,.3); display: grid; grid-template-columns: auto 1fr; gap: var(--s-5); align-items: center; }
     .lib-gate img { width: 96px; height: auto; }
@@ -341,7 +415,7 @@ def build_book(book):
 
     if fin:
         pv = (book.get("preview") or [{}])[0]
-        paras = "\n          ".join(f"<p>{x}</p>" for x in paragraphs(pv.get("text") or ""))
+        paras = "\n          ".join(set_type(pv.get("text") or ""))
         left = f"""        <div class="lib-paper" id="lib-paper">
           <div class="lib-eyebrow">PASSAGE {pv.get("n") or 1} OF {book["passages"]}</div>
           {paras}
@@ -396,7 +470,7 @@ def build_book(book):
     </div>{credit}</section>
     <section class="thq-end" style="margin-top: var(--s-8);"><div class="thq-end__in"><h2>Tali can read for you too.</h2><a href="{APP}/?ref=site-library" target="_blank" rel="noopener">Open Tali HQ</a></div></section>"""
     cfg = {"id": book["id"], "finished": fin, "passages": book["passages"], "kept": kept, "baked": len(notes)}
-    script = f'<script>window.TALI_LIBRARY = {json.dumps(cfg)};</script>\n<script src="/js/library.js?v=1" defer></script>\n'
+    script = f'<script>window.TALI_LIBRARY = {json.dumps(cfg)};</script>\n<script src="/js/library.js?v=2" defer></script>\n'
     (OUT / f"{s}.html").write_text(page(head(title + " | Tali's library", desc, path, ld), main, script), encoding="utf-8")
     return f"{s}.html"
 
