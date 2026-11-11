@@ -142,7 +142,7 @@ def blocks(text):
             out.append(("footnote", flat, False))
         elif all(re.search(r"\s{3,}\d+$", l) for l in lines):
             out.append(("contents", [re.sub(r"\s{3,}\d+$", "", l).strip() for l in lines], False))
-        elif caps and len(flat) <= 90:
+        elif caps and (len(flat) <= 90 or (len(flat) <= 240 and re.fullmatch(r"(CHAPTER|LECTURE|BOOK|PART|SECTION)\s+[IVXLC\d]+\.?", lines[0].strip()))):
             first = lines[0].strip()
             if len(flat) <= 14 and flat.endswith(".") and re.search(r"\.\s*[A-Z]", flat) and not re.match(r"(CHAPTER|LECTURE|BOOK|PART)\b", flat):
                 out.append(("sign", flat, False))
@@ -167,13 +167,31 @@ def ink(s):
     return re.sub(r"_([^_]+)_", r"<em>\1</em>", e(s, quote=False))
 
 
+SMALL_WORDS = {"a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "of", "on", "or", "the", "to", "with"}
+
+
+def soft_caps(t):
+    """"CHAPTER IV." reads "Chapter IV", and a title set in capitals reads in ordinary title case."""
+    t = t.rstrip(".")
+    letters = re.sub(r"[^A-Za-z]", "", t)
+    if not letters or len(re.sub(r"[^A-Z]", "", letters)) / len(letters) < 0.8:
+        return t
+    words = t.lower().split(" ")
+    return " ".join(w.upper() if re.fullmatch(r"[ivxlc]+\.?", w) else w if i and w in SMALL_WORDS else w[:1].upper() + w[1:] for i, w in enumerate(words))
+
+
 def set_type(text):
-    html_out = []
+    """Set a passage like a printed book. A new chapter after some of the book's words gets an end
+    mark and a page break, so every chapter opens on a fresh page."""
+    html_out, words, prev = [], False, None
     for kind, val, lead in blocks(text):
+        if (kind == "number" or (kind == "heading" and prev != "number")) and words:
+            html_out.append('<div class="lib-t-end" aria-hidden="true">&#10086;</div><div class="lib-t-break" aria-hidden="true"></div>')
+            words = False
         if kind == "number":
-            html_out.append(f'<div class="lib-t-num">{ink(val)}</div>')
+            html_out.append(f'<div class="lib-t-num">{ink(soft_caps(val))}</div>')
         elif kind == "heading":
-            html_out.append(f'<h3 class="lib-t-head">{ink(val)}</h3>')
+            html_out.append(f'<h3 class="lib-t-head">{ink(soft_caps(val))}</h3>')
         elif kind == "sign":
             html_out.append(f'<p class="lib-t-sign">{ink(val)}</p>')
         elif kind == "caption":
@@ -183,15 +201,17 @@ def set_type(text):
         elif kind == "contents":
             html_out.append('<ul class="lib-t-toc">' + "".join(f"<li>{ink(l)}</li>" for l in val) + "</ul>")
         elif kind == "verse":
-            html_out.append('<p class="lib-t-verse">' + "<br>".join(ink(l) for l in val) + "</p>")
+            html_out.append('<p class="lib-t-verse">' + "<br>".join(ink(l) for l in val) + "</p>"); words = True
         else:
-            html_out.append(f'<p{" class=" + chr(34) + "lib-t-lead" + chr(34) if lead else ""}>{ink(val)}</p>')
+            html_out.append(f'<p{" class=" + chr(34) + "lib-t-lead" + chr(34) if lead else ""}>{ink(val)}</p>'); words = True
+        prev = kind
     return html_out
 
 
 # ---------- shared page parts ----------
 
-STYLE = """<style>
+STYLE = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
     /* Tali's library (11 Nov 2026) */
     .lib-hero { background: var(--thq-deep); color: #fff; }
     .lib-hero__in { max-width: 1080px; margin: 0 auto; padding: var(--s-8) var(--gutter); display: grid; grid-template-columns: 1fr auto; gap: var(--s-6); align-items: center; }
@@ -222,25 +242,31 @@ STYLE = """<style>
     .lib-bar i { display: block; height: 6px; border-radius: 3px; }
     .lib-two { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--s-6); align-items: start; }
     .lib-two > * { min-width: 0; }
-    .lib-paper { background: #F3ECDD; color: #2A2340; border-radius: var(--radius-lg); padding: clamp(20px, 4vw, 44px); box-shadow: 0 14px 40px rgba(20,16,51,.16); font-family: Georgia, 'Times New Roman', serif; font-size: 1.16rem; line-height: 1.75; position: relative; overflow: hidden; overflow-wrap: break-word; }
-    .lib-paper p { margin: 0 0 1em; }
-    .lib-paper h2 { font-family: Georgia, serif; font-weight: 400; font-size: 1.6rem; margin: 0 0 var(--s-3); }
+    .lib-paper { --pad: clamp(20px, 4vw, 44px); background: #F4EDE1; color: #2E2640; border-radius: var(--radius-lg); padding: var(--pad); box-shadow: 0 14px 40px rgba(20,16,51,.16); font-family: 'Literata', Georgia, 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.8; position: relative; overflow: hidden; overflow-wrap: break-word; hyphens: auto; }
+    .lib-paper p { margin: 0; }
+    .lib-paper p + p { text-indent: 1.5em; }
+    .lib-paper h2 { font-family: 'Literata', Georgia, serif; font-weight: 400; font-size: 1.6rem; margin: 0 0 var(--s-3); }
     .lib-paper .lib-eyebrow { font-family: var(--font-body, system-ui); font-size: .72rem; font-weight: 800; letter-spacing: .12em; color: #7A6F8F; margin: 0 0 10px; }
-    .lib-paper .lib-eyebrow + p { margin-top: 0; }
+    .lib-paper .lib-eyebrow + p { margin-top: 0; text-indent: 0; }
     .lib-paper hr { border: 0; border-top: 1px solid #CDBFA6; margin: var(--s-5) 0; }
-    .lib-t-num { font-family: var(--font-body, system-ui); font-size: .95rem; font-weight: 800; letter-spacing: .22em; color: #B23A30; text-align: center; margin: 2.2em 0 .5em; }
-    .lib-t-num::after { content: ""; display: block; width: 40px; height: 2px; background: #CDBFA6; margin: .8em auto 0; }
-    .lib-t-head { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.01em; font-size: 1.45rem; line-height: 1.2; text-align: center; text-wrap: balance; margin: 1.6em 0 1em; color: #1C1433; }
-    .lib-t-num + .lib-t-head { margin-top: .6em; }
-    .lib-paper > .lib-eyebrow + .lib-t-num, .lib-paper > .lib-eyebrow + .lib-t-head { margin-top: .6em; }
-    .lib-t-lead::first-letter { float: left; font-size: 3.3em; line-height: .82; padding: .08em .1em 0 0; color: #B23A30; }
-    .lib-paper p.lib-t-verse { font-style: italic; margin: 1.2em 0 1.2em 1.6em; padding-left: 1em; border-left: 2px solid #CDBFA6; line-height: 1.55; }
-    .lib-paper p.lib-t-foot { font-family: var(--font-body, system-ui); font-size: .82rem; line-height: 1.5; color: #7A6F8F; border-top: 1px solid #CDBFA6; padding-top: .6em; margin-top: 1.2em; }
-    .lib-paper p.lib-t-foot + p.lib-t-foot { border-top: 0; padding-top: 0; margin-top: 0; }
-    .lib-paper p.lib-t-cap { font-style: italic; font-size: .95rem; text-align: center; color: #7A6F8F; }
-    .lib-paper p.lib-t-sign { text-align: right; font-variant: small-caps; letter-spacing: .08em; }
-    .lib-t-toc { list-style: none; padding: 0; margin: 0 0 .4em; font-family: var(--font-body, system-ui); font-size: .95rem; line-height: 1.5; }
-    .lib-t-toc li { padding: .25em 0; border-bottom: 1px dotted #CDBFA6; }
+    .lib-t-end { text-align: center; color: #B8A98E; font-size: 1.2rem; margin: 1.4em 0 0; }
+    .lib-t-break { height: 22px; margin: 2em calc(-1 * var(--pad)) 0; background: linear-gradient(180deg, rgba(28,20,51,.10), rgba(28,20,51,0) 70%), #E9E0CE; border-top: 1px solid #D9CDB4; }
+    .lib-t-num { font-style: italic; font-size: 1.05rem; color: #9A4A3E; text-align: center; margin: 3.4em 0 .3em; }
+    .lib-t-head { font-family: 'Literata', Georgia, serif; font-weight: 600; font-size: 1.4rem; line-height: 1.35; text-align: center; text-wrap: balance; margin: 3.4em .4em 1.6em; color: #2E2640; }
+    .lib-t-head::after { content: "· · ·"; display: block; color: #B8A98E; font-size: 1rem; font-weight: 400; margin-top: .8em; }
+    .lib-t-num + .lib-t-head { margin-top: .3em; }
+    .lib-paper > .lib-eyebrow + .lib-t-num, .lib-paper > .lib-eyebrow + .lib-t-head { margin-top: 1.4em; }
+    .lib-paper p.lib-t-lead { text-indent: 0; }
+    .lib-t-lead::first-letter { float: left; font-size: 3.2em; line-height: .85; padding: .06em .08em 0 0; color: #6C3483; font-weight: 600; }
+    .lib-t-lead::first-line { font-variant: small-caps; letter-spacing: .04em; }
+    .lib-paper p.lib-t-verse { font-style: italic; margin: 1em 0 1em 1.4em; padding-left: 1em; border-left: 2px solid #DDD2BC; line-height: 1.6; text-indent: 0; }
+    .lib-paper p.lib-t-verse + p { text-indent: 0; }
+    .lib-paper p.lib-t-foot { font-size: .82rem; line-height: 1.55; color: #7A6F8F; border-top: 1px solid #DDD2BC; padding-top: .6em; margin-top: 1.2em; text-indent: 0; }
+    .lib-paper p.lib-t-foot + p.lib-t-foot { border-top: 0; padding-top: 0; margin-top: .3em; }
+    .lib-paper p.lib-t-cap { font-style: italic; font-size: .95rem; text-align: center; color: #7A6F8F; margin: .8em 0; text-indent: 0; }
+    .lib-paper p.lib-t-sign { text-align: right; font-variant: small-caps; letter-spacing: .08em; margin: .6em 0; text-indent: 0; }
+    .lib-t-toc { list-style: none; padding: 0; margin: 0 0 .4em; font-size: .95rem; line-height: 1.5; }
+    .lib-t-toc li { padding: .3em 0; border-bottom: 1px dotted #CDBFA6; }
     .lib-folio { font-family: var(--font-body, system-ui); font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #A89C86; text-align: center; margin: 1.6em 0 2em; }
     .lib-folio::before, .lib-folio::after { content: ""; display: inline-block; width: 36px; height: 1px; background: #CDBFA6; vertical-align: middle; margin: 0 12px; }
     .lib-paper > .lib-folio:last-child { margin-bottom: 0; }
