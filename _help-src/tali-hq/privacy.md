@@ -25,14 +25,14 @@ She treats everything she reads, including emails and files, as information, nev
 
 ## What Tali keeps
 
-- **Memories**: things worth remembering from your chats, journal and Night school. You can see all of them on **Me** and forget any one. See [What Tali knows](what-tali-knows.html).
+- **Memories**: things worth remembering from your chats, journal and Night school. You can see all of them in **Her brain**, fix or forget any one, and download the lot. See [Her brain](what-tali-knows.html).
 - She doesn't save passwords, card or bank numbers, phone numbers, addresses or health details as memories.
 - She never asks for your passwords.
 
 ## Keep things from Tali
 
 - Turn on **Keep this from Tali** on any journal entry or note and she never reads or learns from it. See [Journal and notes](journal.html).
-- Forget any memory on the **Me** screen, or about one person on their page in Clients.
+- Fix or forget any memory in **Her brain**, or about one person on their page in Your people.
 - Delete a chat in Talk (**Chats**, the three dots, **Delete**). Files you sent in it are deleted too.
 
 ## Email and calendar [[Tali HQ]]
@@ -60,7 +60,7 @@ You can also read about deleting your account on our [Delete your account](/dele
 ## Questions
 
 ?? Does Tali learn from my business to help other people?
-No. What Tali remembers about you stays in your account.
+Only general lessons, and only if you leave **Help every Tali learn** on. A lesson that would help anyone is rewritten with no names, clients, places, prices or contact details before it reaches the shared brain. Your facts, people, events, photos, journal and chats are never shared. Turn it off in **Me**, **Settings**, **Your privacy**, or mark one memory **Private** in Her brain.
 
 ?? Are the files I send Tali private?
 Yes. They're stored privately for your account and deleted when you delete the chat they're in.
@@ -69,4 +69,4 @@ Yes. They're stored privately for your account and deleted when you delete the c
 Nothing is deleted. You drop to Free and everything stays.
 
 ?? How do I get a copy of my data?
-Email admintotality@gmail.com from your account's email address and ask.
+Open **Me** and tap **Download her brain** for everything Tali knows about you, as a file. For anything else, email admintotality@gmail.com from your account's email address and ask.

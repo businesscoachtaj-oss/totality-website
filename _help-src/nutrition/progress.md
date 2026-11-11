@@ -15,7 +15,9 @@ summary: Log your weight, see your weight trend, record body measurements and ad
 
 !phones[Weight trend and your numbers](img/progress-weight.png)[Weight Log](img/progress-weight-log.png)
 
-You can log more than once a day; each is its own entry. The **WEIGHT TREND** chart shows each weigh-in and a **7-day trend** line once you have at least two. Under it, **Current**, **Start** and **Change** sum up your progress. To delete an entry, tap the red **x** in the **Weight Log** and confirm.
+You can log more than once a day; each is its own entry. The **WEIGHT TREND** chart shows each weigh-in and a **7-day trend** line once you have at least two. Under it, **Current**, **Start** and **Change** sum up your progress.
+
+Your goal weight shows as a line across the chart. Tap **Change** next to it, type a new goal and tap **Save**. To delete an entry, tap the red **x** in the **Weight Log** and confirm.
 
 ## Body measurements
 

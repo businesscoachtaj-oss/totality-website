@@ -77,9 +77,9 @@ You'll see "Could not load today. Pull down to try again." Check your internet, 
 ## Connecting Google, Microsoft or Stripe fails
 
 - **"Google didn't finish connecting"**: try again and tick every box Google asks about.
-- **"Google hasn't verified this app"**: while Tali HQ is in beta, tap **Advanced**, then **Continue**.
+- **"Google hasn't verified this app"**: until Google finishes checking Tali HQ, tap **Advanced**, then **Continue**.
 - **"Microsoft didn't finish connecting"**: try again and accept every permission. Work accounts may need your IT admin to approve Tali HQ the first time.
-- **"That link timed out"**: start again from **Me**, **Connections**.
+- **"That link timed out"**: start again from **Me**, **Settings**, **Connections**.
 - **"Connect ... from the web app for now"**: on a phone app, connect from talihq.com.au in your browser. It shows in the app straight after.
 - **"Google signed us out"** or **"Microsoft signed us out"**: tap **Reconnect Google** or **Reconnect Microsoft**.
 
@@ -91,8 +91,8 @@ You'll see "Could not load today. Pull down to try again." Check your internet, 
 
 ## Can't send an invoice with Stripe
 
-- **Send with Stripe** only shows on draft invoices when Stripe is connected.
-- The client needs an email. Add it in **Their email (optional)** and save. On Today, the draft shows **Add their email** instead of Send until you do.
+- Without Stripe connected, **Send invoice** opens the **Get paid by card** step. Connect Stripe from the web app at talihq.com.au, then open the invoice and tap **Send invoice** again.
+- The client needs an email. Add it in **Their email (optional)**. On Today, the draft shows **Add their email** instead of Send until you do.
 
 ## Tali's email address
 
@@ -103,9 +103,21 @@ You'll see "Could not load today. Pull down to try again." Check your internet, 
 
 In a browser, Sleep plays while the Tali HQ tab is open. If it stops when the screen locks, leave Tali HQ open on screen (it dims itself after 20 seconds).
 
+## Her brain won't spin or zoom
+
+Drag sideways to spin her and pinch with two fingers to zoom. A drag that starts up or down scrolls the page instead. If nothing moves, close Tali HQ fully and open it again to pick up the latest update.
+
+## Your world blinks or goes blank
+
+Close Tali HQ fully and open it again to pick up the latest update. If parts of the map still blink, email admintotality@gmail.com and tell us which phone you have.
+
+## "Please sign in again"
+
+Signing out on one device used to sign you out everywhere. That's fixed: signing out now only signs out the device you're on. If you still see this, sign out and sign back in once.
+
 ## Can't delete my account
 
-If you see "Cancel your Tali HQ subscription first, then delete your account.", open **Me**, **See plans**, **Manage billing** and cancel. Once the plan has ended, try again.
+If you see "Cancel your Tali HQ subscription first, then delete your account.", open **Me**, **Plans**, **Manage billing** and cancel. Once the plan has ended, try again.
 
 ## Questions
 
@@ -113,10 +125,10 @@ If you see "Cancel your Tali HQ subscription first, then delete your account.", 
 Email admintotality@gmail.com with what you tapped, what you expected and what happened. A screenshot helps.
 
 ?? Tali got something wrong.
-Tell her in Talk, plainly: "that's wrong, Priya pays monthly". If she remembered something wrong, forget it on the **Me** screen.
+Tell her in Talk, plainly: "that's wrong, Priya pays monthly". If she remembered something wrong, open **Her brain**, find it and tap **Fix this memory** or **Forget**.
 
 ?? A screen is blank or stuck on loading.
 Pull down to refresh. If it's still stuck, close Tali HQ fully and open it again.
 
 ?? I'm signed in on the wrong account.
-**Me**, **Sign out**, then **Sure?**. On the setup screen, tap **Not you? Sign out**.
+**Me**, **Sign out**, then **Sure? Tap again to sign out**. On the setup screen, tap **Not you? Sign out**.

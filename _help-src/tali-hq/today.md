@@ -1,22 +1,39 @@
 ---
 title: Today and your morning brief
-summary: Read your day at a glance, open your morning brief, tick off what's due and add reminders.
+summary: Her brain with your day as stars, the lens, your morning brief, what's due and your numbers at a glance.
 ---
 
-Today is the first screen you see. Tali reads your day for you and puts it in one place: what's due, what's waiting for your yes, how the business is going and your brief. Pull down on the screen at any time to refresh it.
+Today is the first screen you see. It opens on Tali's brain, with your day around it as stars: what's due, what needs your yes, who to get back to. Under her brain are your lists for the day and your numbers. Pull down on the screen at any time to refresh it.
 
-!phone[Today on the trial, with the days left under the greeting](img/today-top.png)
+!phone[Today, with her brain and your day as stars](img/today-top.png)
 
-## The top card
+## Her brain and your stars
 
-The purple card at the top has:
+At the top are the date, your greeting (Morning, Afternoon or Evening, with your first name) and, during a trial, how many days you have left.
 
-- **Your greeting**: Morning, Afternoon or Evening, with your first name. In the last 30 days of a trial, a line under it says how many days you have left, for example "5 days left of your Tali HQ trial".
-- **Tali's line**: one sentence that sums up the page, like "You've got 3 things due today, 3 drafts waiting for your yes". When nothing is on, she says so.
-- **Read your brief**: shows when today's morning brief has landed. [[Tali HQ]]
-- **Tali's level**: her level, name and XP, and how far to the next level. See [What Tali knows](what-tali-knows.html#tali-s-level).
+Every dot in her brain is something she knows. The bright stars around it are today: a late invoice, a draft waiting for your yes, an email, something due, a birthday coming up, an idea.
 
-After you shut the day down, this card turns into a night sky. See [Shut the day down and night mode](evening.html).
+- **Tap a star** to open it. A card shows what it is, what it connects to in her brain, and one thing to do, like **Open email**, **Plan it with her** or **Talk it through**.
+- **Tap a connection** on the card to read that memory.
+- **Done with this** shows on ideas and dates she is reminding you of. It takes that one off Today so the next one gets its turn. She still remembers it.
+- **Tap her brain** to step inside. See [Her brain](what-tali-knows.html).
+- **Tali's line** under her brain sums up the page, like "3 things need you. I've got the rest." When nothing is on, she says "All quiet. Tell me anything."
+
+!phone[A star opened, with what it connects to](img/today-star.png)
+
+### The lens
+
+Under her brain are five chips: **People**, **Work**, **Money**, **Health** and **Growth**. Tap one and Today follows it. The stars, her line and the sections below show only that part of your life, and the matching parts of her brain light up. Tap the chip again to see everything.
+
+!phone[The Money lens on Today](img/today-lens.png)
+
+### Tell her something
+
+The box under the chips is the quickest way to tell Tali something. Type it and send, and it opens in Talk. With a lens on, the box reads "Tell her about money..." and so on.
+
+### Tali's level
+
+The **TALI'S LEVEL** card shows her level, its name and her XP, with a bar to the next level. She levels up as she learns about you. See [Her brain](what-tali-knows.html#tali-s-level).
 
 ## Your morning brief [[Tali HQ]]
 
@@ -25,9 +42,9 @@ Every morning at the time you pick, Tali writes your brief: what's on your calen
 !phone[The brief opened on Today](img/today-brief.png)
 
 !steps
-1. Tap **Read your brief** on the top card.
-2. The brief opens with its headline and the first three lines. Tap **Show all** to see the rest, or **Close** to fold it.
-3. Tap **Got it** once you've read it. It then counts as read.
+1. Tap **Read your morning brief** under her brain. It shows once today's brief has landed.
+2. The brief opens with its headline and the first three lines. Tap **Show all** to see the rest.
+3. Tap **Got it** once you've read it. It then counts as read. **Hide your brief** folds it away without marking it read.
 
 Pick your brief time in **Me**, **Settings**, under **Morning brief time**: any half hour from 5:30am to 9:00am. Each brief uses 1 credit.
 
@@ -35,9 +52,19 @@ Pick your brief time in **Me**, **Settings**, under **Morning brief time**: any 
 Free has no daily brief. You get a Friday check-in from Tali instead, at the time set under **Morning brief time**. It appears under **More from Tali**, **Earlier notes**. [[Free]]
 :::
 
-## Needs your yes
+## She learned this week
+
+When Tali has kept new memories in the last week, a **She learned this week** card lists the newest ones. Tap **Everything she knows** to open her brain.
+
+## An idea from night school [[Pro]]
+
+After a night of study, Tali may leave one idea on Today under **AN IDEA FROM NIGHT SCHOOL**, with why she thinks it suits you. Tap **Let's try it** to open Talk with the idea ready and save it to her brain, or **Not for me** to hide it. See [Night school and Rules](night-school-rules.html).
+
+## Needs you
 
 Anything Tali has drafted for you, like a message, an email, an invoice or a booking, waits here. Tap a draft to open it, then copy it, send it, ask Tali to rework it, or tap **Not needed**. Full details are on [Approvals](approvals.html).
+
+When an email needs you (forwarded from your Gmail, from Outlook, or sent to Tali's own address on Pro), a card at the top of this section says who it's from. Tap it to open Email. See [Gmail and Outlook](gmail-outlook.html). [[Tali HQ]]
 
 ## Due today [[Free]]
 
@@ -47,7 +74,7 @@ Reminders and client follow-ups that are due today (or overdue) show here.
 
 - Tap the circle to tick a reminder or follow-up off.
 - Under a reminder, tap **Tomorrow** to move it to 9am tomorrow, or **Delete** to remove it. Delete asks "Sure?" first, so tap again to confirm.
-- Tap a follow-up to open that person. See [Clients and leads](clients.html).
+- Tap a follow-up to open that person. See [Your people and dates](clients.html).
 
 ### Add a reminder yourself
 
@@ -70,7 +97,7 @@ Up to four tiles with one number each. Tap a tile to slide its full card up from
 !phones[At a glance](img/today-glance.png)[A tile opened](img/today-glance-open.png)
 
 - **Money** [[Tali HQ]]: what's late, or your runway, or cash in this month. See [Money](money.html).
-- **Health** [[Tali HQ]]: your business health. "All good" or how many things need a look. See below.
+- **Health** [[Tali HQ]]: your business health. Only shows if you run a business. "All good" or how many things need a look. See below.
 - **This week** [[Tali HQ]]: how many of your three promises for the week are done, or that your weekly review is due. See [Goals and weekly review](goals-review.html).
 - **Goals** [[Tali HQ]]: how far along your first goal is.
 
@@ -97,7 +124,7 @@ The quieter things live in a row of chips at the bottom. Tap one to open it.
 
 - **Calendar** [[Tali HQ]]: today's events and free gaps from your connected Google or Outlook calendar.
 - **Your day** [[Free]]: food, training and weight. See [Food and training](food-training.html).
-- **Tali noticed** [[Pro]]: this month's patterns. See [What Tali knows](what-tali-knows.html#patterns-pro).
+- **Tali noticed** [[Pro]]: this month's patterns. See [Her brain](what-tali-knows.html#patterns-pro).
 - **Decisions** [[Free]]: your latest decision. See [Decisions](decisions.html).
 - **Earlier notes** [[Free]]: older briefs, health checks and Friday check-ins. Tap one to read it in full.
 
@@ -105,9 +132,11 @@ The quieter things live in a row of chips at the bottom. Tap one to open it.
 
 With a calendar connected, if one of today's events matches a client (their email is on the invite, or their name is in the title), Today shows "Meeting" with that person, the time, and the top things Tali knows about them.
 
-### New email nudge [[Tali HQ]]
+## In the evening
 
-When an email needs you (from your Gmail or Outlook, or sent to Tali's own address on Pro), a card near the top says who it's from. Tap it to open Email. See [Tali's email address](tali-email.html).
+From two hours before your shutdown time, a **Shut the day down** card appears on Today with **Start**. The sky behind the app also changes through the day: lighter by day, fading into her night sky over the two hours before your shutdown time.
+
+Once the day is closed, Today is only her brain, turning slowly, her goodnight line, and two buttons: **Sleep sounds** and **Write in your journal**. Your lists come back in the morning. See [Shut the day down and night mode](evening.html).
 
 ## Questions
 
@@ -122,6 +151,15 @@ No. Reminders, ticking things off and adding reminders yourself never use credit
 
 ?? What does "This arvo" mean?
 3pm today. If it's already past 3pm, it sets the reminder for an hour from now.
+
+?? What are the stars around her brain?
+Each star is something from your day: a late invoice, a draft, an email, something due, a date coming up or an idea. Tap one to open it.
+
+?? I tapped a chip and half of Today disappeared.
+That's the lens. Tap the same chip again (People, Work, Money, Health or Growth) to see everything.
+
+?? I tapped Done with this by mistake.
+It only takes that idea or date off Today on this device. Tali still remembers it, and you can find it in [Her brain](what-tali-knows.html) or under **Dates that matter**.
 
 ?? Why is a tile missing from At a glance?
 Tiles only show when they have something to say, and Money, Health, This week and Goals are Tali HQ features. With no goals, there is no Goals tile.

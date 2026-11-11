@@ -10,7 +10,7 @@ On Pro, Tali gets her own email address, like **ironworks@tali.totality360.com.a
 !phone[Picking the word before the @](img/tali-email-pick.png)
 
 !steps
-1. Open **Me**, then **Email**. (Or **Me**, **Settings**, **Connections**, **Tali's own email address**.)
+1. Open **Your world**, **Work**, **Email**. (Or **Me**, **Settings**, **Connections**, **Tali's own email address**.)
 2. Under **Tali's own address**, the box is filled in with a suggestion made from your business name (words like Pty, Ltd and The are left out).
 3. Change the word before the @ if you like. Use 3 to 24 letters or numbers. No spaces, dots or dashes.
 4. Tap **Get my address**.
@@ -70,7 +70,7 @@ Once you send it, mark it done or tap **Not needed**, the email is marked **Hand
 
 !phone[An email to Tali's address, opened](img/tali-email-open.png)
 
-In **Me**, **Email**, the list under **Sent to your address** shows each email with the sender, subject, Tali's summary and a **Reply drafted** tag when a reply is waiting. Tap one to read it.
+In **Your world**, **Email**, the list under **Sent to your address** shows each email with the sender, subject, Tali's summary and a **Reply drafted** tag when a reply is waiting. Tap one to read it.
 
 - **Go to Today**: jumps to the drafted reply.
 - **Done with this one**: marks it handled.

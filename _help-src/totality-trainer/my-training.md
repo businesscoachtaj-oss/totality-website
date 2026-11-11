@@ -1,9 +1,16 @@
 ---
-title: Your own training
-summary: Put a programme on yourself, log your own workouts and see your training history.
+title: Me: your own training, food, progress and sleep
+summary: The Me tile holds your own training, food, progress and sleep sounds. Put a programme on yourself and log your workouts.
 ---
 
-You can train with Totality too. Assign one of your programmes to yourself and log your sessions the same way your clients do.
+You can train with Totality too. Tap **Me** on Home: "This part is just for you. Your own training, food, progress and sleep. Your clients never see any of it." It has four tiles:
+
+- **My training**: your own workouts and history
+- **My nutrition**: your food and macros. See [Your own food log](my-nutrition.html)
+- **My progress**: weight, photos and measurements, plus strength
+- **My sleep**: sleep sounds to wind down
+
+!phone[Me](img/me.png)
 
 !phones[My Training](img/my-training.png)[Training History](img/my-training-history.png)
 
@@ -12,7 +19,7 @@ You can train with Totality too. Assign one of your programmes to yourself and l
 !steps
 1. Open **My Programmes** from Home and tap a programme.
 2. Tap **Functions**, then **Assign to Me**.
-3. Open **My Training** from Home. Your programme is there.
+3. Open **Me**, then **My training**. Your programme is there.
 
 If you already have a main programme, the new one becomes your main one, unless your current main programme was set by another trainer, in which case that one stays your main.
 
@@ -26,6 +33,14 @@ If you already have a main programme, the new one becomes your main one, unless 
 
 Sessions you've done show **Done**.
 
+## My progress
+
+**Me**, **My progress** has four tabs, the same as your clients get: **Weight**, **Measures**, **Photos** and **Strength**. Log your weight, take measurements, add progress photos and see your estimated 1RM for each lift.
+
+## My sleep
+
+**Me**, **My sleep** plays calming sounds while you drift off. Tap a ready made scene like **Rain on a tin roof**, play last night's mix, or make your own from 35 sounds with a timer that fades out. It's free. It came with the newest version of the phone app, so update the app if you don't see it.
+
 ## Your history
 
 Tap **History** at the top of My Training for **Training History**: every session you've logged, grouped by month, with sets, volume and average RPE. Tap a session to see each exercise.
@@ -36,4 +51,4 @@ Tap **History** at the top of My Training for **Training History**: every sessio
 No. You're not a client.
 
 ?? Is my food log here too?
-Your food log is under **My Nutrition** on Home. See [Your own food log](my-nutrition.html).
+Your food log is under **Me**, **My nutrition**. See [Your own food log](my-nutrition.html).

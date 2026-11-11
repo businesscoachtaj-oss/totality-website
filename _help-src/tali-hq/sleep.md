@@ -1,17 +1,44 @@
 ---
 title: Sleep sounds and wind down
-summary: Pick a sound or two, set a timer, and let Tali fade it out once you're asleep.
+summary: One tap plays last night's mix or a ready made scene, or make and save your own, with a timer that fades out once you're asleep.
 ---
 
-Sleep plays calming sounds while you drift off: rain, wind, water, fire, night sounds, hums and noise. Mix any two, set a timer, and Tali fades it out at the end. It's on every plan and uses no credits. [[Free]]
+Sleep plays calming sounds while you drift off: rain, wind, water, fire, night sounds, hums and noise. One tap starts a scene. Mix your own if you like, save the ones you love, and set a timer that fades out at the end. It's on every plan and uses no credits. [[Free]]
 
-Open it from **Me**, **Sleep**, or tap **Sleep sounds** on Today after you've shut the day down. See [Shut the day down and night mode](evening.html).
+Open it from **Your world**, **Health**, **Sleep**, or tap **Sleep sounds** on Today after you've shut the day down. See [Shut the day down and night mode](evening.html).
 
-!phones[Pick your sounds](img/sleep.png)[Set the timer](img/sleep-timer.png)
+!phones[Sleep](img/sleep.png)[The player](img/sleep-playing.png)
 
-## The sounds
+## One tap and play
 
-Swipe along the row of categories and tap one to see its sounds. A number on a category shows how many you've picked from it.
+The Sleep screen has:
+
+- **Last night's mix**: one big play button for whatever you played last time, with how long it runs.
+- **Tap a scene**: six ready made mixes that start straight away. **Rain on a tin roof**, **Campfire by the sea**, **Brown noise**, **Storm outside**, **Night in the bush** and **Fan on**.
+- **Your mixes**: mixes you've saved. Tap one to play it, or the cross to remove it.
+- **Make your own**: build a mix from all 35 sounds.
+- **How long**: 15 min, 30 min, 45 min, 1 hour, 90 min or Until morning.
+- A switch to have it **get quieter for the last 5 minutes** (when a timer is set).
+
+## The player
+
+!phone[The player with your mix](img/sleep-playing.png)
+
+While it plays, the player shows her brain asleep with the time left, or ∞ for Until morning.
+
+- **Your mix**: each sound has its own slider. Move it and the mix changes as it plays. Tap **Take out** to drop a sound.
+- **Add a sound** (or **Swap a sound** when you already have two) opens Make your own.
+- **Save this mix** keeps it under Your mixes.
+- **Volume** and **How long** work while it plays.
+- **+15** adds 15 minutes. The middle button pauses and resumes. **✕** stops it.
+- The screen dims after 20 seconds. Tap anywhere to see the controls again.
+- **‹ Sounds** goes back without stopping the sound. A **Now playing** bar takes you back.
+
+## Make your own
+
+!phone[Make your own](img/sleep-build.png)
+
+Tap a category, then tap a sound. It joins the mix and starts playing. Tap it again and it leaves. You can play two sounds at once. A number on a category shows how many you've picked from it.
 
 | Category | Sounds |
 |---|---|
@@ -23,30 +50,14 @@ Swipe along the row of categories and tap one to see its sounds. A number on a c
 | Night | Crickets, Frogs and crickets, Frogs, Night forest, Curlew |
 | Hum | Ceiling fan, Box fan, Air con, Train, Plane cabin |
 
-## Play a sound
-
-!steps
-1. Tap **▶** on any tile for a five second listen. Tap **■** to stop it.
-2. Tap a tile to pick it. A tick shows. You can pick up to two sounds, from any categories.
-3. With two picked, a **Mix** box appears. Slide each one to set how loud it is against the other.
-4. Under **Timer**, pick 15 min, 30 min, 45 min, 1 hour, 90 min or Until morning.
-5. Leave **Fade out at the end** on to have the last 5 minutes get quieter before it stops (needs a timer).
-6. Tap **Start**. The button shows the timer, for example **Start, 45 minutes**.
-
-Your sounds, timer and volume are remembered for your account, so they're ready next time on any device.
-
-## While it plays
-
-!phone[Playing, with the timer counting down](img/sleep-playing.png)
-
-- The big circle counts down the time left, or shows ∞ for Until morning.
-- Slide between **Quieter** and **Louder** to set the volume.
-- **+15** adds 15 minutes. The middle button pauses and resumes. **✕** stops it.
-- The screen dims after 20 seconds. Tap anywhere to see the time and the controls again.
-- **‹ Sounds** goes back to the sound picker without stopping the sound. A **Now playing** bar there takes you back to the timer.
+Your sounds, timer, volume and saved mixes are remembered on the device for your account.
 
 :::warn In the browser
-Keep the Tali HQ tab open. Sound stops if the browser is closed.
+Keep the Tali HQ tab open. Sound stops if the browser is closed. In the phone apps it keeps playing with the screen off.
+:::
+
+:::tali
+I won't send anything or make a sound until morning. G'night.
 :::
 
 ## Questions
@@ -55,10 +66,13 @@ Keep the Tali HQ tab open. Sound stops if the browser is closed.
 No. Sleep is free on every plan.
 
 ?? Can I play more than two sounds?
-No, two at a time. Picking a third replaces the first one you picked.
+No, two at a time. With two playing, **Swap a sound** lets you change one.
 
 ?? The sound stopped when I locked my phone.
-In a browser, sound plays while the Tali HQ tab is open. If your phone stops it when the screen locks, leave Tali HQ open on screen; it dims itself after 20 seconds.
+In a browser, sound plays while the Tali HQ tab is open. Leave Tali HQ open on screen; it dims itself after 20 seconds.
+
+?? My saved mixes aren't on my other phone.
+Saved mixes are kept on the device you saved them on. Save the mix again on the other device.
 
 ?? Can I use Sleep without shutting the day down?
-Yes. Open **Me**, **Sleep** any time.
+Yes. Open **Your world**, **Health**, **Sleep** any time.

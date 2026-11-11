@@ -33,7 +33,7 @@ Five tabs sit along the bottom:
 - **Check-Ins**: weekly check-ins from your clients, waiting for your reply.
 - **Messages**: chats with each client, and a message to all of them at once.
 
-Everything else is a shortcut on Home: My Programmes, Exercise Library, Auto-Regulation, Reports, POS, Shop, My Training, My Nutrition, Calorie Calc and Settings.
+Everything else is a shortcut on Home: My Programmes, Exercise Library, Auto-Regulation, Reports, POS, Shop, Calorie Calc, Settings, and **Me** for your own training, food, progress and sleep.
 
 The purple **?** button that floats in the corner of every screen opens **Report an Issue**, which sends a ticket straight to the Totality team.
 

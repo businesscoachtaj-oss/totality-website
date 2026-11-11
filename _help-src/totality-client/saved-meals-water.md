@@ -22,21 +22,18 @@ The star is greyed out on a meal with no food in it.
 ### Log a saved meal
 
 !steps
-1. In your food log, scroll down and tap **Saved Meals**.
-2. Find the meal. Each one shows how many items it has, its calories, and the foods in it.
-3. Tap **Log this meal**.
-4. Tap the meal to log it to (**Breakfast**, **Lunch**, **Dinner** or **Snack**), then **Log Meal**.
-5. You'll see "Logged! Meal added to your food log."
+1. In your food log, scroll down and tap **Saved Meals**. Each meal shows how many items it has, its calories and its total weight in grams.
+2. Tap **Log this meal**. A sheet slides up.
+3. Under **HOW MUCH DID YOU HAVE?**, tap ½, 1, 1½ or 2 servings, or **Other…** to type your own. Or **OR TYPE THE WEIGHT** in grams if you weighed it.
+4. To change one ingredient, switch from **Serving size** to **Adjust ingredients** and use minus and plus on each one.
+5. Under **ADD TO**, pick the meal: Breakfast, Lunch, Dinner or Snack.
+6. Tap the button at the bottom, for example **Log 1 serving** or **Log 320g**.
 
-!phone[Your saved meals](img/saved-meals-water-saved.png)
+!phones[Your saved meals](img/saved-meals-water-saved.png)[How much did you have?](img/saved-meals-water-sheet.png)
 
-The meal is logged to the day you were looking at in your food log. You stay on the Saved Meals screen, so you can log another.
+The meal is logged to the day you were looking at in your food log. Logging never changes the saved meal itself. Changed the amounts and want to keep them? Turn on **Save these amounts as a new meal** and give it a name.
 
 To delete a saved meal, tap the **bin** button on it and confirm. This doesn't remove anything you've already logged.
-
-:::tip
-Saved a meal but your portion changed today? Log the saved meal, then tap any food in your food log to change its serving size.
-:::
 
 ## Water
 

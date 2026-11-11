@@ -59,6 +59,21 @@ Saving makes these your current targets straight away. Your food log measures ev
 
 **Settings**, **Custom Targets** lets you type **Daily calories** (or daily energy in kJ), **Protein (g)**, **Carbs (g)** and **Fat (g)** yourself, then **Save Targets**. This replaces whatever target is currently active. Protein, carbs and fat need at least 1 g each.
 
+Under **WHEN I CHANGE A MACRO**, pick how the numbers move together:
+
+- **Update my calories** (or **Update my kJ**): change protein, carbs or fat and your daily target updates to match.
+- **Keep calories, adjust the others**: your daily target stays the same. Change one macro and the other two share what is left.
+
+A line underneath says "Matches your daily target." when everything adds up.
+
+### Fibre, sugar and sodium
+
+Under **FIBRE, SUGAR AND SODIUM (OPTIONAL)** you can set your own **FIBRE TARGET (G)**, **SUGAR LIMIT (G)** and **SODIUM LIMIT (MG)**. Leave them blank to use the standard label values (30 g fibre, 90 g sugar, 2,300 mg sodium). Your own numbers show on [Breakdown](insights.html#breakdown) as "Your target" or "Your limit".
+
+### If you're pregnant or breastfeeding
+
+Custom Targets starts on **Keep calories, adjust the others**, because your calories are a minimum, not a limit. If you save numbers that lower your calories or put protein under the recommended amount, the app asks you to **Check with your care team** first. Only save them if your GP, midwife or dietitian gave you those numbers.
+
 !phone[Custom Targets](img/targets-custom.png)
 
 ## Calorie cycling

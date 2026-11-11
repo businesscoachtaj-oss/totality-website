@@ -41,6 +41,7 @@ Scroll down to **MORE**. Each tile opens another part of the app.
 | **Classes** | Book a gym class. Only shows if you belong to a gym. See [Sessions, classes and credits](schedule-classes.html). |
 | **Shop** | Products from your gym, your trainer and Totality. See [Shop](shop.html). |
 | **Water** | Track how much water you drink. See [Saved meals and water](saved-meals-water.html). |
+| **Sleep sounds** | Wind down for the night with rain, brown noise and more. Free. See [Sleep sounds](sleep.html). |
 | **Exercise Library** | Every exercise with how-to notes. See [Exercise library](exercise-library.html). |
 | **Workout History** | Every workout you've logged, and your personal bests. See [Workout history](history.html). |
 | **Check-In** | This week's check-in. It turns red and says **Due now** when it's due. Only shows if you have a trainer. |

@@ -1,11 +1,11 @@
 ---
-title: Food and training
-summary: Log food, weight and workouts by telling Tali, and see your day, your weight trend and your training plan.
+title: Food, training, body and headspace
+summary: Log food, weight and workouts by telling Tali, see your weight trend on Body and your mood over a fortnight on Headspace.
 ---
 
 Running a business is easier when you're looking after yourself. Tell Tali what you ate, what you weigh or that you trained, and she keeps it all on the Food and training screen. Rough is fine; she estimates. [[Free]]
 
-Open it from **Me**, **Food and training**. A short version also sits on Today under **More from Tali**, **Your day**.
+Open it from **Your world**, **Health**, **Food and training**. A short version also sits on Today under **More from Tali**, **Your day**. Tap the **Health** chip on Today and it moves up to the top.
 
 !phones[Food and training](img/life.png)[Weight, training plan and this week](img/life-bottom.png)
 
@@ -35,6 +35,26 @@ Food numbers are Tali's estimates from what you told her, so she says "about" an
 
 Under **More from Tali** on Today, **Your day** shows food today, your weight and today's training session, with **Done** to tick the session off.
 
+## Body
+
+**Your world**, **Health**, **Body** shows your weight and how it's trending, from the weigh ins you've told Tali. It shows your latest weight, the change since your first weigh in, and a chart.
+
+!phone[Body](img/body.png)
+
+With nothing logged yet, it says "No weigh ins yet." Try "I'm 82.4 kg this morning" in Talk. **Tell Tali your weight** opens Talk ready to go.
+
+## Headspace
+
+**Your world**, **Health**, **Headspace** shows your mood across the last two weeks, a day at a time. It comes only from the mood you pick under **How was today** when you write in your journal. Nothing is worked out or guessed. Days with no mood picked stay empty.
+
+!phone[Headspace](img/headspace.png)
+
+**Write in your journal** opens a new entry. Only you see this, and it is not medical advice.
+
+## Check ups
+
+Doctor, dentist, scripts and anything else for your body that comes round again live on the **Check ups** list under Health. See [Your lists](lists.html).
+
 ## Questions
 
 ?? Is Food and training on the Free plan?
@@ -51,3 +71,6 @@ Tap **Delete** on the extra one on the Food and training screen.
 
 ?? Does this connect to Apple Health or Health Connect?
 No. Everything here comes from what you tell Tali.
+
+?? Why is Headspace empty?
+It only shows the mood you pick when you write a journal entry. Write one and pick **How was today**, and it shows up.

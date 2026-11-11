@@ -51,6 +51,10 @@ For members whose training is funded, for example through Medicare, DVA, Workcov
 - **Add Referral**: pick the **Funding Type** and fill in what it needs, such as the referring GP and provider number, the Workcover claim and case manager, or NDIS plan dates and support coordinator. You can upload the referral document.
 - **Service Codes**: your gym's list of item codes and rates for funded services. These can also be attached to [PT packages](pt-packages.html).
 
+## Clinic sections
+
+When your business is set up as a clinic, the client's page also has **Treatment notes**, **Intake answers** and **Invoices**. See [Allied health and clinic tools](clinic-tools.html) and [Invoices](invoices.html). Funding types can be the built-in ones or your own, and your own ones are offered on every client once used.
+
 ## Tali's nudge
 
 If the member has not used the app for 14 days or more, a card says "Zack has gone quiet" with **Draft a nudge with Tali** (uses 1 credit). Tali writes a friendly message in your voice, you edit it, and **Send message** sends it to them in the app. See [Tali AI for gyms](tali.html).

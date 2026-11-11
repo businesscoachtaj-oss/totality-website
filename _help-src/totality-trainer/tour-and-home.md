@@ -62,13 +62,13 @@ A grid of tiles to every tool:
 | Classes | [Classes](classes.html) | Gym trainers |
 | Reports | [Reports](reports.html) | Everyone |
 | POS | [Payment links](payment-links.html) | Independent trainers with POS, and gym trainers when the gym has POS |
+| Invoices | [Services, notes and invoices](clinic-tools.html#invoices) | Independent trainers |
 | Revenue | [Marketplace and revenue](marketplace.html) | Independent trainers with POS. Without POS it reads "Add POS to track revenue" |
 | My Programmes | [Programmes](programmes.html) | Everyone |
 | Exercise Library | [Exercise library](exercise-library.html) | Everyone |
 | Calorie Calc | The calorie and macro calculator. See [Client nutrition](client-nutrition.html) | Everyone |
 | Shop | [Marketplace](marketplace.html) | Everyone |
-| My Training | [My training](my-training.html) | Everyone |
-| My Nutrition | [My nutrition](my-nutrition.html) | Everyone |
+| Me | Your own training, food, progress and sleep. See [Me](my-training.html) | Everyone |
 | Settings | [Settings](settings.html) | Everyone |
 
 !phone[The Shortcuts grid](img/home-shortcuts.png)

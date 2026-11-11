@@ -24,12 +24,21 @@ Independent trainers only: **Your logo and colour**. See [Branding](branding.htm
 
 Tap **Units and region** to choose how numbers and dates show for you. Changing these never changes your saved data.
 
-- **Region**: **Country** and **Language** (which sets spelling, and how dates and numbers are written). **Use (country)'s usual units** sets everything in one go.
+- **Region**: **Country** and **Language** (which sets spelling, and how dates and numbers are written). Changing your country switches every unit to that country's usual ones. **Use (country)'s usual units** puts them all back in one go.
 - **Units**: **Body weight** (kg, lb, st lb), **Height and measurements** (cm, ft in), **Energy** (kcal, kJ), **Water** (ml, fl oz), **Lifting weights** (kg, lb), **Distance** (km, miles).
 - **Dates and time**: **Week starts on** (Monday, Sunday, Saturday) and **Time** (12 hour, 24 hour), with a preview.
 - **New clients**: **Starting units for new clients**: **Their phone**, **Metric** or **Imperial**. Clients can change their own later.
 
 !phone[Units and region](img/units.png)
+
+## Allied health tools
+
+For exercise physiologists, physios, massage therapists, dietitians and anyone who sees clients by appointment. Switch on what you use:
+
+- **Funding and referrals**: Medicare, DVA, Workcover, NDIS, Aged Care, private health or your own, with billing codes.
+- **Services**, **Intake forms** and **Treatment notes** (independent trainers). Then tap **Set up services and intake forms**. At a gym or clinic, these are set by the business and show on a client when it has them switched on.
+
+Switching one off hides it. Nothing already saved is deleted. See [Services, notes and invoices](clinic-tools.html).
 
 ## Purchases
 

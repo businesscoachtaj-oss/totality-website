@@ -20,13 +20,24 @@ Tap **Done** to go back.
 
 On the client's profile, under **Recent session logs**, tap **Full history →**. Their sessions are grouped by month, newest first. Each card shows the date, session name, time, number of sets, total volume and average RPE.
 
-Tap a card to expand it and see each exercise with its sets and RPE.
+Tap a card to expand it and see every exercise and every set, with weight, reps and RPE.
+
+### Fix a client's logged workout
+
+!phone[Editing a logged workout](img/session-history-edit.png)
+
+!steps
+1. Open the session card and tap **Edit this workout**.
+2. Change any set's weight, reps or RPE, tap **Add a set**, or remove one.
+3. Tap **Save changes**. If you removed sets, Totality checks first, because they come out of the client's history for good.
+
+The top of the history shows the **LAST 30 DAYS**: volume lifted and when they last trained.
 
 The history shows the most recent activity. If a client has a very long history, older sessions may not all show here.
 
 ## Your own history
 
-Your own sessions live in **My Training > History**. See [My training](my-training.html).
+Your own sessions live in **Me**, **My training**, **History**. See [My training](my-training.html).
 
 ## Questions
 

@@ -13,7 +13,7 @@ Tali (said "tally") is the assistant inside Totality. She reads your day, spots 
 | Draft a check-in reply | Check-ins > Your response > **Draft a reply with Tali** | 1 |
 | Draft a nudge for a quiet client | Waiting on you, or the client's profile | 1 |
 | Draft a programme from a brief | My Programmes > + New > **Draft it with Tali** | 5 |
-| Describe a meal to log it | My Nutrition > add food > **Describe your meal to Tali** | Free, with a daily limit |
+| Describe a meal to log it | Me > My nutrition > add food > **Describe your meal to Tali** | Free, with a daily limit |
 
 Every draft is marked "Drafted by Tali". Edit it, write another (**Again** or **Regenerate**, which uses another credit), or throw it away.
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoices | Totality for gym owners</title>
+<meta name="description" content="Write itemised invoices for a client, a health fund or a funder, email them, and mark them paid.">
+
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/help/assets/guide.css?v=2">
+<style>:root{--accent:#ED8008;--accent-dark:#C46800;--accent-soft:#FFF4E8;--on-accent:#1C1420}</style>
+</head>
+<body class="guide guide--totality-owner">
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="topbar">
+  <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
+  <a class="topbar__brand" href="/help/totality-owner/"><img src="/icon-totality.png" alt="" width="28" height="28"><span>Totality for gym owners</span></a>
+  <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="totality-owner"></label>
+</header>
+<div class="search-results" hidden></div>
+<div class="layout">
+  <nav class="toc" id="toc" aria-label="Guide contents">
+    <p class="toc__audience">For gym owners and admins</p>
+    <p class="toc__group">Start here</p><ol><li><a href="/help/totality-owner/">Welcome to Totality for gyms</a></li><li><a href="/help/totality-owner/plans.html">Plans for gyms</a></li><li><a href="/help/totality-owner/sign-up.html">Signing up and your first login</a></li><li><a href="/help/totality-owner/dashboard.html">Your dashboard</a></li></ol><p class="toc__group">Setting up your gym</p><ol><li><a href="/help/totality-owner/gym-settings.html">Gym details and settings</a></li><li><a href="/help/totality-owner/stripe-connect.html">Stripe Connect and payouts</a></li><li><a href="/help/totality-owner/branding.html">Branding your gym</a></li><li><a href="/help/totality-owner/units-region.html">Units and region</a></li><li><a href="/help/totality-owner/notifications.html">Notifications</a></li><li><a href="/help/totality-owner/locations.html">More than one location</a></li><li><a href="/help/totality-owner/clinic-tools.html">Allied health and clinic tools</a></li></ol><p class="toc__group">Moving to Totality</p><ol><li><a href="/help/totality-owner/import.html">Importing your data</a></li><li><a href="/help/totality-owner/import-files.html">File formats and columns</a></li><li><a href="/help/totality-owner/after-import.html">After importing, and running alongside your old system</a></li></ol><p class="toc__group">Trainers and staff</p><ol><li><a href="/help/totality-owner/trainers.html">Trainers</a></li><li><a href="/help/totality-owner/staff-roster.html">Staff roster</a></li><li><a href="/help/totality-owner/payroll.html">Payroll</a></li><li><a href="/help/totality-owner/xero.html">Xero payroll and membership income</a></li><li><a href="/help/totality-owner/compliance.html">Compliance hub</a></li><li><a href="/help/totality-owner/incident-reports.html">Incident reports</a></li></ol><p class="toc__group">Members and memberships</p><ol><li><a href="/help/totality-owner/members.html">Members</a></li><li><a href="/help/totality-owner/add-members.html">Adding members</a></li><li><a href="/help/totality-owner/memberships.html">Memberships</a></li><li><a href="/help/totality-owner/check-in-freezes.html">Front desk check-in, member status and freezes</a></li><li><a href="/help/totality-owner/failed-payments.html">Failed payments and cards</a></li><li><a href="/help/totality-owner/charges-pos.html">One-off charges and POS payment links</a></li><li><a href="/help/totality-owner/invoices.html" aria-current="page">Invoices</a></li><li><a href="/help/totality-owner/marketplace.html">Marketplace, shop and products</a></li></ol><p class="toc__group">Classes and schedule</p><ol><li><a href="/help/totality-owner/classes.html">Classes and bookings</a></li><li><a href="/help/totality-owner/class-roster.html">Class roster, attendance and waitlists</a></li><li><a href="/help/totality-owner/gym-schedule.html">Gym schedule, PT bookings and cash off</a></li><li><a href="/help/totality-owner/pt-packages.html">PT packages and credits</a></li></ol><p class="toc__group">Clients and programmes</p><ol><li><a href="/help/totality-owner/client-detail.html">A member&#x27;s page and intake</a></li><li><a href="/help/totality-owner/programmes.html">Programmes, exercises, check-ins and your own training</a></li></ol><p class="toc__group">Leads and messages</p><ol><li><a href="/help/totality-owner/leads.html">Leads CRM</a></li><li><a href="/help/totality-owner/messages-announcements.html">Messages and announcements</a></li></ol><p class="toc__group">Numbers and Tali</p><ol><li><a href="/help/totality-owner/revenue-insights.html">Revenue and insights</a></li><li><a href="/help/totality-owner/reports.html">Reports and expenses</a></li><li><a href="/help/totality-owner/tali.html">Tali AI for gyms</a></li></ol><p class="toc__group">Billing and account</p><ol><li><a href="/help/totality-owner/your-plan.html">Your Totality plan</a></li><li><a href="/help/totality-owner/account.html">Account, privacy and deleting</a></li></ol><p class="toc__group">Help</p><ol><li><a href="/help/totality-owner/troubleshooting.html">Troubleshooting</a></li><li><a href="/help/totality-owner/faq.html">Frequently asked questions</a></li></ol>
+  </nav>
+  <main id="main" class="content">
+    <p class="crumb">Totality for gym owners</p>
+    <h1>Invoices</h1>
+    <p class="lead">Write itemised invoices for a client, a health fund or a funder, email them, and mark them paid.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#your-invoice-details">Your invoice details</a></li><li><a href="#write-an-invoice">Write an invoice</a></li><li><a href="#send-it-and-get-paid">Send it and get paid</a></li><li><a href="#the-invoices-screen">The Invoices screen</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Invoices let you bill a client, a health fund or a funder with an itemised invoice, then email it and keep track of what's paid. Open <strong>Invoices</strong> from your dashboard's <strong>QUICK ACTIONS</strong>, or <strong>Sales and billing</strong>, <strong>Invoices</strong>.</p>
+<div class="shots"><figure class="shot shot--phone"><img src="img/invoices.png" alt="Invoices" loading="lazy"><figcaption>Invoices</figcaption></figure><figure class="shot shot--phone"><img src="img/invoices-new.png" alt="A new invoice" loading="lazy"><figcaption>A new invoice</figcaption></figure></div>
+
+<h2 id="your-invoice-details">Your invoice details<a class="anchor" href="#your-invoice-details" aria-label="Link to this section">#</a></h2>
+<p>Do this once. On a client's <strong>Invoices</strong> section, tap <strong>Your invoice details</strong>:</p>
+<ul>
+<li><strong>BUSINESS NAME</strong>, <strong>ABN</strong>, <strong>ADDRESS</strong>, <strong>EMAIL</strong> and <strong>PHONE</strong></li>
+<li><strong>Registered for GST</strong>: on, your invoices say Tax invoice and show the GST included in the total. Your prices are treated as GST inclusive.</li>
+<li><strong>HOW TO PAY (OPTIONAL)</strong>: for example bank transfer to your BSB and account, with the invoice number as the reference</li>
+</ul>
+<p>Tap <strong>Save details</strong>. Changing them later doesn't change invoices you've already written.</p>
+<h2 id="write-an-invoice">Write an invoice<a class="anchor" href="#write-an-invoice" aria-label="Link to this section">#</a></h2>
+<div class="steps">
+<ol>
+<li>Open the client and tap <strong>New invoice</strong> under <strong>Invoices</strong>.</li>
+<li>Under <strong>WHO IS IT FOR?</strong>, pick the client, or a funder or health fund already on their <a href="client-detail.html#funding-referrals">Funding &amp; Referrals</a>. The name and email fill in. Add a <strong>Claim, member or plan number</strong> if there is one.</li>
+<li>Check the <strong>Invoice date</strong> and when it's due: On receipt, 7 days, 14 days or 30 days.</li>
+<li>For each line, write what it was (like "Initial consult 60 min"), the quantity and the <strong>Price each ($)</strong>. Add the <strong>Date of service</strong>, and if it's needed, who provided it, their provider number and a billing or item code. Tap <strong>Add a line</strong> for more.</li>
+<li>Add a <strong>NOTE ON THE INVOICE (OPTIONAL)</strong>.</li>
+<li>Tap <strong>Save invoice</strong>. Saving gives it a number. Nothing is sent yet.</li>
+</ol>
+</div>
+<h2 id="send-it-and-get-paid">Send it and get paid<a class="anchor" href="#send-it-and-get-paid" aria-label="Link to this section">#</a></h2>
+<p>Open the invoice and tap <strong>Email invoice</strong>. It goes to the email on the invoice. Or tap <strong>I gave it to them another way</strong>.</p>
+<p>When it's paid, under <strong>MARK AS PAID</strong>, tap how: Card, Payment link, Bank transfer, Cash or Paid by funder. Marking it paid only updates the invoice. It doesn't charge anyone. Tap <strong>Mark as not paid</strong> to undo it, or <strong>Void this invoice</strong> to cancel it.</p>
+<h2 id="the-invoices-screen">The Invoices screen<a class="anchor" href="#the-invoices-screen" aria-label="Link to this section">#</a></h2>
+<p><strong>Invoices</strong> lists every invoice with <strong>Unpaid</strong>, <strong>Paid</strong> and <strong>Drafts</strong> tabs, and what's <strong>Waiting to be paid</strong> and <strong>Overdue</strong>. Tap one to open it.</p>
+<h2 id="questions">Questions<a class="anchor" href="#questions" aria-label="Link to this section">#</a></h2>
+<details class="faq" id="q-does-an-invoice-charge-the-client-s-card"><summary>Does an invoice charge the client&#x27;s card?</summary><div class="faq__a"><p>No. Invoices are for billing and record keeping. To take money, use <a href="charges-pos.html">Charge a member</a> or a payment link.</p></div></details>
+
+<details class="faq" id="q-can-i-invoice-an-insurer-or-ndis"><summary>Can I invoice an insurer or NDIS?</summary><div class="faq__a"><p>Yes. Add the funder on the client's Funding &amp; Referrals first, then pick them under <strong>WHO IS IT FOR?</strong>.</p></div></details>
+
+<details class="faq" id="q-can-trainers-write-invoices"><summary>Can trainers write invoices?</summary><div class="faq__a"><p>Yes, from their own app, for their own clients.</p></div></details>
+    <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/charges-pos.html"><span>Previous</span>One-off charges and POS payment links</a><a class="pager__next" href="/help/totality-owner/marketplace.html"><span>Next</span>Marketplace, shop and products</a></nav>
+    <footer class="foot">
+      <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 12 November 2026.</p>
+    </footer>
+  </main>
+</div>
+<script src="/help/assets/guide.js" defer></script>
+</body>
+</html>

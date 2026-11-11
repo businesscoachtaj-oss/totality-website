@@ -835,21 +835,35 @@ window.TOTALITY_PLANS = {
         "name": "Free",
         "monthly": "A$0",
         "credits": 0,
-        "messagesMonth": 250
+        "messagesMonth": 250,
+        "searchesMonth": 10
       },
       {
         "id": "hq",
         "name": "Tali HQ",
         "monthly": "A$19.99",
         "yearly": "A$203.90",
-        "creditsMonth": 1000
+        "creditsMonth": 1000,
+        "imagesMonth": 30,
+        "searchesMonth": 150
       },
       {
         "id": "pro",
         "name": "Tali HQ Pro",
         "monthly": "A$49.99",
         "yearly": "A$509.90",
-        "creditsMonth": 3000
+        "creditsMonth": 3000,
+        "imagesMonth": 100,
+        "searchesMonth": 400
+      },
+      {
+        "id": "max",
+        "name": "Tali HQ Max",
+        "monthly": "A$149.99",
+        "yearly": "A$1,529.90",
+        "creditsMonth": 10000,
+        "imagesMonth": 300,
+        "searchesMonth": 1000
       }
     ],
     "yearlyDiscountPercent": 15

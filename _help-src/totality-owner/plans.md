@@ -56,8 +56,11 @@ Yearly plans do not get these discounts. The yearly checkout has a box for a pro
 | Tali AI, +3,000 credits a month for the whole gym | A$19.99 a month | Studio and Club |
 | Branding (your logo, name and colour) | A$9.99 a month | Studio (Club and Enterprise include it) |
 | Tali + Branding bundle | A$24.99 a month | Studio, A$4.99 less than buying both |
+| An extra location | A$149.99 a month each (A$1,529.90 a year on yearly plans), up to 5 locations | Studio, Club and Enterprise |
 
-Enterprise needs no add-ons: Tali is unlimited and branding is included. See [Your Totality plan](your-plan.html) to buy or cancel an add-on.
+See [More than one location](locations.html).
+
+Enterprise needs no Tali or branding add-on: Tali is unlimited and branding is included. See [Your Totality plan](your-plan.html) to buy or cancel an add-on.
 
 ## Fees on member payments
 

@@ -8,16 +8,16 @@ Short answers, with links to the full page. Use the search box at the top to fin
 ## About Tali HQ
 
 ?? What is Tali HQ?
-An app where you run your small business with Tali, an AI teammate who remembers your business. She drafts messages, emails and invoices, keeps your clients and reminders, writes your morning brief and helps you close the day. See [Welcome to Tali HQ](index.html).
+An app where you run your life and your business with Tali, an AI with a brain that grows with you. She keeps your people, dates, lists and money in order, drafts messages, emails and invoices, writes your morning brief and helps you close the day. See [Welcome to Tali HQ](index.html).
 
 ?? Who is it for?
-Small business owners: personal trainers, gyms and studios, coaches and consultants, trades, health and beauty, online businesses and more.
+Anyone who wants a hand with their life, and small business owners who want one with their business too: personal trainers, gyms and studios, coaches and consultants, trades, health and beauty, online businesses and more. You don't need a business to use it.
 
 ?? Where do I get it?
 Open talihq.com.au in your browser on iPhone, Android or computer. On your phone, add it to your home screen.
 
 ?? Do I need Totality or Totality Nutrition?
-No. Tali HQ is its own app with its own sign up.
+No. Tali HQ is its own app with its own sign up. If you do use them, you can link your account from Her brain.
 
 ?? Does Tali ever send things on her own?
 No. Everything she prepares waits on Today for your yes. See [Approvals](approvals.html).
@@ -28,7 +28,7 @@ Yes. Sign in with the same email on each. Turn notifications on separately on ea
 ## Plans and money
 
 ?? How much does it cost?
-Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 credits. Tali HQ Pro is A$49.99 a month with 3,000 credits. Yearly is 15% less. See [Plans, credits and billing](plans.html).
+Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 credits. Tali HQ Pro is A$49.99 a month with 3,000 credits. Tali HQ Max is A$149.99 a month with 10,000 credits. Yearly is 15% less. See [Plans, credits and billing](plans.html).
 
 ?? Is there a free trial?
 Yes, 7 days of Tali HQ on every new account, no card needed.
@@ -40,13 +40,13 @@ A unit of Tali's AI work on the paid plans. A message is 1 credit, a file adds 1
 On the 1st of each month in your time zone, on monthly and yearly plans.
 
 ?? Can I buy more credits?
-No. Move up to Pro for three times the credits, or wait for the 1st.
+Yes, on a paid plan or the trial. Open **Me** and tap **Top up** for extra credits, images or a bundle. Extras never expire. See [Plans, credits and billing](plans.html#top-up).
 
 ?? How do I cancel?
-**Me**, **See plans**, **Manage billing**, then cancel in Stripe. You drop to Free and keep your data.
+**Me**, **Plans**, **Manage billing**, then cancel in Stripe. You drop to Free and keep your data.
 
 ?? What's in Pro that isn't in Tali HQ?
-Tali's own email address, Night school, Rules, Patterns and three times the credits.
+Big brain, Tali's own email address, Night school, Rules, Patterns, voice notes with no cap, and three times the credits and images. Max adds more again, with half price thinking for your first 100 a month.
 
 ## Talking to Tali
 
@@ -54,7 +54,7 @@ Tali's own email address, Night school, Rules, Patterns and three times the cred
 Add clients and leads, set reminders, draft messages, emails, posts and invoices, book meetings (with a calendar connected), log food, weight and workouts, write a training programme, save goals and log decisions. See [Talk to Tali](talk.html).
 
 ?? Does Tali remember me between chats?
-Yes. She remembers you across every chat. See [What Tali knows](what-tali-knows.html).
+Yes. She remembers you across every chat. See [Her brain](what-tali-knows.html).
 
 ?? Can I send Tali a photo or a PDF?
 Photos on every plan, PDFs on the paid plans. Up to 4 files a message, 10 MB each. See [How Tali's replies work](replies.html#send-tali-a-photo-or-pdf).
@@ -66,7 +66,7 @@ Yes. She names her sources. Free has 10 searches a month. On the paid plans each
 Tap **New chat** at the top of Talk. Tap **Chats** to see, rename, pin or delete old ones.
 
 ?? Tali got a fact about me wrong.
-Tell her the right one in Talk, and forget the wrong memory on **Me**.
+Tell her the right one in Talk, or fix the memory yourself in **Her brain**.
 
 ## Today and your day
 
@@ -80,10 +80,27 @@ Drafts waiting for you to send, rework or clear. See [Approvals](approvals.html)
 Two minutes at the end of the day: how it went, one win, and tomorrow's three, which become 9am reminders. On every plan. See [Shut the day down](evening.html).
 
 ?? Why has Today gone dark?
-You've shut the day down, so Today is in night mode until tomorrow. Tap **Sleep sounds** if you like.
+You've shut the day down, so Today is in night mode until the morning. Tap **Sleep sounds** or **Write in your journal** if you like.
 
 ?? What's Tali's level?
-A bit of fun on the top card of Today. She gains XP as she learns your business and as you use the app. See [What Tali knows](what-tali-knows.html#tali-s-level).
+A bit of fun on Today and Her brain. She gains XP as she learns your business and as you use the app. See [Her brain](what-tali-knows.html#tali-s-level).
+
+?? What are the stars on Today?
+Your day. Each star around her brain is something that needs you, is due or is coming up. Tap one to open it. See [Today](today.html).
+
+## Your world and your lists
+
+?? What is Your world?
+Your life on one map in six parts: People, Work, Health, Home and money, Growth and Your words. Every list and tool opens from there. See [Your world](world.html).
+
+?? Can Tali keep my to do list?
+Yes, and eight others: check ups, life admin, home jobs, habits, learning, wins, someday and ideas. Tell her in Talk or add things yourself. See [Your lists](lists.html).
+
+?? Will Tali remember birthdays?
+Yes. Tell her "Mum's birthday is 14 December", or add it to the person. They show on Dates that matter and in your brief. See [Your people and dates](clients.html).
+
+?? Can Tali track my own spending?
+Yes, on the paid plans. Money has a Personal side with a weekly amount, budgets and bills that repeat. Tell her "spent $42 at Woolies". See [Money](money.html#personal-money).
 
 ## Email and connections
 
@@ -122,10 +139,16 @@ Ten minutes a week where Tali pulls together what moved, the money and who went 
 Yes, private to your account. Turn on **Keep this from Tali** on any entry and she never reads it.
 
 ?? Can I see what Tali knows about me?
-Yes. **Me**, **What Tali knows about you**, **Show memories**. Tap **Forget** on anything.
+Yes. Open **Her brain** and tap any part, or tap **See every memory as a list**. Tap **Forget** on anything, or fix its words. You can also download everything she knows from **Me**, **Download her brain**.
 
 ?? How do I delete my account?
 **Me**, **Settings**, **Danger zone**, **Delete account**, type DELETE. Cancel any paid plan first. See [Privacy and your data](privacy.html).
+
+?? What does Tali do while I sleep?
+She tidies her memories of you, reads a few pages of her books, and learns from any mistakes you corrected that day. On Pro she also studies your Night school topics. Every overnight change to her brain can be undone. See [Her brain](what-tali-knows.html#while-you-slept).
+
+?? Can I download everything Tali knows about me?
+Yes. **Me**, **Download her brain**.
 
 ?? Is Sleep free?
 Yes, on every plan, with no credits.

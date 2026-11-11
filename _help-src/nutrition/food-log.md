@@ -16,6 +16,10 @@ Each meal shows its own calories, protein, carbs and fat, then each food with it
 
 Tap the arrows either side of the date. You can go up to 7 days back and 7 days ahead of today. The date reads **Today**, **Yesterday** or **Tomorrow**, or the date itself.
 
+## A note for the day
+
+At the bottom of the day is **NOTE FOR THIS DAY**. Jot down anything worth remembering, like "Ate out, felt flat, big training day...". It's saved with that day.
+
 ## Add food to a meal
 
 Tap the blue **+** on a meal, or **Tap to add food** under an empty meal. This opens Add food for that meal and day. See [Add food](add-food.html).

@@ -3,7 +3,7 @@ title: Your own food log
 summary: Log your own food with search, barcodes, Ask Tali or manual entry, set your targets, save meals, and how Totality Nutrition links in.
 ---
 
-Trainers get the same food log as clients. Open **My Nutrition** from the Home shortcuts.
+Trainers get the same food log as clients. Open **Me**, then **My nutrition**, from the Home shortcuts.
 
 !phones[My Nutrition](img/my-nutrition-log.png)[Add food](img/my-nutrition-add-add.png)
 
