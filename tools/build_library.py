@@ -456,15 +456,16 @@ def build_index(books):
                         "url": f'{SITE}/library/{slug(b["title"])}.html'} for b in books]}]
     main = f"""    <section class="lib-hero"><div class="lib-hero__in"><div>
       <span class="thq-eyebrow">Tali's library</span>
-      <h1>The books Tali has read, and what she kept from each one.</h1>
-      <p>Tali reads a few pages every night and files what is still worth knowing into her brain. When she finishes a book, the whole thing opens here for you to read, with her notes beside it.</p>
+      <h1>A whole library, read by Tali. Free for you to read.</h1>
+      <p>Every night Tali reads, and keeps what is still worth knowing. So far that is {kept:,} lessons from {len(books)} books, from Meditations to War and Peace, and every one she finishes opens here for free with her notes beside the page.</p>
+      <p style="margin-top:10px">Scroll to see <a href="#shelf">her bookshelf</a>, or see <a href="#catalogue">the full catalogue</a> below.</p>
       <div class="lib-stats"><div><b>{len(books)}</b><span>books on her shelf</span></div><div><b>{len(done)}</b><span>finished and open</span></div><div><b>{kept}</b><span>things kept so far</span></div></div>
     </div><img src="/img/tali/tali_think.webp" alt="Tali thinking" width="340" height="460"></div></section>
-    <section class="thq-sec"><h2>Her shelf</h2><p>Pick a book off the shelf. The finished ones open to read. The red ribbon is her bookmark in the ones she is still reading, and you can see her notes so far.</p>
+    <section class="thq-sec" id="shelf" style="scroll-margin-top:90px"><h2>Her shelf</h2><p>Pick a book off the shelf. The finished ones open to read. The red ribbon is her bookmark in the ones she is still reading, and you can see her notes so far.</p>
       <div class="lib-case">
         {chr(10).join(x for x in case if x)}
       </div></section>
-    <section class="thq-sec"><h2>The catalogue</h2><p>The same books as a list. Free to read: enter your email once and every finished book opens.</p>
+    <section class="thq-sec" id="catalogue" style="scroll-margin-top:90px"><h2>The catalogue</h2><p>The same books as a list. Free to read: enter your email once and every finished book opens.</p>
       <input class="lib-q" id="libQ" type="search" placeholder="Search by title, author or subject" aria-label="Search the library" autocomplete="off">
       <div class="lib-chips" id="libStatus" role="radiogroup" aria-label="Show">
         <button type="button" data-v="all" aria-pressed="true">All</button><button type="button" data-v="open" aria-pressed="false">Open to read</button><button type="button" data-v="reading" aria-pressed="false">Tali still reading</button>
