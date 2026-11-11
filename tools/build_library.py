@@ -377,6 +377,9 @@ def cover(book):
     """A small clothbound book with its real title on the front, the same as the app's catalogue."""
     t = book["title"]
     fs = 7.3 if len(t) > 34 else 8.7 if len(t) > 18 else 10.7
+    # A long single word (The Enchiridion) must fit across the 35px frame, so the longest word sets a ceiling.
+    longest = max((len(w) for w in t.split()), default=1)
+    fs = round(min(fs, 35 / (longest * 0.56)), 1)
     last = (book["author"] or "").split(" ")[-1].upper()
     afs = min(4.9, 50 / max(6, len(last)))
     return (f'<span class="lib-cover" style="--c:{colour(book)}" aria-hidden="true"><span class="lib-cover__back"></span><span class="lib-cover__pages"></span>'
