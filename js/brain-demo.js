@@ -158,11 +158,13 @@
         }
         var A = sp.a.p, B = sp.b.p; if (!A || !B) continue;
         var x = A.sx + (B.sx - A.sx) * t, y = A.sy + (B.sy - A.sy) * t;
-        var dim = focus && sp.b.region !== focus ? 0.5 : 1, col = REGIONS[sp.b.region].colour;
+        // 11 Nov 2026: white sparks, a thin streak with a bright point, to match the app.
+        var dim = focus && sp.b.region !== focus ? 0.5 : 1, col = '#FFFFFF';
         ctx.globalAlpha = 0.5 * dim; ctx.strokeStyle = col; ctx.lineWidth = 1.2 * scale;
         ctx.beginPath(); ctx.moveTo(A.sx, A.sy); ctx.lineTo(x, y); ctx.stroke();
         var g2 = 16 * scale * B.k;
-        ctx.globalAlpha = 0.9 * dim; ctx.drawImage(sprites[sp.b.region], x - g2 / 2, y - g2 / 2, g2, g2);
+        ctx.globalAlpha = 0.35 * dim; ctx.drawImage(sprites[sp.b.region], x - g2 / 2, y - g2 / 2, g2, g2);
+        ctx.globalAlpha = 0.95 * dim; ctx.fillStyle = '#FFFFFF'; ctx.beginPath(); ctx.arc(x, y, 1.9 * scale, 0, Math.PI * 2); ctx.fill();
       }
     }
     ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
