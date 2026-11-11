@@ -462,8 +462,8 @@ def build_index(books):
       <h1>A whole library, read by Tali. Free for you to read.</h1>
       <p>Every night Tali reads, and keeps what is still worth knowing. So far that is {kept:,} lessons from {len(books)} books, from Meditations to War and Peace, and every one she finishes opens here for free with her notes beside the page.</p>
       <p style="margin-top:10px">Scroll to see <a href="#shelf">her bookshelf</a>, or see <a href="#catalogue">the full catalogue</a> below.</p>
-      <div class="lib-stats"><div><b>{len(books)}</b><span>books on her shelf</span></div><div><b>{len(done)}</b><span>finished and open</span></div><div><b>{kept}</b><span>things kept so far</span></div></div>
-    </div><img src="/img/tali/tali_think.webp" alt="Tali thinking" width="340" height="460"></div></section>
+      <div class="lib-stats"><div><b>{len(books)}</b><span>books on her shelf</span></div><div><b>{len(done)}</b><span>finished and open</span></div><div><b>{kept:,}</b><span>things kept so far</span></div></div>
+    </div><img class="spr" src="/img/tali/tali_idle.webp" alt="Tali" width="340" height="460"></div></section>
     <section class="thq-sec" id="shelf" style="scroll-margin-top:90px"><h2>Her shelf</h2><p>Pick a book off the shelf. The finished ones open to read. The red ribbon is her bookmark in the ones she is still reading, and you can see her notes so far.</p>
       <div class="lib-case">
         {chr(10).join(x for x in case if x)}
@@ -480,6 +480,7 @@ def build_index(books):
       <div class="lib-grid" id="libGrid">{"".join(card(b) for b in done + reading)}</div></section>
     <section class="thq-end" style="margin-top: var(--s-8);"><div class="thq-end__in"><h2>Want a Tali who reads for you too?</h2><a href="{APP}/?ref=site-library" target="_blank" rel="noopener">Open Tali HQ</a></div></section>"""
     main += FILTERS
+    main += '\n<script src="/js/tali-sprites.js?v=6" defer></script>\n'  # Tali in the header changes pose, like the other pages
     (OUT / "index.html").write_text(page(head(title + " | Totality 360", desc, "/library/", ld), main), encoding="utf-8")
 
 
