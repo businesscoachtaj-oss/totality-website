@@ -11,7 +11,8 @@
         "index",
         "plans",
         "sign-up",
-        "dashboard"
+        "dashboard",
+        "everything"
       ]
     },
     {
@@ -20,6 +21,7 @@
         "gym-settings",
         "stripe-connect",
         "branding",
+        "website",
         "units-region",
         "notifications",
         "locations",
@@ -40,6 +42,7 @@
         "trainers",
         "staff-roster",
         "payroll",
+        "credit-checks",
         "xero",
         "compliance",
         "incident-reports"
@@ -53,6 +56,7 @@
         "memberships",
         "check-in-freezes",
         "failed-payments",
+        "disputed-payments",
         "charges-pos",
         "invoices",
         "marketplace"
@@ -78,6 +82,7 @@
       "title": "Leads and messages",
       "pages": [
         "leads",
+        "autopilot",
         "messages-announcements"
       ]
     },
@@ -86,6 +91,7 @@
       "pages": [
         "revenue-insights",
         "reports",
+        "bookkeeping-pack",
         "tali"
       ]
     },
@@ -109,9 +115,11 @@
     "plans",
     "sign-up",
     "dashboard",
+    "everything",
     "gym-settings",
     "stripe-connect",
     "branding",
+    "website",
     "units-region",
     "notifications",
     "locations",
@@ -122,6 +130,7 @@
     "trainers",
     "staff-roster",
     "payroll",
+    "credit-checks",
     "xero",
     "compliance",
     "incident-reports",
@@ -130,6 +139,7 @@
     "memberships",
     "check-in-freezes",
     "failed-payments",
+    "disputed-payments",
     "charges-pos",
     "invoices",
     "marketplace",
@@ -140,9 +150,11 @@
     "client-detail",
     "programmes",
     "leads",
+    "autopilot",
     "messages-announcements",
     "revenue-insights",
     "reports",
+    "bookkeeping-pack",
     "tali",
     "your-plan",
     "account",

@@ -4,7 +4,7 @@
 window.TOTALITY_PLANS = {
   "_comment": "Mirror of Livewell-1 lib/tiers.ts. Update both together. Nutrition prices mirror TotalityNutrition-1 app/subscribe.tsx.",
   "currency": "AUD",
-  "verified": "2026-11-01",
+  "verified": "2026-11-12",
   "trial": {
     "days": 7,
     "text": "7-day free trial on every plan"
@@ -67,12 +67,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -132,12 +140,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -197,12 +213,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -262,12 +286,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -327,12 +359,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -392,12 +432,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -457,12 +505,20 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Marketplace and client payments (POS add-on)",
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Marketplace, client payments and the bookkeeping pack (POS add-on)",
           "status": "addon"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
         }
       ]
     },
@@ -530,7 +586,19 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Your logo and colours (branding add-on)",
+          "label": "Bookkeeping pack for your accountant",
+          "status": "live"
+        },
+        {
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
+        },
+        {
+          "label": "Your logo, colours and a website (branding add-on)",
           "status": "addon"
         }
       ]
@@ -599,8 +667,24 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Your logo and colours (branding included)",
+          "label": "Bookkeeping pack for your accountant",
           "status": "live"
+        },
+        {
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
+        },
+        {
+          "label": "Your logo, colours and a website (branding included)",
+          "status": "live"
+        },
+        {
+          "label": "Front desk: Tali answers the calls you miss",
+          "status": "coming_soon"
         }
       ]
     },
@@ -668,8 +752,24 @@ window.TOTALITY_PLANS = {
           "status": "live"
         },
         {
-          "label": "Your logo and colours (branding included)",
+          "label": "Bookkeeping pack for your accountant",
           "status": "live"
+        },
+        {
+          "label": "On autopilot: follow ups lined up for your yes",
+          "status": "live"
+        },
+        {
+          "label": "Texts sent for you from a business number",
+          "status": "coming_soon"
+        },
+        {
+          "label": "Your logo, colours and a website (branding included)",
+          "status": "live"
+        },
+        {
+          "label": "Front desk: Tali answers the calls you miss",
+          "status": "coming_soon"
         }
       ]
     }
@@ -681,7 +781,7 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Solo plans",
-      "description": "Marketplace and client payments through your own Stripe account. Included on Studio, Club and Enterprise.",
+      "description": "Marketplace, client payments and the bookkeeping pack, through your own Stripe account. Included on Studio, Club and Enterprise.",
       "tali": "approved"
     },
     {
@@ -711,7 +811,7 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Solo plans",
       "credits": 1000,
-      "description": "POS add-on plus +1,000 Tali AI credits.",
+      "description": "POS add-on (payments, marketplace and the bookkeeping pack) plus +1,000 Tali AI credits.",
       "tali": "peek"
     },
     {
@@ -720,7 +820,7 @@ window.TOTALITY_PLANS = {
       "price": "A$4.99",
       "period": "month",
       "for": "Solo plans",
-      "description": "Your logo, name and colour in the Totality app, member emails and push notifications.",
+      "description": "Your logo, name and colour in the Totality app, client emails and push notifications, plus a simple website for your business. You can ask to put the website on your own domain at no extra charge.",
       "tali": "proud"
     },
     {
@@ -729,7 +829,7 @@ window.TOTALITY_PLANS = {
       "price": "A$9.99",
       "period": "month",
       "for": "Studio",
-      "description": "Your business's logo, name and colour in the Totality app, client emails and push notifications, for every client and team member. Included on Club and Enterprise.",
+      "description": "Your business's logo, name and colour in the Totality app, client emails and push notifications, for every client and team member, plus a simple website with this week's classes and your memberships. Your own domain at no extra charge. Included on Club and Enterprise.",
       "tali": "wink"
     },
     {
@@ -739,7 +839,7 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Solo plans",
       "credits": 1000,
-      "description": "POS add-on, +1,000 Tali AI credits a month and your branding. Cheaper than buying all three.",
+      "description": "POS add-on, +1,000 Tali AI credits a month, and your branding with a website. Cheaper than buying all three.",
       "tali": "happy"
     },
     {
@@ -749,7 +849,7 @@ window.TOTALITY_PLANS = {
       "period": "month",
       "for": "Studio",
       "credits": 3000,
-      "description": "+3,000 Tali AI credits a month and your business's branding. Cheaper than buying both.",
+      "description": "+3,000 Tali AI credits a month and your business's branding with a website. Cheaper than buying both.",
       "tali": "grin"
     }
   ],
@@ -757,7 +857,16 @@ window.TOTALITY_PLANS = {
     "platformFeePercent": 3.5,
     "processingFeePercent": 3.5,
     "commissionPercent": 0,
-    "text": "No commission on your coaching revenue. A 3.5% platform fee applies to in-app payments. It is taken from your payout, never added to what your clients pay."
+    "text": "No commission on your coaching revenue. A 3.5% platform fee applies to payments taken in the app: memberships, PT packages, paid class bookings, one-off charges, payment links and shop sales. It is taken from your payout, never added to what your clients pay. On memberships, PT packages, class bookings and one-off charges, Stripe's own card fee also comes out of your payout.",
+    "appliesTo": [
+      "Memberships",
+      "PT packages",
+      "Paid class bookings",
+      "One-off charges",
+      "POS payment links",
+      "Shop sales"
+    ],
+    "refunds": "When you refund a payment, the matching share of the platform fee goes back to you."
   },
   "custom": {
     "text": "More than 5,000 clients or a custom setup: contact us for a quote."
@@ -826,7 +935,7 @@ window.TOTALITY_PLANS = {
   },
   "products": [],
   "taliHq": {
-    "_comment": "Tali HQ (separate app). Live as a web app at talihq.com.au from 4 Nov 2026; App Store and Google Play coming soon. Stripe products in the Totality 360 account, 2 Nov 2026. Founder pricing (42.5% off) closed to new sign-ups on 10 Nov 2026; people who already have it keep it.",
+    "_comment": "Tali HQ (separate app). Live as a web app at talihq.com.au from 4 Nov 2026; App Store and Google Play coming soon. Mirrors Tali-hq app/(app)/plans.tsx. Founder pricing closed to new sign-ups on 10 Nov 2026. Tali HQ Business went on sale 12 Nov 2026 (monthly only). Business Pro and Business Max are not on sale yet.",
     "status": "live (web app); App Store and Google Play coming soon",
     "trialDays": 7,
     "plans": [
@@ -866,6 +975,56 @@ window.TOTALITY_PLANS = {
         "searchesMonth": 1000
       }
     ],
-    "yearlyDiscountPercent": 15
+    "yearlyDiscountPercent": 15,
+    "business": {
+      "id": "biz",
+      "name": "Tali HQ Business",
+      "monthly": "A$199.99",
+      "yearly": null,
+      "creditsMonth": 10000,
+      "imagesMonth": 300,
+      "searchesMonth": 1000,
+      "features": [
+        "Everything in Tali HQ Max, with the same 10,000 credits and 300 images a month",
+        "Jobs and quotes: quote, job and invoice in one line",
+        "Pipeline: who to chase next and what it could be worth",
+        "Bookings: your week, and one link your customers book from",
+        "Projects: the bigger pieces of work, with their tasks",
+        "Website: a simple site hosted for you, written by Tali if you like, with a contact form that lands as a lead",
+        "On autopilot: rules that put a nudge on your To do so nothing slips",
+        "Bookkeeping pack: a quarter on one page, ready for your accountant"
+      ]
+    },
+    "comingSoon": [
+      {
+        "name": "Tali HQ Business Pro",
+        "monthly": "A$389.99",
+        "what": "For a small team. Seats for your staff, text messages to customers and Tali answering your phone."
+      },
+      {
+        "name": "Tali HQ Business Max",
+        "monthly": "A$649.99",
+        "what": "For a bigger team or more than one business. More seats, more texts and more call minutes."
+      }
+    ],
+    "ownDomain": {
+      "price": "A$79",
+      "period": "once",
+      "for": "Any paid plan",
+      "text": "Put your hosted site on your own domain. A$79 once, on any paid plan."
+    }
+  },
+  "free": {
+    "name": "Free",
+    "monthly": "A$0",
+    "clientLimit": 3,
+    "taliCredits": 0,
+    "text": "Free forever for independent trainers and solo practitioners: up to 3 clients, all Solo tools, no Tali AI."
+  },
+  "extraLocation": {
+    "monthly": "A$149.99",
+    "yearly": "A$1,529.90",
+    "max": 5,
+    "for": "Studio, Club and Enterprise"
   }
 };

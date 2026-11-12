@@ -88,7 +88,7 @@ A session booked when the client had no credit. Cash it off once they have one. 
 With the POS add-on (A$9.99 a month on a Solo plan) and Stripe payouts set up. See [Getting paid](getting-paid.html).
 
 ?? What fees are there?
-A 3.5% platform fee on POS and marketplace payments, taken from your payout. It's never added to what your client pays.
+A 3.5% platform fee on payments your clients make in the app: PT packages, one-off charges, payment links and shop sales. It is taken from your payout and never added to what your client pays. On PT packages and one-off charges, Stripe's own card fee also comes out of your payout.
 
 ?? Does my calendar sync?
 Yes. Google Calendar two-way, or a one-way link for Google and Apple Calendar. See [Calendar sync](calendar-sync.html).

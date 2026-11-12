@@ -67,7 +67,8 @@
     {
       "title": "Messaging",
       "pages": [
-        "messages"
+        "messages",
+        "autopilot"
       ]
     },
     {
@@ -77,7 +78,8 @@
         "payment-links",
         "clinic-tools",
         "marketplace",
-        "reports"
+        "reports",
+        "bookkeeping-pack"
       ]
     },
     {
@@ -97,6 +99,7 @@
       "pages": [
         "settings",
         "branding",
+        "website",
         "subscription"
       ]
     },
@@ -134,15 +137,18 @@
     "classes",
     "calendar-sync",
     "messages",
+    "autopilot",
     "getting-paid",
     "payment-links",
     "clinic-tools",
     "marketplace",
     "reports",
+    "bookkeeping-pack",
     "tali",
     "my-training",
     "settings",
     "branding",
+    "website",
     "subscription",
     "troubleshooting",
     "faq"

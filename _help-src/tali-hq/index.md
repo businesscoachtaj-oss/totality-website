@@ -17,9 +17,11 @@ When you set up, Tali asks "Do you run a business?". Say yes and you get clients
 
 Tali HQ runs in your browser on iPhone, Android and computer at **talihq.com.au**. On your phone, open it in your browser and add it to your home screen, and it works like any other app. Your account, chats and data are the same on every device.
 
-## The four plans
+## The plans
 
 Every new account starts with a free 7 day trial of Tali HQ. No card needed. When the trial ends you drop to Free unless you choose a plan. Full details are on [Plans, credits and billing](plans.html).
+
+There is also **Tali HQ Business** at A$199.99 a month, for running a business from one place. It has everything in Tali HQ Max plus [jobs and quotes, a pipeline, bookings and projects](business-tools.html), [a hosted website](website.html), and [On autopilot and the bookkeeping pack](autopilot-books.html).
 
 | | [[Free]] | [[Tali HQ]] | [[Pro]] | Max |
 |---|---|---|---|---|
