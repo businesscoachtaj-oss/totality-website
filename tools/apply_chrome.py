@@ -30,7 +30,7 @@ EXCLUDE = {
 }
 EXCLUDE_DIRS = {"partials", "node_modules", ".git", "tools", "skool-tools"}
 NUTRITION_PAGES = {
-    "nutrition.html", "get-nutrition.html", "nutrition-features.html",
+    "nutrition.html", "get-nutrition.html", "nutrition-features.html", "nutrition-teams.html",
     "calculator.html",
 }
 

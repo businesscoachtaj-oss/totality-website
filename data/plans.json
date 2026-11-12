@@ -905,6 +905,32 @@
       "android": "https://play.google.com/store/apps/details?id=app.totality.nutrition",
       "ios": null,
       "iosStatus": "coming_soon"
+    },
+    "teams": {
+      "minSeats": 3,
+      "maxSeats": 500,
+      "minMonthly": "A$20.97",
+      "seats": [
+        {
+          "id": "nutrition",
+          "name": "Nutrition seat",
+          "monthly": "A$6.99",
+          "yearly": "A$71.30"
+        },
+        {
+          "id": "nutrition_ai",
+          "name": "Nutrition + AI seat",
+          "monthly": "A$8.99",
+          "yearly": "A$91.70"
+        }
+      ],
+      "offer": {
+        "percentOff": 50,
+        "months": 2,
+        "blackFridayPercentOff": 60,
+        "blackFridayEnds": "2026-11-30T23:59:00Z",
+        "text": "50% off your team's first 2 months on a monthly team. Applied automatically at checkout, no code needed."
+      }
     }
   },
   "offers": {
