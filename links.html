@@ -164,6 +164,7 @@ button, input { font: inherit; }
 .mini img { position: relative; width: 48px; height: 48px; }
 .app h3 { font-family: var(--display); font-size: 17px; font-weight: 800; line-height: 1.1; letter-spacing: -.01em; }
 .app p { color: var(--soft); font-size: 13px; line-height: 1.4; flex: 1; }
+.app p.cost { flex: none; color: #fff; font-weight: 700; font-size: 12.5px; }
 .btns { display: flex; flex-direction: column; gap: 6px; }
 .btn { display: flex; align-items: center; justify-content: center; gap: 6px; height: 40px; border-radius: 12px; font-weight: 800; font-size: 13px; background: rgba(255,255,255,.1); border: 1px solid var(--line); transition: background .2s, transform .15s; }
 .btn:hover { background: rgba(255,255,255,.18); }
@@ -216,6 +217,12 @@ footer a { color: var(--soft); font-weight: 700; }
 .toast { position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translate(-50%, 30px); opacity: 0; background: #fff; color: #1C1420; font-weight: 800; padding: 12px 18px; border-radius: 999px; box-shadow: 0 12px 30px rgba(0,0,0,.4); transition: all .3s; z-index: 10; pointer-events: none; }
 .toast.on { transform: translate(-50%, 0); opacity: 1; }
 
+/* The app cards carry a description and a price line now, so they stack on phones. */
+@media (max-width: 560px) {
+  .apps { grid-template-columns: 1fr; }
+  .app .btns { flex-direction: row; flex-wrap: wrap; }
+  .app .btns .btn { flex: 1 1 auto; }
+}
 @media (max-width: 380px) {
   .apps { grid-template-columns: 1fr; }
   .tools { grid-template-columns: 1fr 1fr; }
@@ -246,7 +253,7 @@ footer a { color: var(--soft); font-weight: 700; }
     </div>
     <div class="name">Totality 360</div>
     <div class="handle">@totality360au · Made in Australia</div>
-    <p class="bio">Gym and coaching software, macro tracking, and Tali, the AI teammate who does the time consuming parts.</p>
+    <p class="bio">Three Australian apps and one AI. Totality runs a client business, Totality Nutrition tracks your food, and Tali HQ is your AI manager for business and life.</p>
     <nav class="socials" aria-label="Socials">
       <a class="soc" href="https://www.instagram.com/totality360au/" target="_blank" rel="noopener" aria-label="Instagram" data-ev="instagram">
         <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
@@ -274,8 +281,8 @@ footer a { color: var(--soft); font-weight: 700; }
 
   <div class="ticker rise" style="animation-delay:.16s" aria-hidden="true">
     <div class="ticker-track">
-      <span>Programmes</span><span>Check-ins</span><span>Bookings</span><span>Memberships</span><span>Payroll and Xero</span><span>Macros</span><span>Meal plans</span><span>Google Calendar</span><span>Morning briefs</span><span>Invoices</span>
-      <span>Programmes</span><span>Check-ins</span><span>Bookings</span><span>Memberships</span><span>Payroll and Xero</span><span>Macros</span><span>Meal plans</span><span>Google Calendar</span><span>Morning briefs</span><span>Invoices</span>
+      <span>Programmes</span><span>Check-ins</span><span>Bookings</span><span>Memberships</span><span>Payroll and Xero</span><span>Your own website</span><span>On autopilot</span><span>Bookkeeping pack</span><span>Macros</span><span>Meal plans</span><span>Cookbook</span><span>Morning briefs</span><span>Quotes and jobs</span><span>Invoices</span>
+      <span>Programmes</span><span>Check-ins</span><span>Bookings</span><span>Memberships</span><span>Payroll and Xero</span><span>Your own website</span><span>On autopilot</span><span>Bookkeeping pack</span><span>Macros</span><span>Meal plans</span><span>Cookbook</span><span>Morning briefs</span><span>Quotes and jobs</span><span>Invoices</span>
     </div>
   </div>
 
@@ -285,10 +292,10 @@ footer a { color: var(--soft); font-weight: 700; }
     <img src="/img/tali/3d/wink_hip.webp" alt="" width="720" height="984" loading="lazy">
     <span class="pill"><span class="dot"></span>Out now</span>
     <h2 id="thqTitle">Tali HQ: your AI manager</h2>
-    <p class="sub">Morning briefs, client follow-ups and invoices she drafts for your yes. Your food, training and goals too.</p>
+    <p class="sub">She remembers your business and your life. Morning briefs, replies, follow-ups and invoices drafted for your yes, plus your food, training, money and goals. On Business she adds quotes and jobs, a pipeline, bookings, projects and a website.</p>
     <div class="deal"><b>Start free</b><span>in your browser now. App Store and Google Play coming soon</span></div>
     <div class="join"><a href="https://talihq.com.au" target="_blank" rel="noopener" data-ev="tali_hq_open">Open Tali HQ</a></div>
-    <p class="fine">7 day free trial of Tali HQ, no card needed.</p>
+    <p class="fine">Free plan, or 7 days free on Tali HQ with no card needed. Paid plans from <span data-p="taliHq.plans.hq.monthly">A$19.99</span> a month. Tali HQ Business is <span data-p="taliHq.business.monthly">A$199.99</span> a month.</p>
     <a class="more" href="/tali-hq.html" data-ev="tali_hq_page">See everything Tali HQ does →</a>
     <a class="more" href="https://www.instagram.com/tali_hq_/" target="_blank" rel="noopener" data-ev="tali_hq_instagram">Follow @tali_hq_ on Instagram →</a>
   </section>
@@ -297,7 +304,8 @@ footer a { color: var(--soft); font-weight: 700; }
   <section class="apps rise" style="animation-delay:.3s">
     <div class="card app tot">
       <div class="app-top"><span class="mini tot"><img src="/img/brand/ring_glow.png" alt="" width="46" height="46"></span><h3>Totality</h3></div>
-      <p>For gyms, PTs and coaches. Clients, programmes, bookings and payments in one place.</p>
+      <p>For trainers, coaches, studios, gyms and allied health clinics. Clients, programmes, check-ins, bookings, classes, memberships and payments in one place, with Tali built in. Add your own branding and a website, and let On autopilot line up the follow-ups for your yes.</p>
+      <p class="cost">Free for up to 3 clients. Solo plans from <span data-p="tiers.solo_5.monthly">A$19.99</span> a month, studio plans from <span data-p="tiers.studio.monthly">A$389.99</span>.</p>
       <div class="btns">
         <a class="btn solid tot" href="https://totalityapp.com.au" target="_blank" rel="noopener" data-ev="totality_web">Open web app</a>
         <a class="btn" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" target="_blank" rel="noopener" data-ev="totality_ios"><svg viewBox="0 0 24 24"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46a4.2 4.2 0 0 0-3.31-1.8c-1.4-.14-2.75.83-3.46.83-.72 0-1.82-.81-3-.79a4.43 4.43 0 0 0-3.73 2.27c-1.6 2.77-.41 6.86 1.14 9.1.76 1.1 1.66 2.33 2.84 2.29 1.14-.05 1.57-.74 2.95-.74 1.37 0 1.76.74 2.96.71 1.23-.02 2-1.11 2.75-2.22.87-1.27 1.22-2.5 1.24-2.57-.03-.01-2.37-.91-2.34-3.62zM14.1 5.86A4.1 4.1 0 0 0 15.05 3a4.2 4.2 0 0 0-2.73 1.41 3.9 3.9 0 0 0-.97 2.8 3.5 3.5 0 0 0 2.75-1.35z"/></svg>App Store</a>
@@ -306,7 +314,8 @@ footer a { color: var(--soft); font-weight: 700; }
     </div>
     <div class="card app nut">
       <div class="app-top"><span class="mini nut"><img src="/img/brand/ring_glow.png" alt="" width="46" height="46"></span><h3>Totality Nutrition</h3></div>
-      <p>Australian-first macro tracking. Log a meal in plain words and Tali does the rest.</p>
+      <p>Macro and calorie tracking built on Australian food data. Log a meal in plain words, scan a barcode, cook from 200 high protein meals in the Cookbook, and plan the week with a grocery list.</p>
+      <p class="cost">Free plan with no ads. Nutrition is <span data-p="nutrition.plans.nutrition.monthly">A$8.99</span> a month, or <span data-p="nutrition.plans.nutrition_ai.monthly">A$11.99</span> with Tali AI.</p>
       <div class="btns">
         <a class="btn solid nut" href="https://totalitynutrition.com.au" target="_blank" rel="noopener" data-ev="nutrition_web">Open web app</a>
         <a class="btn" href="https://play.google.com/store/apps/details?id=app.totality.nutrition" target="_blank" rel="noopener" data-ev="nutrition_android"><svg viewBox="0 0 24 24"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1zm13.3 13.4-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1zm.1-.1-3.4-3.4-10 10c.4.4 1 .4 1.7.1l11.7-6.7m0-6.8L5.3 1.6c-.7-.4-1.3-.3-1.7.1l10 10L17 8.3z"/></svg>Google Play</a>
@@ -317,7 +326,7 @@ footer a { color: var(--soft); font-weight: 700; }
 
   <a class="card row rise" style="animation-delay:.34s" href="/tali-ai.html" data-ev="tali_ai">
     <span class="ic" style="background:linear-gradient(135deg,var(--orange),var(--purple))"><img src="/img/tali/3d/peace.webp" alt="" width="46" height="46" loading="lazy"></span>
-    <span class="tx"><b>Tali AI in the apps</b><span>Programmes, check-in replies and meal logging</span></span>
+    <span class="tx"><b>Tali AI in the apps</b><span>She drafts programmes, check-in replies and win-back messages, and logs meals from plain words</span></span>
     <span class="go">→</span>
   </a>
 
@@ -330,14 +339,31 @@ footer a { color: var(--soft); font-weight: 700; }
 
   <div class="label rise" style="animation-delay:.44s">Free stuff</div>
   <section class="tools rise" style="animation-delay:.46s">
-    <a class="card tool" href="/resources.html" data-ev="free_guides"><span class="em">📘</span><b>Free guides</b><span>4 PDFs for personal trainers</span></a>
-    <a class="card tool" href="/calculator.html" data-ev="macro_calc"><span class="em">🥗</span><b>Macro calculator</b><span>Your calories and macros</span></a>
-    <a class="card tool" href="/commission-calculator.html" data-ev="commission_calc"><span class="em">💸</span><b>Commission calculator</b><span>What your gym's cut costs you</span></a>
+    <a class="card tool" href="/resources.html" data-ev="free_guides"><span class="em">📘</span><b>Free guides</b><span>4 PDFs for personal trainers, free to download</span></a>
+    <a class="card tool" href="/calculator.html" data-ev="macro_calc"><span class="em">🥗</span><b>Macro calculator</b><span>Your daily calories and macros in a minute</span></a>
+    <a class="card tool" href="/commission-calculator.html" data-ev="commission_calc"><span class="em">💸</span><b>Commission calculator</b><span>What a booking commission costs you each month</span></a>
   </section>
 
-  <a class="card row rise" style="animation-delay:.5s" href="https://totality360.com.au" data-ev="website">
+  <div class="label rise" style="animation-delay:.48s">Good to know</div>
+  <a class="card row rise" style="animation-delay:.49s" href="/pricing.html" data-ev="pricing">
+    <span class="ic" style="background:linear-gradient(135deg,var(--orange),#C46800)">💳</span>
+    <span class="tx"><b>Plans and prices</b><span>Every plan and add-on for all three apps, in Australian dollars</span></span>
+    <span class="go">→</span>
+  </a>
+  <a class="card row rise" style="animation-delay:.5s" href="/whats-new.html" data-ev="whats_new">
+    <span class="ic" style="background:linear-gradient(135deg,var(--purple),#4E2560)">✨</span>
+    <span class="tx"><b>What's new</b><span>Websites, On autopilot, the bookkeeping pack and Tali HQ Business</span></span>
+    <span class="go">→</span>
+  </a>
+  <a class="card row rise" style="animation-delay:.51s" href="/help.html" data-ev="how_to">
+    <span class="ic" style="background:linear-gradient(135deg,#1565A0,#0F4E7C)">📖</span>
+    <span class="tx"><b>How to use the apps</b><span>Step by step guides with screenshots for every screen</span></span>
+    <span class="go">→</span>
+  </a>
+
+  <a class="card row rise" style="animation-delay:.52s" href="https://totality360.com.au" data-ev="website">
     <span class="ic" style="background:#fff;padding:7px"><svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M12 12 L3.34 7 A10 10 0 0 1 20.66 7 Z" fill="#EA4335"/><path d="M12 12 L20.66 7 A10 10 0 0 1 12 22 Z" fill="#34A853"/><path d="M12 12 L12 22 A10 10 0 0 1 3.34 7 Z" fill="#FBBC04"/><circle cx="12" cy="12" r="5" fill="#fff"/><circle cx="12" cy="12" r="3.6" fill="#4285F4"/></svg></span>
-    <span class="tx"><b>totality360.com.au</b><span>Features, pricing and everything else</span></span>
+    <span class="tx"><b>totality360.com.au</b><span>Every feature, comparisons, the blog and support</span></span>
     <span class="go">→</span>
   </a>
 
@@ -385,5 +411,7 @@ footer a { color: var(--soft); font-weight: 700; }
 
 })();
 </script>
+<script src="/data/plans.js"></script>
+<script src="/js/plans-ui.js"></script>
 </body>
 </html>

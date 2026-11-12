@@ -35,7 +35,7 @@ If you tap **Set Up Payouts** without the POS add-on, Totality asks **POS Add-on
 
 ## The 3.5% platform fee
 
-A 3.5% platform fee applies to POS and marketplace payments. It comes out of your payout before it lands in your bank, and it is never added to what your client pays. It is not a commission on your coaching income. Your Totality plan itself isn't affected.
+A 3.5% platform fee applies to payments your clients make in the app: PT packages, one-off charges, payment links and shop sales. It comes out of your payout before it lands in your bank, and it is never added to what your client pays. It is not a commission on your coaching income. On PT packages and one-off charges, Stripe's own card fee also comes out of your payout. If you refund a payment, the matching share of the platform fee goes back to you. Your Totality plan itself isn't affected.
 
 ## What you can do once it's on
 
@@ -63,3 +63,12 @@ No. The POS add-on needs a Solo plan. You can record cash payments by adding cre
 
 ?? Who handles refunds?
 There's no refund button in the Totality app. Email admintotality@gmail.com with the client, amount and date, and the team will help.
+
+## Disputed payments
+
+A dispute is when a client asks their bank to reverse a card payment. If it happens you get a push notification and an email, and the payment is listed under **Disputed payments**, linked from the bottom of your POS screen under Recent charges.
+
+!phone[Disputed payments for an independent trainer](img/getting-paid-disputes.png)
+
+Each one shows who it was, how much, what the bank was told and the bank's deadline. Tap **Email us your side** and send anything that shows the payment was genuine. We answer the bank for you. While the bank decides, Stripe holds the disputed amount and its dispute fee from your Stripe balance. If the bank sides with you, the amount comes back.
+

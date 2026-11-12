@@ -3,7 +3,7 @@ title: Plans, credits and billing
 summary: What each plan includes, what a credit is, what happens when you run out, and how to upgrade, change or cancel.
 ---
 
-Tali HQ has four plans: Free, Tali HQ, Tali HQ Pro and Tali HQ Max. Every new account starts with a 7 day free trial of Tali HQ. Prices are in Australian dollars, and you can pay monthly or yearly (15% less).
+Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Business. Every new account starts with a 7 day free trial of Tali HQ. Prices are in Australian dollars, and you can pay monthly or yearly (15% less). Tali HQ Business is monthly only.
 
 ## The plans
 
@@ -51,6 +51,18 @@ Tali HQ has four plans: Free, Tali HQ, Tali HQ Pro and Tali HQ Max. Every new ac
 - 10,000 credits and 300 images a month
 - Deep think, Big brain and second opinions at half the credits, for your first 100 a month
 - more of what she remembers in every answer
+
+**Tali HQ Business** is for running a business from one place. It is A$199.99 a month, monthly only. Everything in Tali HQ Max, with the same 10,000 credits and 300 images a month, plus:
+
+- [jobs and quotes, a pipeline, bookings and projects](business-tools.html)
+- [a website Tali HQ hosts for you](website.html), written by Tali if you like
+- [On autopilot and the bookkeeping pack](autopilot-books.html)
+
+!phone[Tali HQ Business on the Plans screen](img/plans-business.png)
+
+Tali HQ Business Pro (A$389.99 a month) and Tali HQ Business Max (A$649.99 a month) are shown as coming soon. They are for teams, with seats for your staff, text messages to customers and Tali answering your phone, and they are not on sale yet.
+
+**Your own domain** for a hosted site is A$79 once, on any paid plan. See [Your website and your own domain](website.html).
 
 ## The free trial [[Trial]]
 

@@ -5,13 +5,111 @@
   "icon": "/img/tali/tali-icon-512.png",
   "updated": "12 November 2026",
   "groups": [
-    {"title": "Start here", "pages": ["index", "getting-started", "today", "evening"]},
-    {"title": "Talking to Tali", "pages": ["talk", "replies", "approvals"]},
-    {"title": "Her brain", "pages": ["what-tali-knows", "library", "night-school-rules"]},
-    {"title": "Your world", "pages": ["world", "clients", "lists", "goals-review", "decisions", "journal", "food-training", "sleep"]},
-    {"title": "Work and money", "pages": ["tali-email", "gmail-outlook", "invoices", "money", "receipts"]},
-    {"title": "Plans and account", "pages": ["plans", "settings", "privacy"]},
-    {"title": "Help", "pages": ["troubleshooting", "faq"]}
+    {
+      "title": "Start here",
+      "pages": [
+        "index",
+        "getting-started",
+        "today",
+        "modes",
+        "evening"
+      ]
+    },
+    {
+      "title": "Talking to Tali",
+      "pages": [
+        "talk",
+        "replies",
+        "approvals"
+      ]
+    },
+    {
+      "title": "Her brain",
+      "pages": [
+        "what-tali-knows",
+        "library",
+        "night-school-rules"
+      ]
+    },
+    {
+      "title": "Your world",
+      "pages": [
+        "world",
+        "clients",
+        "lists",
+        "goals-review",
+        "decisions",
+        "journal",
+        "food-training",
+        "sleep"
+      ]
+    },
+    {
+      "title": "Work and money",
+      "pages": [
+        "tali-email",
+        "gmail-outlook",
+        "invoices",
+        "money",
+        "receipts"
+      ]
+    },
+    {
+      "title": "Tali HQ Business",
+      "pages": [
+        "business-tools",
+        "website",
+        "autopilot-books"
+      ]
+    },
+    {
+      "title": "Plans and account",
+      "pages": [
+        "plans",
+        "settings",
+        "privacy"
+      ]
+    },
+    {
+      "title": "Help",
+      "pages": [
+        "troubleshooting",
+        "faq"
+      ]
+    }
   ],
-  "pages": ["index", "getting-started", "today", "evening", "talk", "replies", "approvals", "what-tali-knows", "library", "night-school-rules", "world", "clients", "lists", "goals-review", "decisions", "journal", "food-training", "sleep", "tali-email", "gmail-outlook", "invoices", "money", "receipts", "plans", "settings", "privacy", "troubleshooting", "faq"]
+  "pages": [
+    "index",
+    "getting-started",
+    "today",
+    "modes",
+    "evening",
+    "talk",
+    "replies",
+    "approvals",
+    "what-tali-knows",
+    "library",
+    "night-school-rules",
+    "world",
+    "clients",
+    "lists",
+    "goals-review",
+    "decisions",
+    "journal",
+    "food-training",
+    "sleep",
+    "tali-email",
+    "gmail-outlook",
+    "invoices",
+    "money",
+    "receipts",
+    "business-tools",
+    "website",
+    "autopilot-books",
+    "plans",
+    "settings",
+    "privacy",
+    "troubleshooting",
+    "faq"
+  ]
 }

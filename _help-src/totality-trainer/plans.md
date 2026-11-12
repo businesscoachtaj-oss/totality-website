@@ -68,7 +68,7 @@ Add-ons sit on top of a Solo plan. Add them from **Settings > Manage Subscriptio
 | Branding add-on | A$4.99/mo | Your logo, name and colour in the app, emails and push. See [Branding](branding.html) |
 | POS + Tali + Branding | A$19.99/mo | All three, A$4.98 less than buying each |
 
-A 3.5% platform fee applies to POS and marketplace payments. It comes out of your payout and is never added to what your client pays. It is not a cut of your coaching income.
+A 3.5% platform fee applies to payments your clients make in the app: PT packages, one-off charges, payment links and shop sales. It comes out of your payout and is never added to what your client pays. It is not a cut of your coaching income. On PT packages and one-off charges, Stripe's own card fee also comes out of your payout.
 
 ## Trainers at a gym
 
