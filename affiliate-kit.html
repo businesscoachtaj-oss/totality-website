@@ -80,6 +80,19 @@
 .ktop { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 20; background: var(--ink); color: #fff; border-radius: var(--radius-pill); padding: 10px 16px; font-weight: 800; font-size: var(--fs-sm); text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,0.2); }
 #earn .grid-2 > * { min-width: 0; }
 table.ak-earn { min-width: 0; width: 100%; }
+#earn .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--s-4); margin-bottom: var(--s-4); }
+#earn .grid-3 > * { min-width: 0; }
+.ak-num { display: inline-flex; width: 30px; height: 30px; border-radius: 50%; align-items: center; justify-content: center; background: var(--orange, #ED8008); color: #fff; font-weight: 700; margin-bottom: 8px; }
+.ak-rate-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.ak-rate-head h3 { margin: 0 0 8px; }
+.ak-pct { font-size: 1.6rem; font-weight: 800; color: var(--orange, #ED8008); }
+table.ak-earn td:nth-child(2), table.ak-earn td:nth-child(3), table.ak-earn th:nth-child(2), table.ak-earn th:nth-child(3) { text-align: right; white-space: nowrap; }
+.ak-rates { display: grid; gap: var(--s-4); margin-bottom: var(--s-4); max-width: 760px; }
+.ak-rates > * { min-width: 0; }
+table.ak-earn td, table.ak-earn th { padding-left: 10px; padding-right: 10px; }
+table.ak-earn td:first-child { white-space: nowrap; }
+.ak-permo { margin: 0 0 var(--s-3); }
+.ak-know ul { margin: 0; padding-left: 1.2em; }
 .ak-ok li::marker { color: #16A34A; }
 .ak-two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-5); }
 .ak-two > * { min-width: 0; }
@@ -489,23 +502,25 @@ Happy to show you how I use it.</pre>
 <section class="ks ks--tint" id="earn">
   <div class="container">
     <div class="section-head"><h2>How you earn</h2><p class="section-sub">The same for both apps, counted separately for each.</p></div>
-    <div class="grid-2">
-      <div class="card">
-        <h3>Your first 5 paying sign-ups</h3>
-        <p>Your first year of the app is free. Each person who pays after signing up with your code takes 20% off your own plan. Five of them make it 100% off, so it stays free after the year, as long as they keep paying.</p>
-      </div>
-      <div class="card">
-        <h3>From your 6th, commission</h3>
-        <p>You earn a share of the standard monthly price, every month each person keeps paying. Add-ons aren't included, and clients of a trainer or gym don't count.</p>
-        <div class="table-wrap"><table class="table ak-earn">
-          <tr><th>Plan they join</th><th>You get</th><th>Each month</th></tr>
-          <tr><td>Totality Nutrition</td><td>30%</td><td>A$2.70</td></tr>
-          <tr><td>Nutrition + AI</td><td>30%</td><td>A$3.60</td></tr>
-          <tr><td>Totality Solo 20</td><td>25%</td><td>A$10.00</td></tr>
-          <tr><td>Totality Studio</td><td>20%</td><td>A$78.00</td></tr>
-        </table></div>
-        <p class="small muted">We keep a running record of what you're owed and pay it to you directly. We'll sort out your payment details with you when you reach your 6th paying sign-up.</p>
-      </div>
+    <div class="grid-3 ak-steps">
+      <div class="card"><span class="ak-num">1</span><h3>Your first 5 paying referrals pay for your plan</h3><p>Each person who signs up with your code and starts paying takes 20% off your own plan. On the 5th, your plan is 100% off. No cash commission on these first 5.</p></div>
+      <div class="card"><span class="ak-num">2</span><h3>From your 6th, you earn commission</h3><p>You earn the percentage below of the standard plan price, every month that person keeps paying, for as long as they stay.</p></div>
+      <div class="card"><span class="ak-num">3</span><h3>Your referrals get a head start too</h3><p>People who join with your code get 70% off their first 2 months on a monthly plan.</p></div>
+    </div>
+    <p class="small muted ak-permo">All prices and earnings are per month, in AUD.</p>
+    <div class="ak-rates">
+      <div class="card"><div class="ak-rate-head"><h3>Totality trainer plans</h3><span class="ak-pct">25%</span></div><div class="table-wrap"><table class="table ak-earn"><tr><th>Plan</th><th>Price</th><th>You earn</th></tr><tr><td>Solo 5</td><td>A$19.99</td><td><b>A$5.00</b></td></tr><tr><td>Solo 10</td><td>A$29.99</td><td><b>A$7.50</b></td></tr><tr><td>Solo 20</td><td>A$39.99</td><td><b>A$10.00</b></td></tr><tr><td>Solo 30</td><td>A$64.99</td><td><b>A$16.25</b></td></tr><tr><td>Solo 50</td><td>A$94.99</td><td><b>A$23.75</b></td></tr><tr><td>Solo 100</td><td>A$149.99</td><td><b>A$37.50</b></td></tr><tr><td>Solo 200</td><td>A$249.99</td><td><b>A$62.50</b></td></tr></table></div></div>
+      <div class="card"><div class="ak-rate-head"><h3>Totality gym plans</h3><span class="ak-pct">20%</span></div><div class="table-wrap"><table class="table ak-earn"><tr><th>Plan</th><th>Price</th><th>You earn</th></tr><tr><td>Studio</td><td>A$389.99</td><td><b>A$78.00</b></td></tr><tr><td>Club</td><td>A$649.99</td><td><b>A$130.00</b></td></tr><tr><td>Enterprise</td><td>A$999.99</td><td><b>A$200.00</b></td></tr></table></div></div>
+      <div class="card"><div class="ak-rate-head"><h3>Totality Nutrition</h3><span class="ak-pct">30%</span></div><div class="table-wrap"><table class="table ak-earn"><tr><th>Plan</th><th>Price</th><th>You earn</th></tr><tr><td>Nutrition</td><td>A$8.99</td><td><b>A$2.70</b></td></tr><tr><td>Nutrition + AI</td><td>A$11.99</td><td><b>A$3.60</b></td></tr></table></div></div>
+    </div>
+    <div class="card ak-know">
+      <h3>Good to know</h3>
+      <ul>
+        <li>Commission is worked out on the standard monthly plan price shown above, per paying account.</li>
+        <li>Totality commission applies to trainers, gyms and clubs who sign up on a plan. Clients of those businesses don't count.</li>
+        <li>Add-ons aren't included in the commission.</li>
+        <li>We keep a running record of what you're owed and pay it to you directly. We'll sort out your payment details with you when you reach your 6th paying referral.</li>
+      </ul>
     </div>
   </div>
 </section>
