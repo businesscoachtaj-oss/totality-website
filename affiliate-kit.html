@@ -45,7 +45,7 @@
   .ak-shots figcaption { margin-top: var(--s-2); font-size: var(--fs-sm); font-weight: 700; }
   .ak-shots a { font-size: var(--fs-sm); font-weight: 700; }
   .ak-story { display: grid; grid-template-columns: repeat(2, minmax(0, 190px)); gap: var(--s-4); }
-  .ak-story-card { aspect-ratio: 9 / 16; max-width: 100%; border-radius: var(--radius); padding: 16px 14px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; overflow: hidden; }
+  .ak-story-card { cursor: pointer; aspect-ratio: 9 / 16; max-width: 100%; border-radius: var(--radius); padding: 16px 14px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; overflow: hidden; }
   .ak-story-card.n { background: linear-gradient(170deg, #1A7FC1, #0F4F80); }
   .ak-story-card.t { background: linear-gradient(170deg, #F5A543, #C46800); }
   .ak-story-card h4 { margin: 0; font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; }
@@ -322,10 +322,10 @@ Frame 3: Code {CODE} = 70% off your first 2 months 🙌 (tap the link)</pre>
     </div>
     <h3 class="mt-5">Story cards with your code</h3>
     <div class="ak-story">
-      <div class="ak-story-card n"><h4>The food tracker I use</h4><img src="/img/app/n_home.webp" alt=""><div class="code">70% off 2 months<b data-fill="code">YOURCODE</b></div></div>
-      <div class="ak-story-card n"><h4>Every vitamin and mineral for the day</h4><img src="/img/app/n_breakdown.webp" alt=""><div class="code">Use my code<b data-fill="code">YOURCODE</b></div></div>
+      <div class="ak-story-card n" role="button" tabindex="0" aria-label="Save this story card"><h4>The food tracker I use</h4><img src="/img/app/n_home.webp" alt=""><div class="code">70% off 2 months<b data-fill="code">YOURCODE</b></div></div>
+      <div class="ak-story-card n" role="button" tabindex="0" aria-label="Save this story card"><h4>Every vitamin and mineral for the day</h4><img src="/img/app/n_breakdown.webp" alt=""><div class="code">Use my code<b data-fill="code">YOURCODE</b></div></div>
     </div>
-    <p class="small muted mt-4">Tap a card to save it as a 1080 x 1920 image.</p>
+    <p class="small muted mt-4">Tap a card to save it as a 1080 x 1920 image for your story.</p>
   </div>
 </section>
 
@@ -535,10 +535,10 @@ Frame 3: Code {CODE} = 70% off your first 2 months (tap the link)</pre>
     </div>
     <h3 class="mt-5">Story cards with your code</h3>
     <div class="ak-story">
-      <div class="ak-story-card t"><h4>The app I run my clients in</h4><img src="/img/app/t_dashboard.webp" alt=""><div class="code">70% off 2 months<b data-fill="code">YOURCODE</b></div></div>
-      <div class="ak-story-card t"><h4>My whole week in one place</h4><img src="/img/app/t_schedule.webp" alt=""><div class="code">Use my code<b data-fill="code">YOURCODE</b></div></div>
+      <div class="ak-story-card t" role="button" tabindex="0" aria-label="Save this story card"><h4>The app I run my clients in</h4><img src="/img/app/t_dashboard.webp" alt=""><div class="code">70% off 2 months<b data-fill="code">YOURCODE</b></div></div>
+      <div class="ak-story-card t" role="button" tabindex="0" aria-label="Save this story card"><h4>My whole week in one place</h4><img src="/img/app/t_schedule.webp" alt=""><div class="code">Use my code<b data-fill="code">YOURCODE</b></div></div>
     </div>
-    <p class="small muted mt-4">Tap a card to save it as a 1080 x 1920 image.</p>
+    <p class="small muted mt-4">Tap a card to save it as a 1080 x 1920 image for your story.</p>
   </div>
 </section>
 
@@ -611,7 +611,7 @@ Happy to show you how I use it.</pre>
           <tr><td>Totality Solo 20</td><td>25%</td><td>A$10.00</td></tr>
           <tr><td>Totality Studio</td><td>20%</td><td>A$78.00</td></tr>
         </table></div>
-        <p class="small muted"><span class="ak-fill">[Taj: how and when you pay out, e.g. monthly by bank transfer]</span></p>
+        <p class="small muted">We keep a running record of what you're owed and pay it to you directly. We'll sort out your payment details with you when you reach your 6th paying sign-up.</p>
       </div>
     </div>
   </div>
@@ -800,6 +800,47 @@ Happy to show you how I use it.</pre>
     if (pre) copyText(pre.innerText.trim(), btn);
   });
 
+
+  // Story cards: draw the card at 1080 x 1920 and save it as a PNG.
+  function wrap(ctx, text, maxW) {
+    var words = text.split(' '), lines = [], line = '';
+    words.forEach(function (w) { var t = line ? line + ' ' + w : w; if (ctx.measureText(t).width > maxW && line) { lines.push(line); line = w } else { line = t } });
+    if (line) lines.push(line); return lines;
+  }
+  function rr(ctx, x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+  function saveCard(card) {
+    var W = 1080, H = 1920, isN = card.classList.contains('n');
+    var cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+    var ctx = cv.getContext('2d');
+    var g = ctx.createLinearGradient(0, 0, W * 0.35, H);
+    g.addColorStop(0, isN ? '#1A7FC1' : '#F5A543'); g.addColorStop(1, isN ? '#0F4F80' : '#C46800');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    var font = getComputedStyle(document.documentElement).getPropertyValue('--font-display') || 'sans-serif';
+    ctx.fillStyle = '#fff'; ctx.font = '800 88px ' + font; ctx.textBaseline = 'top';
+    var title = card.querySelector('h4').textContent, y = 230; // clear of the story bar at the top
+    wrap(ctx, title, W - 160).forEach(function (l) { ctx.fillText(l, 80, y); y += 104; });
+    var img = card.querySelector('img'), lbl = card.querySelector('.code').firstChild.textContent.trim(), c = code || 'YOURCODE';
+    var boxH = 300, boxY = H - 230 - boxH; // clear of the reply bar at the bottom
+    var top = y + 40, avail = boxY - 60 - top;
+    var iw = img.naturalWidth, ih = img.naturalHeight, h = avail, w = iw * (h / ih);
+    if (w > W * 0.78) { w = W * 0.78; h = ih * (w / iw); }
+    ctx.drawImage(img, (W - w) / 2, top + (avail - h) / 2, w, h);
+    ctx.fillStyle = '#fff'; rr(ctx, 80, boxY, W - 160, boxH, 40); ctx.fill();
+    ctx.fillStyle = '#272626'; ctx.textAlign = 'center';
+    ctx.font = '700 52px ' + font; ctx.fillText(lbl, W / 2, boxY + 60);
+    ctx.font = '800 104px ' + font; ctx.fillText(c, W / 2, boxY + 140);
+    cv.toBlob(function (blob) {
+      if (!blob) return;
+      var a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+      a.download = 'totality-story-' + c.toLowerCase() + '-' + (Array.prototype.indexOf.call(document.querySelectorAll('.ak-story-card'), card) + 1) + '.png';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+    }, 'image/png');
+  }
+  document.querySelectorAll('.ak-story-card').forEach(function (card) {
+    card.addEventListener('click', function () { saveCard(card); });
+    card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); saveCard(card); } });
+  });
   var tabs = document.querySelectorAll('.ak-tab');
   var jumpMap = { nutrition: ['pitch', 'youtube', 'social', 'messages', 'screens', 'questions'], totality: ['pitch-t', 'youtube-t', 'social-t', 'messages-t', 'screens-t', 'questions-t'] };
   function show(app) {
