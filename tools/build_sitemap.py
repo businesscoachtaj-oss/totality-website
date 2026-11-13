@@ -18,6 +18,7 @@ BASE = "https://totality360.com.au/"
 EXCLUDE = [
     "*-download.html",          # paid-product thank-you pages (noindex)
     "brand-kit-*.html",         # internal brand kits (noindex)
+    "affiliate-kit.html",       # affiliate kit, sent to approved affiliates (noindex)
     "blog/post-template.html",
     "partials/*", "tools/*", "data/*", "node_modules/*",
     "delete-account.html",      # account utility page for app store review
