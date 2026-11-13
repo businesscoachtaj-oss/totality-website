@@ -119,6 +119,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .thq-plans { display: grid; gap: var(--s-4); grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
     .thq-plan { position: relative; background: #fff; border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius-lg); padding: var(--s-5); display: grid; gap: var(--s-3); align-content: start; grid-template-rows: auto auto auto auto 1fr auto; }
     .thq-plan--hq { border: 2px solid #6C3483; box-shadow: 0 14px 40px rgba(108, 52, 131, 0.14); }
+    .thq-plan--biz { grid-column: 1 / -1; border: 2px solid #7FA8FF; }
+    .thq-plan--biz ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-5); }
+    @media (max-width: 760px) { .thq-plan--biz ul { grid-template-columns: minmax(0, 1fr); } }
     .thq-plan__pop { position: absolute; top: -12px; left: var(--s-5); background: #6C3483; color: #fff; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
     .thq-plan h3 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; }
     .thq-plan__price { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
