@@ -56,7 +56,7 @@
       render(key).then(function (b) { var u = URL.createObjectURL(b); var old = img.src; img.src = u; if (old && old.indexOf('blob:') === 0) URL.revokeObjectURL(old); });
     });
   }
-  function fileName(key) { return 'totality-' + key.replace('/', '-').replace(/_/g, '-') + '-' + (code || 'yourcode').toLowerCase() + '.jpg'; }
+  function fileName(key) { return (key.indexOf('totality/') === 0 ? '' : 'totality-') + key.replace('/', '-').replace(/_/g, '-') + '-' + (code || 'yourcode').toLowerCase() + '.jpg'; }
   function saveBlob(b, name) {
     var a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = name;
     document.body.appendChild(a); a.click(); a.remove();
@@ -69,6 +69,8 @@
     if (b) { var key = b.getAttribute('data-dl'); var end = busy(b, 'Getting it...'); render(key).then(function (blob) { saveBlob(blob, fileName(key)); end('Saved'); }); return; }
     var z = e.target.closest('[data-zip]');
     if (z) { zipKeys(['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4'].map(function (n) { return app + '/' + n; }), [], 'carousel', z); return; }
+    var hx = e.target.closest('.kcopy');
+    if (hx) { copyText(hx.getAttribute('data-copy'), hx); return; }
     var cp = e.target.closest('.ak-copy .ak-btn');
     if (cp) { copyText(cp.parentElement.querySelector('pre').innerText.trim(), cp); }
   });
@@ -76,24 +78,29 @@
   function zipKeys(keys, extras, label, btn) {
     if (!window.JSZip) { alertBox(btn, 'Zip unavailable, download one at a time'); return; }
     var end = busy(btn, 'Packing it up...');
-    var zip = new JSZip(); var folder = zip.folder('totality-' + app + '-' + label + '-' + (code || 'yourcode').toLowerCase());
+    var nm = app === 'totality' ? 'totality' : 'totality-nutrition';
+    var zip = new JSZip(); var folder = zip.folder(nm + '-' + label + '-' + (code || 'yourcode').toLowerCase());
     var jobs = keys.map(function (k) { return render(k).then(function (b) { folder.file(fileName(k), b); }); });
     extras.forEach(function (p) { jobs.push(fetch('/affiliate-kit/' + p).then(function (r) { return r.blob(); }).then(function (b) { folder.file(p.split('/').slice(1).join('/'), b); })); });
     Promise.all(jobs).then(function () {
       var words = Array.prototype.map.call(document.querySelectorAll('.ak-panel:not([hidden]) .ak-copy'), function (d) { return '## ' + d.querySelector('h3').textContent + '\n\n' + d.querySelector('pre').textContent.trim(); }).join('\n\n\n');
       if (label === 'everything') folder.file('scripts-and-captions.txt', words);
       return zip.generateAsync({ type: 'blob' });
-    }).then(function (b) { saveBlob(b, 'totality-' + app + '-' + label + '.zip'); end('Saved'); });
+    }).then(function (b) { saveBlob(b, nm + '-' + label + '.zip'); end('Saved'); });
   }
   function alertBox(btn, t) { btn.textContent = t; }
 
   var ALL = {
     nutrition: {
       keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2'],
-      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-nutrition-app-icon.png', 'screens/home.png', 'screens/food-search.png', 'screens/nutrient-breakdown.png', 'screens/grocery-list.png', 'screens/food-log.png', 'screens/insights.png'],
+      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-nutrition-app-icon.png', 'brand/totality-logo-transparent.png', 'screens/home.png', 'screens/food-search.png', 'screens/nutrient-breakdown.png', 'screens/grocery-list.png', 'screens/food-log.png', 'screens/insights.png'],
       shared: ['tali/tali-3d-cutouts.zip', 'tali/tali-stickers.zip']
     },
-    totality: { keys: [], extras: [], shared: [] }
+    totality: {
+      keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2'],
+      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-app-icon.png', 'brand/totality-logo-transparent.png', 'brand/totality-logo-with-name-transparent.png', 'brand/totality-wordmark-orange-transparent.png', 'screens/dashboard.png', 'screens/check-in-reply.png', 'screens/programme-builder.png', 'screens/auto-regulation.png', 'screens/schedule.png', 'screens/client-profile.png'],
+      shared: ['tali/tali-3d-cutouts.zip', 'tali/tali-stickers.zip']
+    }
   };
   document.getElementById('kAll').addEventListener('click', function () {
     var set = ALL[app];
@@ -129,7 +136,7 @@
 
   // ---------- app switch ----------
   var MENU = { nutrition: { posts: 'posts', stories: 'stories', video: 'video', brand: 'brand', words: 'words' },
-               totality: { posts: 'posts-t', stories: 'posts-t', video: 'posts-t', brand: 'posts-t', words: 'words-t' } };
+               totality: { posts: 'posts-t', stories: 'stories-t', video: 'video-t', brand: 'brand-t', words: 'words-t' } };
   function show(a) {
     app = a;
     document.querySelectorAll('.kapp').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.app === a ? 'true' : 'false'); });
