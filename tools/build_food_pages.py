@@ -611,6 +611,8 @@ def foods_index():
     hits.sort(function (a, b) {{ return a[0].toLowerCase().indexOf(t[0]) - b[0].toLowerCase().indexOf(t[0]) || a[0].length - b[0].length; }});
     out.innerHTML = hits.slice(0, 30).map(function (r) {{ return '<li><a href="/foods/' + r[1] + '.html"><span>' + esc(r[0]) + '</span><small>' + r[2] + ' cal per 100 g</small></a></li>'; }}).join('') || '<li class="muted">No foods match that. Try a shorter word.</li>';
   }});
+  var pre = new URLSearchParams(location.search).get('q');
+  if (pre) {{ q.value = pre; q.dispatchEvent(new Event('input')); }}
 }})();
 </script>"""
     desc = f'Calories, protein, carbs, fat, vitamins and minerals for {len(PAGES):,} Australian foods, from the Australian Food Composition Database.'
