@@ -90,13 +90,14 @@
   var ALL = {
     nutrition: {
       keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2'],
-      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-nutrition-app-icon.png', 'brand/tali-3d-peace.jpg', 'brand/tali-3d-wink-hip.jpg', 'brand/tali-3d-thumbs-full.jpg', 'brand/tali-3d-point-close.jpg', 'brand/tali-wave.png', 'brand/tali-thumbs.png', 'brand/tali-point.png', 'screens/home.png', 'screens/food-search.png', 'screens/nutrient-breakdown.png', 'screens/grocery-list.png', 'screens/food-log.png', 'screens/insights.png']
+      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-nutrition-app-icon.png', 'screens/home.png', 'screens/food-search.png', 'screens/nutrient-breakdown.png', 'screens/grocery-list.png', 'screens/food-log.png', 'screens/insights.png'],
+      shared: ['tali/tali-3d-cutouts.zip', 'tali/tali-stickers.zip']
     },
-    totality: { keys: [], extras: [] }
+    totality: { keys: [], extras: [], shared: [] }
   };
   document.getElementById('kAll').addEventListener('click', function () {
     var set = ALL[app];
-    zipKeys(set.keys.map(function (n) { return app + '/' + n; }), set.extras.map(function (p) { return app + '/' + p; }), 'everything', this);
+    zipKeys(set.keys.map(function (n) { return app + '/' + n; }), set.extras.map(function (p) { return app + '/' + p; }).concat(set.shared), 'everything', this);
   });
 
   // ---------- copy ----------
