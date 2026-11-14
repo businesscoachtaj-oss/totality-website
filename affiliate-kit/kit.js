@@ -68,7 +68,7 @@
     var b = e.target.closest('[data-dl]');
     if (b) { var key = b.getAttribute('data-dl'); var end = busy(b, 'Getting it...'); render(key).then(function (blob) { saveBlob(blob, fileName(key)); end('Saved'); }); return; }
     var z = e.target.closest('[data-zip]');
-    if (z) { zipKeys(['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4'].map(function (n) { return app + '/' + n; }), [], 'carousel', z); return; }
+    if (z) { var zb = z.getAttribute('data-zip'); zipKeys([1, 2, 3, 4].map(function (i) { return app + '/' + zb + '_' + i; }), [], zb.replace('_', '-'), z); return; }
     var hx = e.target.closest('.kcopy');
     if (hx) { copyText(hx.getAttribute('data-copy'), hx); return; }
     var cp = e.target.closest('.ak-copy .ak-btn');
@@ -92,13 +92,13 @@
 
   var ALL = {
     nutrition: {
-      keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2'],
-      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-nutrition-app-icon.png', 'brand/totality-logo-transparent.png', 'screens/home.png', 'screens/food-search.png', 'screens/nutrient-breakdown.png', 'screens/grocery-list.png', 'screens/food-log.png', 'screens/insights.png'],
+      keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2', 'carousel_a_1', 'carousel_a_2', 'carousel_a_3', 'carousel_a_4', 'carousel_b_1', 'carousel_b_2', 'carousel_b_3', 'carousel_b_4', 'carousel_c_1', 'carousel_c_2', 'carousel_c_3', 'carousel_c_4', 'post_1', 'post_2', 'post_3', 'post_4', 'post_5', 'post_6', 'post_7', 'square_2', 'square_3', 'square_4', 'story_3', 'story_4', 'story_5', 'story_6', 'story_7', 'story_8'],
+      extras: ['reel.mp4', 'reel_cover.jpg', 'reel_2.mp4', 'reel_2_cover.jpg', 'reel_3.mp4', 'reel_3_cover.jpg', 'brand/totality-nutrition-app-icon.png', 'brand/totality-logo-transparent.png', 'screens/home.png', 'screens/food-search.png', 'screens/nutrient-breakdown.png', 'screens/grocery-list.png', 'screens/food-log.png', 'screens/insights.png'],
       shared: ['tali/tali-3d-cutouts.zip', 'tali/tali-stickers.zip']
     },
     totality: {
-      keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2'],
-      extras: ['reel.mp4', 'reel_cover.jpg', 'brand/totality-app-icon.png', 'brand/totality-logo-transparent.png', 'brand/totality-logo-with-name-transparent.png', 'brand/totality-wordmark-orange-transparent.png', 'screens/dashboard.png', 'screens/check-in-reply.png', 'screens/programme-builder.png', 'screens/auto-regulation.png', 'screens/schedule.png', 'screens/client-profile.png'],
+      keys: ['carousel_1', 'carousel_2', 'carousel_3', 'carousel_4', 'square_1', 'story_1', 'story_2', 'carousel_a_1', 'carousel_a_2', 'carousel_a_3', 'carousel_a_4', 'carousel_b_1', 'carousel_b_2', 'carousel_b_3', 'carousel_b_4', 'carousel_c_1', 'carousel_c_2', 'carousel_c_3', 'carousel_c_4', 'post_1', 'post_2', 'post_3', 'post_4', 'post_5', 'post_6', 'post_7', 'square_2', 'square_3', 'square_4', 'story_3', 'story_4', 'story_5', 'story_6', 'story_7', 'story_8'],
+      extras: ['reel.mp4', 'reel_cover.jpg', 'reel_2.mp4', 'reel_2_cover.jpg', 'reel_3.mp4', 'reel_3_cover.jpg', 'brand/totality-app-icon.png', 'brand/totality-logo-transparent.png', 'brand/totality-logo-with-name-transparent.png', 'brand/totality-wordmark-orange-transparent.png', 'screens/dashboard.png', 'screens/check-in-reply.png', 'screens/programme-builder.png', 'screens/auto-regulation.png', 'screens/schedule.png', 'screens/client-profile.png'],
       shared: ['tali/tali-3d-cutouts.zip', 'tali/tali-stickers.zip']
     }
   };
