@@ -24,7 +24,7 @@ Open **Sales**, then **Marketplace products**, and tap **+ New**.
    - **PT Package**: a pack of sessions. Enter the **Number of sessions**.
    - **Custom**: anything else, like a challenge or a workshop.
    - **Physical Product**: something you hand over, like a shaker or a t-shirt. Always one-off.
-2. Enter a **Name**, a **Description** and the **Price ($)**. A 3.5% platform fee comes out of your payout. Buyers pay the price you set.
+2. Enter a **Name**, a **Description** and the **Price ($)**. A 1.25% platform fee plus Stripe's card fee (1.65% + 30c) comes out of your payout. Buyers pay the price you set.
 3. Pick the **Billing frequency**: **One-off**, **Weekly**, **Fortnightly** or **Monthly**.
 4. Optional: add a **Product photo**.
 5. Turn on **Add buyer as a client** if the buyer should be added to your client list when they buy (handy for PT packs and challenges).
@@ -68,4 +68,4 @@ They are the same list. A membership you create in either place shows in both.
 There is no gift card feature. You can sell a **Custom** product, for example "Gift voucher, $100", and honour it yourself.
 
 ?? Do I pay a fee on shop sales?
-Yes, the 3.5% platform fee, taken from your payout, plus Stripe's card fees.
+Yes, the 1.25% platform fee, taken from your payout, plus Stripe's card fees.

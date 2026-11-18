@@ -46,5 +46,5 @@ It's a Stripe Checkout link. Send it when the client is ready to pay, and make a
 ?? Does the client need the Totality app to pay?
 No. The link opens a Stripe checkout page in any browser.
 
-?? Is the 3.5% fee added to the client's price?
+?? Is the platform fee added to the client's price?
 No. They pay exactly the amount you enter. The fee comes out of your payout.

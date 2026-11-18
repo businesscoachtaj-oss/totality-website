@@ -24,7 +24,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-<meta name="description" content="See how much booking commission costs you each month, and compare it with a Totality plan plus its 3.5% platform fee.">
+<meta name="description" content="See how much booking commission costs you each month, and compare it with a Totality plan plus its 1.25% platform fee.">
 
 <link rel="canonical" href="https://totality360.com.au/commission-calculator.html">
 <meta property="og:type" content="website">
@@ -493,7 +493,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
     <div class="result-cta" id="cta-block">
       <h3 id="cta-heading">Keep that money in your business.</h3>
-      <p id="cta-body">Totality is a flat monthly plan with no commission on your coaching revenue. A 3.5% platform fee applies to payments taken in the app. It comes out of your payout, is itemised on every payout, and is never added to what your clients pay.</p>
+      <p id="cta-body">Totality is a flat monthly plan with no commission on your coaching revenue. A 1.25% platform fee applies to payments taken in the app, plus Stripe's card fee (1.65% + 30c for Australian cards). It comes out of your payout, is itemised on every payout, and is never added to what your clients pay.</p>
       <a href="get-totality.html" class="btn-cta" data-track-placement="commission_results">Start your 7 day free trial</a>
     </div>
 
@@ -629,7 +629,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     .filter(t => typeof t.monthlyCents === 'number');
   const posAddon = (DATA.addons || []).find(a => a.id === 'pos');
   const POS_PRICE = posAddon ? parseFloat(String(posAddon.price).replace(/[^0-9.]/g, '')) || 9.99 : 9.99;
-  const PLATFORM_RATE = ((DATA.fees && (DATA.fees.platformFeePercent || DATA.fees.processingFeePercent)) || 3.5) / 100;
+  const PLATFORM_RATE = ((DATA.fees && (DATA.fees.platformFeePercent || DATA.fees.processingFeePercent)) || 1.25) / 100;
   const COMMISSION_CAP = 30;
 
   const state = { rate: 0.20 };
@@ -705,7 +705,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     const commissionPerBooking = Math.min(price * rate, COMMISSION_CAP);
     const monthlyCommissionCost = bookings * commissionPerBooking;
 
-    // Totality: plan price + POS add-on (Solo plans only, if ticked) + 3.5% platform fee
+    // Totality: plan price + POS add-on (Solo plans only, if ticked) + 1.25% platform fee
     // on payments taken in the app (taken from the payout, not added to the client's price). No commission.
     const planCost = tier.monthlyCents / 100;
     const posCost = (!tier.posIncluded && $('pos').checked) ? POS_PRICE : 0;
@@ -745,10 +745,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       $('cta-body').textContent = 'At this booking volume a commission platform costs less than a Totality plan. Totality is built for people who work with clients and want programming, check-ins, nutrition and billing in one place, so it can still be worth a look as you grow.';
     } else if (isCoach === 'gym_owner') {
       $('cta-heading').textContent = 'Keep that money in your business.';
-      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your coaching and class revenue. A 3.5% platform fee applies to payments taken in the app. It comes out of your payout, is itemised on every payout, and is never added to what your members pay.';
+      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your coaching and class revenue. A 1.25% platform fee applies to payments taken in the app, plus Stripe's card fee (1.65% + 30c for Australian cards). It comes out of your payout, is itemised on every payout, and is never added to what your members pay.';
     } else {
       $('cta-heading').textContent = 'Keep more of what you earn.';
-      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your PT revenue. A 3.5% platform fee applies to payments taken in the app. It comes out of your payout, is itemised on every payout, and is never added to what your clients pay.';
+      $('cta-body').textContent = 'Totality is a flat monthly plan with no commission on your PT revenue. A 1.25% platform fee applies to payments taken in the app, plus Stripe's card fee (1.65% + 30c for Australian cards). It comes out of your payout, is itemised on every payout, and is never added to what your clients pay.';
     }
 
     $('results').style.display = 'block';

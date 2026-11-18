@@ -1,6 +1,6 @@
 ---
 title: Stripe Connect and payouts
-summary: Connect your own Stripe account so members can pay you, and understand the 3.5% platform fee.
+summary: Connect your own Stripe account so members can pay you, and understand the platform fee.
 ---
 
 Totality takes member payments through **Stripe**, a payments company used by millions of businesses. Your gym gets its own Stripe Express account. Members pay by card in the app, and the money goes to your Stripe balance and then to your bank.
@@ -33,9 +33,9 @@ Payout timing, your bank account and tax details are managed by Stripe. Use the 
 | | |
 |---|---|
 | Commission on your coaching or membership revenue | None |
-| Platform fee on payments members make in the app | 3.5% |
+| Platform fee on payments members make in the app | 1.25% |
 | Who pays it | You, out of the payout. It is never added to what your member pays |
-| Stripe card fees | Charged by Stripe as normal |
+| Stripe card fees | 1.65% + 30c for Australian cards, charged by Stripe as normal. On POS and shop sales Totality pays Stripe and adds it to the platform fee, so the total is the same |
 
 The fee applies to memberships, PT packages, paid class bookings, POS payment links, one-off charges and shop sales. Payouts, net of the fee, go straight to your bank.
 
@@ -57,5 +57,5 @@ Totality creates a new Stripe Express account for your gym, connected to Totalit
 ?? Do my members need a Stripe account?
 No. They just add a card in the Totality app.
 
-?? Why does revenue in Totality look 3.5% lower than the amount charged?
+?? Why does revenue in Totality look lower than the amount charged?
 Totality shows what you actually receive, after the platform fee. See [Revenue and insights](revenue-insights.html).

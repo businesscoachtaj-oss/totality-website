@@ -13,7 +13,7 @@ Tap **This month**, **Last month** or **Last 90 days**. The dates show underneat
 
 ## What's in the report
 
-- **Revenue**: what clients paid through your shop and payment links in the period, before the 3.5% platform fee. Independent trainers only.
+- **Revenue**: what clients paid through your shop and payment links in the period, before the 1.25% platform fee. Independent trainers only.
 - **Sessions delivered**: completed appointments on your schedule, plus pending settlement sessions.
 - **Clients**: how many clients you earned from or trained.
 - **Revenue by week** and **Sessions by week** charts.
