@@ -62,7 +62,7 @@ Yes. Many gyms move billing across over a few weeks. See [Running side by side](
 By card in the Totality app, through your own Stripe account. See [Stripe Connect](stripe-connect.html).
 
 ?? What does Totality take?
-No commission on your revenue. A 3.5% platform fee on payments members make in the app, taken from your payout, never added to the member's price. Stripe's card fees also apply.
+No commission on your revenue. A 1.25% platform fee on payments members make in the app, taken from your payout, never added to the member's price. Stripe's card fees also apply.
 
 ?? When do I get paid?
 Stripe pays out to your bank on its payout schedule. You can see payouts in your Stripe Express dashboard.

@@ -11,7 +11,7 @@ There are two ways to take a one-off payment, both included on every gym plan:
 | How they pay | Their saved card is charged straight away | They open a link and pay on their own device |
 | Good for | A drink, merch, a replacement bottle, a missed fee | Casual visits, drop-in PT, merch for non-members |
 
-Both go to your [Stripe account](stripe-connect.html), with the 3.5% platform fee taken from your payout. The member pays the price you set.
+Both go to your [Stripe account](stripe-connect.html), with the 1.25% platform fee taken from your payout. The member pays the price you set.
 
 ## Charge a member
 
@@ -62,4 +62,4 @@ Trainers at your gym can create POS payment links too. The money goes to your gy
 There is no refund button in Totality for one-off charges. Email admintotality@gmail.com with the member's name, the date and the amount, and we will help. (When you cancel a class session, paid bookings are refunded automatically. See [Classes](classes.html).)
 
 ?? Is there a fee on POS payments?
-Yes, the 3.5% platform fee, taken from your payout. Stripe's card fees also apply.
+Yes, the 1.25% platform fee, taken from your payout. Stripe's card fees also apply.

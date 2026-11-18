@@ -1,6 +1,6 @@
 ---
 title: Getting paid
-summary: How money reaches you with the POS add-on and Stripe Connect, the 3.5% fee, and how it works for gym trainers.
+summary: How money reaches you with the POS add-on and Stripe Connect, the platform fee, and how it works for gym trainers.
 ---
 
 Totality can take payments from your clients: one-off payment links, cards on file, and products in your shop. How it works depends on whether you're independent or at a gym.
@@ -33,9 +33,9 @@ The button under Trainer Payouts changes with your status:
 
 If you tap **Set Up Payouts** without the POS add-on, Totality asks **POS Add-on Required** and offers **Purchase POS Add-on**.
 
-## The 3.5% platform fee
+## The platform fee
 
-A 3.5% platform fee applies to payments your clients make in the app: PT packages, one-off charges, payment links and shop sales. It comes out of your payout before it lands in your bank, and it is never added to what your client pays. It is not a commission on your coaching income. On PT packages and one-off charges, Stripe's own card fee also comes out of your payout. If you refund a payment, the matching share of the platform fee goes back to you. Your Totality plan itself isn't affected.
+A 1.25% platform fee applies to payments your clients make in the app: PT packages, one-off charges, payment links and shop sales. It comes out of your payout before it lands in your bank, and it is never added to what your client pays. It is not a commission on your coaching income. Stripe's own card fee (1.65% + 30c for Australian cards) also comes out of your payout. If you refund a payment, the matching share of the platform fee goes back to you. Your Totality plan itself isn't affected.
 
 ## What you can do once it's on
 

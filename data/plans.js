@@ -872,10 +872,10 @@ window.TOTALITY_PLANS = {
     }
   ],
   "fees": {
-    "platformFeePercent": 3.5,
-    "processingFeePercent": 3.5,
+    "platformFeePercent": 1.25,
+    "processingFeePercent": 1.25,
     "commissionPercent": 0,
-    "text": "No commission on your coaching revenue. A 3.5% platform fee applies to payments taken in the app: memberships, PT packages, paid class bookings, one-off charges, payment links and shop sales. It is taken from your payout, never added to what your clients pay. On memberships, PT packages, class bookings and one-off charges, Stripe's own card fee also comes out of your payout.",
+    "text": "No commission on your coaching revenue. A 1.25% platform fee applies to payments taken in the app: memberships, PT packages, paid class bookings, one-off charges, payment links and shop sales. It is taken from your payout, never added to what your clients pay. Stripe's own card fee (1.65% + 30c for Australian cards) also comes out of your payout.",
     "appliesTo": [
       "Memberships",
       "PT packages",
@@ -884,7 +884,8 @@ window.TOTALITY_PLANS = {
       "POS payment links",
       "Shop sales"
     ],
-    "refunds": "When you refund a payment, the matching share of the platform fee goes back to you."
+    "refunds": "When you refund a payment, the matching share of the platform fee goes back to you.",
+    "stripeCardFee": "1.65% + 30c for Australian cards"
   },
   "custom": {
     "text": "More than 5,000 clients or a custom setup: contact us for a quote."

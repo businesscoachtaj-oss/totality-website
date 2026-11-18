@@ -51,7 +51,7 @@ The **Revenue** tile on Home shows what you've earned this month. Tap it for the
 - **Active Memberships** with who's on them.
 - The download button at the top exports a CSV.
 
-Revenue comes live from your Stripe account and covers the last 90 days. Amounts are shown net of the 3.5% platform fee.
+Revenue comes live from your Stripe account and covers the last 90 days. Amounts are shown net of the 1.25% platform fee.
 
 !phone[Revenue](img/marketplace-revenue.png)
 

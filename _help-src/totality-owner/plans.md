@@ -64,7 +64,7 @@ Enterprise needs no Tali or branding add-on: Tali is unlimited and branding is i
 
 ## Fees on member payments
 
-There is no commission on your coaching or membership revenue. A **3.5% platform fee** applies to payments members make through the app (memberships, PT packages, classes, POS and shop sales). It comes out of your payout and is never added to what your members pay. Stripe's own card fees also apply. See [Stripe Connect and payouts](stripe-connect.html).
+There is no commission on your coaching or membership revenue. A **1.25% platform fee** applies to payments members make through the app (memberships, PT packages, classes, POS and shop sales). It comes out of your payout and is never added to what your members pay. Stripe's own card fee (1.65% + 30c for Australian cards) also applies. See [Stripe Connect and payouts](stripe-connect.html).
 
 ## Refer another gym
 

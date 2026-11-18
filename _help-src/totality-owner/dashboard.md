@@ -79,7 +79,7 @@ The dashboard title is your gym's name. With the [branding add-on](branding.html
 Every time you open it. If you have been on it a while, pull down to refresh.
 
 ?? Why does revenue on the dashboard not match my bank?
-The dashboard shows money taken through Stripe this calendar month, after the 3.5% platform fee. Your bank receives Stripe payouts on Stripe's own schedule and after Stripe's card fees. See [Revenue and insights](revenue-insights.html).
+The dashboard shows money taken through Stripe this calendar month, after the 1.25% platform fee. Your bank receives Stripe payouts on Stripe's own schedule and after Stripe's card fees. See [Revenue and insights](revenue-insights.html).
 
 ?? Why is a check-in row showing when I don't coach anyone?
 That row only counts check-ins from clients assigned to you personally. If you do not coach, it will not appear.

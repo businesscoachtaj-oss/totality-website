@@ -15,7 +15,7 @@ Both need [Stripe connected](stripe-connect.html). Before that, Revenue shows **
 !phones[Revenue this month and expenses](img/revenue-insights-revenue.png)[Business expenses and revenue by type](img/revenue-insights-expenses.png)
 
 - Pick **This Month**, **Last Month** or **Last 90 Days**.
-- The orange card shows what you took in that period and how many transactions. Amounts are what you receive, after the 3.5% platform fee.
+- The orange card shows what you took in that period and how many transactions. Amounts are what you receive, after the platform fee.
 - **Expenses: this month** subtracts **Payroll (paid)** (pay periods you marked paid in [Payroll](payroll.html)) and **Business expenses** to give your **NET**.
 - **LAST 90 DAYS** and **AVG PAYMENT** (per transaction).
 - **Revenue by type**: PT packages, memberships, class bookings and POS.
