@@ -72,7 +72,7 @@ OURS = {
         "payments": 'POS add-on on Solo plans (<span data-p="addons.pos.price"></span> a month), included on gym plans. Payments go to your own Stripe account. <span data-p="fees.text"></span>',
         "classes": "On gym plans: classes with rosters and waitlists, front desk check-in, member billing, payroll with Xero export, leads CRM, compliance.",
         "nutrition": "Food logging for clients included, with a full vitamin and mineral breakdown against Australian recommended intakes.",
-        "branded_app": "Your logo, name and colour in the Totality app, member emails and push: A$4.99 a month on Solo, A$9.99 on Studio, included on Club and Enterprise. The App Store app stays Totality.",
+        "branded_app": "Your logo, name and colour in the Totality app, member emails and push: A$4.99 a month on Solo, A$9.99 on Studio, included on Club and Enterprise. Your own app in the App Store and Google Play is an add-on: A$49.99 a month on Solo 30 and up, A$99.99 on Studio and Club, included on Enterprise.",
     },
     "nutrition": {
         "who": "People in Australia who want to track food, macros and nutrients, on their own or alongside a coach.",

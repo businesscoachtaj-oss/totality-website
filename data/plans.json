@@ -848,6 +848,24 @@
       "credits": 3000,
       "description": "+3,000 Tali AI credits a month and your business's branding with a website. Cheaper than buying both.",
       "tali": "grin"
+    },
+    {
+      "id": "store_app_solo",
+      "name": "Your own app (Solo)",
+      "price": "A$49.99",
+      "period": "month",
+      "for": "Solo 30 and up",
+      "description": "Your own app in the App Store and Google Play, with your name, logo and colour. Only your clients sign in to it, and you can rename Tali. Branding included. We set it up and send every update. Needs your own Apple developer account (US$99 a year, paid to Apple). Contact us to get started.",
+      "tali": "wave"
+    },
+    {
+      "id": "store_app_gym",
+      "name": "Your own app (Studio and Club)",
+      "price": "A$99.99",
+      "period": "month",
+      "for": "Studio and Club",
+      "description": "Your gym's own app in the App Store and Google Play, with your name, logo and colour. Only your members sign in to it, and you can rename Tali. Branding included. We set it up and send every update. Included on Enterprise. Needs your own Apple developer account (US$99 a year, paid to Apple). Contact us to get started.",
+      "tali": "welcome"
     }
   ],
   "fees": {
