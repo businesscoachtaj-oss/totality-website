@@ -84,11 +84,24 @@ def url_for(rel: str) -> str:
     return BASE + rel
 
 
+NOINDEX = __import__("re").compile(r'<meta[^>]+name=["\']robots["\'][^>]+noindex', __import__("re").I)
+
+
+def noindex(p: pathlib.Path) -> bool:
+    # ADDED (19 Nov 2026): pages that tell Google not to index them (redirect stubs like
+    # compare.html, the in-app video player at /watch/) do not belong in the sitemap.
+    # Search Console flagged them as "Excluded by 'noindex' tag".
+    try:
+        return bool(NOINDEX.search(p.read_text(errors="ignore")[:6000]))
+    except Exception:
+        return False
+
+
 def pages():
     found = []
     for p in ROOT.rglob("*.html"):
         rel = p.relative_to(ROOT).as_posix()
-        if rel.split("/")[0].startswith(".") or excluded(rel):
+        if rel.split("/")[0].startswith(".") or excluded(rel) or noindex(p):
             continue
         found.append(rel)
     def key(rel):

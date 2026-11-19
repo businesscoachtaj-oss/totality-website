@@ -124,7 +124,7 @@ PAGE = '''<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} | {guide_title}</title>
 <meta name="description" content="{summary}">
-
+<link rel="canonical" href="https://totality360.com.au{canonical}">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
@@ -202,7 +202,7 @@ def build_guide(key):
             summary_html=f'<p class="lead">{html.escape(pg["summary"])}</p>' if pg['summary'] else '',
             a=a, ad=ad, asoft=asoft, aon=aon, key=key, icon=cfg.get('icon', '/favicon-96.png'),
             audience=html.escape(cfg.get('audience', '')), toc=toc, onpage=onpage, body=pg['body'], pager=pager,
-            updated=cfg.get('updated', ''))
+            updated=cfg.get('updated', ''), canonical=href(pg))
         (odir / ('index.html' if pg['slug'] == 'index' else f'{pg["slug"]}.html')).write_text(page_html)
         # search entries: one per h2 section plus the page itself
         parts = re.split(r'(?=<h2 id=")', pg['body'])
@@ -219,7 +219,7 @@ def build_hub(cfgs):
     cards = ''.join(
         f'<a class="hub__card" href="/help/{k}/" style="--accent:{ACCENTS[c.get("accent","orange")][0]}"><img src="{c.get("icon","/favicon-96.png")}" alt="" width="40" height="40"><b>{html.escape(c["title"])}</b><span>{html.escape(c.get("audience",""))}</span><small>{len(c["pages"])} pages</small></a>'
         for k, c in cfgs)
-    (OUT / 'index.html').write_text(f'''<!DOCTYPE html><html lang="en-AU"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to use Totality, Totality Nutrition and Tali HQ</title><link rel="icon" href="/favicon-96.png" sizes="any"><link rel="stylesheet" href="/help/assets/guide.css?v=2"></head><body class="hub"><main class="hub__main"><p class="hub__back"><a href="/">&larr; totality360.com.au</a></p><h1>How to use our apps</h1><p class="lead">Pick your guide. Every guide has screens from the real app and a search box at the top.</p><div class="hub__grid">{cards}</div><p class="foot__small">Still stuck? Email admintotality@gmail.com.</p></main></body></html>''')
+    (OUT / 'index.html').write_text(f'''<!DOCTYPE html><html lang="en-AU"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to use Totality, Totality Nutrition and Tali HQ</title><meta name="description" content="Step by step guides for Totality, Totality Nutrition and Tali HQ, with screens from the real apps."><link rel="canonical" href="https://totality360.com.au/help/"><link rel="icon" href="/favicon-96.png" sizes="any"><link rel="stylesheet" href="/help/assets/guide.css?v=2"></head><body class="hub"><main class="hub__main"><p class="hub__back"><a href="/">&larr; totality360.com.au</a></p><h1>How to use our apps</h1><p class="lead">Pick your guide. Every guide has screens from the real app and a search box at the top.</p><div class="hub__grid">{cards}</div><p class="foot__small">Still stuck? Email admintotality@gmail.com.</p></main></body></html>''')
 
 if __name__ == '__main__':
     keys = sys.argv[1:] or sorted(p.name for p in SRC.iterdir() if p.is_dir() and (p / 'guide.json').exists())
