@@ -441,8 +441,35 @@ def write(rel, text):
     with open(path, 'w', encoding='utf-8') as f:
         f.write(text)
 
+# ADDED (19 Nov 2026): pages that were merged into another exercise keep their old address
+# as a small redirect page, so links and Google's index land on the new page instead of a 404
+# (Search Console flagged /exercises/deadbug.html after the 13 Nov merge). noindex keeps the
+# stub out of the sitemap (tools/build_sitemap.py skips noindex pages).
+MOVED = {'deadbug': 'dead-bug'}
+
+def moved_page(old, new):
+    url = f'/exercises/{new}.html'
+    return f'''<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moved | Totality</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://totality360.com.au{url}">
+<meta http-equiv="refresh" content="0; url={url}">
+<script>location.replace('{url}' + location.hash);</script>
+</head>
+<body>
+<p>This exercise has moved to <a href="{url}">its new page</a>.</p>
+</body>
+</html>
+'''
+
 def main():
     shutil.rmtree(os.path.join(ROOT, 'exercises'), ignore_errors=True)
+    for old, new in MOVED.items():
+        write(f'exercises/{old}.html', moved_page(old, new))
     for x in EX:
         write(f'exercises/{x["slug"]}.html', exercise_page(x))
     for m, s in MUSCLE_HUBS.items():
