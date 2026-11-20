@@ -30,7 +30,7 @@
   var CSS = [
     ':host{all:initial;display:block;font-family:inherit;font-size:15px;line-height:1.5;color:var(--tx);--tx:#1d1a20;--mu:#6b6570;--bg:#fff;--sf:#f6f5f7;--ln:#e7e4ea;--chip:#f1eff3}',
     ':host(.dark){--tx:#efedf1;--mu:#a8a1ae;--bg:#141215;--sf:#1d1a20;--ln:#2e2a32;--chip:#28242c}',
-    '*{box-sizing:border-box}button,input,select{font:inherit;color:inherit}',
+    '*{box-sizing:border-box}[hidden]{display:none!important}button,input,select{font:inherit;color:inherit}',
     '.w{background:var(--bg);border:1px solid var(--ln);border-radius:16px;padding:14px;color:var(--tx);font-family:inherit}',
     '.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}',
     '.q{flex:1 1 220px;min-width:0;border:1px solid var(--ln);background:var(--bg);border-radius:10px;padding:9px 12px}',
@@ -82,7 +82,7 @@
 
     function media(x, big) {
       if (big && x.video && x.video.mp4) return '<div class="m"><video src="' + esc(x.video.mp4) + '" autoplay muted loop playsinline></video><span class="bd">&#9654; Plays on a loop</span></div>';
-      if (x.has_video) return '<div class="m"><span class="ph">' + (big && x.video_paused ? 'Video paused until next month' : '') + '</span><img src="' + POSTERS + esc(x.id) + '.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="bd">&#9654; Animated</span></div>';
+      if (x.has_video) return '<div class="m"><span class="ph"></span><img src="' + POSTERS + esc(x.id) + '.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="bd">' + (big && x.video_paused ? 'Video paused until the 1st' : '&#9654; Animated') + '</span></div>';
       return '<div class="m"><span class="ph">Video coming soon</span></div>';
     }
     function tags(x) {
