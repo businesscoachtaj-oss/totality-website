@@ -82,7 +82,7 @@
 
     function media(x, big) {
       if (big && x.video && x.video.mp4) return '<div class="m"><video src="' + esc(x.video.mp4) + '" autoplay muted loop playsinline></video><span class="bd">&#9654; Plays on a loop</span></div>';
-      if (x.has_video) return '<div class="m"><span class="ph">' + (big && x.video_paused ? 'Video paused until next month' : '') + '</span><img src="' + POSTERS + esc(x.id) + '.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="bd">&#9654; Animated</span></div>';
+      if (x.has_video) return '<div class="m"><span class="ph"></span><img src="' + POSTERS + esc(x.id) + '.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="bd">' + (big && x.video_paused ? 'Video paused until the 1st' : '&#9654; Animated') + '</span></div>';
       return '<div class="m"><span class="ph">Video coming soon</span></div>';
     }
     function tags(x) {
