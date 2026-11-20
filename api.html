@@ -117,6 +117,13 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 main p code,.api-ep span{overflow-wrap:anywhere}
 .api-ep span{min-width:0}
 .api-key{display:block;margin-top:8px;padding:12px;border-radius:10px;background:#F3EEF6;font:14px ui-monospace,Menlo,monospace;word-break:break-all}
+.wd-demo{margin:6px 0 26px}
+.wd-how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.wd-how h3{margin:0 0 4px;font-size:17px}.wd-how p{margin:0}
+.wd-forms{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin-top:22px}
+.wd-forms form{display:flex;flex-direction:column;gap:10px}.wd-forms h3{margin:0}
+.wd-forms label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
+.wd-forms input,.wd-forms select{padding:11px 12px;border:1px solid #d8d2dc;border-radius:10px;font:inherit;font-weight:400;min-width:0}
+@media (max-width:860px){.wd-how,.wd-forms{grid-template-columns:1fr}}
 @media (max-width:860px){.api-stats,.api-plans{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.api-stats,.api-plans{grid-template-columns:1fr}}
 </style>
@@ -130,6 +137,7 @@ main p code,.api-ep span{overflow-wrap:anywhere}
     <div class="btn-row">
       <a class="btn btn--primary btn--lg" href="#sandbox">Get a free sandbox key</a>
       <a class="btn btn--ghost" href="#docs">Read the docs</a>
+      <a class="btn btn--ghost" href="#websites">For gym websites</a>
     </div>
   </div>
 </section>
@@ -138,11 +146,11 @@ main p code,.api-ep span{overflow-wrap:anywhere}
   <div class="container">
     <div class="api-stats">
       <div class="card"><b>751</b>exercises with full coaching content</div>
-      <div class="card"><b>130+</b>videos we own, more added every week</div>
+      <div class="card"><b>54</b>animated videos so far, more added every week</div>
       <div class="card"><b>27</b>muscles tagged, primary and secondary</div>
       <div class="card"><b>3</b>difficulty levels, linked easier and harder</div>
     </div>
-    <p class="small muted" style="margin-top:12px">Exercises without one of our own videos come back with <code>has_video: false</code>. We never pass on third party video links.</p>
+    <p class="small muted" style="margin-top:12px">The API only serves our own animated videos. Exercises without one yet come back with <code>has_video: false</code>, and new videos are added every week.</p>
   </div>
 </section>
 
@@ -205,15 +213,68 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
   <div class="container">
     <div class="section-head">
       <h2>Plans</h2>
-      <p class="section-sub">Australian dollars, plus GST. Cancel any time.</p>
+      <p class="section-sub">Founders price while we finish the animated videos. Lock it in for as long as you stay subscribed. Australian dollars, cancel any time.</p>
     </div>
     <div class="api-plans">
       <div class="card"><h3>Sandbox</h3><div class="price">Free</div><ul><li>50 sample exercises</li><li>1,000 calls a month</li><li>No video</li><li>Testing only</li></ul><a class="btn btn--ghost" href="#sandbox">Get a key</a></div>
-      <div class="card"><h3>Builder</h3><div class="price">A$19<small> /month</small></div><ul><li>Every exercise, every field</li><li>25,000 calls a month</li><li>Our videos, streamed</li><li>One app</li></ul><button class="btn btn--primary" type="button" data-plan="builder">Choose Builder</button></div>
-      <div class="card"><h3>Studio</h3><div class="price">A$59<small> /month</small></div><ul><li>Everything in Builder</li><li>150,000 calls a month</li><li>Change feed</li><li>Up to 3 apps</li></ul><button class="btn btn--primary" type="button" data-plan="studio">Choose Studio</button></div>
+      <div class="card"><h3>Builder</h3><div class="price">A$9<small> /month</small></div><p class="small muted">Founders price. Then A$19.</p><ul><li>Every exercise, every field</li><li>25,000 calls a month</li><li>Animated videos, streamed</li><li>One app</li></ul><button class="btn btn--primary" type="button" data-plan="builder">Choose Builder</button></div>
+      <div class="card"><h3>Studio</h3><div class="price">A$29<small> /month</small></div><p class="small muted">Founders price. Then A$59.</p><ul><li>Everything in Builder</li><li>150,000 calls a month</li><li>Change feed</li><li>Up to 3 apps</li></ul><button class="btn btn--primary" type="button" data-plan="studio">Choose Studio</button></div>
       <div class="card"><h3>Licence</h3><div class="price">From A$1,900<small> /year</small></div><ul><li>Full dataset export</li><li>Video files to host yourself</li><li>No call limit</li><li>Agreed terms</li></ul><a class="btn btn--ghost" href="mailto:taj@totality360.com.au?subject=Exercise%20API%20licence">Talk to us</a></div>
     </div>
     <div class="api-msg" id="planMsg" role="status"></div>
+  </div>
+</section>
+
+<section class="section" id="websites">
+  <div class="container">
+    <div class="section-head">
+      <h2>For gym and PT websites</h2>
+      <p class="section-sub">Show the exercise library on your own website with one line of code. No developer needed. It uses your brand colour and your website's font, and works in Wix, Squarespace, WordPress and Shopify.</p>
+    </div>
+    <div class="wd-demo"><p class="small muted" style="margin:0 0 8px">Live demo. Search, filter and tap any exercise.</p>
+      <div id="totality-exercises"></div>
+      <script src="/widget.js" data-site="ws_totality_demo" data-accent="#ED8008" async></script>
+    </div>
+    <div class="wd-how">
+      <div><h3>1. Choose a plan</h3><p>Enter your email and website address below. Totality trainers and gyms get Starter free.</p></div>
+      <div><h3>2. Get your code</h3><p>We email you one line of code made for your website. It only works on the addresses you give us.</p></div>
+      <div><h3>3. Paste it in</h3><p>Add an "Embed code" or "Custom HTML" block where you want the library, and paste the code.</p></div>
+    </div>
+<pre class="api-code" style="margin-top:18px">&lt;div id="totality-exercises"&gt;&lt;/div&gt;
+&lt;script src="https://totality360.com.au/widget.js" <span class="k">data-site</span>="ws_your_site_id" async&gt;&lt;/script&gt;</pre>
+    <div class="api-ep" style="margin-top:14px">
+      <b>view</b><span>data-view="exercise" data-id="goblet-squat"</span><small>One exercise, for a blog post or programme page. Every plan.</small>
+      <b>colour</b><span>data-accent="#1F6F5C"</span><small>Your brand colour on buttons, filters and headings. Every plan.</small>
+      <b>lists</b><span>data-ids="goblet-squat,zercher-squat"</span><small>Your own list of exercises, in your order, for example "Leg day". Pro and Multi-site.</small>
+      <b>filter</b><span>data-filter="Glutes,Quads,Hamstrings"</span><small>Only show some muscle groups, for example a legs page. Pro and Multi-site.</small>
+      <b>theme</b><span>data-theme="dark"</span><small>Dark version for dark websites. Pro and Multi-site.</small>
+    </div>
+    <div class="api-plans" style="margin-top:26px">
+      <div class="card"><h3>Website Starter</h3><div class="price">A$9<small> /month</small></div><p class="small muted">Founders price. Then A$19.</p><ul><li>5,000 views a month</li><li>1 website</li><li>Library and single exercise cards</li><li>Your brand colour</li></ul></div>
+      <div class="card"><h3>Website Pro</h3><div class="price">A$19<small> /month</small></div><p class="small muted">Founders price. Then A$39.</p><ul><li>25,000 views a month</li><li>Up to 3 websites</li><li>Your own exercise lists</li><li>Muscle filters and dark theme</li></ul></div>
+      <div class="card"><h3>Website Multi-site</h3><div class="price">A$49<small> /month</small></div><p class="small muted">Founders price. Then A$99.</p><ul><li>100,000 views a month</li><li>Up to 10 websites</li><li>Everything in Pro</li><li>For franchises and multi-location gyms</li></ul></div>
+      <div class="card"><h3>Totality customers</h3><div class="price">Free</div><p class="small muted">While your Totality plan is active.</p><ul><li>Starter on your own website</li><li>5,000 views a month</li><li>Upgrade any time</li></ul></div>
+    </div>
+    <p class="small muted" style="margin-top:12px">A view is one page load with the widget on it. Opening exercises on that page does not count again. If you reach your limit, the text keeps working and videos pause until the 1st of the month. We email you at 80% and 100%. There are no extra charges.</p>
+    <div class="wd-forms">
+      <form class="card" id="wdBuy">
+        <h3>Get the widget</h3>
+        <label>Email<input type="email" id="wdEmail" required autocomplete="email" placeholder="you@yourgym.com.au"></label>
+        <label>Website address<input type="text" id="wdSites" required placeholder="yourgym.com.au"></label>
+        <label>Plan<select id="wdPlan"><option value="website_starter">Website Starter, A$9 a month</option><option value="website_pro">Website Pro, A$19 a month</option><option value="website_multi">Website Multi-site, A$49 a month</option></select></label>
+        <p class="small muted" style="margin:0">Pro and Multi-site: put each website on its own line or separate them with commas.</p>
+        <button class="btn btn--primary" type="submit">Continue to payment</button>
+        <div class="api-msg" id="wdBuyMsg" role="status"></div>
+      </form>
+      <form class="card" id="wdFree">
+        <h3>Already on Totality?</h3>
+        <p class="small muted" style="margin:0">Use the email on your Totality trainer or gym account. We send the code to that email.</p>
+        <label>Totality account email<input type="email" id="wdFreeEmail" required autocomplete="email"></label>
+        <label>Website address<input type="text" id="wdFreeSite" required placeholder="yourgym.com.au"></label>
+        <button class="btn btn--ghost" type="submit">Email me my free widget</button>
+        <div class="api-msg" id="wdFreeMsg" role="status"></div>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -256,6 +317,23 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
         .catch(function () { pm.textContent = 'Paid plans open soon. Email taj@totality360.com.au to join the beta.'; });
     });
   });
+  var wb = document.getElementById('wdBuy'), wm = document.getElementById('wdBuyMsg');
+  wb.addEventListener('submit', function (e) {
+    e.preventDefault(); wm.textContent = 'Opening checkout...';
+    fetch(API + '/v1/widget/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: document.getElementById('wdEmail').value, websites: document.getElementById('wdSites').value, plan: document.getElementById('wdPlan').value }) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (j.url) location.href = j.url; else wm.textContent = (j.error && j.error.message) || 'Something went wrong. Try again.'; })
+      .catch(function () { wm.textContent = 'Something went wrong. Try again.'; });
+  });
+  var wf = document.getElementById('wdFree'), fm = document.getElementById('wdFreeMsg');
+  wf.addEventListener('submit', function (e) {
+    e.preventDefault(); fm.textContent = 'Checking your account...';
+    fetch(API + '/v1/widget/totality', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: document.getElementById('wdFreeEmail').value, website: document.getElementById('wdFreeSite').value }) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { fm.textContent = j.message || (j.error && j.error.message) || 'Something went wrong. Try again.'; })
+      .catch(function () { fm.textContent = 'Something went wrong. Try again.'; });
+  });
+  if (new URLSearchParams(location.search).get('widget') === 'done') wm.textContent = 'Thanks. Your widget code is on its way to your email.';
   var q = new URLSearchParams(location.search).get('checkout');
   if (q === 'done') pm.textContent = 'Thanks. Your API key is on its way to your email.';
 })();
