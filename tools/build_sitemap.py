@@ -23,6 +23,7 @@ EXCLUDE = [
     "partials/*", "tools/*", "data/*", "node_modules/*",
     "delete-account.html",      # account utility page for app store review
     "404.html",
+    "partner-deals.html",       # noindex until the first partner brand is switched on (20 Nov 2026)
 ]
 
 # Priority and change frequency by path pattern (first match wins).
