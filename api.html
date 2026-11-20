@@ -137,11 +137,11 @@ main p code,.api-ep span{overflow-wrap:anywhere}
   <div class="container">
     <div class="api-stats">
       <div class="card"><b>751</b>exercises with full coaching content</div>
-      <div class="card"><b>130+</b>videos we own, more added every week</div>
+      <div class="card"><b>54</b>animated videos so far, more added every week</div>
       <div class="card"><b>27</b>muscles tagged, primary and secondary</div>
       <div class="card"><b>3</b>difficulty levels, linked easier and harder</div>
     </div>
-    <p class="small muted" style="margin-top:12px">Exercises without one of our own videos come back with <code>has_video: false</code>. We never pass on third party video links.</p>
+    <p class="small muted" style="margin-top:12px">The API only serves our own animated videos. Exercises without one yet come back with <code>has_video: false</code>, and new videos are added every week.</p>
   </div>
 </section>
 
@@ -204,12 +204,12 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
   <div class="container">
     <div class="section-head">
       <h2>Plans</h2>
-      <p class="section-sub">Australian dollars, plus GST. Cancel any time.</p>
+      <p class="section-sub">Founders price while we finish the animated videos. Lock it in for as long as you stay subscribed. Australian dollars, cancel any time.</p>
     </div>
     <div class="api-plans">
       <div class="card"><h3>Sandbox</h3><div class="price">Free</div><ul><li>50 sample exercises</li><li>1,000 calls a month</li><li>No video</li><li>Testing only</li></ul><a class="btn btn--ghost" href="#sandbox">Get a key</a></div>
-      <div class="card"><h3>Builder</h3><div class="price">A$19<small> /month</small></div><ul><li>Every exercise, every field</li><li>25,000 calls a month</li><li>Our videos, streamed</li><li>One app</li></ul><button class="btn btn--primary" type="button" data-plan="builder">Choose Builder</button></div>
-      <div class="card"><h3>Studio</h3><div class="price">A$59<small> /month</small></div><ul><li>Everything in Builder</li><li>150,000 calls a month</li><li>Change feed</li><li>Up to 3 apps</li></ul><button class="btn btn--primary" type="button" data-plan="studio">Choose Studio</button></div>
+      <div class="card"><h3>Builder</h3><div class="price">A$9<small> /month</small></div><p class="small muted">Founders price. Then A$19.</p><ul><li>Every exercise, every field</li><li>25,000 calls a month</li><li>Animated videos, streamed</li><li>One app</li></ul><button class="btn btn--primary" type="button" data-plan="builder">Choose Builder</button></div>
+      <div class="card"><h3>Studio</h3><div class="price">A$29<small> /month</small></div><p class="small muted">Founders price. Then A$59.</p><ul><li>Everything in Builder</li><li>150,000 calls a month</li><li>Change feed</li><li>Up to 3 apps</li></ul><button class="btn btn--primary" type="button" data-plan="studio">Choose Studio</button></div>
       <div class="card"><h3>Licence</h3><div class="price">From A$1,900<small> /year</small></div><ul><li>Full dataset export</li><li>Video files to host yourself</li><li>No call limit</li><li>Agreed terms</li></ul><a class="btn btn--ghost" href="mailto:taj@totality360.com.au?subject=Exercise%20API%20licence">Talk to us</a></div>
     </div>
     <div class="api-msg" id="planMsg" role="status"></div>
