@@ -19,18 +19,61 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Totality Exercise API</title>
-<meta name="description" content="759 exercises with coaching content for fitness apps: setup steps, cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions, and videos we own. Free sandbox key.">
-<link rel="canonical" href="https://totality360.com.au/api">
+<meta name="description" content="750+ exercises with coaching content for fitness apps and gym websites: setup steps, cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions, and our animated videos. REST API and a one line website widget.">
+<link rel="canonical" href="https://totality360.com.au/api.html">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebAPI",
+ "name": "Totality Exercise API",
+ "description": "750+ exercises with setup steps, coaching cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions and animated videos, for fitness apps and gym websites.",
+ "url": "https://totality360.com.au/api.html",
+ "documentation": "https://totality360.com.au/api-openapi.json",
+ "termsOfService": "https://totality360.com.au/api-terms.html",
+ "provider": {
+  "@type": "Organization",
+  "name": "Totality 360 Pty Ltd",
+  "url": "https://totality360.com.au"
+ },
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "Sandbox",
+   "price": "0",
+   "priceCurrency": "AUD"
+  },
+  {
+   "@type": "Offer",
+   "name": "Builder (founders price)",
+   "price": "9",
+   "priceCurrency": "AUD"
+  },
+  {
+   "@type": "Offer",
+   "name": "Studio (founders price)",
+   "price": "29",
+   "priceCurrency": "AUD"
+  },
+  {
+   "@type": "Offer",
+   "name": "Website Starter (founders price)",
+   "price": "9",
+   "priceCurrency": "AUD"
+  }
+ ]
+}
+</script>
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
 <meta property="og:locale" content="en_AU">
 <meta property="og:title" content="Totality Exercise API">
-<meta property="og:description" content="759 exercises with coaching content for fitness apps: setup steps, cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions, and videos we own. Free sandbox key.">
-<meta property="og:url" content="https://totality360.com.au/api">
+<meta property="og:description" content="750+ exercises with coaching content for fitness apps and gym websites: setup steps, cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions, and our animated videos. REST API and a one line website widget.">
+<meta property="og:url" content="https://totality360.com.au/api.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Totality Exercise API">
-<meta name="twitter:description" content="759 exercises with coaching content for fitness apps: setup steps, cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions, and videos we own. Free sandbox key.">
+<meta name="twitter:description" content="750+ exercises with coaching content for fitness apps and gym websites: setup steps, cues, common mistakes, rep ranges, muscles, equipment, easier and harder versions, and our animated videos. REST API and a one line website widget.">
 <meta name="twitter:image" content="https://totality360.com.au/og-image.png">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -192,6 +235,7 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
       <b>GET</b><span>/v1/usage</span><small>Your plan, and calls used this month.</small>
     </div>
     <p class="small muted" style="margin-top:14px">Base URL: <code>https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api</code>. Errors come back as <code>{"error": {"code", "message"}}</code> with a 4xx status. Video links last 1 hour, so ask for the exercise again rather than saving the link.</p>
+    <p class="small muted">OpenAPI spec for Postman, Insomnia or code generators: <a href="/api-openapi.json">totality360.com.au/api-openapi.json</a></p>
   </div>
 </section>
 
@@ -206,6 +250,7 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
       <button class="btn btn--primary" type="submit" id="keyBtn">Email me a key</button>
     </form>
     <div class="api-msg" id="keyMsg" role="status"></div>
+    <p class="small muted" style="margin-top:10px">By getting a key, choosing a plan or adding the widget, you agree to the <a href="/api-terms">Exercise API and Widget Terms</a>.</p>
   </div>
 </section>
 
@@ -222,6 +267,7 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
       <div class="card"><h3>Licence</h3><div class="price">From A$1,900<small> /year</small></div><ul><li>Full dataset export</li><li>Video files to host yourself</li><li>No call limit</li><li>Agreed terms</li></ul><a class="btn btn--ghost" href="mailto:taj@totality360.com.au?subject=Exercise%20API%20licence">Talk to us</a></div>
     </div>
     <div class="api-msg" id="planMsg" role="status"></div>
+    <p class="small muted" style="margin-top:10px">By getting a key, choosing a plan or adding the widget, you agree to the <a href="/api-terms">Exercise API and Widget Terms</a>.</p>
   </div>
 </section>
 
@@ -263,6 +309,7 @@ curl https://spqazfyxxhzizbtmxklr.supabase.co/functions/v1/exercise-api/v1/exerc
         <label>Website address<input type="text" id="wdSites" required placeholder="yourgym.com.au"></label>
         <label>Plan<select id="wdPlan"><option value="website_starter">Website Starter, A$9 a month</option><option value="website_pro">Website Pro, A$19 a month</option><option value="website_multi">Website Multi-site, A$49 a month</option></select></label>
         <p class="small muted" style="margin:0">Pro and Multi-site: put each website on its own line or separate them with commas.</p>
+        <p class="small muted" style="margin:0">By continuing you agree to the <a href="/api-terms">Exercise API and Widget Terms</a>.</p>
         <button class="btn btn--primary" type="submit">Continue to payment</button>
         <div class="api-msg" id="wdBuyMsg" role="status"></div>
       </form>
