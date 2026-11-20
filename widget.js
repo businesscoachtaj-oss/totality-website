@@ -30,7 +30,7 @@
   var CSS = [
     ':host{all:initial;display:block;font-family:inherit;font-size:15px;line-height:1.5;color:var(--tx);--tx:#1d1a20;--mu:#6b6570;--bg:#fff;--sf:#f6f5f7;--ln:#e7e4ea;--chip:#f1eff3}',
     ':host(.dark){--tx:#efedf1;--mu:#a8a1ae;--bg:#141215;--sf:#1d1a20;--ln:#2e2a32;--chip:#28242c}',
-    '*{box-sizing:border-box}button,input,select{font:inherit;color:inherit}',
+    '*{box-sizing:border-box}[hidden]{display:none!important}button,input,select{font:inherit;color:inherit}',
     '.w{background:var(--bg);border:1px solid var(--ln);border-radius:16px;padding:14px;color:var(--tx);font-family:inherit}',
     '.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}',
     '.q{flex:1 1 220px;min-width:0;border:1px solid var(--ln);background:var(--bg);border-radius:10px;padding:9px 12px}',
