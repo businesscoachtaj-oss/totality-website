@@ -1,6 +1,6 @@
 ---
 title: Plans compared
-summary: Free, the 7 day trial, Nutrition (A$8.99) and Nutrition + AI (A$11.99) side by side, plus the welcome offer and member price.
+summary: Free, the 7 day trial, Nutrition (A$8.99) and Nutrition + AI (A$11.99) side by side, plus the welcome offer.
 ---
 Prices are in Australian dollars and there's no lock-in. On the web and Android you pay through Stripe. In the iPhone app you pay through Apple, at the price the App Store shows.
 
@@ -32,19 +32,13 @@ Every new account starts with 7 days of the full Nutrition plan, with Tali's cre
 
 ## The welcome offer: 50% off
 
-New subscribers get **50% off their first 2 months** on a **monthly** plan, Nutrition or Nutrition + AI. It's applied automatically at checkout on the web and Android, no code needed. On the plans screen you'll see "Welcome offer: 50% off your first 2 months, applied at checkout". It applies to your first paid subscription, including straight after your trial. It doesn't apply to yearly plans, and it isn't combined with the Totality member price or a referral.
+New subscribers get **50% off their first 2 months** on a **monthly** plan, Nutrition or Nutrition + AI. It's applied automatically at checkout on the web and Android, no code needed. On the plans screen you'll see "Welcome offer: 50% off your first 2 months, applied at checkout". It applies to your first paid subscription, including straight after your trial. It doesn't apply to yearly plans, and it isn't added on top of the Totality Training bundle price.
 
 !phones[Nutrition, monthly, with the welcome offer](img/plans-trial.png)[What's included](img/plans-trial-lower.png)
 
 ## Referred by a friend
 
 If you signed up with a friend's referral code, your first 2 monthly bills are **70% off** (the 50% welcome offer plus 20% from the referral), applied at checkout.
-
-## Totality member price
-
-If you pay for your own Totality coaching plan (as a trainer or gym owner), you get the Totality member price on Nutrition: **A$4.49 a month** or **A$45.80 a year**. The plans screen shows "Totality member price applied" and the lower prices on both plans. Being a client of a Totality gym or trainer doesn't count. See [Using Nutrition with a Totality trainer](trainer.html).
-
-!phone[Totality member price applied](img/billing-member.png)
 
 ## Look at the plans in the app
 

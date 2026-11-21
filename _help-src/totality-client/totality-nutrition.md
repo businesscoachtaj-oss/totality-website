@@ -39,7 +39,7 @@ Your trainer sees food you log in either app.
 
 - Totality Nutrition has its own **Free** and **paid** plans. Your Totality client account is free, but it doesn't include a paid Nutrition plan. Nutrition's free plan covers the basics.
 - Your training, check-ins, bookings, messages and payments are only in **Totality**, not in Nutrition.
-- Some Totality customers get 50% off the paid Nutrition plan when they buy on Android or the web. If you qualify, the lower price shows at checkout. The discount doesn't apply to Apple billing.
+- New Nutrition subscribers get 50% off their first 2 months on a monthly plan when they buy on Android or the web. It shows at checkout. It doesn't apply to Apple billing.
 
 For everything about Nutrition itself, see the [Totality Nutrition guide](/help/nutrition/).
 

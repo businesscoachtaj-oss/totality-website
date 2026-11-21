@@ -34,7 +34,7 @@ Yes. On the plans screen tap the other plan and **Switch to**. Apple subscribers
 Not straight away. You keep your plan for 14 days while Stripe retries. Tap **Update my card** on the plans screen.
 
 ?? Is it cheaper for Totality members?
-If you pay for your own Totality plan (trainers and gym owners), you get the member price automatically on the web and Android. Clients of a Totality gym pay the normal price.
+No. Everyone gets the same welcome offer: 50% off your first 2 months on a monthly plan, applied at checkout on the web and Android.
 
 ## Logging food
 

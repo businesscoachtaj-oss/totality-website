@@ -903,22 +903,15 @@
         "id": "nutrition",
         "name": "Nutrition",
         "monthly": "A$8.99",
-        "yearly": "A$91.70",
-        "memberMonthly": "A$4.49",
-        "memberYearly": "A$45.80"
+        "yearly": "A$91.70"
       },
       {
         "id": "nutrition_ai",
         "name": "Nutrition + AI",
         "monthly": "A$11.99",
-        "yearly": "A$122.30",
-        "memberNote": "Member price not advertised"
+        "yearly": "A$122.30"
       }
     ],
-    "memberDiscount": {
-      "percent": 50,
-      "text": "Anyone paying for their own Totality plan get 50% off the Nutrition plan. This member price is not for clients of a Totality business."
-    },
     "platforms": {
       "web": "https://totalitynutrition.com.au",
       "android": "https://play.google.com/store/apps/details?id=app.totality.nutrition",

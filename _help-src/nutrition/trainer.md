@@ -35,7 +35,7 @@ Finishing Nutrition onboarding saves a fresh set of targets dated today, and tho
 - Your Nutrition **7 day trial starts at your first Nutrition onboarding**, not when you joined Totality.
 - Your gym or trainer's Totality plan doesn't include the Nutrition app's paid features. After the trial you move to [[Free]] unless you pick a Nutrition plan.
 - Tali's limits in the Nutrition app come from your Nutrition plan. See [Tali AI](tali-ai.html).
-- The **Totality member price** (A$4.49 a month for Nutrition) is for people who pay for their own Totality plan, like trainers and gym owners. Clients of a Totality gym or trainer pay the normal price, and get the welcome offer instead.
+- Everyone gets the same welcome offer on Nutrition: 50% off your first 2 months on a monthly plan. There is no separate price for trainers, gym owners or their clients.
 
 ## Questions
 
@@ -49,4 +49,4 @@ Yes. Food you log in Nutrition shows in your Totality food log, which your train
 Onboarding saves its own targets. Ask your trainer to set yours again in Totality, or type them into Custom Targets.
 
 ?? I'm a trainer. Do I get a discount?
-If you pay for a Totality plan through our website, the plans screen shows the Totality member price automatically on the web and Android.
+You get the same welcome offer as everyone: 50% off your first 2 months on a monthly plan, applied at checkout on the web and Android.
