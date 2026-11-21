@@ -129,3 +129,10 @@ th{background:var(--surface);font-weight:700}
 @media print{.topbar,.toc,.pager,.search-results{display:none}.layout{display:block}}
 .hub__card small{color:var(--accent-dark);font-weight:700;font-size:.82rem;margin-top:4px}
 .hub__back{margin:0 0 18px;font-weight:600}.hub__back a{color:var(--muted);text-decoration:none}
+/* cross links to the rest of the site (21 Nov 2026) */
+.topbar__all{flex:none;font:600 .9rem var(--font);color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;white-space:nowrap}
+.topbar__all:hover{color:var(--ink);border-color:var(--ink)}
+.foot__links{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0 6px}
+.foot__links a{font-weight:600;font-size:.92rem;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+.foot__links a:hover{color:var(--accent-dark);border-color:var(--accent)}
+@media (max-width:560px){.topbar__all{display:none}}
