@@ -4,7 +4,7 @@
 window.TOTALITY_PLANS = {
   "_comment": "Mirror of Livewell-1 lib/tiers.ts. Update both together. Nutrition prices mirror TotalityNutrition-1 app/subscribe.tsx.",
   "currency": "AUD",
-  "verified": "2026-11-12",
+  "verified": "2026-11-21",
   "trial": {
     "days": 7,
     "text": "7-day free trial on every plan"
@@ -942,6 +942,62 @@ window.TOTALITY_PLANS = {
         {
           "id": "nutrition_ai",
           "name": "Nutrition + AI seat",
+          "monthly": "A$8.99",
+          "yearly": "A$91.70"
+        }
+      ],
+      "offer": {
+        "percentOff": 50,
+        "months": 2,
+        "blackFridayPercentOff": 60,
+        "blackFridayEnds": "2026-11-30T23:59:00Z",
+        "text": "50% off your team's first 2 months on a monthly team. Applied automatically at checkout, no code needed."
+      }
+    }
+  },
+  "training": {
+    "_comment": "Mirror of Livewell lib/training.ts (PRICES) and lib/trainingTeam.ts (SEAT_PRICES). Update together.",
+    "web": "https://totality-training.vercel.app",
+    "plans": [
+      {
+        "id": "training",
+        "name": "Training",
+        "monthly": "A$8.99",
+        "yearly": "A$91.70",
+        "memberMonthly": "A$5.39",
+        "memberYearly": "A$55.02"
+      },
+      {
+        "id": "training_ai",
+        "name": "Training + AI",
+        "monthly": "A$11.99",
+        "yearly": "A$122.30",
+        "memberMonthly": "A$7.19",
+        "memberYearly": "A$73.38"
+      }
+    ],
+    "memberNote": "40% off every Training plan while you have Totality Nutrition (your own plan or a team seat).",
+    "offer": {
+      "percentOff": 50,
+      "months": 2,
+      "blackFridayPercentOff": 60,
+      "blackFridayEnds": "2026-11-30T23:59:00Z",
+      "text": "50% off your first 2 months on a monthly plan, the first time you pay for Training. Applied automatically, no code needed."
+    },
+    "teams": {
+      "minSeats": 3,
+      "maxSeats": 500,
+      "minMonthly": "A$20.97",
+      "seats": [
+        {
+          "id": "training",
+          "name": "Training seat",
+          "monthly": "A$6.99",
+          "yearly": "A$71.30"
+        },
+        {
+          "id": "training_ai",
+          "name": "Training + AI seat",
           "monthly": "A$8.99",
           "yearly": "A$91.70"
         }
