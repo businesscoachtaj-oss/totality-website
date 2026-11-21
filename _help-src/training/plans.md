@@ -25,6 +25,8 @@ Prices are in Australian dollars. Yearly saves 15%.
 - **50% off your first 2 months** on a monthly plan, the first time you pay for Training.
 - **40% off** every Training plan while you have Totality Nutrition, on your own plan or a team seat. See [With Totality Nutrition](nutrition.html). The offers do not combine. If your Nutrition plan ends, the 40% comes off from your next bill and we email you first.
 - **Black Friday:** until Monday 30 November 2026 the first 2 months offer is 60% off, not 50%.
+- **Referred by a friend:** sign up with a friend's referral code and your first 2 months on a monthly plan are 70% off (the 50% offer plus 20% from the referral).
+- **Refer a friend:** open **Settings**, tap **Refer a friend** and share your code. Once a friend subscribes you get 20% off your own plan, and it stacks for up to 5 friends.
 
 ## Covered by a team
 
