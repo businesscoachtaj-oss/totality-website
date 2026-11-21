@@ -45,7 +45,7 @@ Tap the star on a meal to save everything in it as one meal, with a name like "B
 
 Totality Nutrition is our food tracking app for anyone. It uses the same account as Totality, so if you or your clients log in with the same email and password, it's the same food log. Food logged in Totality Nutrition shows here and on a client's profile, and the other way round.
 
-Totality members get 50% off the Nutrition plan. See the Totality Nutrition guide for its own features.
+New Nutrition subscribers get 50% off their first 2 months on a monthly plan. See the Totality Nutrition guide for its own features.
 
 ## Questions
 

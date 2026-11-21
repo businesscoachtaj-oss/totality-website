@@ -591,7 +591,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <p class="section-sub">Food tracking with Australian food data. Add Tali AI if you want to describe meals in plain words and get meal plans and weekly summaries.</p>
       </div>
       <div class="pr-grid pr-grid--nut" id="nutPlans"></div>
-      <p class="notice mt-5"><strong>Anyone</strong> paying for their own Totality plan gets <span data-p="nutrition.memberDiscount.percent"></span>% off the Nutrition plan. The member price is shown on that plan. It is not for clients of a Totality business.</p>
+      <p class="notice mt-5"><strong>New subscribers</strong> get 50% off their first 2 months on a monthly plan. It is applied at checkout, no code needed, and it is the same offer on every Totality app.</p>
       <p class="mt-4"><strong>Buying for clients, members or staff?</strong> Team seats are <span data-p="nutrition.teams.seats.nutrition.monthly"></span> a month each, from <span data-p="nutrition.teams.minSeats"></span> seats. <a class="text-link" href="/nutrition-teams.html">Totality Nutrition for teams</a></p>
       <p class="small muted mt-4">Available on Android and the web now. The iPhone app is with Apple for review. <a href="/nutrition-features.html">See every Nutrition feature</a>.</p>
     </div>
@@ -949,13 +949,11 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       '<p class="small">Every new account starts with 7 days of the full Nutrition plan, then moves to Free if you don\'t pick a plan.</p>' +
       '<a class="btn btn--nutrition btn--block" href="/get-nutrition.html">Start free</a></article>';
     document.getElementById('nutPlans').innerHTML = free + n.map(function (p) {
-      // Member price shown for the standard Nutrition plan only (Taj removed the Nutrition + AI member price on 20 Oct).
-      var member = p.id === 'nutrition' ? (billing === 'yearly' ? p.memberYearly + ' a year' : p.memberMonthly + ' a month') : '';
+      // REMOVED (21 Nov 2026, Taj): the Totality member price. Every app has one offer, 50% off the first 2 months.
       return '<article class="card price-card">' +
         '<h3>' + esc(p.name) + '</h3>' +
         '<p class="small muted">' + esc(ai[p.id] || '') + '</p>' +
         priceBlock(p.monthly, p.yearly) +
-        (member ? '<p class="small"><strong>On a paid Totality plan:</strong> ' + esc(member) + '</p>' : '') +
         '<a class="btn btn--nutrition btn--block" href="/get-nutrition.html">Start 7 days free</a>' +
         '</article>';
     }).join('');

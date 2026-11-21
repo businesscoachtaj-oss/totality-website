@@ -11,7 +11,7 @@ You can subscribe from any **See plans** button or from **Settings**, **Subscrip
 2. Pick **Monthly** or **Yearly · Save 15%**.
 3. Tap **Nutrition** or **Nutrition + AI**.
 4. Tap **Subscribe for $8.99/month** (the button shows your plan's price).
-5. Stripe's secure checkout opens. Enter your card and pay. Any welcome offer, referral or member price is already applied.
+5. Stripe's secure checkout opens. Enter your card and pay. Any welcome offer or referral is already applied.
 6. You come back to "Setting up your account…", then "You're subscribed!" and Home.
 
 During your trial you can subscribe early, or tap **Continue with free trial** to go back.
@@ -20,7 +20,7 @@ During your trial you can subscribe early, or tap **Continue with free trial** t
 
 In the iPhone app, subscriptions are sold through Apple. The prices are the ones the App Store shows. If your Apple ID is eligible for Apple's introductory offer, the screen shows it, for example "Welcome offer: A$4.49/month for your first 2 months". Tap **Subscribe**, confirm with Apple, and you're in. Apple renews it automatically unless you cancel at least 24 hours before the end of the period.
 
-**Restore Purchases** on the iPhone plans screen finds an existing subscription on your Apple ID, for example after reinstalling. The referral code box and the Totality member price aren't available on iPhone.
+**Restore Purchases** on the iPhone plans screen finds an existing subscription on your Apple ID, for example after reinstalling. The referral code box isn't available on iPhone.
 
 ## Change plan
 
