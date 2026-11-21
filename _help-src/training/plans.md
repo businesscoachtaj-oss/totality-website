@@ -25,6 +25,10 @@ Prices are in Australian dollars. Yearly saves 15%.
 - **50% off your first 2 months** on a monthly plan, the first time you pay for Training.
 - **40% off** every Training plan while you pay for Totality Nutrition. See [With Totality Nutrition](nutrition.html). The offers do not combine.
 
+## Covered by a team
+
+If a business, club or group gave you a team code, your plan is covered and you pay nothing. Buying for your own people? Seats are A$6.99 a month each for Training and A$8.99 for Training + AI, 3 seats or more. See [Teams](teams.html).
+
 ## Choose, change or cancel
 
 !steps

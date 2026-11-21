@@ -70,7 +70,7 @@ def build() -> str:
         ]),
         group("Totality Training", [
             ("/training.html", "Totality Training overview"), ("/training.html#features", "What it does"),
-            ("/training.html#pricing", "Plans and the Nutrition bundle"),
+            ("/training.html#pricing", "Plans and the Nutrition bundle"), ("/training-teams.html", "Training for teams and workplaces"),
         ]),
         group("Tali HQ", [
             ("/tali-hq.html", "Tali HQ overview"), ("/tali-hq.html#pricing", "Tali HQ plans"),

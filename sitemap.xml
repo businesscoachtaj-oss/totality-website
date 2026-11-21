@@ -13105,6 +13105,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://totality360.com.au/training-teams.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://totality360.com.au/training.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -14252,6 +14258,12 @@
   </url>
   <url>
     <loc>https://totality360.com.au/help/training/tali.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://totality360.com.au/help/training/teams.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
