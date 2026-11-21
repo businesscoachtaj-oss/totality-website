@@ -1,0 +1,15 @@
+{
+  "title": "Totality Training guide",
+  "audience": "Free and paid members",
+  "accent": "red",
+  "icon": "/icon-training.png",
+  "updated": "21 November 2026",
+  "groups": [
+    {"title": "Start here", "pages": ["index", "create-account", "home"]},
+    {"title": "Your programme", "pages": ["choose-programme", "my-programmes", "routines"]},
+    {"title": "Training", "pages": ["workout", "after-workout", "auto-regulation", "library"]},
+    {"title": "Progress and Tali", "pages": ["progress", "tali"]},
+    {"title": "Account", "pages": ["nutrition", "plans", "settings"]}
+  ],
+  "pages": ["index", "create-account", "home", "choose-programme", "my-programmes", "routines", "workout", "after-workout", "auto-regulation", "library", "progress", "tali", "nutrition", "plans", "settings"]
+}

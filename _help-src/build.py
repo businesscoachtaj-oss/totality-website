@@ -28,6 +28,7 @@ ACCENTS = {
     'orange': ('#ED8008', '#C46800', '#FFF4E8', '#1C1420'),
     'blue':   ('#1565A0', '#0F4F80', '#EAF2FA', '#FFFFFF'),
     'purple': ('#6C3483', '#4E2560', '#F3EEF6', '#FFFFFF'),
+    'red':    ('#D92B2B', '#B32020', '#FCEBEA', '#FFFFFF'),
 }
 
 def slugify(s):
@@ -128,7 +129,7 @@ PAGE = '''<!DOCTYPE html>
 <link rel="icon" href="/favicon-96.png" sizes="any">
 <link rel="preload" href="/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/help/assets/guide.css?v=2">
+<link rel="stylesheet" href="/help/assets/guide.css?v=3">
 <style>:root{{--accent:{a};--accent-dark:{ad};--accent-soft:{asoft};--on-accent:{aon}}}</style>
 </head>
 <body class="guide guide--{key}">
@@ -136,6 +137,7 @@ PAGE = '''<!DOCTYPE html>
 <header class="topbar">
   <button class="topbar__menu" type="button" aria-controls="toc" aria-expanded="false">Contents</button>
   <a class="topbar__brand" href="/help/{key}/"><img src="{icon}" alt="" width="28" height="28"><span>{guide_title}</span></a>
+  <a class="topbar__all" href="/help/">All guides</a>
   <label class="search"><span class="sr">Search this guide</span><input type="search" placeholder="Search this guide" autocomplete="off" data-guide="{key}"></label>
 </header>
 <div class="search-results" hidden></div>
@@ -153,6 +155,7 @@ PAGE = '''<!DOCTYPE html>
     <nav class="pager" aria-label="Previous and next">{pager}</nav>
     <footer class="foot">
       <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
+      <p class="foot__links"><a href="/help/">All guides</a><a href="/help.html">Quick answers</a><a href="/faq.html">FAQ</a><a href="/pricing.html">Pricing</a><a href="/support.html">Support</a><a href="/">totality360.com.au</a></p>
       <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated {updated}.</p>
     </footer>
   </main>
@@ -217,9 +220,69 @@ def build_guide(key):
 
 def build_hub(cfgs):
     cards = ''.join(
-        f'<a class="hub__card" href="/help/{k}/" style="--accent:{ACCENTS[c.get("accent","orange")][0]}"><img src="{c.get("icon","/favicon-96.png")}" alt="" width="40" height="40"><b>{html.escape(c["title"])}</b><span>{html.escape(c.get("audience",""))}</span><small>{len(c["pages"])} pages</small></a>'
+        f'<a class="hub-card" href="/help/{k}/" style="--accent:{ACCENTS[c.get("accent","orange")][0]};--accent-dark:{ACCENTS[c.get("accent","orange")][1]}"><img src="{c.get("icon","/favicon-96.png")}" alt="" width="40" height="40"><b>{html.escape(c["title"])}</b><span>{html.escape(c.get("audience",""))}</span><small>{len(c["pages"])} pages</small></a>'
         for k, c in cfgs)
-    (OUT / 'index.html').write_text(f'''<!DOCTYPE html><html lang="en-AU"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How to use Totality, Totality Nutrition and Tali HQ</title><meta name="description" content="Step by step guides for Totality, Totality Nutrition and Tali HQ, with screens from the real apps."><link rel="canonical" href="https://totality360.com.au/help/"><link rel="icon" href="/favicon-96.png" sizes="any"><link rel="stylesheet" href="/help/assets/guide.css?v=2"></head><body class="hub"><main class="hub__main"><p class="hub__back"><a href="/">&larr; totality360.com.au</a></p><h1>How to use our apps</h1><p class="lead">Pick your guide. Every guide has screens from the real app and a search box at the top.</p><div class="hub__grid">{cards}</div><p class="foot__small">Still stuck? Email admintotality@gmail.com.</p></main></body></html>''')
+    names = [c['title'] for _, c in cfgs]
+    # The hub is a normal site page: tools/apply_chrome.py fills the header and footer markers.
+    old = (OUT / 'index.html').read_text() if (OUT / 'index.html').exists() else ''
+    def keep(name):
+        m = re.search(rf'<!-- chrome:{name} -->.*?<!-- /chrome:{name} -->', old, re.S)
+        return m.group(0) if m else f'<!-- chrome:{name} -->\n<!-- /chrome:{name} -->'
+    (OUT / 'index.html').write_text(f'''<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use Totality, Totality Nutrition, Totality Training and Tali HQ</title>
+<meta name="description" content="Step by step guides for Totality, Totality Nutrition, Totality Training and Tali HQ, with screens from the real apps.">
+<link rel="canonical" href="https://totality360.com.au/help/">
+<link rel="icon" href="/favicon-96.png" sizes="any">
+{keep('head')}
+<link rel="stylesheet" href="/css/site.css">
+<style>
+  .hub-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--s-4); }}
+  .hub-card {{ display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 18px; background: #fff; border: 1px solid var(--line, #E6E4E1); border-top: 5px solid var(--accent); text-decoration: none; color: var(--ink); transition: box-shadow .2s, transform .2s; }}
+  .hub-card:hover {{ box-shadow: 0 12px 28px rgba(39,38,38,.1); transform: translateY(-2px); }}
+  .hub-card img {{ border-radius: 10px; width: 36px; height: 36px; }}
+  .hub-card b {{ font-family: var(--display); font-size: 1.15rem; line-height: 1.25; }}
+  .hub-card span {{ color: var(--muted, #62605D); font-size: .92rem; }}
+  .hub-card small {{ color: var(--accent-dark); font-weight: 700; font-size: .82rem; margin-top: 4px; }}
+  .hub-more {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--s-4); }}
+</style>
+</head>
+<body>
+{keep('header')}
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="crumbs"><a href="/">Home</a> / How to use</p>
+      <h1>How to use our apps</h1>
+      <p class="lead">Pick your guide. Every guide has screens from the real app and a search box at the top.</p>
+    </div>
+  </section>
+  <section class="section section--tight">
+    <div class="container">
+      <div class="hub-grid">{cards}</div>
+    </div>
+  </section>
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section-head"><h2>Looking for something else?</h2></div>
+      <div class="hub-more">
+        <a class="card" href="/help.html"><h3 class="h4">Quick answers</h3><p>Short answers to the most common questions, on one page.</p></a>
+        <a class="card" href="/faq.html"><h3 class="h4">FAQ</h3><p>Plans, payments and how the apps fit together.</p></a>
+        <a class="card" href="/pricing.html"><h3 class="h4">Pricing</h3><p>Every plan and add-on, in Australian dollars.</p></a>
+        <a class="card" href="/support.html"><h3 class="h4">Support</h3><p>Email admintotality@gmail.com and a real person replies.</p></a>
+      </div>
+    </div>
+  </section>
+</main>
+{keep('footer')}
+<script src="/js/nav.js" defer></script>
+<script src="/js/track.js" defer></script>
+</body>
+</html>
+''')
 
 if __name__ == '__main__':
     keys = sys.argv[1:] or sorted(p.name for p in SRC.iterdir() if p.is_dir() and (p / 'guide.json').exists())
@@ -227,6 +290,6 @@ if __name__ == '__main__':
     for k in keys:
         cfg, n = build_guide(k)
         done.append((k, cfg)); print(f'{k}: {n} pages')
-    order = ['totality-owner', 'totality-trainer', 'totality-client', 'nutrition', 'tali-hq']
+    order = ['totality-owner', 'totality-trainer', 'totality-client', 'nutrition', 'training', 'tali-hq']
     allk = sorted([p.name for p in SRC.iterdir() if p.is_dir() and (p / 'guide.json').exists()], key=lambda k: order.index(k) if k in order else 99)
     build_hub([(k, json.loads((SRC / k / 'guide.json').read_text())) for k in allk])

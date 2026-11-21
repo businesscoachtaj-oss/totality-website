@@ -221,6 +221,8 @@ strong, b { font-weight: 700; }
 .btn--primary:hover, .btn--totality:hover { background: var(--orange-press); }
 .btn--nutrition { background: var(--blue); color: #fff; }
 .btn--nutrition:hover { background: var(--blue-700); }
+.btn--training { background: #D92B2B; color: #fff; }
+.btn--training:hover { background: #B32020; }
 .btn--ink { background: var(--ink); color: #fff; }
 .btn--ink:hover { background: #000; }
 .btn--white { background: #fff; color: var(--ink); }
@@ -435,6 +437,13 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .nav-dot--orange { background: var(--orange); }
 .nav-dot--blue { background: var(--blue); }
 .nav-dot--ink { background: var(--ink); }
+/* ADDED (21 Nov 2026): two column menus with group headings, Training red and Tali HQ purple, a New tag. */
+.nav-dot--red { background: #D92B2B; }
+.nav-dot--purple { background: #6C3483; }
+.nav-dd__panel--cols { display: grid; grid-template-columns: repeat(2, minmax(250px, 1fr)); gap: 0 var(--s-2); min-width: 560px; }
+.nav-dd__panel--cols ul { list-style: none; margin: 0; padding: 0; }
+.nav-dd__head { margin: 0; padding: 8px 12px 4px; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.nav-new { font-style: normal; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; background: #D92B2B; border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: 1px; }
 .nav-toggle {
   display: none; margin-left: auto; width: 44px; height: 44px; border: 0; background: none; cursor: pointer;
   flex-direction: column; justify-content: center; align-items: center; gap: 5px; border-radius: var(--radius-sm);
@@ -469,6 +478,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
   }
   .site-nav a.site-nav__link[aria-current="page"] { box-shadow: inset 3px 0 0 var(--orange); padding-left: 12px; }
   .nav-dd__panel { position: static; box-shadow: none; border: 0; min-width: 0; padding: 4px 0 8px; }
+  .nav-dd__panel--cols { display: block; }
   .site-nav__end { flex-direction: column; align-items: stretch; margin: var(--s-4) 0 0; gap: 0; }
   .site-nav__end .btn { margin-top: var(--s-4); }
 }
@@ -478,7 +488,9 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 
 .site-footer { background: var(--ink); color: var(--on-dark); padding: var(--s-8) var(--gutter) var(--s-6); margin: 0; text-align: left; }
 .site-footer__inner { max-width: var(--container); margin-inline: auto; }
-.site-footer__top { display: grid; grid-template-columns: 1.4fr repeat(5, 1fr); gap: var(--s-6); }
+/* CHANGED (21 Nov 2026): the about block and store badges sit across the top, then eight link groups in four columns. */
+.site-footer__about { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--s-6); align-items: start; padding-bottom: var(--s-6); margin-bottom: var(--s-6); border-bottom: 1px solid rgba(255,255,255,0.12); }
+.site-footer__top { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-6); }
 .site-footer .brand span { color: #fff; }
 .site-footer__blurb { color: var(--on-dark-muted); font-size: var(--fs-sm); margin-top: var(--s-3); max-width: 34ch; }
 .site-footer h2 { font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0; color: #fff; margin-bottom: var(--s-3); }
@@ -505,7 +517,7 @@ a.card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .site-footer__base a { color: var(--on-dark-muted); text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 960px) {
   .site-footer__top { grid-template-columns: repeat(2, 1fr); }
-  .site-footer__about { grid-column: 1 / -1; }
+  .site-footer__about { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 420px) {
   .site-footer__top { gap: var(--s-5); }
@@ -560,3 +572,5 @@ footer:not(.site-footer) .footer-copy { font-size: 0.85rem; color: var(--muted);
 .hv-fig video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius); background: #000; display: block; object-fit: cover; box-shadow: var(--shadow); }
 .hv-fig figcaption { margin-top: var(--s-2); font-size: var(--fs-sm); color: var(--muted); font-weight: 600; text-align: center; }
 @media (max-width: 860px) { .hero-video { grid-template-columns: minmax(0, 1fr); gap: var(--s-6); } .hv-fig { max-width: 240px; } }
+.site-footer__about .site-footer__blurb { max-width: 60ch; }
+.site-footer__about .store-badges { margin-top: 0; }

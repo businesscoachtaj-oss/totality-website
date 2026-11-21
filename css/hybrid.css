@@ -186,3 +186,23 @@ body > .hero h1, body > .hero p, body > .hero .sub, body.reading .hero h1, body.
 .bd a, .bd p a { color:#fff !important; text-decoration: underline; }
 @media (max-width: 480px) { .hm > .hero2 > .ctas .big { font-size: 14px; padding: 0 14px; white-space: nowrap; } }
 main .bd p a:not([class*="btn"]):not(.big) { color:#fff !important; }
+
+/* ---------- Totality Training as the fourth app (21 Nov 2026) ---------- */
+.hm .big.trn, .hm > .hero2 > .ctas .big.trn, .hm .offer .big.trn { background:#D92B2B; border-color:#D92B2B; color:#fff !important; }
+.hm .app.trn { background:#C4201F; color:#fff; }
+.hm .app.trn h3, .hm .app.trn p, .hm .app.trn li, .hm .app.trn .price, .hm .app.trn .price small, .hm .app.trn .tag, .hm .app.trn li::before { color:#fff; }
+.hm .app.trn .chip { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.3); color:#fff; }
+.hm .app.trn .big { background:#fff !important; border-color:#fff !important; color:#8E1513 !important; }
+.hm .app.trn .big + .big { background: transparent !important; border-color:#fff !important; color:#fff !important; }
+.hm .app .newtag { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:999px; background:#fff; color:#8E1513; font-size:11px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; vertical-align:middle; }
+.hm .pcols .t h3::before { background:#D92B2B; }
+.hm .pcols .t li::before { color:#D92B2B; }
+/* four apps: two by two on a wide screen, text beside the phone */
+@media (min-width: 1101px) {
+  .hm .apps { grid-template-columns: repeat(2, 1fr); }
+  .hm .apps .app { grid-template-columns: 1fr 200px; padding: 34px 30px 0; }
+  .hm .apps .app .device { width: 200px; justify-self: end; margin: 0; align-self: end; }
+  .hm .pcols { grid-template-columns: repeat(2, 1fr); gap: 40px 48px; }
+}
+.hm .facts { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .hm .facts { grid-template-columns: 1fr 1fr; } }
