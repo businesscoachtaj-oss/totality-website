@@ -11,6 +11,7 @@ Tap the gear at the top of Home.
 - **Your profile.** Tap your initials or **Add a profile picture** to add a photo.
 - **Your plan.** Opens Plans. See [Plans and billing](plans.html).
 - **Teams.** Join with a team code, or cover Training for your people. See [Teams](teams.html).
+- **Refer a friend.** Get your referral code and share it. Your friend gets 70% off their first 2 months on a monthly plan, and you get 20% off your own plan once they subscribe. See [Plans and billing](plans.html).
 - **Totality Nutrition.** What is shared between the two apps. See [With Totality Nutrition](nutrition.html).
 - **Your goal and week.** Change your goal, level, days, time and kit.
 - **Tali and your data.** What Tali uses, and turning her on or off. See [Tali](tali.html).
