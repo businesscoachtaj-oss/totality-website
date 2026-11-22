@@ -34,7 +34,7 @@ NUTRITION_PAGES = {
     "calculator.html",
 }
 # ADDED (22 Nov 2026): Training pages get the red Start free button that goes to /get-training.html.
-TRAINING_PAGES = {"training.html", "get-training.html", "training-teams.html"}
+TRAINING_PAGES = {"training.html", "get-training.html", "training-teams.html", "rep-max-calculator.html"}
 
 def read(p):
     with open(p, encoding="utf-8") as f:
