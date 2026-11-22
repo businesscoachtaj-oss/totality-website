@@ -17,12 +17,12 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <title>Tali HQ: AI Business &amp; Life Manager | Try it free</title>
-  <meta name="description" content="Tali HQ is an AI manager for business and life. Morning briefs, clients and invoices, food, training, goals and a journal she learns from. On the App Store, Google Play and the web. Start free, with a 7 day free trial of Tali HQ.">
+  <title>Tali HQ: a mind that grows with you | AI for life and business</title>
+  <meta name="description" content="Tali HQ is an AI who remembers. She keeps your days, your people and your business in order, learns more about you every week, and never sends anything without your yes. Life in weeks, schools of philosophy and a daily thought, free. On the App Store, Google Play and the web.">
 <link rel="canonical" href="https://totality360.com.au/tali-hq.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">
-<meta property="og:title" content="Tali HQ: AI Business &amp; Life Manager">
+<meta property="og:title" content="Tali HQ: a mind that grows with you">
 <meta property="og:description" content="Your AI manager for business and life. On the App Store, Google Play and the web. Start free, with a 7 day free trial of Tali HQ.">
 <meta property="og:url" content="https://totality360.com.au/tali-hq.html">
 <meta property="og:image" content="https://totality360.com.au/og-image.png">
@@ -36,122 +36,109 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <!-- /chrome:head -->
 <link rel="stylesheet" href="css/site.css">
   <style>
-    .thq {
-      --thq: #6C3483; --thq-dark: #4E2560; --thq-deep: #3B1A4D; --thq-tint: #F3EEF6; --thq-tint-2: #E7DCEE;
-      --accent: var(--thq); --accent-strong: var(--thq); --accent-ink: var(--thq); --accent-tint: var(--thq-tint); --accent-tint-2: var(--thq-tint-2);
-    }
-    .thq-hero { background: var(--thq-deep); color: #fff; }
-    .thq-hero__in { max-width: 1080px; margin: 0 auto; padding: var(--s-8) var(--gutter); display: grid; gap: var(--s-7); grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); align-items: center; }
-    .thq-eyebrow { display: inline-block; font-size: var(--fs-sm); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #F5C27A; margin: 0 0 var(--s-3); }
-    .thq-hero h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0 0 var(--s-4); text-wrap: balance; color: #fff; }
-    .thq-lede { font-size: 1.125rem; line-height: 1.6; color: #E4D5EC; margin: 0 0 var(--s-5); max-width: 34em; }
-    .thq-perks { list-style: none; margin: 0 0 var(--s-5); padding: 0; display: grid; gap: var(--s-2); }
-    .thq-perks li { display: flex; gap: var(--s-3); align-items: flex-start; color: #fff; font-weight: 600; }
-    .thq-perks svg { flex: none; margin-top: 3px; color: #F5C27A; }
-    .thq-art { position: relative; display: flex; justify-content: center; align-items: center; min-height: 340px; }
-    .thq-art::before { content: ""; position: absolute; width: min(360px, 86vw); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #7B3FA0 0%, #55286B 55%, transparent 72%); filter: blur(6px); }
-    .thq-art img { position: relative; width: min(380px, 100%); height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 20%; border-radius: 28px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08); }
-    .thq-card { background: #fff; color: var(--ink); border-radius: var(--radius-lg); padding: var(--s-5); display: grid; gap: var(--s-4); box-shadow: 0 10px 30px rgba(20, 8, 30, 0.25); }
-    .thq-card h2 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; }
-    .thq-form { display: grid; gap: var(--s-4); }
-    .thq-opt { color: var(--muted); font-weight: 500; }
-    .thq-btn { min-height: 54px; border: 0; border-radius: var(--radius-pill); background: var(--thq); color: #fff; font: inherit; font-weight: 800; font-size: 1.0625rem; cursor: pointer; }
-    .thq-btn:hover { background: var(--thq-dark); }
-    .thq-btn:disabled { opacity: 0.6; cursor: default; }
-    .thq-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-    .thq-msg { margin: 0; padding: var(--s-3) var(--s-4); border-radius: var(--radius-sm); font-size: var(--fs-sm); background: #FDECEA; color: #8A1C12; }
-    .thq-msg[hidden], .thq-done[hidden], .thq-form[hidden] { display: none; }
-    .thq-done { background: var(--thq-tint); border-radius: var(--radius); padding: var(--s-5); display: flex; gap: var(--s-4); align-items: center; }
-    .thq-done img { height: 110px; width: auto; }
-    .thq-done h2 { margin: 0 0 var(--s-2); }
-    .thq-done p { margin: 0; color: var(--ink-2); }
-    .thq-get { position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 20px; border-radius: 16px; text-decoration: none; }
-    .thq-get__ico { width: 34px; height: 34px; flex: none; display: flex; align-items: center; justify-content: center; }
+    /* 23 Nov 2026: Tali HQ's paper and ink look, matching the app. */
+    @font-face { font-family: "EB Garamond"; src: url("/fonts/eb-garamond-400regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: "EB Garamond"; src: url("/fonts/eb-garamond-400regular-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+    @font-face { font-family: "EB Garamond"; src: url("/fonts/eb-garamond-500medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+    .thq { --paper: #F5F0E6; --card: #FFFDF8; --sunk: #EFE8DA; --ink: #1C1A17; --ink-2: #5E574E; --faint: #8C8478; --indigo: #3B3F9E; --rule: rgba(28,26,23,0.16);
+      --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+      --accent: var(--indigo); --accent-strong: var(--indigo); --accent-ink: var(--indigo); --accent-tint: var(--sunk); --accent-tint-2: var(--sunk); }
+    .thq main { background: var(--paper); color: var(--ink); }
+    .thq-wrap { max-width: 1080px; margin: 0 auto; padding-inline: var(--gutter); }
+    .thq-k { display: block; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--indigo); margin: 0 0 var(--s-3); }
+    .thq h1, .thq h2, .thq h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; color: var(--ink); text-wrap: balance; }
+    .thq-hero { border-bottom: 1px solid var(--ink); }
+    .thq-hero__in { display: grid; gap: var(--s-7); grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); align-items: center; padding-block: var(--s-8); }
+    .thq-hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1.02; margin: 0 0 var(--s-4); }
+    .thq-lede { font-family: var(--serif); font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.5; color: var(--ink); margin: 0 0 var(--s-5); max-width: 32em; }
+    .thq-get-row { display: grid; gap: 10px; max-width: 420px; }
+    .thq-get { display: flex; align-items: center; gap: 14px; min-height: 58px; padding: 10px 18px; border-radius: 4px; text-decoration: none; border: 1px solid var(--ink); }
+    .thq-get__ico { width: 28px; height: 28px; flex: none; display: flex; align-items: center; justify-content: center; }
     .thq-get__ico svg { width: 100%; height: 100%; }
-    .thq-get__txt small { display: block; font-size: 0.75rem; opacity: 0.85; font-weight: 500; }
-    .thq-get__txt b { display: block; font-size: 1.125rem; font-weight: 800; letter-spacing: -0.01em; }
-    .thq-get--pwa { background: var(--thq); color: #fff; transition: transform 0.15s, background 0.15s; }
-    .thq-get--pwa:hover { background: var(--thq-dark); transform: translateY(-2px); }
-    .thq-get--pwa .thq-get__ico { background: rgba(255,255,255,0.16); border-radius: 10px; padding: 7px; }
-    .thq-get--apple { background: #272626; color: #fff; }
-    .thq-get--play { background: #fff; color: #272626; border: 1.5px solid #E6E4E1; }
-    .thq-get--soon { opacity: 0.5; cursor: not-allowed; }
-    .thq-get__badge { position: absolute; top: -9px; right: 14px; background: #272626; color: #fff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; }
-    .thq-fine { margin: 0; color: var(--muted); font-size: var(--fs-sm); }
-    .thq-sec { max-width: 1080px; margin: 0 auto; padding: var(--s-8) var(--gutter) 0; }
-    .thq-sec h2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em; font-size: clamp(1.7rem, 3.5vw, 2.3rem); margin: 0 0 var(--s-3); text-wrap: balance; }
-    .thq-sec > p { color: var(--ink-2); max-width: 40em; margin: 0 0 var(--s-6); font-size: 1.0625rem; }
-    .thq-grid { display: grid; gap: var(--s-4); grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .thq-feat { background: var(--surface, #fff); border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius); padding: var(--s-5); display: grid; gap: var(--s-2); align-content: start; }
-    .thq-feat b { font-size: 1.0625rem; }
-    .thq-feat span { color: var(--ink-2); }
-    .thq-tag { justify-self: start; font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--thq); background: var(--thq-tint); border-radius: var(--radius-pill); padding: 3px 10px; }
-    .thq-trust { margin-top: var(--s-6); background: var(--thq-tint); border-radius: var(--radius-lg); padding: var(--s-6); display: flex; gap: var(--s-5); align-items: center; }
-    .thq-trust img { height: 170px; width: 128px; object-fit: cover; object-position: 50% 18%; border-radius: 18px; flex: none; box-shadow: 0 10px 26px rgba(39, 38, 38, 0.18); }
-    .thq-trust h3 { margin: 0 0 var(--s-2); font-family: var(--font-display); font-size: 1.4rem; }
+    .thq-get__txt small { display: block; font-size: 0.72rem; opacity: 0.8; font-weight: 600; letter-spacing: 0.04em; }
+    .thq-get__txt b { display: block; font-size: 1.05rem; font-weight: 800; }
+    .thq-get--pwa { background: var(--ink); color: var(--paper); }
+    .thq-get--pwa:hover { background: #000; }
+    .thq-get--store { background: var(--card); color: var(--ink); }
+    .thq-get--store:hover { background: #fff; }
+    .thq-fine { margin: var(--s-3) 0 0; color: var(--ink-2); font-size: var(--fs-sm); }
+    .thq-phone { justify-self: center; width: min(320px, 78vw); border: 1px solid var(--ink); border-radius: 30px; padding: 10px; background: var(--card); box-shadow: 0 30px 60px -30px rgba(28,26,23,0.35); }
+    .thq-phone img { display: block; width: 100%; height: auto; border-radius: 22px; }
+    .thq-sec { padding-block: var(--s-8) 0; }
+    .thq-sec h2 { font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.08; margin: 0 0 var(--s-4); }
+    .thq-prose { font-family: var(--serif); font-size: clamp(1.15rem, 1.8vw, 1.3rem); line-height: 1.6; color: var(--ink); max-width: 34em; margin: 0 0 var(--s-4); }
+    .thq-prose--muted { color: var(--ink-2); }
+    .thq-small { color: var(--ink-2); font-size: 0.95rem; max-width: 44em; }
+    .thq-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-7); align-items: center; }
+    .thq-weeks { background: var(--card); border: 1px solid var(--ink); border-radius: 6px; padding: var(--s-5); }
+    .thq-weeks canvas { display: block; width: 100%; height: auto; }
+    .thq-weeks figcaption { margin-top: var(--s-3); font-family: var(--serif); font-style: italic; color: var(--ink-2); font-size: 1.05rem; }
+    .thq-ruled { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+    .thq-ruled li { display: grid; grid-template-columns: 12px minmax(0, 1fr); gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+    .thq-ruled li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--indigo)); margin-top: 11px; }
+    .thq-ruled b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.4rem; line-height: 1.25; }
+    .thq-ruled span { display: block; color: var(--ink-2); margin-top: 4px; line-height: 1.55; }
+    .thq-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-7); }
+    .thq-free { display: inline-block; border: 1px solid var(--ink); border-radius: 3px; padding: 2px 8px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; margin-left: 8px; vertical-align: middle; }
+    .thq-quote { border-left: 2px solid var(--indigo); padding-left: var(--s-4); margin: var(--s-5) 0 0; max-width: 34em; }
+    .thq-quote p { font-family: var(--serif); font-style: italic; font-size: 1.35rem; line-height: 1.45; margin: 0; }
+    .thq-quote cite { display: block; font-style: normal; color: var(--ink-2); font-size: 0.85rem; margin-top: 6px; }
+    .thq-trust { margin-top: var(--s-6); border: 1px solid var(--ink); border-radius: 6px; background: var(--card); padding: var(--s-5); display: flex; gap: var(--s-5); align-items: center; }
+    .thq-trust img { height: 150px; width: 112px; object-fit: cover; object-position: 50% 18%; border-radius: 4px; flex: none; }
+    .thq-trust h3 { margin: 0 0 var(--s-2); font-size: 1.7rem; }
     .thq-trust p { margin: 0; color: var(--ink-2); }
-    .thq-faq { display: grid; gap: var(--s-3); max-width: 760px; }
-    .thq-faq details { border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius); padding: var(--s-4) var(--s-5); background: #fff; }
-    .thq-faq summary { font-weight: 700; cursor: pointer; min-height: 28px; }
-    .thq-faq p { margin: var(--s-3) 0 0; color: var(--ink-2); }
-    /* Screens gallery */
-    .thq-screens__h { font-family: var(--font-display); font-weight: 800; font-size: 1.125rem; margin: var(--s-6) 0 var(--s-3); color: var(--ink); }
-    .thq-screens__h:first-of-type { margin-top: 0; }
-    .thq-sec > .thq-screens__cap { margin: calc(-1 * var(--s-2)) 0 var(--s-3); color: var(--ink-2); font-size: var(--fs-sm); }
-    .thq-shots { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-    .thq-shot { display: block; border-radius: 14px; overflow: hidden; background: var(--thq-tint); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-    .thq-shot:hover, .thq-shot:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(108, 52, 131, 0.18); }
-    .thq-shots--hl { grid-template-columns: repeat(6, 1fr); }
+    .thq-shots { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .thq-shot { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--rule); background: var(--card); transition: transform 0.15s ease; }
+    .thq-shot:hover, .thq-shot:focus-visible { transform: translateY(-2px); border-color: var(--ink); }
+    .thq-shot img { display: block; width: 100%; height: auto; aspect-ratio: 540 / 1169; }
+    .thq-shot .thq-cap { display: block; padding: 8px 10px; font-size: 0.8rem; font-weight: 700; color: var(--ink); border-top: 1px solid var(--rule); }
+    .thq-screens__h { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; margin: var(--s-6) 0 var(--s-3); }
     .thq-more { margin-top: var(--s-5); }
-    .thq-more > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 24px; border-radius: 999px; border: 2px solid #6C3483; color: #6C3483; font-weight: 800; background: #fff; }
+    .thq-more > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border-radius: 4px; border: 1px solid var(--ink); color: var(--ink); font-weight: 800; background: var(--card); }
     .thq-more > summary::-webkit-details-marker { display: none; }
     .thq-more > summary::after { content: "+"; font-size: 1.2em; line-height: 1; }
     .thq-more[open] > summary::after { content: "\2212"; }
-    .thq-more[open] > summary { margin-bottom: var(--s-5); }
-    @media (max-width: 900px) { .thq-shots--hl { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 8px; scrollbar-width: none; } .thq-shots--hl::-webkit-scrollbar { display: none; } .thq-shots--hl .thq-shot { flex: 0 0 44vw; max-width: 200px; scroll-snap-align: start; } }
-    .thq-shot img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; }
     /* Pricing */
-    .thq-toggle { display: inline-flex; background: #EDE8F1; border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 var(--s-5); }
-    .thq-toggle button { border: 0; background: transparent; border-radius: 999px; padding: 8px 16px; font: inherit; font-weight: 700; color: var(--ink); cursor: pointer; }
-    .thq-toggle button[aria-pressed="true"] { background: #6C3483; color: #fff; }
-    .thq-toggle small { font-weight: 700; color: #1E8E4E; }
-    .thq-toggle button[aria-pressed="true"] small { color: #CFF5DD; }
+    .thq-toggle { display: inline-flex; border: 1px solid var(--ink); border-radius: 4px; overflow: hidden; margin: 0 0 var(--s-5); }
+    .thq-toggle button { border: 0; background: var(--card); padding: 9px 18px; font: inherit; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); cursor: pointer; }
+    .thq-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
     .thq-plans { display: grid; gap: var(--s-4); grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
-    .thq-plan { position: relative; background: #fff; border: 1px solid var(--line, #E6E4E1); border-radius: var(--radius-lg); padding: var(--s-5); display: grid; gap: var(--s-3); align-content: start; grid-template-rows: auto auto auto auto 1fr auto; }
-    .thq-plan--hq { border: 2px solid #6C3483; box-shadow: 0 14px 40px rgba(108, 52, 131, 0.14); }
-    .thq-plan--biz { grid-column: 1 / -1; border: 2px solid #7FA8FF; }
+    .thq-plan { position: relative; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: var(--s-5); display: grid; gap: var(--s-3); align-content: start; grid-template-rows: auto auto auto auto 1fr auto; }
+    .thq-plan--hq { border: 2px solid var(--ink); }
+    .thq-plan--biz { grid-column: 1 / -1; }
     .thq-plan--biz ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--s-5); }
-    @media (max-width: 760px) { .thq-plan--biz ul { grid-template-columns: minmax(0, 1fr); } }
-    .thq-plan__pop { position: absolute; top: -12px; left: var(--s-5); background: #6C3483; color: #fff; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
-    .thq-plan h3 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; }
+    .thq-plan__pop { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--indigo); }
+    .thq-plan h3 { margin: 0; font-size: 1.9rem; }
     .thq-plan__price { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
-    .thq-plan__price b { font-family: var(--font-display); font-size: 2rem; letter-spacing: -0.02em; }
+    .thq-plan__price b { font-family: var(--serif); font-weight: 500; font-size: 2.1rem; }
     .thq-plan__price span { color: var(--ink-2); }
-    .thq-plan__was { color: var(--ink-2); font-size: 0.9375rem; line-height: 1.4; }
-    .thq-plan__was s { opacity: 0.8; }
-    .thq-plan__tag { display: inline-block; background: #F3EEF6; color: #5A2A6E; font-weight: 700; font-size: 0.8125rem; padding: 3px 10px; border-radius: 999px; }
+    .thq-plan__tag { color: var(--ink-2); font-size: 0.9rem; }
     .thq-plan ul { list-style: none; margin: var(--s-2) 0 0; padding: 0; display: grid; gap: 8px; }
     .thq-plan li { display: flex; gap: 10px; align-items: flex-start; color: var(--ink-2); line-height: 1.45; }
-    .thq-plan li svg { flex: none; margin-top: 4px; color: #6C3483; }
-    .thq-plan__note { color: var(--ink-2); font-size: 0.875rem; margin: var(--s-2) 0 0; }
-    .thq-plan .thq-btn { display: block; text-align: center; text-decoration: none; margin-top: var(--s-2); align-self: end; }
-    .thq-plan--ghost .thq-btn { background: transparent; color: #6C3483; border: 2px solid #6C3483; }
+    .thq-plan li svg { flex: none; margin-top: 4px; color: var(--ink); }
+    .thq-btn { display: block; text-align: center; text-decoration: none; margin-top: var(--s-2); align-self: end; min-height: 50px; line-height: 50px; border-radius: 4px; background: var(--ink); color: var(--paper); font-weight: 800; }
+    .thq-btn:hover { background: #000; }
+    .thq-plan--ghost .thq-btn { background: transparent; color: var(--ink); border: 1px solid var(--ink); line-height: 48px; }
     .thq-fine-print { color: var(--ink-2); font-size: 0.9375rem; margin: var(--s-4) 0 0; max-width: 60em; }
-    .thq-end { max-width: 1080px; margin: var(--s-8) auto 0; padding: 0 var(--gutter) var(--s-8); }
-    .thq-end__in { background: var(--thq-deep); color: #fff; border-radius: var(--radius-lg); padding: var(--s-7) var(--s-6); display: flex; gap: var(--s-5); align-items: center; justify-content: space-between; flex-wrap: wrap; }
-    .thq-end h2 { margin: 0; font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); color: #fff; }
-    .thq-end a { display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; border-radius: var(--radius-pill); background: #ED8008; color: #2A1235; font-weight: 800; text-decoration: none; }
+    .thq-faq { display: grid; gap: 0; max-width: 760px; border-top: 1px solid var(--ink); }
+    .thq-faq details { border-bottom: 1px solid var(--rule); padding: var(--s-4) 0; }
+    .thq-faq summary { font-family: var(--serif); font-size: 1.3rem; cursor: pointer; min-height: 28px; }
+    .thq-faq p { margin: var(--s-3) 0 0; color: var(--ink-2); }
+    .thq-end { padding-block: var(--s-8); }
+    .thq-end__in { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: var(--s-7) 0; display: flex; gap: var(--s-5); align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .thq-end h2 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
+    .thq-end a.thq-cta { display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; border-radius: 4px; background: var(--ink); color: var(--paper); font-weight: 800; text-decoration: none; }
+    .thq main a { color: var(--indigo); }
+    .thq main a.thq-get--pwa, .thq main a.thq-btn, .thq main a.thq-cta { color: var(--paper); box-shadow: none; }
+    .thq main a.thq-get--store, .thq main .thq-plan--ghost a.thq-btn { color: var(--ink); }
+    .thq main a.thq-shot { color: var(--ink); }
     @media (max-width: 860px) {
-      .thq-hero__in { grid-template-columns: minmax(0, 1fr); padding-top: var(--s-6); gap: var(--s-5); }
-      .thq-art { min-height: 220px; order: -1; }
-      .thq-art { min-height: 0; }
-      .thq-art img { width: min(300px, 100%); }
-      .thq-art::before { width: 210px; }
-      .thq-grid { grid-template-columns: minmax(0, 1fr); }
+      .thq-hero__in, .thq-split, .thq-cols { grid-template-columns: minmax(0, 1fr); }
+      .thq-hero__in { padding-block: var(--s-6); gap: var(--s-6); }
       .thq-plans { grid-template-columns: minmax(0, 1fr); }
       .thq-plan--hq { order: -1; }
+      .thq-plan--biz ul { grid-template-columns: minmax(0, 1fr); }
       .thq-trust { flex-direction: column; text-align: center; }
-      .thq-trust img { height: 150px; width: 112px; }
     }
   </style>
 <link rel="stylesheet" href="/css/brain.css?v=1">
@@ -278,43 +265,44 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <!-- /chrome:header -->
 
   <main id="main">
+    <!-- 23 Nov 2026 (Taj): Tali HQ rebranded to match the app's paper and ink look, in a more reflective voice. -->
     <section class="thq-hero">
-      <div class="thq-hero__in">
+      <div class="thq-wrap thq-hero__in">
         <div>
-          <span class="thq-eyebrow">New from Totality 360</span>
-          <h1>Tali HQ. Your AI manager for business and life.</h1>
-          <p class="thq-lede">Tali runs the busy bits so you can do the work you're actually good at. Every morning she tells you what came in, who needs a reply and what's on today. She drafts the messages and invoices, keeps your food, training and goals on track, and learns more about you every week.</p>
-          <ul class="thq-perks">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Available now on iPhone, Android and computer, right in your browser</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>A 7 day free trial of Tali HQ on every new account</li>
-          </ul>
-
-          <div class="thq-card" id="join">
-            <h2>Get Tali HQ</h2>
-            <a class="thq-get thq-get--pwa" href="https://talihq.com.au" target="_blank" rel="noopener" data-ev="tali_hq_open">
-              <span class="thq-get__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
-              <span class="thq-get__txt"><small>In your browser, on any device</small><b>Open the web app</b></span>
-            </a>
-            <a class="thq-get thq-get--apple" href="https://apps.apple.com/au/app/tali-hq-ai-life-business/id6830035266" target="_blank" rel="noopener" data-ev="tali_hq_app_store">
-              <span class="thq-get__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#FFFFFF"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.87-.19 1.68-.86 3.05-.75 1.65.13 2.83.68 3.5 1.9-2.15 1.29-2 5.11.15 5.98-.63 1.5-1.5 3.02-2.78 5.04zM12.03 7.25c-.15-2.23 1.66-4.1 3.74-4.25.29 2.3-2.08 4.51-3.74 4.25z"/></svg></span>
-              <span class="thq-get__txt"><small>Download on the</small><b>App Store</b></span>
-            </a>
-            <a class="thq-get thq-get--play" href="https://play.google.com/store/apps/details?id=au.com.totality360.talihq" target="_blank" rel="noopener" data-ev="tali_hq_google_play">
-              <span class="thq-get__ico" aria-hidden="true"><svg viewBox="0 0 512 512"><path fill="#00D9A5" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z"/><path fill="#FF3A44" d="M47 0c-6.6 6.3-10.6 15.5-10.6 26.7v458.6c0 11.2 4 20.4 10.6 26.7l4.4-4.4 289.9-289.9V256 v-0.6L51.4 4.4 47 0z"/><path fill="#FFCE00" d="M415.5 197.3l-59.1-33.9-63.3 63.3 63.3 63.3 59.4-33.9c17.9-10.3 17.9-38.5-0.3-58.8z"/><path fill="#00D9A5" d="M104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg></span>
-              <span class="thq-get__txt"><small>Get it on</small><b>Google Play</b></span>
-            </a>
-            <p class="thq-fine">The same account works in the iPhone app, the Android app and your browser.</p>
+          <span class="thq-k">Tali HQ &middot; for your life and your work</span>
+          <h1>A mind that grows with you.</h1>
+          <p class="thq-lede">Tali is an AI who remembers. She keeps your days, your people and your business in order, learns a little more about you every week, and never sends, spends or changes anything without your yes.</p>
+          <div class="thq-get-row" id="join">
+            <a class="thq-get thq-get--pwa" href="https://talihq.com.au" target="_blank" rel="noopener" data-ev="tali_hq_open"><span class="thq-get__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span><span class="thq-get__txt"><small>In your browser, on any device</small><b>Open the web app</b></span></a>
+            <a class="thq-get thq-get--store" href="https://apps.apple.com/au/app/tali-hq-ai-life-business/id6830035266" target="_blank" rel="noopener" data-ev="tali_hq_app_store"><span class="thq-get__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.87-.19 1.68-.86 3.05-.75 1.65.13 2.83.68 3.5 1.9-2.15 1.29-2 5.11.15 5.98-.63 1.5-1.5 3.02-2.78 5.04zM12.03 7.25c-.15-2.23 1.66-4.1 3.74-4.25.29 2.3-2.08 4.51-3.74 4.25z"/></svg></span><span class="thq-get__txt"><small>Download on the</small><b>App Store</b></span></a>
+            <a class="thq-get thq-get--store" href="https://play.google.com/store/apps/details?id=au.com.totality360.talihq" target="_blank" rel="noopener" data-ev="tali_hq_google_play"><span class="thq-get__ico" aria-hidden="true"><svg viewBox="0 0 512 512"><path fill="#00D9A5" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z"/><path fill="#FF3A44" d="M47 0c-6.6 6.3-10.6 15.5-10.6 26.7v458.6c0 11.2 4 20.4 10.6 26.7l4.4-4.4 289.9-289.9V256 v-0.6L51.4 4.4 47 0z"/><path fill="#FFCE00" d="M415.5 197.3l-59.1-33.9-63.3 63.3 63.3 63.3 59.4-33.9c17.9-10.3 17.9-38.5-0.3-58.8z"/><path fill="#00D9A5" d="M104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg></span><span class="thq-get__txt"><small>Get it on</small><b>Google Play</b></span></a>
           </div>
+          <p class="thq-fine">Start free. Every new account gets a 7 day free trial of Tali HQ. One account works on iPhone, Android and the web.</p>
         </div>
-        <div class="thq-art">
-          <img src="/img/tali/3d/lean_mug.webp" alt="Tali leaning on a counter with her coffee mug" width="900" height="1230">
-        </div>
+        <div class="thq-phone"><img src="/img/tali-hq/paper/today-quote.webp" alt="Tali HQ's Today screen: a note from Tali, what needs you, and a thought for today" width="540" height="1169"></div>
       </div>
     </section>
 
-    <section class="thq-sec" id="brain" style="scroll-margin-top: 90px;">
-      <h2>This is Tali's brain. Have a play.</h2>
-      <p>Tali files what she learns into parts of a brain, a bit like yours does. Watch it think, flick it to spin it, and tap a part to see what she keeps there. This is a demo with made up memories.</p>
+    <section class="thq-sec thq-wrap" id="weeks" style="scroll-margin-top: 90px;">
+      <div class="thq-split">
+        <div>
+          <span class="thq-k">Your time</span>
+          <h2>About four thousand weeks.</h2>
+          <p class="thq-prose">That is roughly how long an average life runs. Drawn one square a week, it fits on a single page, and it becomes easy to see how many of those squares go on inboxes, invoices and trying to remember what you meant to do.</p>
+          <p class="thq-prose">Tali takes on that admin. She sorts the email and drafts the replies, keeps track of who owes what, holds your dates and lists, and hands you a short brief in the morning. You decide what goes out. The weeks you get back are yours to spend on the people and the work that matter.</p>
+          <p class="thq-small">In the app, add your birthday and your own weeks fill in, a new square every week. Based on an average Australian life of about 83 years (ABS life tables, 2021 to 2023).</p>
+        </div>
+        <figure class="thq-weeks" style="margin:0">
+          <canvas id="weeks-demo" width="520" height="560" aria-label="A grid of small squares, one for each week of an average life. About a third are filled in ink, one is indigo for this week, and the rest are blank."></canvas>
+          <figcaption>Each square is a week. By 36 you have filled about 1,900 of them.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="thq-sec thq-wrap" id="brain" style="scroll-margin-top: 90px;">
+      <span class="thq-k">Her brain</span>
+      <h2>A brain that grows with you.</h2>
+      <p class="thq-prose">Tali files what she learns into parts of a brain, a bit like yours does: the people in your life, how you like things done, your plans, and the lessons along the way. Spin it, and tap a part to see what she keeps there.</p>
       <div class="bd" id="brain-demo">
         <div class="bd__stage">
           <canvas aria-label="Tali's brain, a 3D cloud of glowing dots. Drag to spin it, or tap a part." role="img"></canvas>
@@ -323,146 +311,102 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <div>
           <div class="bd-panel" aria-live="polite"></div>
           <div class="bd-chips" aria-label="Parts of Tali's brain"></div>
-          <p class="bd__fine">Your own Tali starts with an empty brain and fills it as you talk. You can see and delete anything she keeps.</p>
+          <p class="bd__fine">A demo with made up memories. Your own Tali starts with an empty brain and fills it as you talk. You can see and delete anything she keeps.</p>
         </div>
       </div>
     </section>
 
-    <section class="thq-sec">
-      <h2>One app, both sides of your week</h2>
-      <p>Tali HQ is its own app. You don't need any other app or subscription, and there's nothing to connect to get started.</p>
-      <div class="thq-grid">
-        <div class="thq-feat"><span class="thq-tag">Every day</span><b>A morning brief</b><span>What came in overnight, who needs a reply, what's on today, and one nudge on your health or goals.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business</span><b>Clients and invoices</b><span>Keep your clients and leads in one place. Tali drafts the follow-ups, replies and invoices, and nothing goes out without your yes. <a href="#business">Tali HQ Business</a> adds quotes, bookings, a pipeline and a website.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Life</span><b>Food, training and goals</b><span>Log by telling Tali. She finds gaps in your day to train and checks your goals with you every Friday.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Life</span><b>Your journal</b><span>A private journal, with a look back to what you wrote a month or a year ago. Tali reads it, learns what matters to you, and you can see and delete anything she keeps.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Life</span><b>Your people and dates</b><span>Family, friends, clients and leads in one place. Tell her a birthday once and she keeps it, and tells you who you haven't caught up with.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Life</span><b>Your lists</b><span>To do, check ups, rego and renewals, jobs around the house, habits with a streak, wins and someday. Tell Tali and she files it.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Life</span><b>Your own money</b><span>On the paid plans: what's left to spend this week, budgets by category and bills that repeat. Tell her a spend or snap a receipt.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Always learning</span><b>Her library</b><span>Each night Tali reads a few pages of the classics and keeps what is still worth knowing. Finished books open for you to read too.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Always learning</span><b>Night school</b><span>On Tali HQ Pro, Tali studies what you pick, three nights a week or every night, and gets better at the job. She can search the web too, and shows her sources.</span></div>
-      </div>
-
-      <div class="thq-trust">
-        <img src="/img/tali/3d/sit_wink.webp" alt="" width="128" height="170" loading="lazy">
+    <section class="thq-sec thq-wrap" id="live-well" style="scroll-margin-top: 90px;">
+      <span class="thq-k">Living well <span class="thq-free">FREE</span></span>
+      <h2>Reminders worth keeping.</h2>
+      <p class="thq-prose">A few parts of Tali HQ are there to help you notice how much time you have, and to spend it on purpose. They are free on every plan.</p>
+      <div class="thq-split" style="align-items:start">
+        <ul class="thq-ruled">
+          <li style="--c:#3B3F9E"><div><b>Your time</b><span>Your weeks, summers and mornings left on the averages. Add the people you love and how often you see them, and Tali counts roughly how many more times you'll be together. For a mum of 64 you see once a month, it comes to around 260.</span></div></li>
+          <li style="--c:#8A4FB8"><div><b>Your philosophy</b><span>Follow Stoicism, Epicureanism, Buddhism, Taoism, Confucianism, Existentialism or Transcendentalism. Each comes with the idea in plain words, three lessons, things to try this week, what to read first from Tali's library, and further reading.</span></div></li>
+          <li style="--c:#A8561A"><div><b>A thought for today</b><span>Each morning Today shows one quote from the schools you follow. Keep it, or put it away until tomorrow.</span></div></li>
+          <li style="--c:#2E8A63"><div><b>Shut the day down</b><span>Two minutes in the evening: how today went, one thing that went well, and tomorrow's three. Then her night sky, and sleep sounds that fade out.</span></div></li>
+        </ul>
         <div>
-          <h3>Nothing happens without your yes</h3>
-          <p>Tali drafts, you decide. She never sends a message, an invoice or a booking until you approve it, and she never asks for your passwords.</p>
+          <div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/time-people.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/time-people.webp" alt="Tali HQ screen: The people you love" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">The people you love</span></a><a class="thq-shot" href="/img/tali-hq/paper/philosophy.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/philosophy.webp" alt="Tali HQ screen: Your philosophy" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Your philosophy</span></a></div>
+          <blockquote class="thq-quote"><p>Nothing, Lucilius, is ours, except time.</p><cite>Seneca, Letters to Lucilius 1, tr. Richard M. Gummere</cite></blockquote>
         </div>
       </div>
     </section>
 
-    <section class="thq-sec" id="business" style="scroll-margin-top: 90px;">
-      <h2>Run the whole business from Tali HQ</h2>
-      <p>Tali HQ Business adds the tools a small business runs on, for any trade or service. Tali knows what is in each one, so her briefs and nudges are about your real work.</p>
-      <div class="thq-grid">
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>Jobs and quotes</b><span>Write a quote with line items and GST and share it as a PDF. It moves through sent, accepted, on now and done, and one tap turns it into a draft invoice.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>Pipeline</b><span>Your leads and quotes stacked by stage, with the value of each, so you can see who to chase next and what it could be worth.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>Bookings</b><span>Your week, your services and one booking link to share. A request from the link waits for your yes before it goes in.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>Projects</b><span>The bigger pieces of work, each with its tasks, who is doing them, a due date and notes.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>A website, hosted for you</b><span>A simple site with your name, what you do, your services and a Book a time button. Ask Tali to write it and edit before you save. Enquiries land as new leads.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>On autopilot</b><span>Rules that add a nudge to your To do for quote follow ups, late invoices, new leads, booking requests and finished jobs with no invoice. Nothing is sent to a customer.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Business plan</span><b>Bookkeeping pack</b><span>Pick a quarter and see money in, money out, the GST on each and what is still owed, shared as one PDF. A summary for your records, not tax advice.</span></div>
-        <div class="thq-feat"><span class="thq-tag">Both sides</span><b>Business and Life modes</b><span>One switch on Today flips between work and the rest of your week. Tali sorts your reminders and lists to the right side, and can switch by the clock.</span></div>
+    <section class="thq-sec thq-wrap">
+      <span class="thq-k">Both sides of your week</span>
+      <h2>One app for the life and the work.</h2>
+      <p class="thq-prose thq-prose--muted">Tali HQ is its own app. You don't need any other app or subscription, and there's nothing to connect to get started.</p>
+      <div class="thq-cols">
+        <ul class="thq-ruled">
+          <li><div><b>A morning brief</b><span>What came in overnight, who needs a reply, what's on today, and one nudge on your health or goals.</span></div></li>
+          <li><div><b>Clients and invoices</b><span>Your clients and leads in one place. Tali drafts the follow-ups, replies and invoices. <a href="#business">Tali HQ Business</a> adds quotes, bookings, a pipeline and a website.</span></div></li>
+          <li><div><b>Food, training and goals</b><span>Log by telling Tali. She finds gaps in your day to train and checks your goals with you every Friday.</span></div></li>
+          <li><div><b>Your journal</b><span>A private journal, with a look back to what you wrote a month or a year ago. Tali reads it, learns what matters to you, and you can see and delete anything she keeps.</span></div></li>
+        </ul>
+        <ul class="thq-ruled">
+          <li><div><b>Your people and dates</b><span>Family, friends, clients and leads in one place. Tell her a birthday once and she keeps it, and tells you who you haven't caught up with.</span></div></li>
+          <li><div><b>Your lists and your own money</b><span>To do, check ups, renewals and habits with a streak. On the paid plans, what's left to spend this week and the bills that repeat.</span></div></li>
+          <li><div><b>Her library</b><span>Each night Tali reads a few pages of the classics and keeps what is still worth knowing. Finished books open for you to read too.</span></div></li>
+          <li><div><b>Night school</b><span>On Tali HQ Pro, Tali studies what you pick and gets better at the job. She can search the web too, and shows her sources.</span></div></li>
+        </ul>
       </div>
-      <div class="thq-shots" style="margin-top: var(--s-5);">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_business-jobs.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_business-jobs.webp" alt="Tali HQ screen: Jobs and quotes" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_business-pipeline.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_business-pipeline.webp" alt="Tali HQ screen: Pipeline" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_business-bookings.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_business-bookings.webp" alt="Tali HQ screen: Bookings" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_business-website.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_business-website.webp" alt="Tali HQ screen: A hosted website" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_business-autopilot.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_business-autopilot.webp" alt="Tali HQ screen: On autopilot" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_business-books.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_business-books.webp" alt="Tali HQ screen: Bookkeeping pack" width="540" height="960" loading="lazy" decoding="async"></a>
+      <div class="thq-trust">
+        <img src="/img/tali/3d/sit_wink.webp" alt="" width="112" height="150" loading="lazy">
+        <div>
+          <h3>Nothing happens without your yes.</h3>
+          <p>Tali drafts and you decide. She never sends a message, an invoice or a booking until you approve it, and she never asks for your passwords.</p>
+        </div>
       </div>
+    </section>
+
+    <section class="thq-sec thq-wrap" id="business" style="scroll-margin-top: 90px;">
+      <span class="thq-k">Tali HQ Business</span>
+      <h2>Run the whole business from one place.</h2>
+      <p class="thq-prose thq-prose--muted">The tools a small business runs on, for any trade or service. Tali knows what is in each one, so her briefs and nudges are about your real work.</p>
+      <div class="thq-cols">
+        <ul class="thq-ruled">
+          <li><div><b>Jobs and quotes</b><span>A quote with line items and GST, shared as a PDF. One tap turns the finished job into a draft invoice.</span></div></li>
+          <li><div><b>Pipeline</b><span>Leads and quotes stacked by stage, with who to chase next and what each could be worth.</span></div></li>
+          <li><div><b>Bookings</b><span>Your week, your services and one booking link. A request waits for your yes.</span></div></li>
+          <li><div><b>Projects</b><span>The bigger pieces of work, with tasks, who is doing each and a due date.</span></div></li>
+        </ul>
+        <ul class="thq-ruled">
+          <li><div><b>A website, hosted for you</b><span>Your name, what you do, your services and a Book a time button. Enquiries land as new leads.</span></div></li>
+          <li><div><b>On autopilot</b><span>Rules that add a nudge to your To do for quote follow ups, late invoices, new leads and finished jobs with no invoice. Nothing is sent to a customer.</span></div></li>
+          <li><div><b>Bookkeeping pack</b><span>A quarter on one page: money in, money out, the GST on each and what is still owed. A summary for your records, not tax advice.</span></div></li>
+          <li><div><b>Business and Life modes</b><span>One switch on Today flips between work and the rest of your week.</span></div></li>
+        </ul>
+      </div>
+      <div style="margin-top: var(--s-5)"><div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/jobs.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/jobs.webp" alt="Tali HQ screen: Jobs and quotes" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Jobs and quotes</span></a><a class="thq-shot" href="/img/tali-hq/paper/pipeline.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/pipeline.webp" alt="Tali HQ screen: Pipeline" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Pipeline</span></a><a class="thq-shot" href="/img/tali-hq/paper/bookings.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/bookings.webp" alt="Tali HQ screen: Bookings" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Bookings</span></a><a class="thq-shot" href="/img/tali-hq/paper/website.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/website.webp" alt="Tali HQ screen: Website" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Website</span></a><a class="thq-shot" href="/img/tali-hq/paper/autopilot.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/autopilot.webp" alt="Tali HQ screen: On autopilot" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">On autopilot</span></a><a class="thq-shot" href="/img/tali-hq/paper/books.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/books.webp" alt="Tali HQ screen: Bookkeeping pack" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Bookkeeping pack</span></a></div></div>
       <p class="thq-fine-print"><a href="#business-plan">See the Tali HQ Business plan</a>. Text messages to customers and Tali answering your phone are coming soon.</p>
     </section>
 
-    <section class="thq-sec thq-screens" id="screens" style="scroll-margin-top: 90px;">
-      <h2>See Tali HQ in action</h2>
-      <p>A few screens from the app as it stands today. Tap any one to see it full size.</p>
-      <div class="thq-shots thq-shots--hl">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_today-top.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_today-top.webp" alt="Tali HQ screen: Today" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_today-star.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_today-star.webp" alt="Tali HQ screen: A star opened" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_talk-chat.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_talk-chat.webp" alt="Tali HQ screen: Talk" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_brain-top.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_brain-top.webp" alt="Tali HQ screen: Her brain" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_world-map.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_world-map.webp" alt="Tali HQ screen: Your world" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_money-personal.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_money-personal.webp" alt="Tali HQ screen: Money, personal" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
+    <section class="thq-sec thq-wrap" id="screens" style="scroll-margin-top: 90px;">
+      <span class="thq-k">The app</span>
+      <h2>See Tali HQ as it is today.</h2>
+      <p class="thq-prose thq-prose--muted">Real screens from the app. Tap any one to see it full size.</p>
+      <div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/today.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/today.webp" alt="Tali HQ screen: Today" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Today</span></a><a class="thq-shot" href="/img/tali-hq/paper/talk.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/talk.webp" alt="Tali HQ screen: Talk" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Talk</span></a><a class="thq-shot" href="/img/tali-hq/paper/brain.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/brain.webp" alt="Tali HQ screen: Her brain" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Her brain</span></a><a class="thq-shot" href="/img/tali-hq/paper/world.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/world.webp" alt="Tali HQ screen: Your world" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Your world</span></a><a class="thq-shot" href="/img/tali-hq/paper/journal-weeks.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/journal-weeks.webp" alt="Tali HQ screen: Your life in weeks" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Your life in weeks</span></a><a class="thq-shot" href="/img/tali-hq/paper/night.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/night.webp" alt="Tali HQ screen: After you shut the day down" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">After you shut the day down</span></a></div>
       <details class="thq-more">
-        <summary>Show all 37 screens</summary>
-      <h3 class="thq-screens__h">Getting started</h3>
-      <p class="thq-screens__cap">Sign up, five questions, and a quick look around.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_getting-started-signup.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_getting-started-signup.webp" alt="Tali HQ screen: Sign up" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_getting-started-onboarding.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_getting-started-onboarding.webp" alt="Tali HQ screen: What should I call you?" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_getting-started-plate.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_getting-started-plate.webp" alt="Tali HQ screen: What would you like a hand with?" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_getting-started-tour-step.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_getting-started-tour-step.webp" alt="Tali HQ screen: The tour" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
-      <h3 class="thq-screens__h">Today</h3>
-      <p class="thq-screens__cap">Her brain with your day around it as stars. Tap a star, pick a lens, read your brief.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_today-top.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_today-top.webp" alt="Tali HQ screen: Today" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_today-star.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_today-star.webp" alt="Tali HQ screen: A star opened" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_today-lens.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_today-lens.webp" alt="Tali HQ screen: The Money lens" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_today-brief.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_today-brief.webp" alt="Tali HQ screen: Your morning brief" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_approvals-draft.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_approvals-draft.webp" alt="Tali HQ screen: A draft waiting for your yes" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_evening-night.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_evening-night.webp" alt="Tali HQ screen: Day closed" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
-      <h3 class="thq-screens__h">Talk</h3>
-      <p class="thq-screens__cap">Chat like you would with a mate who never forgets. Think harder when it matters.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_talk-chat.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_talk-chat.webp" alt="Tali HQ screen: Talk" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_talk-think.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_talk-think.webp" alt="Tali HQ screen: Deep think and Big brain" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_replies-pdf.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_replies-pdf.webp" alt="Tali HQ screen: Reading a PDF" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_talk-history.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_talk-history.webp" alt="Tali HQ screen: Your chats" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
-      <h3 class="thq-screens__h">Her brain</h3>
-      <p class="thq-screens__cap">Everything she knows, filed by part. What she tidied overnight, with an undo. The books she reads.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_brain-top.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_brain-top.webp" alt="Tali HQ screen: Her brain" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_brain-slept.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_brain-slept.webp" alt="Tali HQ screen: While you slept" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_brain-part.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_brain-part.webp" alt="Tali HQ screen: A part of her brain" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_library-shelf.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_library-shelf.webp" alt="Tali HQ screen: Tali&#x27;s library" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_library-reader.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_library-reader.webp" alt="Tali HQ screen: Reading a book" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
-      <h3 class="thq-screens__h">Your world</h3>
-      <p class="thq-screens__cap">Your life on one map: people, work, health, home and money, growth and your words.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_world-map.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_world-map.webp" alt="Tali HQ screen: Your world" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_world-list.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_world-list.webp" alt="Tali HQ screen: Everything as a list" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_clients-list.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_clients-list.webp" alt="Tali HQ screen: Your people" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_dates.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_dates.webp" alt="Tali HQ screen: Dates that matter" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_lists-habits.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_lists-habits.webp" alt="Tali HQ screen: Habits" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_lists-checkups.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_lists-checkups.webp" alt="Tali HQ screen: Check ups" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
-      <h3 class="thq-screens__h">Work and money</h3>
-      <p class="thq-screens__cap">Email sorted, invoices sent on your yes, your own spending and receipts for tax time.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_gmail-tabs.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_gmail-tabs.webp" alt="Tali HQ screen: Email" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_invoices-list.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_invoices-list.webp" alt="Tali HQ screen: Invoices" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_money.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_money.webp" alt="Tali HQ screen: Money, business" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_money-personal.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_money-personal.webp" alt="Tali HQ screen: Money, personal" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_receipts.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_receipts.webp" alt="Tali HQ screen: Receipts" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_goals.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_goals.webp" alt="Tali HQ screen: Goals" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
-      <h3 class="thq-screens__h">Health, journal and sleep</h3>
-      <p class="thq-screens__cap">Food and training by chatting, your journal, and sleep sounds that fade out.</p>
-      <div class="thq-shots">
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_life.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_life.webp" alt="Tali HQ screen: Food and training" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_body.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_body.webp" alt="Tali HQ screen: Body" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_journal-list.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_journal-list.webp" alt="Tali HQ screen: Journal" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_sleep.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_sleep.webp" alt="Tali HQ screen: Sleep" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_sleep-playing.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_sleep-playing.webp" alt="Tali HQ screen: Sleep, playing" width="540" height="960" loading="lazy" decoding="async"></a>
-        <a class="thq-shot" href="/img/tali-hq/screens/TaliHQ_me-top.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/screens/TaliHQ_me-top.webp" alt="Tali HQ screen: Me" width="540" height="960" loading="lazy" decoding="async"></a>
-      </div>
+        <summary>Show more screens</summary>
+        <h3 class="thq-screens__h">Living well</h3>
+        <div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/time.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/time.webp" alt="Tali HQ screen: Your time" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Your time</span></a><a class="thq-shot" href="/img/tali-hq/paper/time-people.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/time-people.webp" alt="Tali HQ screen: The people you love" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">The people you love</span></a><a class="thq-shot" href="/img/tali-hq/paper/philosophy.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/philosophy.webp" alt="Tali HQ screen: Your philosophy" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Your philosophy</span></a><a class="thq-shot" href="/img/tali-hq/paper/philosophy-2.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/philosophy-2.webp" alt="Tali HQ screen: Lessons and reading" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Lessons and reading</span></a><a class="thq-shot" href="/img/tali-hq/paper/shutdown.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/shutdown.webp" alt="Tali HQ screen: Shut the day down" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Shut the day down</span></a><a class="thq-shot" href="/img/tali-hq/paper/sleep.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/sleep.webp" alt="Tali HQ screen: Sleep" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Sleep</span></a></div>
+        <h3 class="thq-screens__h">Life</h3>
+        <div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/life.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/life.webp" alt="Tali HQ screen: Food and training" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Food and training</span></a><a class="thq-shot" href="/img/tali-hq/paper/goals.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/goals.webp" alt="Tali HQ screen: Goals" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Goals</span></a><a class="thq-shot" href="/img/tali-hq/paper/dates.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/dates.webp" alt="Tali HQ screen: Dates that matter" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Dates that matter</span></a><a class="thq-shot" href="/img/tali-hq/paper/todo.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/todo.webp" alt="Tali HQ screen: To do" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">To do</span></a><a class="thq-shot" href="/img/tali-hq/paper/people.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/people.webp" alt="Tali HQ screen: Your people" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Your people</span></a><a class="thq-shot" href="/img/tali-hq/paper/library.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/library.webp" alt="Tali HQ screen: Tali&#x27;s library" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Tali&#x27;s library</span></a></div>
+        <h3 class="thq-screens__h">Work and money</h3>
+        <div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/email.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/email.webp" alt="Tali HQ screen: Email" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Email</span></a><a class="thq-shot" href="/img/tali-hq/paper/invoices.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/invoices.webp" alt="Tali HQ screen: Invoices" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Invoices</span></a><a class="thq-shot" href="/img/tali-hq/paper/money.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/money.webp" alt="Tali HQ screen: Money" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Money</span></a><a class="thq-shot" href="/img/tali-hq/paper/receipts.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/receipts.webp" alt="Tali HQ screen: Receipts" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Receipts</span></a><a class="thq-shot" href="/img/tali-hq/paper/review.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/review.webp" alt="Tali HQ screen: Weekly review" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Weekly review</span></a><a class="thq-shot" href="/img/tali-hq/paper/projects.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/projects.webp" alt="Tali HQ screen: Projects" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Projects</span></a></div>
+        <h3 class="thq-screens__h">Getting started</h3>
+        <div class="thq-shots"><a class="thq-shot" href="/img/tali-hq/paper/onboarding.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/onboarding.webp" alt="Tali HQ screen: What should I call you?" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">What should I call you?</span></a><a class="thq-shot" href="/img/tali-hq/paper/me.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/me.webp" alt="Tali HQ screen: Me" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Me</span></a><a class="thq-shot" href="/img/tali-hq/paper/plans.webp" target="_blank" rel="noopener"><img src="/img/tali-hq/paper/plans.webp" alt="Tali HQ screen: Plans" width="540" height="1169" loading="lazy" decoding="async"><span class="thq-cap">Plans</span></a></div>
       </details>
     </section>
 
-    <section class="thq-sec" id="pricing" style="scroll-margin-top: 90px;">
+    <section class="thq-sec thq-wrap" id="pricing" style="scroll-margin-top: 90px;">
       <h2>Plans and pricing</h2>
-      <p>Five plans, in Australian dollars. Start free, upgrade when Tali is pulling her weight.</p>
+      <p class="thq-prose thq-prose--muted">Five plans, in Australian dollars. Start free, and upgrade when Tali is pulling her weight. Your time, your philosophy and the daily thought are free on every plan.</p>
       <div class="thq-toggle" role="group" aria-label="Billing period">
         <button type="button" data-period="month" aria-pressed="true">Monthly</button>
-        <button type="button" data-period="year" aria-pressed="false">Yearly <small>save 15%</small></button>
+        <button type="button" data-period="year" aria-pressed="false">Yearly</button>
       </div>
       <div class="thq-plans">
         <div class="thq-plan thq-plan--ghost">
@@ -480,7 +424,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <a class="thq-btn" href="https://talihq.com.au" target="_blank" rel="noopener">Start free</a>
         </div>
         <div class="thq-plan thq-plan--hq">
-          <span class="thq-plan__pop">Most popular</span>
+          <span class="thq-plan__pop">Most people pick this</span>
           <h3>Tali HQ</h3>
           <div class="thq-plan__price"><b data-price="hq">A$19.99</b><span data-per>a month</span></div>
           <span class="thq-plan__tag">For running the business. 1,000 credits and 30 images a month</span>
@@ -543,13 +487,14 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <p class="thq-fine-print">Coming soon, not on sale yet: Tali HQ Business Pro (A$389.99 a month) for a small team, with seats for your staff, text messages to customers and Tali answering your phone, and Tali HQ Business Max (A$649.99 a month) for a bigger team or more than one business.</p>
     </section>
 
-    <section class="thq-sec">
+    <section class="thq-sec thq-wrap">
       <h2>Questions</h2>
       <div class="thq-faq">
         <details><summary>Where do I get Tali HQ?</summary><p>It's on the <a href="https://apps.apple.com/au/app/tali-hq-ai-life-business/id6830035266" target="_blank" rel="noopener">App Store</a> for iPhone and on <a href="https://play.google.com/store/apps/details?id=au.com.totality360.talihq" target="_blank" rel="noopener">Google Play</a> for Android. It also runs in your browser at <a href="https://talihq.com.au" target="_blank" rel="noopener">talihq.com.au</a>, on a phone or a computer. The same account works on all three.</p></details>
-        <details><summary>What does it cost?</summary><p>Free, Tali HQ at A$19.99 a month, Tali HQ Pro at A$49.99 a month, or Tali HQ Max at A$149.99 a month, with 15% off if you pay yearly. Tali HQ Business is A$199.99 a month, monthly only. <a href="#pricing">See the plans</a>.</p></details>
+        <details><summary>What does it cost?</summary><p>Free, Tali HQ at A$19.99 a month, Tali HQ Pro at A$49.99 a month, or Tali HQ Max at A$149.99 a month. The paid plans can also be paid yearly. Tali HQ Business is A$199.99 a month, monthly only. <a href="#pricing">See the plans</a>.</p></details>
         <details><summary>What is Tali HQ Business?</summary><p>The plan for running a business from one place. You get everything in Tali HQ Max, plus jobs and quotes, a pipeline, bookings with a link your customers book from, projects, a hosted website, On autopilot and a bookkeeping pack for your accountant. It is A$199.99 a month.</p></details>
         <details><summary>Can I have a website on my own domain?</summary><p>Yes. Tali HQ hosts a simple site for you at talihq.com.au/site/your-name. A personal site comes with any paid plan and a business site comes with Tali HQ Business. Putting it on your own domain is A$79 once.</p></details>
+        <details><summary>What are Your time and Your philosophy?</summary><p>Two free parts of Tali HQ for the life side. Your time counts your weeks on an average Australian life (ABS life tables), plus your summers, your mornings and roughly how many more times you'll see the people you love. Your philosophy lets you follow schools like Stoicism or Taoism, with their key texts, lessons, things to try and a quote each morning. Every number is an average, and the quotes come word for word from public domain translations.</p></details>
         <details><summary>Do I need Totality or Totality Nutrition?</summary><p>No. Tali HQ is its own app with its own sign-up. You don't need any other app to use it.</p></details>
         <details><summary>Who makes Tali HQ?</summary><p>Totality 360, the Australian team behind Totality and Totality Nutrition. Tali is the same AI that already works inside both apps.</p></details>
         <details><summary>How does Tali HQ compare with ChatGPT and other AI apps?</summary><p>See Tali HQ side by side with <a href="/compare/tali-hq-vs-chatgpt.html">ChatGPT</a>, <a href="/compare/tali-hq-vs-claude.html">Claude</a>, <a href="/compare/tali-hq-vs-gemini.html">Gemini</a>, <a href="/compare/tali-hq-vs-copilot.html">Copilot</a>, <a href="/compare/tali-hq-vs-notion-ai.html">Notion AI</a>, <a href="/compare/tali-hq-vs-reclaim.html">Reclaim</a> and <a href="/compare/tali-hq-vs-lindy.html">Lindy</a>.</p></details>
@@ -557,14 +502,15 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       <p class="thq-fine-print">More on Tali HQ: <a href="/chatgpt-alternative-that-remembers.html">an AI that remembers you</a>, <a href="/ai-assistant-small-business-australia.html">an AI assistant for small business in Australia</a>, <a href="/ai-email-assistant.html">an AI email assistant</a> and <a href="/ai-invoice-assistant.html">an AI invoice assistant</a>.</p>
     </section>
 
-    <section class="thq-end">
+    <section class="thq-end thq-wrap">
       <div class="thq-end__in">
-        <h2>Meet Tali. Start free today.</h2>
-        <a href="https://talihq.com.au" target="_blank" rel="noopener">Open Tali HQ</a>
-        <p style="margin-top:14px;font-size:.95rem"><a href="https://www.instagram.com/tali_hq_/" target="_blank" rel="noopener" style="display:inline;min-height:0;background:none;padding:0;border-radius:0;color:#fff;text-decoration:underline;font-weight:600">Follow @tali_hq_ on Instagram</a></p>
+        <h2>Start with this week.</h2>
+        <a class="thq-cta" href="https://talihq.com.au" target="_blank" rel="noopener">Open Tali HQ</a>
       </div>
+      <p class="thq-small" style="margin-top:14px"><a href="https://www.instagram.com/tali_hq_/" target="_blank" rel="noopener">Follow @tali_hq_ on Instagram</a></p>
     </section>
   </main>
+
 
   <!-- chrome:footer -->
 <footer class="site-footer">
@@ -730,6 +676,19 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     document.querySelectorAll('[data-per]').forEach(function (e) { e.textContent = unit; });
   }
   btns.forEach(function (b) { b.addEventListener('click', function () { setPeriod(b.dataset.period); }); });
+})();
+</script>
+<script>
+(function () {
+  var c = document.getElementById('weeks-demo'); if (!c) return;
+  var ctx = c.getContext('2d'), cols = 52, rows = 83, lived = 1908, gap = 2;
+  var cell = Math.floor((c.width - gap * (cols - 1)) / cols);
+  c.height = rows * (cell + gap);
+  for (var r = 0; r < rows; r++) for (var k = 0; k < cols; k++) {
+    var i = r * cols + k;
+    ctx.fillStyle = i < lived ? '#1C1A17' : i === lived ? '#3B3F9E' : '#E3DACA';
+    ctx.fillRect(k * (cell + gap), r * (cell + gap), cell, cell);
+  }
 })();
 </script>
 <script src="/js/nav.js" defer></script>
