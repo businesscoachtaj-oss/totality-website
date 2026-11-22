@@ -33,6 +33,8 @@ NUTRITION_PAGES = {
     "nutrition.html", "get-nutrition.html", "nutrition-features.html", "nutrition-teams.html",
     "calculator.html",
 }
+# ADDED (22 Nov 2026): Training pages get the red Start free button that goes to /get-training.html.
+TRAINING_PAGES = {"training.html", "get-training.html", "training-teams.html"}
 
 def read(p):
     with open(p, encoding="utf-8") as f:
@@ -55,10 +57,15 @@ def brand_of(rel, html):
     m = re.search(r'<body[^>]*data-brand="(\w+)"', html)
     if m:
         return m.group(1)
+    if os.path.basename(rel) in TRAINING_PAGES:
+        return "training"
     return "nutrition" if os.path.basename(rel) in NUTRITION_PAGES else "totality"
 
 def header_for(rel, html):
-    if brand_of(rel, html) == "nutrition":
+    b = brand_of(rel, html)
+    if b == "training":
+        h = HEADER.replace("{{CTA_CLASS}}", "btn--training").replace("{{CTA_HREF}}", "/get-training.html")
+    elif b == "nutrition":
         h = HEADER.replace("{{CTA_CLASS}}", "btn--nutrition").replace("{{CTA_HREF}}", "/get-nutrition.html")
     else:
         h = HEADER.replace("{{CTA_CLASS}}", "btn--primary").replace("{{CTA_HREF}}", "/get-totality.html")
@@ -147,9 +154,10 @@ def write_site_chrome_js():
   var FOOTER = %s;
   function brand() { return (document.body.getAttribute('data-brand') || 'totality'); }
   function headerHtml() {
-    var n = brand() === 'nutrition';
-    return HEADER.replace('{{CTA_CLASS}}', n ? 'btn--nutrition' : 'btn--primary')
-                 .replace('{{CTA_HREF}}', n ? '/get-nutrition.html' : '/get-totality.html');
+    var b = brand();
+    var cls = b === 'nutrition' ? 'btn--nutrition' : b === 'training' ? 'btn--training' : 'btn--primary';
+    var href = b === 'nutrition' ? '/get-nutrition.html' : b === 'training' ? '/get-training.html' : '/get-totality.html';
+    return HEADER.replace('{{CTA_CLASS}}', cls).replace('{{CTA_HREF}}', href);
   }
   function place(sel, html, atStart) {
     var slot = document.querySelector(sel);
