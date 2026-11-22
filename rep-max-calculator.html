@@ -552,7 +552,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <div class="hero">
   <div class="hero-eyebrow">Free tool, no catch</div>
   <h1>Your <em>free</em> one rep<br>max calculator</h1>
-  <p>The same calculator used inside Totality and Totality Training. Enter one set and get your max, the weight for every rep count, and where you stand.</p>
+  <p>The same calculator used inside Totality and Totality Training. Enter one set of any lift and get your max, the weight for every rep count, and where you stand on the big four.</p>
 </div>
 
 <div class="form-wrap">
@@ -577,17 +577,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   </div>
 
   <div class="card">
-    <div class="card-title"><div class="card-num">2</div> Your best recent set</div>
-    <div class="field">
-      <label class="field-label" for="lift">Lift</label>
-      <select id="lift" class="calc-select">
-        <option value="squat">Squat</option>
-        <option value="bench" selected>Bench press</option>
-        <option value="deadlift">Deadlift</option>
-        <option value="press">Overhead press</option>
-        <option value="other">Another lift</option>
-      </select>
-    </div>
+    <div class="card-title"><div class="card-num">2</div> Your set</div>
+    <p style="color:var(--muted);font-size:0.86rem;margin:-4px 0 14px;">Any lift, any weight. A hard set of 10 reps or fewer gives the closest answer.</p>
     <div class="two">
       <div class="field">
         <label class="field-label" for="unit">Unit</label>
@@ -613,6 +604,17 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 
   <div class="card">
     <div class="card-title"><div class="card-num">3</div> See where you stand <span style="font-weight:500;color:var(--muted);font-size:0.85rem;margin-left:6px;">optional</span></div>
+    <p style="color:var(--muted);font-size:0.86rem;margin:-4px 0 14px;">For squat, bench press, deadlift or overhead press. Leave this blank for any other lift.</p>
+    <div class="field">
+      <label class="field-label" for="lift">Which lift was your set?</label>
+      <select id="lift" class="calc-select">
+        <option value="other" selected>Another lift</option>
+        <option value="squat">Squat</option>
+        <option value="bench">Bench press</option>
+        <option value="deadlift">Deadlift</option>
+        <option value="press">Overhead press</option>
+      </select>
+    </div>
     <div class="two">
       <div class="field">
         <label class="field-label" for="bw">Body weight</label>
