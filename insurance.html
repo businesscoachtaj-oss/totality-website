@@ -64,6 +64,16 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .ov-video video { width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius); background: #000; display: block; object-fit: cover; }
   .ov-video figcaption { margin-top: var(--s-2); font-size: var(--fs-sm); color: var(--muted); font-weight: 600; text-align: center; }
   @media (max-width: 860px) { .ov-hero { grid-template-columns: 1fr; gap: var(--s-6); } .ov-video { max-width: 240px; } }
+  .ins-partner { display:flex; align-items:center; gap: 12px; flex-wrap: wrap; margin-bottom: var(--s-4); }
+  .ins-partner span { font-size: 13px; font-weight: 700; color: var(--ink-2); }
+  .ins-partner img.bc { height: 30px; width: auto; }
+  .ins-partner img.badge { height: 34px; width: auto; }
+  .ins-sheets { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--s-4); }
+  .ins-sheet { display:flex; align-items:center; gap: 12px; background:#fff; border:1px solid var(--line, #E8E2DA); border-radius: 14px; padding: 14px 16px; text-decoration:none; color: inherit; transition: transform .15s ease, box-shadow .15s ease; }
+  .ins-sheet:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.08); }
+  .ins-sheet .ic { width: 40px; height: 40px; border-radius: 10px; background: #E6F6FB; color: #00A9DA; display:flex; align-items:center; justify-content:center; font-weight: 900; font-size: 12px; flex: none; }
+  .ins-sheet b { display:block; font-size: 15px; }
+  .ins-sheet small { color: var(--ink-2); }
 </style>
 <script type="application/ld+json">
 {
@@ -275,6 +285,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <section class="page-hero page-hero--tint">
   <div class="container ins-hero">
     <div>
+      <div class="ins-partner"><span>In partnership with</span><img class="badge" src="/img/insurance/bizcover-partners-badge.png" alt="BizCover Partners" width="300" height="97"></div>
       <p class="kicker">Insurance with BizCover</p>
       <h1>Cover for fitness pros and fitness businesses</h1>
       <p class="lead">Insurance for personal trainers, coaches, gym owners, studios and clinics, with BizCover, our insurance partner. Compare quotes from multiple insurers, buy online in minutes and get your cover delivered to your inbox.</p>
@@ -304,6 +315,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
         <span class="pill pill--orange">Personal trainers and coaches</span>
         <h3>Cover for you and your clients</h3>
         <ul class="ticks ticks--orange">
+          <li><b>Allied health combined liability.</b> Bundles professional indemnity and public liability cover into one policy, for 200+ types of allied health, fitness and beauty professions.</li>
           <li><b>Public liability.</b> Covers compensation costs and legal fees if you negligently cause injury to a member of the public or damage to property.</li>
           <li><b>Professional indemnity.</b> Covers financial losses and legal fees as a result of alleged or actual negligence in your professional services or advice.</li>
           <li><b>Personal accident and illness.</b> Covers loss of income if you are unable to work as a result of an injury or illness in or outside of work. Limits apply.</li>
@@ -316,8 +328,30 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <li><b>Public liability.</b> For slips, trips and property damage.</li>
           <li><b>Contents.</b> Covers loss or damage to business items at the insured location, such as equipment, stock, machinery and furniture.</li>
           <li><b>Business interruption.</b> Covers loss of income following an interruption to your business following an insurable event.</li>
+          <li><b>Business insurance package.</b> An insurance bundle that can be customised to include cover for your tools and equipment, stock, owned business buildings, and more.</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Fact sheets</h2>
+      <p class="section-sub">BizCover&rsquo;s fact sheets explain what each type of cover is for. Open one to read it or save it.</p>
+    </div>
+    <div class="ins-sheets">
+      <a class="ins-sheet" href="/files/bizcover/Allied_Health_Combined_Liability_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Allied health combined liability</b><small>PI and public liability in one policy</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Public_Liability_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Public liability</b><small>Injury or property damage claims</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Professional_Indemnity_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Professional indemnity</b><small>Claims about your advice or services</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Personal_Accident_and_Illness_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Personal accident and illness</b><small>Income if you can&rsquo;t work</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Business_Insurance_Pack_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Business insurance pack</b><small>Contents, equipment, premises and more</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Management_Liability_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Management liability</b><small>For directors, officers and the company</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Cyber_Liability_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Cyber liability</b><small>Data breaches and cyber attacks</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/Tax_Audit_Insurance_Fact_Sheet.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>Tax audit</b><small>Costs of responding to a tax audit</small></span></a>
+      <a class="ins-sheet" href="/files/bizcover/What_and_Who_BizCover_Insure.pdf" target="_blank" rel="noopener"><span class="ic">PDF</span><span><b>What and who BizCover insures</b><small>The full list of cover and occupations</small></span></a>
     </div>
   </div>
 </section>
