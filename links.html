@@ -202,6 +202,11 @@ button, input { font: inherit; }
 .perk .tx span { display: block; color: var(--soft); font-size: 13px; margin-top: 2px; }
 .code { border: 1.5px dashed rgba(255,214,0,.7); background: rgba(0,0,0,.35); color: #FFE45C; font-weight: 900; font-size: 14px; letter-spacing: .08em; height: 44px; padding: 0 14px; border-radius: 12px; cursor: pointer; white-space: nowrap; transition: transform .15s; }
 .code:active { transform: scale(.96); }
+/* BizCover perk (24 Nov 2026): same card, BizCover blue instead of DUBBY yellow */
+.perk--biz { background: linear-gradient(120deg, rgba(0,174,239,.18), rgba(255,255,255,.04)); border-color: rgba(0,174,239,.4); }
+.perk--biz .tx { color: inherit; text-decoration: none; }
+.perk--biz .tx span em { font-style: normal; color: #7FD8FF; font-weight: 700; }
+.perk--biz .code { border-color: rgba(0,174,239,.75); color: #7FD8FF; }
 
 /* Free tools grid */
 .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -354,6 +359,11 @@ footer a { color: var(--soft); font-weight: 700; }
     <span class="tx"><b>10% off DUBBY</b><span>Our energy drink partner. Use the code at checkout.</span></span>
     <button class="code" type="button" data-copy="TOTALITY" aria-label="Copy the code TOTALITY">TOTALITY</button>
   </section>
+  <section class="card perk perk--biz rise" style="animation-delay:.42s">
+    <span class="ic"><img src="/img/brand/bizcover.png" alt="BizCover" width="52" height="52"></span>
+    <a class="tx" href="/insurance.html" data-ev="bizcover_insurance"><b>$20 off BizCover insurance</b><span>Our insurance partner for trainers, gyms and studios. <em>See cover →</em></span></a>
+    <button class="code" type="button" data-copy="TOTALITY" data-copy-ev="bizcover_code" aria-label="Copy the BizCover code TOTALITY">TOTALITY</button>
+  </section>
 
   <div class="label rise" style="animation-delay:.44s">Free stuff</div>
   <section class="tools rise" style="animation-delay:.46s">
@@ -436,7 +446,7 @@ footer a { color: var(--soft); font-weight: 700; }
   document.querySelectorAll('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
       var code = b.dataset.copy;
-      var ok = function () { say('Code ' + code + ' copied'); track('dubby_code'); };
+      var ok = function () { say('Code ' + code + ' copied'); track(b.dataset.copyEv || 'dubby_code'); };
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(code).then(ok, function () { say('Code: ' + code); });
       else say('Code: ' + code);
     });
