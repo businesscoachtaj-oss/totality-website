@@ -3,7 +3,7 @@ title: Memberships
 summary: Create your membership options, start a member on one, see who is on what, and cancel at the end of a billing period.
 ---
 
-**Memberships** is where you set up what you sell (Unlimited, Off Peak, 12 Month Upfront and so on) and where you see who is paying for which one. Members pay by card through your [Stripe account](stripe-connect.html), so connect Stripe first.
+**Memberships** is where you set up what you sell (Unlimited, Off Peak, 12 Month Upfront and so on) and where you see who is paying for which one. Members pay by card or bank account through your [Stripe account](stripe-connect.html), on your [debit day](stripe-connect.html#your-debit-day). so connect Stripe first.
 
 Open the **Sales** tab, then **Memberships**. There are two tabs: **Products** and **Members**.
 
@@ -28,7 +28,7 @@ Active memberships also appear in your gym's shop, where members can buy them th
 
 ## Start a member on a membership
 
-The member needs a card saved with your gym first. If they do not have one, ask them to add one (see [Ask a member to add a card](#ask-a-member-to-add-a-card)).
+The member needs a card or bank account saved with your gym first. If they do not have one, ask them to add a card (see [Ask a member to add a card](#ask-a-member-to-add-a-card)), or ask them to add a bank account under **Payments** in their app.
 
 !steps
 1. Open the **Members** tab and tap **+ New** (or **Add membership**).
@@ -37,7 +37,16 @@ The member needs a card saved with your gym first. If they do not have one, ask 
 4. Optional: turn on **Custom amount** ("Override the plan price with a custom amount") to charge a different price, then enter the **Amount ($)** and frequency.
 5. Tap **Create subscription**.
 
-Their default saved card is charged straight away, and then again on each billing date. If anything fails you will see "Could not create subscription" with the reason.
+Their default card or bank account is charged straight away. Weekly, fortnightly and monthly memberships then come out on your debit day:
+
+- If today is your debit day, they pay the full amount today, then on every debit day after.
+- If it isn't, they pay a **part payment** today for the days up to your debit day, then the full amount every debit day after. Before you tap **Create subscription**, the box shows what they pay today and what they pay after that, with the dates.
+
+Quarterly and yearly memberships start the day you create them and repeat from then.
+
+!phone[A part payment up to the debit day](img/memberships-part-payment.png)
+
+A bank account payment takes about a minute to confirm. The membership starts straight away, and if the bank says no it goes to **Past due** and you're told. If anything fails you will see "Could not create subscription" with the reason.
 
 ## The Members tab
 
@@ -71,6 +80,9 @@ The email comes from your gym and links to the page where they add their card in
 No more payments are taken after the current period ends. Members can also cancel their own membership from their app, at the end of the period they have paid for.
 
 ## Questions
+
+?? Can I change the debit day?
+Yes, in **Connect Stripe**, under Debit day. Memberships already running move to the new day at their next payment, and the days in between are added to that payment. See [Stripe Connect](stripe-connect.html#your-debit-day).
 
 ?? Can I change the price of a membership people are already on?
 To change what an existing member pays, cancel their membership at the end of the period and start them again on the new one, or with a **Custom amount**.

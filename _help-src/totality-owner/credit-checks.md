@@ -28,4 +28,4 @@ A used credit went back to available, but its session still shows as completed o
 A trainer's pay card shows a note when sessions in that pay were completed with no credit used, with a link to Credit checks. Each of those sessions is tagged "no credit used". See [Payroll](payroll.html).
 
 ?? Can my trainers see this screen?
-No. Trainers are told, when they add a credit by hand, that the owner can see it and who added it.
+No. Trainers are told, when they add sessions by hand, that the owner can see them and who added them.

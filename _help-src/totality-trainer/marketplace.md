@@ -21,8 +21,8 @@ Until your [Stripe payouts](getting-paid.html) are active, a **Connect Stripe to
 3. Enter a **Name**, a **Description** ("What's included?") and a **Price ($)**.
 4. Fill in the extra field for the type:
    - **Programme**: pick which of your programmes the buyer gets.
-   - **PT Package**: the **Number of sessions**. When a client pays, they get that many PT credits to book with you.
-   - **Membership**: the **Billing frequency**: **Weekly**, **Fortnightly** or **Monthly**. The client is charged on repeat.
+   - **PT Package**: **How often**: **One-off**, or **Weekly**, **Fortnightly** or **Monthly** for a pack that repeats. Then the **Number of sessions** (or **Sessions each time** for one that repeats). When a client pays, they get that many sessions to book with you. A pack that repeats adds them with every full payment. See [Plans for clients](client-plans.html).
+   - **Membership**: the **Billing frequency**: **Weekly**, **Fortnightly** or **Monthly**. The client is charged on repeat, on your [debit day](getting-paid.html#your-debit-day).
 5. Optional: **Track stock**, with **Stock on hand** and a **Low-stock alert at** number. Stock goes down by 1 with each sale.
 6. Optional: **Add buyer as a client**, so anyone who buys joins your client list.
 7. Leave **Active** on to show it in your shop.
@@ -65,7 +65,7 @@ Revenue comes live from your Stripe account and covers the last 90 days. Amounts
 Clients see your active products in their app's marketplace.
 
 ?? A client bought a PT package. Where are their credits?
-They appear on the client's profile under **PT credits** once Stripe confirms the payment.
+They appear on the client's **Money** tab under **Sessions** once Stripe confirms the payment, and on the client's Home under **Sessions left**.
 
 ?? Can I sell without the POS add-on?
 No. Selling needs the POS add-on and active Stripe payouts.
