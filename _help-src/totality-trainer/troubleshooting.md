@@ -54,7 +54,7 @@ Push only works in the phone app. Check **Settings > Notifications**, that **Qui
 The client has nothing scheduled in their programme today. Open their profile and use **Run Session →** on any session.
 
 ?? Cash Off says "No credits available".
-The client has no credits. Add one on their profile, or let them buy a package, then cash off. See [Credits](credits.html).
+The client has no sessions left. Tap **Add sessions** on their Money tab, or let them buy a pack, then cash off. See [Sessions left](credits.html).
 
 ?? My products don't show to clients.
 Your Stripe payouts aren't active yet. Finish **Trainer Payouts** in Subscription. See [Getting paid](getting-paid.html).

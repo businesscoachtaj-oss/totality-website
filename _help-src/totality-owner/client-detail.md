@@ -44,6 +44,10 @@ If a member answers Yes to any PAR-Q question, ask them to get clearance from th
 
 Their card on file (for example Visa ending 4242), or **No payment method** with **Request Payment Method** and **Add Card Manually**. See [Failed payments and cards](failed-payments.html#ask-a-member-to-add-a-card).
 
+When a member has saved a bank account, it says **Bank account on file**, with the account ending and **How it's paid: Direct debit**, and the BSB. Memberships, PT packages and charges are then taken from it. A paid class booking uses their card first, when they have one, so the place is paid for on the spot. A member adds a bank account themselves, under **Payments** in their app, and approves it once in their banking app.
+
+!phone[A member paying by bank account](img/client-detail-bank-account.png)
+
 ## Funding & Referrals
 
 For members whose training is funded, for example through Medicare, DVA, Workcover, NDIS or Aged Care.

@@ -3,7 +3,7 @@
   "audience": "For personal trainers",
   "accent": "orange",
   "icon": "/icon-totality.png",
-  "updated": "12 November 2026",
+  "updated": "24 November 2026",
   "groups": [
     {
       "title": "Start here",
@@ -75,6 +75,7 @@
       "title": "Getting paid",
       "pages": [
         "getting-paid",
+        "client-plans",
         "payment-links",
         "clinic-tools",
         "marketplace",
@@ -139,6 +140,7 @@
     "messages",
     "autopilot",
     "getting-paid",
+    "client-plans",
     "payment-links",
     "clinic-tools",
     "marketplace",

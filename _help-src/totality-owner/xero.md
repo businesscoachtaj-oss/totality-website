@@ -49,6 +49,8 @@ The card counts payments **in Xero**, **waiting** and **failed**. Payments are s
 
 Every night at 2:30am Totality compares its total for the day with Xero's. The result shows on the card, for example "Nightly check: matches". If they differ, you get a notification.
 
+The same **Membership income** card also sits in your [Bookkeeping pack](bookkeeping-pack.html#xero), next to the figures your accountant sees, so you can check both in one place.
+
 ## Disconnect
 
 Tap **Disconnect** under the Xero buttons. Nothing already in Xero is removed.

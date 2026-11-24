@@ -30,8 +30,8 @@
     <p class="crumb">Totality for gym owners</p>
     <h1>Stripe Connect and payouts</h1>
     <p class="lead">Connect your own Stripe account so members can pay you, and understand the platform fee.</p>
-    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#connect-stripe">Connect Stripe</a></li><li><a href="#if-stripe-needs-more-details">If Stripe needs more details</a></li><li><a href="#managing-payouts">Managing payouts</a></li><li><a href="#the-platform-fee">The platform fee</a></li><li><a href="#questions">Questions</a></li></ul></nav>
-    <p>Totality takes member payments through <strong>Stripe</strong>, a payments company used by millions of businesses. Your gym gets its own Stripe Express account. Members pay by card in the app, and the money goes to your Stripe balance and then to your bank.</p>
+    <nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#connect-stripe">Connect Stripe</a></li><li><a href="#if-stripe-needs-more-details">If Stripe needs more details</a></li><li><a href="#how-members-can-pay">How members can pay</a></li><li><a href="#your-debit-day">Your debit day</a></li><li><a href="#managing-payouts">Managing payouts</a></li><li><a href="#the-platform-fee">The platform fee</a></li><li><a href="#questions">Questions</a></li></ul></nav>
+    <p>Totality takes member payments through <strong>Stripe</strong>, a payments company used by millions of businesses. Your gym gets its own Stripe Express account. Members pay by card or straight from their bank account in the app, and the money goes to your Stripe balance and then to your bank.</p>
 <p>You need Stripe connected before you can sell memberships, PT packages, paid classes, POS payment links, one-off charges or shop products.</p>
 <h2 id="connect-stripe">Connect Stripe<a class="anchor" href="#connect-stripe" aria-label="Link to this section">#</a></h2>
 <div class="steps">
@@ -48,6 +48,26 @@
 <p>When everything is approved, the screen says <strong>Stripe connected</strong> with a green tick next to <strong>Charges</strong> and <strong>Payouts</strong>. The <strong>Connect payments</strong> step on your dashboard's setup card ticks itself off.</p>
 <h2 id="if-stripe-needs-more-details">If Stripe needs more details<a class="anchor" href="#if-stripe-needs-more-details" aria-label="Link to this section">#</a></h2>
 <p>If you left Stripe before finishing, the screen says <strong>Onboarding in progress</strong> and the button changes to <strong>Complete Stripe setup</strong>. Your dashboard shows <strong>Finish your Stripe setup</strong>. Tap the button to carry on where you left off. Payments and payouts start once Stripe has everything it needs.</p>
+<h2 id="how-members-can-pay">How members can pay<a class="anchor" href="#how-members-can-pay" aria-label="Link to this section">#</a></h2>
+<p>Under <strong>How members can pay</strong> on the Connect Stripe screen:</p>
+<ul>
+<li><strong>Card</strong> is always on: Visa, Mastercard, Amex, Apple Pay and Google Pay. Stripe's fee is 1.65% + 30c.</li>
+<li><strong>Bank account (PayTo)</strong> is on unless you switch it off. Members add their bank account under <strong>Payments</strong> in their app and approve it once in their banking app. Then memberships, PT packages, charges and bookings can come out of it by themselves. Stripe's fee is 1% + 30c, never more than A$3.50.</li>
+</ul>
+<div class="shots"><figure class="shot shot--phone"><img src="img/stripe-connect-how-members-pay.png" alt="How members can pay" loading="lazy"><figcaption>How members can pay</figcaption></figure></div>
+
+<p>The first time, Stripe has to switch bank payments on for your account. Under the switch it says <strong>Stripe is checking this</strong>, usually for a day or two, and members save a card instead until then. Once it reads <strong>Ready. Stripe has switched bank payments on for your gym</strong>, members can add a bank account. If Stripe needs more details, finish them in your Stripe account.</p>
+<p>A bank payment takes about a minute to confirm. If the bank says no, the payment shows as failed and you get a notification, the same as a failed card.</p>
+<h2 id="your-debit-day">Your debit day<a class="anchor" href="#your-debit-day" aria-label="Link to this section">#</a></h2>
+<p>Every repeating payment comes out on the same day, for everyone, by card or bank. Under <strong>Debit day</strong>, pick:</p>
+<ul>
+<li><strong>Weekly and fortnightly</strong>: a day of the week. Monday unless you change it.</li>
+<li><strong>Monthly</strong>: a date from the 1st to the 28th. The 1st unless you change it.</li>
+</ul>
+<div class="shots"><figure class="shot shot--phone"><img src="img/stripe-connect-debit-day.png" alt="Your debit day" loading="lazy"><figcaption>Your debit day</figcaption></figure></div>
+
+<p>A member who joins between debit days pays a part payment for the days up to your debit day, then the full amount every debit day after. The grey box shows an example with real dates. Quarterly and yearly memberships start the day they're bought.</p>
+<p>If you change the day, memberships and packages already running move to the new day at their next payment. The days in between are added to that payment, so nobody pays twice or misses a day.</p>
 <h2 id="managing-payouts">Managing payouts<a class="anchor" href="#managing-payouts" aria-label="Link to this section">#</a></h2>
 <p>Payout timing, your bank account and tax details are managed by Stripe. Use the Stripe Express dashboard at <strong>dashboard.stripe.com</strong> to see payouts, update your bank account or answer any Stripe questions.</p>
 <h2 id="the-platform-fee">The platform fee<a class="anchor" href="#the-platform-fee" aria-label="Link to this section">#</a></h2>
@@ -72,8 +92,8 @@
 <td>You, out of the payout. It is never added to what your member pays</td>
 </tr>
 <tr>
-<td>Stripe card fees</td>
-<td>1.65% + 30c for Australian cards, charged by Stripe as normal. On POS and shop sales Totality pays Stripe and adds it to the platform fee, so the total is the same</td>
+<td>Stripe fees</td>
+<td>1.65% + 30c for Australian cards, or 1% + 30c (never more than A$3.50) for bank account payments, charged by Stripe as normal. On POS and shop sales Totality pays Stripe and adds it to the platform fee, so the total is the same</td>
 </tr>
 </tbody>
 </table>
@@ -87,14 +107,18 @@
 
 <details class="faq" id="q-can-i-use-the-stripe-account-i-already-have"><summary>Can I use the Stripe account I already have?</summary><div class="faq__a"><p>Totality creates a new Stripe Express account for your gym, connected to Totality. You sign in to it with your email. Your old Stripe account and its customers are not moved across.</p></div></details>
 
-<details class="faq" id="q-do-my-members-need-a-stripe-account"><summary>Do my members need a Stripe account?</summary><div class="faq__a"><p>No. They just add a card in the Totality app.</p></div></details>
+<details class="faq" id="q-do-my-members-need-a-stripe-account"><summary>Do my members need a Stripe account?</summary><div class="faq__a"><p>No. They just add a card or a bank account in the Totality app.</p></div></details>
+
+<details class="faq" id="q-can-i-turn-bank-payments-off"><summary>Can I turn bank payments off?</summary><div class="faq__a"><p>Yes. Switch off <strong>Bank account (PayTo)</strong> under How members can pay. Members can't add a new bank account, and checkout in your shop and payment links is card only. A bank account a member already saved can still be charged.</p></div></details>
+
+<details class="faq" id="q-is-there-a-limit-on-bank-payments"><summary>Is there a limit on bank payments?</summary><div class="faq__a"><p>A member's bank agreement allows up to A$1,500 a payment. Anything bigger needs a card.</p></div></details>
 
 <details class="faq" id="q-why-does-revenue-in-totality-look-lower-than-the-amount-char"><summary>Why does revenue in Totality look lower than the amount charged?</summary><div class="faq__a"><p>Totality shows what you actually receive, after the platform fee. See <a href="revenue-insights.html">Revenue and insights</a>.</p></div></details>
     <nav class="pager" aria-label="Previous and next"><a class="pager__prev" href="/help/totality-owner/gym-settings.html"><span>Previous</span>Gym details and settings</a><a class="pager__next" href="/help/totality-owner/branding.html"><span>Next</span>Branding your gym</a></nav>
     <footer class="foot">
       <p>Still stuck? Email <span class="mail">admintotality@gmail.com</span> and a real person will help.</p>
       <p class="foot__links"><a href="/help/">All guides</a><a href="/help.html">Quick answers</a><a href="/faq.html">FAQ</a><a href="/pricing.html">Pricing</a><a href="/support.html">Support</a><a href="/">totality360.com.au</a></p>
-      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 12 November 2026.</p>
+      <p class="foot__small">Totality 360 Pty Ltd, ABN 58 698 902 975. Screens show demo data. Last updated 24 November 2026.</p>
     </footer>
   </main>
 </div>

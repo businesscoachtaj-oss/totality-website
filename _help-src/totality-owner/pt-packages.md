@@ -22,13 +22,13 @@ Each package shows its credits and price, for example "2 credits/week · $170.00
 
 ## Put a member on a package
 
-The member needs a card saved with your gym first (see [Failed payments and cards](failed-payments.html#ask-a-member-to-add-a-card)).
+The member needs a card or bank account saved with your gym first (see [Failed payments and cards](failed-payments.html#ask-a-member-to-add-a-card)).
 
 !steps
 1. Under **Client subscriptions**, tap **+ Assign**.
 2. Pick the **Client** and the **Package**.
 3. Pick their **Trainer (optional)**. Credits are given for this trainer.
-4. Save. Their card is charged and billing continues on the package's frequency.
+4. Save. Their card or bank account is charged and billing continues on the package's frequency. Weekly, fortnightly and monthly packages come out on your [debit day](stripe-connect.html#your-debit-day), with a part payment first if today isn't your debit day.
 
 Each member on a package shows the package, trainer, start date and status: **Active**, **Past due** (payment failed, see [Failed payments](failed-payments.html)) or ended.
 

@@ -46,27 +46,30 @@ Their daily calories, protein, carbs and fat, any note, and the date you set the
 
 The client's answers from their first login: primary goal, experience, training days a week, preferred style, current and goal weight, height, date of birth, whether they're pregnant or breastfeeding, and injuries or limitations. Until they finish it, this says "Client will complete the questionnaire on first login".
 
-!phones[Onboarding info](img/client-profile-onboarding.png)[PT credits and payment](img/client-profile-credits.png)
+!phones[Onboarding info](img/client-profile-onboarding.png)[Sessions on the Money tab](img/credits-sessions-left.png)
 
-## PT credits
+## Sessions
 
-How many session credits the client has: **Available**, **This week** and **Used**. If they're on a weekly PT package, its name and credits per week show at the top.
+On the **Money** tab, the **Sessions** card shows how many sessions the client has left, how many they've used, the use by date, and every lot they came from.
 
-- **Add Credit** adds one credit by hand.
-- **Generate this week** creates this week's credits from their package (only when they have a package).
-- **Sell PT packages** (independent trainers) opens My Products so clients can buy credits.
+- **Add sessions** records sessions they paid you for outside Totality (cash, bank transfer, another app) or gave for free, any number at once.
+- **Sell a pack** (independent trainers) opens My Products so clients can buy a PT pack.
+- **Generate this week** creates this week's sessions from their weekly package (only when they have one).
 
-See [Credits and settling sessions](credits.html).
+See [Sessions left and settling sessions](credits.html).
 
 ## Payment
 
 [[POS]]
 Shows only when you can take payments: independent trainers with the POS add-on, or gym trainers when the gym has POS.
 
-- The card on file, for example "Visa ending 4242", or "No payment method on file".
+- The card or bank account on file, for example "Visa ending 4242", or "No payment method on file".
 - **Request Payment Method** sends the client a notification to add a card.
 - **Add Card Manually** lets you enter their card with them.
+- **Plans** and **Put on a plan** (independent trainers): the client's repeating plans with you, and starting a new one. See [Plans for clients](client-plans.html).
 - **Send payment link (POS)** opens POS with this client already picked. See [Payment links](payment-links.html).
+
+A client can add a bank account themselves, under **Payments** in their app. See [Getting paid](getting-paid.html).
 
 ## Recent session logs
 
