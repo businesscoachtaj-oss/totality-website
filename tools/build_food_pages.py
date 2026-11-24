@@ -242,6 +242,46 @@ for key in sorted(groups):
     used.add(slug)
     PAGES.append(dict(key=key, title=title, slug=slug, cat=cat, rows=rows, default=pick_default(rows, cat)))
 PAGE_BY_NAME = {r['name']: p for p in PAGES for r in p['rows']}
+
+# Short page titles (25 Nov 2026): Google cuts titles off at about 60 to 65 characters, and the old
+# titles were nearly 90. The food name is shortened at a word for the <title> only; the page heading
+# keeps the full name. Titles stay unique: a clash gets a longer cut.
+TITLE_SUFFIX = ' calories and protein | Totality'
+TITLE_MAX = 65
+
+def short_name(title, limit):
+    if len(title) <= limit:
+        return title
+    cut = title[:limit + 1]
+    cut = cut[:max(cut.rfind(' '), cut.rfind(','))] if (' ' in cut or ',' in cut) else title[:limit]
+    cut = cut.rstrip(' ,;:&(-')
+    if cut.count('(') > cut.count(')'):
+        head = cut[:cut.rfind('(')].rstrip(' ,;:&-')
+        if len(head) >= 12:
+            cut = head
+    return cut + '…'
+
+def assign_meta_titles():
+    limit = TITLE_MAX - len(TITLE_SUFFIX)
+    names = {p['slug']: short_name(p['title'], limit) for p in PAGES}
+    for _ in range(12):
+        seen = defaultdict(list)
+        for p in PAGES:
+            seen[names[p['slug']].lower()].append(p)
+        clashes = [ps for ps in seen.values() if len(ps) > 1]
+        if not clashes:
+            break
+        limit += 8
+        for ps in clashes:
+            for p in ps:
+                names[p['slug']] = short_name(p['title'], limit)
+    for p in PAGES:
+        t = names[p['slug']] + TITLE_SUFFIX
+        # Foods that only differ at the end of a long name (margarine spreads, chips) keep the full
+        # name with a shorter ending.
+        p['meta_title'] = t if len(t) <= TITLE_MAX else names[p['slug']] + ' calories | Totality'
+
+assign_meta_titles()
 BY_CAT = defaultdict(list)
 for p in PAGES:
     BY_CAT[p['cat']].append(p)
@@ -544,7 +584,7 @@ def food_page(pg):
   if (sel) sel.addEventListener('change', function () {{ cur = +sel.value; draw(); }});
 }})();
 </script>"""
-    meta_title = f'{title} calories, protein and nutrition (Australia) | Totality Nutrition'
+    meta_title = pg['meta_title']
     desc = (f'100 g of {t_low} has {round(d["kcal"])} calories ({kj(d["kcal"])} kJ), {fmt(d["p"], "g")} protein, '
             f'{fmt(d["c"], "g")} carbs and {fmt(d["f"], "g")} fat. Full vitamins and minerals from Australian food data.')
     return page(meta_title, desc, f'/foods/{pg["slug"]}.html', crumbs, body, [faq_schema(faqs), crumbs_schema(crumbs)], script)
@@ -724,7 +764,7 @@ def nutrient_page(n):
 
 {cta(f'See how much {e(lname)} you’re getting', 'Totality Nutrition adds up your protein, fibre, vitamins and minerals from everything you log, so you can see what you’re short on.', 'n_breakdown.webp', 'The vitamins and minerals breakdown in Totality Nutrition')}
 {tail('Other nutrients', others, f'<p class="fd-note mt-4">Daily amounts: Australia New Zealand Food Standards Code and the <a href="{NRV_URL}" rel="noopener">NHMRC Nutrient Reference Values</a>. General information only. Talk to your GP or a dietitian about your own needs.</p>')}"""
-    title = f'{label}: {"daily limit" if is_limit else "how much you need a day"} and foods high in {lname} (Australia) | Totality Nutrition'
+    title = f'{label}: {"daily limit" if is_limit else "how much you need"} and top foods | Totality'
     desc = re.sub('<[^>]+>', '', f'{info["does"]}{amount_line} See the Australian foods with the most {lname} per 100 g.')
     return page(title, desc, f'/nutrients/{n["slug"]}.html', crumbs, body, [faq_schema(faqs), crumbs_schema(crumbs)])
 

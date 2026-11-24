@@ -1,0 +1,23 @@
+{
+ "db-flat-press": "dumbbell-bench-press",
+ "plyometric-push-up": "plyo-push-up",
+ "single-leg-pushdown": "single-arm-tricep-pushdown",
+ "standing-single-leg-balance-reach": "single-leg-balance-reach",
+ "test-exercises": "index",
+ "ultimate-leg-exercise": "index",
+ "equipment/decline-bench": "equipment/bench",
+ "equipment/incline-bench": "equipment/bench",
+ "muscle/balance": "muscle/core",
+ "muscle/stability": "muscle/core",
+ "muscle/rectus-abdominis": "muscle/core",
+ "muscle/brachioradialis": "muscle/forearms",
+ "muscle/grip": "muscle/forearms",
+ "muscle/cardiovascular": "muscle/full-body",
+ "muscle/power": "muscle/full-body",
+ "muscle/gastrocnemius": "muscle/calves",
+ "muscle/soleus": "muscle/calves",
+ "muscle/hip-extensors": "muscle/glutes",
+ "muscle/legs": "muscle/quadriceps",
+ "muscle/mid-back": "muscle/upper-back",
+ "muscle/thoracic-spine": "muscle/upper-back"
+}
