@@ -177,6 +177,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   .video-card figcaption span { display: block; font-weight: 500; font-size: var(--fs-sm); color: var(--muted); }
 
   /* ---------- Offer ---------- */
+  .discband { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--s-6); align-items: center; }
+  .discband img { width: 100%; max-width: 280px; height: auto; justify-self: center; border-radius: 28px; box-shadow: 0 18px 40px -22px rgba(28,20,32,.45); }
+  .hm .discband .big:not(.tot) { background: transparent !important; border-color: #1C1420 !important; color: #1C1420 !important; }
+  @media (max-width: 860px) { .discband { grid-template-columns: 1fr; } .discband img { max-width: 240px; } }
   .offer-big { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--s-7); align-items: center; }
   .offer-big h2 { max-width: 16ch; }
   .offer-prices { display: grid; gap: var(--s-3); }
@@ -269,6 +273,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
                   <li><a href="/nutrition.html"><span class="nav-dot nav-dot--blue"></span><span><b>Totality Nutrition</b><small>Track your food and macros on Australian food data</small></span></a></li>
                   <li><a href="/training.html"><span class="nav-dot nav-dot--red"></span><span><b>Totality Training <i class="nav-new">New</i></b><small>Your own workout tracker, with programmes built in</small></span></a></li>
                   <li><a href="/tali-hq.html"><span class="nav-dot nav-dot--purple"></span><span><b>Tali HQ</b><small>Your AI manager for business and life</small></span></a></li>
+                  <li><a href="/discover.html"><span class="nav-dot nav-dot--orange"></span><span><b>Discover <i class="nav-new">New</i></b><small>Find a gym, trainer, studio or clinic near you</small></span></a></li>
                 </ul>
               </div>
               <div>
@@ -288,7 +293,8 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
             <summary>Who it's for</summary>
             <ul class="nav-dd__panel">
               <li><a href="/for-pts.html"><span class="nav-dot nav-dot--orange"></span><span><b>Personal trainers</b><small>Clients, programmes, check-ins and payments</small></span></a></li>
-              <li><a href="/for-gyms.html"><span class="nav-dot nav-dot--orange"></span><span><b>Studios and gyms</b><small>Members, classes, staff and billing</small></span></a></li>
+              <li><a href="/for-gyms.html"><span class="nav-dot nav-dot--orange"></span><span><b>Gyms</b><small>Members, classes, staff and billing</small></span></a></li>
+              <li><a href="/for-studios.html"><span class="nav-dot nav-dot--orange"></span><span><b>Pilates, yoga and dance studios</b><small>Your timetable, members and memberships</small></span></a></li>
               <li><a href="/for-allied-health.html"><span class="nav-dot nav-dot--orange"></span><span><b>Allied health and clinics</b><small>Appointments, notes and clinic tools</small></span></a></li>
               <li><a href="/nutrition-teams.html"><span class="nav-dot nav-dot--blue"></span><span><b>Teams and workplaces</b><small>Nutrition seats for clients, members or staff</small></span></a></li>
               <li><a href="/ai-assistant-small-business-australia.html"><span class="nav-dot nav-dot--purple"></span><span><b>Small business owners</b><small>Tali HQ as your AI assistant</small></span></a></li>
@@ -384,7 +390,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="card app tot"><div>
     <div class="tag">Solo or studio</div><h3>Totality</h3>
     <p>Clients, bookings, programmes, billing and classes in one app, for fitness and allied health. Your clients get their app free.</p>
-    <ul><li>Bookings by service, classes and a team schedule</li><li>Programmes, check-ins, live chat and progress tracking</li><li>Clinic tools: intake forms, treatment notes, funding and referrals</li><li>Stripe billing, payroll export and Xero</li><li>On autopilot follow ups, your own website and a bookkeeping pack</li></ul>
+    <ul><li>Bookings by service, classes and a team schedule</li><li>Programmes, check-ins, live chat and progress tracking</li><li>Clinic tools: intake forms, treatment notes, funding and referrals</li><li>Stripe billing, payroll export and Xero</li><li>On autopilot follow ups, your own website and a bookkeeping pack</li><li>Set up for what you do: gyms, PTs, pilates and yoga studios, physio, massage and more</li><li>A free listing on Discover, with card payments for your intro offer</li></ul>
     <div class="price">Free <small>for up to 3 clients. Solo plans with Tali from A$19.99 a month</small></div>
     <div class="store"><a class="chip" href="https://apps.apple.com/us/app/totality-for-gyms-coaches/id6798809525" rel="noopener"> App Store</a><a class="chip" href="https://play.google.com/store/apps/details?id=app.livewell" rel="noopener">▶ Google Play</a><a class="chip" href="https://totalityapp.com.au" rel="noopener">Web app</a></div>
     <div class="ctas"><a class="big tot" href="/get-totality.html">Start free</a><a class="big" href="/totality.html">See Totality</a></div>
@@ -402,7 +408,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <p>A workout tracker for people who train on their own. Log every set, and your weights and sets adjust from how you trained.</p>
     <ul><li>99 programmes, picked in four questions</li><li>Weights that go up when you earn it</li><li>Sets that adjust to how each muscle feels</li><li>On Training + AI, Tali builds your programme and writes up your week</li><li>40% off when you also pay for Totality Nutrition</li></ul>
     <div class="price">Free <small>to log workouts. Paid plans from A$8.99 a month</small></div>
-    <div class="store"><a class="chip" href="https://totality-training.vercel.app" rel="noopener">Web app</a><span class="chip wait">iPhone and Android: with Apple and Google for review</span></div>
+    <div class="store"><a class="chip" href="https://play.google.com/store/apps/details?id=app.totality.training" rel="noopener">▶ Google Play</a><a class="chip" href="https://totality-training.vercel.app" rel="noopener">Web app</a><span class="chip wait"> iPhone: with Apple for review</span></div>
     <div class="ctas"><a class="big trn" href="https://totality-training.vercel.app" rel="noopener">Start free</a><a class="big" href="/training.html">See Training</a></div>
   </div><img class="device" src="/img/home/phone_training.webp" alt="Totality Training home screen on a phone" width="832" height="1850" loading="lazy"></div>
   <div class="card app hqa"><div>
@@ -414,6 +420,13 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     <div class="ctas"><a class="big hqb" href="https://talihq.com.au" rel="noopener">Start free</a><a class="big" href="/tali-hq.html">See Tali HQ</a></div>
   </div><img class="device" src="/img/home/phone_hq.webp" alt="Tali HQ's Today screen on a phone" width="832" height="1850" loading="lazy"></div>
 </div>
+
+<div class="label">Discover</div>
+<div class="card discband"><div>
+  <h2>Find a gym, trainer, studio or clinic <em>near you</em>.</h2>
+  <p class="sub">Totality Discover is a free directory. Search by suburb or use your location, see what each place offers, and send an enquiry or take up an intro offer. No account needed. Run one? List it free.</p>
+  <div class="ctas"><a class="big tot" href="https://totalityapp.com.au/discover" rel="noopener">Find one near you</a><a class="big" href="/discover.html#list">List your business free</a></div>
+</div><img src="/img/app/t_discover_search.webp" alt="Totality Discover listing gyms, trainers and clinics near Roseville" width="499" height="1079" loading="lazy"></div>
 
 <div class="label">Tali's brain</div>
 <div class="headrow"><h2>She has a brain. <em>Have a play with it.</em></h2></div>
@@ -436,7 +449,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <p class="sub">Everything listed here is shipped and working in the live apps. If something is still on the way, we say so.</p>
   <div class="pcols">
     <div><h3>In Totality</h3><ul>
-      <li>Programme builder with a 751 exercise library, also <a href="/api">open to other apps and websites</a></li><li>RPE based auto-regulation</li><li>Client check-ins, messaging and progress tracking</li><li>Billing and payments through your own Stripe account, with a 1.25% platform fee on payments taken in the app, plus Stripe's card fee</li><li>On autopilot: welcome, win-back, review and birthday messages lined up for your yes</li><li>A website from your brand, on your own domain, with the Branding add-on</li><li>A bookkeeping pack for your accountant each quarter</li><li>Classes, scheduling and an admin portal for a team</li><li>Staff hours, payroll export and Xero integration</li><li>Your own services, each with a length and a price, and booking by service</li><li>Intake forms you write, and treatment notes on each client</li><li>Itemised invoices you can email and mark paid</li><li>Funding and referrals: Medicare, DVA, Workcover, NDIS, Aged Care, private health or your own, with billing codes</li><li>Nutrition tracking for your clients, built in</li></ul></div>
+      <li>Programme builder with a 751 exercise library, also <a href="/api">open to other apps and websites</a></li><li>RPE based auto-regulation</li><li>Client check-ins, messaging and progress tracking</li><li>Billing and payments through your own Stripe account, with a 1.25% platform fee on payments taken in the app, plus Stripe's card fee</li><li>On autopilot: welcome, win-back, review and birthday messages lined up for your yes</li><li>A website from your brand, on your own domain, with the Branding add-on</li><li>A bookkeeping pack for your accountant each quarter</li><li>Classes, scheduling and an admin portal for a team</li><li>Staff hours, payroll export and Xero integration</li><li>Your own services, each with a length and a price, and booking by service</li><li>Intake forms you write, and treatment notes on each client</li><li>Itemised invoices you can email and mark paid</li><li>Funding and referrals: Medicare, DVA, Workcover, NDIS, Aged Care, private health or your own, with billing codes</li><li>Nutrition tracking for your clients, built in</li><li>Set up for your kind of business: pick from 16 at sign up, from gyms and pilates studios to physio and remedial massage</li><li>A Notes tab for practitioners, with appointments still waiting for a note</li><li>A free listing on Totality Discover, with enquiries by email and card payments</li></ul></div>
     <div class="n"><h3>In Totality Nutrition</h3><ul>
       <li>Australian-first food database and barcode scanner</li><li>Custom calorie and macro targets</li><li>Adaptive targets: go over today and tomorrow's target adjusts</li><li>Calorie cycling for training days and rest days</li><li>Weekly meal planning with a grocery list you can share</li><li>Weight trend on a 7 day average, body measurements and progress photos</li><li>Saved meals you can log again in one tap</li><li>A Cookbook of 200 high protein meals</li></ul></div>
     <div class="t"><h3>In Totality Training</h3><ul>
@@ -447,7 +460,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
   <div class="facts">
     <div class="fact"><b>Totality is on the App Store, Google Play and the web</b><span>Solo operators, business owners, their team and their clients each sign in to their own view.</span></div>
     <div class="fact"><b>Totality Nutrition is on Google Play and the web</b><span>The iPhone app is with Apple for review. iPhone users can use the web app in the meantime.</span></div>
-    <div class="fact"><b>Totality Training is on the web</b><span>It works in the browser on any phone. The iPhone and Android apps were sent to Apple and Google for review on 21 November 2026.</span></div>
+    <div class="fact"><b>Totality Training is on Google Play and the web</b><span>The iPhone app is with Apple for review. iPhone users can use the web app in the meantime.</span></div>
     <div class="fact"><b>Tali HQ is on the App Store, Google Play and the web</b><span>The same account works on iPhone, Android and computer.</span></div>
     <div class="fact"><b>Apple Health and Health Connect</b><span>Connect Apple Health on iPhone or Health Connect on Android. Other wearables are not connected yet.</span></div>
     <div class="fact"><b>Month to month, in Australian dollars</b><span>No contracts. Cancel from your account settings.</span></div>
@@ -470,7 +483,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
 <div class="label">What people say</div><div class="reviews-home"><p class="sub"><b class="reviews__score">5.0 ★</b> on Google from 5 reviews.</p><div class="reviews__row"><figure class="review"><div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>Totality is a great app for keeping track of your workouts and staying consistent with your fitness goals. It makes following a training plan easy, helps you monitor your progress, and keeps everything organised in one place. The app is easy to use and is a great tool for staying motivated and accountable. Definitely recommend it to anyone looking to improve their fitness and get the most out of their training!</blockquote><figcaption>Jake M., Google review</figcaption></figure><figure class="review"><div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>I’ve really enjoyed using the Totality Nutrition App and have learnt so much about getting the right balance of macros to improve energy, support overall health and weight management. It’s super quick and easy to use, with handy features like saving favourite meals and scanning barcodes to log food. I’d highly recommend Totality to anyone wanting to learn more about nutrition, make better food choices and improve their health and wellbeing.</blockquote><figcaption>Louise H., Google review</figcaption></figure><figure class="review"><div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>I love using Totality 360, and all in one location to manage all my requirements. Totality nutrition also takes my goals to a whole other level. Highly recommended</blockquote><figcaption>Rebecca W., Google review</figcaption></figure></div></div>
 <div class="card offer"><img class="spr spr-thumbs" src="/img/tali/tali_thumbs.webp" width="300" height="430" alt="Tali giving a thumbs up"><h2>Every app has a <em>free plan</em>. Start with 7 days of everything.</h2>
 <p class="sub" style="margin:12px auto 0">On Totality and Totality Nutrition, pick a paid plan and your first 2 months are 50% off, applied automatically on monthly billing. Prices in Australian dollars. Cancel any time.</p>
-<div class="ctas"><a class="big tot" href="/get-totality.html">Start Totality free</a><a class="big nut" href="/get-nutrition.html">Start Nutrition free</a><a class="big hqb" href="https://talihq.com.au" rel="noopener">Start Tali HQ free</a></div></div>
+<div class="ctas"><a class="big tot" href="/get-totality.html">Start Totality free</a><a class="big nut" href="/get-nutrition.html">Start Nutrition free</a><a class="big trn" href="https://totality-training.vercel.app" rel="noopener">Start Training free</a><a class="big hqb" href="https://talihq.com.au" rel="noopener">Start Tali HQ free</a></div></div>
 
 </div>
 
@@ -525,8 +538,10 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
           <li><a href="/totality.html">Overview</a></li>
           <li><a href="/features.html">Features</a></li>
           <li><a href="/for-pts.html">For personal trainers</a></li>
-          <li><a href="/for-gyms.html">For studios and gyms</a></li>
+          <li><a href="/for-gyms.html">For gyms</a></li>
+          <li><a href="/for-studios.html">For pilates, yoga and dance studios</a></li>
           <li><a href="/for-allied-health.html">For allied health</a></li>
+          <li><a href="/discover.html">Discover: find near you</a></li>
           <li><a href="/insurance.html">Insurance with BizCover</a></li>
           <li><a href="/help/">How to use</a></li>
           <li><a href="/get-totality.html">Get the app</a></li>
