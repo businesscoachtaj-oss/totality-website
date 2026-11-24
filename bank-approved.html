@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bank account added | Totality</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="You have set up a bank account to pay your gym in Totality.">
+<link rel="icon" href="/favicon-96.png" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<!--
+  ADDED (24 Nov 2026, Taj): where a member lands after saving a bank account (PayTo direct debit)
+  with their gym from the Totality phone app. Stripe sends them here once their bank has the
+  request; the app saves the bank account itself, so this page only tells them to go back.
+  ?cancelled=1 is the version for someone who backed out.
+-->
+<style>
+  :root { --orange: #ED8008; --ink: #272626; --muted: #62605D; --bg: #F3F1EE; --card: #FFFFFF; --line: #E6E4E1; --tint: #FFF1E0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  main { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  .card { width: 100%; max-width: 460px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+  .bar { height: 6px; background: var(--orange); }
+  .inner { padding: 28px 24px 26px; }
+  .brand { font-weight: 800; color: var(--orange); font-size: 18px; margin: 0 0 18px; }
+  .tick { width: 52px; height: 52px; border-radius: 50%; background: var(--tint); color: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; margin-bottom: 14px; }
+  h1 { font-size: 23px; line-height: 1.25; margin: 0 0 10px; }
+  p { font-size: 15px; line-height: 1.6; margin: 0 0 12px; color: var(--ink); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .step { background: var(--tint); border-radius: 12px; padding: 12px 14px; margin: 14px 0; font-size: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="bar"></div>
+    <div class="inner">
+      <p class="brand">Totality</p>
+      <div id="done">
+        <div class="tick" aria-hidden="true">&#10003;</div>
+        <h1>Your bank account is set up</h1>
+        <p>So good! Your gym can now take your payments straight from your bank account, under the agreement you approved in your banking app.</p>
+        <div class="step">Go back to the Totality app. Your bank account shows under Payments in a moment.</div>
+        <p class="muted">You can see or cancel the agreement any time in your banking app, under PayTo or agreements.</p>
+      </div>
+      <div id="cancelled" hidden>
+        <h1>No bank account was added</h1>
+        <p>Nothing was set up and nothing will come out of your bank account.</p>
+        <div class="step">Go back to the Totality app to try again, or keep paying by card.</div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  if (/[?&]cancelled=1/.test(location.search)) {
+    document.getElementById('done').hidden = true
+    document.getElementById('cancelled').hidden = false
+    document.title = 'No bank account added | Totality'
+  }
+</script>
+</body>
+</html>
