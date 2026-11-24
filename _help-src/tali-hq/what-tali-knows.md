@@ -13,17 +13,19 @@ Tap **Her brain** at the bottom of the app.
 
 From the top:
 
+- **Search her brain**: type a name, a client or a topic.
+- **The brain itself**, turning slowly, with the part you picked under it and every part as a chip underneath.
+- **TALI'S LEVEL**: her level, her XP and the whole ladder.
 - **WHILE YOU SLEPT**: what she learnt and tidied overnight, with an undo. Only shows after a night she had something to do.
 - **What she knows, in groups**: Your people, How you like things, Your life and work, Plans and ideas, and What she has learned. Tap a group to open it, tap a memory to read it in full, and tap to see 10 more.
 - **Use Totality too?**: link your Totality or Totality Nutrition account.
 - **Her library**: the books she is reading. See [Tali's library](library.html).
-- **Search her brain**: type a name, a client or a topic.
-- **The brain itself**, turning slowly, with every part as a chip underneath.
-- **TALI'S LEVEL**, **New this week** and **Connections**.
+- **New this week** and **Connections**.
+- **See every memory as a list** at the bottom opens the list on **Me**, where you can read, fix or forget them one by one.
 
 ## The brain
 
-!phones[The whole brain](img/brain-whole.png)[A part opened](img/brain-part.png)
+!phone[The whole brain, with every part as a chip](img/brain-part.png)
 
 Every dot is something she knows. The more she keeps in a part, the brighter it glows.
 
@@ -86,8 +88,6 @@ If something new contradicts something she already knew, both show in the Amygda
 ## While you slept
 
 Each night, for anyone who told her something new that day, Tali tidies her memories of you. Repeats are put together, a newer fact replaces the older one it updates, and small stale notes are let go. It uses no credits.
-
-!phone[What she tidied overnight](img/brain-slept.png)
 
 The next day, the **WHILE YOU SLEPT** card at the top of Her brain says what she learnt and how many notes she tidied. Tap **Show me** to see each change, marked **Said twice**, **Updated**, **Put together** or **Let go**, with what it was before. Tap **Undo** on any one to put it back. Nothing is ever deleted: undo puts a note back exactly as it was.
 

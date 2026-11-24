@@ -7,7 +7,7 @@ Tali HQ is an app where you run your life and your business with Tali, an AI wit
 
 One rule sits under everything: **Tali never sends, spends or changes anything without your yes.** Anything she writes to go out waits on your Today screen until you tap it. See [Approvals](approvals.html).
 
-!phone[Today, the first screen you see each time you open Tali HQ](img/index-today.png)
+!phone[Today, the first screen you see each time you open Tali HQ](img/today-top.png)
 
 ## Life, business or both
 
@@ -15,7 +15,7 @@ When you set up, Tali asks "Do you run a business?". Say yes and you get clients
 
 ## Where to use it
 
-Tali HQ runs in your browser on iPhone, Android and computer at **talihq.com.au**. On your phone, open it in your browser and add it to your home screen, and it works like any other app. Your account, chats and data are the same on every device.
+Get **Tali HQ: AI Life & Business** from the App Store on iPhone or Google Play on Android, or use it in your browser at **talihq.com.au** on any phone or computer. Your account, chats and data are the same on every device. On a computer, the menu sits down the left side and Talk sits in the middle of the screen.
 
 ## The plans
 
@@ -36,6 +36,7 @@ There is also **Tali HQ Business** at A$199.99 a month, for running a business f
 | Web search with sources | 10 a month | Up to 150 a month | Up to 400 a month | Up to 1,000 a month |
 | Deep think | 1 a month | 20 credits each | 20 credits each | 10 credits each for the first 100 a month |
 | Images Tali makes | None | 30 a month | 100 a month | 300 a month |
+| Your HQ (blocks and trackers on Today) | 6 blocks and 3 trackers a home | No limit | No limit | No limit |
 | Gmail or Outlook sorted, Google or Outlook calendar | No | Yes | Yes | Yes |
 | Invoices, Stripe, Money (business and personal), Receipts | No | Yes | Yes | Yes |
 | Goals, Weekly review, health checks and Tali's weekly journal | No | Yes | Yes | Yes |
@@ -43,7 +44,7 @@ There is also **Tali HQ Business** at A$199.99 a month, for running a business f
 | Tali's own email address | No | No | Yes | Yes |
 | Night school, Rules, Patterns | No | No | Yes | Yes |
 
-The 7 day trial [[Trial]] gives you everything in the Tali HQ column. Pro features (Big brain, Tali's email address, Night school, Rules and Patterns) are not part of the trial.
+The 7 day trial [[Trial]] gives you everything in the Tali HQ column. Pro features (Big brain, Tali's email address, Night school, Rules and Patterns) are not part of the trial. On iPhone you pay through Apple, and the yearly prices are Apple's: A$199.99 for Tali HQ, A$499.99 for Pro and A$1,499.99 for Max.
 
 Throughout this guide, badges show which plans have a feature: [[Free]] means every plan, [[Tali HQ]] means every paid plan (and the trial), and [[Pro]] means Pro and Max.
 
@@ -51,16 +52,16 @@ Throughout this guide, badges show which plans have a feature: [[Free]] means ev
 
 Five tabs sit along the bottom of the app.
 
-- **Today**: her brain with your day around it as stars. What's due, drafts waiting for your yes, your brief and your numbers. See [Today and your morning brief](today.html).
+- **Today**: a note from Tali with what needs you, her brain and level, your morning brief, and your HQ: the blocks and trackers you choose. See [Today and your morning brief](today.html) and [Your HQ](home.html).
 - **Talk**: chat with Tali. See [Talk to Tali](talk.html).
 - **Her brain**: everything she knows about you, sorted by the part of the brain it lives in. Her library and what she tidied overnight are here too. See [Her brain](what-tali-knows.html).
 - **Your world**: your life on one map, in six parts: People, Work, Health, Home and money, Growth and Your words. Every list, screen and tool opens from here. See [Your world](world.html).
-- **Me**: your plan and credits, top ups, Settings, and your own copy of her brain to download or share. See [Settings and account](settings.html).
+- **Me**: your plan and credits, top ups, Settings, Edit home, Your philosophy, Your time, Tali and your data, and your own copy of her brain to download or share. See [Settings and account](settings.html).
 
 ## Best first steps
 
 !steps
-1. Make your account and confirm your email. See [Getting started](getting-started.html).
+1. Make your account, confirm your email and say yes to Tali using AI. See [Getting started](getting-started.html).
 2. Open **Talk** and tell Tali three things: who matters to you, what's on your plate this week, and one thing you keep forgetting.
 3. Tell her about a few people ("Mum's birthday is 14 December", "Priya Nair is a new client, follow up Friday").
 4. On the trial or a paid plan, send your Gmail to Tali or connect Outlook from **Your world**, **Email**, and connect your calendar in **Me**, **Settings**, **Connections**. See [Gmail and Outlook](gmail-outlook.html).
@@ -82,7 +83,7 @@ No. Answer "No, just me" when Tali asks and she looks after your life: people, d
 No. Tali is an AI. She drafts and suggests, and anything she wants to send, spend or change waits for your yes.
 
 ?? Is there an App Store or Google Play version?
-Use Tali HQ in your browser at talihq.com.au and add it to your home screen. It works on iPhone, Android and computer. The App Store and Google Play versions are on their way.
+Yes. Search for **Tali HQ: AI Life & Business** in the App Store or on Google Play. You can also use it in your browser at talihq.com.au, and your account is the same everywhere.
 
 ?? Who makes Tali HQ?
 Totality 360, the Australian team behind Totality and Totality Nutrition.

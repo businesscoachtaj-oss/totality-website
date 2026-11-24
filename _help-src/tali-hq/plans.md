@@ -3,7 +3,7 @@ title: Plans, credits and billing
 summary: What each plan includes, what a credit is, what happens when you run out, and how to upgrade, change or cancel.
 ---
 
-Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Business. Every new account starts with a 7 day free trial of Tali HQ. Prices are in Australian dollars, and you can pay monthly or yearly (15% less). Tali HQ Business is monthly only.
+Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Business. Every new account starts with a 7 day free trial of Tali HQ. Prices are in Australian dollars, and you can pay monthly or yearly. Yearly works out cheaper by the month. Tali HQ Business is monthly only. On iPhone you pay through Apple, see [Paying on iPhone](#paying-on-iphone).
 
 ## The plans
 
@@ -17,7 +17,7 @@ Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Busi
 | Images Tali makes each month | None | 30 | 100 | 300 |
 | Web searches each month | 10 | Up to 150 | Up to 400 | Up to 1,000 |
 
-**Free** is for getting to know Tali: chat (250 messages a month), her brain, Your world with your people, dates and all nine lists, drafts, reminders, decisions, your journal and notes, food and training, the end of day shutdown, Sleep, her library and a Friday check-in on your goals. Photos in chat work too, with 10 web searches and 1 Deep think a month.
+**Free** is for getting to know Tali: chat (250 messages a month), her brain, Your world with your people, dates and all nine lists, drafts, reminders, decisions, your journal and notes, food and training, the end of day shutdown, Sleep, her library and a Friday check-in on your goals. Photos in chat work too, with 10 web searches and 1 Deep think a month. Your home on Today fits 6 blocks and 3 trackers, with a countdown and a note. See [Your HQ](home.html).
 
 **Tali HQ** is for running the business. Everything in Free, plus:
 
@@ -33,6 +33,7 @@ Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Busi
 - web search with sources, PDFs, videos and voice notes in chat, and draft rework (shorter, warmer, more formal)
 - Deep think and second opinions, and 30 images a month
 - Tali's own journal every Sunday
+- Your HQ with no limit on blocks or trackers, every look, your full history, templates, a checklist, bills coming up, sharing by link and Tali's pick each morning
 - 1,000 credits a month
 
 **Tali HQ Pro** is for handing Tali the front desk. Everything in Tali HQ, plus:
@@ -44,6 +45,7 @@ Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Busi
 - Night school: you pick what Tali studies each night
 - Rules: jobs Tali handles on her own inside Tali HQ, like spotting quiet clients and drafting overdue invoice reminders
 - Patterns: what Tali noticed in your last 60 days, once a month
+- trackers that fill themselves in from your invoices, quotes, jobs, bookings and spending, check-ins in Tali's own words, and a weekly read on why a tracker changed
 - first in line for new features
 
 **Tali HQ Max** is for leaning on Tali all day. Everything in Tali HQ Pro, plus:
@@ -51,12 +53,15 @@ Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Busi
 - 10,000 credits and 300 images a month
 - Deep think, Big brain and second opinions at half the credits, for your first 100 a month
 - more of what she remembers in every answer
+- a daily read from Tali on why your trackers changed
 
 **Tali HQ Business** is for running a business from one place. It is A$199.99 a month, monthly only. Everything in Tali HQ Max, with the same 10,000 credits and 300 images a month, plus:
 
 - [jobs and quotes, a pipeline, bookings and projects](business-tools.html)
 - [a website Tali HQ hosts for you](website.html), written by Tali if you like
 - [On autopilot and the bookkeeping pack](autopilot-books.html)
+- Business blocks for your home: Team, Leads, Cash flow, Bookings today, Website visits, Quote win rate and Customer happiness
+- a team layout you set and push to every seat, and team trackers everyone logs to
 
 !phone[Tali HQ Business on the Plans screen](img/plans-business.png)
 
@@ -106,7 +111,7 @@ On **Free**, each message in Talk counts as one of your 250, and so does your sh
 
 ### See how many you have left
 
-!phones[Me on the trial](img/plans-me-card.png)[Me on Free](img/plans-me-free.png)
+!phones[Me on Tali HQ Pro](img/me-top.png)[Me on Free](img/plans-me-free.png)
 
 Open **Me**. Your plan card shows how many credits you have left this month, with a bar, plus extras you've bought. Underneath are images left, web searches left, and the date your credits top up. On Free it shows how many of your 250 messages are left, your web searches and your Deep think for the month.
 
@@ -119,7 +124,7 @@ Credits and messages reset on the 1st of each month, in your time zone. That's t
 
 ### Top up
 
-On a paid plan or the trial, open **Me** and tap **Top up** on your plan card (Talk also shows a **Top up** button when you run out) to buy a one-off pack of extra credits, extra images, or both. Extras never expire and are used after your monthly allowance.
+On a paid plan or the trial, on the web or Android, open **Me** and tap **Top up** on your plan card (Talk also shows a **Top up** button when you run out) to buy a one-off pack of extra credits, extra images, or both. Extras never expire and are used after your monthly allowance.
 
 | Pack | Price |
 |---|---|
@@ -135,20 +140,16 @@ On a paid plan or the trial, open **Me** and tap **Top up** on your plan card (T
 
 !steps
 1. Open **Me** and tap **Plans** on your plan card.
-2. Choose **Monthly** or **Yearly, save 15%** at the top.
+2. Choose **Monthly** or **Yearly** at the top. Yearly shows what it works out at a month.
 3. On the trial, tap **Keep Tali HQ after my trial** on Tali HQ, or **Choose Tali HQ Pro** or **Choose Tali HQ Max**. On Free, tap **Choose** on the plan you want.
-4. Stripe's secure checkout opens. Enter your card (and a promotion code if you have one) and pay.
+4. On the web or Android, Stripe's secure checkout opens. Enter your card (and a promotion code if you have one) and pay. On iPhone, Apple's payment sheet opens instead.
 5. You come back to Tali HQ. Your new plan shows on **Me**.
 
-Your plan starts straight away and your card is charged at checkout. If you're on a phone app, checkout opens in your browser and brings you back to the web app; your plan shows in the app the next time you open Plans.
-
-!phone[Tali HQ Pro on the Plans screen](img/plans-pro-card.png)
+Your plan starts straight away and you're charged at checkout. On Android, checkout opens in your browser; your plan shows in the app the next time you open Plans.
 
 ## Change or cancel
 
-!phone[Plans when you're paying](img/plans-paying.png)
-
-Once you're paying, tap **Manage billing** on Plans. It opens Stripe's billing page, where you can:
+Once you're paying through Stripe, tap **Manage billing** on Plans. It opens Stripe's billing page, where you can:
 
 - update your card
 - see and download your invoices
@@ -156,6 +157,16 @@ Once you're paying, tap **Manage billing** on Plans. It opens Stripe's billing p
 - cancel
 
 When a paid plan ends, you drop back to Free. Your chats, journal, clients and everything Tali knows stay.
+
+## Paying on iPhone
+
+In the iPhone app, Tali HQ, Pro and Max are paid through Apple, monthly or yearly, with Apple's prices. Yearly is A$199.99 for Tali HQ, A$499.99 for Pro and A$1,499.99 for Max.
+
+- **Restore purchases** on Plans brings your plan back if you paid on another iPhone or reinstalled the app.
+- **Manage subscription** opens your iPhone's App Store settings, where you change or cancel the plan.
+- Tali HQ Business, top ups, the voice add-on and your own domain aren't sold in the iPhone app. Buy them at talihq.com.au and they show in the app straight away.
+- If your plan is paid through Stripe, Plans on iPhone says it's billed outside the App Store and can't be changed there. Use **Manage billing** on the web.
+- If your plan is paid through the App Store, change or cancel it in your iPhone's App Store settings, not on the web.
 
 ## Founding members
 

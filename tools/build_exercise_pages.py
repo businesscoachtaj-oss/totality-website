@@ -52,7 +52,8 @@ def clean_cues(cues):
     return [clean(c).rstrip('.') for c in out]
 
 MUSCLE_ALIAS = {'Quads': 'Quadriceps', 'Abs': 'Core', 'Lower Abs': 'Core', 'Upper Abs': 'Core', 'Lat': 'Lats',
-                'Delts': 'Shoulders', 'Hip flexors': 'Hip Flexors', 'Calf': 'Calves', 'Glute': 'Glutes', 'Hamstring': 'Hamstrings'}
+                'Delts': 'Shoulders', 'Hip flexors': 'Hip Flexors', 'Calf': 'Calves', 'Glute': 'Glutes', 'Hamstring': 'Hamstrings',
+                'Front Delts': 'Front Delt', 'Rear Delts': 'Rear Delt', 'Side Delts': 'Side Delt'}
 EQUIP_ALIAS = {'Dumbbells': 'Dumbbell', 'Band': 'Resistance Band', 'Bands': 'Resistance Band', 'Kettlebells': 'Kettlebell',
                'Cables': 'Cable', 'Cable Machine': 'Cable', 'Barbells': 'Barbell', 'None': 'Bodyweight', 'No Equipment': 'Bodyweight'}
 LOAD = {'external_weight': 'Weights', 'bodyweight': 'Bodyweight', 'banded': 'Resistance band', 'banded_external': 'Band and weights'}
@@ -90,7 +91,8 @@ EX = []
 used = {'index'}
 for r in RAW:
     name = clean(r['name'])
-    slug = slugify(name)
+    # 'slug' in the data keeps a page at its old address when an exercise is renamed (25 Nov 2026).
+    slug = (r.get('slug') or '').strip() or slugify(name)
     richness = sum(len(r.get(k) or '') for k in ('description', 'why', 'form_cues')) + len(r.get('cues') or [])
     if slug in used:
         # Same exercise saved twice with different spelling (Push Up / Push-Up): keep the fuller one.
@@ -368,7 +370,7 @@ def exercise_page(x):
 {tail('Browse more', hubs)}"""
     mw = join_words([m.lower() for m in x['muscles'][:3]]) if x['muscles'] else ''
     desc = f'How to do the {x["name"].lower() if not x["name"][:2].isupper() else x["name"]}' + (f', the muscles it works ({mw})' if mw else '') + ', coaching cues and sets and reps. From the Totality exercise library.'
-    title = f'{x["name"]}: how to do it, muscles worked and coaching cues | Totality'
+    title = f'{x["name"]}: how to do it and muscles worked | Totality'
     return page(title, desc, f'/exercises/{x["slug"]}.html', crumbs, body, [faq_schema(faqs), crumbs_schema(crumbs)] if faqs else [crumbs_schema(crumbs)], image=x['thumb'] or None)
 
 # ── Hubs and index ───────────────────────────────────────────────────────────
@@ -397,7 +399,7 @@ def hub_page(kind, label, slug, xs):
 {CTA}
 {tail('Other ' + ('muscle groups' if kind == 'muscle' else 'equipment'), links)}"""
     desc = f'{len(xs)} {label.lower()} exercises {what}, with how to do each one, the muscles worked, coaching cues and sets and reps.'
-    return page(f'{label} exercises: {len(xs)} exercises with how-to and coaching cues | Totality', desc, path, crumbs, body, [crumbs_schema(crumbs)])
+    return page(f'{label} exercises: {len(xs)} with how-to and cues | Totality', desc, path, crumbs, body, [crumbs_schema(crumbs)])
 
 def index_page():
     crumbs = [('Totality', '/totality.html'), ('Exercises', None)]
@@ -446,6 +448,11 @@ def write(rel, text):
 # (Search Console flagged /exercises/deadbug.html after the 13 Nov merge). noindex keeps the
 # stub out of the sitemap (tools/build_sitemap.py skips noindex pages).
 MOVED = {'deadbug': 'dead-bug'}
+# Pages that no longer exist after a library refresh point to the nearest page (25 Nov 2026).
+# Keys and values are paths under /exercises/ without .html, for example 'muscle/soleus': 'muscle/calves'.
+_moves = os.path.join(ROOT, 'data/exercise_moves.json')
+if os.path.exists(_moves):
+    MOVED.update(json.load(open(_moves, encoding='utf-8')))
 
 def moved_page(old, new):
     url = f'/exercises/{new}.html'

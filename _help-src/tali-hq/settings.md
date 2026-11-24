@@ -5,7 +5,7 @@ summary: Change your details and the business switch, brief time, notifications,
 
 Settings holds everything Tali reads about you before every chat and brief, plus your times, notifications and connections. Open **Me**, then tap **Settings**.
 
-!phones[Settings](img/settings-top.png)[Times and notifications](img/settings-notifications.png)
+!phones[Settings](img/settings-top.png)[Business and Life, brief time and notifications](img/settings-clock.png)
 
 ## About you
 
@@ -14,6 +14,10 @@ Settings holds everything Tali reads about you before every chat and brief, plus
 - **Business name (if you have one)**. On Pro, a line underneath says Tali's email address stays the same if you change this.
 - **What kind of business**: Personal trainer, Gym or studio, Coach or consultant, Trades, Health and beauty, Online business or Something else.
 - **About you**: up to 1,000 characters. Tell Tali the things she should always keep in mind.
+
+## Business and Life
+
+If you run a business, turn on **Switch by the clock** and Tali HQ opens on Business in your work hours and on Life the rest of the time. Pick **Work starts**, **Work ends** and **Work days** (Mon to Fri, Mon to Sat or Every day). You can still switch by hand whenever you like. See [Business and Life](modes.html).
 
 ## Morning brief time
 
@@ -33,8 +37,8 @@ To get them on this phone or computer:
 
 Do this on each device you want notifications on.
 
-:::note On iPhone
-iPhone only allows notifications for web apps added to the Home Screen. In Safari, tap Share, then **Add to Home Screen**, open Tali HQ from your Home Screen, and turn notifications on from there.
+:::note On iPhone in the browser
+In the App Store app, allow notifications when your iPhone asks. If you use Tali HQ in Safari instead, iPhone only allows notifications for web apps added to the Home Screen: tap Share, then **Add to Home Screen**, open Tali HQ from your Home Screen, and turn notifications on from there.
 :::
 
 ## Shut the day down
@@ -59,6 +63,10 @@ Below Save is **Connections**: Google, Microsoft 365 (Outlook), Stripe and Tali'
 - Stripe: see [Invoices and Stripe](invoices.html#connect-your-stripe). [[Tali HQ]]
 - Tali's own email address: see [Tali's email address](tali-email.html). [[Pro]]
 
+## How to use
+
+**How to use Tali HQ** opens these guides on our website.
+
 ## Your privacy
 
 **Help every Tali learn** is on unless you turn it off. Lessons that would help any small business are shared with every Tali, rewritten with no names, clients or numbers. Your facts, people and journal are never shared. Turn it off and nothing new of yours is shared. See [Privacy and your data](privacy.html).
@@ -69,12 +77,17 @@ Below Save is **Connections**: Google, Microsoft 365 (Outlook), Stripe and Tali'
 
 !phone[Me](img/me-top.png)
 
-- **Your plan**: your plan, credits left with a bar, **Top up**, and images, web searches and Deep think left this month. **Plans ›** opens the plans. See [Plans, credits and billing](plans.html).
+- **Your photo**: tap the circle or **Add a photo** to add one. **Change photo** and **Remove** show once you have one.
+- **Your plan**: your plan, credits left with a bar, **Top up** (not in the iPhone app), and images, web searches and Deep think left this month. **Plans ›** opens the plans. See [Plans, credits and billing](plans.html).
 - **Patterns** [[Pro]]: when Tali last looked for patterns, with **Run now**. On other plans it says Patterns are part of Pro. See [Her brain](what-tali-knows.html#patterns-pro).
 - **Every memory as a list**: read every memory one by one, **Fix** its words or **Forget** it. See [Her brain](what-tali-knows.html).
+- **Your philosophy**: pick from seven schools of thought: Stoicism, Epicureanism, Buddhism, Taoism, Confucianism, Existentialism and Transcendentalism. Each has its idea, three lessons, things to try, what to read first (it opens in Tali's library) and further reading. Follow one and a thought from it shows on Today each day. [[Free]]
+- **Your time**: your weeks, summers, mornings and full moons left on the averages, and how many more times you'll see the people you love, counted. [[Free]]
 - **Share her brain**: a card of how much she knows, with nothing private on it.
 - **Download her brain**: everything she knows about you, as a file you keep.
+- **Edit home**: add, move, resize or remove what's on Today. See [Your HQ](home.html).
 - **Settings**: your details, rhythm and notifications. The gear at the top opens it too.
+- **Tali and your data**: what Tali sends to the AI companies that run her thinking, and the switch to turn her AI off or back on. With it off, your lists, notes and journal still work, but Tali can't chat, write your brief, sort email or study at night. See [Privacy and your data](privacy.html).
 - **Show me around again**: replays the first run tour.
 - **Sign out**: tap it, then **Sure? Tap again to sign out**. This signs out only the device you're on.
 
@@ -94,7 +107,7 @@ There's no password field in Settings. Sign out, then on the sign in screen type
 3. Type DELETE in **Type DELETE to confirm**.
 4. Tap **Delete my account for good**. Or tap **Keep my account** to stop.
 
-This removes your profile, chats, journal, drafts and everything Tali has learnt about you. It can't be undone. If you pay for a plan, cancel it in **Manage billing** on Plans first. Until it has ended, deleting shows "Cancel your Tali HQ subscription first, then delete your account." See [Privacy and your data](privacy.html).
+This removes your profile, chats, journal, drafts and everything Tali has learnt about you. It can't be undone. If you pay for a plan, cancel it first: in **Manage billing** on Plans, or in your iPhone's App Store settings if you pay through Apple. Until it has ended, deleting shows "Cancel your Tali HQ subscription first, then delete your account." See [Privacy and your data](privacy.html).
 
 ## Questions
 
