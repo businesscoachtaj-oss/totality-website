@@ -39,7 +39,7 @@
       <div id="done">
         <div class="tick" aria-hidden="true">&#10003;</div>
         <h1>Your bank account is set up</h1>
-        <p>So good! Your gym can now take your payments straight from your bank account, under the agreement you approved in your banking app.</p>
+        <p>So good! Your <span class="who">gym</span> can now take your payments straight from your bank account, under the agreement you approved in your banking app.</p>
         <div class="step">Go back to the Totality app. Your bank account shows under Payments in a moment.</div>
         <p class="muted">You can see or cancel the agreement any time in your banking app, under PayTo or agreements.</p>
       </div>
@@ -52,6 +52,10 @@
   </div>
 </main>
 <script>
+  // ADDED (24 Nov 2026): ?to=trainer when the bank account was saved with a personal trainer.
+  if (/[?&]to=trainer\b/.test(location.search)) {
+    document.querySelectorAll('.who').forEach(function (el) { el.textContent = 'trainer' })
+  }
   if (/[?&]cancelled=1/.test(location.search)) {
     document.getElementById('done').hidden = true
     document.getElementById('cancelled').hidden = false
