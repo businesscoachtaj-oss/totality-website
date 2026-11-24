@@ -7,15 +7,15 @@ Talk is where you chat with Tali. Write to her like you'd message a mate who nev
 
 ## Start a chat
 
-Tap **Talk** at the bottom. A brand new chat shows four starters: **Help me plan my week**, **Write a follow-up for a client who went quiet**, **Give me 3 post ideas for this week** and **What should I focus on to grow?** Tap one to put it in the box, or type your own.
+Tap **Talk** at the bottom. A brand new chat shows Tali saying "Hey Sam, what are we working on?" (with your name) and four starters: **Help me plan my week**, **Write a follow-up for a client who went quiet**, **Give me 3 post ideas for this week** and **What should I focus on to grow?** Tap one to put it in the box, or type your own.
 
 !phones[A new chat](img/talk-empty.png)[A chat in progress](img/talk-chat.png)
 
 !steps
-1. Type in the **Message Tali** box. A message can be up to 2,000 characters.
+1. Type in the **Tell Tali anything...** box. A message can be up to 2,000 characters.
 2. Tap **Send**.
-3. While Tali works, the line under her name says **Thinking...**.
-4. Her reply appears on a dark panel. Long replies have a **Copy** link. If she did something as well, a short line above the box says what, for example "Draft waiting on Today, reminder set, saved 1 thing to remember."
+3. The line under her name says **Listening**. While she works, it says **Thinking**.
+4. Her reply appears with her face beside it. Long replies have a **Copy** link. If she did something as well, a short line above the box says what, for example "Draft waiting on Today, reminder set, saved 1 thing to remember."
 
 ### What shows under a reply
 
@@ -25,7 +25,6 @@ Small pills under Tali's reply tell you what she kept, and each one is a button.
 - **Saved to your lists**: she added to a list, ticked something off or marked a habit done. Tap it to open that list. See [Your lists](lists.html).
 - **Spend logged**: she logged personal spending, with the total. Tap it to open Money on the Personal side. See [Money](money.html#personal-money). [[Tali HQ]]
 
-!phone[The line under the chat says what Tali did](img/talk-notice.png)
 
 ## What Tali can do from a message
 
@@ -56,7 +55,7 @@ Every message, email, invoice and booking she prepares waits on Today until you 
 
 ## Think harder
 
-Above the message box is **Think harder**. Tap it to send your next message to a smarter Tali who brings more of her memory to the answer. Tap **Quick answers** to go back to normal.
+Above the message box is a line that reads **Quick answers  Think harder ›**. Tap **Think harder** and pick how hard: each option shows its credits. Your next message goes to a smarter Tali who brings more of her memory to the answer. Tap **Quick answers** to go back to normal.
 
 !phone[Think harder, with Deep think and Second opinion](img/talk-think.png)
 
@@ -70,6 +69,10 @@ On Max, all three cost half the credits for your first 100 a month. Replies show
 
 Sometimes, on a big question, Tali's normal reply ends with a **Deep think this** button. Tap it to ask the same question again with Deep think.
 
+## Send a photo, file or video
+
+Tap **+** next to the message box. Pick **Take a photo**, **Choose a photo**, **Pick a PDF or file**, or **Send a video**. Add a few words if you like, then tap **Send**. See [How Tali's replies work](replies.html#send-tali-a-photo-or-pdf).
+
 ## Voice notes [[Tali HQ]]
 
 Tap the microphone next to the message box, say it, and tap the red dot to stop. A voice note can be up to 3 minutes. Tali turns it into text and answers as normal. Each voice note uses 1 credit. Tali HQ and the trial include 30 minutes of voice notes a month. Pro and Max have no cap.
@@ -78,15 +81,15 @@ Tap the microphone next to the message box, say it, and tap the red dot to stop.
 
 Tali remembers you across every chat, so starting a new one never loses anything she knows about you. Each chat still keeps its own history.
 
-- **New chat**: tap it at the top right to start fresh. It only shows once the current chat has a message in it.
-- **Chats**: opens **Your chats**, with pinned chats first, then the rest, newest first.
+- **New**: tap it at the top right to start fresh. It only shows once the current chat has a message in it.
+- **Chats**: opens **Your chats**, with **Pinned** chats first, then **Everything else**, newest first. There's a **New chat** button there too.
 
 !phones[Your chats](img/talk-history.png)[Rename, pin or delete a chat](img/talk-history-menu.png)
 
 In **Your chats**:
 
 - Tap a chat to open it.
-- Tap the three dots (or press and hold a chat) for **Rename**, **Pin** or **Unpin**, and **Delete**.
+- Tap the three dots (or press and hold a chat) and the buttons **Rename**, **Pin** (or **Unpin**) and **Delete** show under it.
 - **Rename**: type the new name and press enter, or tap away.
 - **Delete** asks "Delete this chat for good?". Tap **Delete** to confirm or **Keep** to stop. Deleting removes the chat and any files you sent in it. What Tali has already remembered from it stays until you forget it in Her brain.
 
@@ -94,7 +97,6 @@ In **Your chats**:
 
 If Tali can't be reached, your message shows **Not sent. Try again** and your words (and any files) go back in the box so nothing is lost. Tap **Try again** to resend it.
 
-!phone[A message that didn't send](img/talk-failed.png)
 
 Other messages you might see:
 

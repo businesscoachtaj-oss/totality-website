@@ -3,7 +3,7 @@
   "audience": "For your life and your business",
   "accent": "purple",
   "icon": "/img/tali/tali-icon-512.png",
-  "updated": "12 November 2026",
+  "updated": "25 November 2026",
   "groups": [
     {
       "title": "Start here",
@@ -11,6 +11,7 @@
         "index",
         "getting-started",
         "today",
+        "home",
         "modes",
         "evening"
       ]
@@ -82,6 +83,7 @@
     "index",
     "getting-started",
     "today",
+    "home",
     "modes",
     "evening",
     "talk",
