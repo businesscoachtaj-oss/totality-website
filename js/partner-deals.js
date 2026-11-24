@@ -2,6 +2,8 @@
    on in Totality's partner_brands table (only those with a Commission Factory link are
    readable), and counts each tap on a Shop button (brand and time only, no personal details). */
 (function () {
+  // Only runs on a page with the partner lists (it was also loaded on the insurance page, where it threw).
+  if (!document.getElementById('pd-meals')) return;
   var SUPA = 'https://spqazfyxxhzizbtmxklr.supabase.co';
   var KEY = 'sb_publishable_zlny2kAAjetWEHlrFR_i3A_RrKixrSt';
   var H = { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' };
