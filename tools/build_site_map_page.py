@@ -31,17 +31,24 @@ def count(folder: str) -> int:
     return len([p for p in (ROOT / folder).glob("*.html") if p.name != "index.html"])
 
 
+# HIDDEN (25 Nov 2026, Taj): Tali HQ pages are off the site's listings for now. They stay live.
+HIDDEN = {"tali-hq-vs-chatgpt.html", "tali-hq-vs-claude.html", "tali-hq-vs-copilot.html", "tali-hq-vs-gemini.html",
+          "tali-hq-vs-lindy.html", "tali-hq-vs-notion-ai.html", "tali-hq-vs-reclaim.html",
+          "why-tali-asks-before-sending.html", "tali-night-school.html", "tali-morning-brief.html", "how-talis-brain-works.html"}
+
+
 def listing(folder: str, skip=("index.html",)):
     out = []
     for p in sorted((ROOT / folder).glob("*.html")):
-        if p.name in skip or not indexable(p):
+        if p.name in skip or p.name in HIDDEN or not indexable(p):
             continue
         out.append((f"/{folder}/{p.name}", title_of(p)))
     return sorted(out, key=lambda x: x[1].lower())
 
 
 def guides():
-    order = ["totality-owner", "totality-trainer", "totality-client", "nutrition", "training", "tali-hq"]
+    # HIDDEN (25 Nov 2026, Taj): Tali HQ is off the site's navigation and listings for now.
+    order = ["totality-owner", "totality-trainer", "totality-client", "nutrition", "training"]
     out = []
     for k in order:
         cfg = ROOT / "_help-src" / k / "guide.json"
@@ -72,12 +79,6 @@ def build() -> str:
             ("/training.html", "Totality Training overview"), ("/training.html#features", "What it does"),
             ("/training.html#pricing", "Plans and the Nutrition bundle"), ("/training-teams.html", "Training for teams and workplaces"), ("/get-training.html", "Get Totality Training"),
         ]),
-        group("Tali HQ", [
-            ("/tali-hq.html", "Tali HQ overview"), ("/tali-hq.html#pricing", "Tali HQ plans"),
-            ("/ai-assistant-small-business-australia.html", "AI assistant for small business"),
-            ("/ai-email-assistant.html", "AI email assistant"), ("/ai-invoice-assistant.html", "AI invoice assistant"),
-            ("/chatgpt-alternative-that-remembers.html", "A ChatGPT alternative that remembers you"),
-        ]),
         group("Tali AI and prices", [
             ("/tali-ai.html", "Tali AI in the apps"), ("/pricing.html", "Pricing for every app"),
             ("/pricing.html#training", "Totality Training plans"), ("/whats-new.html", "What's new"),
@@ -92,7 +93,6 @@ def build() -> str:
             ("/exercises/", "Exercise library (750+ exercises)"),
             ("/foods/", "Food facts for Australian foods"),
             ("/nutrients/", f"Nutrients ({count('nutrients')} guides)"),
-            ("/library/", f"Tali's library ({count('library')} books)"),
         ]),
         group("Nutrients", [(h, t.split(":")[0]) for h, t in listing("nutrients")], cls="sm-wide"),
     ]
@@ -120,7 +120,7 @@ def build() -> str:
     ]
     logins = [group("Open an app", [
         ("https://totalityapp.com.au", "Totality web app"), ("https://totalitynutrition.com.au", "Totality Nutrition web app"),
-        ("https://totality-training.vercel.app", "Totality Training web app"), ("https://talihq.com.au", "Tali HQ web app"),
+        ("https://totality-training.vercel.app", "Totality Training web app"),
     ])]
 
     def block(anchor, heading, groups):
@@ -146,7 +146,7 @@ def build() -> str:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Everything on this site | Totality 360</title>
-<meta name="description" content="Every page on totality360.com.au in one list: the four apps, pricing, free tools, the exercise and food libraries, the blog, comparisons, developer pages, how-to guides and support.">
+<meta name="description" content="Every page on totality360.com.au in one list: the three apps, pricing, free tools, the exercise and food libraries, the blog, comparisons, developer pages, how-to guides and support.">
 <link rel="canonical" href="https://totality360.com.au/site-map.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Totality 360">

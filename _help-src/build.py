@@ -262,8 +262,8 @@ def build_hub(cfgs):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to use Totality, Totality Nutrition, Totality Training and Tali HQ</title>
-<meta name="description" content="Step by step guides for Totality, Totality Nutrition, Totality Training and Tali HQ, with screens from the real apps, plus setup guides to download.">
+<title>How to use Totality, Totality Nutrition and Totality Training</title>
+<meta name="description" content="Step by step guides for Totality, Totality Nutrition and Totality Training, with screens from the real apps, plus setup guides to download.">
 <link rel="canonical" href="https://totality360.com.au/help/">
 <link rel="icon" href="/favicon-96.png" sizes="any">
 {keep('head')}
@@ -402,4 +402,6 @@ if __name__ == '__main__':
         done.append((k, cfg)); print(f'{k}: {n} pages')
     order = ['totality-owner', 'totality-trainer', 'totality-client', 'nutrition', 'training', 'tali-hq']
     allk = sorted([p.name for p in SRC.iterdir() if p.is_dir() and (p / 'guide.json').exists()], key=lambda k: order.index(k) if k in order else 99)
-    build_hub([(k, json.loads((SRC / k / 'guide.json').read_text())) for k in allk])
+    # HIDDEN (25 Nov 2026, Taj): the Tali HQ guide is still built but not listed on the hub for now.
+    hub_hidden = {'tali-hq'}
+    build_hub([(k, json.loads((SRC / k / 'guide.json').read_text())) for k in allk if k not in hub_hidden])
