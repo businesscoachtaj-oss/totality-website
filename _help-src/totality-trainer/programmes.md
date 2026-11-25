@@ -1,6 +1,6 @@
 ---
 title: Programmes
-summary: Create a programme, draft one with Tali, start from one of 279 templates, duplicate or share it, and use your gym's Collection.
+summary: Create a programme, draft one with Tali, start from one of 375 templates, duplicate or share it, and use your gym's Collection.
 ---
 
 A programme is a block of training: a number of weeks, each with sessions on set days, each session with its exercises. You build it once and assign it to as many clients as you like.
@@ -42,16 +42,18 @@ In the New Programme sheet, **Draft it with Tali** builds the first draft for yo
 
 On the Free plan the button reads **Add Tali** and opens your plans instead.
 
+Tali uses drop sets, myo reps, rest-pause and AMRAP sets where they help, and for programmes of 4 weeks or more she can swap some exercises from halfway. The preview shows both.
+
 !phone[Draft a programme with Tali](img/tali-programme.png)
 
 ## Templates
 
-The **Templates** tab on Programmes has ready-made programmes you can set for a client or use as a starting point: the original Totality templates (**Totality classics**) and the full Totality programme library, 279 programmes. The library has every style at 2 to 6 days a week, at Beginner, Intermediate and Advanced. The level changes the exercises as well as the sets, reps and rest.
+The **Templates** tab on Programmes has ready-made programmes you can set for a client or use as a starting point: the original Totality templates (**Totality classics**) and the full Totality programme library, 375 programmes. The library has every style at 2 to 6 days a week, at Beginner, Intermediate and Advanced. The level changes the exercises as well as the sets, reps and rest.
 
 | Everyday training | Sports and styles |
 |---|---|
 | Whole body | Powerlifting, Street Lifting, Olympic Lifting |
-| Glutes and legs | Bodybuilding, Powerbuilding |
+| Glutes and legs | Classic Bodybuilding, New School Bodybuilding, Powerbuilding |
 | Glutes and arms | Strongman, Circus Strongman |
 | Strength | Gymnastics, Calisthenics |
 | Lean and fit | Kettlebell, Athletic Performance, Hybrid (lifting and running) |
@@ -66,6 +68,16 @@ The **Templates** tab on Programmes has ready-made programmes you can set for a 
 **Ask Tali to tailor it** on the same screen has Tali adjust the template for a client's goal, level, equipment and injuries.
 
 A few styles need kit most gyms don't have. Strongman days say to use the Beginner version of any event you can't do (sandbags, farmer's carries and the trap bar). Gymnastics and Calisthenics need a pull-up bar, and rings help. Every exercise is from the exercise library and has a demo video.
+
+**Classic Bodybuilding** trains one or two areas a day. **New School Bodybuilding** trains every muscle at least twice a week. Whole body and Lean and fit also have dumbbell and bodyweight programmes, and Glutes and legs has a dumbbell one, for clients who train at home.
+
+### The second half of a programme
+
+Every template changes halfway through, so your client isn't doing the same exercises for 8 or 12 weeks. The first lifts each day get heavier for fewer reps (no equipment programmes move to a harder version instead), and most other exercises swap for a close variation with the same kit. In the preview, tap the **Weeks** chips to see each half. When you use the template, the swaps are already in the copy from that week.
+
+### Set types
+
+Some exercises on Intermediate and Advanced templates use a set type where it helps: drop set (**DS**), myo reps (**MYO**), rest-pause (**RP**) or **AMRAP**. They show as coloured badges in the preview, carry into the builder, and your client sees how to do each one in their workout.
 
 ## Collection (gym trainers)
 

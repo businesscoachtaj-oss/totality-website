@@ -10,7 +10,7 @@ summary: What each plan includes, the prices, the trial, the offers, and how to 
 |---|---|---|---|
 | Price | A$0 | A$8.99 a month or A$91.70 a year | A$11.99 a month or A$122.30 a year |
 | Workout logging and the exercise library | Yes | Yes | Yes |
-| Programmes | Strength Foundations | All 279 | All 279 |
+| Programmes | Strength Foundations | All 375 | All 375 |
 | Your own routines | 3 | Unlimited | Unlimited |
 | Weights and sets that adjust | No | Yes | Yes |
 | Progress and personal best charts | No | Yes | Yes |
