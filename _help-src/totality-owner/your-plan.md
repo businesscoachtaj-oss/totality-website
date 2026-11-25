@@ -37,14 +37,16 @@ To move to a different plan once you are subscribed:
 !steps
 1. Open **More**, then **Settings**, then **Subscription & Billing**.
 2. Tap **Change Plan**.
-3. Pick **Monthly** or **Yearly · Save 15%**.
+3. Pick **Monthly** or **Yearly · Save 15%**. It opens on the one you pay on now.
 4. Tap **Switch to this plan** on the plan you want.
+5. Check what it costs and when it starts, then tap **OK**.
 
-You see **Plan change scheduled**: "Your new plan will take effect at your next billing date."
+- **Moving up** (a bigger plan, or monthly to yearly) starts straight away. You pay the difference for the rest of your billing period now, less what's left of your current plan. You see **Plan changed**. If your card is declined, nothing changes.
+- **Moving down** (a smaller plan, or yearly to monthly) starts at your next billing date. You keep your current plan until then and there's nothing to pay. You see **Plan change booked**, and the status card shows the change with **Keep** if you change your mind.
 
 !phone[Change plan from Subscription & Billing](img/your-plan-change.png)
 
-You can also tap **Change plan** on the Sales subscription screen and pick a plan there. Once you are subscribed it changes your plan the same way, with the same **Plan change scheduled** message.
+You can also tap **Change plan** on the Sales subscription screen and pick a plan there. Once you are subscribed it changes your plan the same way, and shows what it costs first.
 
 ## Add-ons
 
@@ -85,7 +87,7 @@ Cancelling your Totality plan does not cancel your members' memberships with you
 ## Questions
 
 ?? Can I switch from monthly to yearly?
-Yes. In **Settings**, then **Subscription & Billing**, tap **Change Plan**, pick **Yearly · Save 15%** and tap **Switch to this plan** on your plan. The change takes effect at your next billing date.
+Yes. In **Settings**, then **Subscription & Billing**, tap **Change Plan**, pick **Yearly · Save 15%** and tap **Switch to this plan** on your plan. It starts straight away and you pay for the year now, less what's left of your month.
 
 ?? Where do I get a tax invoice?
 Tap **Manage billing (Stripe)** and open the invoice you need.

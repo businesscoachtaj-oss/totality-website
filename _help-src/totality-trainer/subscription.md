@@ -22,7 +22,9 @@ It can take a few seconds for Stripe to confirm. If the screen still shows your 
 
 The status card shows **Active**, your plan, and how many clients you have against your limit.
 
-- **Change Plan** opens every Solo plan. Pick monthly or yearly and tap **Switch to this plan**. "Your new plan applies now. The price difference for the rest of this billing period is prorated on your next invoice."
+- **Change Plan** opens every Solo plan, on the billing period you pay on now. Pick monthly or yearly and tap **Switch to this plan**. Before anything changes you see what it costs and when it starts, then tap **OK**.
+- **Moving up** (a bigger plan, or monthly to yearly) starts straight away. You pay the difference for the rest of your billing period now, less what's left of your current plan. If your card is declined, nothing changes.
+- **Moving down** (a smaller plan, or yearly to monthly) starts when the period you've already paid for ends. You keep your current plan until then and there's nothing to pay. The status card shows the change with **Keep** if you change your mind.
 - **Manage Billing** opens Stripe's billing page: update your card, see invoices, or cancel.
 
 Below that are the add-on cards: **Tali AI**, **Branding** and **POS**, then **Trainer Payouts**. See [Plans and prices](plans.html#add-ons) and [Getting paid](getting-paid.html).
@@ -54,7 +56,10 @@ Your Subscription screen shows **Gym Partner** and the gym's plan. The gym manag
 No. You move to Free. You're only charged if you subscribe.
 
 ?? I upgraded. When does the new limit apply?
-Straight away. The price difference is added to your next invoice.
+Straight away. You pay the difference for the rest of your billing period when you switch. For example, a month into a yearly Solo 5 plan, moving to Solo 10 costs about A$101.69 that day, then the full Solo 10 price from your renewal date.
+
+?? I moved to a smaller plan. When does it change?
+When the period you've already paid for ends. You keep your current plan and client limit until then. To stay on it, tap **Keep** on the status card. To cancel instead, tap **Keep** first, then **Manage Billing**.
 
 ?? I moved down a plan and have more clients than the new limit.
 No one is removed. You can't add new clients until you're under the limit. Archive clients you no longer coach.

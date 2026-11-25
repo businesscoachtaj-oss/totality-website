@@ -153,7 +153,7 @@ Once you're paying through Stripe, tap **Manage billing** on Plans. It opens Str
 
 - update your card
 - see and download your invoices
-- switch plans. On Tali HQ, the Pro card says "Switching to Pro happens in Manage billing, where your card already is." Tap **Switch to Pro in Manage billing**.
+- switch plans. Moving up starts straight away and you pay the difference for the rest of your billing period. Moving down starts when the period you've already paid for ends. On Tali HQ, the Pro card says "Switching to Pro happens in Manage billing, where your card already is." Tap **Switch to Pro in Manage billing**.
 - cancel
 
 When a paid plan ends, you drop back to Free. Your chats, journal, clients and everything Tali knows stay.
