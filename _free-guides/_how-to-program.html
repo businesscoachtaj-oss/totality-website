@@ -1,0 +1,184 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><title>How to write a training programme</title><style>@font-face{font-family:"Bricolage Grotesque";src:url("bricolage-grotesque-latin-wght.woff2") format("woff2");font-weight:200 800}
+@font-face{font-family:"Figtree";src:url("figtree-latin-wght.woff2") format("woff2");font-weight:300 900}
+:root{--o:#ED8008;--od:#C46800;--ink:#272626;--mut:#62605D;--line:#ECE6DF;--soft:#FFF6EC;--sl:#F7DFC2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Figtree,Arial,sans-serif;color:var(--ink);font-size:10.6pt;line-height:1.55}
+main{padding:0 17mm}
+.cover{height:264mm;padding:14mm 17mm 12mm;display:flex;flex-direction:column;background:linear-gradient(160deg,#FFF6EC 0%,#FFFFFF 55%);page-break-after:always;position:relative;border-top:6px solid var(--o)}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque";font-weight:800;font-size:14pt}
+.brand img{width:32px;height:32px;border-radius:8px}.brand i{font-style:normal;color:var(--o)}
+.ctext{margin-top:34mm}
+.kick{color:var(--o);font-weight:800;font-size:8.2pt;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.ct{font-family:"Bricolage Grotesque";font-weight:800;font-size:34pt;line-height:1.04;letter-spacing:-.02em;max-width:160mm}
+.lede{font-size:12.5pt;color:var(--mut);margin-top:12px;max-width:150mm}
+.inside{margin-top:auto;border-top:2px solid var(--o);padding-top:10px}
+.inside ol{list-style:none;columns:2;column-gap:12mm}
+.inside li{display:flex;gap:9px;padding:4px 0;font-weight:600;break-inside:avoid}
+.inside li span{color:var(--o);font-weight:800;width:20px}
+.cfoot{margin-top:12px;font-size:8.4pt;color:var(--mut)}
+.chap{display:flex;gap:14px;align-items:center;margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--o);margin-top:26px;break-after:avoid;break-inside:avoid}
+.cn{font-family:"Bricolage Grotesque";font-weight:800;font-size:30pt;color:var(--o);line-height:1}
+.ck{display:block;color:var(--o);font-weight:800;font-size:7.8pt;letter-spacing:.14em;text-transform:uppercase}
+h1{font-family:"Bricolage Grotesque";font-weight:800;font-size:22pt;letter-spacing:-.015em;line-height:1.1}
+h2{font-family:"Bricolage Grotesque";font-weight:800;font-size:13.5pt;margin:16px 0 5px;break-after:avoid}
+h3{font-size:11pt;font-weight:800;margin:10px 0 3px;break-after:avoid}
+p{margin:0 0 8px}
+ul,ol{margin:0 0 9px 18px}li{margin:3px 0}li::marker{color:var(--o);font-weight:800}
+strong,b{font-weight:750}
+table{width:100%;border-collapse:collapse;margin:6px 0 12px;font-size:9.8pt;break-inside:avoid}
+th{text-align:left;font-size:7.6pt;letter-spacing:.1em;text-transform:uppercase;color:var(--o);padding:5px 8px;border-bottom:1.5px solid var(--sl)}
+td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.box{background:var(--soft);border-left:4px solid var(--o);border-radius:0 10px 10px 0;padding:9px 13px;margin:10px 0 12px;break-inside:avoid;font-size:10pt}
+.box>b{display:block;color:var(--od);font-size:7.8pt;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px}
+.box p:last-child{margin:0}
+.check{list-style:none;margin:6px 0 10px;padding:0}
+.check li{padding-left:24px;position:relative;margin:5px 0;break-inside:avoid}
+.check li::before{content:"";position:absolute;left:0;top:3px;width:13px;height:13px;border:1.8px solid var(--o);border-radius:3px}
+.mist{display:grid;gap:7px;margin:6px 0 12px}
+.mist div{border:1px solid var(--line);border-radius:10px;padding:8px 12px;break-inside:avoid}
+.mist b{display:block;margin-bottom:2px}.mist span{color:var(--mut);font-size:10pt}
+.end{margin-top:26px;border-top:2px solid var(--o);padding-top:10px;break-inside:avoid}
+.small{font-size:8.6pt;color:var(--mut);margin-top:12px}
+
+h2+p,h2+ul,h2+table{break-before:avoid}
+.chap+p{break-before:avoid}
+.keep{break-inside:avoid}
+</style></head><body>
+<section class="cover"><div class="brand"><img src="icon-totality.png" alt=""><span>Totality <i>360</i></span></div>
+<div class="ctext"><p class="kick">Free guide 3 of 4 · For trainers who want to programme well</p><h1 class="ct">How to write a training programme</h1><p class="lede">Progressive overload, volume, frequency and periodisation, how to fit them to the person in front of you, and what the research says about training men and women.</p></div>
+<div class="inside"><p class="kick">In this guide</p><ol><li><span>01</span>What a programme is</li><li><span>02</span>Progressive overload</li><li><span>03</span>Volume, frequency and intensity</li><li><span>04</span>Periodisation</li><li><span>05</span>Fit it to the person</li><li><span>06</span>Training men and women</li><li><span>07</span>From plan to session</li><li><span>08</span>Common programming mistakes</li><li><span>09</span>Your programming checklist</li></ol></div>
+<p class="cfoot">The Coach's Starter Series · free from totality360.com.au · Australia, November 2026</p></section>
+<main><p>This guide is for trainers who know the basics from Certificate III and IV and want the reasons behind programming decisions. It covers the evidence, where it's strong and where it's mixed, and how to use it with a real client.</p>
+<p>Two ideas run through it. The textbook principles are where you start, and two clients with the same goal can still need different programmes. And where a popular claim is weaker than it sounds, this guide says so.</p>
+<div class="box"><b>A note on accuracy</b><p>Exercise science keeps moving. Strong, consistent findings are stated plainly. Mixed or early findings are marked as such.</p></div>
+
+<div class="keep"><div class="chap"><span class="cn">01</span><div><span class="ck">Chapter 1</span><h1>What a programme is</h1></div></div><p>A workout is one session. A programme is a plan over weeks, where each session sets up the next. A client can train hard every session and still not be on a programme if nothing changes on purpose.</p></div>
+<h2>The loop</h2>
+<ol>
+<li><strong>Assess:</strong> ability, goals, training history, injuries and limits, before you write anything.</li>
+<li><strong>Plan:</strong> sessions and weeks that build toward the goal.</li>
+<li><strong>Run it:</strong> coach the session as written, and coach the person in front of you.</li>
+<li><strong>Track:</strong> loads, reps, how hard it felt, how they recovered.</li>
+<li><strong>Adjust:</strong> change the plan from what really happened.</li>
+</ol>
+<p>New clients improve for months on almost any sensible training. After that early phase, progress depends on whether the plan builds on itself.</p>
+<div class="box"><b>A quick check</b><p>If nothing is clearly harder than four weeks ago (more weight, reps or sets, or less rest), the client is repeating a workout rather than following a programme.</p></div>
+
+<div class="keep"><div class="chap"><span class="cn">02</span><div><span class="ck">Chapter 2</span><h1>Progressive overload</h1></div></div><p>Gradually asking more of the body over time is about as settled as exercise science gets.</p></div>
+<h2>More weight is one of several ways</h2>
+<ul>
+<li>More reps at the same weight</li>
+<li>More sets</li>
+<li>Less rest between sets</li>
+<li>A harder variation or more range of motion</li>
+<li>The same weight and reps with better control</li>
+</ul>
+<h2>Over a block, not every session</h2>
+<p>Overload should show across weeks. Forcing more weight every session regardless of recovery leads to burnout. A beginner can keep adapting to the same work for a while because it's new to them.</p>
+<div class="box"><b>Example</b><p>A client has used the same 10 kg dumbbells for eight weeks and nothing has moved. The fix usually isn't heavier dumbbells straight away. It's one more rep, or one more set, next week.</p></div>
+
+<div class="keep"><div class="chap"><span class="cn">03</span><div><span class="ck">Chapter 3</span><h1>Volume, frequency and intensity</h1></div></div><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Volume</td>
+<td>How much work: sets × reps, or total weight lifted</td>
+</tr>
+<tr>
+<td>Intensity</td>
+<td>How hard: a percentage of one rep max, or effort (RPE or reps in reserve)</td>
+</tr>
+<tr>
+<td>Frequency</td>
+<td>How often a muscle or movement is trained each week</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Volume</h2>
+<p>More weekly sets are generally linked with more muscle growth, up to a point. You may have heard of MEV, MAV and MRV (minimum, adaptive and maximum recoverable volume). The idea behind them is sound, but the exact set numbers are a coaching rule of thumb, not tested limits. They vary between people and from week to week.</p>
+<h2>Frequency</h2>
+<p>With the same weekly volume, training a muscle <strong>twice a week</strong> gives better results than once a week. Going higher than that shows no strong extra benefit on its own. Use extra days to spread the volume so no session is too long.</p>
+<h2>Intensity</h2>
+<p>Exact percentages are hard to use with most clients, whose strength changes day to day. <strong>Reps in reserve (RIR)</strong>, how many more reps they could have done, is simpler. On an off day a client can hit the same RIR with a lighter weight and still get a good session.</p>
+<div class="box"><b>Example</b><p>12 weekly sets of squats split over two sessions (6 and 6) is easier to recover from, and just as effective, as 12 in one session.</p></div>
+
+<div class="keep"><div class="chap"><span class="cn">04</span><div><span class="ck">Chapter 4</span><h1>Periodisation</h1></div></div><p>Periodisation means planning how volume and intensity change over time.</p></div>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>How it works</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td>Higher reps and lighter loads, moving to lower reps and heavier loads over a block</td>
+<td>Beginners making steady progress</td>
+</tr>
+<tr>
+<td>Undulating</td>
+<td>Heavy, moderate and light days within each week</td>
+<td>Trained lifters chasing strength. Little advantage for beginners or for muscle growth</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>Set phases, such as muscle, then strength, then peaking</td>
+<td>Competition or a set date</td>
+</tr>
+</tbody>
+</table>
+<h2>Deloads</h2>
+<p>A lighter week every four to eight weeks is sensible fatigue management. It hasn't been tested on its own the way overload has, but periodised programmes, which build in lighter phases, do beat non-periodised ones for strength.</p>
+<div class="keep"><div class="chap"><span class="cn">05</span><div><span class="ck">Chapter 5</span><h1>Fit it to the person</h1></div></div><p>The principles are the start. A good coach reads the person, because two people with the same goal can need different programmes to stick with it.</p></div>
+<ul>
+<li><strong>Clients who like routine</strong> are motivated by numbers going up on the same lifts. Keep the main lifts the same for weeks at a time.</li>
+<li><strong>Clients who like variety</strong> lose interest with repetition. Rotate accessories, tempos or equipment, but keep one or two lifts the same each session so you can still measure progress.</li>
+<li><strong>Clients training once or twice a week</strong> shouldn't be on a body part split, because each muscle would get trained once a week or less. Do full body every session, keep a squat, hinge, push and pull the same for four to six weeks, and rotate the rest more freely.</li>
+</ul>
+<div class="box"><b>The best programme</b><p>The best programme is the one a person will do, consistently, for months. A perfect plan they drop after three weeks gets worse results than a good one they keep.</p></div>
+
+<div class="keep"><div class="chap"><span class="cn">06</span><div><span class="ck">Chapter 6</span><h1>Training men and women</h1></div></div><p>Some claims about sex differences hold up. Others stretch a real finding too far.</p></div>
+<h2>Well established</h2>
+<ul>
+<li><strong>Absolute strength and power:</strong> men are usually stronger in absolute terms, mostly from more muscle mass and more fast twitch fibre.</li>
+<li><strong>Strength for size:</strong> strength per amount of muscle is about the same. A smaller, well trained woman can be just as strong for her size.</li>
+<li><strong>ACL injury:</strong> women have roughly twice the ACL injury rate of men in similar sports, linked to landing mechanics. Include landing technique and posterior chain strength work for clients who jump or change direction.</li>
+</ul>
+<h2>Fatigue, more precisely</h2>
+<p>Women do resist fatigue better in sustained, moderate, mostly static efforts. That doesn't extend cleanly to heavy lifting or next day recovery, where some studies find the opposite. Don't set volume or frequency by sex. Training history, recovery and how someone responds tell you more.</p>
+<h2>The menstrual cycle</h2>
+<p>Reviews describe the evidence for planning training around cycle phases as inconsistent. It's fine to talk about with a client who wants to track it, but not a default rule.</p>
+<div class="chap"><span class="cn">07</span><div><span class="ck">Chapter 7</span><h1>From plan to session</h1></div></div>
+
+<h2>The shape of a session</h2>
+<ol>
+<li><strong>Warm up:</strong> general movement, then ramp up sets for the main lift.</li>
+<li><strong>Main lift:</strong> the day's main movement, where you track progress most closely.</li>
+<li><strong>Accessories:</strong> support the main lift or fill a gap.</li>
+<li><strong>Finisher:</strong> short conditioning, only if time and recovery allow.</li>
+</ol>
+<h2>Example: three full body sessions a week (beginner)</h2>
+<p>Rotate a squat, hinge, push and pull across days A, B and C. Main lifts: <strong>3 sets of 8 to 10 at about RPE 7</strong> (around 3 reps in reserve). Accessories: 2 sets of 12 to 15.</p>
+<p>Use <strong>double progression</strong>: add a rep each session until every set hits the top of the range, then add a little weight and go back to the bottom of the range.</p>
+<h2>Example: one session a week</h2>
+<p>Full body each time. Keep the squat, hinge, push and pull the same for four to six weeks so there's something to track, and change the accessories each week to keep it fresh.</p>
+<div class="box"><b>Write it down</b><p>A session nobody can remember next week can't be built on. Record weight, reps and effort for every working set.</p></div>
+
+<div class="chap"><span class="cn">08</span><div><span class="ck">Chapter 8</span><h1>Common programming mistakes</h1></div></div>
+
+<div class="mist"><div><b>Changing everything every session</b><span>It feels fresh, but nothing stays the same long enough to progress or measure.</span></div><div><b>One template for everyone</b><span>The same 12 week plan given to a routine lover and a variety seeker will lose one of them within a month.</span></div><div><b>Ignoring how they feel today</b><span>Plans that never adjust for sleep, stress or soreness give worse sessions than effort based adjustment.</span></div><div><b>No deloads until an injury</b><span>A planned light week costs less than an unplanned week off.</span></div><div><b>Rules by sex instead of the person</b><span>Set volume and recovery from their history and response.</span></div><div><b>Smashing once a week clients</b><span>A hard session they dread loses to a moderate one they keep coming to.</span></div></div>
+
+<div class="chap"><span class="cn">09</span><div><span class="ck">Chapter 9</span><h1>Your programming checklist</h1></div></div>
+
+<ul class="check"><li>Assess goals, history, injuries and limits before you plan</li><li>Make sure every block has progress you can see and track</li><li>Train each muscle or movement at least twice a week where you can</li><li>Use RPE or reps in reserve to adjust load on off days</li><li>Pick a periodisation model to match experience</li><li>Plan a lighter week every four to eight weeks</li><li>Work out whether each client likes routine or variety</li><li>Use full body sessions and steady main lifts for 1 to 2 day a week clients</li><li>Add landing and posterior chain work for jumping and change of direction</li><li>Set volume and recovery by the person, not by sex</li><li>Give each session a shape: warm up, main lift, accessories, finisher</li><li>Use double progression by default</li><li>Record every working set</li><li>Review the last four weeks before writing the next block</li></ul>
+<section class="end"><h2>About this guide</h2>
+<p>This guide is free from Totality 360, an Australian software company. We make Totality, the app personal trainers, studios and gyms use to run their business: programmes, sessions, check-ins, bookings and payments, with a free app for their clients. We also make Totality Nutrition, a food and macro tracker.</p>
+<p><b>More in the series:</b></p><ul><li>How to start a personal training business</li><li>Marketing and finding clients</li><li>Nutrition coaching fundamentals</li></ul><p>All free at <b>totality360.com.au/resources</b>. Step by step guides for the apps are at <b>totality360.com.au/help</b>.</p>
+<p class="small">General information only, not legal, financial, medical or dietary advice. Rules and research change, so check current requirements with the body named in each section before you act on them. © 2026 Totality 360 Pty Ltd, ABN 58 698 902 975.</p></section></main></body></html>
