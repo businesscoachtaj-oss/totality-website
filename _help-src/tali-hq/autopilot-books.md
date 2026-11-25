@@ -5,6 +5,8 @@ summary: Rules that put a nudge on your To do so nothing slips, and a quarter on
 
 [[Business]]
 
+Open both from the **Tools** card on Today on the Business side (**On autopilot** and **Bookkeeping**), or from **Your world**, **Work**.
+
 ## On autopilot
 
 Switch on a rule and Tali puts a nudge on your To do when something needs you. She does not message anyone for you here.
@@ -19,7 +21,7 @@ Switch on a rule and Tali puts a nudge on your To do when something needs you. S
 | Answer a booking request | Someone asks for a time through your booking link |
 | Invoice a finished job | A job is marked done and has no invoice yet |
 
-The rules are checked when you open Tali HQ. Each thing gets one nudge, not a pile of them.
+The rules are checked when you open Today. Each thing gets one nudge, not a pile of them.
 
 :::note
 Text messages to customers and Tali answering your phone are coming soon. They are not available yet.
@@ -36,7 +38,7 @@ Pick a quarter and see it on one page, made from the invoices and receipts you a
 - The **GST** collected and paid
 - What is **still owed to you**
 
-Tap **Share the pack** for one PDF listing every invoice and receipt. Amounts include GST, and paid invoices count in the quarter they were paid.
+Pick the quarter under **Which quarter**, then tap **Share the pack** (it names the quarter, like **Share the Jul to Sep 2026 pack**) for one PDF listing every invoice and receipt. Amounts include GST, and paid invoices count in the quarter they were paid.
 
 :::warn
 This is a summary for your records. It is not tax advice and it is not a BAS. Check the figures with your accountant before lodging anything.

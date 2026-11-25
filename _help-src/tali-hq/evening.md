@@ -7,13 +7,13 @@ The shutdown is two minutes with Tali at the end of the day. You say how it went
 
 ## When it shows up
 
-From two hours before your shutdown time, a **Tonight** card appears on Today with **Shut the day down** and a **Start** button. Your shutdown time is 9pm unless you change it. Over the same two hours, the sky behind the app fades from its daytime blue into her night sky.
+From two hours before your shutdown time, a **Tonight** card appears on Today with **Shut the day down** and a **Start** button. Your shutdown time is 9pm unless you change it.
 
 !phone[The Tonight card on Today in the evening](img/evening-card.png)
 
 If **Nudge me to shut down** is on in Settings, Tali also sends one notification at your shutdown time if the day isn't closed yet.
 
-You can start a shutdown any time from **Your world**, **Growth**, **Shut down**.
+You can start a shutdown any time from **Your world**, **Growth**, **Shut down** (on the Life side, if you run a business).
 
 ## Do your shutdown
 
@@ -45,7 +45,7 @@ Changed your mind? Tap **Change my answers**, edit anything, and tap **Done** ag
 
 ## Night mode
 
-Once the day is closed, Today goes quiet. All that's left is her brain, turning at half speed in the night sky, her goodnight line with "Day's done. Bed time?", and two buttons: **Sleep sounds** and **Write in your journal**. Under them, the **Day closed** card shows your mood and tomorrow's three. The day's lists, drafts and tiles come back in the morning.
+Through the day, Today is on paper. Once the day is closed, it goes into her night sky and goes quiet. All that's left is her brain, turning slowly, her goodnight line with "Day's done. Bed time?", and two buttons: **Sleep sounds** and **Write in your journal**. Under them, the **Day closed** card shows your mood and tomorrow's three. The day's lists, drafts and tiles come back in the morning.
 
 !phone[Today after the day is closed](img/evening-night.png)
 

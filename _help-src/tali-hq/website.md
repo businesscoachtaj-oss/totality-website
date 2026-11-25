@@ -8,7 +8,7 @@ Tali HQ can host a simple website for you at talihq.com.au/site/your-name.
 - **Just me**: a personal site, on any paid plan.
 - **My business**: a business site with your services, a Book a time button and "Ask Tali to write it", on Tali HQ Business.
 
-In Business mode, open **Website** from the tools grid on Today. In Life mode, open it from the **Yours** card on Today or **My website** in Your world.
+On the Business side, open **Website** from the **Tools** card on Today. On the Life side, open it from the **Yours** card on Today or **My website** in Your world.
 
 !phones[The Website screen](img/website-edit.png)[What visitors see](img/website-public.png)
 

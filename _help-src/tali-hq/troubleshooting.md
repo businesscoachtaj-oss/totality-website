@@ -23,6 +23,10 @@ Tali HQ updates itself. If something looks wrong or out of date:
 | "Too many goes. Give it a minute." | Wait a minute, then try again. |
 | "Pop in your email and password." | One of the boxes is empty. |
 
+## Can't make an account
+
+- **"That's a throwaway email address. Use one you'll keep, so you get your receipts and can reset your password."** Tali HQ doesn't take short term inboxes. Sign up with an email you'll keep.
+
 ## Forgot your password
 
 !phone[Type your email first, then tap Forgot password](img/troubleshooting-signin-error.png)
@@ -43,13 +47,17 @@ If the two don't match, you'll see "Those two don't match." Tap **Cancel and sig
 - On the **Check your email** screen, tap **Resend email**.
 - If you typed the wrong address, tap **Wrong email? Start again**.
 
+## Tali won't chat, or says she needs a yes
+
+Tali needs your yes before she uses AI. If you tapped **Not now** when you first signed in, or turned her AI off, open **Me**, **Tali and your data** and tap **Yes, Tali can use AI**. Your lists, notes and journal work either way. See [Privacy and your data](privacy.html#tali-and-your-data).
+
 ## A message won't send
 
 - **"Not sent. Try again"**: Tali couldn't be reached. Check your internet, then tap **Try again**. Your words were put back in the box, so nothing is lost.
 - **"That's your 250 free messages for this month."** You've used Free's messages. They reset on the 1st, or upgrade. See [Plans, credits and billing](plans.html).
 - **"You've used this month's Tali credits."** Credits reset on the 1st, or move up a plan.
 - **"Easy, tiger. Give me a minute and try again."** More than 20 things went to Tali in 5 minutes. Wait a minute.
-- **"Photos are free, PDFs are part of Tali HQ."** PDFs need Tali HQ or Pro. Photos work on Free.
+- **"Photos are free, PDFs are part of Tali HQ."** PDFs need a paid plan. Photos work on Free.
 - **"... is over 10 MB."** Use a smaller file.
 
 !phone[Out of messages on Free](img/talk-out-of-messages.png)
@@ -65,7 +73,7 @@ If the two don't match, you'll see "Those two don't match." Tap **Cancel and sig
 !steps
 1. In **Me**, **Settings**, make sure **Notifications from Tali** is on, and tap **Save**.
 2. Tap **Turn on notifications on this device** and allow notifications when asked. A test should arrive.
-3. On iPhone, add Tali HQ to your Home Screen first (Share, then **Add to Home Screen**), open it from there and turn notifications on. iPhone doesn't allow them in the Safari tab.
+3. Using Tali HQ in Safari on iPhone rather than the App Store app? Add it to your Home Screen first (Share, then **Add to Home Screen**), open it from there and turn notifications on. iPhone doesn't allow them in a Safari tab. In the App Store app, allow notifications when your iPhone asks, or in your iPhone's Settings, Notifications, Tali HQ.
 4. If you see "Notifications are blocked for Tali HQ in your browser settings", allow them in your browser or phone settings, then try again.
 
 Turn notifications on separately on each device you use.
@@ -117,7 +125,7 @@ Signing out on one device used to sign you out everywhere. That's fixed: signing
 
 ## Can't delete my account
 
-If you see "Cancel your Tali HQ subscription first, then delete your account.", open **Me**, **Plans**, **Manage billing** and cancel. Once the plan has ended, try again.
+If you see "Cancel your Tali HQ subscription first, then delete your account.", open **Me**, **Plans**, **Manage billing** and cancel. Once the plan has ended, try again. If you pay through the App Store, cancel in your iPhone's App Store settings too, because deleting your account doesn't stop Apple billing you.
 
 ## Questions
 

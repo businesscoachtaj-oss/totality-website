@@ -65,7 +65,7 @@ Tali HQ has five plans: Free, Tali HQ, Tali HQ Pro, Tali HQ Max and Tali HQ Busi
 
 !phone[Tali HQ Business on the Plans screen](img/plans-business.png)
 
-Tali HQ Business Pro (A$389.99 a month) and Tali HQ Business Max (A$649.99 a month) are shown as coming soon. They are for teams, with seats for your staff, text messages to customers and Tali answering your phone, and they are not on sale yet.
+Tali HQ Business Pro (A$389.99 a month) and Tali HQ Business Max (A$649.99 a month) are shown as coming soon. They are for teams, with seats for your staff, text messages to customers and Tali answering your phone, and they are not on sale yet. On Tali HQ Business you can already add team seats and extra businesses. See [Business tools](business-tools.html#your-team).
 
 **Your own domain** for a hosted site is A$79 once, on any paid plan. See [Your website and your own domain](website.html).
 

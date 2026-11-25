@@ -5,7 +5,7 @@ summary: Keep family, friends, clients and leads in one place, with birthdays an
 
 Your people holds everyone who matters to you: family, friends, and if you run a business, clients and leads. Add birthdays and Tali keeps them. Set a catch up or a follow-up and she nudges you when it's due. She reads this list before every chat and brief. [[Free]]
 
-Open **Your world**, **People**, then tap **Family**, **Friends**, **Clients** or **Leads**.
+Open **Your world**, **People**, then tap **Family**, **Friends**, **Clients** or **Leads** (or **Everyone else** if you don't run a business). The screen is called **Your people**.
 
 !phones[Your people](img/clients-list.png)[Adding someone](img/clients-edit.png)
 
@@ -16,17 +16,17 @@ Open **Your world**, **People**, then tap **Family**, **Friends**, **Clients** o
 - A birthday coming up shows on the person, with how old they're turning when Tali knows the year.
 - With more than 6 people, a **Search** box appears. It searches names and notes.
 - **Dates that matter** opens every birthday and date for the next three months. See below.
-- **Invoices** opens your invoices (if you run a business). See [Invoices](invoices.html).
+- **Invoices** opens your invoices (on the Business side, if you run a business). See [Invoices](invoices.html).
 
 ## Bring your people in
 
-When the list is empty, Tali offers three ways in.
+When the list is empty, Tali offers two quick ways in, under the add button.
 
 - **Tell me about them**: opens Talk with a line ready. For example "Sam and Mia are clients, Jordan is a lead" or "Mum's birthday is 14 December."
 - **Paste a list**: names and emails from a spreadsheet or your notes, one person per line, like "Sam Reilly, sam@example.com". Tap **Add them**.
-- **Add by hand**: see below.
+Or add one person at a time with the add button: see below.
 
-Anyone you invoice is saved here for you too.
+If you run a business, anyone you invoice is saved here for you too.
 
 ## Add someone
 

@@ -5,7 +5,7 @@ summary: Business: cash in, owed, overdue and runway. Personal: what's left to s
 
 Money is your view of the month, with two sides. **Business** is five numbers and a runway. **Personal** is what you have left to spend this week, your budgets and your bills. Tali reads it before your brief. Nothing on this screen moves money. [[Tali HQ]]
 
-Open it from **Your world**, **Work**, **Money** (or **Home and money**, **Personal money**), or tap the **Money** tile on Today. Switch sides with **Business** and **Personal** at the top.
+Open it from **Your world**, **Work**, **Money** (or **Home and money**, **Personal money**), or tap the **Money** block on Today. Switch sides with **Business** and **Personal** at the top.
 
 !phones[Money](img/money.png)[Your numbers and overdue invoices](img/money-bottom.png)
 

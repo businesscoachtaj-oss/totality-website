@@ -3,7 +3,7 @@ title: Approvals, Tali never acts without your yes
 summary: How drafts wait on Today for your yes, and how to send, rework or clear each kind.
 ---
 
-Tali never sends, spends or changes anything on her own. Everything she prepares to go out to another person, a message, an email, an invoice or a calendar booking, waits on Today under **Needs your yes** until you decide. You can send it, copy it, have her rework it, or tell her it's not needed. [[Free]]
+Tali never sends, spends or changes anything on her own. Everything she prepares to go out to another person, a message, an email, an invoice or a calendar booking, waits on Today, in the **Needs you** block of Your HQ, until you decide. You can send it, copy it, have her rework it, or tell her it's not needed. [[Free]]
 
 ## Where drafts come from
 
@@ -14,11 +14,11 @@ Tali never sends, spends or changes anything on her own. Everything she prepares
 
 ## Open a draft
 
-!phones[Needs your yes on Today](img/approvals-list.png)[A draft opened](img/approvals-draft.png)
+!phones[Needs you on Today](img/approvals-list.png)[A draft opened](img/approvals-draft.png)
 
 !steps
-1. On **Today**, find **Needs your yes**. Each row shows the title and who it's to.
-2. Tap a row. The draft slides up from the bottom with the whole message.
+1. On **Today**, find **Needs you**. Each row shows the title and who it's to. If you've taken the block off your home, add it back in **Edit home**.
+2. Tap a row. The draft opens in a sheet with the whole message.
 3. Read it, then pick what to do (below).
 4. Tap **Close** to put it away and decide later.
 

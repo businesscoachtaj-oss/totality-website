@@ -9,8 +9,8 @@ Tali sorts new mail into **Needs you**, **FYI** and **Junk**, drafts replies for
 - **Outlook** (including Hotmail and Outlook.com) connects with a Microsoft sign in.
 - **Google Calendar** and **Outlook calendar** connect with a sign in.
 
-:::note Changed on 10 November 2026
-Tali no longer asks Google for permission to read your Gmail. If you connected Gmail before that date, Tali keeps reading it the old way until your first forwarded email arrives, or until the end of 24 November 2026, whichever comes first. Set up forwarding before then so nothing is missed.
+:::note Changed in November 2026
+Tali no longer asks Google for permission to read your Gmail. The old way of reading it stopped on 24 November 2026. If you connected Gmail before then and haven't set up forwarding, do the steps below and your email starts coming to Tali again.
 :::
 
 ## Send your Gmail to Tali
@@ -77,7 +77,7 @@ Each new email Tali sorts uses 1 credit. If you're out of credits, new emails st
 
 ## Replies
 
-For each email that needs you, Tali drafts a reply and puts it on Today under **Needs your yes**. Open it and tap **Send from Gmail** (or **Send from Outlook**) to send it from your own mailbox, in the same thread. See [Approvals](approvals.html#emails-from-your-gmail-or-outlook-tali-hq).
+For each email that needs you, Tali drafts a reply and puts it on Today in the **Needs you** block. Open it and tap **Send from Gmail** (or **Send from Outlook**) to send it from your own mailbox, in the same thread. See [Approvals](approvals.html#emails-from-your-gmail-or-outlook-tali-hq).
 
 You can also ask in Talk: "email Ava that Wednesday 6am works". Tali drafts it on Today with a Send button.
 
@@ -86,7 +86,7 @@ You can also ask in Talk: "email Ava that Wednesday 6am works". Tali drafts it o
 With a calendar connected:
 
 - your morning brief includes today's events and free gaps
-- **Calendar** shows under **More from Tali** on Today, with today's events and when you're free
+- the **Calendar** block on Today shows today's events and when you're free (or, if it isn't on your home, **Calendar** under **More from Tali**)
 - Tali knows your week in Talk, so you can ask "when am I free tomorrow?"
 - ask "book Zack in for a trial Friday at 7" and Tali drafts a booking on Today. Tap **Book it** and it goes into your calendar, with an invite to the attendee if there's an email
 - the meeting nudge on Today tells you what Tali knows about a client before you meet them
@@ -104,7 +104,7 @@ If Google or Microsoft signs Tali out (for example after a password change), the
 
 ## On the Free plan
 
-On Free, **Your world**, **Email** explains what you get on Tali HQ, with **See plans**. Gmail forwarding, Outlook and calendars are part of the paid plans (Tali HQ, Pro and Max) and the trial.
+On Free, **Your world**, **Email** explains what you get on Tali HQ, with **See plans**. Gmail forwarding, Outlook and calendars are part of every paid plan and the trial.
 
 !phone[Email on the Free plan](img/gmail-free.png)
 

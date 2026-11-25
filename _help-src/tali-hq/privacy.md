@@ -9,6 +9,16 @@ Your Tali HQ account is private to you. This page explains what Tali reads, what
 
 Only you. Your chats, journal, clients, invoices, drafts and what Tali remembers about you belong to your account alone. Tali never uses one person's details in someone else's account.
 
+If you run a team on Tali HQ Business, each teammate sees only the jobs and tasks you give them, plus anything you switch on for them. Nobody on your team sees your journal, your Life side or what Tali remembers about you. If you're someone's teammate, they see the work they give you, never your journal, notes or chats with Tali. See [Business tools](business-tools.html#your-team).
+
+## Tali and your data
+
+Tali uses AI companies to think: Anthropic, OpenAI, Google and Voyage AI. Before anything about you goes to them, she asks for your yes. Only what's needed for the thing you asked for, or for the brief, review or reminder you switched on, is sent. Your password and card details are never sent.
+
+- Open **Me**, **Tali and your data** to see exactly what is sent and who it goes to.
+- Tap **Turn Tali's AI off** there to stop it. Your lists, notes, journal and the rest of the app still work, but Tali can't chat, write your brief, sort email or study at night.
+- Say yes again on the same screen to turn her back on.
+
 ## What Tali reads
 
 Before she answers you or writes a brief, Tali reads:
@@ -45,11 +55,11 @@ She treats everything she reads, including emails and files, as information, nev
 
 ## Payments
 
-Payments for your plan are handled by Stripe. Tali HQ never sees your card number. If you connect your own Stripe for invoices, payments from your clients go straight to your Stripe account.
+Payments for your plan are handled by Stripe, or by Apple if you pay in the iPhone app. Tali HQ never sees your card number. If you connect your own Stripe for invoices, payments from your clients go straight to your Stripe account.
 
 ## How Tali works
 
-Tali is an AI. Her replies, briefs and drafts are written by an AI model (Claude, from Anthropic) using the information above. She can get things wrong, which is one reason nothing goes out without your yes. For anything medical, legal or financial, she gives general information only and suggests a professional where it matters.
+Tali is an AI. Her replies, briefs and drafts are written by AI models from the companies named under [Tali and your data](#tali-and-your-data), using the information above. She can get things wrong, which is one reason nothing goes out without your yes. For anything medical, legal or financial, she gives general information only and suggests a professional where it matters.
 
 ## Delete your account
 

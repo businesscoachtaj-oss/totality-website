@@ -53,6 +53,8 @@ The box under the lens is the quickest way to tell Tali something. Tap it and Ta
 
 Every morning at the time you pick, Tali writes your brief: what's on your calendar and the free gaps (when connected), emails that need you, reminders and follow-ups due, invoices that are unpaid or late, anything in your business health worth a look, what's waiting for your yes, today's training session if you have a plan, and one nudge. If you run a business, each line is tagged **Business** or **Life**.
 
+When a public holiday is coming up where you live (worked out from your time zone, by state in Australia), the brief mentions it a week out, on the Monday of that week and in the last two days, so you can plan around it.
+
 !phone[Your morning brief opened on Today](img/today-brief.png)
 
 !steps

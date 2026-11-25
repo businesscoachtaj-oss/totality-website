@@ -39,7 +39,7 @@ To check it works, send it a test email from your own email.
 1. Tali reads the email and writes a one or two line summary of who it's from and what they want.
 2. She checks whether it's spam, phishing, a cold sales blast or automated junk. Junk is filed away and doesn't notify you.
 3. If it needs a reply, she drafts one in your voice, signed with your first name. Where the reply needs something only you know, like a price or a date she hasn't been told, she leaves a gap in [square brackets] for you to fill.
-4. The draft goes on Today under **Needs your yes**.
+4. The draft goes on Today in the **Needs you** block.
 5. If notifications are on, you get one: "Email from Ava Chen" with the summary and "Reply drafted on Today."
 
 Each email Tali handles uses 1 credit. If you've run out of credits, the email is still saved and you're still notified, just without a summary or draft.
@@ -48,14 +48,14 @@ Tali treats the email as information only. If an email tells her to do something
 
 ## The Today prompt
 
-When an email needs you, a card near the top of Today says **Email from** and the sender, with the summary. With more than one, it says how many need a look. Tap it to open Email.
+When an email needs you, a card at the top of the **Needs you** block on Today says **Email from** and the sender, with the summary. With more than one, it says how many need a look. Tap it to open Email.
 
 !phones[The email card and the drafted reply on Today](img/tali-email-today.png)[The reply opened, with Send](img/tali-email-reply.png)
 
 ## Reply
 
 !steps
-1. On Today, tap the draft under **Needs your yes** (it's labelled **Email to your Tali address**).
+1. On Today, tap the draft in **Needs you** (it's labelled **Email to your Tali address**).
 2. Read it. Fill any [square bracket] gaps by asking Tali, for example **something else...** and "the price is $45 a week". See [Approvals](approvals.html#ask-tali-to-rework-a-draft-tali-hq).
 3. Tap **Send**. Or tap **Copy instead** and send it yourself.
 

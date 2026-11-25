@@ -1,17 +1,26 @@
 ---
 title: Your world
-summary: Your whole life on one map in six parts, with what is happening in each right now and every list and tool one tap away.
+summary: Your whole life in six parts, with what is happening in each right now and every list and tool one tap away.
 ---
 
 Your world is everything Tali looks after, as she sees it. It is one map in six parts: People, Work, Health, Home and money, Growth and Your words. Each part opens with what is happening in it right now, from your own data, and lists everything that lives there. It fills in as you talk to Tali. [[Free]]
 
 Tap **Your world** at the bottom of the app.
 
+## If you run a business
+
+Your world follows the side you're on, with **Business** and **Life** at the top. Your people show on both sides.
+
+- On the Business side it's called **Your business**: **People**, **Work** and **Growth**, where Growth is your goals, the weekly review and decisions.
+- On the Life side it's called **Your life**: **People**, **Health**, **Home and money**, **Growth** and **Your words**, where Growth is your goals, habits, learning, wins, someday and the shutdown.
+
+If you don't run a business, you see all six parts on one page. See [Business and Life](modes.html).
+
 !phones[The map](img/world-map.png)[Everything, as a list](img/world-list.png)
 
 ## The map
 
-Each part of your life is its own moving shape, and each star in it is something Tali knows.
+At the top is a ruled list with one line for each part of your life. Each line has its own small moving shape on the left, then the part's name, what's in it, and how much Tali knows there (like "12 she knows"), or for Home and money how much she's tracking. A part with nothing in it yet says "Nothing yet".
 
 - **People** is a network on a globe.
 - **Work** is a board.
@@ -20,7 +29,7 @@ Each part of your life is its own moving shape, and each star in it is something
 - **Growth** is a galaxy.
 - **Your words** are fireflies rising.
 
-Tap a part of the map to jump to it in the list underneath.
+Tap a line to step straight in: People opens Your people, Work opens Invoices (or To do if you don't run a business), Health opens Food and training, Home and money opens Personal money, Growth opens Goals and Your words opens your Journal.
 
 ## Everything, as a list
 
@@ -44,6 +53,13 @@ See [Your people and dates](clients.html).
 
 | Row | What it is |
 |---|---|
+| Jobs and quotes [[Business]] | A quote becomes a job, a job becomes an invoice. See [Business tools](business-tools.html) |
+| Pipeline [[Business]] | Everyone who might become a job |
+| Bookings [[Business]] | Your week and your booking link |
+| Projects [[Business]] | The bigger pieces of work |
+| Website [[Business]] | A simple site, hosted for you. See [Your website](website.html) |
+| On autopilot [[Business]] | Rules that put a nudge on your To do. See [On autopilot](autopilot-books.html) |
+| Bookkeeping pack [[Business]] | A quarter on one page for your accountant |
 | Email [[Tali HQ]] | Sorted, with replies drafted. See [Gmail and Outlook](gmail-outlook.html) |
 | Invoices [[Tali HQ]] | Make, share, track. See [Invoices](invoices.html) |
 | Money [[Tali HQ]] | In, owed and runway. See [Money](money.html) |
@@ -51,7 +67,7 @@ See [Your people and dates](clients.html).
 | To do | What is on your plate. See [Your lists](lists.html) |
 | Rules [[Pro]] | What she does on her own. See [Night school and Rules](night-school-rules.html) |
 
-Invoices, Receipts and Rules only show if you told Tali you run a business. If you didn't, a small card says "Run a business? Add it in Settings for invoices, clients and receipts".
+Everything except Email and To do only shows if you told Tali you run a business. The rows tagged Business open on any plan and show what they do, with a button to Plans. If you don't run a business, a small card says "Run a business? Add it in Settings for invoices, clients and receipts".
 
 ### Health
 
@@ -91,6 +107,7 @@ Invoices, Receipts and Rules only show if you told Tali you run a business. If y
 | Journal | Your time and your place. See [Journal and notes](journal.html) |
 | Notes | Things to find again |
 | Ideas | Half thoughts she keeps warm for you |
+| My website [[Tali HQ]] | A simple site of your own, hosted for you. See [Your website](website.html) |
 | Night school [[Pro]] | What she studies for you tonight |
 
 ## Fill it in by talking
