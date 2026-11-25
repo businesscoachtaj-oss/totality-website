@@ -9,7 +9,7 @@ Totality Training is a workout tracker for people who train on their own. You fo
 ## The plans
 
 - [[Free]] A$0. Unlimited workout logging, the full exercise library with demos, 3 of your own routines, the Strength Foundations programme, 3 questions for Tali a day and Sleep sounds.
-- [[Training]] A$8.99 a month or A$91.70 a year. All 99 Totality programmes, unlimited routines, weights that go up by themselves when you earn it, sets that adjust to how each muscle feels, Progress (strength charts, personal bests and body stats) and the weekly review.
+- [[Training]] A$8.99 a month or A$91.70 a year. All 279 Totality programmes, unlimited routines, weights that go up by themselves when you earn it, sets that adjust to how each muscle feels, Progress (strength charts, personal bests and body stats) and the weekly review.
 - [[Training + AI]] A$11.99 a month or A$122.30 a year. Everything in Training, plus Tali builds programmes around your week and kit, gives her take after each workout and writes up your week. 100 Tali credits a month.
 
 Every new account starts with a **7 day free trial** [[Trial]] of everything in Training + AI. No card is needed. When it ends you move to Free unless you pick a plan, and nothing you logged is deleted. See [Plans and billing](plans.html).

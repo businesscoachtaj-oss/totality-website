@@ -1,6 +1,6 @@
 ---
 title: Programmes
-summary: Create a programme, draft one with Tali, duplicate or share it, and use your gym's Collection.
+summary: Create a programme, draft one with Tali, start from one of 279 templates, duplicate or share it, and use your gym's Collection.
 ---
 
 A programme is a block of training: a number of weeks, each with sessions on set days, each session with its exercises. You build it once and assign it to as many clients as you like.
@@ -43,6 +43,29 @@ In the New Programme sheet, **Draft it with Tali** builds the first draft for yo
 On the Free plan the button reads **Add Tali** and opens your plans instead.
 
 !phone[Draft a programme with Tali](img/tali-programme.png)
+
+## Templates
+
+The **Templates** tab on Programmes has ready-made programmes you can set for a client or use as a starting point: the original Totality templates (**Totality classics**) and the full Totality programme library, 279 programmes. The library has every style at 2 to 6 days a week, at Beginner, Intermediate and Advanced. The level changes the exercises as well as the sets, reps and rest.
+
+| Everyday training | Sports and styles |
+|---|---|
+| Whole body | Powerlifting, Street Lifting, Olympic Lifting |
+| Glutes and legs | Bodybuilding, Powerbuilding |
+| Glutes and arms | Strongman, Circus Strongman |
+| Strength | Gymnastics, Calisthenics |
+| Lean and fit | Kettlebell, Athletic Performance, Hybrid (lifting and running) |
+
+!steps
+1. Open **My Programmes** from the Home shortcuts and tap the **Templates** tab, then **Programmes**.
+2. Pick a **STYLE** from the drop down, then the **DAYS A WEEK** and **LEVEL**.
+3. Tap a programme to see every workout, exercise, set and rep, and how it progresses.
+4. Tap **Use this template**. Totality makes your own copy, named like "Strongman, 3 days, Intermediate", and opens it in the [programme builder](programme-builder.html).
+5. Change anything you like, then tap **Functions**, then **Assign to Client**.
+
+**Ask Tali to tailor it** on the same screen has Tali adjust the template for a client's goal, level, equipment and injuries.
+
+A few styles need kit most gyms don't have. Strongman days say to use the Beginner version of any event you can't do (sandbags, farmer's carries and the trap bar). Gymnastics and Calisthenics need a pull-up bar, and rings help. Every exercise is from the exercise library and has a demo video.
 
 ## Collection (gym trainers)
 

@@ -1,6 +1,6 @@
 ---
 title: Choose a programme
-summary: Pick one of 99 Totality programmes in four questions, see every workout first, then start it.
+summary: Pick one of 279 Totality programmes in four questions, see every workout first, then start it.
 ---
 The **Train** tab shows the programme you are on and every way to change it.
 
@@ -17,13 +17,25 @@ The **Train** tab shows the programme you are on and every way to change it.
 4. Tap a template to see every workout and exercise.
 5. Tap **Start this programme** (or **Switch to this programme** if you are on one already).
 
-The focuses are Whole body, Glutes and legs, Glutes and arms, Strength, and Lean and fit. Only the ones with a template for your kit and days are shown.
+**Where do you train?** has five answers: **Full gym**, **Dumbbells**, **No equipment**, **Bars and rings** (a pull-up bar, dip bars or rings) and **Kettlebells**.
+
+**What do you want to focus on?** has everyday training and sports and styles. Only the ones with a programme for your kit and days are shown.
+
+| Everyday training | Sports and styles |
+|---|---|
+| Whole body | Powerlifting, Street Lifting, Olympic Lifting |
+| Glutes and legs | Bodybuilding, Powerbuilding |
+| Glutes and arms | Strongman, Circus Strongman |
+| Strength | Gymnastics, Calisthenics |
+| Lean and fit | Kettlebell, Athletic Performance, Hybrid (lifting and running) |
+
+Every style comes at 2 to 6 days a week and at Beginner, Intermediate and Advanced. The level changes the exercises too, not just the sets and reps. For example, Strongman beginners use sandbags, farmer's carries and the trap bar, and the log, yoke and stones come in at Intermediate.
 
 ## What a programme looks like
 
 !phone[A programme's details](img/choose-programme-detail.png)
 
-Each programme shows its days a week and which days they land on, how many weeks it runs, the level and the kit. Every programme ends with a lighter week. Below are the workouts, day by day, with sets and reps for each exercise.
+Each programme shows its days a week and which days they land on, how many weeks it runs, the level and the kit, and how it progresses. Powerlifting, for example, adds 2.5 kg to the main lifts when every set is done. Every programme ends with a lighter week. Below are the workouts, day by day, with sets and reps for each exercise.
 
 On Free, **Strength Foundations** is free to start. The others show a lock and need [[Training]].
 
