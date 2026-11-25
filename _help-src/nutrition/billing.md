@@ -24,7 +24,7 @@ In the iPhone app, subscriptions are sold through Apple. The prices are the ones
 
 ## Change plan
 
-- **Paid through Stripe:** open the plans screen, tap the other plan and tap **Switch to Nutrition + AI** (or **Switch to Nutrition**). It changes straight away on your existing subscription, and Stripe adjusts the price for the rest of the period. You'll see "Plan changed".
+- **Paid through Stripe:** open the plans screen, tap the other plan and tap **Switch to Nutrition + AI** (or **Switch to Nutrition**). You see what it costs and when it starts before anything changes. Moving up (Nutrition to Nutrition + AI, or monthly to yearly) starts straight away and you pay the difference for the rest of your billing period now. Moving down starts when the period you've already paid for ends, with nothing to pay, and the plans screen shows it with **Keep**.
 - **Paid through Apple:** change it in your iPhone's **Settings**, Apple ID, **Subscriptions**.
 - A plan paid on the web can't be changed from the iPhone app, and an Apple plan can't be changed on the web. The screen tells you where to go.
 

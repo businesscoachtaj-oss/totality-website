@@ -20,7 +20,7 @@ You move to Free automatically: same 3 clients, no Tali, no deadline. Nothing lo
 Yes. Every Solo plan has a yearly option at 15% off twelve monthly payments.
 
 ?? Can I change plans any time?
-Yes, in **Settings > Manage Subscription > Change Plan**. It applies straight away and the difference is prorated on your next invoice.
+Yes, in **Settings > Manage Subscription > Change Plan**. You see the cost first. A bigger plan starts straight away and you pay the difference for the rest of your billing period then. A smaller plan starts when the period you've already paid for ends.
 
 ?? How do I cancel?
 **Settings > Manage Subscription > Manage Billing**, then cancel in Stripe. You drop to Free and keep your data. See [Your subscription](subscription.html#cancel-your-plan).

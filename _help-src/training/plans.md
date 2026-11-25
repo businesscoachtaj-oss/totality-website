@@ -37,7 +37,7 @@ If a business, club or group gave you a team code, your plan is covered and you 
 !steps
 1. Open **Settings** and tap **Your plan**, or tap **Plans** on the trial banner on Home.
 2. Pick **Monthly** or **Yearly**, then tap **Choose Training** or **Choose Training + AI**. You pay with Stripe.
-3. To change plan, tap **Change to** the other plan. Stripe works out the difference on your next bill.
+3. To change plan, tap **Change to** the other plan, or **Switch to yearly** (or monthly) on your own plan. You see what it costs and when it starts before anything changes. Moving up (Training to Training + AI, or monthly to yearly) starts straight away and you pay the difference for the rest of your billing period now. Moving down starts when the period you've already paid for ends, with nothing to pay, and Plans shows it with **Keep**.
 4. To change your card or cancel, tap **Manage plan, card or cancel**.
 
 Plans renew until you cancel. When a paid plan ends you go back to Free, and everything you logged stays.

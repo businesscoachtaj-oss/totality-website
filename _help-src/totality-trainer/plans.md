@@ -89,7 +89,7 @@ Nothing. You keep your 3 clients, their programmes and all their history on Free
 No one is deleted. You just can't add a new client while you're at or over 3. Archive clients you no longer coach to get under the limit, or pick a Solo plan.
 
 ?? Can I switch between monthly and yearly?
-Yes. Open **Settings > Manage Subscription > Change Plan**, pick **Monthly** or **Yearly · Save 15%**, then **Switch to this plan**.
+Yes. Open **Settings > Manage Subscription > Change Plan**, pick **Monthly** or **Yearly · Save 15%**, then **Switch to this plan**. Monthly to yearly starts straight away and you pay for the year now, less what's left of your month. Yearly to monthly starts when your year ends.
 
 ?? Do I need a card for the trial?
 No. You only enter a card when you subscribe to a Solo plan.
