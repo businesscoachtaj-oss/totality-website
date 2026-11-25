@@ -239,6 +239,20 @@ def faq_schema(items):
     return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip(a)}} for q, a in items]}
 
+# ADDED (26 Nov 2026, Taj: "Do it all", SEO push): tells Google the page has a how-to video, so the
+# animated clips can show in video results for searches like "how to clean kettlebell".
+CLIPS_LIVE = '2026-11-25T00:00:00+11:00'
+
+def video_schema(x, desc, path):
+    return {"@context": "https://schema.org", "@type": "VideoObject",
+            "name": f'How to do the {x["name"]}',
+            "description": desc,
+            "thumbnailUrl": [x['thumb']],
+            "contentUrl": x['own_video'],
+            "uploadDate": CLIPS_LIVE,
+            "url": BASE + path,
+            "publisher": {"@type": "Organization", "name": "Totality 360", "url": BASE + "/"}}
+
 def join_words(xs):
     xs = list(xs)
     return xs[0] if len(xs) == 1 else ', '.join(xs[:-1]) + ' and ' + xs[-1]
@@ -371,7 +385,11 @@ def exercise_page(x):
     mw = join_words([m.lower() for m in x['muscles'][:3]]) if x['muscles'] else ''
     desc = f'How to do the {x["name"].lower() if not x["name"][:2].isupper() else x["name"]}' + (f', the muscles it works ({mw})' if mw else '') + ', coaching cues and sets and reps. From the Totality exercise library.'
     title = f'{x["name"]}: how to do it and muscles worked | Totality'
-    return page(title, desc, f'/exercises/{x["slug"]}.html', crumbs, body, [faq_schema(faqs), crumbs_schema(crumbs)] if faqs else [crumbs_schema(crumbs)], image=x['thumb'] or None)
+    path = f'/exercises/{x["slug"]}.html'
+    schema = ([faq_schema(faqs)] if faqs else []) + [crumbs_schema(crumbs)]
+    if x['own_video'] and x['thumb']:
+        schema.append(video_schema(x, desc, path))
+    return page(title, desc, path, crumbs, body, schema, image=x['thumb'] or None)
 
 # ── Hubs and index ───────────────────────────────────────────────────────────
 def hub_page(kind, label, slug, xs):
