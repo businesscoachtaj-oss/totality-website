@@ -16,6 +16,8 @@ Tap the gear at the top of Home.
 - **Your goal and week.** Change your goal, level, days, time and kit.
 - **Tali and your data.** What Tali uses, and turning her on or off. See [Tali](tali.html).
 - **Units and region.** kg or lb, cm or ft in, kcal or kJ, and more.
+- **Find a coach near you.** Opens Totality Discover: trainers, gyms, studios and clinics near you, with their intro offers and prices. Search by suburb or postcode, or use your location, and send an enquiry.
+- **Insurance with BizCover**, under **FOR COACHES AND TRAINERS**. If you coach people, it opens Totality's insurance page: public liability and professional indemnity, with $20 off each policy using code TOTALITY.
 - **Privacy policy**, **Terms** and **Sign out**.
 - **Delete my account.**
 

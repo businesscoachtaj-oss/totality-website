@@ -57,7 +57,7 @@ When a document has expired or expires within 30 days, a row appears on your das
 ## Questions
 
 ?? Can trainers upload their own documents?
-Documents are added by you, the gym owner or admin, in the Compliance hub. Ask your trainers to send you their renewed certificates.
+Yes. Trainers can upload their own in **Settings**, **Certificates and checks**, and they show here. You can still add documents for them in the Compliance hub.
 
 ?? Who can see these documents?
 Files are stored privately for your gym. Members cannot see them.

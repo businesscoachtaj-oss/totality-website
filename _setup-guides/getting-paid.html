@@ -1,0 +1,199 @@
+<!-- PAGE 1 -->
+<section class="page">
+  {{HEADER:November 2026}}
+  <div class="eyebrow">Getting paid with Totality</div>
+  <h1>{{title}}</h1>
+  <p class="lede">{{lede}}</p>
+  <!--if:forme--><div class="forme"><b>For you:</b> {{forme}}</div><!--endif:forme-->
+
+  <div class="facts">
+    <!--if:plan_now--><div class="fact"><b>Your plan now</b><span>{{plan_now}}</span><small>{{plan_now_note}}</small></div><!--endif:plan_now-->
+    <!--if:plan_next--><div class="fact"><b>{{plan_next_label}}</b><span>{{plan_next}}</span><small>{{plan_next_note}}</small></div><!--endif:plan_next-->
+    <div class="fact"><b>To take payments</b><span>POS add-on, A$9.99 a month</span><small>Payments go to your own bank account</small></div>
+    <div class="fact"><b>Fees per payment</b><span>Totality 1.25% plus Stripe's fee</span><small>Taken from your payout, never added to the client's price</small></div>
+    <!--ifnot:plan_now--><div class="fact"><b>Card payments</b><span>Stripe 1.65% + 30c</span><small>Visa, Mastercard, Apple Pay, Google Pay</small></div><!--endifnot:plan_now-->
+    <!--ifnot:plan_next--><div class="fact"><b>Bank payments</b><span>Stripe 1% + 30c</span><small>PayTo direct debit, never more than A$3.50</small></div><!--endifnot:plan_next-->
+  </div>
+
+  <h2>Four ways your clients can pay</h2>
+  <div class="opts">
+    <div class="opt best">
+      <h3><span class="num">1</span>Automatic plans <span class="tag">Best for regulars</span></h3>
+      <p>Weekly, fortnightly or monthly, from the client's card or bank account, on the day you choose. Their sessions are added with every payment, so nobody has to remember to pay you.</p>
+      <p class="when">Use for: clients who train with you every week.</p>
+    </div>
+    <div class="opt">
+      <h3><span class="num">2</span>Session packs</h3>
+      <p>A one-off pack, like 10 sessions. The client buys it in your shop and the sessions land on their profile straight away.</p>
+      <p class="when">Use for: clients who prefer to pay up front.</p>
+    </div>
+    <div class="opt">
+      <h3><span class="num">3</span>Payment links</h3>
+      <p>Charge any amount for anything. Send the link by text or email and the client pays by card on their phone. No app needed.</p>
+      <p class="when">Use for: casual sessions, trials, one-offs.</p>
+    </div>
+    <div class="opt">
+      <h3><span class="num">4</span>Keep {{pay_now_short}}</h3>
+      <p>No fees, but you check each payment and record it yourself: on the client's <b>Money</b> tab, tap <b>Add sessions</b> and pick how they paid, so the sessions show as paid for.</p>
+      <p class="when">Use for: {{keep_use_for}}</p>
+    </div>
+  </div>
+
+  <h2>What a client's payment costs you</h2>
+  <table>
+    <thead><tr><th>A A${{amount}} {{amount_label}}</th><th class="r">Stripe's fee</th><th class="r">Totality 1.25%</th><th class="r">You keep</th></tr></thead>
+    <tbody>
+      <tr><td>Card (Visa, Mastercard, Apple Pay, Google Pay)<br><span class="small">Stripe: 1.65% + 30c on Australian cards</span></td><td class="r">A${{card_fee}}</td><td class="r">A${{tot_fee}}</td><td class="r"><b>A${{card_keep}}</b></td></tr>
+      <tr><td>Bank account (PayTo direct debit)<br><span class="small">Stripe: 1% + 30c, never more than A$3.50</span></td><td class="r">A${{bank_fee}}</td><td class="r">A${{tot_fee}}</td><td class="r"><b>A${{bank_keep}}</b></td></tr>
+      <tr><td>{{pay_now_short}}<br><span class="small">Outside the app, recorded by hand</span></td><td class="r">A$0</td><td class="r">A$0</td><td class="r"><b>A${{amount}}.00</b></td></tr>
+    </tbody>
+  </table>
+  <p class="note">Clients pay exactly your price. The fees come out of your payout before it reaches your bank.<!--if:running_cost--> {{running_cost}}<!--endif:running_cost--></p>
+  {{FOOTER:totality360.com.au}}
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  {{HEADER:Steps 1 to 3: switch payments on}}
+  <div class="eyebrow">Step by step</div>
+  <h2 style="font-size:17pt">Set it up once (about 15 minutes)</h2>
+
+  <div class="step">
+    <div>
+      <h3><span class="num">1</span>Add the POS add-on</h3>
+      <ol>
+        <li>Open <span class="path">Settings</span> then <span class="path">Manage Subscription</span>.</li>
+        <li>Scroll to <b>POS</b> and tap <b>Add POS, $9.99/mo</b>. Pay in Stripe.</li>
+      </ol>
+      <div class="say"><b>Why:</b> the POS add-on is what lets you sell, take payments and use the bookkeeping pack for your accountant.</div>
+    </div>
+    <div class="shot"><span class="cap">1</span><img src="img/1_pos_only.jpg"></div>
+  </div>
+
+  <div class="step">
+    <div>
+      <h3><span class="num">2</span>Connect your bank through Stripe</h3>
+      <ol>
+        <li>On the same screen, under <b>Trainer Payouts</b>, tap <b>Set Up Payouts</b>.</li>
+        <li>Stripe asks for your business details, ID and the bank account you want paid into. Finish every step.</li>
+        <li>It shows <b>Verification in progress</b> while Stripe checks (usually 1 to 2 business days), then <b>Payouts active</b>.</li>
+      </ol>
+      <!--if:stripe_note--><div class="say">{{stripe_note}}</div><!--endif:stripe_note-->
+    </div>
+    <div class="shot" style="background:#F3F1EE;border:none;padding:10px;font-size:8.8pt;color:var(--muted);line-height:1.5">
+      <b style="color:var(--dark);font-family:'Bricolage Grotesque';font-size:10pt">The button tells you where you're up to</b><br><br>
+      <b style="color:var(--dark)">Set Up Payouts</b>: not started<br>
+      <b style="color:var(--dark)">Continue Setup</b>: Stripe is checking<br>
+      <b style="color:var(--dark)">Fix Issues</b>: Stripe needs something<br>
+      <b style="color:var(--dark)">View Connect Dashboard</b>: payouts are on
+    </div>
+  </div>
+
+  <div class="step">
+    <div>
+      <h3><span class="num">3</span>Choose how clients pay, and your debit day</h3>
+      <ol>
+        <li>Once payouts are on, <b>How clients can pay</b> shows on the same screen.</li>
+        <li><b>Card</b> is always on. <b>Bank account (PayTo)</b> is on too. Leave it on: it's cheaper for you and suits clients without a credit card.</li>
+        <li>Pick your <b>Debit day</b> from the two drop downs: a weekday for weekly and fortnightly plans, and a date for monthly plans. Everyone's payment then comes out on the same day.</li>
+      </ol>
+      <div class="say"><b>Tip:</b> Monday and the 1st are the defaults. If you change the day later, plans already running move to the new day on their own.</div>
+    </div>
+    <div class="shot"><span class="cap">3</span><img src="img/3_debit.jpg"></div>
+  </div>
+  {{FOOTER:Screens show demo data}}
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  {{HEADER:Steps 4 to 7: your clients}}
+  <div class="step">
+    <div>
+      <h3><span class="num">4</span>Create what you sell</h3>
+      <ol>
+        <li>Open any client's <b>Money</b> tab and tap <b>Sell a pack</b> in the Sessions card. That opens <b>My Products</b>. Tap <b>New</b>.</li>
+        <li>Pick <b>PT Package</b>, add a name and price.</li>
+        <li>Under <b>How often</b>: <b>One-off</b> for a pack (like 10 sessions), or <b>Weekly</b>, <b>Fortnightly</b> or <b>Monthly</b> for a plan. Set <b>Sessions each time</b>.</li>
+        <li>Tap <b>Create product</b>.</li>
+      </ol>
+      <p class="small" style="margin-top:4px">Example: "2 sessions a week", A$120, Weekly, 2 sessions each time.</p>
+    </div>
+    <div class="shot"><span class="cap">4</span><img src="img/4_product.jpg"></div>
+  </div>
+
+  <div class="step">
+    <div>
+      <h3><span class="num">5</span>Get each client's card or bank account</h3>
+      <ol>
+        <li>The client opens <span class="path">Payments</span> then <span class="path">Payment method</span> in their app and taps <b>Add card</b> or <b>Add bank account</b>.</li>
+        <li>For a bank account they enter their BSB and account number (or PayID), then approve the agreement in their banking app. Each payment is capped at A$1,500.</li>
+        <li>Or do it from their <b>Money</b> tab in your app: <b>Request Payment Method</b> sends them a reminder, and <b>Add Card Manually</b> lets you enter a card with them in person.</li>
+      </ol>
+    </div>
+    <div class="shot"><span class="cap">5</span><img src="img/5_client_pay.jpg"></div>
+  </div>
+
+  <div class="step">
+    <div>
+      <h3><span class="num">6</span>Put them on a plan</h3>
+      <ol>
+        <li>Open the client's <b>Money</b> tab and tap <b>Put on a plan</b>.</li>
+        <li>Pick the plan. Totality shows what they pay today and what comes out after that.</li>
+        <li>Tap <b>Start plan</b>. That's it.</li>
+      </ol>
+      <div class="say"><b>Starting between debit days:</b> they pay a part payment today for the days up to your debit day, then the full amount every time after. Sessions are added with each full payment.</div>
+      <p class="small" style="margin-top:4px">The client sees the plan under Payments, Memberships. Either of you can cancel, and it stops at the end of the time already paid for. If a payment fails, Stripe tries again and you get a notification.</p>
+    </div>
+    <div class="shot"><span class="cap">6</span><img src="img/6_plan.jpg"></div>
+  </div>
+
+  <div class="step">
+    <div>
+      <h3><span class="num">7</span>One-offs: send a payment link</h3>
+      <ol>
+        <li>Open <b>POS</b> from your Home shortcuts.</li>
+        <li>Enter the amount and a description, like "Casual PT session". Pick the client or leave it on Walk-in.</li>
+        <li>Tap <b>Generate payment link</b>, then <b>Copy</b>, <b>SMS</b> or <b>Email</b>.</li>
+      </ol>
+    </div>
+    <div class="shot"><span class="cap">7</span><img src="img/7_link.jpg"></div>
+  </div>
+  {{FOOTER:Screens show demo data}}
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+  {{HEADER:Your switch}}
+  <div class="eyebrow">Your switch</div>
+  <h2 style="font-size:17pt">{{switch_title}}</h2>
+  <div class="tl">
+    <div class="box"><span class="d">{{t1_when}}</span><b>Keep {{pay_now_short}}</b><ul><li>Each time a client pays, tap <strong>Add sessions</strong> on their Money tab.</li><li>Cash off sessions as usual.</li></ul></div>
+    <div class="box"><span class="d">{{t2_when}}</span><b>Steps 1 to 4</b><ul><li>Add POS and set up payouts (allow 1 to 2 business days).</li><li>Pick your debit day and create your plans.</li></ul></div>
+    <div class="box"><span class="d">{{t3_when}}</span><b>Tell your clients</b><ul><li>Let them know payments go automatic{{switch_in}}.</li><li>Ask them to add a card or bank account (step 5).</li></ul></div>
+    <div class="box"><span class="d">{{t4_when}}</span><b>Start plans</b><ul><li>Put each client on their plan (step 6).</li><li>Payments then run on your debit day.</li></ul></div>
+  </div>
+
+  <div class="eyebrow">Money in your PT business</div>
+  <h2 style="font-size:15pt">Good to know</h2>
+  <div class="biz">
+    <div class="box"><h3>ABN</h3>{{abn_text}}</div>
+    <div class="box"><h3>GST</h3>{{gst_text}}</div>
+    <div class="box"><h3>Tax and records</h3>Put a share of every payment aside for tax. Keep records for 5 years. A separate bank account for your business makes this much easier, and it's where your Stripe payouts can go.</div>
+    <div class="box"><h3>Your terms</h3>Write down your cancellation window (for example 24 hours), whether packs expire, and how refunds work. Share them before a client pays.</div>
+  </div>
+  <p class="note">General information only, not tax or legal advice. Your accountant can confirm what applies to you.</p>
+
+  <h2 style="margin-top:9px">Your checklist</h2>
+  <ul class="check">
+    <li>Add the POS add-on</li>
+    <li>Set up payouts with Stripe</li>
+    <li>Pick your debit day</li>
+    <li>Create your plans and packs</li>
+    <li>Check <b>Credit System</b> is on: Settings, POS &amp; Billing</li>
+    <li>Ask clients to add a card or bank account</li>
+    <li>{{start_item}}</li>
+    <!--if:plan_item--><li>{{plan_item}}</li><!--endif:plan_item-->
+  </ul>
+  {{CONTACT}}
+  {{FOOTER:Prices in Australian dollars, correct at {{as_at}}}}
+</section>

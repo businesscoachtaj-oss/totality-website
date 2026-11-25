@@ -52,10 +52,14 @@ code{background:var(--surface);padding:1px 6px;border-radius:6px;font-size:.92em
 table{width:100%;border-collapse:collapse;margin:8px 0 22px;font-size:.95rem;display:block;overflow-x:auto}
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 th{background:var(--surface);font-weight:700}
-.onpage{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:0 0 26px}
-.onpage p{margin:0 0 6px;font-weight:800;font-size:.8rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.onpage ul{margin:0;padding-left:18px;columns:2;column-gap:28px}
-.onpage li{break-inside:avoid;font-size:.95rem}
+.meta{margin:-12px 0 22px;color:var(--muted);font-size:.85rem;font-weight:600}
+.onpage{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:14px;padding:14px 18px 10px;margin:0 0 30px}
+.onpage p{margin:0 0 8px;font-weight:800;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.onpage ol{margin:0;padding:0;list-style:none;counter-reset:op;display:grid;grid-template-columns:1fr 1fr;gap:2px 24px}
+.onpage li{counter-increment:op;font-size:.95rem;min-width:0}
+.onpage li a{display:flex;gap:10px;padding:5px 0;color:var(--ink);text-decoration:none;font-weight:600;line-height:1.35}
+.onpage li a::before{content:counter(op);flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent-soft);color:var(--accent-dark);font-size:.75rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:-1px}
+.onpage li a:hover{color:var(--accent-dark)}
 /* badges */
 .badge{display:inline-block;vertical-align:.1em;padding:1px 9px;border-radius:999px;font:800 .7rem/1.6 var(--font);letter-spacing:.05em;text-transform:uppercase;background:var(--surface);color:var(--ink-2);border:1px solid var(--line);margin:0 2px}
 .badge--free{background:var(--good-soft);color:var(--good);border-color:#BFE3CC}
@@ -122,7 +126,7 @@ th{background:var(--surface);font-weight:700}
   .toc{position:fixed;inset:62px 0 0 0;height:auto;background:#fff;z-index:25;transform:translateX(-100%);transition:transform .2s;border-right:0;padding-right:var(--gutr)}
   body.toc-open .toc{transform:none}
   .content{padding-left:var(--gut)}
-  .onpage ul{columns:1}
+  .onpage ol{grid-template-columns:1fr}
   .search{flex:1 1 auto}
   .topbar__brand span{display:none}
 }

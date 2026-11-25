@@ -3,7 +3,7 @@
   "audience": "For gym owners and admins",
   "accent": "orange",
   "icon": "/icon-totality.png",
-  "updated": "24 November 2026",
+  "updated": "25 November 2026",
   "groups": [
     {
       "title": "Start here",
@@ -22,6 +22,7 @@
         "stripe-connect",
         "branding",
         "website",
+        "discover",
         "units-region",
         "notifications",
         "locations",
@@ -120,6 +121,7 @@
     "stripe-connect",
     "branding",
     "website",
+    "discover",
     "units-region",
     "notifications",
     "locations",

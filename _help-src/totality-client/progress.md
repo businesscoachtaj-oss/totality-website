@@ -75,6 +75,22 @@ Tap **Strength** to see a graph of your estimated one rep max (**est. 1RM**) ove
 
 These graphs fill in automatically from your workouts. There's nothing to type.
 
+The **Rep max calculator** sits in one row at the top of Strength. It also opens from the calculator button on each exercise during a workout.
+
+### Rep max calculator
+
+The **Rep max calculator** works out your one rep max from a set you've done, and the right weight for any rep target.
+
+!steps
+1. Pick the lift under **From logged training** (it uses your best recent set), or tap **Or type a set** and enter the **Weight** and **Reps**.
+2. Set **Reps left in the tank**: how many more you could have done. None means you went to failure.
+3. Read your **Estimated one rep max**, then switch views: **Rep maxes** (your best for 1 to 12, 15 and 20 reps), **Percentages** (for programmes written as a percentage of your max), **What to lift** (the plates for each side of the bar, or the dumbbell for each hand, for the reps you want) and **Where you stand**.
+
+**Where you stand** compares your max with your body weight on the squat, bench press, deadlift and overhead press. It's a general guide from body weight multiples, not a ranking against other lifters. **Share where I stand** makes a picture to share. Your body weight is never on it.
+
+The estimate blends seven well known formulas. It's an estimate, not a test: warm up, use a spotter for heavy singles, and stop a set if your form goes. More than 30 reps all up is too many to estimate from, so use a heavier set.
+
+
 ## Questions
 
 ?? My trainer says they can't see my progress photos.

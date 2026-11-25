@@ -15,7 +15,7 @@ Home is where you start each day. It shows what to do today and how the week is 
 - **Today's workout.** The programme, the week you are on and today's workout. Tap **Start workout**. On a rest day it shows the next workout, and you can do it today instead.
 - **This week.** A dot for each day: filled red when done, a red ring when a workout is still to come. Below it: workouts done this week, your week streak and how much you lifted compared with last week.
 - **Today's food.** Shown when you use Totality Nutrition on the same account: protein and calories against your targets. See [With Totality Nutrition](nutrition.html).
-- **Quick access.** **Workout history**, **Weekly review** and **Sleep sounds**.
+- **Quick access.** **Workout history**, **Weekly review**, **Rep max calculator** and **Sleep sounds**. The calculator is explained on [Progress](progress.html#rep-max-calculator).
 
 ## When a lift stalls or a workout keeps getting missed
 

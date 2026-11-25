@@ -31,6 +31,10 @@ Tap **Units and region** to choose how numbers and dates show for you. Changing 
 
 !phone[Units and region](img/units.png)
 
+## What you do
+
+Independent trainers and practitioners see **WHAT YOU DO**, with the type picked at sign up. Tap **Change** to pick another. It sets what your people are called, which tools show (**Classes**, **Memberships**, **Session packs**, **Programmes and check-ins**, each with its own switch) and whether you get a **Notes** tab. Switching a tool off only hides it. At a gym, your layout follows the gym's type instead.
+
 ## Allied health tools
 
 For exercise physiologists, physios, massage therapists, dietitians and anyone who sees clients by appointment. Switch on what you use:

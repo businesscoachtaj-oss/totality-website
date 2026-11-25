@@ -1,6 +1,6 @@
 ---
 title: Signing up and your first login
-summary: Create your gym's account, set up the basics and take the quick tour.
+summary: Create your business account, pick what you do, set up the basics and take the quick tour.
 ---
 
 You can create your gym's Totality account yourself in a few minutes, on your phone or at totalityapp.com.au. Your 7-day free trial starts as soon as the account is made, with no card needed.
@@ -16,19 +16,36 @@ You can create your gym's Totality account yourself in a few minutes, on your ph
 
 !phone[The sign up screen](img/sign-up-form.png)
 
-## Tell Totality you run a gym
+## Tell Totality what you run
 
 Next you see **Welcome to Totality** with the line "Your 7-day free trial has started."
 
 !steps
-1. Under **HOW WILL YOU USE TOTALITY?** pick **Gym / Studio** ("I manage multiple trainers"). Solo Trainer is for one independent trainer, and does not give you the gym tools.
-2. Under **YOUR BUSINESS**, type your **Gym or studio name**, for example Iron Works. You can change it later in Settings.
-3. Read the **GETTING STARTED** tips and tap **Let's Go →**.
+1. Under **ARE YOU SOLO OR A STUDIO OWNER?** pick **Studio owner** ("I run a business with a team"). **Solo** is for one trainer or practitioner on their own, and does not give you the gym tools.
+2. Under **WHAT DO YOU DO?** tap the closest match. It sets up your layout: what your people are called, what the schedule tab is called, and which tools are switched on.
+3. Under **YOUR BUSINESS**, type your **Business name**, for example Iron Works. You can change it later in Settings.
+4. Read the **GETTING STARTED** tips and tap **Let's Go →**.
 
-!phone[Pick Gym / Studio and type your gym's name](img/sign-up-welcome.png)
+| Fitness | Health and wellness |
+|---|---|
+| Gym | Physio |
+| Personal training | Chiro |
+| Pilates | Osteo |
+| Yoga | Exercise physiology |
+| Group training | Remedial massage |
+| Dance | Nutrition and dietetics |
+| Martial arts and boxing | Recovery |
+| Sports and courts | Wellness centre |
 
-:::warn Pick Gym / Studio
-Choose Gym / Studio here if you run a gym with staff. Each account can create one gym. If you picked the wrong option, email admintotality@gmail.com and we will fix it.
+What changes with the type you pick:
+
+- **What your people are called.** Members for a gym or studio, Clients for personal training and some practices, Patients for physio, chiro and osteo.
+- **The schedule tab's name.** A class studio (Pilates, Yoga, Dance and so on) sees **Timetable**. A clinic sees **Bookings**. Everyone else sees **Schedule**.
+- **Which tools are on.** For example Pilates starts with classes and memberships, a gym with memberships, classes, session packs and programmes, and a physio with services, intake forms, treatment notes and funding.
+- **Your setup card.** A studio's first job is **Add your timetable**, a clinic's is **Set your service prices**. A gym keeps **Add your trainers**, **Add your members** and **Connect payments**.
+
+:::note The closest one is fine
+You can change the type, and switch any tool on or off, any time in **Settings** under **What kind of business is this?** Switching a tool off only hides it. Nothing already saved is deleted. Each account can create one business. If you picked Solo by mistake, email admintotality@gmail.com and we will fix it.
 :::
 
 ## Set up your gym
@@ -71,7 +88,7 @@ No. The trial starts without a card. You add your card when you pick a plan.
 ?? Can someone else at the gym also be an admin?
 Each gym has one owner account that signed up. Your trainers get their own logins with the trainer tools. If you need a second admin login, email admintotality@gmail.com.
 
-?? I signed up as a Solo Trainer by mistake. What now?
+?? I signed up as Solo by mistake. What now?
 Email admintotality@gmail.com from your account email and we will move you to a gym account.
 
 ?? I have been sent an invite to join a gym. Is this guide for me?

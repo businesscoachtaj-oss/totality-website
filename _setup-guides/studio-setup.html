@@ -1,0 +1,166 @@
+<!-- PAGE 1 -->
+<section class="page">
+  {{HEADER:Setting up your studio}}
+  <div class="eyebrow">Your studio in Totality</div>
+  <h1>{{title}}</h1>
+  <p class="lede">{{lede}}</p>
+  <!--if:forme--><div class="forme"><b>For you:</b> {{forme}}</div><!--endif:forme-->
+
+  <div class="facts">
+    <div class="fact"><b>Free trial</b><span>7 days, no card</span><small>Everything switched on while you set up</small></div>
+    <div class="fact"><b>Your team</b><span>Unlimited trainers</span><small>Each gets their own login</small></div>
+    <div class="fact"><b>Your members</b><span>The app is free for them</span><small>They book, pay and train in it</small></div>
+    <div class="fact"><b>Member payments</b><span>Into your own bank</span><small>Through your own Stripe account</small></div>
+  </div>
+
+  <h2>The order to do it in</h2>
+  <table>
+    <thead><tr><th style="width:9mm">#</th><th>Step</th><th>Where in the app</th><th class="r">Time</th></tr></thead>
+    <tbody>
+      <tr><td><span class="num">1</span></td><td><b>Create your account</b> as a studio owner</td><td>Sign up screen</td><td class="r">5 min</td></tr>
+      <tr><td><span class="num">2</span></td><td><b>Invite your trainers</b></td><td>More, Staff, Trainers</td><td class="r">1 min each</td></tr>
+      <tr><td><span class="num">3</span></td><td><b>Bring your members across</b></td><td>Members, Import data</td><td class="r">15 min</td></tr>
+      <tr><td><span class="num">4</span></td><td><b>Connect Stripe</b> and pick your debit day</td><td>Sales, Stripe Connect setup</td><td class="r">15 min</td></tr>
+      <tr><td><span class="num">5</span></td><td><b>Create your memberships</b></td><td>Sales, Memberships</td><td class="r">10 min</td></tr>
+      <tr><td><span class="num">6</span></td><td><b>Build your timetable</b></td><td>Timetable (or Schedule), Classes</td><td class="r">20 min</td></tr>
+      <tr><td><span class="num">7</span></td><td><b>Start members on their memberships</b></td><td>Sales, Memberships, Members</td><td class="r">1 min each</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Trainers go in before members, so the member import can link each member to their trainer. Stripe needs a day or two to check your details, so start step 4 early.</p>
+
+  <div class="say" style="margin-top:10px"><b>We can load it for you:</b> send your member list, timetable and prices (a spreadsheet is fine) to admintotality@gmail.com and we'll set it up free. You still connect Stripe yourself, because it's your bank account.</div>
+  {{FOOTER:totality360.com.au}}
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  {{HEADER:Steps 1 to 3: account, team, members}}
+  <div class="step ph">
+    <div>
+      <h3><span class="num">1</span>Create your account</h3>
+      <ol>
+        <li>Get Totality from the App Store or Google Play, or go to <b>totalityapp.com.au</b>. Tap <b>Get Started: It's Free</b>.</li>
+        <li>Fill in your name, email and a password, then <b>Create Account</b>.</li>
+        <li>Under <b>Are you solo or a studio owner?</b> pick <b>Studio owner</b>. Under <b>What do you do?</b> pick the closest, for example <b>Pilates</b>. It sets your layout and you can change it in Settings. Type your business name and tap <b>Let's Go</b>.</li>
+        <li>Add your address, phone and email (or <b>Skip</b>), accept the terms and take Tali's one minute tour.</li>
+      </ol>
+      <div class="say"><b>Your dashboard</b> then shows a setup card with your first jobs, such as adding your timetable, your members and connecting payments. Each ticks itself off when done.</div>
+    </div>
+    <div class="phone"><span class="cap">1</span><img src="img/dashboard-setup.png"></div>
+  </div>
+
+  <div class="step ph">
+    <div>
+      <h3><span class="num">2</span>Invite your trainers</h3>
+      <ol>
+        <li>Open <span class="path">More</span> then <span class="path">Staff</span> then <span class="path">Trainers</span> and tap <b>+ Invite</b>.</li>
+        <li>Type their <b>Full Name</b> and <b>Email</b>, then <b>Invite Trainer</b>.</li>
+        <li>They get an email with their login. If they already use Totality, they accept your invite in their app instead.</li>
+      </ol>
+      <p class="small" style="margin-top:4px">Trainers see their own clients, the members list, the schedule and their shifts. They can't see your billing, payroll, revenue or settings.</p>
+    </div>
+    <div class="phone"><span class="cap">2</span><img src="img/trainers-invite.png"></div>
+  </div>
+
+  <div class="step ph">
+    <div>
+      <h3><span class="num">3</span>Bring your members across</h3>
+      <ol>
+        <li>Export your members from {{from_system}} as CSV or Excel.</li>
+        <li>Open <span class="path">Members</span> then <b>Import data</b>. Pick <b>Clients</b>, upload the file, check the columns are matched (Full Name and Email are required), then tap <b>Import</b> with your number of records, for example <b>Import 48 Records</b>.</li>
+        <li>For a few members, use <b>Add client</b> instead: name, email, <b>Invite Client</b>.</li>
+      </ol>
+      <div class="say"><b>Heads up:</b> every new member gets their login email as soon as the import runs. Tell your members it's coming before you import.</div>
+    </div>
+    <div class="phone"><span class="cap">3</span><img src="img/import-type.png"></div>
+  </div>
+  {{FOOTER:Screens show demo data}}
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  {{HEADER:Steps 4 to 6: payments, memberships, timetable}}
+  <div class="step ph">
+    <div>
+      <h3><span class="num">4</span>Connect Stripe and pick your debit day</h3>
+      <ol>
+        <li>Open the <b>Sales</b> tab and tap <b>Connect Stripe to get paid</b>, then <b>Connect Stripe account</b>.</li>
+        <li>Stripe asks for your business details, ID and the bank account you want paid into. Finish every step, then come back and pull down to refresh.</li>
+        <li>When it says <b>Stripe connected</b>, pick your <b>Debit day</b>: a weekday for weekly and fortnightly memberships, a date for monthly ones.</li>
+      </ol>
+      <div class="say"><b>Bank payments (PayTo)</b> are on by default and cost you less than cards. Stripe takes a day or two to switch them on. Members can save a card in the meantime.</div>
+    </div>
+    <div class="phone"><span class="cap">4</span><img src="img/stripe-connect-debit-day.png"></div>
+  </div>
+
+  <div class="step ph">
+    <div>
+      <h3><span class="num">5</span>Create your memberships</h3>
+      <ol>
+        <li>Open <span class="path">Sales</span> then <span class="path">Memberships</span>. On <b>Products</b>, tap <b>+ New</b>.</li>
+        <li>Add a <b>Name</b>, <b>Price</b> and <b>Billing frequency</b> (weekly, fortnightly, monthly, quarterly or yearly).</li>
+        <li>Turn on <b>Includes classes</b> if members on it book classes free. Tap <b>Create product</b>.</li>
+      </ol>
+      <p class="small" style="margin-top:4px">Active memberships also show in your studio's shop, so members can buy them themselves.</p>
+    </div>
+    <div class="phone"><span class="cap">5</span><img src="img/memberships-new.png"></div>
+  </div>
+
+  <div class="step ph">
+    <div>
+      <h3><span class="num">6</span>Build your timetable</h3>
+      <ol>
+        <li>Open <span class="path">Timetable</span> (called <b>Schedule</b> if you also run PT) then <span class="path">Classes</span>. Tap <b>+ New class</b>: name, length, capacity, trainer, and whether it's included in memberships or has a casual price.</li>
+        <li>Switch to <b>Sessions</b> and tap <b>+ Schedule</b>. Pick the class, trainer, date and start time.</li>
+        <li>Turn on <b>Recurring schedule</b>, tick the days and pick how many weeks (up to 12). Tap <b>Schedule</b>.</li>
+      </ol>
+    </div>
+    <div class="phone"><span class="cap">6</span><img src="img/classes-sessions.png"></div>
+  </div>
+  {{FOOTER:Screens show demo data}}
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+  {{HEADER:Step 7 and your checklist}}
+  <div class="step ph">
+    <div>
+      <h3><span class="num">7</span>Start members on their memberships</h3>
+      <ol>
+        <li>The member saves a card or bank account under <b>Payments</b> in their app. If they haven't, tap <b>Ask to add card</b> on their row and they get an email link.</li>
+        <li>On the Memberships <b>Members</b> tab, tap <b>+ New</b>, pick the member and the membership, and tap <b>Create subscription</b>.</li>
+        <li>The box shows what they pay today and what comes out after that, with the dates.</li>
+      </ol>
+      <div class="say"><b>Joining between debit days:</b> they pay a part payment today for the days up to your debit day, then the full amount every debit day after. Quarterly and yearly start the day you create them.</div>
+      <p class="small" style="margin-top:4px">If a payment fails, the membership shows <b>Past due</b> and you get a notification. Every failed payment also shows on your dashboard.</p>
+    </div>
+    <div class="phone"><span class="cap">7</span><img src="img/memberships-part-payment.png"></div>
+  </div>
+
+  <h2>What each payment costs you</h2>
+  <table>
+    <thead><tr><th>Fee</th><th>Amount</th><th>Who pays</th></tr></thead>
+    <tbody>
+      <tr><td>Totality platform fee</td><td>1.25% of payments made in the app</td><td>You, out of the payout</td></tr>
+      <tr><td>Stripe, card</td><td>1.65% + 30c (Australian cards)</td><td>You, out of the payout</td></tr>
+      <tr><td>Stripe, bank account (PayTo)</td><td>1% + 30c, never more than A$3.50</td><td>You, out of the payout</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Members pay exactly your price. Nothing is added on top.</p>
+
+  <h2 style="margin-top:10px">Your checklist</h2>
+  <ul class="check">
+    <li>Account created as a studio owner</li>
+    <li>Trainers invited</li>
+    <li>Members told their login email is coming</li>
+    <li>Members imported or added</li>
+    <li>Stripe connected</li>
+    <li>Debit day picked</li>
+    <li>Memberships created</li>
+    <li>Classes on the timetable</li>
+    <li>Members started on their memberships</li>
+    <!--if:extra_item--><li>{{extra_item}}</li><!--endif:extra_item-->
+  </ul>
+  {{CONTACT}}
+  {{FOOTER:Prices in Australian dollars, correct at {{as_at}}}}
+</section>

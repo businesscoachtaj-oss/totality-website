@@ -11,7 +11,8 @@ Tap **Cookbook** on the bar along the bottom.
 ## Find a meal
 
 - Type in **Search meals or ingredients**, for example "chicken" or "oats".
-- Tap a category: **All**, **Breakfast**, **Chicken**, **Beef**, **Pork and turkey**, **Seafood**, **Pasta**, **Bowls**, **Wraps and sandwiches**, **Veg and soups**, **Snacks** or **Air fryer**. The categories wrap onto more than one line.
+- Tap **Category** to open the list and pick one: **All meals**, **Breakfast**, **Chicken**, **Beef**, **Pork and turkey**, **Seafood**, **Pasta**, **Bowls**, **Wraps and sandwiches**, **Veg and soups**, **Snacks** or **Air fryer**. Each shows how many meals it has.
+- Pick **Standard** or **About 500 kcal**. About 500 kcal shows every meal scaled to roughly 500 calories a serve, handy if you're keeping meals lighter. You can switch inside a recipe too. Meals already near 500 say **Already about 500 kcal a serve**.
 - Tap a meal to open it.
 
 ## A recipe

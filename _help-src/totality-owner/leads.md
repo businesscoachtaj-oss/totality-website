@@ -36,6 +36,8 @@ Your dashboard also shows "Leads: 2 new, 2 follow ups due" so you do not forget 
 1. Tap **+ Add Lead**.
 2. Enter their **Full Name** and, if you have them, **Email** and **Phone**.
 3. Pick the **Source**: Walk-in, Referral, Social Media, Website, Phone or Other.
+
+Enquiries from your [Discover listing](discover.html) arrive as leads by themselves, with the source **Discover**.
 4. Pick the **Stage**.
 5. **Assign To** a trainer, or leave it **Unassigned** (it is then yours).
 6. Set the **Next Follow-up** date.

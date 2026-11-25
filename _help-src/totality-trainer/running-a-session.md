@@ -25,7 +25,9 @@ Each exercise card shows:
 - The exercise name, with badges for set types (SS, DS, AMRAP and so on) and **L/R** if it's per side.
 - The how-to: tempo in plain words, warm-ups, set type explanation, AMRAP target, and **Note from your coach**.
 - **Sets**, **Target reps** (or Duration) and **Suggested** weight.
-- Four small icons: cues (coaching cues, form cues, why it's effective, rep ranges), history (the client's past sets on this exercise), rest timer, and swap.
+- Small icons: cues (coaching cues, form cues, why it's effective, rep ranges), history (the client's past sets on this exercise), rest timer, swap, and the rep max calculator (their estimated one rep max, percentages and the plates or dumbbells for any rep target).
+
+A **Warm up first** card sits at the top: get warm, then three ramp-up sets of the first lift at about 50% for 8, 70% for 5 and 85% for 2 to 3 of the working weight. While the session runs, the bottom tabs are hidden and going back asks **Leave this workout?**
 
 ## Log the sets
 
