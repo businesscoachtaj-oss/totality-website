@@ -23,6 +23,8 @@ The top card shows your photo (or initials), name and email. Tap the photo to ch
 | TALI AI | Credits and meals described today | [Tali AI](tali-ai.html) |
 | WEARABLES | **Connect a wearable** | [Apple Health and Health Connect](wearables.html) |
 | REFER & EARN | Your referral code | Below |
+| FIND A COACH | **Find a coach near you**: trainers, gyms, studios and clinics on Totality Discover | Below |
+| FOR COACHES AND TRAINERS | **Insurance with BizCover**: public liability and professional indemnity, $20 off each policy with code TOTALITY | Below |
 | FOOD DATA SOURCES | Credits and licences for AFCD and Open Food Facts | |
 | ACCOUNT ACTIONS | **Sign Out** and **Delete Account** | Below |
 
@@ -45,6 +47,14 @@ Emails about your account and billing, like trial reminders, always send.
 **Give 20%, get 20%.** Tap **Get my referral code**, then **Share my code**. A friend who signs up with it gets 70% off their first 2 months on a monthly plan (the 50% welcome offer plus 20% from you). Once they subscribe, you get a recurring 20% off your own subscription, and it stacks with each friend, up to 5 referrals. The card counts **Referred**, **Converted** and **Discounts active**. Refer & Earn is on the web and Android, not in the iPhone app.
 
 !phone[Refer & Earn](img/settings-refer.png)
+
+## Find a coach near you
+
+Tap **Find a coach near you** to open **Totality Discover** in your browser. Search by name, suburb or postcode, or tap **Use my location**, and filter by gyms, personal trainers, Pilates, yoga, physio and more. Each listing shows the intro offer, prices and where they are, and you can send an enquiry or pay for an intro offer by card. You don't need to sign in.
+
+## Insurance for coaches and trainers
+
+If you coach or train people, **Insurance with BizCover** opens Totality's insurance page. BizCover compares quotes for public liability and professional indemnity, and code **TOTALITY** takes $20 off each policy. Insurance is arranged by BizCover, not Totality.
 
 ## Sign out and delete your account
 

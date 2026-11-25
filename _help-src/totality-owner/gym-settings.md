@@ -22,7 +22,13 @@ The **Current usage** card shows how many **Active clients** you have out of you
 
 ## What kind of business is this?
 
-Pick **Gym or studio** or **Allied health or clinic**. A clinic gets services, intake forms and treatment notes, each with its own switch, and clinic wording across the app. See [Allied health and clinic tools](clinic-tools.html).
+Shows the type you picked at sign up, for example Pilates, Gym or Physio, with "Your people are members" (or clients, or patients) under it. Tap **Change** to pick another from **FITNESS** or **HEALTH AND WELLNESS**. See [Signing up](sign-up.html#tell-totality-what-you-run) for the full list and what each type changes.
+
+Under it, each tool has its own switch: **Classes**, **Memberships**, **Session packs** and **Programmes and check-ins**. Switching one off hides it from your tabs and menus. Nothing already saved is deleted, and switching it back on brings it all back.
+
+A health type (Physio, Chiro, Osteo, Exercise physiology and so on) also turns on services, intake forms and treatment notes, each with its own switch, and clinic wording across the app. See [Allied health and clinic tools](clinic-tools.html).
+
+Your trainers' layout follows the type you pick here.
 
 ## Tools
 

@@ -6,6 +6,12 @@ Tap **Start workout** on Home, or tap a workout on **Train**. The workout screen
 
 !phones[Logging sets](img/workout-sets.png)[The last exercise and the finish button](img/workout-finish.png)
 
+## Warm up first
+
+A **Warm up first** card sits at the top of every workout. Get warm for a few minutes, then do three lighter ramp-up sets of your first lift: about half your working weight for 8, about 70% for 5, and about 85% for 2 to 3, resting about a minute between them. It doesn't count toward your sets.
+
+While a workout is running the tabs along the bottom are hidden, and going back asks **Leave this workout?** first, so a stray tap can't close it.
+
 ## Log your sets
 
 Each exercise shows its sets, target reps, a suggested weight and the rest time. The weight is filled in from last time, and when a weight has gone up it is already filled in for you [[Training]].
@@ -27,6 +33,7 @@ The bar at the top shows how many sets are done. Tap **Workout Overview** to see
 - **History** shows what you did on this exercise before.
 - **Rest** starts the rest timer.
 - **Swap** replaces the exercise with another for this workout only. Your programme is not changed.
+- **Calculator** opens the rep max calculator for this exercise. See [Progress](progress.html#rep-max-calculator).
 
 :::tip
 Log the reps you really did, even when they fall short. Your next weights are worked out from them. See [How your weights and sets adjust](auto-regulation.html).

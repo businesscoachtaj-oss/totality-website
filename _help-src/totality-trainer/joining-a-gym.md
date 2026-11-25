@@ -15,7 +15,7 @@ When a gym that uses Totality wants you on its team, the gym admin sends you an 
 
 !phones[The invite banner on Home](img/join-gym-banner.png)[Join this gym? explains what changes](img/join-gym-confirm.png)
 
-If you don't have a Totality account yet, sign up first as a **Solo Trainer** with the same email the gym used. See [Signing up](sign-up.html).
+If you don't have a Totality account yet, sign up first as **Solo** with the same email the gym used. See [Signing up](sign-up.html).
 
 ## What changes when you join
 

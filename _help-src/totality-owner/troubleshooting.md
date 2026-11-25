@@ -27,7 +27,7 @@ The Totality team has locked the account. Your data is safe. Email admintotality
 That feature is not on your current plan, or you have reached a limit. Tap it to see why, and **See plans and add-ons** to change plan.
 
 ?? The dashboard says "No gym assigned".
-Your login is not linked to a gym. This can happen if you chose Solo Trainer at sign up, or the gym was set up by someone else. Email admintotality@gmail.com.
+Your login is not linked to a gym. This can happen if you chose Solo at sign up, or the gym was set up by someone else. Email admintotality@gmail.com.
 
 ?? A change to my plan has not shown up.
 Pull down to refresh, or close and reopen the app. Plan changes can take a minute to come through from Stripe.

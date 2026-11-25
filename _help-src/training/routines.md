@@ -13,8 +13,9 @@ A routine is a single workout you can run any time, outside your programme. Free
 2. Give it a name, like Push day or Hotel gym. You can add a note to yourself.
 3. Start from Push, Pull, Legs, Full body or At home, or tap **Pick my own**.
 4. To add exercises, search or filter by body part, tap as many as you like, then tap **Done**.
-5. Tap an exercise to change its sets, reps or rest. Use **Reorder** to move them.
-6. Tap **Save and start now**, or **Save for later**.
+5. Tap an exercise to change it: sets, reps, **Rest between sets**, **Warm-up sets first**, **Set type** (normal, drop set, myo reps, AMRAP or rest-pause) and **One arm or one leg at a time?** for lifts you log left and right. Turn on **SUPERSET WITH THE NEXT ONE** to pair it with the next exercise. Use **Reorder** to move them.
+6. Want a warm-up? Tap **Add a warm-up** to put a set of warm-up moves at the top.
+7. Tap **Save and start now**, or **Save for later**.
 
 Your routines are listed under **Your routines** on **Train**. Tap the red play button to start one, or the bin to delete it. Weights go up by themselves on your routines too [[Training]].
 

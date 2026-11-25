@@ -13,6 +13,15 @@ You can start a workout from three places:
 - **Calendar:** tap the day, then **Start Workout**.
 - **Programmes:** pick the week and tap **Start Session →** on any session.
 
+## Warm up first
+
+At the top of every workout is a **Warm up first** card. It takes about 5 to 10 minutes and doesn't count toward your sets.
+
+1. **Get warm**: do the warm-up moves at the top of the workout (or a few minutes of easy cardio).
+2. **Ramp up**: three lighter sets of your first lift before your working sets, at about half your working weight for 8, about 70% for 5, and about 85% for 2 to 3. Lighter with more reps first, heavier with fewer reps last. Rest about a minute between them.
+
+If your first exercise has no added weight, it tells you to do one easy set of it at half the reps instead.
+
 ## The workout screen
 
 !phone[The top of a workout](img/workouts-screen.png)
@@ -77,7 +86,7 @@ On the phone app, you'll get a **Rest Complete** notification when the time is u
 
 ## Exercise buttons
 
-Each exercise card has four small buttons next to its name:
+Each exercise card has small buttons next to its name:
 
 | Button | What it does |
 |---|---|
@@ -85,6 +94,7 @@ Each exercise card has four small buttons next to its name:
 | **Chart** | Your history for this exercise: every past session's sets, reps, weight and RPE |
 | **Clock** | Starts the rest timer |
 | **Arrows** | Swaps the exercise for this session only |
+| **Calculator** | Opens the rep max calculator for this exercise. See [Progress](progress.html#rep-max-calculator) |
 
 !phones[The info button: tap Watch Demo Video](img/workouts-info.png)[The chart button: your past sets](img/workouts-history.png)
 
@@ -130,6 +140,10 @@ Tap **Done** to go back to Home.
 :::tali
 Lifted a rhino? I'll tell you about it. I only call it a PB when you've actually beaten a past effort, so they're the real deal.
 :::
+
+## Leaving a workout
+
+While a workout is running, the buttons along the bottom are hidden so nothing gets tapped by accident. Tap the back arrow (or Android's back) and you're asked **Leave this workout?** before anything closes.
 
 ## If the app closes mid-workout
 
