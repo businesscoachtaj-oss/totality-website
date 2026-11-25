@@ -11,6 +11,7 @@ Open the **Schedule** tab, then **Programmes**.
 
 - **My Programmes**: programmes you have built.
 - **Collection**: your gym's shared templates, from you and your trainers.
+- **Templates**: ready-made programmes, single sessions and warm-ups from Totality. See below.
 
 !phones[Programmes](img/programmes-list.png)[New programme, or let Tali draft it](img/programmes-new.png)
 
@@ -38,6 +39,29 @@ In the editor, tap the edit button and turn on **Share to Collection**. Add **Ta
 4. Confirm.
 
 **Assign to Me** puts it on your own account, so you can follow it in **My training**.
+
+## Templates
+
+The **Templates** tab on Programmes has ready-made programmes you can set for a client or use as a starting point: the original Totality templates (**Totality classics**) and the full Totality programme library, 279 programmes. The library has every style at 2 to 6 days a week, at Beginner, Intermediate and Advanced. The level changes the exercises as well as the sets, reps and rest.
+
+| Everyday training | Sports and styles |
+|---|---|
+| Whole body | Powerlifting, Street Lifting, Olympic Lifting |
+| Glutes and legs | Bodybuilding, Powerbuilding |
+| Glutes and arms | Strongman, Circus Strongman |
+| Strength | Gymnastics, Calisthenics |
+| Lean and fit | Kettlebell, Athletic Performance, Hybrid (lifting and running) |
+
+!steps
+1. Open the **Schedule** tab, then **Programmes**, then the **Templates** tab, then **Programmes**.
+2. Pick a **STYLE** from the drop down, then the **DAYS A WEEK** and **LEVEL**.
+3. Tap a programme to see every workout, exercise, set and rep, and how it progresses.
+4. Tap **Use this template**. Totality makes your own copy, named like "Strongman, 3 days, Intermediate", and opens it in the [programme builder](/help/totality-trainer/programme-builder.html).
+5. Change anything you like, then tap **Functions**, then **Assign to Client**.
+
+**Ask Tali to tailor it** on the same screen has Tali adjust the template for a client's goal, level, equipment and injuries.
+
+A few styles need kit most gyms don't have. Strongman days say to use the Beginner version of any event you can't do (sandbags, farmer's carries and the trap bar). Gymnastics and Calisthenics need a pull-up bar, and rings help. Every exercise is from the exercise library and has a demo video.
 
 ## Exercise library
 
