@@ -1,0 +1,51 @@
+# ADDED (26 Nov 2026, Taj: "Do whatever you can"): tells Bing (and the other IndexNow search
+# engines) when pages change, so they crawl the site without a Bing Webmaster sign-in.
+# ChatGPT search and Copilot draw on Bing's index.
+#
+#   push to main            -> sends the .html pages changed in that push
+#   Actions > IndexNow > Run -> sends every URL in sitemap.xml (use once after setup)
+#
+# The key file f5c1d10079b1c24720787315e14ab32a.txt at the site root proves we own the site. It holds no secret.
+name: IndexNow
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      KEY: f5c1d10079b1c24720787315e14ab32a
+      HOST: totality360.com.au
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Wait for GitHub Pages to publish
+        if: github.event_name == 'push'
+        run: sleep 150
+      - name: Work out which URLs to send
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            grep -oE '<loc>[^<]+</loc>' sitemap.xml | sed -E 's#</?loc>##g' > urls.txt
+          else
+            git diff --name-only HEAD~1 HEAD -- '*.html' | grep -vE '^(_|partials/|tools/)' \
+              | sed -E 's#(^|/)index\.html$#\1#' | sed "s#^#https://$HOST/#" > urls.txt || true
+          fi
+          echo "$(wc -l < urls.txt) URLs"
+      - name: Send to IndexNow
+        run: |
+          [ -s urls.txt ] || { echo "Nothing to send"; exit 0; }
+          python3 - <<'PY'
+          import json, os, urllib.request
+          urls = [u.strip() for u in open('urls.txt') if u.strip()][:10000]
+          body = json.dumps({"host": os.environ["HOST"], "key": os.environ["KEY"],
+                             "keyLocation": f"https://{os.environ['HOST']}/{os.environ['KEY']}.txt",
+                             "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8"})
+          with urllib.request.urlopen(req, timeout=60) as r:
+              print("IndexNow answered", r.status, "for", len(urls), "URLs")
+          PY
