@@ -245,6 +245,13 @@ def build_hub(cfgs):
         ('Setting up your studio', 'Account, team, members, payments, memberships and timetable, in the order to do them.', 'Totality-Setup-Guide-Studio.pdf', 4),
         ('Coaching your clients', 'Programmes, running sessions and weekly check-ins.', 'Totality-Setup-Guide-Coaching.pdf', 3),
     ]
+    free = [
+        ('How to start a personal training business', 'Qualifications, insurance, ABN and GST, pricing and your first clients.', 7),
+        ('Marketing and finding clients', 'Your offer, Google listing, posts, referrals, ads and enquiries.', 6),
+        ('How to write a training programme', 'Overload, volume, frequency, periodisation and fitting it to the person.', 7),
+        ('Nutrition coaching fundamentals', 'Energy balance, protein, supplements and where your scope ends.', 7),
+    ]
+    free_html = ''.join(f'<a class="pdf" href="/resources.html"><span class="pdf__tag">Free PDF · {n} pages</span><b>{html.escape(t)}</b><span>{html.escape(d)}</span></a>' for t, d, n in free)
     pdf_html = ''.join(f'<a class="pdf" href="/guides/setup/{f}" target="_blank" rel="noopener"><span class="pdf__tag">PDF · {n} pages</span><b>{html.escape(t)}</b><span>{html.escape(d)}</span></a>' for t, d, f, n in pdfs)
     old = (OUT / 'index.html').read_text() if (OUT / 'index.html').exists() else ''
     def keep(name):
@@ -326,6 +333,11 @@ def build_hub(cfgs):
         <h2 class="hub-h">Setup guides to download</h2>
         <p style="margin:-6px 0 16px;color:var(--muted,#62605D)">Short PDFs you can print or keep beside you while you set up.</p>
         <div class="pdfs">{pdf_html}</div>
+      </div>
+      <div class="hub-sub">
+        <h2 class="hub-h">Free guides for personal trainers</h2>
+        <p style="margin:-6px 0 16px;color:var(--muted,#62605D)">Starting your business, finding clients, writing programmes and coaching nutrition.</p>
+        <div class="pdfs">{free_html}</div>
       </div>
     </div>
   </section>
