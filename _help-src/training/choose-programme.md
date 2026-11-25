@@ -1,6 +1,6 @@
 ---
 title: Choose a programme
-summary: Pick one of 375 Totality programmes in four questions, see every workout first, then start it.
+summary: Pick one of 420 Totality programmes in four questions, see every workout first, then start it.
 ---
 The **Train** tab shows the programme you are on and every way to change it.
 
@@ -28,8 +28,11 @@ The **Train** tab shows the programme you are on and every way to change it.
 | Glutes and arms | Strongman, Circus Strongman |
 | Strength | Gymnastics, Calisthenics |
 | Lean and fit | Kettlebell, Athletic Performance, Hybrid (lifting and running) |
+| Health Guidelines | |
 
 Every style comes at 2 to 6 days a week and at Beginner, Intermediate and Advanced. The level changes the exercises too, not just the sets and reps. For example, Strongman beginners use sandbags, farmer's carries and the trap bar, and the log, yoke and stones come in at Intermediate.
+
+**Health Guidelines** is built on the World Health Organization's physical activity guidelines for adults: strength work for every major muscle on 2 or more days, and at least 150 minutes of moderate cardio a week. The 4, 5 and 6 day versions reach 150 minutes in the workouts. The 2 and 3 day versions tell you how much brisk walking to add on other days. Every session starts with a few minutes of mobility, and there's balance work through the week. It comes with a full gym, dumbbells or no equipment. It's our programme, not made or endorsed by the WHO.
 
 **Classic Bodybuilding** trains one or two areas a day. **New School Bodybuilding** trains every muscle at least twice a week.
 
@@ -40,6 +43,18 @@ With **Dumbbells** you can pick Home Dumbbell, Dumbbell Upper Lower, Dumbbell Pu
 !phone[A programme's details](img/choose-programme-detail.png)
 
 Each programme shows its days a week and which days they land on, how many weeks it runs, the level and the kit, and how it progresses. Powerlifting, for example, adds 2.5 kg to the main lifts when every set is done. Every programme ends with a lighter week. Below are the workouts, day by day, with sets and reps for each exercise.
+
+## Swap an exercise before you start
+
+Missing a piece of kit? On a programme's page, tap **Swap** next to any exercise before you start it.
+
+!steps
+1. Tap **Swap** next to the exercise.
+2. Pick from the list. It shows exercises for the same muscles that you can do with the kit you picked, closest first. Search if you want something else.
+3. The exercise changes in every week of the programme it's in, both halves. It shows **Swapped from** with **Undo**.
+4. Tap **Start this programme**.
+
+You can also swap during a workout. See [Your workout](workout.html).
 
 ## The second half of a programme
 
@@ -54,7 +69,7 @@ On a programme's page, tap **Weeks 1 to 5** or **Weeks 6 to 10** (the weeks depe
 
 Some exercises on Intermediate and Advanced programmes use a set type: a **drop set**, **myo reps**, **rest-pause** or **AMRAP** (as many reps as you can in the time). They're used on the last exercises of a workout, where they help. The workout screen shows a badge on these exercises and how to do each one.
 
-On Free, **Strength Foundations** is free to start. The others show a lock and need [[Training]].
+On Free, **Strength Foundations** and every **Health Guidelines** programme are free to start. The others show a lock and need [[Training]].
 
 ## Questions
 

@@ -32,7 +32,7 @@ The bar at the top shows how many sets are done. Tap **Workout Overview** to see
 - **How to** shows the muscles worked, the equipment, coaching cues, form cues and rep ranges, with a link to the demo video.
 - **History** shows what you did on this exercise before.
 - **Rest** starts the rest timer.
-- **Swap** replaces the exercise with another for this workout only. Your programme is not changed.
+- **Swap** replaces the exercise with another. The list shows exercises for the same muscles that you can do with your kit, closest first. Then pick **Just today** (your programme stays as it is) or **Every week** (it changes in this workout and every later one with that exercise; workouts you have already logged stay as they were).
 - **Calculator** opens the rep max calculator for this exercise. See [Progress](progress.html#rep-max-calculator).
 
 :::tip

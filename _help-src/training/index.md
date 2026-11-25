@@ -8,8 +8,8 @@ Totality Training is a workout tracker for people who train on their own. You fo
 
 ## The plans
 
-- [[Free]] A$0. Unlimited workout logging, the full exercise library with demos, 3 of your own routines, the Strength Foundations programme, 3 questions for Tali a day and Sleep sounds.
-- [[Training]] A$8.99 a month or A$91.70 a year. All 375 Totality programmes, unlimited routines, weights that go up by themselves when you earn it, sets that adjust to how each muscle feels, Progress (strength charts, personal bests and body stats) and the weekly review.
+- [[Free]] A$0. Unlimited workout logging, the full exercise library with demos, 3 of your own routines, Strength Foundations and the Health Guidelines programmes, 3 questions for Tali a day and Sleep sounds.
+- [[Training]] A$8.99 a month or A$91.70 a year. All 420 Totality programmes, unlimited routines, weights that go up by themselves when you earn it, sets that adjust to how each muscle feels, Progress (strength charts, personal bests and body stats) and the weekly review.
 - [[Training + AI]] A$11.99 a month or A$122.30 a year. Everything in Training, plus Tali builds programmes around your week and kit, gives her take after each workout and writes up your week. 100 Tali credits a month.
 
 Every new account starts with a **7 day free trial** [[Trial]] of everything in Training + AI. No card is needed. When it ends you move to Free unless you pick a plan, and nothing you logged is deleted. See [Plans and billing](plans.html).
@@ -44,7 +44,7 @@ The bar along the bottom has five buttons:
 ## Questions
 
 ?? Is Totality Training really free?
-Yes. The Free plan is A$0 with no time limit. You keep unlimited logging, the exercise library, 3 routines, the Strength Foundations programme and 3 questions for Tali a day.
+Yes. The Free plan is A$0 with no time limit. You keep unlimited logging, the exercise library, 3 routines, Strength Foundations and the Health Guidelines programmes, and 3 questions for Tali a day.
 
 ?? Do I need a card for the trial?
 No. The 7 day trial needs no card. If you don't pick a plan, you move to Free when it ends.

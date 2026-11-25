@@ -1,6 +1,6 @@
 ---
 title: Programmes
-summary: Create a programme, draft one with Tali, start from one of 375 templates, duplicate or share it, and use your gym's Collection.
+summary: Create a programme, draft one with Tali, start from one of 420 templates, duplicate or share it, and use your gym's Collection.
 ---
 
 A programme is a block of training: a number of weeks, each with sessions on set days, each session with its exercises. You build it once and assign it to as many clients as you like.
@@ -48,7 +48,7 @@ Tali uses drop sets, myo reps, rest-pause and AMRAP sets where they help, and fo
 
 ## Templates
 
-The **Templates** tab on Programmes has ready-made programmes you can set for a client or use as a starting point: the original Totality templates (**Totality classics**) and the full Totality programme library, 375 programmes. The library has every style at 2 to 6 days a week, at Beginner, Intermediate and Advanced. The level changes the exercises as well as the sets, reps and rest.
+The **Templates** tab on Programmes has ready-made programmes you can set for a client or use as a starting point: the original Totality templates (**Totality classics**) and the full Totality programme library, 420 programmes. The library has every style at 2 to 6 days a week, at Beginner, Intermediate and Advanced. The level changes the exercises as well as the sets, reps and rest.
 
 | Everyday training | Sports and styles |
 |---|---|
@@ -57,6 +57,7 @@ The **Templates** tab on Programmes has ready-made programmes you can set for a 
 | Glutes and arms | Strongman, Circus Strongman |
 | Strength | Gymnastics, Calisthenics |
 | Lean and fit | Kettlebell, Athletic Performance, Hybrid (lifting and running) |
+| Health Guidelines | |
 
 !steps
 1. Open **My Programmes** from the Home shortcuts and tap the **Templates** tab, then **Programmes**.
@@ -69,7 +70,7 @@ The **Templates** tab on Programmes has ready-made programmes you can set for a 
 
 A few styles need kit most gyms don't have. Strongman days say to use the Beginner version of any event you can't do (sandbags, farmer's carries and the trap bar). Gymnastics and Calisthenics need a pull-up bar, and rings help. Every exercise is from the exercise library and has a demo video.
 
-**Classic Bodybuilding** trains one or two areas a day. **New School Bodybuilding** trains every muscle at least twice a week. Whole body and Lean and fit also have dumbbell and bodyweight programmes, and Glutes and legs has a dumbbell one, for clients who train at home.
+**Health Guidelines** is built on the World Health Organization's physical activity guidelines for adults: strength for every major muscle on 2 or more days and 150 minutes of moderate cardio a week, with mobility and balance work. The 2 and 3 day versions add brisk walks on other days to reach the 150 minutes. It comes for a full gym, dumbbells or no equipment, and isn't made or endorsed by the WHO. **Classic Bodybuilding** trains one or two areas a day. **New School Bodybuilding** trains every muscle at least twice a week. Whole body and Lean and fit also have dumbbell and bodyweight programmes, and Glutes and legs has a dumbbell one, for clients who train at home.
 
 ### The second half of a programme
 
