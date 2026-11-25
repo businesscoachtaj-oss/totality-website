@@ -11,15 +11,15 @@ Tali's replies are laid out so you can read them at a glance instead of a wall o
 
 - **Lead line**: the first line, in bold. It answers you or sets the scene. A quick answer stays one or two plain lines.
 - **Short paragraphs**: two or three sentences each.
-- **Bullets**: a purple dot for a list of things.
-- **Numbered steps**: a number in a purple circle, for steps or questions she wants you to answer. Answer them in your next message, for example "1. Get the invoices paid 2. Keep Wednesday light".
+- **Bullets**: an indigo dot for a list of things.
+- **Numbered steps**: a number in a soft indigo circle, for steps or questions she wants you to answer. Answer them in your next message, for example "1. Get the invoices paid 2. Keep Wednesday light".
 - **Bold**: used now and then for a key number or name.
-- **DRAFT**: a light purple box with a message she has written for you to send. Tap **Copy** to copy it (it changes to **Copied** for a moment), then paste it wherever you're sending it.
-- **NEXT STEP**: a grey box with a purple line, for the one clear thing to do next.
+- **DRAFT**: a light indigo box with a message she has written for you to send. Tap **Copy** to copy it (it changes to **Copied** for a moment), then paste it wherever you're sending it.
+- **NEXT STEP**: a grey box with an indigo line, for the one clear thing to do next.
 
 ## Drafts in chat and on Today
 
-When you ask Tali to write something to send, the message shows in the chat as a **DRAFT** box, and it is also saved on your Today screen under **Needs your yes**. From Today you can ask her to make it shorter, warmer or more formal, send it (for emails, with Gmail or Outlook connected) or tap **Done, I sent it**. See [Approvals](approvals.html).
+When you ask Tali to write something to send, the message shows in the chat as a **DRAFT** box, and it is also saved on Today in the **Needs you** block. From Today you can ask her to make it shorter, warmer or more formal, send it (for emails, with Gmail or Outlook connected) or tap **Done, I sent it**. See [Approvals](approvals.html).
 
 The **Copy** button in chat only copies the text. It doesn't send anything or clear the draft on Today.
 

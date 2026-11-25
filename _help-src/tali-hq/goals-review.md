@@ -7,7 +7,7 @@ Goals are the numbers you're chasing, with Tali holding you to them. The weekly 
 
 ## Goals
 
-Open **Your world**, **Growth**, **Goals**, or tap the **Goals** tile on Today.
+Open **Your world**, **Growth**, **Goals**, or tap the **Goals** block on Today. If it isn't on your home, add it in **Edit home**.
 
 !phones[Goals](img/goals.png)[A new goal](img/goals-add.png)
 
@@ -35,11 +35,11 @@ Each goal shows a progress bar, how many days are left, and **On track** or **Be
 - **Edit**: change the goal.
 - **Done** or **Drop**: move it to the Done or Dropped tab. From there, **Make it active again** brings it back.
 
-Tali keeps your goals in front of you: the Goals tile on Today, a mention in your brief when you're behind pace, and a check in your weekly review. Goals use no credits.
+Tali keeps your goals in front of you: the Goals block on Today, a mention in your brief when you're behind pace, and a check in your weekly review. Goals use no credits.
 
 ## Weekly review
 
-Open **Your world**, **Growth**, **Weekly review**, or tap the **This week** tile on Today when it says the review is due.
+Open **Your world**, **Growth**, **Weekly review** (on the Business side, if you run a business), or tap **Review** on the **This week** block on Today when the review is due.
 
 !phones[Start your review](img/review-start.png)[Tali's review of your week](img/review-done.png)
 
@@ -56,7 +56,7 @@ Open **Your world**, **Growth**, **Weekly review**, or tap the **This week** til
 
 !phone[Your three for next week](img/review-three.png)
 
-Your three show on Today all week in the **This week** tile, with tick boxes. Tali checks in on them in your brief and uses them to fill in tomorrow's three at your shutdown.
+Your three show on Today all week in the **This week** block, with tick boxes. Tali checks in on them in your brief and uses them to fill in tomorrow's three at your shutdown.
 
 **Past weeks** at the bottom lists earlier reviews. Tap one to read it.
 

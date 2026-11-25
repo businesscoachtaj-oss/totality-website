@@ -75,7 +75,7 @@ Your draft is saved while you connect. Afterwards, open it from Invoices and tap
 
 Paid and void invoices are locked, so you can't change their details.
 
-**Bill them again** on a sent or paid invoice starts a new draft for the same person with the same lines. Handy for monthly clients.
+**Bill [their name] again** on a sent or paid invoice starts a new draft for the same person with the same lines. Handy for monthly clients.
 
 ## Connect your Stripe
 
@@ -95,7 +95,7 @@ Connecting Stripe is done in the web app at talihq.com.au. Once it's connected, 
 
 ## Overdue invoices
 
-Overdue invoices show on Today in **Money** and **Health**, in your morning brief, and Tali can draft a friendly nudge if you ask. On Pro, the **Chase overdue invoices** rule drafts the reminder for you. See [Night school and Rules](night-school-rules.html#rules-pro).
+Overdue invoices show on Today in the **Money** and **Invoices** blocks and the **Business health** tile, in your morning brief, and Tali can draft a friendly nudge if you ask. On Pro, the **Chase overdue invoices** rule drafts the reminder for you. See [Night school and Rules](night-school-rules.html#rules-pro).
 
 ## On the Free plan
 

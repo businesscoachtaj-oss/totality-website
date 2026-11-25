@@ -14,10 +14,13 @@ An app where you run your life and your business with Tali, an AI with a brain t
 Anyone who wants a hand with their life, and small business owners who want one with their business too: personal trainers, gyms and studios, coaches and consultants, trades, health and beauty, online businesses and more. You don't need a business to use it.
 
 ?? Where do I get it?
-Open talihq.com.au in your browser on iPhone, Android or computer. On your phone, add it to your home screen.
+Get **Tali HQ: AI Life & Business** from the App Store or Google Play, or open talihq.com.au in your browser on any phone or computer. Your account is the same everywhere.
 
 ?? Do I need Totality or Totality Nutrition?
 No. Tali HQ is its own app with its own sign up. If you do use them, you can link your account from Her brain.
+
+?? Why won't Tali chat, write my brief or sort my email?
+She needs your yes to use AI first. Open **Me**, **Tali and your data**, and say yes. Your lists, notes and journal work either way. See [Getting started](getting-started.html#tali-and-your-data).
 
 ?? Does Tali ever send things on her own?
 No. Everything she prepares waits on Today for your yes. See [Approvals](approvals.html).
@@ -28,7 +31,7 @@ Yes. Sign in with the same email on each. Turn notifications on separately on ea
 ## Plans and money
 
 ?? How much does it cost?
-Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 credits. Tali HQ Pro is A$49.99 a month with 3,000 credits. Tali HQ Max is A$149.99 a month with 10,000 credits. Yearly is 15% less. See [Plans, credits and billing](plans.html).
+Free is A$0 with 250 messages a month. Tali HQ is A$19.99 a month with 1,000 credits. Tali HQ Pro is A$49.99 a month with 3,000 credits. Tali HQ Max is A$149.99 a month with 10,000 credits. Yearly is 15% less. Tali HQ Business is A$199.99 a month, monthly only. In the iPhone app, Apple's prices apply. See [Plans, credits and billing](plans.html).
 
 ?? Is there a free trial?
 Yes, 7 days of Tali HQ on every new account, no card needed.
@@ -43,7 +46,7 @@ On the 1st of each month in your time zone, on monthly and yearly plans.
 Yes, on a paid plan or the trial. Open **Me** and tap **Top up** for extra credits, images or a bundle. Extras never expire. See [Plans, credits and billing](plans.html#top-up).
 
 ?? How do I cancel?
-**Me**, **Plans**, **Manage billing**, then cancel in Stripe. You drop to Free and keep your data.
+If you pay through Stripe: **Me**, **Plans**, **Manage billing**, then cancel in Stripe. If you pay through the App Store: cancel in your iPhone's App Store settings, or tap **Manage subscription** on Plans. Either way you drop to Free and keep your data. See [Plans, credits and billing](plans.html#change-or-cancel).
 
 ?? What's in Pro that isn't in Tali HQ?
 Big brain, Tali's own email address, Night school, Rules, Patterns, voice notes with no cap, and three times the credits and images. Max adds more again, with half price thinking for your first 100 a month.
@@ -73,8 +76,8 @@ Tell her the right one in Talk, or fix the memory yourself in **Her brain**.
 ?? What's the morning brief?
 Tali's summary of your day, every morning at the time you pick. Part of the paid plans. Free gets a Friday check-in. See [Today and your morning brief](today.html).
 
-?? What is "Needs your yes"?
-Drafts waiting for you to send, rework or clear. See [Approvals](approvals.html).
+?? What is "Needs you"?
+The block on Today where drafts wait for you to send, rework or clear, along with emails that need a reply. See [Approvals](approvals.html).
 
 ?? What is the shutdown?
 Two minutes at the end of the day: how it went, one win, and tomorrow's three, which become 9am reminders. On every plan. See [Shut the day down](evening.html).
@@ -85,8 +88,8 @@ You've shut the day down, so Today is in night mode until the morning. Tap **Sle
 ?? What's Tali's level?
 A bit of fun on Today and Her brain. She gains XP as she learns your business and as you use the app. See [Her brain](what-tali-knows.html#tali-s-level).
 
-?? What are the stars on Today?
-Your day. Each star around her brain is something that needs you, is due or is coming up. Tap one to open it. See [Today](today.html).
+?? What's the short list at the top of Today?
+Your day, as Tali sees it. Each line is something that needs you, is due or is coming up, with a coloured dot for the part of your life it belongs to. Tap **+** on a line to see what she knows about it. See [Today](today.html#a-note-from-tali).
 
 ## Your world and your lists
 
@@ -120,6 +123,12 @@ Not in the app once it's claimed. Email admintotality@gmail.com if you need to.
 No. She works with your invoices in Tali HQ and, if you connect it, your own Stripe.
 
 ## Business tools
+
+?? Can my staff use Tali HQ?
+Yes, on Tali HQ Business. Invite them from **Your team**, pick a Standard or Premium seat for each, and choose what each person can see. See [Business tools](business-tools.html#your-team).
+
+?? I run two businesses. Do I need two accounts?
+No. On Tali HQ Business, add the second one under **Businesses**. Each keeps its own jobs and invoices. See [Business tools](business-tools.html#more-than-one-business).
 
 ?? Can Tali send my invoices?
 She drafts them. You send them, either by sharing the PDF or with one tap through your own Stripe. See [Invoices and Stripe](invoices.html).

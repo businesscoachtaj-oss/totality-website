@@ -5,7 +5,7 @@ summary: Log what you decided and why, so you stop going over it again, and ask 
 
 Decisions is a log of what you decided and why. Next time you start second guessing yourself, the reasoning is right there, and Tali reads it too. Logging is free on every plan. [[Free]] Asking Tali why is part of Tali HQ. [[Tali HQ]]
 
-Open it from **Your world**, **Growth**, **Decisions**. Your latest decision also shows under **More from Tali** on Today.
+Open it from **Your world**, **Growth**, **Decisions** (on the Business side, if you run a business). Your latest decision also shows under **More from Tali** on Today.
 
 !phones[Decisions on Tali HQ](img/decisions.png)[On Free, Ask Tali why is greyed out](img/decisions-free.png)
 
@@ -33,7 +33,7 @@ Tap a decision (or its **Edit** link) to change it. To delete, tap **Delete**, t
 ## Questions
 
 ?? Is Decisions on the Free plan?
-Yes, logging decisions is free on every plan. Ask Tali why needs Tali HQ or Pro.
+Yes, logging decisions is free on every plan. Ask Tali why needs Tali HQ or a higher plan.
 
 ?? Does logging a decision cost credits?
 No. Asking Tali why is a normal chat message, so it uses 1 credit.
