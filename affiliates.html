@@ -255,12 +255,12 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
               <div class="af-row"><div><label class="label" for="afSz">Audience size on your biggest platform</label><select class="input" id="afSz" name="audience_size"><option>Under 1,000</option><option>1,000 to 5,000</option><option>5,000 to 10,000</option><option>10,000 to 50,000</option><option>50,000 or more</option></select></div><div><label class="label" for="afLk">Link to your main profile or website</label><input class="input" id="afLk" name="profile_link" type="url" placeholder="https://" maxlength="300"></div></div>
             </section>
             <section class="af-panel" data-p="3" hidden>
-              <div><h2>Fit and sharing</h2><p class="af-sub">Which app suits your audience, and how you would share it.</p></div>
-              <fieldset class="af-opts" style="display:block"><legend>Which would you like to share?</legend><div class="af-cards">
-                <label class="af-card"><input type="radio" name="app_choice" value="nutrition" checked><span><strong>Totality Nutrition</strong><small>The macro tracking app for individuals.</small></span></label>
-                <label class="af-card"><input type="radio" name="app_choice" value="totality"><span><strong>Totality</strong><small>Clients, bookings and billing for trainers, studios and allied health.</small></span></label>
-                <label class="af-card"><input type="radio" name="app_choice" value="both"><span><strong>Both</strong><small>Share Totality Nutrition and Totality.</small></span></label></div></fieldset>
-              <fieldset class="af-opts"><legend>Have you used either app?</legend><label class="af-opt"><input type="radio" name="used" value="yes"> Yes, I use one or both</label><label class="af-opt"><input type="radio" name="used" value="no" checked> Not yet</label></fieldset>
+              <div><h2>Fit and sharing</h2><p class="af-sub">Which apps suit your audience, and how you would share them.</p></div>
+              <fieldset class="af-opts" style="display:block"><legend>Which apps would you like to share? <span class="ot-opt">Pick one or more</span></legend><div class="af-cards">
+                <label class="af-card"><input type="checkbox" name="apps" value="nutrition" checked><span><strong>Totality Nutrition</strong><small>Food and macro tracking for anyone, on Australian food data.</small></span></label>
+                <label class="af-card"><input type="checkbox" name="apps" value="training"><span><strong>Totality Training</strong><small>A workout tracker with programmes for people training on their own.</small></span></label>
+                <label class="af-card"><input type="checkbox" name="apps" value="totality"><span><strong>Totality</strong><small>Clients, bookings and billing for trainers, studios, gyms and allied health.</small></span></label></div></fieldset>
+              <fieldset class="af-opts"><legend>Have you used any of the apps?</legend><label class="af-opt"><input type="radio" name="used" value="yes"> Yes, I use at least one</label><label class="af-opt"><input type="radio" name="used" value="no" checked> Not yet</label></fieldset>
               <div><label class="label" for="afHow">How would you share it?</label><textarea class="textarea" id="afHow" name="how_share" maxlength="2000" placeholder="A few lines on what you would post, who it is for and where."></textarea></div>
               <div><label class="label" for="afNt">Anything else we should know? <span class="ot-opt">(optional)</span></label><textarea class="textarea" id="afNt" name="notes" maxlength="2000"></textarea></div>
             </section>
@@ -272,7 +272,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
             <p id="afErr" class="ot-msg ot-msg--err" role="alert" hidden style="margin-top:16px"></p>
             <div class="af-nav"><button type="button" class="af-back" id="afBack">Back</button><button type="button" class="btn btn--primary btn--lg" id="afNext">Continue</button></div>
           </form>
-          <div id="afSide"><aside class="af-side"><img src="/email/tali/chat.png" alt="Tali chatting" width="170" height="170"><h3>What you get</h3><p>Your first year of the app is free.</p><p>Your own referral code. People who join with it get 70% off their first 2 months (monthly plans).</p><p>Your first 5 paying referrals keep your plan free after the year. After that you earn commission on every paying referral.</p></aside></div>
+          <div id="afSide"><aside class="af-side"><img src="/email/tali/chat.png" alt="Tali chatting" width="170" height="170"><h3>What you get</h3><p>Your first year of each app you share is free.</p><p>Your own referral code for each app. People who join with it get 70% off their first 2 months (monthly plans).</p><p>Your own partner page on our website, with your photo and your codes, like <a class="text-link" href="/partner/ml-remedial.html">May’s</a>.</p><p>Your first 5 paying referrals keep your plan free after the year. After that you earn commission on every paying referral.</p></aside></div>
         </div>
       </div>
       <div id="afDone" class="af-done" hidden>
@@ -431,7 +431,9 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
     function radio(n) { var e = form.querySelector('input[name="' + n + '"]:checked'); return e ? e.value : ''; }
     function role() { var r = radio('role'); return r === 'Something else' && val('role_other') ? 'Something else: ' + val('role_other') : r; }
     function platforms() { return Array.prototype.map.call(form.querySelectorAll('input[name="platform"]:checked'), function (e) { return e.value; }); }
-    var APPS = { nutrition: 'Totality Nutrition', totality: 'Totality', both: 'Totality Nutrition and Totality' };
+    var APPS = { nutrition: 'Totality Nutrition', training: 'Totality Training', totality: 'Totality' };
+    function apps() { return Array.prototype.slice.call(form.querySelectorAll('input[name="apps"]:checked')).map(function (e) { return e.value; }); }
+    function appNames() { var n = apps().map(function (a) { return APPS[a]; }); return n.length < 2 ? (n[0] || '') : n.slice(0, -1).join(', ') + ' and ' + n[n.length - 1]; }
     function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
     function show(n) {
       step = n; err.hidden = true;
@@ -448,7 +450,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       var rows = [
         ['About you', val('first_name') + ' ' + val('last_name') + '<br>' + val('email') + '<br>' + (val('instagram') || 'No Instagram') + ', ' + val('country') + (val('business_name') ? '<br>' + val('business_name') : ''), 1],
         ['Your audience', role() + '<br>' + platforms().join(', ') + '<br>' + val('audience_size') + (val('profile_link') ? ', ' + val('profile_link') : ''), 2],
-        ['Fit and sharing', APPS[radio('app_choice')] + '<br>' + (radio('used') === 'yes' ? 'Has used the app' : 'Has not used the app yet') + (val('how_share') ? '<br>' + val('how_share') : ''), 3]
+        ['Fit and sharing', appNames() + '<br>' + (radio('used') === 'yes' ? 'Has used the app' : 'Has not used the app yet') + (val('how_share') ? '<br>' + val('how_share') : ''), 3]
       ];
       document.getElementById('afReview').innerHTML = rows.map(function (r) {
         var t = r[1].split('<br>').map(esc).join('<br>');
@@ -463,6 +465,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       }
       if (n === 2 && radio('role') === 'Something else' && !val('role_other')) return 'Tell us what you do.';
       if (n === 2 && !platforms().length) return 'Pick at least one place you share content.';
+      if (n === 3 && !apps().length) return 'Pick at least one app to share.';
       if (n === 3 && !val('how_share')) return 'Add a few lines on how you would share it.';
       return '';
     }
@@ -480,7 +483,7 @@ src="https://www.facebook.com/tr?id=3550080485153029&ev=PageView&noscript=1"
       var d = {
         first_name: val('first_name'), last_name: val('last_name'), email: val('email'), instagram: val('instagram'),
         country: val('country'), business_name: val('business_name'), role: role(), platforms: platforms(),
-        audience_size: val('audience_size'), profile_link: val('profile_link'), app_choice: radio('app_choice'),
+        audience_size: val('audience_size'), profile_link: val('profile_link'), apps: apps(),
         used_app: radio('used') === 'yes', how_share: val('how_share'), notes: val('notes'),
         email_consent: true, website: val('website'), started_at: started
       };
