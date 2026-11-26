@@ -26,7 +26,7 @@ Tap **View** to open what's on file.
 
 Totality is a referral partner of BizCover, an Australian online insurance broker. When your public liability or professional indemnity isn't on file, or has expired, you see **Get covered with BizCover** (or **Renew with BizCover**) under it. Tap it to open **Cover for fitness pros, with BizCover**.
 
-- **TOTALITY MEMBER OFFER**: $20 off each policy with code **TOTALITY**. Tap **Copy code**.
+- **TOTALITY MEMBER OFFER**: $20 off a policy with code **TOTALITY**. Tap **Copy code**.
 - **WHAT YOU CAN COVER**: public liability, professional indemnity, and personal accident and illness.
 - **MADE FOR FITNESS WORK**: no association membership needed, parks, council land and more than one gym, online classes and nutrition advice can be covered.
 - **HOW IT WORKS**: compare quotes from several insurers and buy online in minutes. Your certificate of currency comes to your inbox.
