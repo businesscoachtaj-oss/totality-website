@@ -24,7 +24,7 @@ The top card shows your photo (or initials), name and email. Tap the photo to ch
 | WEARABLES | **Connect a wearable** | [Apple Health and Health Connect](wearables.html) |
 | REFER & EARN | Your referral code | Below |
 | FIND A COACH | **Find a coach near you**: trainers, gyms, studios and clinics on Totality Discover | Below |
-| FOR COACHES AND TRAINERS | **Insurance with BizCover**: public liability and professional indemnity, $20 off each policy with code TOTALITY | Below |
+| FOR COACHES AND TRAINERS | **Insurance with BizCover**: public liability and professional indemnity, $20 off a policy with code TOTALITY | Below |
 | FOOD DATA SOURCES | Credits and licences for AFCD and Open Food Facts | |
 | ACCOUNT ACTIONS | **Sign Out** and **Delete Account** | Below |
 
@@ -54,7 +54,7 @@ Tap **Find a coach near you** to open **Totality Discover** in your browser. Sea
 
 ## Insurance for coaches and trainers
 
-If you coach or train people, **Insurance with BizCover** opens Totality's insurance page. BizCover compares quotes for public liability and professional indemnity, and code **TOTALITY** takes $20 off each policy. Insurance is arranged by BizCover, not Totality.
+If you coach or train people, **Insurance with BizCover** opens Totality's insurance page. BizCover compares quotes for public liability and professional indemnity, and code **TOTALITY** takes $20 off a policy. Insurance is arranged by BizCover, not Totality.
 
 ## Sign out and delete your account
 
