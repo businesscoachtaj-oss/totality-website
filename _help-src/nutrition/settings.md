@@ -54,7 +54,7 @@ Tap **Find a coach near you** to open **Totality Discover** in your browser. Sea
 
 ## Insurance for coaches and trainers
 
-If you coach or train people, **Insurance with BizCover** opens Totality's insurance page. BizCover compares quotes for public liability and professional indemnity, and code **TOTALITY** takes $20 off a policy. Insurance is arranged by BizCover, not Totality.
+If you coach or train people, **Insurance with BizCover** opens BizCover to get a quote. BizCover compares quotes for public liability and professional indemnity, and code **TOTALITY** takes $20 off a policy. Insurance is arranged by BizCover, not Totality.
 
 ## Sign out and delete your account
 
