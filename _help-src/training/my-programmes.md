@@ -28,7 +28,7 @@ Tap a programme under **My programmes**, or tap **Edit this programme** under th
 
 Workouts you have already logged are never changed. If you logged this one this week, it stays as it is.
 
-**Save for every week from now** copies only what you changed to the weeks after. If a later week has its own changes, like the heavier lifts and swapped exercises in the second half of a programme, those stay.
+**Save for every week from now** copies only what you changed to the weeks after. If a later week has its own changes, like the heavier lifts and swapped exercises in a later block of a programme, those stay.
 
 ## Questions
 

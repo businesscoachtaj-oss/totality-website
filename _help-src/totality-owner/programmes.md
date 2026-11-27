@@ -66,9 +66,17 @@ A few styles need kit most gyms don't have. Strongman days say to use the Beginn
 
 **Health Guidelines** is built on the World Health Organization's physical activity guidelines for adults: strength for every major muscle on 2 or more days and 150 minutes of moderate cardio a week, with mobility and balance work. The 2 and 3 day versions add brisk walks on other days to reach the 150 minutes. It comes for a full gym, dumbbells or no equipment, and isn't made or endorsed by the WHO. **Classic Bodybuilding** trains one or two areas a day. **New School Bodybuilding** trains every muscle at least twice a week. Whole body and Lean and fit also have dumbbell and bodyweight programmes, and Glutes and legs has a dumbbell one, for clients who train at home.
 
-### The second half of a programme
+### How a template moves on
 
-Every template changes halfway through, so your client isn't doing the same exercises for 8 or 12 weeks. The first lifts each day get heavier for fewer reps (no equipment programmes move to a harder version instead), and most other exercises swap for a close variation with the same kit. In the preview, tap the **Weeks** chips to see each half. When you use the template, the swaps are already in the copy from that week.
+Every template changes in blocks, so your client isn't doing the same exercises for 8 or 12 weeks, and ends with a lighter week.
+
+- **Most templates** change halfway through. The first lifts each day get heavier for fewer reps (no equipment programmes move to a harder version instead), and most other exercises swap for a close variation with the same kit.
+- **Powerlifting, Street Lifting, Strongman and Olympic Lifting** (Intermediate and Advanced) run **Volume**, **Strength** and **Peak** blocks, and the lighter last week offers a test day.
+- **Athletic Performance** (Intermediate and Advanced) runs **Strength**, **Power** and **Speed** blocks.
+- **Gymnastics Strength and Calisthenics** (Beginner and Intermediate) run **Learn**, **Build** and **Next step** blocks, where the main moves step up a version.
+- **New School Bodybuilding** gives each week a target for how close to failure to go, plus myo reps, drop sets and lengthened partials from Intermediate. **Hybrid** runs build about 10% a week with an easier week every fourth week.
+
+In the preview, tap the **Weeks** chips to see each block. When you use the template, the changes are already in the copy from that week, and your client's workout shows the week's target or a new block at the top.
 
 ### Set types
 

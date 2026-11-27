@@ -56,18 +56,25 @@ Missing a piece of kit? On a programme's page, tap **Swap** next to any exercise
 
 You can also swap during a workout. See [Your workout](workout.html).
 
-## The second half of a programme
+## How a programme moves on
 
-Programmes change halfway through so you aren't doing the same exercises for every week.
+Every programme ends with a lighter week with fewer sets, so you recover. Before that it changes in blocks, and how depends on the style.
 
-- The first lifts each day get heavier for fewer reps. On no equipment programmes they move to a harder version instead, like Archer Push-Ups.
-- Most other exercises swap for a close variation that works the same muscles with the same kit.
+- **Most programmes** change halfway through. The first lifts each day get heavier for fewer reps (no equipment programmes move to a harder version instead, like Archer Push-Ups), and most other exercises swap for a close variation with the same kit.
+- **Powerlifting, Street Lifting, Strongman and Olympic Lifting** (Intermediate and Advanced) run three blocks: **Volume** (more reps at moderate weights), **Strength** (heavier sets of 3 to 5) and **Peak** (heavy doubles and singles with less accessory work). The lighter last week has a test day if you feel fresh.
+- **Athletic Performance** (Intermediate and Advanced) runs **Strength**, **Power** and **Speed** blocks. In the speed block the heavy lifts become speed lifts.
+- **Gymnastics Strength and Calisthenics** (Beginner and Intermediate) run **Learn**, **Build** and **Next step** blocks. In the last block your main moves step up to the next harder version.
+- **New School Bodybuilding** has a target for each week. Each half starts about 3 reps short of failure and builds to failure on isolation work (Beginners stop 1 rep short).
+- **Hybrid** runs get about 10% longer each week, with an easier week every fourth week.
+- Beginners on the barbell sports keep two halves while they learn the lifts.
 
-On a programme's page, tap **Weeks 1 to 5** or **Weeks 6 to 10** (the weeks depend on the programme) to see each half.
+On a programme's page, tap the **Weeks** chips to see each block. When a week has a target, or a new block starts, your workout shows it at the top.
 
 ## Set types
 
 Some exercises on Intermediate and Advanced programmes use a set type: a **drop set**, **myo reps**, **rest-pause** or **AMRAP** (as many reps as you can in the time). They're used on the last exercises of a workout, where they help. The workout screen shows a badge on these exercises and how to do each one.
+
+New School Bodybuilding also uses **lengthened partials** on exercises with a big stretch. On the last set, when you can't do another full rep, keep going with half reps in the stretched part. The exercise's note says when.
 
 On Free, **Strength Foundations** and every **Health Guidelines** programme are free to start. The others show a lock and need [[Training]].
 
