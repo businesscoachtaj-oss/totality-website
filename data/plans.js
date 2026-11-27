@@ -1116,9 +1116,11 @@ window.TOTALITY_PLANS = {
     "text": "Free forever for independent trainers and solo practitioners: up to 3 clients, all Solo tools, no Tali AI."
   },
   "extraLocation": {
-    "monthly": "A$149.99",
-    "yearly": "A$1,529.90",
-    "max": 5,
+    "note": "Half the plan it copies (27 Nov 2026). Each extra location gets the plan's full limits.",
+    "studio": { "monthly": "A$194.99", "yearly": "A$1,988.90" },
+    "club": { "monthly": "A$324.99", "yearly": "A$3,314.90" },
+    "enterprise": { "monthly": "A$499.99", "yearly": "A$5,099.90" },
+    "max": 20,
     "for": "Studio, Club and Enterprise"
   }
 };
