@@ -1,6 +1,6 @@
 ---
 title: With Totality Nutrition
-summary: One account for both apps, what is shared, and 40% off when you pay for one of them.
+summary: One account for both apps, what is shared, 40% off when you pay for one, and one app when you pay for both.
 ---
 Totality Training and Totality Nutrition use the same account. Log in to both with the same email and they line up.
 
@@ -23,6 +23,16 @@ Open **Settings**, **Totality Nutrition** to turn any of these off.
 - So both apps together are A$14.38 a month.
 
 The 40% off does not combine with the welcome offer of 50% off your first 2 months.
+
+## Pay for both and the apps merge
+
+When you pay for both Totality Training and Totality Nutrition, the two apps become one. Open either and it has everything.
+
+- **In Totality Training:** a Food tab for your food log, Meal plan and Cookbook in quick access, and Nutrition's settings in Settings. Home shows today's workout, then today's food with your water and logging streak.
+- **In Totality Nutrition:** a Train tab with your programme and workouts. Home shows today's workout above today's food, and your workout history, weekly review, exercise library and rep max calculator are in quick access.
+- **Calorie Cycling:** if you use it, your higher calorie days follow the training days in your Training programme. Change your days in Training and Nutrition updates.
+
+Each app keeps its own Tali chat.
 
 ## Questions
 
