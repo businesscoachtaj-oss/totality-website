@@ -1,0 +1,288 @@
+{
+ "_comment": "Programme shop (programmes.html). Payment links are Stripe (live), A$29.99 each. Rebuild the page with python3 tools/build_programmes_page.py.",
+ "price": "A$29.99",
+ "groups": [
+  {
+   "id": "gym",
+   "title": "In the gym",
+   "sub": "Full gym programmes for muscle, strength and fitness.",
+   "items": [
+    {
+     "key": "full-body",
+     "name": "Full Body",
+     "kit": "Full gym",
+     "days": "2 to 4 days a week",
+     "versions": 9,
+     "blurb": "Full body sessions, so every main lift comes round more than once a week.",
+     "link": "https://buy.stripe.com/aFadRb8Ss311cjh6NX5c404"
+    },
+    {
+     "key": "upper-lower",
+     "name": "Upper Lower",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Upper body and lower body days in turn, heavy compound lifts first.",
+     "link": "https://buy.stripe.com/eVqdRb9Ww5990Az6NX5c405"
+    },
+    {
+     "key": "push-pull-legs",
+     "name": "Push Pull Legs",
+     "kit": "Full gym",
+     "days": "3 to 6 days a week",
+     "versions": 12,
+     "blurb": "Pushing, pulling and leg days, with every muscle trained hard.",
+     "link": "https://buy.stripe.com/cNi14pfgQ7hh5UTfkt5c406"
+    },
+    {
+     "key": "glutes-arms",
+     "name": "Glutes and Arms",
+     "kit": "Full gym",
+     "days": "2 to 5 days a week",
+     "versions": 12,
+     "blurb": "Glute days plus shoulder and arm work.",
+     "link": "https://buy.stripe.com/00waEZ8SscBB1ED7S15c407"
+    },
+    {
+     "key": "lower-focus",
+     "name": "Glutes and Legs Focus",
+     "kit": "Full gym",
+     "days": "3 to 5 days a week",
+     "versions": 9,
+     "blurb": "Extra lower body work, with upper days to keep things balanced.",
+     "link": "https://buy.stripe.com/5kQdRbd8IgRRab90pz5c408"
+    },
+    {
+     "key": "body-part",
+     "name": "Body Part Split",
+     "kit": "Full gym",
+     "days": "5 or 6 days a week",
+     "versions": 6,
+     "blurb": "One or two muscle groups a day, five or six days a week.",
+     "link": "https://buy.stripe.com/4gM14pd8IcBB2IH4FP5c409"
+    },
+    {
+     "key": "strength",
+     "name": "Strength",
+     "kit": "Full gym",
+     "days": "2 to 4 days a week",
+     "versions": 9,
+     "blurb": "Built around the squat, bench press, deadlift and overhead press.",
+     "link": "https://buy.stripe.com/4gMeVf7Oobxxdnl6NX5c40a"
+    },
+    {
+     "key": "lean",
+     "name": "Lean and Fit",
+     "kit": "Full gym",
+     "days": "2 to 4 days a week",
+     "versions": 9,
+     "blurb": "Lifting with conditioning work, to get fitter and leaner.",
+     "link": "https://buy.stripe.com/9B68wRb0A8ll9756NX5c40b"
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "title": "At home",
+   "sub": "Dumbbells or no equipment at all.",
+   "items": [
+    {
+     "key": "home-dumbbell",
+     "name": "Home Dumbbell",
+     "kit": "Dumbbells",
+     "days": "2 to 4 days a week",
+     "versions": 9,
+     "blurb": "Full body sessions with a pair of dumbbells and a bench.",
+     "link": "https://buy.stripe.com/dRm00lb0A311gzx8W55c40c"
+    },
+    {
+     "key": "no-equipment",
+     "name": "No Equipment",
+     "kit": "No equipment",
+     "days": "2 to 4 days a week",
+     "versions": 9,
+     "blurb": "Full body sessions with no equipment at all.",
+     "link": "https://buy.stripe.com/5kQdRb2u47hh975b4d5c40d"
+    },
+    {
+     "key": "dumbbell-upper-lower",
+     "name": "Dumbbell Upper Lower",
+     "kit": "Dumbbells",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Upper and lower days with dumbbells and a bench.",
+     "link": "https://buy.stripe.com/fZufZjb0AdFFdnl3BL5c40e"
+    },
+    {
+     "key": "dumbbell-ppl",
+     "name": "Dumbbell Push Pull Legs",
+     "kit": "Dumbbells",
+     "days": "3 to 6 days a week",
+     "versions": 12,
+     "blurb": "Push, pull and leg days with dumbbells and a bench.",
+     "link": "https://buy.stripe.com/bJeaEZ2u40ST4QPfkt5c40f"
+    },
+    {
+     "key": "dumbbell-glutes",
+     "name": "Dumbbell Glutes and Legs",
+     "kit": "Dumbbells",
+     "days": "2 to 5 days a week",
+     "versions": 12,
+     "blurb": "Extra glute and leg work with dumbbells.",
+     "link": "https://buy.stripe.com/aFafZjecM9ppbfda095c40g"
+    },
+    {
+     "key": "dumbbell-burn",
+     "name": "Dumbbell Burn",
+     "kit": "Dumbbells",
+     "days": "2 to 5 days a week",
+     "versions": 12,
+     "blurb": "Dumbbell lifting and circuits for fitness and fat loss.",
+     "link": "https://buy.stripe.com/bJeaEZfgQ8ll9756NX5c40h"
+    },
+    {
+     "key": "bodyweight-upper-lower",
+     "name": "Bodyweight Upper Lower",
+     "kit": "No equipment",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Upper and lower days with your own bodyweight.",
+     "link": "https://buy.stripe.com/8x29AV1q0bxxab9dcl5c40i"
+    },
+    {
+     "key": "bodyweight-burn",
+     "name": "Bodyweight Burn",
+     "kit": "No equipment",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Bodyweight circuits for fitness and fat loss.",
+     "link": "https://buy.stripe.com/5kQeVfc4Ebxx3MLb4d5c40j"
+    }
+   ]
+  },
+  {
+   "id": "sport",
+   "title": "Sports and styles",
+   "sub": "Built for a sport or a way of training, with its own blocks.",
+   "items": [
+    {
+     "key": "powerlifting",
+     "name": "Powerlifting",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Squat, bench press and deadlift, with the variations powerlifters use.",
+     "link": "https://buy.stripe.com/fZu4gB8Ss8ll6YX8W55c40k"
+    },
+    {
+     "key": "street-lifting",
+     "name": "Street Lifting",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Weighted pull-ups, weighted dips, muscle-ups and the back squat.",
+     "link": "https://buy.stripe.com/dRmaEZc4E8llfvtfkt5c40l"
+    },
+    {
+     "key": "olympic",
+     "name": "Olympic Lifting",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "The snatch and the clean and jerk, with the squats and pulls behind them.",
+     "link": "https://buy.stripe.com/bJe3cxecMfNN6YXfkt5c40m"
+    },
+    {
+     "key": "bodybuilding",
+     "name": "Classic Bodybuilding",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "One or two areas a day, the classic split.",
+     "link": "https://buy.stripe.com/00wcN74Ccatt3MLdcl5c40n"
+    },
+    {
+     "key": "new-school-bodybuilding",
+     "name": "New School Bodybuilding",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Every muscle at least twice a week, with a plan for how hard each week goes.",
+     "link": "https://buy.stripe.com/6oUdRb9WwgRR4QP5JT5c40o"
+    },
+    {
+     "key": "powerbuilding",
+     "name": "Powerbuilding",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Heavy lifts first, then work for size.",
+     "link": "https://buy.stripe.com/00w4gB3y8att5UT0pz5c40p"
+    },
+    {
+     "key": "strongman",
+     "name": "Strongman",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Log, yoke, stones and carries, with the strength to back them.",
+     "link": "https://buy.stripe.com/6oUaEZgkUeJJbfdgox5c40q"
+    },
+    {
+     "key": "circus-strongman",
+     "name": "Circus Strongman",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Old-time one arm lifts and grip work.",
+     "link": "https://buy.stripe.com/4gMcN71q0att831gox5c40r"
+    },
+    {
+     "key": "gymnastics",
+     "name": "Gymnastics Strength",
+     "kit": "Bars and rings",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Handstands, rings and levers.",
+     "link": "https://buy.stripe.com/dRm9AV4CceJJgzxa095c40s"
+    },
+    {
+     "key": "calisthenics",
+     "name": "Calisthenics",
+     "kit": "Bars and rings",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Bodyweight strength on a bar and the floor.",
+     "link": "https://buy.stripe.com/7sYbJ3d8IeJJ6YX1tD5c40t"
+    },
+    {
+     "key": "kettlebell",
+     "name": "Kettlebell",
+     "kit": "Kettlebells",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Swings, cleans, presses and get-ups.",
+     "link": "https://buy.stripe.com/dRm7sN3y8eJJ2IHb4d5c40u"
+    },
+    {
+     "key": "athletic",
+     "name": "Athletic Performance",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Strength, jumps and sprints for sport.",
+     "link": "https://buy.stripe.com/4gM7sN3y80STfvt7S15c40v"
+    },
+    {
+     "key": "hybrid",
+     "name": "Hybrid",
+     "kit": "Full gym",
+     "days": "2 to 6 days a week",
+     "versions": 15,
+     "blurb": "Lifting and running in one plan.",
+     "link": "https://buy.stripe.com/8x28wR7Oo7hh1EDfkt5c40w"
+    }
+   ]
+  }
+ ]
+}
