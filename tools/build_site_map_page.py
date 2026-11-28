@@ -101,7 +101,7 @@ def build() -> str:
     dev = [
         group("Developers", [
             ("/api", "Exercise API"), ("/api#websites", "Exercise widget for websites"), ("/api-terms.html", "API and widget terms"),
-            ("/sign-in-with-totality.html", "Sign in with Totality"), ("/claude.html", "Tali in Claude"), ("https://talihq.com.au/brain", "Tali Brain licence for software companies"),
+            ("/sign-in-with-totality.html", "Sign in with Totality"), ("https://talihq.com.au/brain", "Tali Brain licence for software companies"),
         ]),
         group("Partners", [
             ("/affiliates.html", "Become an affiliate"), ("/online-training.html", "Online training with Taj"),
