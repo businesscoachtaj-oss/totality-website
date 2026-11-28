@@ -17,6 +17,7 @@ BASE = "https://totality360.com.au/"
 
 EXCLUDE = [
     "*-download.html",          # paid-product thank-you pages (noindex)
+    "programmes/thanks.html",   # programme shop thank-you page (noindex), 28 Nov 2026
     "brand-kit-*.html",         # internal brand kits (noindex)
     "affiliate-kit.html",       # affiliate kit, sent to approved affiliates (noindex)
     "blog/post-template.html",

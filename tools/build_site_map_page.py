@@ -77,7 +77,8 @@ def build() -> str:
         ]),
         group("Totality Training", [
             ("/training.html", "Totality Training overview"), ("/training.html#features", "What it does"),
-            ("/training.html#pricing", "Plans and the Nutrition bundle"), ("/training-teams.html", "Training for teams and workplaces"), ("/get-training.html", "Get Totality Training"),
+            ("/training.html#pricing", "Plans and the Nutrition bundle"), ("/programmes.html", "Training programmes to download"),
+            ("/training-teams.html", "Training for teams and workplaces"), ("/get-training.html", "Get Totality Training"),
         ]),
         group("Tali AI and prices", [
             ("/tali-ai.html", "Tali AI in the apps"), ("/pricing.html", "Pricing for every app"),
